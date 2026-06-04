@@ -2,54 +2,39 @@ name: 每日競品情報收集
 
 on:
   schedule:
-    # 每天台灣時間 09:00（UTC+8 = UTC 01:00）
-    - cron: "0 1 * * *"
-  # 也可手動在 GitHub Actions 頁面觸發
-  workflow_dispatch:
-
-permissions:
-  contents: write   # 允許推送 data/articles.json
+    # 台灣時間早上 09:00 (等於 UTC 01:00)
+    - cron: '0 1 * * *'
+  workflow_dispatch: # 允許你在網頁上點擊 Run workflow 手動觸發
 
 jobs:
-  collect:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-
     steps:
-      # 1. 取得程式碼（包含昨天的 data/articles.json）
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
+    - name: 1. 檢查並載入程式碼
+      uses: actions/checkout@v4
 
-      # 2. 設定 Python
-      - name: Set up Python
-      uses: actions/setup-python@v4
+    - name: 2. 設定 Python 環境
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
+        # 註：這裡移除了會導致報錯的 cache 與 scraper 路徑設定
 
-    - name: Install dependencies
+    - name: 3. 安裝 Python 依賴套件
       run: |
         python -m pip install --upgrade pip
+        # 如果最外層有 requirements.txt 就安裝，沒有的話也可以直接補上你要的套件
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        # 如果你發現還是缺套件，也可以直接在下方指定安裝，例如：
-        # pip install requests beautifulsoup4 pandas
+        # 萬一你沒有 requirements.txt，可以把下面這行的 # 拿掉，手動填入你的套件：
+        # pip install requests beautifulsoup4
 
-      # 3. 安裝相依套件
-      - name: Install dependencies
-        run: pip install -r scraper/requirements.txt
+    - name: 4. 執行爬蟲主程式
+      run: |
+        python collect.py
 
-      # 4. 執行爬蟲
-      - name: Run scraper
-        run: python scraper/collect.py
-
-      # 5. 如果 data/ 有異動，commit 並 push
-      - name: Commit & push updated data
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
-          # 只在有異動時才 commit（避免空 commit 出錯）
-          git diff --cached --quiet || \
-            git commit -m "chore: 自動更新競品情報 $(date +'%Y-%m-%d')"
-          git push
+    - name: 5. 🤖 自動將更新後的資料推回 GitHub
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add docs/
+        # 檢查是否有新抓到的資料，有話就 commit 並 push 更新網頁
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update competitive intel data" && git push)
