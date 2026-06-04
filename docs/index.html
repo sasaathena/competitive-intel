@@ -832,8 +832,18 @@ async function loadData() {
     all = d.articles || [];
     applyStats(d.stats || {});
     hide('loading');
-    show('metrics-row','dist-row','filter-wrap','list-header');
-    render();
+
+    show(
+    'metrics-row',
+    'dist-row',
+    'filter-wrap',
+    'list-header',
+    'cards-grid'
+   );
+  
+   render();
+    
+
   } catch(e) {
     document.getElementById('loading').innerHTML =
       `<div class="icon">⚠</div><p>無法載入 data/articles.json</p><small>請確認爬蟲已執行或路徑正確</small>`;
@@ -958,11 +968,14 @@ function render() {
 
   if (items.length === 0) {
     grid.innerHTML = '';
+    hide('cards-grid');
     show('empty-state');
     return;
   }
-  hide('empty-state');
-  grid.innerHTML = items.map(renderCard).join('');
+  
+   hide('empty-state');
+   show('cards-grid');
+   grid.innerHTML = items.map(renderCard).join('');
 }
 
 // ── Card HTML ──────────────────────────────────────────────────
