@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>競品情報 Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── Reset & Base ──────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0 }
+:root {
+  --bg:        #0e0f11;
+  --bg2:       #16181c;
+  --bg3:       #1e2026;
+  --bg4:       #262830;
+  --border:    rgba(255,255,255,.07);
+  --border2:   rgba(255,255,255,.13);
+  --text:      #e8eaf0;
+  --text2:     #8a8f9e;
+  --text3:     #545868;
+  --accent:    #5b7bff;
+  --accent2:   #8fa8ff;
+  --green:     #3ecf8e;
+  --amber:     #f5a623;
+  --pink:      #f06292;
+  --teal:      #26c6da;
+  --font:      'DM Sans', sans-serif;
+  --mono:      'DM Mono', monospace;
+  --r:         8px;
+  --r2:        12px;
+  --r3:        16px;
+}
+html { font-size: 15px; scroll-behavior: smooth }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none }
+button { font-family: var(--font); cursor: pointer; border: none; background: none }
+input, select { font-family: var(--font) }
+
+/* ── Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px }
+::-webkit-scrollbar-track { background: var(--bg) }
+::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 3px }
+
+/* ── Layout ────────────────────────────────────────────────── */
+.layout { display: flex; min-height: 100vh }
+
+/* ── Sidebar ───────────────────────────────────────────────── */
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background: var(--bg2);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+.sidebar-logo {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.logo-mark {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 4px;
+}
+.logo-icon {
+  width: 28px; height: 28px;
+  background: var(--accent);
+  border-radius: 7px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 600; color: #fff;
+  flex-shrink: 0;
+}
+.logo-name { font-size: 14px; font-weight: 600; letter-spacing: -.2px }
+.logo-sub  { font-size: 11px; color: var(--text3); font-family: var(--mono) }
+
+.sidebar-section { padding: 16px 12px 8px; }
+.sidebar-label {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--text3);
+  padding: 0 8px;
+  margin-bottom: 4px;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 10px;
+  border-radius: var(--r);
+  font-size: 13.5px;
+  color: var(--text2);
+  cursor: pointer;
+  transition: all .15s;
+  margin-bottom: 1px;
+  border: 1px solid transparent;
+}
+.nav-item:hover { background: var(--bg3); color: var(--text) }
+.nav-item.active {
+  background: rgba(91,123,255,.12);
+  border-color: rgba(91,123,255,.2);
+  color: var(--accent2);
+}
+.nav-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.nav-count {
+  margin-left: auto;
+  font-size: 11px;
+  font-family: var(--mono);
+  background: var(--bg4);
+  padding: 1px 6px;
+  border-radius: 10px;
+  color: var(--text3);
+}
+.sidebar-footer {
+  margin-top: auto;
+  padding: 16px 20px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--text3);
+}
+.sync-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+.sync-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%,100% { opacity: 1 }
+  50%      { opacity: .4 }
+}
+
+/* ── Main Content ──────────────────────────────────────────── */
+.main { flex: 1; overflow: hidden }
+
+/* ── Topbar ────────────────────────────────────────────────── */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 28px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg2);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.page-title {
+  font-size: 15px;
+  font-weight: 500;
+  flex: 1;
+}
+.search-wrap {
+  position: relative;
+}
+.search-wrap svg {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px; height: 14px;
+  stroke: var(--text3);
+  pointer-events: none;
+}
+.search-input {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 7px 12px 7px 32px;
+  color: var(--text);
+  font-size: 13px;
+  width: 220px;
+  outline: none;
+  transition: border-color .15s, width .2s;
+}
+.search-input::placeholder { color: var(--text3) }
+.search-input:focus {
+  border-color: var(--accent);
+  width: 280px;
+}
+.icon-btn {
+  width: 32px; height: 32px;
+  border-radius: var(--r);
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text2);
+  transition: all .15s;
+}
+.icon-btn:hover { background: var(--bg4); color: var(--text); border-color: var(--border2) }
+.icon-btn svg { width: 15px; height: 15px; stroke: currentColor }
+
+/* ── Content Area ──────────────────────────────────────────── */
+.content { padding: 24px 28px; }
+
+/* ── Metrics Row ───────────────────────────────────────────── */
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.metric {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 16px 18px;
+  transition: border-color .2s;
+}
+.metric:hover { border-color: var(--border2) }
+.metric-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.metric-icon {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+}
+.metric-icon svg { width: 16px; height: 16px; stroke: currentColor }
+.mi-blue  { background: rgba(91,123,255,.15); color: var(--accent2) }
+.mi-green { background: rgba(62,207,142,.12); color: var(--green) }
+.mi-amber { background: rgba(245,166,35,.12); color: var(--amber) }
+.mi-pink  { background: rgba(240,98,146,.12); color: var(--pink) }
+.metric-badge {
+  font-size: 10px;
+  font-family: var(--mono);
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: var(--bg4);
+  color: var(--text3);
+}
+.metric-badge.up   { background: rgba(62,207,142,.12); color: var(--green) }
+.metric-badge.down { background: rgba(240,98,146,.12);  color: var(--pink)  }
+.metric-val  { font-size: 26px; font-weight: 600; letter-spacing: -.5px }
+.metric-lbl  { font-size: 12px; color: var(--text3); margin-top: 2px }
+
+/* ── Filter Bar ────────────────────────────────────────────── */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.filter-sep {
+  width: 1px; height: 20px;
+  background: var(--border);
+  margin: 0 4px;
+}
+.filter-label {
+  font-size: 11px;
+  color: var(--text3);
+  font-weight: 500;
+  letter-spacing: .05em;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  color: var(--text2);
+  transition: all .15s;
+  background: transparent;
+}
+.chip svg { width: 12px; height: 12px; stroke: currentColor }
+.chip:hover { border-color: var(--border2); color: var(--text); background: var(--bg3) }
+.chip.active {
+  border-color: transparent;
+  color: #fff;
+}
+.chip-all.active   { background: var(--bg4); color: var(--text) }
+.chip-erp.active   { background: rgba(91,123,255,.2);  color: var(--accent2); border-color: rgba(91,123,255,.3) }
+.chip-crm.active   { background: rgba(62,207,142,.15); color: var(--green);   border-color: rgba(62,207,142,.25) }
+.chip-pms.active   { background: rgba(240,98,146,.15); color: var(--pink);    border-color: rgba(240,98,146,.25) }
+.chip-eip.active   { background: rgba(245,166,35,.12); color: var(--amber);   border-color: rgba(245,166,35,.2) }
+.chip-uiux.active  { background: rgba(38,198,218,.15); color: var(--teal);    border-color: rgba(38,198,218,.25) }
+.chip-dash.active  { background: rgba(91,123,255,.2);  color: var(--accent2); border-color: rgba(91,123,255,.3) }
+.chip-func.active  { background: rgba(245,166,35,.12); color: var(--amber);   border-color: rgba(245,166,35,.2) }
+.chip-news.active  { background: rgba(240,98,146,.15); color: var(--pink);    border-color: rgba(240,98,146,.25) }
+
+/* ── Sort + Count Row ──────────────────────────────────────── */
+.list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.result-count {
+  font-size: 13px;
+  color: var(--text3);
+}
+.result-count span { color: var(--text); font-weight: 500 }
+.sort-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text3);
+}
+.sort-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: var(--r);
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text2);
+  transition: all .15s;
+}
+.sort-btn:hover, .sort-btn.active { border-color: var(--border2); color: var(--text) }
+.sort-btn svg { width: 11px; height: 11px; stroke: currentColor }
+
+/* ── Cards Grid ────────────────────────────────────────────── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+/* ── Card ──────────────────────────────────────────────────── */
+.card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  cursor: pointer;
+  transition: border-color .18s, transform .18s, box-shadow .18s;
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(91,123,255,.03) 0%, transparent 60%);
+  pointer-events: none;
+}
+.card:hover {
+  border-color: var(--border2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.3);
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-source {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.source-avatar {
+  width: 24px; height: 24px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  flex-shrink: 0;
+  font-family: var(--mono);
+}
+.sa-rss        { background: rgba(245,166,35,.15);  color: var(--amber) }
+.sa-reddit     { background: rgba(240,98,146,.15);  color: var(--pink) }
+.sa-hackernews { background: rgba(245,166,35,.15);  color: var(--amber) }
+.sa-producthunt{ background: rgba(240,98,146,.12);  color: var(--pink) }
+.sa-devto      { background: rgba(62,207,142,.12);  color: var(--green) }
+.source-name {
+  font-size: 11px;
+  color: var(--text3);
+  max-width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bookmark-btn {
+  width: 26px; height: 26px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text3);
+  transition: all .15s;
+  background: transparent;
+  border: 1px solid transparent;
+}
+.bookmark-btn:hover { background: var(--bg3); color: var(--text); border-color: var(--border) }
+.bookmark-btn svg { width: 13px; height: 13px; stroke: currentColor }
+
+.card-title {
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--text);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-summary {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text2);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.tag-erp  { background: rgba(91,123,255,.12); color: var(--accent2) }
+.tag-crm  { background: rgba(62,207,142,.1);  color: var(--green)   }
+.tag-pms  { background: rgba(240,98,146,.1);  color: var(--pink)    }
+.tag-eip  { background: rgba(245,166,35,.1);  color: var(--amber)   }
+.tag-uiux { background: rgba(38,198,218,.1);  color: var(--teal)    }
+.tag-dash { background: rgba(91,123,255,.1);  color: var(--accent2) }
+.tag-func { background: rgba(245,166,35,.08); color: var(--amber)   }
+.tag-news { background: rgba(240,98,146,.08); color: var(--pink)    }
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--text3);
+  font-family: var(--mono);
+}
+.meta-item svg { width: 11px; height: 11px; stroke: currentColor }
+.open-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  color: var(--text2);
+  transition: all .15s;
+}
+.open-btn:hover {
+  background: rgba(91,123,255,.15);
+  border-color: rgba(91,123,255,.3);
+  color: var(--accent2);
+}
+.open-btn svg { width: 11px; height: 11px; stroke: currentColor }
+
+/* ── Dashboard Section ─────────────────────────────────────── */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.section-title svg { width: 15px; height: 15px; stroke: currentColor; color: var(--accent2) }
+.see-all {
+  font-size: 12px;
+  color: var(--text3);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  transition: color .15s;
+  background: none;
+  border: none;
+}
+.see-all:hover { color: var(--text2) }
+.see-all svg { width: 12px; height: 12px; stroke: currentColor }
+
+/* ── Distribution Bar ──────────────────────────────────────── */
+.dist-section {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.dist-group h4 {
+  font-size: 12px;
+  color: var(--text3);
+  margin-bottom: 12px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.dist-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.dist-label {
+  font-size: 12px;
+  color: var(--text2);
+  width: 68px;
+  flex-shrink: 0;
+}
+.dist-track {
+  flex: 1;
+  height: 5px;
+  background: var(--bg4);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.dist-fill { height: 100%; border-radius: 3px; transition: width .6s ease }
+.dist-num {
+  font-size: 11px;
+  font-family: var(--mono);
+  color: var(--text3);
+  width: 24px;
+  text-align: right;
+}
+
+/* ── Empty State ───────────────────────────────────────────── */
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text3);
+}
+.empty svg { width: 40px; height: 40px; stroke: currentColor; margin-bottom: 12px; opacity: .4 }
+.empty p { font-size: 14px }
+
+/* ── Loading ───────────────────────────────────────────────── */
+.loading {
+  text-align: center;
+  padding: 80px;
+  color: var(--text3);
+  font-size: 14px;
+}
+.spinner {
+  width: 28px; height: 28px;
+  border: 2px solid var(--border2);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  animation: spin .7s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg) } }
+
+/* ── Toast ─────────────────────────────────────────────────── */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: var(--r2);
+  padding: 12px 16px;
+  font-size: 13px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+  transform: translateY(80px);
+  opacity: 0;
+  transition: all .25s;
+  z-index: 100;
+}
+.toast.show { transform: translateY(0); opacity: 1 }
+.toast svg { width: 15px; height: 15px; stroke: var(--green) }
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .cards-grid { grid-template-columns: repeat(2, 1fr) }
+  .metrics-row { grid-template-columns: repeat(2, 1fr) }
+}
+@media (max-width: 720px) {
+  .sidebar { display: none }
+  .cards-grid { grid-template-columns: 1fr }
+  .content { padding: 16px }
+  .dist-section { grid-template-columns: 1fr }
+}
+
+/* ── Animations ────────────────────────────────────────────── */
+.card { animation: fadeUp .3s ease both }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px) }
+  to   { opacity: 1; transform: translateY(0) }
+}
+.card:nth-child(1)  { animation-delay: .03s }
+.card:nth-child(2)  { animation-delay: .06s }
+.card:nth-child(3)  { animation-delay: .09s }
+.card:nth-child(4)  { animation-delay: .12s }
+.card:nth-child(5)  { animation-delay: .15s }
+.card:nth-child(6)  { animation-delay: .18s }
+.card:nth-child(7)  { animation-delay: .21s }
+.card:nth-child(8)  { animation-delay: .24s }
+.card:nth-child(9)  { animation-delay: .27s }
+</style>
+</head>
+<body>
+
+<div class="layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-mark">
+        <div class="logo-icon">CI</div>
+        <span class="logo-name">IntelBoard</span>
+      </div>
+      <div class="logo-sub">競品情報系統</div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label">來源</div>
+      <div class="nav-item active" data-filter-channel="" onclick="setChannel(this,'')">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="currentColor" width="15" height="15"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        全部來源
+        <span class="nav-count" id="cnt-all">0</span>
+      </div>
+      <div class="nav-item" data-filter-channel="rss" onclick="setChannel(this,'rss')">
+        <div class="nav-dot" style="background:var(--amber)"></div>
+        RSS 文章
+        <span class="nav-count" id="cnt-rss">0</span>
+      </div>
+      <div class="nav-item" data-filter-channel="reddit" onclick="setChannel(this,'reddit')">
+        <div class="nav-dot" style="background:var(--pink)"></div>
+        Reddit
+        <span class="nav-count" id="cnt-reddit">0</span>
+      </div>
+      <div class="nav-item" data-filter-channel="hackernews" onclick="setChannel(this,'hackernews')">
+        <div class="nav-dot" style="background:var(--amber)"></div>
+        Hacker News
+        <span class="nav-count" id="cnt-hackernews">0</span>
+      </div>
+      <div class="nav-item" data-filter-channel="producthunt" onclick="setChannel(this,'producthunt')">
+        <div class="nav-dot" style="background:var(--pink)"></div>
+        Product Hunt
+        <span class="nav-count" id="cnt-producthunt">0</span>
+      </div>
+      <div class="nav-item" data-filter-channel="devto" onclick="setChannel(this,'devto')">
+        <div class="nav-dot" style="background:var(--green)"></div>
+        Dev.to
+        <span class="nav-count" id="cnt-devto">0</span>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label">系統</div>
+      <div class="nav-item" onclick="toggleSystemNav(this,'ERP')">
+        <div class="nav-dot" style="background:var(--accent2)"></div>
+        ERP
+        <span class="nav-count" id="cnt-ERP">0</span>
+      </div>
+      <div class="nav-item" onclick="toggleSystemNav(this,'CRM')">
+        <div class="nav-dot" style="background:var(--green)"></div>
+        CRM
+        <span class="nav-count" id="cnt-CRM">0</span>
+      </div>
+      <div class="nav-item" onclick="toggleSystemNav(this,'PMS')">
+        <div class="nav-dot" style="background:var(--pink)"></div>
+        PMS
+        <span class="nav-count" id="cnt-PMS">0</span>
+      </div>
+      <div class="nav-item" onclick="toggleSystemNav(this,'EIP')">
+        <div class="nav-dot" style="background:var(--amber)"></div>
+        EIP
+        <span class="nav-count" id="cnt-EIP">0</span>
+      </div>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="sync-status">
+        <div class="sync-dot"></div>
+        自動同步正常
+      </div>
+      <div id="last-sync-time" style="margin-top:2px">讀取中...</div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="main">
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="page-title" id="page-title">全部情報</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="search-input" type="text" placeholder="搜尋標題、關鍵字..." id="search-input" oninput="onSearch()">
+      </div>
+      <button class="icon-btn" title="重新整理" onclick="loadData()">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+      </button>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Loading -->
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        載入情報資料中...
+      </div>
+
+      <!-- Metrics Row -->
+      <div class="metrics-row" id="metrics-row" style="display:none">
+        <div class="metric">
+          <div class="metric-top">
+            <div class="metric-icon mi-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
+            </div>
+            <span class="metric-badge up" id="badge-new">+0 今日</span>
+          </div>
+          <div class="metric-val" id="metric-total">0</div>
+          <div class="metric-lbl">累積情報總數</div>
+        </div>
+        <div class="metric">
+          <div class="metric-top">
+            <div class="metric-icon mi-green">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <span class="metric-badge up">今日新增</span>
+          </div>
+          <div class="metric-val" id="metric-new">0</div>
+          <div class="metric-lbl">今日新增篇數</div>
+        </div>
+        <div class="metric">
+          <div class="metric-top">
+            <div class="metric-icon mi-amber">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <span class="metric-badge">UIUX 精選</span>
+          </div>
+          <div class="metric-val" id="metric-uiux">0</div>
+          <div class="metric-lbl">UIUX 體驗文章</div>
+        </div>
+        <div class="metric">
+          <div class="metric-top">
+            <div class="metric-icon mi-pink">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <span class="metric-badge">截圖收藏</span>
+          </div>
+          <div class="metric-val" id="metric-dash">0</div>
+          <div class="metric-lbl">Dashboard 截圖</div>
+        </div>
+      </div>
+
+      <!-- Distribution -->
+      <div class="dist-section" id="dist-section" style="display:none">
+        <div class="dist-group">
+          <h4>系統分布</h4>
+          <div id="dist-systems"></div>
+        </div>
+        <div class="dist-group">
+          <h4>類型分布</h4>
+          <div id="dist-types"></div>
+        </div>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" id="filter-bar" style="display:none">
+        <span class="filter-label">系統</span>
+        <button class="chip chip-all active" onclick="setSystem(this,'')">全部</button>
+        <button class="chip chip-erp" onclick="setSystem(this,'ERP')">ERP</button>
+        <button class="chip chip-crm" onclick="setSystem(this,'CRM')">CRM</button>
+        <button class="chip chip-pms" onclick="setSystem(this,'PMS')">PMS</button>
+        <button class="chip chip-eip" onclick="setSystem(this,'EIP')">EIP</button>
+        <div class="filter-sep"></div>
+        <span class="filter-label">類型</span>
+        <button class="chip chip-all active" onclick="setType(this,'')">全部</button>
+        <button class="chip chip-uiux" onclick="setType(this,'UIUX')">UIUX</button>
+        <button class="chip chip-dash" onclick="setType(this,'Dashboard')">Dashboard</button>
+        <button class="chip chip-func" onclick="setType(this,'功能分析')">功能分析</button>
+        <button class="chip chip-news" onclick="setType(this,'競品新聞')">競品新聞</button>
+      </div>
+
+      <!-- List Header -->
+      <div class="list-header" id="list-header" style="display:none">
+        <div class="result-count">顯示 <span id="shown-count">0</span> 筆</div>
+        <div class="sort-wrap">
+          排序
+          <button class="sort-btn active" id="sort-date" onclick="setSort('date')">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            最新
+          </button>
+          <button class="sort-btn" id="sort-score" onclick="setSort('score')">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            熱門
+          </button>
+        </div>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="cards-grid" id="cards-grid"></div>
+
+      <!-- Empty -->
+      <div class="empty" id="empty-state" style="display:none">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <p>沒有符合條件的情報</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+  <span id="toast-msg"></span>
+</div>
+
+<script>
+// ── State ─────────────────────────────────────────────────────
+let allArticles  = [];
+let filterSystem = '';
+let filterType   = '';
+let filterChannel= '';
+let searchQuery  = '';
+let sortMode     = 'date';
+let bookmarks    = JSON.parse(localStorage.getItem('ci-bookmarks') || '[]');
+
+// ── Load Data ─────────────────────────────────────────────────
+async function loadData() {
+  document.getElementById('loading').style.display = 'block';
+  ['metrics-row','dist-section','filter-bar','list-header','cards-grid']
+    .forEach(id => document.getElementById(id).style.display = 'none');
+
+  try {
+    // 嘗試從 data/articles.json 讀取（本地或 GitHub Pages）
+    const res = await fetch('data/articles.json?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+
+    allArticles = data.articles || [];
+    updateMetrics(data.stats || {});
+    updateSidebarCounts(data.stats || {});
+    updateDistribution(data.stats || {});
+    updateLastSync(data.stats?.last_updated || '');
+
+    document.getElementById('loading').style.display = 'none';
+    ['metrics-row','dist-section','filter-bar','list-header']
+      .forEach(id => {
+        document.getElementById(id).style.display = '';
+      });
+
+    render();
+  } catch (e) {
+    document.getElementById('loading').innerHTML =
+      '<p style="color:var(--pink)">⚠ 無法載入 data/articles.json<br><small style="color:var(--text3)">請先執行爬蟲或確認檔案路徑</small></p>';
+    console.error(e);
+  }
+}
+
+// ── Metrics ───────────────────────────────────────────────────
+function updateMetrics(stats) {
+  document.getElementById('metric-total').textContent = stats.total ?? 0;
+  document.getElementById('metric-new').textContent   = stats.new_today ?? 0;
+  document.getElementById('badge-new').textContent    = '+' + (stats.new_today ?? 0) + ' 今日';
+  document.getElementById('metric-uiux').textContent  = stats.by_type?.['UIUX'] ?? 0;
+  document.getElementById('metric-dash').textContent  = stats.by_type?.['Dashboard'] ?? 0;
+}
+
+function updateSidebarCounts(stats) {
+  const byChannel = stats.by_channel || {};
+  const bySystem  = stats.by_system  || {};
+  const total     = stats.total || 0;
+  document.getElementById('cnt-all').textContent        = total;
+  ['rss','reddit','hackernews','producthunt','devto'].forEach(ch => {
+    const el = document.getElementById('cnt-' + ch);
+    if (el) el.textContent = byChannel[ch] ?? 0;
+  });
+  ['ERP','CRM','PMS','EIP'].forEach(s => {
+    const el = document.getElementById('cnt-' + s);
+    if (el) el.textContent = bySystem[s] ?? 0;
+  });
+}
+
+function updateLastSync(iso) {
+  const el = document.getElementById('last-sync-time');
+  if (!iso) { el.textContent = '未知'; return; }
+  const d = new Date(iso);
+  el.textContent = d.toLocaleDateString('zh-TW') + ' ' +
+    d.toLocaleTimeString('zh-TW', {hour:'2-digit', minute:'2-digit'});
+}
+
+// ── Distribution Bars ─────────────────────────────────────────
+function updateDistribution(stats) {
+  const sysColors = {ERP:'var(--accent2)', CRM:'var(--green)', PMS:'var(--pink)', EIP:'var(--amber)'};
+  const typColors = {UIUX:'var(--teal)', Dashboard:'var(--accent2)', 功能分析:'var(--amber)', 競品新聞:'var(--pink)'};
+
+  renderDist('dist-systems', stats.by_system || {}, sysColors);
+  renderDist('dist-types',   stats.by_type   || {}, typColors);
+}
+function renderDist(id, data, colors) {
+  const container = document.getElementById(id);
+  const max = Math.max(...Object.values(data), 1);
+  container.innerHTML = Object.entries(data).map(([k, v]) => `
+    <div class="dist-row">
+      <span class="dist-label">${k}</span>
+      <div class="dist-track">
+        <div class="dist-fill" style="width:${Math.round(v/max*100)}%;background:${colors[k]||'var(--text3)'}"></div>
+      </div>
+      <span class="dist-num">${v}</span>
+    </div>`).join('');
+}
+
+// ── Filter & Sort ─────────────────────────────────────────────
+function setSystem(el, val) {
+  filterSystem = val;
+  document.querySelectorAll('.chip-erp,.chip-crm,.chip-pms,.chip-eip,.chip-all')
+    .forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+  render();
+}
+function setType(el, val) {
+  filterType = val;
+  const allTypeChips = document.querySelectorAll('.chip-uiux,.chip-dash,.chip-func,.chip-news');
+  document.querySelectorAll('.chip-all').forEach(c => {
+    // reset only type-all (second "全部" chip)
+  });
+  // find type "全部" buttons (those without system class)
+  document.querySelectorAll('.filter-bar .chip').forEach(c => {
+    if (c.onclick && c.onclick.toString().includes("setType")) c.classList.remove('active');
+  });
+  el.classList.add('active');
+  render();
+}
+function setChannel(el, val) {
+  filterChannel = val;
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('page-title').textContent =
+    val ? (val === 'rss' ? 'RSS 文章' :
+           val === 'reddit' ? 'Reddit' :
+           val === 'hackernews' ? 'Hacker News' :
+           val === 'producthunt' ? 'Product Hunt' : 'Dev.to')
+        : '全部情報';
+  render();
+}
+function toggleSystemNav(el, sys) {
+  const isSame = filterSystem === sys;
+  filterSystem = isSame ? '' : sys;
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  if (!isSame) el.classList.add('active');
+  else document.querySelector('[data-filter-channel=""]').classList.add('active');
+  render();
+}
+function setSort(mode) {
+  sortMode = mode;
+  document.getElementById('sort-date').classList.toggle('active',  mode === 'date');
+  document.getElementById('sort-score').classList.toggle('active', mode === 'score');
+  render();
+}
+function onSearch() {
+  searchQuery = document.getElementById('search-input').value.trim().toLowerCase();
+  render();
+}
+
+// ── Render ────────────────────────────────────────────────────
+function render() {
+  let items = allArticles.filter(a => {
+    if (filterChannel && a.channel !== filterChannel) return false;
+    if (filterSystem  && !a.systems?.includes(filterSystem))  return false;
+    if (filterType    && !a.types?.includes(filterType))      return false;
+    if (searchQuery) {
+      const hay = (a.title + a.summary + (a.source||'')).toLowerCase();
+      if (!hay.includes(searchQuery)) return false;
+    }
+    return true;
+  });
+
+  if (sortMode === 'score') {
+    items.sort((a,b) => (b.score||0) - (a.score||0));
+  } else {
+    items.sort((a,b) => new Date(b.date) - new Date(a.date));
+  }
+
+  document.getElementById('shown-count').textContent = items.length;
+  document.getElementById('list-header').style.display = '';
+
+  const grid  = document.getElementById('cards-grid');
+  const empty = document.getElementById('empty-state');
+
+  if (items.length === 0) {
+    grid.innerHTML = '';
+    empty.style.display = '';
+    return;
+  }
+  empty.style.display = 'none';
+  grid.innerHTML = items.map(renderCard).join('');
+}
+
+// ── Card HTML ─────────────────────────────────────────────────
+const CHANNEL_META = {
+  rss:         { label: 'RSS',  cls: 'sa-rss' },
+  reddit:      { label: 'Rd',   cls: 'sa-reddit' },
+  hackernews:  { label: 'HN',   cls: 'sa-hackernews' },
+  producthunt: { label: 'PH',   cls: 'sa-producthunt' },
+  devto:       { label: 'DT',   cls: 'sa-devto' },
+};
+const SYS_TAG_CLS  = { ERP:'tag-erp',  CRM:'tag-crm',  PMS:'tag-pms',  EIP:'tag-eip' };
+const TYPE_TAG_CLS = { UIUX:'tag-uiux', Dashboard:'tag-dash', 功能分析:'tag-func', 競品新聞:'tag-news' };
+
+function renderCard(a) {
+  const ch  = CHANNEL_META[a.channel] || { label: '?', cls: 'sa-rss' };
+  const bm  = bookmarks.includes(a.id);
+  const rel = relativeTime(a.date);
+
+  const sysTags  = (a.systems||[]).map(s =>
+    `<span class="tag ${SYS_TAG_CLS[s]||'tag-func'}">${s}</span>`).join('');
+  const typeTags = (a.types||[]).slice(0,2).map(t =>
+    `<span class="tag ${TYPE_TAG_CLS[t]||'tag-func'}">${t}</span>`).join('');
+
+  const scoreMeta = a.score ? `
+    <span class="meta-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+      ${a.score}
+    </span>` : '';
+  const commentMeta = a.comments ? `
+    <span class="meta-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      ${a.comments}
+    </span>` : '';
+
+  return `
+  <div class="card" onclick="openArticle('${escHtml(a.url)}','${escHtml(a.id)}')">
+    <div class="card-header">
+      <div class="card-source">
+        <div class="source-avatar ${ch.cls}">${ch.label}</div>
+        <span class="source-name">${escHtml(a.source||'')}</span>
+      </div>
+      <button class="bookmark-btn" onclick="toggleBookmark(event,'${escHtml(a.id)}')" title="收藏">
+        <svg viewBox="0 0 24 24" fill="${bm ? 'currentColor' : 'none'}" stroke-width="2" style="${bm ? 'color:var(--accent2)' : ''}"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+      </button>
+    </div>
+    <div class="card-title">${escHtml(a.title||'')}</div>
+    ${a.summary ? `<div class="card-summary">${escHtml(a.summary)}</div>` : ''}
+    <div class="card-tags">${sysTags}${typeTags}</div>
+    <div class="card-footer">
+      <div class="card-meta">
+        <span class="meta-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ${rel}
+        </span>
+        ${scoreMeta}${commentMeta}
+      </div>
+      <span class="open-btn">
+        開啟
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </span>
+    </div>
+  </div>`;
+}
+
+// ── Actions ───────────────────────────────────────────────────
+function openArticle(url, id) {
+  window.open(url, '_blank', 'noopener');
+}
+function toggleBookmark(e, id) {
+  e.stopPropagation();
+  if (bookmarks.includes(id)) {
+    bookmarks = bookmarks.filter(b => b !== id);
+    showToast('已取消收藏');
+  } else {
+    bookmarks.push(id);
+    showToast('已加入收藏 ★');
+  }
+  localStorage.setItem('ci-bookmarks', JSON.stringify(bookmarks));
+  render();
+}
+
+// ── Helpers ───────────────────────────────────────────────────
+function relativeTime(iso) {
+  if (!iso) return '未知';
+  const diff = (Date.now() - new Date(iso)) / 1000;
+  if (diff < 3600)  return Math.floor(diff / 60) + ' 分鐘前';
+  if (diff < 86400) return Math.floor(diff / 3600) + ' 小時前';
+  return Math.floor(diff / 86400) + ' 天前';
+}
+function escHtml(s) {
+  return String(s || '')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  document.getElementById('toast-msg').textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+// ── Init ──────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
