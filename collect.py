@@ -173,30 +173,49 @@ def analyze_tags(title: str, summary: str) -> list:
     return tags if tags else ["產業趨勢"]
 
 
-def fetch_thumbnail(url: str, timeout: int = 8) -> str:
-    """嘗試抓取頁面的 og:image 作為縮圖，失敗回傳空字串"""
+def fetch_thumbnail(url: str, timeout: int = 10) -> str:
+    """
+    優先順序：
+    1. og:image
+    2. twitter:image
+    3. 第一張文章圖片
+    """
     try:
-        r = requests.get(url, timeout=timeout, headers={
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-        })
-        soup = BeautifulSoup(r.content, "html.parser")
+        real_url = resolve_news_url(url)
 
-        # 優先 og:image
+        r = requests.get(
+            real_url,
+            timeout=timeout,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+            }
+        )
+
+        soup = BeautifulSoup(r.text, "html.parser")
+
         og = soup.find("meta", property="og:image")
         if og and og.get("content"):
             img = og["content"].strip()
             if img.startswith("http"):
                 return img
 
-        # 次選 twitter:image
         tw = soup.find("meta", attrs={"name": "twitter:image"})
         if tw and tw.get("content"):
             img = tw["content"].strip()
             if img.startswith("http"):
                 return img
 
-    except Exception:
-        pass
+        img_tag = soup.find("img")
+        if img_tag and img_tag.get("src"):
+            img = img_tag["src"]
+            if img.startswith("//"):
+                img = "https:" + img
+            if img.startswith("http"):
+                return img
+
+    except Exception as e:
+        print(f"縮圖抓取失敗: {e}")
+
     return ""
 
 
@@ -214,6 +233,21 @@ def calculate_score(title: str, description: str, tags: list, is_zhtw: bool) -> 
     if is_zhtw:
         score += 40   # 繁中大幅加權
     return score
+
+
+
+def resolve_news_url(url: str) -> str:
+    """解析 Google News 轉址為真實文章網址"""
+    try:
+        r = requests.get(
+            url,
+            timeout=10,
+            allow_redirects=True,
+            headers={"User-Agent": "Mozilla/5.0"}
+        )
+        return r.url
+    except Exception:
+        return url
 
 
 # ── 主程式 ────────────────────────────────────────────────────────────────────
@@ -274,6 +308,10 @@ def collect_all_intelligence():
 
                 # 縮圖（有流量限制時可關閉：thumbnail = ""）
                 thumbnail = fetch_thumbnail(url)
+
+                if not thumbnail:
+                    thumbnail = "https://images.unsplash.com/photo-1552664730-d307ca884978"
+
                 time.sleep(0.5)   # 禮貌性間隔
 
                 uid = "rss_" + hashlib.md5(url.encode()).hexdigest()[:10]
