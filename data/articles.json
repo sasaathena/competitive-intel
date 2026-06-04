@@ -1,35 +1,31 @@
 {
   "stats": {
-    "total": 10,
-    "last_updated": "2026-06-04T06:43:45.226424"
+    "total": 8,
+    "new_today": 8,
+    "last_updated": "2026-06-04T06:59:50.682379",
+    "skipped_finance": 6,
+    "skipped_irrelevant": 13,
+    "by_system": {
+      "EIP": 5,
+      "CRM": 3
+    },
+    "by_type": {
+      "產業趨勢": 8
+    },
+    "by_channel": {
+      "rss": 8
+    }
   },
   "articles": [
     {
-      "id": "rss_4159289379630159166",
-      "channel": "rss",
-      "source": "Stripe",
-      "title": "OpenAI、Anthropic 和 Stripe 推動私人市場熱潮，IPO Genie 專注於提供 IPO 前投資機會 - KuCoin",
-      "summary": "OpenAI、Anthropic 和 Stripe 推動私人市場熱潮，IPO Genie 專注於提供 IPO 前投資機會 KuCoin",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNZUstcWlrRWZQUFoxN0ZCV1RJUnIxNmxWVWYxUlJZaXdSZzUyak5XZW5jU1FSeG10UVZZMjl4TUJRWEtwVVd2bmxBT3ZrQ3BuUUM3Sk1ZSlgyVktNTmdER0JlMHhtUXZNSHZXY0trd2tVaksxVktseUEzelM5MG4wQmVVSC1tSG9qX29SQ0todnY1bDRWd3QzNmZsalhLZ0pMdmswMkFiTGhiSmoxcTRrcGtQRzgwSHhTVnVHcDJRTmh5ajhzNWI0RXpB?oc=5",
-      "date": "2026-06-03T13:35:44",
-      "fetched": "2026-06-04T06:43:45.002097",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "score": 100
-    },
-    {
-      "id": "rss_-6181528308362886094",
+      "id": "rss_6581672135130682220",
       "channel": "rss",
       "source": "Workday",
       "title": "Workday推出面向開發人員的新工具，用於構建、連接和驗證面向人力資源、財務和IT領域的AI智能體 - Moomoo",
       "summary": "Workday推出面向開發人員的新工具，用於構建、連接和驗證面向人力資源、財務和IT領域的AI智能體 Moomoo",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMHJadmpQdGY2VUJiV2JYX1VSQlBLTE1FcS1IS1lsOXg1QTdXYTltX1VGUHdrTzVrWEFDbG13QTA4WEx2aXRjRWpsQm1GNHQ1UWFYUEIzYjZXdnV6WWJRdlpZTDdxc3ZuTTQ2TXk5YkhlbEFkXy1fWkxpR2gxM0JVaWVBblNiWGVFc1dWWlZ6czM4VEtJaFRDSWFSamxsV0pXOXRNV29Bakc3cU1aY0E?oc=5",
       "date": "2026-06-02T13:05:00",
-      "fetched": "2026-06-04T06:43:44.095099",
+      "fetched": "2026-06-04T06:59:49.383656",
       "systems": [
         "EIP"
       ],
@@ -39,14 +35,14 @@
       "score": 100
     },
     {
-      "id": "rss_737134461434419997",
+      "id": "rss_-8269456889693882998",
       "channel": "rss",
       "source": "SAP SuccessFactors",
       "title": "三十年前金士頓為IBM打造亞太系統，三十年後IBM協助金士頓推動亞太人資數位轉型 - 商周",
       "summary": "三十年前金士頓為IBM打造亞太系統，三十年後IBM協助金士頓推動亞太人資數位轉型 商周",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9idmY2WXJIR1pwX19sUHVaM2l6LWtuRF9RUU1GOFFEbG9JdGpHZnZCMEtBTmxqazlMblEtVlFkM09DeVFPY3pMcVVpT1IwZEV2cXBFcFgtVlFYWHJNT215amFIeFBjWE0?oc=5",
       "date": "2026-06-01T16:00:00",
-      "fetched": "2026-06-04T06:43:44.317224",
+      "fetched": "2026-06-04T06:59:49.626826",
       "systems": [
         "EIP"
       ],
@@ -56,48 +52,14 @@
       "score": 100
     },
     {
-      "id": "rss_-4531952242380571369",
+      "id": "rss_-9172454967833617445",
       "channel": "rss",
-      "source": "Workday",
-      "title": "Workday為本港中型企業引入企業級AI及超級智能 - IT PRO Magazine",
-      "summary": "Workday為本港中型企業引入企業級AI及超級智能 IT PRO Magazine",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBKQVdFRzFJN3ZFTVFyWFlrX1ZfdkwzSFFIdzB0dHFxaTlJdV9sUE9sUl9ZMzEtakdHNmw1RjBRTnhlUWFTUm9ucjAwNUJuc0REQ1NBeVhB?oc=5",
-      "date": "2026-05-29T14:57:36",
-      "fetched": "2026-06-04T06:43:44.093368",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "score": 60
-    },
-    {
-      "id": "rss_-2849316984975755496",
-      "channel": "rss",
-      "source": "Workday",
-      "title": "AI應用｜資料分散成AI落地最大挑戰 Workday籲港企整合底層數據 - 香港經濟日報HKET",
-      "summary": "AI應用｜資料分散成AI落地最大挑戰 Workday籲港企整合底層數據 香港經濟日報HKET",
-      "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxQWG5RbWY2X3F6ZXpTSTJGMm5taW1GR2JBdExaa3E1eDhOaTZsNUVBdkRhVGpINXAtaGRvVGZxLXFqNUxRcmc2a2JybnRDRXpoVlVaRVlPMjJ6Ml8xSERLUzFIX1FId2VHdFhSYzdNaUpGbGZ1WEMyNjl5Yk5jU1B6WXlqdlY5bzZhT2JQQmdrcEk5QVh5ekNRZGJEWW1wZ0hQTXc2OWxwVTh2OUdlNzZDUm5fbERTYnZnRDdHSXUzM0Jmc2t3NkVUMC1iWXd4aUF1VVZZdmk5TVJHNXRNVWQ2VDQ4bEpHRjZEYlo1ZEpSaXoxLXp3cHFaZzJkTXVWdnBDUEtKdHFEZ1RfQWd4cExFSnZhVlZ2d2NzN0tRaGszNlVBN2RpZkR3anBSSmtYRFpJejVZeG1EUnlKdDlOUnJxTE5IbXNqTkVxQmp5WkdCaWdZaUJvZndLY3RfdmVfM3U1NGVJYjJjeHRLMU5kbmJBQ1BacVRkV1hmNEoyUVhnTQ?oc=5",
-      "date": "2026-05-29T09:01:10",
-      "fetched": "2026-06-04T06:43:44.095740",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "score": 100
-    },
-    {
-      "id": "rss_5338975219050477505",
-      "channel": "rss",
-      "source": "HubSpot",
-      "title": "Hububble躋身《金融時報》亞太高成長企業榜 協助企業建構AI Agent營運架構 - 蕃新聞",
-      "summary": "Hububble躋身《金融時報》亞太高成長企業榜 協助企業建構AI Agent營運架構 蕃新聞",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zeXhlY3ZyanRTb3p1cFRVRnZlenBnMUpvNmFEemE0Q1NPek9jcVZicUxhcXpLV20taV95RWZYV1h5clZkZFQ5NTVCam1xTkNjMWc?oc=5",
-      "date": "2026-05-29T08:34:00",
-      "fetched": "2026-06-04T06:43:45.226305",
+      "source": "Stripe",
+      "title": "AI 替你花錢的時代——誰在坐地收稅？ - news.cnyes.com",
+      "summary": "AI 替你花錢的時代——誰在坐地收稅？ news.cnyes.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9DbXdLTy13UGw5SE1BYlVHcnFBbGI2bnJaOXBDR19obG5XNXNEdWlnRENGZ3huUnJINmxuZERUdUJFTk5qNXJyUUJhS2VDQVU?oc=5",
+      "date": "2026-05-30T04:00:19",
+      "fetched": "2026-06-04T06:59:50.440153",
       "systems": [
         "CRM"
       ],
@@ -107,14 +69,14 @@
       "score": 60
     },
     {
-      "id": "rss_2306251744377713534",
+      "id": "rss_-6483534913846323997",
       "channel": "rss",
       "source": "Workday",
-      "title": "自助代理｜Workday為中型企業引入企業級AI 助透過可信數據加速決策 - wepro180",
-      "summary": "自助代理｜Workday為中型企業引入企業級AI 助透過可信數據加速決策 wepro180",
-      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQRWJlMG9XWjF5QTNnRU1vWW96TEhYeDBoQjE0WS1abHplWG4xOTRVNVhDdU1VcC1BQmJGUWtVck1HbXZOZjRJVnVnZFJyZHlvcV9TUHdfV2FuOHRUU0RQRU9oQ0JlS1lDTTlLM1hONm5YRUFCcmdwMXNaaWstalRsakhpNXFnSGtBSjcweHFUWGJUUkxvMHNZTUhuVTVxTVFCUUxHdEV0bVF1WlNKZEF5cjhEZU9jNVBvbGpkZGhfd0g5UGJnemJVQXcxV1RGbFBtR1dZdHpreVlxVmhrUXVLcURGd0ZmY21uUTZVR054U1gycVhfX2RsVVNoclNDN05vWmMxY25JdnFkMk9SVklvTDNEN0IzWHBiSXBxNkowdUViUHJHY2tsUnZjaGtKSVhDclN2cVBwSlF2U2Z1ZkE1RFJwelpSSXc?oc=5",
-      "date": "2026-05-29T03:29:13",
-      "fetched": "2026-06-04T06:43:44.094392",
+      "title": "Workday為本港中型企業引入企業級AI及超級智能 - IT PRO Magazine",
+      "summary": "Workday為本港中型企業引入企業級AI及超級智能 IT PRO Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBKQVdFRzFJN3ZFTVFyWFlrX1ZfdkwzSFFIdzB0dHFxaTlJdV9sUE9sUl9ZMzEtakdHNmw1RjBRTnhlUWFTUm9ucjAwNUJuc0REQ1NBeVhB?oc=5",
+      "date": "2026-05-29T14:57:36",
+      "fetched": "2026-06-04T06:59:49.382588",
       "systems": [
         "EIP"
       ],
@@ -124,14 +86,14 @@
       "score": 60
     },
     {
-      "id": "rss_6559966846912595272",
+      "id": "rss_-5929473793658790112",
       "channel": "rss",
       "source": "Workday",
-      "title": "Workday與Google Cloud攜手合作，推出人力資源及財務AI智能代理 - Investing.com 香港 - 股市報價& 財經新聞",
-      "summary": "Workday與Google Cloud攜手合作，推出人力資源及財務AI智能代理 Investing.com 香港 - 股市報價& 財經新聞",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBLSEtIZGJiUTFoVXQzOXprc19RNEtTVk9CRnRDaWNnUFhGSjhqakJ6ck16QkhrN0VDSWM5UXNhVnRGSmcyR3ZtQkdNQ1FZTmFJbElncUh6N1pJMEhJemVKVjBiZHJpc2FycnpBWURabko?oc=5",
-      "date": "2026-05-28T13:07:49",
-      "fetched": "2026-06-04T06:43:44.095431",
+      "title": "AI應用｜資料分散成AI落地最大挑戰 Workday籲港企整合底層數據 - 香港經濟日報HKET",
+      "summary": "AI應用｜資料分散成AI落地最大挑戰 Workday籲港企整合底層數據 香港經濟日報HKET",
+      "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxQWG5RbWY2X3F6ZXpTSTJGMm5taW1GR2JBdExaa3E1eDhOaTZsNUVBdkRhVGpINXAtaGRvVGZxLXFqNUxRcmc2a2JybnRDRXpoVlVaRVlPMjJ6Ml8xSERLUzFIX1FId2VHdFhSYzdNaUpGbGZ1WEMyNjl5Yk5jU1B6WXlqdlY5bzZhT2JQQmdrcEk5QVh5ekNRZGJEWW1wZ0hQTXc2OWxwVTh2OUdlNzZDUm5fbERTYnZnRDdHSXUzM0Jmc2t3NkVUMC1iWXd4aUF1VVZZdmk5TVJHNXRNVWQ2VDQ4bEpHRjZEYlo1ZEpSaXoxLXp3cHFaZzJkTXVWdnBDUEtKdHFEZ1RfQWd4cExFSnZhVlZ2d2NzN0tRaGszNlVBN2RpZkR3anBSSmtYRFpJejVZeG1EUnlKdDlOUnJxTE5IbXNqTkVxQmp5WkdCaWdZaUJvZndLY3RfdmVfM3U1NGVJYjJjeHRLMU5kbmJBQ1BacVRkV1hmNEoyUVhnTQ?oc=5",
+      "date": "2026-05-29T09:01:10",
+      "fetched": "2026-06-04T06:59:49.384268",
       "systems": [
         "EIP"
       ],
@@ -141,14 +103,31 @@
       "score": 100
     },
     {
-      "id": "rss_5879166587302470114",
+      "id": "rss_3782098961567199474",
+      "channel": "rss",
+      "source": "HubSpot",
+      "title": "Hububble躋身《金融時報》亞太高成長企業榜 協助企業建構AI Agent營運架構 - 蕃新聞",
+      "summary": "Hububble躋身《金融時報》亞太高成長企業榜 協助企業建構AI Agent營運架構 蕃新聞",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zeXhlY3ZyanRTb3p1cFRVRnZlenBnMUpvNmFEemE0Q1NPek9jcVZicUxhcXpLV20taV95RWZYV1h5clZkZFQ5NTVCam1xTkNjMWc?oc=5",
+      "date": "2026-05-29T08:34:00",
+      "fetched": "2026-06-04T06:59:50.682253",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "score": 60
+    },
+    {
+      "id": "rss_-5974110265945722586",
       "channel": "rss",
       "source": "Workday",
       "title": "Workday 為本港中型企業引入企業級 AI 及超級智能解決方案 - Techritual Hong Kong",
       "summary": "Workday 為本港中型企業引入企業級 AI 及超級智能解決方案 Techritual Hong Kong",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5tUGJIZnZIeDdTWkpXTGExSlNCX1c2aVFUR0hQMHltNU5vRlJZb25CeGJnSHpCd2k2ZktGZzB0MVR5NUdEU2NXd09MQWxCSkc5ZjczaTZMOFA?oc=5",
       "date": "2026-05-28T10:02:42",
-      "fetched": "2026-06-04T06:43:44.096153",
+      "fetched": "2026-06-04T06:59:49.384556",
       "systems": [
         "EIP"
       ],
@@ -158,14 +137,14 @@
       "score": 60
     },
     {
-      "id": "rss_5605211033010516779",
+      "id": "rss_-9198712700078478616",
       "channel": "rss",
       "source": "Stripe",
       "title": "Robinhood 宣布串聯 AI 代理與金融平台，70 萬會員成首波測試對象 - TechOrange 科技報橘",
       "summary": "Robinhood 宣布串聯 AI 代理與金融平台，70 萬會員成首波測試對象 TechOrange 科技報橘",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBMTE9VLU9iWDJEVkVIUHhXTDU2T2ZSb0lTLWJHUWxRSzVaY29CTGMtUzZwR3FXQ3N5WUdJeXNZVU90TTdfNEN4aGZuUWQ1UVI1LXJJNWpSdUxzSFRhRzFFWC1INHJKSXVOS3NkNWpTeFAyeFhMMzEw?oc=5",
       "date": "2026-05-28T07:30:14",
-      "fetched": "2026-06-04T06:43:45.001516",
+      "fetched": "2026-06-04T06:59:50.439591",
       "systems": [
         "CRM"
       ],
