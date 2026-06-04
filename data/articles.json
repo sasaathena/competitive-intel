@@ -1,1035 +1,178 @@
 {
   "stats": {
-    "total": 59,
-    "new_today": 26,
-    "last_updated": "2026-06-04T06:08:00.314822",
-    "by_system": {
-      "EIP": 17,
-      "CRM": 19
-    },
-    "by_type": {
-      "用戶體驗": 26,
-      "功能更新": 0,
-      "產業趨勢": 3
-    },
-    "by_channel": {
-      "rss": 41,
-      "threads": 0,
-      "reddit": 0
-    }
+    "total": 10,
+    "last_updated": "2026-06-04T06:43:45.226424"
   },
   "articles": [
     {
-      "id": "1afe53cce1f1",
-      "title": "不確実な時代にIT組織を率いる若きリーダーの意思決定軸は「自分自身に説明できるか」──カルビー井原史晶氏に聞く",
-      "url": "https://www.cio.com/article/4178898/%e4%b8%8d%e7%a2%ba%e5%ae%9f%e3%81%aa%e6%99%82%e4%bb%a3%e3%81%abit%e7%b5%84%e7%b9%94%e3%82%92%e7%8e%87%e3%81%84%e3%82%8b%e8%8b%a5%e3%81%8d%e3%83%aa%e3%83%bc%e3%83%80%e3%83%bc%e3%81%ae%e6%84%8f%e6%80%9d.html",
-      "source": "CIO.com",
-      "summary": "SIer、監査法人を経て事業会社へ\n——これまでの経歴は？\n私が社会人になったのは、「2000年問題」が大きな話題になっていた2000年で、大手商社系のシステム子会社に入社しました。以来10年以上にわたり、SIerとしてシステム導入に携わってきました。\n中でも長く担当していたのが、SAPの導入支援です。顧客企業の業務プロセスを理解し、それをシステムへ落とし込んでいく役割を担い、業務とITをどう結びつけるかに向き合ってきました。\nこのSIer時代に次第に気になるようになったテーマが「監査」でした。担当していた菓子メーカーのプロジェクトでも、「監査上、この観点が重要になる」といった話がた",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "Wed, 03 Jun 2026 23:00:00 +0000",
-      "fetched": "2026-06-04T02:50:46.937904+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "d2bfbbad5256",
-      "title": "Google's new open source Gemma 4 12B analyzes audio, video — and runs entirely locally on a typical 16GB enterprise laptop",
-      "url": "https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop",
-      "source": "VentureBeat",
-      "summary": "While many AI open source model providers are pursuing larger and more powerful models, Google is still giving attention to the smaller, more local side of the market. Today, the tech giant released Gemma 4 12B, an 11.95-billion-parameter open-weights model with permissive Apache 2.0 license optimiz",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "UIUX",
-        "競品新聞"
-      ],
-      "date": "Wed, 03 Jun 2026 18:49:00 GMT",
-      "fetched": "2026-06-04T02:50:50.415458+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "5ee3c0e92b4d",
-      "title": "American Express aboga por democratizar la analítica, no los datos",
-      "url": "https://www.cio.com/article/4180630/american-express-aboga-por-democratizar-la-analitica-no-los-datos.html",
-      "source": "CIO.com",
-      "summary": "La democratización de los datos ha sido una expresión de moda durante años, pero Chris Gifford, director de datos (CDO) de American Express, sostiene que es mucho más útil pensar en la democratización de la analítica. Hacer que la analítica sea más accesible permite a los empleados, así como a",
+      "id": "rss_4159289379630159166",
+      "channel": "rss",
+      "source": "Stripe",
+      "title": "OpenAI、Anthropic 和 Stripe 推動私人市場熱潮，IPO Genie 專注於提供 IPO 前投資機會 - KuCoin",
+      "summary": "OpenAI、Anthropic 和 Stripe 推動私人市場熱潮，IPO Genie 專注於提供 IPO 前投資機會 KuCoin",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNZUstcWlrRWZQUFoxN0ZCV1RJUnIxNmxWVWYxUlJZaXdSZzUyak5XZW5jU1FSeG10UVZZMjl4TUJRWEtwVVd2bmxBT3ZrQ3BuUUM3Sk1ZSlgyVktNTmdER0JlMHhtUXZNSHZXY0trd2tVaksxVktseUEzelM5MG4wQmVVSC1tSG9qX29SQ0todnY1bDRWd3QzNmZsalhLZ0pMdmswMkFiTGhiSmoxcTRrcGtQRzgwSHhTVnVHcDJRTmh5ajhzNWI0RXpB?oc=5",
+      "date": "2026-06-03T13:35:44",
+      "fetched": "2026-06-04T06:43:45.002097",
       "systems": [
         "CRM"
       ],
       "types": [
-        "一般"
-      ],
-      "date": "Wed, 03 Jun 2026 14:16:17 +0000",
-      "fetched": "2026-06-04T02:50:46.943306+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "f69126de0823",
-      "title": "Microsoft’s Frontier Tuning aims to teach AI how enterprises work, not just context",
-      "url": "https://www.cio.com/article/4180487/microsofts-frontier-tuning-aims-to-teach-ai-how-enterprises-work-not-just-context.html",
-      "source": "CIO.com",
-      "summary": "For the past two years, enterprises have focused on feeding AI models their data — wiring them into documents, databases, and internal knowledge systems. Microsoft now says that’s only half the story. The next frontier, it argues, is teaching AI how work actually gets done.\nAt Build 2026, Micro",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "UIUX"
-      ],
-      "date": "Wed, 03 Jun 2026 11:59:31 +0000",
-      "fetched": "2026-06-04T02:50:46.944866+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "5a016c502e57",
-      "title": "7 ways for CIOs to deliver bad news without losing trust",
-      "url": "https://www.cio.com/article/4177020/7-ways-for-cios-to-deliver-bad-news-without-losing-trust.html",
-      "source": "CIO.com",
-      "summary": "Insights from CIOs, consultants, and executive coaches show that effective CIOs don’t just report problems, they share information early, explain the issues clearly, and help executives decide what to do next. Here are seven ways CIOs can deliver bad news more effectively.\n1. Build transparency",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "UIUX"
-      ],
-      "date": "Wed, 03 Jun 2026 10:00:00 +0000",
-      "fetched": "2026-06-04T02:50:46.948769+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "237ed067d5e3",
-      "title": "Enterprise AI agents keep creating data silos. Microsoft's Build answer is Microsoft IQ and Rayfin.",
-      "url": "https://venturebeat.com/data/enterprise-ai-agents-keep-creating-data-silos-microsofts-build-answer-is-microsoft-iq-and-rayfin",
-      "source": "VentureBeat",
-      "summary": "Every new AI agent your team deploys starts from scratch: no memory of how the business works, where data lives, or what rules apply. And as agentic coding tools spin up applications faster than anyone can govern them, each one risks becoming another silo outside your data layer entirely. Microsoft",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "UIUX"
-      ],
-      "date": "Wed, 03 Jun 2026 01:55:14 GMT",
-      "fetched": "2026-06-04T02:50:50.416462+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "f69a41d0dc92",
-      "title": "Perplexity AI unveils hybrid local-cloud inference system at Computex 2026",
-      "url": "https://venturebeat.com/technology/perplexity-ai-unveils-hybrid-local-cloud-inference-system-at-computex-2026",
-      "source": "VentureBeat",
-      "summary": "Perplexity AI, the fast-growing search startup now valued at $20 billion, unveiled what it calls the first hybrid local-server inference orchestrator at Computex 2026 on Monday night, demonstrating software that autonomously decides — in real time and mid-task — which AI workloads stay on a user's d",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "Tue, 02 Jun 2026 19:08:17 GMT",
-      "fetched": "2026-06-04T02:50:50.428207+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "5eef0aa74879",
-      "title": "OpenAI's Codex update lets agents build interactive enterprise workspaces via Sites and role-specific plugins",
-      "url": "https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins",
-      "source": "VentureBeat",
-      "summary": "Agentic AI is moving rapidly from the developer terminal to the corporate world.On Tuesday, OpenAI announced a major update of its agentic AI platform Codex, introducing domain-specific workflows, a rapid, semi-private web hosting feature within it for enterprises called \"Sites,\" and an in-place edi",
-      "systems": [
-        "ERP",
-        "EIP"
-      ],
-      "types": [
-        "UIUX",
-        "功能分析",
-        "競品新聞"
-      ],
-      "date": "Tue, 02 Jun 2026 16:00:00 GMT",
-      "fetched": "2026-06-04T02:50:50.434388+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "2edb97979a5b",
-      "title": "OpenAI fixed a visibility problem; the governance problem remains.",
-      "url": "https://www.cio.com/article/4181052/openai-fixed-a-visibility-problem-the-governance-problem-remains-2.html",
-      "source": "CIO.com",
-      "summary": "AI governance is an ongoing game of catch-up for enterprises. Model updates and iterations are rolling out at a rapid clip, often making governance frameworks obsolete before they’re battle-tested.\nTo evolve beyond this paradigm, OpenAI is introducing Active sessions. This new ChatGPT security",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "功能分析",
-        "競品新聞"
-      ],
-      "date": "Thu, 04 Jun 2026 02:37:28 +0000",
-      "fetched": "2026-06-04T02:50:46.932954+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "4925c83e8dfe",
-      "title": "Enterprise Spotlight: Rethinking cloud strategy in the age of AI",
-      "url": "https://us.resources.cio.com/resources/enterprise-spotlight-rethinking-cloud-strategy-in-the-age-of-ai/",
-      "source": "CIO.com",
-      "summary": "Cloud computing has reached a crossroads. The high cost and data sensitivity of AI workloads are raising the appeal of private clouds, even as neoclouds and sovereign clouds shake up the cloud provider landscape. New cyberthreats, shifting compute requirements, and management complexity are add",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "UIUX"
-      ],
-      "date": "Thu, 04 Jun 2026 00:20:32 +0000",
-      "fetched": "2026-06-04T02:50:46.933316+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "3dbd1cfdf5b6",
-      "title": "The “Bug-Free” Workforce: How AI Efficiency Is Subtly Disrupting The Interactions That Build Strong Teams",
-      "url": "https://smashingmagazine.com/2026/04/bug-free-workforce-ai-disrupting-teams/",
-      "source": "Smashing Magazine",
-      "summary": "AI tools are eliminating the need to “bug” colleagues for help, but the informal interactions they replace are the very scaffolding that builds team trust, belonging, and innovation. Casey Hudetz and Eric Olive explore the research and potential impacts behind that risk and offer practical strategie",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "UIUX"
-      ],
-      "date": "Mon, 27 Apr 2026 10:00:00 GMT",
-      "fetched": "2026-06-04T02:50:41.473988+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "8dde3734dc3a",
-      "title": "What is Blockchain: Everything You Need to Know (2022)",
-      "url": "https://techncruncher.blogspot.com/2022/04/what-is-blockchain-everything-you-need.html",
-      "source": "TechCrunch",
-      "summary": "If you want to pay online, you need to register an account and provide credit card information. If you don't have a credit card, you can pay with bank transfer. With the rise of cryptocurrencies, these methods may become old.Imagine a world in which you can do transactions and many other things with",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "Mon, 18 Apr 2022 05:49:00 +0000",
-      "fetched": "2026-06-04T02:50:43.660955+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "6b59514c4629",
-      "title": "How to Get Research Recommendations on the Roadmap",
-      "url": "https://www.nngroup.com/articles/research-recommendations-roadmap/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
-      "source": "Nielsen Norman Group",
-      "summary": "To influence the roadmap: join planning early, learn constraints, tie research to PM metrics, and give clear recommendations at the right time.",
-      "systems": [
-        "PMS"
-      ],
-      "types": [
-        "Dashboard"
-      ],
-      "date": "Fri, 29 May 2026 17:00:00 +0000",
-      "fetched": "2026-06-04T02:50:38.981009+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "69d43c0a3ca1",
-      "title": "Designing AI Agents: 4 Lessons from China’s Qwen Agent",
-      "url": "https://www.nngroup.com/articles/designing-ai-agents/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
-      "source": "Nielsen Norman Group",
-      "summary": "A study of Qwen's AI agent reveals 4 design lessons: support discoverability, reuse familiar patterns, handle personal data carefully, and protect user autonomy.",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "UIUX"
-      ],
-      "date": "Fri, 08 May 2026 17:00:00 +0000",
-      "fetched": "2026-06-04T02:50:38.981565+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "52e2849205ea",
-      "title": "Information Seeking in China: A Different Ecosystem, Familiar Behavior",
-      "url": "https://www.nngroup.com/articles/information-seeking-china/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
-      "source": "Nielsen Norman Group",
-      "summary": "Information seeking in China is driven by mobile social-media apps. But how users prompt and engage with genAI mirrors what we've seen in the West.",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "Fri, 01 May 2026 17:00:00 +0000",
-      "fetched": "2026-06-04T02:50:38.981790+00:00",
-      "channel": "rss"
-    },
-    {
-      "id": "rss_3457475071272426604",
-      "channel": "rss",
-      "source": "Stripe 官方/相關動態",
-      "title": "區塊鏈重點動態2026年6月4日晨間參考 - news.cnyes.com",
-      "summary": "追蹤自指定核心競品 Stripe 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB1UUtvRXN6UkV2UXJDWXFndWRkVFItRFduZkgyQ1kwZU00NjJva05LNWdOOHppRUxjNXlCbnE0V2FnSXdOMFNHc0Vsdw?oc=5",
-      "date": "2026-06-04T03:00:21",
-      "fetched": "2026-06-04T06:07:59.921503",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 60
-    },
-    {
-      "id": "rss_5849866736780441628",
-      "channel": "rss",
-      "source": "Apollo 官方/相關動態",
-      "title": "APO/Apollo Global Management|美股|盤前盤後股價、歷史股價走勢與公司服務介紹 - forecastock.tw",
-      "summary": "追蹤自指定核心競品 Apollo 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE95cUhlc0JGdW0zcE5kSUdOMlcwOFUzTHp5NWFRWmkwQmxkeWFjTF90bEo2WjkyRW5QSF93Z1d5UVZVMWlNVF9xUjVQMGR1Q2ZnVkdV?oc=5",
-      "date": "2026-06-03T20:59:10",
-      "fetched": "2026-06-04T06:07:59.485527",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 100
-    },
-    {
-      "id": "rss_-249020913760968948",
-      "channel": "rss",
-      "source": "Stripe 官方/相關動態",
-      "title": "三大支付巨頭 Stripe、Visa、Mastercard 傳推共同穩定幣平台 - 鏈新聞 ABMedia",
-      "summary": "追蹤自指定核心競品 Stripe 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRXhBZHlaMWtaRUNIeFVfZnNPemZTUGduREJFUDY5b0NJNkpJR3g4WWVndUVVRW5GdElDcTVTT0c2WDRDOU92dE16ektHZ3FzMDFyeU1EQnhCelVrMTdlQm1ZaGFscjlKbzRfeGRCQ1lrVDBXUEVIUXNfNUdUeklWcDJzenpzR0tJOUV3TDZSTTZfdlZqN3pRdWo1bnpMOVNROXYtLQ?oc=5",
-      "date": "2026-06-03T15:54:21",
-      "fetched": "2026-06-04T06:07:59.921439",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 60
-    },
-    {
-      "id": "rss_868666137423267937",
-      "channel": "rss",
-      "source": "Stripe 官方/相關動態",
-      "title": "支付巨頭 Stripe、Visa、Mastercard 傳聯手打造全新穩定幣平台，Coinbase 或加入 - 動區動趨",
-      "summary": "追蹤自指定核心競品 Stripe 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE02YkdVWkRsaU5zM3loOE1GYlpwSUNxcWM5V3EtNHZoX21oajZOeFV4YVpKVVNfTXUtNU5UYU4xVWxBRUtqQkJZQk05cnRxc2FCY0tQVlRaWWljZFBmZmlESUFWdTNkNHdILXRJdlpqUWtuMERiWGxZZVFB?oc=5",
-      "date": "2026-06-03T14:19:12",
-      "fetched": "2026-06-04T06:07:59.921261",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 60
-    },
-    {
-      "id": "rss_-6039580502741484803",
-      "channel": "rss",
-      "source": "Stripe 官方/相關動態",
-      "title": "Stripe、Visa、Mastercard联手筹备稳定币平台，Coinbase或将参与 - TradingView",
-      "summary": "追蹤自指定核心競品 Stripe 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBvQkVsTW1FTUFXZnB1WmlVd2E5SU53MTBQc1VpZnpXSmo2dmhaUlJVLXNzWjQtVjZ2em03YXhVVl9uOFMzWk1tbjc2RXpTOElZU3dxNGVId3h4YUhKc3FuOEp1aDFaUQ?oc=5",
-      "date": "2026-06-03T11:51:00",
-      "fetched": "2026-06-04T06:07:59.921366",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 60
-    },
-    {
-      "id": "rss_7799013917361127503",
-      "channel": "rss",
-      "source": "Workday 官方/相關動態",
-      "title": "企業AI代理挑戰升溫 Workday推Agent Passport強固治理防線 - 科技新聞 - PChome Online 新聞 - PChome Online 新聞",
-      "summary": "追蹤自指定核心競品 Workday 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQV2U4RS1qYktPSmxKc25CbUFyMDdmOWY0MkcteWtJQi10NlBXWDZGNVZZanJWTEZQQmwyRG9Bc0c1aXlZTTdJZFZURmZPbnR3cVphWXl1cGROeVNwdkgyU0ZibkstLXcwQkFUOXZWd0xEd2ZFWUNNcTlrR0hBSUxaQ1lET1g2NWxnNktqVQ?oc=5",
-      "date": "2026-06-03T05:59:20",
-      "fetched": "2026-06-04T06:07:58.916054",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 100
-    },
-    {
-      "id": "rss_-3908253443234820472",
-      "channel": "rss",
-      "source": "HubSpot 官方/相關動態",
-      "title": "OpenAI Codex正式反敗為勝 Codex將整合至ChatGPT - winandmac.com",
-      "summary": "追蹤自指定核心競品 HubSpot 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE45NmpLeUN3WkxkbzlIVzBYRGxyRF9NQUdVWFRfTnh5WVZjZE0yR1BINXFFM1lOczI4bFBDTHp4WnhhMHNOcHNyUi1xMzNnUTZCY3QtRUt0Tkd5TEg5WUZuZWRMbUVhbVhMWnJuZG13Ti0wZw?oc=5",
-      "date": "2026-06-03T01:52:52",
-      "fetched": "2026-06-04T06:08:00.184823",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 60
-    },
-    {
-      "id": "rss_6140083662828172614",
-      "channel": "rss",
-      "source": "Apollo 官方/相關動態",
-      "title": "Apollo旗下實體計劃出售500萬股希爾頓大假期股份 - Investing.com 香港 - 股市報價& 財經新聞",
-      "summary": "追蹤自指定核心競品 Apollo 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1LRGlWdzk2d2E2QlYxSkJ2Q3V4U1BiRDBQWDFFaVdXSzIyeXA2dmxQelE2V2pPVkxRWFZNbzc0MURVZ0k3UlhOQzFWbWtpbDhLdDRjMk82WEtmRFBvSUFDRW1DQUNUNER0alVpVU1CV1Y?oc=5",
-      "date": "2026-06-02T21:12:15",
-      "fetched": "2026-06-04T06:07:59.485467",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 100
-    },
-    {
-      "id": "2bae7486a91b",
-      "title": "Dropstone 1.5",
-      "url": "https://www.producthunt.com/products/dropstone-2",
-      "source": "Product Hunt",
-      "summary": "2× Claude Code Pro's usage at $15/mo\n          \n\nDiscussion\n            |\n            Link",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "2026-06-02T20:59:22-07:00",
-      "fetched": "2026-06-04T02:51:03.867463+00:00",
-      "channel": "producthunt"
-    },
-    {
-      "id": "502abd1a488b",
-      "title": "Learning Lessons from Gaming",
-      "url": "https://dev.to/ingosteinke/learning-lessons-from-gaming-1jgm",
-      "source": "Dev.to",
-      "summary": "I don't identify as a gamer. I occasionally participate in board games or an amateur football match,...",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "2026-06-02T14:00:58Z",
-      "fetched": "2026-06-04T02:51:07.003119+00:00",
-      "channel": "devto",
-      "score": 34
-    },
-    {
-      "id": "rss_397797040535489312",
-      "channel": "rss",
-      "source": "SAP SuccessFactors 官方/相關動態",
-      "title": "Veritas Prime憑藉適用於SAP解決方案的企業級運營模式，拓展了中端市場的薪資外包業務版圖。 - Moomoo",
-      "summary": "追蹤自指定核心競品 SAP SuccessFactors 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQNnNVTEdkMGVVc2dGZ2ZQRjllZkN3QlJYd0lDNzAwN1c1czdlUjhDTkRSa25YdE9uOUYySkl2OS1zekxhQkJKd3lPay04LWdmb2N6RFZKYnNNa2VYRFN3SG5qX1BTemwwbGlodmhSMlRwREpPUkZxa0NiOGJaVURKQkJHNVpCc3VLN1V6THB3Z05VbFR6WGZlRGRGTFZPU3FxazhQSm4tcWhFSmJWalhfSWdPTFdFai1BVFRhdFFGLXdMVmc?oc=5",
-      "date": "2026-06-02T13:01:00",
-      "fetched": "2026-06-04T06:07:59.130369",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗",
         "產業趨勢"
       ],
       "score": 100
     },
     {
-      "id": "a1dfb224a326",
-      "title": "FolderPlus",
-      "url": "https://www.producthunt.com/products/folderplus",
-      "source": "Product Hunt",
-      "summary": "Peek inside any folder without opening it\n          \n\nDiscussion\n            |\n            Link",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "2026-06-02T12:16:55-07:00",
-      "fetched": "2026-06-04T03:07:36.491464+00:00",
-      "channel": "producthunt"
-    },
-    {
-      "id": "f9eb64bc64ca",
-      "title": "I Used My Last 7% of Copilot Tokens to Bring a 2014 WinForms Game Back to Life",
-      "url": "https://dev.to/gramli/i-used-my-last-7-of-copilot-tokens-to-bring-a-2014-winforms-game-back-to-life-30mo",
-      "source": "Dev.to",
-      "summary": "This is a submission for the GitHub Finish-Up-A-Thon Challenge  Originally, I didn't plan to join...",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "2026-06-02T07:06:53Z",
-      "fetched": "2026-06-04T02:51:08.573360+00:00",
-      "channel": "devto",
-      "score": 18
-    },
-    {
-      "id": "rss_644394167159083930",
+      "id": "rss_-6181528308362886094",
       "channel": "rss",
-      "source": "Apollo 官方/相關動態",
-      "title": "法人觀點：Apollo指稱，AI熱潮恐澆熄聯準會主席華許快速降息希望 - 富聯網",
-      "summary": "追蹤自指定核心競品 Apollo 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUzVlVW1YRnpGX3FyVzVSeExKenJURjRyZ0d5WURqbjI4UGg2QWtBOENHcGgtVEpfcDgwSzQzTWd5RGI5R3FoLXhGZHMxX0J6V2R5VWtDNVdmM2tLNVVyYldFUFBKWXk2TlIwVjh5aXZORTE4dnNGQ1NoTUJtWlhmSXd1V2FrTWdU?oc=5",
-      "date": "2026-06-02T01:19:00",
-      "fetched": "2026-06-04T06:07:59.485585",
+      "source": "Workday",
+      "title": "Workday推出面向開發人員的新工具，用於構建、連接和驗證面向人力資源、財務和IT領域的AI智能體 - Moomoo",
+      "summary": "Workday推出面向開發人員的新工具，用於構建、連接和驗證面向人力資源、財務和IT領域的AI智能體 Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMHJadmpQdGY2VUJiV2JYX1VSQlBLTE1FcS1IS1lsOXg1QTdXYTltX1VGUHdrTzVrWEFDbG13QTA4WEx2aXRjRWpsQm1GNHQ1UWFYUEIzYjZXdnV6WWJRdlpZTDdxc3ZuTTQ2TXk5YkhlbEFkXy1fWkxpR2gxM0JVaWVBblNiWGVFc1dWWlZ6czM4VEtJaFRDSWFSamxsV0pXOXRNV29Bakc3cU1aY0E?oc=5",
+      "date": "2026-06-02T13:05:00",
+      "fetched": "2026-06-04T06:43:44.095099",
       "systems": [
         "EIP"
       ],
       "types": [
-        "用戶體驗"
+        "產業趨勢"
       ],
       "score": 100
     },
     {
-      "id": "rss_5848108160801904677",
+      "id": "rss_737134461434419997",
       "channel": "rss",
-      "source": "HubSpot 官方/相關動態",
-      "title": "美股開盤初期，北美科技軟體股指數ETF下跌2.18% - Bitget",
-      "summary": "追蹤自指定核心競品 HubSpot 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE13MTlpeDlXVC1NcE95bGVxOVQzSU51QTdqekFWUThVNXJGUVQ1MVRhRlFlMlNDaVR4M1FYbUN2a3ZSNkNQZzZOdVZGdGIydGl1eXctX3NDUEV5a0EySHVGdnRTZ01UZ9IBa0FVX3lxTFBDdE9LMUN2cG5HX3k2dnIzaUZVN0k5ZjFoTXU0RU1BNlRvZTEzdElPdnJ6dU1HOG5JUjlDTnczWVloUzhjQV9WUHdZWWJBRFVpOEswTWtIMXRxTEpLN0tDdVNOT1htSDljZnhN?oc=5",
-      "date": "2026-06-01T22:35:43",
-      "fetched": "2026-06-04T06:08:00.184762",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 100
-    },
-    {
-      "id": "rss_-4902029248583218271",
-      "channel": "rss",
-      "source": "Workday 官方/相關動態",
-      "title": "【21:30 即時新聞】Workday (WDAY) 跌5.7%／股價回落與AI威脅評價壓力並行 - CMoney",
-      "summary": "追蹤自指定核心競品 Workday 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBuUTRHUV85WjhpaFhZd25lOU13X3lJbkxRaG9WYXllQjdfTWlDWUtNMFZkLUVoN2Y0dGt3alVUMUZnS0lTXzdXM1cwRUZJanZ3ekVaWlAzM0M?oc=5",
-      "date": "2026-06-01T22:31:01",
-      "fetched": "2026-06-04T06:07:58.915733",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 100
-    },
-    {
-      "id": "rss_-2987801702415769993",
-      "channel": "rss",
-      "source": "SAP SuccessFactors 官方/相關動態",
-      "title": "三十年前金士頓為IBM打造亞太系統，三十年後IBM協助金士頓推動亞太人資數位轉型 - 商業周刊",
-      "summary": "追蹤自指定核心競品 SAP SuccessFactors 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
+      "source": "SAP SuccessFactors",
+      "title": "三十年前金士頓為IBM打造亞太系統，三十年後IBM協助金士頓推動亞太人資數位轉型 - 商周",
+      "summary": "三十年前金士頓為IBM打造亞太系統，三十年後IBM協助金士頓推動亞太人資數位轉型 商周",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9idmY2WXJIR1pwX19sUHVaM2l6LWtuRF9RUU1GOFFEbG9JdGpHZnZCMEtBTmxqazlMblEtVlFkM09DeVFPY3pMcVVpT1IwZEV2cXBFcFgtVlFYWHJNT215amFIeFBjWE0?oc=5",
       "date": "2026-06-01T16:00:00",
-      "fetched": "2026-06-04T06:07:59.130260",
+      "fetched": "2026-06-04T06:43:44.317224",
       "systems": [
         "EIP"
       ],
       "types": [
-        "用戶體驗"
+        "產業趨勢"
       ],
       "score": 100
     },
     {
-      "id": "rss_-8181469197568820471",
+      "id": "rss_-4531952242380571369",
       "channel": "rss",
-      "source": "Stripe 官方/相關動態",
-      "title": "LGD正式量產240Hz RGB條列式OLED面板 - LEDinside",
-      "summary": "追蹤自指定核心競品 Stripe 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5VNzJtVnNjTnItdndGSklCTnN4SnlUb2J4MVRIU2Q1bHRqV3ZfdUhpa2J1MzcxN0FTbThwYmdrWXotOWZuLWUwaE5yS2c4SHRHU2s0OHpSaWJaS19ESGVMTmpNbw?oc=5",
-      "date": "2026-06-01T08:23:00",
-      "fetched": "2026-06-04T06:07:59.921563",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 60
-    },
-    {
-      "id": "d31cbf88fd27",
-      "title": "Why do most SaaS dashboards still feel like enterprise software from 1998",
-      "url": "https://dev.to/zenovay/why-do-most-saas-dashboards-still-feel-like-enterprise-software-from-1998-2ben",
-      "source": "Dev.to",
-      "summary": "I redesigned my own analytics dashboard after watching how people actually used it. Median session was 47 seconds. Here is what I cut, and why the whole industry took years to figure this out.",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "UIUX",
-        "Dashboard"
-      ],
-      "date": "2026-05-31T14:31:15Z",
-      "fetched": "2026-06-04T02:51:05.439686+00:00",
-      "channel": "devto",
-      "score": 0
-    },
-    {
-      "id": "rss_-73519602438668662",
-      "channel": "rss",
-      "source": "HubSpot 官方/相關動態",
-      "title": "HUBS/HUBSPOT - 今日股價行情與走勢圖-股市爆料同學會 - CMoney",
-      "summary": "追蹤自指定核心競品 HubSpot 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5IZHdUZEFpRWV3MHd5ZlNqUThJdkdQX1J0eVotQk9rQzNKYkNOTmdxWXdmTFZFVjRqYldSeU5PVGVLSGY0S2NCN2M3Q2dJSTc2WUZZNDNsZjZQT0xaNXI4?oc=5",
-      "date": "2026-05-31T07:00:00",
-      "fetched": "2026-06-04T06:08:00.184693",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 100
-    },
-    {
-      "id": "9d2d323fd174",
-      "title": "The Best Technology Disappears",
-      "url": "https://dev.to/joshadler/the-best-technology-disappears-2kjg",
-      "source": "Dev.to",
-      "summary": "Your keyboard app is the most important app on your phone and you have never once thought about it....",
-      "systems": [
-        "ERP"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "2026-05-31T05:56:08Z",
-      "fetched": "2026-06-04T02:51:05.439655+00:00",
-      "channel": "devto",
-      "score": 0
-    },
-    {
-      "id": "rss_-7861603390917572707",
-      "channel": "rss",
-      "source": "Workday 官方/相關動態",
+      "source": "Workday",
       "title": "Workday為本港中型企業引入企業級AI及超級智能 - IT PRO Magazine",
-      "summary": "追蹤自指定核心競品 Workday 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
+      "summary": "Workday為本港中型企業引入企業級AI及超級智能 IT PRO Magazine",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBKQVdFRzFJN3ZFTVFyWFlrX1ZfdkwzSFFIdzB0dHFxaTlJdV9sUE9sUl9ZMzEtakdHNmw1RjBRTnhlUWFTUm9ucjAwNUJuc0REQ1NBeVhB?oc=5",
       "date": "2026-05-29T14:57:36",
-      "fetched": "2026-06-04T06:07:58.915957",
+      "fetched": "2026-06-04T06:43:44.093368",
       "systems": [
         "EIP"
       ],
       "types": [
-        "用戶體驗"
+        "產業趨勢"
       ],
-      "score": 100
+      "score": 60
     },
     {
-      "id": "rss_-2928118025855676386",
+      "id": "rss_-2849316984975755496",
       "channel": "rss",
-      "source": "Apollo 官方/相關動態",
-      "title": "Apollo 尋求投資者參與360億美元債務交易 為 Anthropic 採購 AI 晶片 | 國際焦點 | 國際 - 經濟日報",
-      "summary": "追蹤自指定核心競品 Apollo 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE42MWRDNTcwbEo2ZElTXzJobjg3dzAwaS1zdWxUNDRKaWd5WHlRUzRMMUM5ZnJxYVozaUlRV2ZxYWh3UDRFM2NZNGlYdUJKN2lNb0c2MmR3QTVzUQ?oc=5",
-      "date": "2026-05-29T13:59:47",
-      "fetched": "2026-06-04T06:07:59.485230",
+      "source": "Workday",
+      "title": "AI應用｜資料分散成AI落地最大挑戰 Workday籲港企整合底層數據 - 香港經濟日報HKET",
+      "summary": "AI應用｜資料分散成AI落地最大挑戰 Workday籲港企整合底層數據 香港經濟日報HKET",
+      "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxQWG5RbWY2X3F6ZXpTSTJGMm5taW1GR2JBdExaa3E1eDhOaTZsNUVBdkRhVGpINXAtaGRvVGZxLXFqNUxRcmc2a2JybnRDRXpoVlVaRVlPMjJ6Ml8xSERLUzFIX1FId2VHdFhSYzdNaUpGbGZ1WEMyNjl5Yk5jU1B6WXlqdlY5bzZhT2JQQmdrcEk5QVh5ekNRZGJEWW1wZ0hQTXc2OWxwVTh2OUdlNzZDUm5fbERTYnZnRDdHSXUzM0Jmc2t3NkVUMC1iWXd4aUF1VVZZdmk5TVJHNXRNVWQ2VDQ4bEpHRjZEYlo1ZEpSaXoxLXp3cHFaZzJkTXVWdnBDUEtKdHFEZ1RfQWd4cExFSnZhVlZ2d2NzN0tRaGszNlVBN2RpZkR3anBSSmtYRFpJejVZeG1EUnlKdDlOUnJxTE5IbXNqTkVxQmp5WkdCaWdZaUJvZndLY3RfdmVfM3U1NGVJYjJjeHRLMU5kbmJBQ1BacVRkV1hmNEoyUVhnTQ?oc=5",
+      "date": "2026-05-29T09:01:10",
+      "fetched": "2026-06-04T06:43:44.095740",
       "systems": [
         "EIP"
       ],
       "types": [
-        "用戶體驗"
+        "產業趨勢"
       ],
       "score": 100
     },
     {
-      "id": "rss_-641736932189652745",
+      "id": "rss_5338975219050477505",
       "channel": "rss",
-      "source": "Apollo 官方/相關動態",
-      "title": "歐盟批准了Apollo對Nippon Sheet Glass的收購 - Moomoo",
-      "summary": "追蹤自指定核心競品 Apollo 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNzhJYkJYSjdqQzJlUC10TkM2UVdEcThLVHE4aEtHVjlKV3g2SXZiMlVUUGxBd1pxTmRTN0xCNUhoY2hhaVJpZUZDUFV1UnVoNkxja21KVnBkOVNWaUNkb3JVYUdRenAtal9ldmFDUVNPWkhtOFlkOWI0OW9LbXZsN3JZTUVaWWVkeEVGTWJ4cHlndkdIOUUtTWlubF81VFJS?oc=5",
-      "date": "2026-05-29T11:00:30",
-      "fetched": "2026-06-04T06:07:59.485402",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 100
-    },
-    {
-      "id": "rss_-1673280434875226126",
-      "channel": "rss",
-      "source": "HubSpot 官方/相關動態",
+      "source": "HubSpot",
       "title": "Hububble躋身《金融時報》亞太高成長企業榜 協助企業建構AI Agent營運架構 - 蕃新聞",
-      "summary": "追蹤自指定核心競品 HubSpot 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
+      "summary": "Hububble躋身《金融時報》亞太高成長企業榜 協助企業建構AI Agent營運架構 蕃新聞",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zeXhlY3ZyanRTb3p1cFRVRnZlenBnMUpvNmFEemE0Q1NPek9jcVZicUxhcXpLV20taV95RWZYV1h5clZkZFQ5NTVCam1xTkNjMWc?oc=5",
       "date": "2026-05-29T08:34:00",
-      "fetched": "2026-06-04T06:08:00.184564",
+      "fetched": "2026-06-04T06:43:45.226305",
       "systems": [
         "CRM"
       ],
       "types": [
-        "用戶體驗"
-      ],
-      "score": 100
-    },
-    {
-      "id": "rss_-6206444820231512538",
-      "channel": "rss",
-      "source": "Stripe 官方/相關動態",
-      "title": "LG Display 量產 240Hz RGB OLED 面板 電競螢幕文字清晰度大躍進 - 樂聯網",
-      "summary": "追蹤自指定核心競品 Stripe 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE84R0wtTXY1SU41cWNtQmVTckhiVGc1T0xNcnhZOFBzY0M5QUVUZnlJcWIzUWROOVg3bTZpbTRzejNkdU1RSWoxY0FBOA?oc=5",
-      "date": "2026-05-29T06:49:13",
-      "fetched": "2026-06-04T06:07:59.921626",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 100
-    },
-    {
-      "id": "rss_3374304763777988051",
-      "channel": "rss",
-      "source": "Workday 官方/相關動態",
-      "title": "【即時新聞】Workday(WDAY)搭上AI軟體股強勢反彈！Snowflake財報破除末日疑慮 - CMoney投資網誌",
-      "summary": "追蹤自指定核心競品 Workday 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQU9oc2xRd0NwS3FIVk9aa0tsZDFNQ0J4ODZEWjBDdTlkZm9MQUNOR200QkNUdTRZRlJCcEFILUFTR2FOWjBQLVZPODR3eDIySERJUF9CVTllcFhGMDlzRjZ0WEt6cVpwa1VMdWNaSDQzOHFBVTlsRVhTRVZiaDBhc1NadnI3N0U5bE5RdE81NVY?oc=5",
-      "date": "2026-05-29T06:48:51",
-      "fetched": "2026-06-04T06:07:58.915851",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 100
-    },
-    {
-      "id": "rss_-6067791805687849169",
-      "channel": "rss",
-      "source": "Apollo 官方/相關動態",
-      "title": "Apollo尋求投資者參與360億美元債務交易 為Anthropic採購AI晶片 - MSN",
-      "summary": "追蹤自指定核心競品 Apollo 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxOdE1rVUxzdlAtUF9IVDdyZ0J2M2Jld1hTZzhQM2FmU2F0WnNBZ3hqcVpWcXhBMWZHcmxTbVdldjRzelNsa1BFbVVmMm03S1dZVzdaX0t4WWlsWVJFZmdPdHI4Zmx0X3pSaEd1SjhHdG42Xzl5a2JzcGNQTW1YaFRyTjJBUU5tWUkxeEdXSzNOekJneHVtdlhJdllTRk5neTl6WmF0TGYwQ1BQWVJfbGNodHpzRmpDNkRuZS1FV01lNmVZc3dnVnVTQXo5Z3R4REdzYjRlWUwtUHp2LV9oYlp3VlpkeTBzOHVBQXhWNmdfSC1ra3NhRDhDbXNLejNfSU9vZ0JjVk50UVhEZnhlenE2bW5hMndHOTRsblBjZXUzQkhfd3p4RXM2aGZBb3FVR1ptQnJTbnhDS244cC1DZWdETjJyUGVrUU95bkNWcXNsODNYVTZQVnpDVndYcU1rcmgyczF4Mw?oc=5",
-      "date": "2026-05-29T06:23:21",
-      "fetched": "2026-06-04T06:07:59.485315",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 100
-    },
-    {
-      "id": "rss_-4476423195010505127",
-      "channel": "rss",
-      "source": "Workday 官方/相關動態",
-      "title": "盤中速報 - Workday公司(WDAY-US)大漲5.01%，報136.52美元｜新聞快訊｜豐雲學堂 - sinotrade.com.tw",
-      "summary": "追蹤自指定核心競品 Workday 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ZLWpCYjgyQ0ptb2JuTUozbFh0UmJtdW12Sl9ab2hhZVRPbU4tR1B2b1RjdVhJM2tuV2p4bEdmMEpsX3FGMmFOeGxRbDNBX0FaeFozdzdLSGhxTURqazB5VWFDTjlzYWE5b19rWnBzQktpVDlOYmc?oc=5",
-      "date": "2026-05-28T23:18:00",
-      "fetched": "2026-06-04T06:07:58.915555",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗"
-      ],
-      "score": 60
-    },
-    {
-      "id": "rss_1043101537149796583",
-      "channel": "rss",
-      "source": "Workday 官方/相關動態",
-      "title": "Workday 未來會聚焦大灣區 助較小型企業「出海」 - AASTOCKS.com",
-      "summary": "追蹤自指定核心競品 Workday 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBmRUQyWDN3ZEFqdDU3MTdVT2pPZ3VDRC1jZF80UUprOVRKU2RtNHlwczZsOGJtdEFLRHdISFNBZjRKbjlSMFRqb3AyQXFVQUZSZy1TSTZQQ1c0RVBGbFE4M29lN0MtTVI4ZnRLTklmam1jVE0?oc=5",
-      "date": "2026-05-28T10:08:00",
-      "fetched": "2026-06-04T06:07:58.916138",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗",
-        "產業趨勢"
-      ],
-      "score": 100
-    },
-    {
-      "id": "rss_-8240955646961085364",
-      "channel": "rss",
-      "source": "HubSpot 官方/相關動態",
-      "title": "行銷人AI實戰指南！「Gemini+NotebookLM」工作流，把10小時市場研究壓縮成20分鐘 - 數位時代",
-      "summary": "追蹤自指定核心競品 HubSpot 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZlhZLU5mYmFyU0c4dUI5R1pGczZadGk3WGVSY1Z1Xy0xZ3d4NGRuRV9pM1ZvRFhPSUJROWp1eGZVWU5sMWxpT0NxVU9aZWs5R3U0eG1hbHR4aXRncGY1a21SeTZ3TmlDd1FUbGxzdEJzTHZGUks1bGtCYkt2ZXN4Y29uU1Jsd1JOR0duNEQzaWhJUQ?oc=5",
-      "date": "2026-05-28T09:10:00",
-      "fetched": "2026-06-04T06:08:00.184630",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "用戶體驗",
         "產業趨勢"
       ],
       "score": 60
     },
     {
-      "id": "rss_-6456035316756231198",
+      "id": "rss_2306251744377713534",
       "channel": "rss",
-      "source": "HubSpot 官方/相關動態",
-      "title": "HUBSPOT(HUBS)董事與內部人持股｜監察人及關係人持股變化-股市爆料同學會 - CMoney",
-      "summary": "追蹤自指定核心競品 HubSpot 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9XRUdORDRsN0pkX1hLem9zb0ZyUWVLczBYSXdLWE96dkJ1S0J4MUd3TnhRR2lQekJGSnU4aW5kX3lRajNHcGp3ZnJ1elRpR1JKcDVZUkNteHMxaDNJT0kwWEwzaGFTUjA?oc=5",
-      "date": "2026-05-28T07:21:20",
-      "fetched": "2026-06-04T06:08:00.184478",
+      "source": "Workday",
+      "title": "自助代理｜Workday為中型企業引入企業級AI 助透過可信數據加速決策 - wepro180",
+      "summary": "自助代理｜Workday為中型企業引入企業級AI 助透過可信數據加速決策 wepro180",
+      "url": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQRWJlMG9XWjF5QTNnRU1vWW96TEhYeDBoQjE0WS1abHplWG4xOTRVNVhDdU1VcC1BQmJGUWtVck1HbXZOZjRJVnVnZFJyZHlvcV9TUHdfV2FuOHRUU0RQRU9oQ0JlS1lDTTlLM1hONm5YRUFCcmdwMXNaaWstalRsakhpNXFnSGtBSjcweHFUWGJUUkxvMHNZTUhuVTVxTVFCUUxHdEV0bVF1WlNKZEF5cjhEZU9jNVBvbGpkZGhfd0g5UGJnemJVQXcxV1RGbFBtR1dZdHpreVlxVmhrUXVLcURGd0ZmY21uUTZVR054U1gycVhfX2RsVVNoclNDN05vWmMxY25JdnFkMk9SVklvTDNEN0IzWHBiSXBxNkowdUViUHJHY2tsUnZjaGtKSVhDclN2cVBwSlF2U2Z1ZkE1RFJwelpSSXc?oc=5",
+      "date": "2026-05-29T03:29:13",
+      "fetched": "2026-06-04T06:43:44.094392",
       "systems": [
-        "CRM"
+        "EIP"
       ],
       "types": [
-        "用戶體驗"
+        "產業趨勢"
+      ],
+      "score": 60
+    },
+    {
+      "id": "rss_6559966846912595272",
+      "channel": "rss",
+      "source": "Workday",
+      "title": "Workday與Google Cloud攜手合作，推出人力資源及財務AI智能代理 - Investing.com 香港 - 股市報價& 財經新聞",
+      "summary": "Workday與Google Cloud攜手合作，推出人力資源及財務AI智能代理 Investing.com 香港 - 股市報價& 財經新聞",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBLSEtIZGJiUTFoVXQzOXprc19RNEtTVk9CRnRDaWNnUFhGSjhqakJ6ck16QkhrN0VDSWM5UXNhVnRGSmcyR3ZtQkdNQ1FZTmFJbElncUh6N1pJMEhJemVKVjBiZHJpc2FycnpBWURabko?oc=5",
+      "date": "2026-05-28T13:07:49",
+      "fetched": "2026-06-04T06:43:44.095431",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
       ],
       "score": 100
     },
     {
-      "id": "3b4ded6d4fd5",
-      "title": "Worklenz: Open-Source, All in one project management tool",
-      "url": "https://github.com/Worklenz/worklenz",
-      "source": "Hacker News",
-      "summary": "",
+      "id": "rss_5879166587302470114",
+      "channel": "rss",
+      "source": "Workday",
+      "title": "Workday 為本港中型企業引入企業級 AI 及超級智能解決方案 - Techritual Hong Kong",
+      "summary": "Workday 為本港中型企業引入企業級 AI 及超級智能解決方案 Techritual Hong Kong",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5tUGJIZnZIeDdTWkpXTGExSlNCX1c2aVFUR0hQMHltNU5vRlJZb25CeGJnSHpCd2k2ZktGZzB0MVR5NUdEU2NXd09MQWxCSkc5ZjczaTZMOFA?oc=5",
+      "date": "2026-05-28T10:02:42",
+      "fetched": "2026-06-04T06:43:44.096153",
       "systems": [
-        "PMS"
+        "EIP"
       ],
       "types": [
-        "一般"
+        "產業趨勢"
       ],
-      "date": "2024-05-18T10:08:59Z",
-      "fetched": "2026-06-04T02:51:02.280751+00:00",
-      "channel": "hackernews",
-      "score": 102,
-      "comments": 39
+      "score": 60
     },
     {
-      "id": "a699cdc99ce5",
-      "title": "Show HN: A “CRM” for personal relationships",
-      "url": "https://www.elim.app/eng/home",
-      "source": "Hacker News",
-      "summary": "",
+      "id": "rss_5605211033010516779",
+      "channel": "rss",
+      "source": "Stripe",
+      "title": "Robinhood 宣布串聯 AI 代理與金融平台，70 萬會員成首波測試對象 - TechOrange 科技報橘",
+      "summary": "Robinhood 宣布串聯 AI 代理與金融平台，70 萬會員成首波測試對象 TechOrange 科技報橘",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBMTE9VLU9iWDJEVkVIUHhXTDU2T2ZSb0lTLWJHUWxRSzVaY29CTGMtUzZwR3FXQ3N5WUdJeXNZVU90TTdfNEN4aGZuUWQ1UVI1LXJJNWpSdUxzSFRhRzFFWC1INHJKSXVOS3NkNWpTeFAyeFhMMzEw?oc=5",
+      "date": "2026-05-28T07:30:14",
+      "fetched": "2026-06-04T06:43:45.001516",
       "systems": [
         "CRM"
       ],
       "types": [
-        "UIUX"
+        "產業趨勢"
       ],
-      "date": "2023-09-23T17:21:17Z",
-      "fetched": "2026-06-04T02:50:58.805761+00:00",
-      "channel": "hackernews",
-      "score": 126,
-      "comments": 96
-    },
-    {
-      "id": "a82b4d96a575",
-      "title": "Launch HN: Twenty.com (YC S23) – Open-source CRM",
-      "url": "https://news.ycombinator.com/item?id=36791434",
-      "source": "Hacker News",
-      "summary": "",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "UIUX",
-        "競品新聞"
-      ],
-      "date": "2023-07-19T18:54:50Z",
-      "fetched": "2026-06-04T02:50:58.805728+00:00",
-      "channel": "hackernews",
-      "score": 415,
-      "comments": 311
-    },
-    {
-      "id": "28883cf6df2b",
-      "title": "Taiga: A free and open-source project management tool",
-      "url": "https://www.taiga.io/",
-      "source": "Hacker News",
-      "summary": "",
-      "systems": [
-        "PMS"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "2022-12-03T13:09:53Z",
-      "fetched": "2026-06-04T02:51:02.280723+00:00",
-      "channel": "hackernews",
-      "score": 238,
-      "comments": 97
-    },
-    {
-      "id": "545921778c63",
-      "title": "Show HN: Roast Our Twitter CRM and DM Management App",
-      "url": "https://www.firstx.ai/",
-      "source": "Hacker News",
-      "summary": "",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "UIUX"
-      ],
-      "date": "2022-06-08T06:14:37Z",
-      "fetched": "2026-06-04T02:50:58.805785+00:00",
-      "channel": "hackernews",
-      "score": 39,
-      "comments": 0
-    },
-    {
-      "id": "ed9ada3fc4f1",
-      "title": "Launch HN: Turion Space (YC S21) – Space debris removal and satellite servicing",
-      "url": "https://news.ycombinator.com/item?id=28061725",
-      "source": "Hacker News",
-      "summary": "",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "UIUX",
-        "競品新聞"
-      ],
-      "date": "2021-08-04T14:56:00Z",
-      "fetched": "2026-06-04T02:50:58.805839+00:00",
-      "channel": "hackernews",
-      "score": 200,
-      "comments": 111
-    },
-    {
-      "id": "1e0351f80aab",
-      "title": "Launch HN: Epihub (YC S20) – Shopify for teaching online",
-      "url": "https://news.ycombinator.com/item?id=24215376",
-      "source": "Hacker News",
-      "summary": "",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "UIUX",
-        "競品新聞"
-      ],
-      "date": "2020-08-19T19:50:44Z",
-      "fetched": "2026-06-04T02:50:58.805865+00:00",
-      "channel": "hackernews",
-      "score": 136,
-      "comments": 47
-    },
-    {
-      "id": "dd6c5330bbf8",
-      "title": "Ask HN: Would you use a free proposal, invoicing and project management tool?",
-      "url": "https://news.ycombinator.com/item?id=23402547",
-      "source": "Hacker News",
-      "summary": "",
-      "systems": [
-        "PMS"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "2020-06-03T12:22:49Z",
-      "fetched": "2026-06-04T02:51:02.280831+00:00",
-      "channel": "hackernews",
-      "score": 65,
-      "comments": 19
-    },
-    {
-      "id": "0f9cfc8c7089",
-      "title": "Launch HN: PostHog (YC W20) – open-source product analytics",
-      "url": "https://news.ycombinator.com/item?id=22376732",
-      "source": "Hacker News",
-      "summary": "",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "UIUX",
-        "Dashboard",
-        "競品新聞"
-      ],
-      "date": "2020-02-20T17:27:46Z",
-      "fetched": "2026-06-04T02:50:58.805811+00:00",
-      "channel": "hackernews",
-      "score": 282,
-      "comments": 83
-    },
-    {
-      "id": "a3fea0cbecc1",
-      "title": "Show HN: Open-Source, Free, Agile Project Management Tool",
-      "url": "http://www.taiga.io",
-      "source": "Hacker News",
-      "summary": "",
-      "systems": [
-        "PMS"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "2014-10-01T16:28:26Z",
-      "fetched": "2026-06-04T02:51:02.280684+00:00",
-      "channel": "hackernews",
-      "score": 436,
-      "comments": 134
-    },
-    {
-      "id": "0670228af99d",
-      "title": "How Project Management tools kill more companies than any other SaaS out there",
-      "url": "http://lnbogen.com/2014/04/14/how-project-management-tools-kill-more-companies-than-any-other-saas-out-there/",
-      "source": "Hacker News",
-      "summary": "",
-      "systems": [
-        "PMS"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "2014-04-14T10:35:05Z",
-      "fetched": "2026-06-04T02:51:02.280803+00:00",
-      "channel": "hackernews",
-      "score": 78,
-      "comments": 59
-    },
-    {
-      "id": "3a73cdf4e532",
-      "title": "Teambox - open source project management tool",
-      "url": "http://www.teambox.com/",
-      "source": "Hacker News",
-      "summary": "",
-      "systems": [
-        "PMS"
-      ],
-      "types": [
-        "一般"
-      ],
-      "date": "2010-05-10T04:40:11Z",
-      "fetched": "2026-06-04T02:51:02.280776+00:00",
-      "channel": "hackernews",
-      "score": 94,
-      "comments": 23
+      "score": 100
     }
   ]
 }
