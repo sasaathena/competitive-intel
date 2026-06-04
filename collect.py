@@ -38,6 +38,81 @@ TARGET_SOURCES = {
     }
 }
 
+# ── 財經新聞排除規則 ──────────────────────────────────────
+FINANCE_BLACKLIST = [
+    "stock",
+    "stocks",
+    "earnings",
+    "revenue",
+    "market cap",
+    "investor",
+    "share price",
+    "financial results",
+    "quarterly",
+
+    "股票",
+    "股價",
+    "財報",
+    "營收",
+    "法說會",
+    "投資人",
+    "EPS",
+    "獲利",
+    "市值",
+    "配息",
+    "殖利率"
+]
+
+# ── EIP / CRM 產品情報白名單 ─────────────────────────────
+PRODUCT_KEYWORDS = [
+    "dashboard",
+    "workflow",
+    "employee experience",
+    "customer experience",
+    "crm",
+    "hr",
+    "hris",
+    "saas",
+    "feature",
+    "product update",
+    "automation",
+    "analytics",
+    "ai",
+
+    "儀表板",
+    "看板",
+    "工作流",
+    "流程",
+    "員工體驗",
+    "客戶體驗",
+    "功能更新",
+    "產品更新",
+    "新功能",
+    "使用者體驗",
+    "ui",
+    "ux",
+    "人資",
+    "crm",
+    "數據分析",
+    "自動化",
+    "人工智慧",
+    "ai功能"
+]
+
+def is_finance_news(text):
+    text = text.lower()
+    return any(
+        keyword.lower() in text
+        for keyword in FINANCE_BLACKLIST
+    )
+
+def is_product_content(text):
+    text = text.lower()
+    return any(
+        keyword.lower() in text
+        for keyword in PRODUCT_KEYWORDS
+    )
+
 # ── 2. 智慧型標籤與情報類型判定 ──────────────────────────────────────
 def analyze_tags(title, summary):
     text = (title + summary).lower()
@@ -83,7 +158,13 @@ def collect_all_intelligence():
         print(f"🔍 正在檢索競品：{brand} ({info['system']}) 相關繁中與國際市場動態...")
         
         # 建立雙語或繁中高相關搜尋 Query
-        rss_url = f"https://news.google.com/rss/search?q={brand}+when:7d&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+        query_keywords = " OR ".join(info["keywords"])
+
+rss_url = (
+    "https://news.google.com/rss/search?"
+    f"q={brand}+({query_keywords})+when:7d"
+    "&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
+)
         
         try:
             r = requests.get(rss_url, timeout=12)
@@ -91,9 +172,13 @@ def collect_all_intelligence():
             items = soup.find_all("item")
             
             for item in items[:6]:  # 每家競品精選前 6 筆
-                title = item.title.text
-                url = item.link.text
-                pub_date = item.pubDate.text
+              title = item.title.text
+url = item.link.text
+pub_date = item.pubDate.text
+
+description = ""
+if item.description:
+    description = item.description.text
                 
                 # 時間轉換
                 try:
@@ -101,11 +186,31 @@ def collect_all_intelligence():
                 except:
                     date_iso = datetime.utcnow().isoformat()
 
-                summary = f"追蹤自指定核心競品 {brand} 的最新情報。涵蓋其在生態系、UIUX設計、或核心技術架構的發展概況。"
-                types = analyze_tags(title, summary)
+                summary = f"追蹤自指定核心競品
+                types = analyze_tags(title, description)
                 
                 # 初始權重分數
                 base_score = 60
+
+# 指定品牌加權
+base_score += 10
+
+# 功能更新優先
+if "功能更新" in types:
+    base_score += 15
+
+# 用戶體驗優先
+if "用戶體驗" in types:
+    base_score += 15
+
+# Dashboard 相關優先
+if any(k in full_text.lower() for k in [
+    "dashboard",
+    "儀表板",
+    "看板",
+    "analytics"
+]):
+    base_score += 20
                 
                 # 繁體中文優先加權 (加 40 分，使其在排序時能頂到最前)
                 if is_traditional_chinese(title):

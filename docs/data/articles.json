@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "stats": {
     "total": 59,
@@ -1033,3 +1034,6 @@
     }
   ]
 }
+=======
+[]
+>>>>>>> a0d1439 (Clear historical data for a fresh crawl)
