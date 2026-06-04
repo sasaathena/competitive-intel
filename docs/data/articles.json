@@ -1,157 +1,288 @@
 {
   "stats": {
-    "total": 8,
-    "new_today": 8,
-    "last_updated": "2026-06-04T06:59:50.682379",
+    "total": 14,
+    "new_today": 14,
+    "last_updated": "2026-06-04T07:24:05.991588",
     "skipped_finance": 6,
-    "skipped_irrelevant": 13,
+    "skipped_irrelevant": 5,
+    "zhtw_count": 8,
     "by_system": {
       "EIP": 5,
-      "CRM": 3
+      "CRM": 9
     },
     "by_type": {
-      "產業趨勢": 8
+      "產業趨勢": 14
     },
     "by_channel": {
-      "rss": 8
+      "rss": 14
     }
   },
   "articles": [
     {
-      "id": "rss_6581672135130682220",
+      "id": "rss_f313ba261e",
       "channel": "rss",
       "source": "Workday",
       "title": "Workday推出面向開發人員的新工具，用於構建、連接和驗證面向人力資源、財務和IT領域的AI智能體 - Moomoo",
       "summary": "Workday推出面向開發人員的新工具，用於構建、連接和驗證面向人力資源、財務和IT領域的AI智能體 Moomoo",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMHJadmpQdGY2VUJiV2JYX1VSQlBLTE1FcS1IS1lsOXg1QTdXYTltX1VGUHdrTzVrWEFDbG13QTA4WEx2aXRjRWpsQm1GNHQ1UWFYUEIzYjZXdnV6WWJRdlpZTDdxc3ZuTTQ2TXk5YkhlbEFkXy1fWkxpR2gxM0JVaWVBblNiWGVFc1dWWlZ6czM4VEtJaFRDSWFSamxsV0pXOXRNV29Bakc3cU1aY0E?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-02T13:05:00",
-      "fetched": "2026-06-04T06:59:49.383656",
+      "fetched": "2026-06-04T07:23:44.445561",
       "systems": [
         "EIP"
       ],
       "types": [
         "產業趨勢"
       ],
-      "score": 100
+      "is_zhtw": true,
+      "score": 90
     },
     {
-      "id": "rss_-8269456889693882998",
+      "id": "rss_030681fbde",
       "channel": "rss",
       "source": "SAP SuccessFactors",
       "title": "三十年前金士頓為IBM打造亞太系統，三十年後IBM協助金士頓推動亞太人資數位轉型 - 商周",
       "summary": "三十年前金士頓為IBM打造亞太系統，三十年後IBM協助金士頓推動亞太人資數位轉型 商周",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9idmY2WXJIR1pwX19sUHVaM2l6LWtuRF9RUU1GOFFEbG9JdGpHZnZCMEtBTmxqazlMblEtVlFkM09DeVFPY3pMcVVpT1IwZEV2cXBFcFgtVlFYWHJNT215amFIeFBjWE0?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-01T16:00:00",
-      "fetched": "2026-06-04T06:59:49.626826",
+      "fetched": "2026-06-04T07:23:48.598138",
       "systems": [
         "EIP"
       ],
       "types": [
         "產業趨勢"
       ],
-      "score": 100
+      "is_zhtw": true,
+      "score": 90
     },
     {
-      "id": "rss_-9172454967833617445",
+      "id": "rss_efbbda5a84",
       "channel": "rss",
-      "source": "Stripe",
-      "title": "AI 替你花錢的時代——誰在坐地收稅？ - news.cnyes.com",
-      "summary": "AI 替你花錢的時代——誰在坐地收稅？ news.cnyes.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9DbXdLTy13UGw5SE1BYlVHcnFBbGI2bnJaOXBDR19obG5XNXNEdWlnRENGZ3huUnJINmxuZERUdUJFTk5qNXJyUUJhS2VDQVU?oc=5",
-      "date": "2026-05-30T04:00:19",
-      "fetched": "2026-06-04T06:59:50.440153",
+      "source": "Salesforce",
+      "title": "美股焦點：Salesforce(CRM.US) - 台視全球資訊網",
+      "summary": "美股焦點：Salesforce(CRM.US) 台視全球資訊網",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTF82c1dYR3hlTlhuVVNvN2h3R3g2NjVOQVMxd04tSWdXMHM0MkhEN0pFTi0wN3RsVXRNNk9LVWI3YUFSVXRxVzQ5Q3Joc205ME5Ua3VkNzlZNERTVk15WWViZ2ViM3ROOGtyODUtOThKaWFidFRxM01LQ3hPS21fQ3YzYzVOdVZhdnlsN21VNWIxQQ?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-06-01T22:24:37",
+      "fetched": "2026-06-04T07:23:56.238741",
       "systems": [
         "CRM"
       ],
       "types": [
         "產業趨勢"
       ],
-      "score": 60
+      "is_zhtw": true,
+      "score": 90
     },
     {
-      "id": "rss_-6483534913846323997",
+      "id": "rss_e12c1e4b18",
       "channel": "rss",
-      "source": "Workday",
-      "title": "Workday為本港中型企業引入企業級AI及超級智能 - IT PRO Magazine",
-      "summary": "Workday為本港中型企業引入企業級AI及超級智能 IT PRO Magazine",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBKQVdFRzFJN3ZFTVFyWFlrX1ZfdkwzSFFIdzB0dHFxaTlJdV9sUE9sUl9ZMzEtakdHNmw1RjBRTnhlUWFTUm9ucjAwNUJuc0REQ1NBeVhB?oc=5",
-      "date": "2026-05-29T14:57:36",
-      "fetched": "2026-06-04T06:59:49.382588",
+      "source": "Salesforce",
+      "title": "【即時新聞】AI熱潮重擊軟體業！Salesforce(CRM)成長承壓，私募違約率恐飆破10% - CMoney投資網誌",
+      "summary": "【即時新聞】AI熱潮重擊軟體業！Salesforce(CRM)成長承壓，私募違約率恐飆破10% CMoney投資網誌",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNm5qci1nRmw0b2NnUmljUXlubHpQdWJvNFBZV29xMl94ekFmcHA5R3VsZ2pWbk1SaTJUd1VTU0V1WVlqeXpwS1ktVXQzVXZFUFJRZjVuNV9tUWVUdG1uVjJrQl9TOU5VWFB0SnVnQW5SMlJoUWRyaU9LTWlFdmhCWWFub2Jydy03MGxDZTNhaU8?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-05-28T23:20:06",
+      "fetched": "2026-06-04T07:23:56.908956",
       "systems": [
-        "EIP"
+        "CRM"
       ],
       "types": [
         "產業趨勢"
       ],
-      "score": 60
+      "is_zhtw": true,
+      "score": 90
     },
     {
-      "id": "rss_-5929473793658790112",
+      "id": "rss_ffea9d74d6",
+      "channel": "rss",
+      "source": "Salesforce",
+      "title": "美股焦點：Salesforce(CRM.US) | 03:34:22(GMT+8) - 台視全球資訊網",
+      "summary": "美股焦點：Salesforce(CRM.US) | 03:34:22(GMT+8) 台視全球資訊網",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdFNIU2drcVVzUV9jcXAxUTNFRlI5aGo5WWF1dS1yNlc2cWp1S3hwNVRfQ3RHcVZKX0szSHRweHF3aUVqdVk2RnkyVzNDRktaeTBmc2ZSZnVqbG5BMDM0TmplSE5GQVN1b1FYVmZTTUd2M3lTMHF6VTdvOXBrcWpwZGozcHNTeE11WGpqdUpNbE9RZw?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-05-29T19:34:22",
+      "fetched": "2026-06-04T07:23:58.324964",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": true,
+      "score": 90
+    },
+    {
+      "id": "rss_dfa30b4620",
+      "channel": "rss",
+      "source": "Salesforce",
+      "title": "美股焦點：Salesforce(CRM.US) | 23:34:05(GMT+8) - 台視全球資訊網",
+      "summary": "美股焦點：Salesforce(CRM.US) | 23:34:05(GMT+8) 台視全球資訊網",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRUVodGVRb2V2SkVVWWZDbGNudnlwbE9WaW01NU1fdjU4TDgwS0JabURUdGhnOHlLS1g1MXB1NkU3RDZtbml2UzJuUlRYMGxibmF4alliRVlEYmZGeUhUNEZWaUZkd1JFXzlLOHZCaGlzc3ZWbmZfTlcwVkkyNThyUXAxVVRCUlJGWDZXT2FyNk9tUQ?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-05-30T15:34:05",
+      "fetched": "2026-06-04T07:23:59.186624",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": true,
+      "score": 90
+    },
+    {
+      "id": "rss_a28ec246d8",
+      "channel": "rss",
+      "source": "Salesforce",
+      "title": "【即時新聞】Salesforce(CRM)遭美銀降評！AI創業家揭自動化迷思，這關鍵讓工程師需求反增 - CMoney投資網誌",
+      "summary": "【即時新聞】Salesforce(CRM)遭美銀降評！AI創業家揭自動化迷思，這關鍵讓工程師需求反增 CMoney投資網誌",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOY2pkcWlCc2F0TUNCQUExd1hSSC1OeTctZklJb2otZU8wbXlQRl9JUVZtLWJBbktnUUkwczN5SHRLYXI3LXF5bW9PRzhWSDBPYW1jVVM4bXJEcVBPRjhuN2lnQXlBUmhwcDNYaDU0MU5KVS1vWDAtZ2xNcVgtMjhmYXhyQTFYNDZGOUp3a0JNVTk?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-05-28T22:16:50",
+      "fetched": "2026-06-04T07:24:00.614716",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": true,
+      "score": 90
+    },
+    {
+      "id": "rss_122a61ef79",
+      "channel": "rss",
+      "source": "Salesforce",
+      "title": "【22:51 即時新聞】Salesforce (CRM) 勁揚逾10%／日漲約5%：宣布在法國加碼投資與AI佈局帶動買氣 - CMoney投資網誌",
+      "summary": "【22:51 即時新聞】Salesforce (CRM) 勁揚逾10%／日漲約5%：宣布在法國加碼投資與AI佈局帶動買氣 CMoney投資網誌",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTnZZTzBCMFRhZ0djZnFXcnJmUFk3YzhSZTlGcDQxR3BMc2lqMk5oTnBXZVZfRlJzZkRwQkhROExiaWRJeHlLc0dZamVoaVJENGVRdnRfRjhNVlJTa0FNdHdZYlBiM0hPaDVCc1FzZ2l3T0UtX0lURjRxdlcwc2ZjUDA5UlQtTnVGamxOaEJB?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-06-01T14:51:19",
+      "fetched": "2026-06-04T07:24:01.359429",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": true,
+      "score": 90
+    },
+    {
+      "id": "rss_98c7b1baf0",
       "channel": "rss",
       "source": "Workday",
       "title": "AI應用｜資料分散成AI落地最大挑戰 Workday籲港企整合底層數據 - 香港經濟日報HKET",
       "summary": "AI應用｜資料分散成AI落地最大挑戰 Workday籲港企整合底層數據 香港經濟日報HKET",
       "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxQWG5RbWY2X3F6ZXpTSTJGMm5taW1GR2JBdExaa3E1eDhOaTZsNUVBdkRhVGpINXAtaGRvVGZxLXFqNUxRcmc2a2JybnRDRXpoVlVaRVlPMjJ6Ml8xSERLUzFIX1FId2VHdFhSYzdNaUpGbGZ1WEMyNjl5Yk5jU1B6WXlqdlY5bzZhT2JQQmdrcEk5QVh5ekNRZGJEWW1wZ0hQTXc2OWxwVTh2OUdlNzZDUm5fbERTYnZnRDdHSXUzM0Jmc2t3NkVUMC1iWXd4aUF1VVZZdmk5TVJHNXRNVWQ2VDQ4bEpHRjZEYlo1ZEpSaXoxLXp3cHFaZzJkTXVWdnBDUEtKdHFEZ1RfQWd4cExFSnZhVlZ2d2NzN0tRaGszNlVBN2RpZkR3anBSSmtYRFpJejVZeG1EUnlKdDlOUnJxTE5IbXNqTkVxQmp5WkdCaWdZaUJvZndLY3RfdmVfM3U1NGVJYjJjeHRLMU5kbmJBQ1BacVRkV1hmNEoyUVhnTQ?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-05-29T09:01:10",
-      "fetched": "2026-06-04T06:59:49.384268",
+      "fetched": "2026-06-04T07:23:45.191887",
       "systems": [
         "EIP"
       ],
       "types": [
         "產業趨勢"
       ],
-      "score": 100
+      "is_zhtw": false,
+      "score": 50
     },
     {
-      "id": "rss_3782098961567199474",
+      "id": "rss_39b3f19317",
+      "channel": "rss",
+      "source": "Workday",
+      "title": "Workday推出Agent Passport，用於測試、驗證並持續監控企業中的每一個AI代理 - Moomoo",
+      "summary": "Workday推出Agent Passport，用於測試、驗證並持續監控企業中的每一個AI代理 Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOV0hPcktEWVhLNjlBZ3dRMHBLdGhXV2o4VnM4dl9iVGpPUTRPU0dfUExfVlZDLVh2WWkydjhtVmVLSXlWb1ZnMWdjOFNKY1JZTm9aV3hlWGVjYlFoVjZfbU5BblR0Y3FnS0xzLUlFcVY5dEk4VGh4ODdYZENmUnhiX3Q3YmowLXZ6MG1HRmFxMzVyWEl0Y0U5QmJpZF9lNXdIcVJkdFh2MFR4NXNwZDAwaldKb01oMVdPdnc?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-06-02T13:05:00",
+      "fetched": "2026-06-04T07:23:45.894127",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "score": 50
+    },
+    {
+      "id": "rss_22a1701c38",
+      "channel": "rss",
+      "source": "Workday",
+      "title": "企業部署AI 資料分散挑戰大 - 香港經濟日報HKET",
+      "summary": "企業部署AI 資料分散挑戰大 香港經濟日報HKET",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUEgtb0dFVzhTbWkwdmpSbkM3NXpzR0Y4YllaZkFDZmtiRTRmaW5Ra2FHM0ZkM0JDNXRXMVY1YWFHMlJnc0gtYU1abkVsQWdRYVc0VV9YckNsWFFOWV9OTGtpNFk3UGZyNDFOdjUtX3ZQUnNjTDJ6aFlfTl9LREVvVzFJY2hNMWx0Z1ctYUU2WlByaDZUbktZb01fUUtlT2RVZElaOFZvN3VvNXQzZkVFWG12Z3g1YXJQRmdDalVKdFhDN3YtMjVYZ0ZSdDdYZWRZRlVtcVpuaDFfX2c?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-05-31T16:19:50",
+      "fetched": "2026-06-04T07:23:46.637894",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "score": 50
+    },
+    {
+      "id": "rss_9d6568b777",
       "channel": "rss",
       "source": "HubSpot",
       "title": "Hububble躋身《金融時報》亞太高成長企業榜 協助企業建構AI Agent營運架構 - 蕃新聞",
       "summary": "Hububble躋身《金融時報》亞太高成長企業榜 協助企業建構AI Agent營運架構 蕃新聞",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zeXhlY3ZyanRTb3p1cFRVRnZlenBnMUpvNmFEemE0Q1NPek9jcVZicUxhcXpLV20taV95RWZYV1h5clZkZFQ5NTVCam1xTkNjMWc?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-05-29T08:34:00",
-      "fetched": "2026-06-04T06:59:50.682253",
+      "fetched": "2026-06-04T07:23:54.199977",
       "systems": [
         "CRM"
       ],
       "types": [
         "產業趨勢"
       ],
-      "score": 60
+      "is_zhtw": false,
+      "score": 50
     },
     {
-      "id": "rss_-5974110265945722586",
+      "id": "rss_6e630bc1d9",
       "channel": "rss",
-      "source": "Workday",
-      "title": "Workday 為本港中型企業引入企業級 AI 及超級智能解決方案 - Techritual Hong Kong",
-      "summary": "Workday 為本港中型企業引入企業級 AI 及超級智能解決方案 Techritual Hong Kong",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5tUGJIZnZIeDdTWkpXTGExSlNCX1c2aVFUR0hQMHltNU5vRlJZb25CeGJnSHpCd2k2ZktGZzB0MVR5NUdEU2NXd09MQWxCSkc5ZjczaTZMOFA?oc=5",
-      "date": "2026-05-28T10:02:42",
-      "fetched": "2026-06-04T06:59:49.384556",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "score": 60
-    },
-    {
-      "id": "rss_-9198712700078478616",
-      "channel": "rss",
-      "source": "Stripe",
-      "title": "Robinhood 宣布串聯 AI 代理與金融平台，70 萬會員成首波測試對象 - TechOrange 科技報橘",
-      "summary": "Robinhood 宣布串聯 AI 代理與金融平台，70 萬會員成首波測試對象 TechOrange 科技報橘",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBMTE9VLU9iWDJEVkVIUHhXTDU2T2ZSb0lTLWJHUWxRSzVaY29CTGMtUzZwR3FXQ3N5WUdJeXNZVU90TTdfNEN4aGZuUWQ1UVI1LXJJNWpSdUxzSFRhRzFFWC1INHJKSXVOS3NkNWpTeFAyeFhMMzEw?oc=5",
-      "date": "2026-05-28T07:30:14",
-      "fetched": "2026-06-04T06:59:50.439591",
+      "source": "Salesforce",
+      "title": "Salesforce執行長：AI時代只積極招募一種人才 - news.cnyes.com",
+      "summary": "Salesforce執行長：AI時代只積極招募一種人才 news.cnyes.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5BNlZ4Z3l4ZHlmMXV3MHhiUGtEZ0VaRUpwVjBab01adGtsVmNZai12ZWg3d0hnVU1YQ0tMQ0liME84am1lTHZsM04wME1ZUUU?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-05-29T05:30:21",
+      "fetched": "2026-06-04T07:23:57.587988",
       "systems": [
         "CRM"
       ],
       "types": [
         "產業趨勢"
       ],
-      "score": 100
+      "is_zhtw": false,
+      "score": 50
+    },
+    {
+      "id": "rss_5ecb8bf09f",
+      "channel": "rss",
+      "source": "Salesforce",
+      "title": "Northland Securities Adjusts PT on Salesforce to $202 From $229, Maintains Market Perform Rating - 富途牛牛",
+      "summary": "Northland Securities Adjusts PT on Salesforce to $202 From $229, Maintains Market Perform Rating 富途牛牛",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZTZVbUFpQ0hVWFJwc2lxNEF0Wkt5RE1XWllpeXA0MVkyWmdPZVhMa1NBcE1yMnNmSDFLRm0wQV8xeVQ4cEk0NHJpblpvWm5tMEZDcDUxN1c0Y1hONU5UZWk2MTFhSFN1ZTQ5d0hPZkJySGxITkhsVW9fRkEyc0txeUNMYkxJZFlUZmpDd0hmWHVTMVhaby13YWtseGNXeGJHbk53RQ?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-05-28T13:08:40",
+      "fetched": "2026-06-04T07:23:59.879111",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "score": 50
     }
   ]
 }
