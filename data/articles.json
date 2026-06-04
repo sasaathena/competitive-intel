@@ -1,29 +1,45 @@
 {
   "stats": {
-    "last_updated": "2026-06-04T02:51:11.641982+00:00",
-    "total": 32,
-    "new_today": 32,
+    "last_updated": "2026-06-04T03:07:44.167447+00:00",
+    "total": 33,
+    "new_today": 1,
     "by_system": {
+      "ERP": 17,
       "PMS": 7,
       "EIP": 3,
-      "ERP": 16,
       "CRM": 7
     },
     "by_type": {
+      "一般": 16,
       "Dashboard": 3,
       "UIUX": 15,
-      "一般": 15,
       "功能分析": 2,
       "競品新聞": 7
     },
     "by_channel": {
+      "producthunt": 2,
       "rss": 15,
       "hackernews": 12,
-      "producthunt": 1,
       "devto": 4
     }
   },
   "articles": [
+    {
+      "id": "a1dfb224a326",
+      "title": "FolderPlus",
+      "url": "https://www.producthunt.com/products/folderplus",
+      "source": "Product Hunt",
+      "summary": "Peek inside any folder without opening it\n          \n\nDiscussion\n            |\n            Link",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "2026-06-02T12:16:55-07:00",
+      "fetched": "2026-06-04T03:07:36.491464+00:00",
+      "channel": "producthunt"
+    },
     {
       "id": "6b59514c4629",
       "title": "How to Get Research Recommendations on the Roadmap",
