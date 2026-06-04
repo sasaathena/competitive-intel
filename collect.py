@@ -127,38 +127,54 @@ def collect_all_intelligence():
         except Exception as e:
             print(f"❌ 抓取 {brand} 動態失敗: {e}")
 
-    # ── 5. Threads 社群模擬資料填充（供前端 Threads 分頁顯示） ────────────────
-    print("🧵 正在檢索 Threads / 社群 EIP 與 CRM 良好體驗與 Dashboard 畫面情報...")
-    # 模擬兩筆極具 UIUX 代表性的社群情報卡片，確保 Dashboard 畫面與社群功能完美連動
-    mock_threads = [
-        {
-            "id": "threads_mock_1",
-            "channel": "threads",
-            "source": "Threads @uiux_design_tw",
-            "title": "爆紅的 HiBob HRIS 系統為什麼好用？拆解其員工後台 Dashboard 的良好體驗亮點",
-            "summary": "今天體驗了國外很紅的 HiBob 系統，它的首頁儀表板做得非常像 Notion-style，卡片式佈局大幅減少人資系統原有的沉重感，色彩搭配和 Widget 自訂功能做得極好...",
-            "url": "https://www.threads.net",
-            "date": datetime.utcnow().isoformat(),
-            "fetched": datetime.utcnow().isoformat(),
-            "systems": ["EIP"],
-            "types": ["用戶體驗"],
-            "score": 95
-        },
-        {
-            "id": "threads_mock_2",
-            "channel": "threads",
-            "source": "Threads @saas_growth",
-            "title": "HubSpot 最新功能更新：CRM 畫板導入 AI 智慧預測漏斗圖表",
-            "summary": "HubSpot 剛剛發布了最新的功能更新！銷售 Dashboard 增加了智慧漏斗預測。UIUX 維持一貫的簡潔優雅，讓非技術人員也能快速設定銷售預算目標，使用者體驗非常流暢。",
-            "url": "https://www.threads.net",
-            "date": datetime.utcnow().isoformat(),
-            "fetched": datetime.utcnow().isoformat(),
-            "systems": ["CRM"],
-            "types": ["功能更新", "用戶體驗"],
-            "score": 90
-        }
-    ]
-    articles.extend(mock_threads)
+   # ── 5. 動態自動抓取 Threads 精確文章連結 ────────────────────────────
+    print("🧵 正在透過 RSSHub 橋接器自動抓取 Threads 精確文章...")
+    
+    # 您可以收集一些經常發布 UIUX、SaaS 產品體驗或 EIP/CRM 觀點的 Threads 帳號
+    # 格式：https://rsshub.app/threads/user/帳號名稱
+    THREADS_USERS = ["ux_design_share", "saas_taiwan"] 
+    
+    for user in THREADS_USERS:
+        threads_rss_url = f"https://rsshub.app/threads/user/{user}"
+        try:
+            res = requests.get(threads_rss_url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+            if res.status_code == 200:
+                soup = BeautifulSoup(res.content, "xml")
+                items = soup.find_all("item")
+                
+                for item in items[:3]: # 每個帳號取最新 3 篇
+                    title = item.title.text if item.title else "Threads 體驗分享"
+                    # 💡 重點：RSSHub 解析出來的 link 就是該篇文章的精確網址！
+                    url = item.link.text 
+                    description = BeautifulSoup(item.description.text, "html.parser").get_text() if item.description else ""
+                    
+                    # 判斷這篇社群貼文是關於 EIP 還是 CRM
+                    system_tags = []
+                    if any(k in description.lower() for k in ["hubspot", "crm", "stripe", "客戶"]):
+                        system_tags.append("CRM")
+                    if any(k in description.lower() for k in ["workday", "sap", "hibob", "apollo", "hr", "人資", "eip"]):
+                        system_tags.append("EIP")
+                    
+                    if not system_tags:
+                        continue # 如果跟您的核心系統完全無關，就過濾掉
+                        
+                    types = analyze_tags(title, description)
+                    
+                    articles.append({
+                        "id": f"threads_{hash(url)}",
+                        "channel": "threads",
+                        "source": f"Threads @{user}",
+                        "title": title[:50] + "..." if len(title) > 50 else title,
+                        "summary": description[:120] + "..." if len(description) > 120 else description,
+                        "url": url, # 這邊就會是精確的 https://www.threads.net/@user/post/...
+                        "date": datetime.utcnow().isoformat(),
+                        "fetched": datetime.utcnow().isoformat(),
+                        "systems": system_tags,
+                        "types": types,
+                        "score": 85 if is_traditional_chinese(title + description) else 55
+                    })
+        except Exception as e:
+            print(f"⚠ 透過 RSSHub 抓取 Threads 用戶 @{user} 失敗 (社群平台限制較嚴格): {e}")
 
     # ── 6. 讀取歷史資料並進行智慧去重與合併 ──────────────────────────
     data_dir = "data"
