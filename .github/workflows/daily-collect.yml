@@ -40,17 +40,17 @@ jobs:
       - name: Run scraper
         run: python collect.py
 
-      # 5. 🛠️ 抓漏核心：如果爬蟲把資料生在外面，我們幫它搬進 docs/data/
-      - name: Move data to docs folder if needed
+      # 5. 同步資料到 GitHub Pages
+      - name: Sync data to docs
         run: |
-          if [ -d "data" ]; then
-            mkdir -p docs/data
-            cp -r data/* docs/data/ || true
-          fi
-          if [ -f "articles.json" ]; then
-            mkdir -p docs/data
-            cp articles.json docs/data/articles.json || true
-          fi
+          mkdir -p docs/data
+          if [ -f "data/articles.json" ]; then
+            cp data/articles.json docs/data/articles.json
+            fi
+        if [ -f "data/seen_ids.json" ]; then
+        cp data/seen_ids.json docs/data/seen_ids.json
+        fi
+
 
       # 6. 如果有任何異動，commit 並 push 回 GitHub
       - name: Commit & push updated data
