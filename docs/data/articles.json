@@ -1,42 +1,13 @@
 {
   "stats": {
-    "total": 14,
-    "new_today": 14,
-    "last_updated": "2026-06-04T08:06:25.559818",
-    "skipped_finance": 6,
-    "skipped_irrelevant": 4,
-    "zhtw_count": 9,
-    "by_system": {
-      "EIP": 5,
-      "CRM": 9
-    },
-    "by_type": {
-      "產業趨勢": 14
-    },
+    "total": 10,
+    "new_today": 10,
+    "last_updated": "2026-06-04T08:53:24.926740",
     "by_channel": {
-      "rss": 14
+      "rss": 10
     }
   },
   "articles": [
-    {
-      "id": "rss_f313ba261e",
-      "channel": "rss",
-      "source": "Workday",
-      "title": "Workday推出面向開發人員的新工具，用於構建、連接和驗證面向人力資源、財務和IT領域的AI智能體 - Moomoo",
-      "summary": "Workday推出面向開發人員的新工具，用於構建、連接和驗證面向人力資源、財務和IT領域的AI智能體 Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMHJadmpQdGY2VUJiV2JYX1VSQlBLTE1FcS1IS1lsOXg1QTdXYTltX1VGUHdrTzVrWEFDbG13QTA4WEx2aXRjRWpsQm1GNHQ1UWFYUEIzYjZXdnV6WWJRdlpZTDdxc3ZuTTQ2TXk5YkhlbEFkXy1fWkxpR2gxM0JVaWVBblNiWGVFc1dWWlZ6czM4VEtJaFRDSWFSamxsV0pXOXRNV29Bakc3cU1aY0E?oc=5",
-      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-06-02T13:05:00",
-      "fetched": "2026-06-04T08:06:02.961920",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": true,
-      "score": 90
-    },
     {
       "id": "rss_030681fbde",
       "channel": "rss",
@@ -45,8 +16,8 @@
       "summary": "三十年前金士頓為IBM打造亞太系統，三十年後IBM協助金士頓推動亞太人資數位轉型 商周",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9idmY2WXJIR1pwX19sUHVaM2l6LWtuRF9RUU1GOFFEbG9JdGpHZnZCMEtBTmxqazlMblEtVlFkM09DeVFPY3pMcVVpT1IwZEV2cXBFcFgtVlFYWHJNT215amFIeFBjWE0?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-06-01T16:00:00",
-      "fetched": "2026-06-04T08:06:07.382381",
+      "date": "2026-06-01T16:00:00+00:00",
+      "fetched": "2026-06-04T08:53:15.803852",
       "systems": [
         "EIP"
       ],
@@ -57,15 +28,91 @@
       "score": 90
     },
     {
-      "id": "rss_efbbda5a84",
+      "id": "rss_d5c2254587",
       "channel": "rss",
-      "source": "Salesforce",
-      "title": "美股焦點：Salesforce(CRM.US) - 台視全球資訊網",
-      "summary": "美股焦點：Salesforce(CRM.US) 台視全球資訊網",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTF82c1dYR3hlTlhuVVNvN2h3R3g2NjVOQVMxd04tSWdXMHM0MkhEN0pFTi0wN3RsVXRNNk9LVWI3YUFSVXRxVzQ5Q3Joc205ME5Ua3VkNzlZNERTVk15WWViZ2ViM3ROOGtyODUtOThKaWFidFRxM01LQ3hPS21fQ3YzYzVOdVZhdnlsN21VNWIxQQ?oc=5",
+      "source": "Apollo",
+      "title": "Apollo 尋求投資者參與360億美元債務交易 為 Anthropic 採購 AI 晶片 | 國際焦點 | 國際 - 經濟日報",
+      "summary": "Apollo 尋求投資者參與360億美元債務交易 為 Anthropic 採購 AI 晶片 | 國際焦點 | 國際 經濟日報",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE42MWRDNTcwbEo2ZElTXzJobjg3dzAwaS1zdWxUNDRKaWd5WHlRUzRMMUM5ZnJxYVozaUlRV2ZxYWh3UDRFM2NZNGlYdUJKN2lNb0c2MmR3QTVzUQ?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-06-01T22:24:37",
-      "fetched": "2026-06-04T08:06:15.279302",
+      "date": "2026-05-29T13:59:47+00:00",
+      "fetched": "2026-06-04T08:53:17.153454",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": true,
+      "score": 90
+    },
+    {
+      "id": "rss_4ccc301012",
+      "channel": "rss",
+      "source": "Apollo",
+      "title": "Apollo尋求投資者參與360億美元債務交易 為Anthropic採購AI晶片 - MSN",
+      "summary": "Apollo尋求投資者參與360億美元債務交易 為Anthropic採購AI晶片 MSN",
+      "url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxOdE1rVUxzdlAtUF9IVDdyZ0J2M2Jld1hTZzhQM2FmU2F0WnNBZ3hqcVpWcXhBMWZHcmxTbVdldjRzelNsa1BFbVVmMm03S1dZVzdaX0t4WWlsWVJFZmdPdHI4Zmx0X3pSaEd1SjhHdG42Xzl5a2JzcGNQTW1YaFRyTjJBUU5tWUkxeEdXSzNOekJneHVtdlhJdllTRk5neTl6WmF0TGYwQ1BQWVJfbGNodHpzRmpDNkRuZS1FV01lNmVZc3dnVnVTQXo5Z3R4REdzYjRlWUwtUHp2LV9oYlp3VlpkeTBzOHVBQXhWNmdfSC1ra3NhRDhDbXNLejNfSU9vZ0JjVk50UVhEZnhlenE2bW5hMndHOTRsblBjZXUzQkhfd3p4RXM2aGZBb3FVR1ptQnJTbnhDS244cC1DZWdETjJyUGVrUU95bkNWcXNsODNYVTZQVnpDVndYcU1rcmgyczF4Mw?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-05-29T06:23:21+00:00",
+      "fetched": "2026-06-04T08:53:17.934805",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": true,
+      "score": 90
+    },
+    {
+      "id": "rss_2ef2bca708",
+      "channel": "rss",
+      "source": "Apollo",
+      "title": "法人觀點：Apollo指稱，AI熱潮恐澆熄聯準會主席華許快速降息希望 - 富聯網",
+      "summary": "法人觀點：Apollo指稱，AI熱潮恐澆熄聯準會主席華許快速降息希望 富聯網",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUzVlVW1YRnpGX3FyVzVSeExKenJURjRyZ0d5WURqbjI4UGg2QWtBOENHcGgtVEpfcDgwSzQzTWd5RGI5R3FoLXhGZHMxX0J6V2R5VWtDNVdmM2tLNVVyYldFUFBKWXk2TlIwVjh5aXZORTE4dnNGQ1NoTUJtWlhmSXd1V2FrTWdU?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-06-02T01:19:00+00:00",
+      "fetched": "2026-06-04T08:53:19.627232",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": true,
+      "score": 90
+    },
+    {
+      "id": "rss_877fb48ab5",
+      "channel": "rss",
+      "source": "Apollo",
+      "title": "彭博：Apollo擬融資360億美元 為Anthropic採購AI晶片 (10:29) - 20260529 - 即時財經新聞 - 明報財經網",
+      "summary": "彭博：Apollo擬融資360億美元 為Anthropic採購AI晶片 (10:29) - 20260529 - 即時財經新聞 明報財經網",
+      "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxPTE9la290Wkpfd2RYTE8yLVFsNk5zcjhUa19EcUxwd3d4eXJZQWxuejA5V3phX0dKUEUzOGlXRzM4Qnc0SXhLOFBqcHRNcHNyY0FxSHFkR2s0aVg4UHFxcy1RN20xcjR4S2FDMGNSajBqZTh6TjQ1a21FekJPbG5JX0l3eXVnd3J5cmtzcUZWNjE2TDU1WlpLNXZjSmZWeVR5amNhV3pNR2I1aWIzc1ZSNmJJeHJzY25oMjdNQkpSeHlsZ0c1ekp2TllFWXdpaDlYN3JoMVVralRVb1pJakIzbWJoSHlaSGVsNmc1dWpHbGdPOUpJZjJjMFJaeXlPRVdUV0FTcHJ6ekNGT1ZVNDc1U0xpQ2FTNzVjdTNaS3QzMGpSTmNBT1BmbTVxWQ?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-05-29T02:35:05+00:00",
+      "fetched": "2026-06-04T08:53:21.351667",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": true,
+      "score": 90
+    },
+    {
+      "id": "rss_567c6eb2fe",
+      "channel": "rss",
+      "source": "Stripe",
+      "title": "MSI火力全開！AI 主機、4K 360Hz 三模OLED顯示器與PRO MAX商務系列Computex同步亮相 - 4Gamers",
+      "summary": "MSI火力全開！AI 主機、4K 360Hz 三模OLED顯示器與PRO MAX商務系列Computex同步亮相 4Gamers",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNEZOMl9pNUk2RWRQU2p3UE1OdmhCeW1jX2ZzSElQUlJETlppWGtzekZJLUU3Zjl0ZkIydFR4UWpWRlA5UEd1S0dxWjlUWUtnQk1EVlI2UkxOakNpbjF1WDUyZExuOHZmS3VIUi0zc0trVnZsZGNBZkFwT3p2M2daNF9xN0NnY3NiNjhrWnh3Q3daMDVN?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-06-01T10:45:00+00:00",
+      "fetched": "2026-06-04T08:53:24.626031",
       "systems": [
         "CRM"
       ],
@@ -76,129 +123,15 @@
       "score": 90
     },
     {
-      "id": "rss_e12c1e4b18",
+      "id": "rss_0c705f32e2",
       "channel": "rss",
-      "source": "Salesforce",
-      "title": "【即時新聞】AI熱潮重擊軟體業！Salesforce(CRM)成長承壓，私募違約率恐飆破10% - CMoney投資網誌",
-      "summary": "【即時新聞】AI熱潮重擊軟體業！Salesforce(CRM)成長承壓，私募違約率恐飆破10% CMoney投資網誌",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNm5qci1nRmw0b2NnUmljUXlubHpQdWJvNFBZV29xMl94ekFmcHA5R3VsZ2pWbk1SaTJUd1VTU0V1WVlqeXpwS1ktVXQzVXZFUFJRZjVuNV9tUWVUdG1uVjJrQl9TOU5VWFB0SnVnQW5SMlJoUWRyaU9LTWlFdmhCWWFub2Jydy03MGxDZTNhaU8?oc=5",
+      "source": "Apollo",
+      "title": "Apollo首席經濟學家稱AI熱潮將澆滅聯儲會新任主席沃什快速降息的希望 - Yahoo 財經",
+      "summary": "Apollo首席經濟學家稱AI熱潮將澆滅聯儲會新任主席沃什快速降息的希望 Yahoo 財經",
+      "url": "https://news.google.com/rss/articles/CBMiuANBVV95cUxOcS1UenhBTmRfR3ppSjRpTkg4RmJ5Y3hMWnRDNWFMSGhWSXRaa1ZmS0pPaGVIaE8zSWc1TVVINzlNUGpBbTI2Z0VVb2xUZmI5ZTVpUk0yUS1LZzJ3UFI2bWNGczFtR25tcVFCbTdvc0lHNTJveTc3QmNBcm9fV2ZfUzJqV0dzN1k5ZDlJUTBPVXFIcUdZOUFpOWpzdFRWNWdzLTdDMEpJUTJvdU9ZM3A0R3VKTXV0ZlJKa095emltOW1kbXQzbUxycWRvWkV5M2JIUTFmcE1jdW5TSnhQbXVzc2ZEVkJ1UE1McWFJd09LX2g0bVZHWVFQdDJEazF0WER3c29ielJ5RkYyOUk3a3AzWXdBc05ENTlQRl8yaFVHX3hSR1pQb2l2aXk3VjRQdlZ2amtEQXFvNGdzUy03bF9QTnQzSk80V25fem56d1FCcENHWk5EVUNuemJ1bWUwdXloZmFaTHpReGQ4bmZ3R0o0bElLQTUzSzNxNTN3eDE0OVl6Z1BPeUtNYUtLZmxFa2NnX2IwU01WWnhiYmhRRGxjUlZlbENYZU5xYmJXMFhIMXRPZGkxd1hEZg?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-05-28T23:20:06",
-      "fetched": "2026-06-04T08:06:16.153200",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": true,
-      "score": 90
-    },
-    {
-      "id": "rss_ffea9d74d6",
-      "channel": "rss",
-      "source": "Salesforce",
-      "title": "美股焦點：Salesforce(CRM.US) | 03:34:22(GMT+8) - 台視全球資訊網",
-      "summary": "美股焦點：Salesforce(CRM.US) | 03:34:22(GMT+8) 台視全球資訊網",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdFNIU2drcVVzUV9jcXAxUTNFRlI5aGo5WWF1dS1yNlc2cWp1S3hwNVRfQ3RHcVZKX0szSHRweHF3aUVqdVk2RnkyVzNDRktaeTBmc2ZSZnVqbG5BMDM0TmplSE5GQVN1b1FYVmZTTUd2M3lTMHF6VTdvOXBrcWpwZGozcHNTeE11WGpqdUpNbE9RZw?oc=5",
-      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-05-29T19:34:22",
-      "fetched": "2026-06-04T08:06:17.792578",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": true,
-      "score": 90
-    },
-    {
-      "id": "rss_dfa30b4620",
-      "channel": "rss",
-      "source": "Salesforce",
-      "title": "美股焦點：Salesforce(CRM.US) | 23:34:05(GMT+8) - 台視全球資訊網",
-      "summary": "美股焦點：Salesforce(CRM.US) | 23:34:05(GMT+8) 台視全球資訊網",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRUVodGVRb2V2SkVVWWZDbGNudnlwbE9WaW01NU1fdjU4TDgwS0JabURUdGhnOHlLS1g1MXB1NkU3RDZtbml2UzJuUlRYMGxibmF4alliRVlEYmZGeUhUNEZWaUZkd1JFXzlLOHZCaGlzc3ZWbmZfTlcwVkkyNThyUXAxVVRCUlJGWDZXT2FyNk9tUQ?oc=5",
-      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-05-30T15:34:05",
-      "fetched": "2026-06-04T08:06:18.602835",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": true,
-      "score": 90
-    },
-    {
-      "id": "rss_a28ec246d8",
-      "channel": "rss",
-      "source": "Salesforce",
-      "title": "【即時新聞】Salesforce(CRM)遭美銀降評！AI創業家揭自動化迷思，這關鍵讓工程師需求反增 - CMoney投資網誌",
-      "summary": "【即時新聞】Salesforce(CRM)遭美銀降評！AI創業家揭自動化迷思，這關鍵讓工程師需求反增 CMoney投資網誌",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOY2pkcWlCc2F0TUNCQUExd1hSSC1OeTctZklJb2otZU8wbXlQRl9JUVZtLWJBbktnUUkwczN5SHRLYXI3LXF5bW9PRzhWSDBPYW1jVVM4bXJEcVBPRjhuN2lnQXlBUmhwcDNYaDU0MU5KVS1vWDAtZ2xNcVgtMjhmYXhyQTFYNDZGOUp3a0JNVTk?oc=5",
-      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-05-28T22:16:50",
-      "fetched": "2026-06-04T08:06:19.395077",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": true,
-      "score": 90
-    },
-    {
-      "id": "rss_122a61ef79",
-      "channel": "rss",
-      "source": "Salesforce",
-      "title": "【22:51 即時新聞】Salesforce (CRM) 勁揚逾10%／日漲約5%：宣布在法國加碼投資與AI佈局帶動買氣 - CMoney投資網誌",
-      "summary": "【22:51 即時新聞】Salesforce (CRM) 勁揚逾10%／日漲約5%：宣布在法國加碼投資與AI佈局帶動買氣 CMoney投資網誌",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTnZZTzBCMFRhZ0djZnFXcnJmUFk3YzhSZTlGcDQxR3BMc2lqMk5oTnBXZVZfRlJzZkRwQkhROExiaWRJeHlLc0dZamVoaVJENGVRdnRfRjhNVlJTa0FNdHdZYlBiM0hPaDVCc1FzZ2l3T0UtX0lURjRxdlcwc2ZjUDA5UlQtTnVGamxOaEJB?oc=5",
-      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-06-01T14:51:19",
-      "fetched": "2026-06-04T08:06:20.177794",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": true,
-      "score": 90
-    },
-    {
-      "id": "rss_1771b37366",
-      "channel": "rss",
-      "source": "Salesforce",
-      "title": "【即時新聞】ChatGPT掀估值雪崩！Salesforce(CRM)等巨頭備受挑戰，逾220家新創拉警報 - CMoney投資網誌",
-      "summary": "【即時新聞】ChatGPT掀估值雪崩！Salesforce(CRM)等巨頭備受挑戰，逾220家新創拉警報 CMoney投資網誌",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNXF5bkVIR2hHRjBxQmVuQlBtcXpaNFZkX2w3OXhnLU1FQTNWbklESzduT3dNNEgycG9rRWprNFN0N0ZXMnV4bG00TmpqMXBkekNOdVhuaGVvVGhkcmtIblZETDVJNVdQTHNaak5VcXVRUF9KcGNmZURCMEU0YVhpNkN5ak5UUHFaUjA2MWNLVEs?oc=5",
-      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-06-01T14:37:07",
-      "fetched": "2026-06-04T08:06:20.998356",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": true,
-      "score": 90
-    },
-    {
-      "id": "rss_98c7b1baf0",
-      "channel": "rss",
-      "source": "Workday",
-      "title": "AI應用｜資料分散成AI落地最大挑戰 Workday籲港企整合底層數據 - 香港經濟日報HKET",
-      "summary": "AI應用｜資料分散成AI落地最大挑戰 Workday籲港企整合底層數據 香港經濟日報HKET",
-      "url": "https://news.google.com/rss/articles/CBMi_wJBVV95cUxQWG5RbWY2X3F6ZXpTSTJGMm5taW1GR2JBdExaa3E1eDhOaTZsNUVBdkRhVGpINXAtaGRvVGZxLXFqNUxRcmc2a2JybnRDRXpoVlVaRVlPMjJ6Ml8xSERLUzFIX1FId2VHdFhSYzdNaUpGbGZ1WEMyNjl5Yk5jU1B6WXlqdlY5bzZhT2JQQmdrcEk5QVh5ekNRZGJEWW1wZ0hQTXc2OWxwVTh2OUdlNzZDUm5fbERTYnZnRDdHSXUzM0Jmc2t3NkVUMC1iWXd4aUF1VVZZdmk5TVJHNXRNVWQ2VDQ4bEpHRjZEYlo1ZEpSaXoxLXp3cHFaZzJkTXVWdnBDUEtKdHFEZ1RfQWd4cExFSnZhVlZ2d2NzN0tRaGszNlVBN2RpZkR3anBSSmtYRFpJejVZeG1EUnlKdDlOUnJxTE5IbXNqTkVxQmp5WkdCaWdZaUJvZndLY3RfdmVfM3U1NGVJYjJjeHRLMU5kbmJBQ1BacVRkV1hmNEoyUVhnTQ?oc=5",
-      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-05-29T09:01:10",
-      "fetched": "2026-06-04T08:06:03.757917",
+      "date": "2026-06-01T16:41:46+00:00",
+      "fetched": "2026-06-04T08:53:18.697636",
       "systems": [
         "EIP"
       ],
@@ -209,15 +142,15 @@
       "score": 50
     },
     {
-      "id": "rss_39b3f19317",
+      "id": "rss_1db71fa69a",
       "channel": "rss",
-      "source": "Workday",
-      "title": "Workday推出Agent Passport，用於測試、驗證並持續監控企業中的每一個AI代理 - Moomoo",
-      "summary": "Workday推出Agent Passport，用於測試、驗證並持續監控企業中的每一個AI代理 Moomoo",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOV0hPcktEWVhLNjlBZ3dRMHBLdGhXV2o4VnM4dl9iVGpPUTRPU0dfUExfVlZDLVh2WWkydjhtVmVLSXlWb1ZnMWdjOFNKY1JZTm9aV3hlWGVjYlFoVjZfbU5BblR0Y3FnS0xzLUlFcVY5dEk4VGh4ODdYZENmUnhiX3Q3YmowLXZ6MG1HRmFxMzVyWEl0Y0U5QmJpZF9lNXdIcVJkdFh2MFR4NXNwZDAwaldKb01oMVdPdnc?oc=5",
+      "source": "Apollo",
+      "title": "Fed新主席算盤恐落空？阿波羅示警：AI愈強、降息愈難- 國際 - 工商時報",
+      "summary": "Fed新主席算盤恐落空？阿波羅示警：AI愈強、降息愈難- 國際 工商時報",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1UcjlYVmFaT3pNQVJHc29wZUlVSko0bkZJTmdNWUZlY0ozaEdjR3VSVDdLWHB0SDhTdjNwbHdQNGhEa3hGcy0zUFg2Z2g3UWxrVHNaSm9ITFBjcDU4T0Jn?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-06-02T13:05:00",
-      "fetched": "2026-06-04T08:06:04.570050",
+      "date": "2026-06-02T03:05:00+00:00",
+      "fetched": "2026-06-04T08:53:20.500865",
       "systems": [
         "EIP"
       ],
@@ -228,15 +161,15 @@
       "score": 50
     },
     {
-      "id": "rss_22a1701c38",
+      "id": "rss_4fe3701e30",
       "channel": "rss",
-      "source": "Workday",
-      "title": "企業部署AI 資料分散挑戰大 - 香港經濟日報HKET",
-      "summary": "企業部署AI 資料分散挑戰大 香港經濟日報HKET",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQUEgtb0dFVzhTbWkwdmpSbkM3NXpzR0Y4YllaZkFDZmtiRTRmaW5Ra2FHM0ZkM0JDNXRXMVY1YWFHMlJnc0gtYU1abkVsQWdRYVc0VV9YckNsWFFOWV9OTGtpNFk3UGZyNDFOdjUtX3ZQUnNjTDJ6aFlfTl9LREVvVzFJY2hNMWx0Z1ctYUU2WlByaDZUbktZb01fUUtlT2RVZElaOFZvN3VvNXQzZkVFWG12Z3g1YXJQRmdDalVKdFhDN3YtMjVYZ0ZSdDdYZWRZRlVtcVpuaDFfX2c?oc=5",
+      "source": "Apollo",
+      "title": "Apollo首席經濟學家表示，AI熱潮將削弱美聯儲新任主席Waller快速降息的希望 - Bitget",
+      "summary": "Apollo首席經濟學家表示，AI熱潮將削弱美聯儲新任主席Waller快速降息的希望 Bitget",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VdWFzbk9KZDhCSTA1ZEpyeTB2Y1FJSU9lZzhiaTBuc2RTeGxCakRaSUlqc21ra2tLblhNZ0hLdG1Ud294Z1lDZ2JMZFJtdlUxLUk3cEFvY3gwV0JNOXMxZENlaXBRQdIBa0FVX3lxTE5CUm43WW90SlpVNHVpXzd4VU4xT0pHc25aTVhoRWFUcEJxSUsxNzlVcEVPNWVYVnJLYXAweDZRbHFTR29wWlcyRkdyYkNGcEE4X0xCdEdLaUVVenlGNV96Q3BGR1hoZ0FpTVNN?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-05-31T16:19:50",
-      "fetched": "2026-06-04T08:06:05.375219",
+      "date": "2026-06-01T01:50:08+00:00",
+      "fetched": "2026-06-04T08:53:22.126812",
       "systems": [
         "EIP"
       ],
@@ -254,27 +187,8 @@
       "summary": "Hububble躋身《金融時報》亞太高成長企業榜 協助企業建構AI Agent營運架構 蕃新聞",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zeXhlY3ZyanRTb3p1cFRVRnZlenBnMUpvNmFEemE0Q1NPek9jcVZicUxhcXpLV20taV95RWZYV1h5clZkZFQ5NTVCam1xTkNjMWc?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-05-29T08:34:00",
-      "fetched": "2026-06-04T08:06:13.140374",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": false,
-      "score": 50
-    },
-    {
-      "id": "rss_6e630bc1d9",
-      "channel": "rss",
-      "source": "Salesforce",
-      "title": "Salesforce執行長：AI時代只積極招募一種人才 - news.cnyes.com",
-      "summary": "Salesforce執行長：AI時代只積極招募一種人才 news.cnyes.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5BNlZ4Z3l4ZHlmMXV3MHhiUGtEZ0VaRUpwVjBab01adGtsVmNZai12ZWg3d0hnVU1YQ0tMQ0liME84am1lTHZsM04wME1ZUUU?oc=5",
-      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-05-29T05:30:21",
-      "fetched": "2026-06-04T08:06:16.996641",
+      "date": "2026-05-29T08:34:00+00:00",
+      "fetched": "2026-06-04T08:53:23.519373",
       "systems": [
         "CRM"
       ],
