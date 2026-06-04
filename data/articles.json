@@ -1,0 +1,579 @@
+{
+  "stats": {
+    "last_updated": "2026-06-04T02:51:11.641982+00:00",
+    "total": 32,
+    "new_today": 32,
+    "by_system": {
+      "PMS": 7,
+      "EIP": 3,
+      "ERP": 16,
+      "CRM": 7
+    },
+    "by_type": {
+      "Dashboard": 3,
+      "UIUX": 15,
+      "一般": 15,
+      "功能分析": 2,
+      "競品新聞": 7
+    },
+    "by_channel": {
+      "rss": 15,
+      "hackernews": 12,
+      "producthunt": 1,
+      "devto": 4
+    }
+  },
+  "articles": [
+    {
+      "id": "6b59514c4629",
+      "title": "How to Get Research Recommendations on the Roadmap",
+      "url": "https://www.nngroup.com/articles/research-recommendations-roadmap/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+      "source": "Nielsen Norman Group",
+      "summary": "To influence the roadmap: join planning early, learn constraints, tie research to PM metrics, and give clear recommendations at the right time.",
+      "systems": [
+        "PMS"
+      ],
+      "types": [
+        "Dashboard"
+      ],
+      "date": "Fri, 29 May 2026 17:00:00 +0000",
+      "fetched": "2026-06-04T02:50:38.981009+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "69d43c0a3ca1",
+      "title": "Designing AI Agents: 4 Lessons from China’s Qwen Agent",
+      "url": "https://www.nngroup.com/articles/designing-ai-agents/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+      "source": "Nielsen Norman Group",
+      "summary": "A study of Qwen's AI agent reveals 4 design lessons: support discoverability, reuse familiar patterns, handle personal data carefully, and protect user autonomy.",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "UIUX"
+      ],
+      "date": "Fri, 08 May 2026 17:00:00 +0000",
+      "fetched": "2026-06-04T02:50:38.981565+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "52e2849205ea",
+      "title": "Information Seeking in China: A Different Ecosystem, Familiar Behavior",
+      "url": "https://www.nngroup.com/articles/information-seeking-china/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
+      "source": "Nielsen Norman Group",
+      "summary": "Information seeking in China is driven by mobile social-media apps. But how users prompt and engage with genAI mirrors what we've seen in the West.",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "Fri, 01 May 2026 17:00:00 +0000",
+      "fetched": "2026-06-04T02:50:38.981790+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "3dbd1cfdf5b6",
+      "title": "The “Bug-Free” Workforce: How AI Efficiency Is Subtly Disrupting The Interactions That Build Strong Teams",
+      "url": "https://smashingmagazine.com/2026/04/bug-free-workforce-ai-disrupting-teams/",
+      "source": "Smashing Magazine",
+      "summary": "AI tools are eliminating the need to “bug” colleagues for help, but the informal interactions they replace are the very scaffolding that builds team trust, belonging, and innovation. Casey Hudetz and Eric Olive explore the research and potential impacts behind that risk and offer practical strategie",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "UIUX"
+      ],
+      "date": "Mon, 27 Apr 2026 10:00:00 GMT",
+      "fetched": "2026-06-04T02:50:41.473988+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "8dde3734dc3a",
+      "title": "What is Blockchain: Everything You Need to Know (2022)",
+      "url": "https://techncruncher.blogspot.com/2022/04/what-is-blockchain-everything-you-need.html",
+      "source": "TechCrunch",
+      "summary": "If you want to pay online, you need to register an account and provide credit card information. If you don't have a credit card, you can pay with bank transfer. With the rise of cryptocurrencies, these methods may become old.Imagine a world in which you can do transactions and many other things with",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "Mon, 18 Apr 2022 05:49:00 +0000",
+      "fetched": "2026-06-04T02:50:43.660955+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "2edb97979a5b",
+      "title": "OpenAI fixed a visibility problem; the governance problem remains.",
+      "url": "https://www.cio.com/article/4181052/openai-fixed-a-visibility-problem-the-governance-problem-remains-2.html",
+      "source": "CIO.com",
+      "summary": "AI governance is an ongoing game of catch-up for enterprises. Model updates and iterations are rolling out at a rapid clip, often making governance frameworks obsolete before they’re battle-tested.\nTo evolve beyond this paradigm, OpenAI is introducing Active sessions. This new ChatGPT security",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "功能分析",
+        "競品新聞"
+      ],
+      "date": "Thu, 04 Jun 2026 02:37:28 +0000",
+      "fetched": "2026-06-04T02:50:46.932954+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "4925c83e8dfe",
+      "title": "Enterprise Spotlight: Rethinking cloud strategy in the age of AI",
+      "url": "https://us.resources.cio.com/resources/enterprise-spotlight-rethinking-cloud-strategy-in-the-age-of-ai/",
+      "source": "CIO.com",
+      "summary": "Cloud computing has reached a crossroads. The high cost and data sensitivity of AI workloads are raising the appeal of private clouds, even as neoclouds and sovereign clouds shake up the cloud provider landscape. New cyberthreats, shifting compute requirements, and management complexity are add",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "UIUX"
+      ],
+      "date": "Thu, 04 Jun 2026 00:20:32 +0000",
+      "fetched": "2026-06-04T02:50:46.933316+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "1afe53cce1f1",
+      "title": "不確実な時代にIT組織を率いる若きリーダーの意思決定軸は「自分自身に説明できるか」──カルビー井原史晶氏に聞く",
+      "url": "https://www.cio.com/article/4178898/%e4%b8%8d%e7%a2%ba%e5%ae%9f%e3%81%aa%e6%99%82%e4%bb%a3%e3%81%abit%e7%b5%84%e7%b9%94%e3%82%92%e7%8e%87%e3%81%84%e3%82%8b%e8%8b%a5%e3%81%8d%e3%83%aa%e3%83%bc%e3%83%80%e3%83%bc%e3%81%ae%e6%84%8f%e6%80%9d.html",
+      "source": "CIO.com",
+      "summary": "SIer、監査法人を経て事業会社へ\n——これまでの経歴は？\n私が社会人になったのは、「2000年問題」が大きな話題になっていた2000年で、大手商社系のシステム子会社に入社しました。以来10年以上にわたり、SIerとしてシステム導入に携わってきました。\n中でも長く担当していたのが、SAPの導入支援です。顧客企業の業務プロセスを理解し、それをシステムへ落とし込んでいく役割を担い、業務とITをどう結びつけるかに向き合ってきました。\nこのSIer時代に次第に気になるようになったテーマが「監査」でした。担当していた菓子メーカーのプロジェクトでも、「監査上、この観点が重要になる」といった話がた",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "Wed, 03 Jun 2026 23:00:00 +0000",
+      "fetched": "2026-06-04T02:50:46.937904+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "5ee3c0e92b4d",
+      "title": "American Express aboga por democratizar la analítica, no los datos",
+      "url": "https://www.cio.com/article/4180630/american-express-aboga-por-democratizar-la-analitica-no-los-datos.html",
+      "source": "CIO.com",
+      "summary": "La democratización de los datos ha sido una expresión de moda durante años, pero Chris Gifford, director de datos (CDO) de American Express, sostiene que es mucho más útil pensar en la democratización de la analítica. Hacer que la analítica sea más accesible permite a los empleados, así como a",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "Wed, 03 Jun 2026 14:16:17 +0000",
+      "fetched": "2026-06-04T02:50:46.943306+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "f69126de0823",
+      "title": "Microsoft’s Frontier Tuning aims to teach AI how enterprises work, not just context",
+      "url": "https://www.cio.com/article/4180487/microsofts-frontier-tuning-aims-to-teach-ai-how-enterprises-work-not-just-context.html",
+      "source": "CIO.com",
+      "summary": "For the past two years, enterprises have focused on feeding AI models their data — wiring them into documents, databases, and internal knowledge systems. Microsoft now says that’s only half the story. The next frontier, it argues, is teaching AI how work actually gets done.\nAt Build 2026, Micro",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "UIUX"
+      ],
+      "date": "Wed, 03 Jun 2026 11:59:31 +0000",
+      "fetched": "2026-06-04T02:50:46.944866+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "5a016c502e57",
+      "title": "7 ways for CIOs to deliver bad news without losing trust",
+      "url": "https://www.cio.com/article/4177020/7-ways-for-cios-to-deliver-bad-news-without-losing-trust.html",
+      "source": "CIO.com",
+      "summary": "Insights from CIOs, consultants, and executive coaches show that effective CIOs don’t just report problems, they share information early, explain the issues clearly, and help executives decide what to do next. Here are seven ways CIOs can deliver bad news more effectively.\n1. Build transparency",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "UIUX"
+      ],
+      "date": "Wed, 03 Jun 2026 10:00:00 +0000",
+      "fetched": "2026-06-04T02:50:46.948769+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "d2bfbbad5256",
+      "title": "Google's new open source Gemma 4 12B analyzes audio, video — and runs entirely locally on a typical 16GB enterprise laptop",
+      "url": "https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop",
+      "source": "VentureBeat",
+      "summary": "While many AI open source model providers are pursuing larger and more powerful models, Google is still giving attention to the smaller, more local side of the market. Today, the tech giant released Gemma 4 12B, an 11.95-billion-parameter open-weights model with permissive Apache 2.0 license optimiz",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "UIUX",
+        "競品新聞"
+      ],
+      "date": "Wed, 03 Jun 2026 18:49:00 GMT",
+      "fetched": "2026-06-04T02:50:50.415458+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "237ed067d5e3",
+      "title": "Enterprise AI agents keep creating data silos. Microsoft's Build answer is Microsoft IQ and Rayfin.",
+      "url": "https://venturebeat.com/data/enterprise-ai-agents-keep-creating-data-silos-microsofts-build-answer-is-microsoft-iq-and-rayfin",
+      "source": "VentureBeat",
+      "summary": "Every new AI agent your team deploys starts from scratch: no memory of how the business works, where data lives, or what rules apply. And as agentic coding tools spin up applications faster than anyone can govern them, each one risks becoming another silo outside your data layer entirely. Microsoft",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "UIUX"
+      ],
+      "date": "Wed, 03 Jun 2026 01:55:14 GMT",
+      "fetched": "2026-06-04T02:50:50.416462+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "f69a41d0dc92",
+      "title": "Perplexity AI unveils hybrid local-cloud inference system at Computex 2026",
+      "url": "https://venturebeat.com/technology/perplexity-ai-unveils-hybrid-local-cloud-inference-system-at-computex-2026",
+      "source": "VentureBeat",
+      "summary": "Perplexity AI, the fast-growing search startup now valued at $20 billion, unveiled what it calls the first hybrid local-server inference orchestrator at Computex 2026 on Monday night, demonstrating software that autonomously decides — in real time and mid-task — which AI workloads stay on a user's d",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "Tue, 02 Jun 2026 19:08:17 GMT",
+      "fetched": "2026-06-04T02:50:50.428207+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "5eef0aa74879",
+      "title": "OpenAI's Codex update lets agents build interactive enterprise workspaces via Sites and role-specific plugins",
+      "url": "https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins",
+      "source": "VentureBeat",
+      "summary": "Agentic AI is moving rapidly from the developer terminal to the corporate world.On Tuesday, OpenAI announced a major update of its agentic AI platform Codex, introducing domain-specific workflows, a rapid, semi-private web hosting feature within it for enterprises called \"Sites,\" and an in-place edi",
+      "systems": [
+        "ERP",
+        "EIP"
+      ],
+      "types": [
+        "UIUX",
+        "功能分析",
+        "競品新聞"
+      ],
+      "date": "Tue, 02 Jun 2026 16:00:00 GMT",
+      "fetched": "2026-06-04T02:50:50.434388+00:00",
+      "channel": "rss"
+    },
+    {
+      "id": "a82b4d96a575",
+      "title": "Launch HN: Twenty.com (YC S23) – Open-source CRM",
+      "url": "https://news.ycombinator.com/item?id=36791434",
+      "source": "Hacker News",
+      "summary": "",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "UIUX",
+        "競品新聞"
+      ],
+      "date": "2023-07-19T18:54:50Z",
+      "fetched": "2026-06-04T02:50:58.805728+00:00",
+      "channel": "hackernews",
+      "score": 415,
+      "comments": 311
+    },
+    {
+      "id": "a699cdc99ce5",
+      "title": "Show HN: A “CRM” for personal relationships",
+      "url": "https://www.elim.app/eng/home",
+      "source": "Hacker News",
+      "summary": "",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "UIUX"
+      ],
+      "date": "2023-09-23T17:21:17Z",
+      "fetched": "2026-06-04T02:50:58.805761+00:00",
+      "channel": "hackernews",
+      "score": 126,
+      "comments": 96
+    },
+    {
+      "id": "545921778c63",
+      "title": "Show HN: Roast Our Twitter CRM and DM Management App",
+      "url": "https://www.firstx.ai/",
+      "source": "Hacker News",
+      "summary": "",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "UIUX"
+      ],
+      "date": "2022-06-08T06:14:37Z",
+      "fetched": "2026-06-04T02:50:58.805785+00:00",
+      "channel": "hackernews",
+      "score": 39,
+      "comments": 0
+    },
+    {
+      "id": "0f9cfc8c7089",
+      "title": "Launch HN: PostHog (YC W20) – open-source product analytics",
+      "url": "https://news.ycombinator.com/item?id=22376732",
+      "source": "Hacker News",
+      "summary": "",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "UIUX",
+        "Dashboard",
+        "競品新聞"
+      ],
+      "date": "2020-02-20T17:27:46Z",
+      "fetched": "2026-06-04T02:50:58.805811+00:00",
+      "channel": "hackernews",
+      "score": 282,
+      "comments": 83
+    },
+    {
+      "id": "ed9ada3fc4f1",
+      "title": "Launch HN: Turion Space (YC S21) – Space debris removal and satellite servicing",
+      "url": "https://news.ycombinator.com/item?id=28061725",
+      "source": "Hacker News",
+      "summary": "",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "UIUX",
+        "競品新聞"
+      ],
+      "date": "2021-08-04T14:56:00Z",
+      "fetched": "2026-06-04T02:50:58.805839+00:00",
+      "channel": "hackernews",
+      "score": 200,
+      "comments": 111
+    },
+    {
+      "id": "1e0351f80aab",
+      "title": "Launch HN: Epihub (YC S20) – Shopify for teaching online",
+      "url": "https://news.ycombinator.com/item?id=24215376",
+      "source": "Hacker News",
+      "summary": "",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "UIUX",
+        "競品新聞"
+      ],
+      "date": "2020-08-19T19:50:44Z",
+      "fetched": "2026-06-04T02:50:58.805865+00:00",
+      "channel": "hackernews",
+      "score": 136,
+      "comments": 47
+    },
+    {
+      "id": "a3fea0cbecc1",
+      "title": "Show HN: Open-Source, Free, Agile Project Management Tool",
+      "url": "http://www.taiga.io",
+      "source": "Hacker News",
+      "summary": "",
+      "systems": [
+        "PMS"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "2014-10-01T16:28:26Z",
+      "fetched": "2026-06-04T02:51:02.280684+00:00",
+      "channel": "hackernews",
+      "score": 436,
+      "comments": 134
+    },
+    {
+      "id": "28883cf6df2b",
+      "title": "Taiga: A free and open-source project management tool",
+      "url": "https://www.taiga.io/",
+      "source": "Hacker News",
+      "summary": "",
+      "systems": [
+        "PMS"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "2022-12-03T13:09:53Z",
+      "fetched": "2026-06-04T02:51:02.280723+00:00",
+      "channel": "hackernews",
+      "score": 238,
+      "comments": 97
+    },
+    {
+      "id": "3b4ded6d4fd5",
+      "title": "Worklenz: Open-Source, All in one project management tool",
+      "url": "https://github.com/Worklenz/worklenz",
+      "source": "Hacker News",
+      "summary": "",
+      "systems": [
+        "PMS"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "2024-05-18T10:08:59Z",
+      "fetched": "2026-06-04T02:51:02.280751+00:00",
+      "channel": "hackernews",
+      "score": 102,
+      "comments": 39
+    },
+    {
+      "id": "3a73cdf4e532",
+      "title": "Teambox - open source project management tool",
+      "url": "http://www.teambox.com/",
+      "source": "Hacker News",
+      "summary": "",
+      "systems": [
+        "PMS"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "2010-05-10T04:40:11Z",
+      "fetched": "2026-06-04T02:51:02.280776+00:00",
+      "channel": "hackernews",
+      "score": 94,
+      "comments": 23
+    },
+    {
+      "id": "0670228af99d",
+      "title": "How Project Management tools kill more companies than any other SaaS out there",
+      "url": "http://lnbogen.com/2014/04/14/how-project-management-tools-kill-more-companies-than-any-other-saas-out-there/",
+      "source": "Hacker News",
+      "summary": "",
+      "systems": [
+        "PMS"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "2014-04-14T10:35:05Z",
+      "fetched": "2026-06-04T02:51:02.280803+00:00",
+      "channel": "hackernews",
+      "score": 78,
+      "comments": 59
+    },
+    {
+      "id": "dd6c5330bbf8",
+      "title": "Ask HN: Would you use a free proposal, invoicing and project management tool?",
+      "url": "https://news.ycombinator.com/item?id=23402547",
+      "source": "Hacker News",
+      "summary": "",
+      "systems": [
+        "PMS"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "2020-06-03T12:22:49Z",
+      "fetched": "2026-06-04T02:51:02.280831+00:00",
+      "channel": "hackernews",
+      "score": 65,
+      "comments": 19
+    },
+    {
+      "id": "2bae7486a91b",
+      "title": "Dropstone 1.5",
+      "url": "https://www.producthunt.com/products/dropstone-2",
+      "source": "Product Hunt",
+      "summary": "2× Claude Code Pro's usage at $15/mo\n          \n\nDiscussion\n            |\n            Link",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "2026-06-02T20:59:22-07:00",
+      "fetched": "2026-06-04T02:51:03.867463+00:00",
+      "channel": "producthunt"
+    },
+    {
+      "id": "9d2d323fd174",
+      "title": "The Best Technology Disappears",
+      "url": "https://dev.to/joshadler/the-best-technology-disappears-2kjg",
+      "source": "Dev.to",
+      "summary": "Your keyboard app is the most important app on your phone and you have never once thought about it....",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "2026-05-31T05:56:08Z",
+      "fetched": "2026-06-04T02:51:05.439655+00:00",
+      "channel": "devto",
+      "score": 0
+    },
+    {
+      "id": "d31cbf88fd27",
+      "title": "Why do most SaaS dashboards still feel like enterprise software from 1998",
+      "url": "https://dev.to/zenovay/why-do-most-saas-dashboards-still-feel-like-enterprise-software-from-1998-2ben",
+      "source": "Dev.to",
+      "summary": "I redesigned my own analytics dashboard after watching how people actually used it. Median session was 47 seconds. Here is what I cut, and why the whole industry took years to figure this out.",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "UIUX",
+        "Dashboard"
+      ],
+      "date": "2026-05-31T14:31:15Z",
+      "fetched": "2026-06-04T02:51:05.439686+00:00",
+      "channel": "devto",
+      "score": 0
+    },
+    {
+      "id": "502abd1a488b",
+      "title": "Learning Lessons from Gaming",
+      "url": "https://dev.to/ingosteinke/learning-lessons-from-gaming-1jgm",
+      "source": "Dev.to",
+      "summary": "I don't identify as a gamer. I occasionally participate in board games or an amateur football match,...",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "2026-06-02T14:00:58Z",
+      "fetched": "2026-06-04T02:51:07.003119+00:00",
+      "channel": "devto",
+      "score": 34
+    },
+    {
+      "id": "f9eb64bc64ca",
+      "title": "I Used My Last 7% of Copilot Tokens to Bring a 2014 WinForms Game Back to Life",
+      "url": "https://dev.to/gramli/i-used-my-last-7-of-copilot-tokens-to-bring-a-2014-winforms-game-back-to-life-30mo",
+      "source": "Dev.to",
+      "summary": "This is a submission for the GitHub Finish-Up-A-Thon Challenge  Originally, I didn't plan to join...",
+      "systems": [
+        "ERP"
+      ],
+      "types": [
+        "一般"
+      ],
+      "date": "2026-06-02T07:06:53Z",
+      "fetched": "2026-06-04T02:51:08.573360+00:00",
+      "channel": "devto",
+      "score": 18
+    }
+  ]
+}
