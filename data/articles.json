@@ -2,7 +2,7 @@
   "stats": {
     "total": 10,
     "new_today": 10,
-    "last_updated": "2026-06-04T08:53:24.926740",
+    "last_updated": "2026-06-04T09:34:32.013080",
     "by_channel": {
       "rss": 10
     }
@@ -17,7 +17,7 @@
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9idmY2WXJIR1pwX19sUHVaM2l6LWtuRF9RUU1GOFFEbG9JdGpHZnZCMEtBTmxqazlMblEtVlFkM09DeVFPY3pMcVVpT1IwZEV2cXBFcFgtVlFYWHJNT215amFIeFBjWE0?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-01T16:00:00+00:00",
-      "fetched": "2026-06-04T08:53:15.803852",
+      "fetched": "2026-06-04T09:34:24.903505",
       "systems": [
         "EIP"
       ],
@@ -36,26 +36,7 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE42MWRDNTcwbEo2ZElTXzJobjg3dzAwaS1zdWxUNDRKaWd5WHlRUzRMMUM5ZnJxYVozaUlRV2ZxYWh3UDRFM2NZNGlYdUJKN2lNb0c2MmR3QTVzUQ?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-05-29T13:59:47+00:00",
-      "fetched": "2026-06-04T08:53:17.153454",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": true,
-      "score": 90
-    },
-    {
-      "id": "rss_4ccc301012",
-      "channel": "rss",
-      "source": "Apollo",
-      "title": "Apollo尋求投資者參與360億美元債務交易 為Anthropic採購AI晶片 - MSN",
-      "summary": "Apollo尋求投資者參與360億美元債務交易 為Anthropic採購AI晶片 MSN",
-      "url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxOdE1rVUxzdlAtUF9IVDdyZ0J2M2Jld1hTZzhQM2FmU2F0WnNBZ3hqcVpWcXhBMWZHcmxTbVdldjRzelNsa1BFbVVmMm03S1dZVzdaX0t4WWlsWVJFZmdPdHI4Zmx0X3pSaEd1SjhHdG42Xzl5a2JzcGNQTW1YaFRyTjJBUU5tWUkxeEdXSzNOekJneHVtdlhJdllTRk5neTl6WmF0TGYwQ1BQWVJfbGNodHpzRmpDNkRuZS1FV01lNmVZc3dnVnVTQXo5Z3R4REdzYjRlWUwtUHp2LV9oYlp3VlpkeTBzOHVBQXhWNmdfSC1ra3NhRDhDbXNLejNfSU9vZ0JjVk50UVhEZnhlenE2bW5hMndHOTRsblBjZXUzQkhfd3p4RXM2aGZBb3FVR1ptQnJTbnhDS244cC1DZWdETjJyUGVrUU95bkNWcXNsODNYVTZQVnpDVndYcU1rcmgyczF4Mw?oc=5",
-      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-05-29T06:23:21+00:00",
-      "fetched": "2026-06-04T08:53:17.934805",
+      "fetched": "2026-06-04T09:34:25.860884",
       "systems": [
         "EIP"
       ],
@@ -74,7 +55,7 @@
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUzVlVW1YRnpGX3FyVzVSeExKenJURjRyZ0d5WURqbjI4UGg2QWtBOENHcGgtVEpfcDgwSzQzTWd5RGI5R3FoLXhGZHMxX0J6V2R5VWtDNVdmM2tLNVVyYldFUFBKWXk2TlIwVjh5aXZORTE4dnNGQ1NoTUJtWlhmSXd1V2FrTWdU?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-02T01:19:00+00:00",
-      "fetched": "2026-06-04T08:53:19.627232",
+      "fetched": "2026-06-04T09:34:27.105575",
       "systems": [
         "EIP"
       ],
@@ -93,7 +74,26 @@
       "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxPTE9la290Wkpfd2RYTE8yLVFsNk5zcjhUa19EcUxwd3d4eXJZQWxuejA5V3phX0dKUEUzOGlXRzM4Qnc0SXhLOFBqcHRNcHNyY0FxSHFkR2s0aVg4UHFxcy1RN20xcjR4S2FDMGNSajBqZTh6TjQ1a21FekJPbG5JX0l3eXVnd3J5cmtzcUZWNjE2TDU1WlpLNXZjSmZWeVR5amNhV3pNR2I1aWIzc1ZSNmJJeHJzY25oMjdNQkpSeHlsZ0c1ekp2TllFWXdpaDlYN3JoMVVralRVb1pJakIzbWJoSHlaSGVsNmc1dWpHbGdPOUpJZjJjMFJaeXlPRVdUV0FTcHJ6ekNGT1ZVNDc1U0xpQ2FTNzVjdTNaS3QzMGpSTmNBT1BmbTVxWQ?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-05-29T02:35:05+00:00",
-      "fetched": "2026-06-04T08:53:21.351667",
+      "fetched": "2026-06-04T09:34:28.438955",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": true,
+      "score": 90
+    },
+    {
+      "id": "rss_4ccc301012",
+      "channel": "rss",
+      "source": "Apollo",
+      "title": "Apollo尋求投資者參與360億美元債務交易 為Anthropic採購AI晶片 - MSN",
+      "summary": "Apollo尋求投資者參與360億美元債務交易 為Anthropic採購AI晶片 MSN",
+      "url": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxOdE1rVUxzdlAtUF9IVDdyZ0J2M2Jld1hTZzhQM2FmU2F0WnNBZ3hqcVpWcXhBMWZHcmxTbVdldjRzelNsa1BFbVVmMm03S1dZVzdaX0t4WWlsWVJFZmdPdHI4Zmx0X3pSaEd1SjhHdG42Xzl5a2JzcGNQTW1YaFRyTjJBUU5tWUkxeEdXSzNOekJneHVtdlhJdllTRk5neTl6WmF0TGYwQ1BQWVJfbGNodHpzRmpDNkRuZS1FV01lNmVZc3dnVnVTQXo5Z3R4REdzYjRlWUwtUHp2LV9oYlp3VlpkeTBzOHVBQXhWNmdfSC1ra3NhRDhDbXNLejNfSU9vZ0JjVk50UVhEZnhlenE2bW5hMndHOTRsblBjZXUzQkhfd3p4RXM2aGZBb3FVR1ptQnJTbnhDS244cC1DZWdETjJyUGVrUU95bkNWcXNsODNYVTZQVnpDVndYcU1rcmgyczF4Mw?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-05-29T06:23:21+00:00",
+      "fetched": "2026-06-04T09:34:29.015271",
       "systems": [
         "EIP"
       ],
@@ -112,7 +112,7 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNEZOMl9pNUk2RWRQU2p3UE1OdmhCeW1jX2ZzSElQUlJETlppWGtzekZJLUU3Zjl0ZkIydFR4UWpWRlA5UEd1S0dxWjlUWUtnQk1EVlI2UkxOakNpbjF1WDUyZExuOHZmS3VIUi0zc0trVnZsZGNBZkFwT3p2M2daNF9xN0NnY3NiNjhrWnh3Q3daMDVN?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-01T10:45:00+00:00",
-      "fetched": "2026-06-04T08:53:24.626031",
+      "fetched": "2026-06-04T09:34:31.712279",
       "systems": [
         "CRM"
       ],
@@ -131,7 +131,7 @@
       "url": "https://news.google.com/rss/articles/CBMiuANBVV95cUxOcS1UenhBTmRfR3ppSjRpTkg4RmJ5Y3hMWnRDNWFMSGhWSXRaa1ZmS0pPaGVIaE8zSWc1TVVINzlNUGpBbTI2Z0VVb2xUZmI5ZTVpUk0yUS1LZzJ3UFI2bWNGczFtR25tcVFCbTdvc0lHNTJveTc3QmNBcm9fV2ZfUzJqV0dzN1k5ZDlJUTBPVXFIcUdZOUFpOWpzdFRWNWdzLTdDMEpJUTJvdU9ZM3A0R3VKTXV0ZlJKa095emltOW1kbXQzbUxycWRvWkV5M2JIUTFmcE1jdW5TSnhQbXVzc2ZEVkJ1UE1McWFJd09LX2g0bVZHWVFQdDJEazF0WER3c29ielJ5RkYyOUk3a3AzWXdBc05ENTlQRl8yaFVHX3hSR1pQb2l2aXk3VjRQdlZ2amtEQXFvNGdzUy03bF9QTnQzSk80V25fem56d1FCcENHWk5EVUNuemJ1bWUwdXloZmFaTHpReGQ4bmZ3R0o0bElLQTUzSzNxNTN3eDE0OVl6Z1BPeUtNYUtLZmxFa2NnX2IwU01WWnhiYmhRRGxjUlZlbENYZU5xYmJXMFhIMXRPZGkxd1hEZg?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-01T16:41:46+00:00",
-      "fetched": "2026-06-04T08:53:18.697636",
+      "fetched": "2026-06-04T09:34:26.474219",
       "systems": [
         "EIP"
       ],
@@ -150,7 +150,7 @@
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1UcjlYVmFaT3pNQVJHc29wZUlVSko0bkZJTmdNWUZlY0ozaEdjR3VSVDdLWHB0SDhTdjNwbHdQNGhEa3hGcy0zUFg2Z2g3UWxrVHNaSm9ITFBjcDU4T0Jn?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-02T03:05:00+00:00",
-      "fetched": "2026-06-04T08:53:20.500865",
+      "fetched": "2026-06-04T09:34:27.802177",
       "systems": [
         "EIP"
       ],
@@ -169,7 +169,7 @@
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VdWFzbk9KZDhCSTA1ZEpyeTB2Y1FJSU9lZzhiaTBuc2RTeGxCakRaSUlqc21ra2tLblhNZ0hLdG1Ud294Z1lDZ2JMZFJtdlUxLUk3cEFvY3gwV0JNOXMxZENlaXBRQdIBa0FVX3lxTE5CUm43WW90SlpVNHVpXzd4VU4xT0pHc25aTVhoRWFUcEJxSUsxNzlVcEVPNWVYVnJLYXAweDZRbHFTR29wWlcyRkdyYkNGcEE4X0xCdEdLaUVVenlGNV96Q3BGR1hoZ0FpTVNN?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-01T01:50:08+00:00",
-      "fetched": "2026-06-04T08:53:22.126812",
+      "fetched": "2026-06-04T09:34:29.657756",
       "systems": [
         "EIP"
       ],
@@ -188,7 +188,7 @@
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8zeXhlY3ZyanRTb3p1cFRVRnZlenBnMUpvNmFEemE0Q1NPek9jcVZicUxhcXpLV20taV95RWZYV1h5clZkZFQ5NTVCam1xTkNjMWc?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-05-29T08:34:00+00:00",
-      "fetched": "2026-06-04T08:53:23.519373",
+      "fetched": "2026-06-04T09:34:30.796840",
       "systems": [
         "CRM"
       ],
