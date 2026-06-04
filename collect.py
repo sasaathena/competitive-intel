@@ -39,24 +39,23 @@ TARGET_SOURCES = {
 }
 
 FINANCE_TITLE_BLACKLIST = [
-    "stock","share price","earnings","financial results","investor",
-    "ipo","nasdaq","nyse","股票","股價","財報","法說會",
-    "營收","淨利","eps","市值","配息","分析師"
+    "market cap", "earnings per share", "quarterly results",
+    "股價", "除權息", "個股", "大盤", "走勢", "配息"
 ]
 
 FINANCE_BODY_BLACKLIST = [
     "investor","market cap","earnings per share","quarterly results",
-    "股票","股價","財報","法說會","投資人","市值","配息"
+    "股票","股價","走勢","法說會","個股","市值","配息","除權息"
 ]
 
 PRODUCT_KEYWORDS = [
-    "crm","sales","marketing","customer experience",
-    "hr","hris","hcm","employee","talent",
+    "CRM","sales","marketing","customer experience",
+    "HR","hris","hcm","employee","talent",
     "dashboard","analytics","workflow","ui","ux",
     "feature","release","automation","ai","integration",
-    "人資","員工體驗","客戶體驗","儀表板","工作流",
-    "功能更新","新功能","自動化","數據分析","人工智慧",
-    "crm","eip","hris"
+    "人資","員工體驗","客戶體驗","儀表板","工作流","FinTech","改版"
+    "功能更新","功能","自動化","數據分析","人工智慧",
+    "CRM","EIP","HRIS"
 ]
 
 
