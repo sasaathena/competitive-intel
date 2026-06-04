@@ -660,7 +660,6 @@ input, select { font-family: var(--font) }
 <body>
 
 <div class="layout">
-  <!-- Sidebar -->
   <aside class="sidebar">
     <div class="sidebar-logo">
       <div class="logo-mark">
@@ -737,9 +736,7 @@ input, select { font-family: var(--font) }
     </div>
   </aside>
 
-  <!-- Main -->
   <div class="main">
-    <!-- Topbar -->
     <div class="topbar">
       <div class="page-title" id="page-title">全部情報</div>
       <div class="search-wrap">
@@ -751,15 +748,12 @@ input, select { font-family: var(--font) }
       </button>
     </div>
 
-    <!-- Content -->
     <div class="content">
-      <!-- Loading -->
       <div class="loading" id="loading">
         <div class="spinner"></div>
         載入情報資料中...
       </div>
 
-      <!-- Metrics Row -->
       <div class="metrics-row" id="metrics-row" style="display:none">
         <div class="metric">
           <div class="metric-top">
@@ -803,7 +797,6 @@ input, select { font-family: var(--font) }
         </div>
       </div>
 
-      <!-- Distribution -->
       <div class="dist-section" id="dist-section" style="display:none">
         <div class="dist-group">
           <h4>系統分布</h4>
@@ -815,7 +808,6 @@ input, select { font-family: var(--font) }
         </div>
       </div>
 
-      <!-- Filter Bar -->
       <div class="filter-bar" id="filter-bar" style="display:none">
         <span class="filter-label">系統</span>
         <button class="chip chip-all active" onclick="setSystem(this,'')">全部</button>
@@ -832,7 +824,6 @@ input, select { font-family: var(--font) }
         <button class="chip chip-news" onclick="setType(this,'競品新聞')">競品新聞</button>
       </div>
 
-      <!-- List Header -->
       <div class="list-header" id="list-header" style="display:none">
         <div class="result-count">顯示 <span id="shown-count">0</span> 筆</div>
         <div class="sort-wrap">
@@ -848,10 +839,8 @@ input, select { font-family: var(--font) }
         </div>
       </div>
 
-      <!-- Cards Grid -->
       <div class="cards-grid" id="cards-grid"></div>
 
-      <!-- Empty -->
       <div class="empty" id="empty-state" style="display:none">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         <p>沒有符合條件的情報</p>
@@ -860,7 +849,6 @@ input, select { font-family: var(--font) }
   </div>
 </div>
 
-<!-- Toast -->
 <div class="toast" id="toast">
   <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
   <span id="toast-msg"></span>
@@ -883,19 +871,37 @@ async function loadData() {
     .forEach(id => document.getElementById(id).style.display = 'none');
 
   try {
-    // 嘗試從 data/articles.json 讀取（本地或 GitHub Pages）
     const res = await fetch('data/articles.json?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
 
-    allArticles = data.articles || [];
-    updateMetrics(data.stats || {});
-    updateSidebarCounts(data.stats || {});
-    updateDistribution(data.stats || {});
-    updateLastSync(data.stats?.last_updated || '');
+    // 💡 關鍵修正：判斷 JSON 格式並做自動相容與統計解析
+    if (Array.isArray(data)) {
+      allArticles = data;
+      const mockStats = {
+        total: data.length,
+        new_today: data.filter(a => String(a.fetched || '').includes(new Date().toISOString().split('T')[0])).length,
+        by_type: {}, by_system: {}, by_channel: {}
+      };
+      data.forEach(a => {
+        if(a.channel) mockStats.by_channel[a.channel] = (mockStats.by_channel[a.channel] || 0) + 1;
+        if(a.systems) a.systems.forEach(s => mockStats.by_system[s] = (mockStats.by_system[s] || 0) + 1);
+        if(a.types) a.types.forEach(t => mockStats.by_type[t] = (mockStats.by_type[t] || 0) + 1);
+      });
+      updateMetrics(mockStats);
+      updateSidebarCounts(mockStats);
+      updateDistribution(mockStats);
+      updateLastSync(data[0]?.fetched || '');
+    } else {
+      allArticles = data.articles || [];
+      updateMetrics(data.stats || {});
+      updateSidebarCounts(data.stats || {});
+      updateDistribution(data.stats || {});
+      updateLastSync(data.stats?.last_updated || '');
+    }
 
     document.getElementById('loading').style.display = 'none';
-    ['metrics-row','dist-section','filter-bar','list-header']
+    ['metrics-row','dist-section','filter-bar','list-header','cards-grid']
       .forEach(id => {
         document.getElementById(id).style.display = '';
       });
@@ -950,6 +956,7 @@ function updateDistribution(stats) {
 }
 function renderDist(id, data, colors) {
   const container = document.getElementById(id);
+  if (!container) return;
   const max = Math.max(...Object.values(data), 1);
   container.innerHTML = Object.entries(data).map(([k, v]) => `
     <div class="dist-row">
@@ -964,18 +971,14 @@ function renderDist(id, data, colors) {
 // ── Filter & Sort ─────────────────────────────────────────────
 function setSystem(el, val) {
   filterSystem = val;
-  document.querySelectorAll('.chip-erp,.chip-crm,.chip-pms,.chip-eip,.chip-all')
-    .forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.filter-bar .chip').forEach(c => {
+    if (c.onclick && c.onclick.toString().includes("setSystem")) c.classList.remove('active');
+  });
   el.classList.add('active');
   render();
 }
 function setType(el, val) {
   filterType = val;
-  const allTypeChips = document.querySelectorAll('.chip-uiux,.chip-dash,.chip-func,.chip-news');
-  document.querySelectorAll('.chip-all').forEach(c => {
-    // reset only type-all (second "全部" chip)
-  });
-  // find type "全部" buttons (those without system class)
   document.querySelectorAll('.filter-bar .chip').forEach(c => {
     if (c.onclick && c.onclick.toString().includes("setType")) c.classList.remove('active');
   });
@@ -995,159 +998,139 @@ function setChannel(el, val) {
   render();
 }
 function toggleSystemNav(el, sys) {
-  const isSame = filterSystem === sys;
-  filterSystem = isSame ? '' : sys;
-  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-  if (!isSame) el.classList.add('active');
-  else document.querySelector('[data-filter-channel=""]').classList.add('active');
-  render();
-}
-function setSort(mode) {
-  sortMode = mode;
-  document.getElementById('sort-date').classList.toggle('active',  mode === 'date');
-  document.getElementById('sort-score').classList.toggle('active', mode === 'score');
+  if (filterSystem === sys) {
+    filterSystem = '';
+    el.classList.remove('active');
+    document.querySelector('.chip-all').classList.add('active');
+  } else {
+    filterSystem = sys;
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    el.classList.add('active');
+  }
   render();
 }
 function onSearch() {
   searchQuery = document.getElementById('search-input').value.trim().toLowerCase();
   render();
 }
+function setSort(mode) {
+  sortMode = mode;
+  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('sort-' + mode).classList.add('active');
+  render();
+}
 
 // ── Render ────────────────────────────────────────────────────
 function render() {
-  let items = allArticles.filter(a => {
-    if (filterChannel && a.channel !== filterChannel) return false;
-    if (filterSystem  && !a.systems?.includes(filterSystem))  return false;
-    if (filterType    && !a.types?.includes(filterType))      return false;
+  const container = document.getElementById('cards-grid');
+  const emptyState = document.getElementById('empty-state');
+  
+  // 1. 條件篩選
+  let filtered = allArticles.filter(item => {
+    if (filterChannel && item.channel !== filterChannel) return false;
+    
+    if (filterSystem) {
+      if (!item.systems || !item.systems.includes(filterSystem)) return false;
+    }
+    if (filterType) {
+      if (!item.types || !item.types.includes(filterType)) return false;
+    }
+    
     if (searchQuery) {
-      const hay = (a.title + a.summary + (a.source||'')).toLowerCase();
-      if (!hay.includes(searchQuery)) return false;
+      const t = (item.title || '').toLowerCase();
+      const s = (item.summary || '').toLowerCase();
+      const src = (item.source || '').toLowerCase();
+      if (!t.includes(searchQuery) && !s.includes(searchQuery) && !src.includes(searchQuery)) return false;
     }
     return true;
   });
 
-  if (sortMode === 'score') {
-    items.sort((a,b) => (b.score||0) - (a.score||0));
-  } else {
-    items.sort((a,b) => new Date(b.date) - new Date(a.date));
+  // 2. 資料排序
+  if (sortMode === 'date') {
+    filtered.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
+  } else if (sortMode === 'score') {
+    filtered.sort((a, b) => (b.score || 0) - (a.score || 0));
   }
 
-  document.getElementById('shown-count').textContent = items.length;
-  document.getElementById('list-header').style.display = '';
+  // 3. 更新計數器
+  document.getElementById('shown-count').textContent = filtered.length;
 
-  const grid  = document.getElementById('cards-grid');
-  const empty = document.getElementById('empty-state');
-
-  if (items.length === 0) {
-    grid.innerHTML = '';
-    empty.style.display = '';
+  // 4. 畫面顯示邏輯
+  if (filtered.length === 0) {
+    container.innerHTML = '';
+    emptyState.style.display = 'block';
     return;
   }
-  empty.style.display = 'none';
-  grid.innerHTML = items.map(renderCard).join('');
-}
+  emptyState.style.display = 'none';
 
-// ── Card HTML ─────────────────────────────────────────────────
-const CHANNEL_META = {
-  rss:         { label: 'RSS',  cls: 'sa-rss' },
-  reddit:      { label: 'Rd',   cls: 'sa-reddit' },
-  hackernews:  { label: 'HN',   cls: 'sa-hackernews' },
-  producthunt: { label: 'PH',   cls: 'sa-producthunt' },
-  devto:       { label: 'DT',   cls: 'sa-devto' },
-};
-const SYS_TAG_CLS  = { ERP:'tag-erp',  CRM:'tag-crm',  PMS:'tag-pms',  EIP:'tag-eip' };
-const TYPE_TAG_CLS = { UIUX:'tag-uiux', Dashboard:'tag-dash', 功能分析:'tag-func', 競品新聞:'tag-news' };
+  // 5. 生成文章卡片 HTML (💡 欄位對齊關鍵：使用 item.url 和 item.summary)
+  container.innerHTML = filtered.map(item => {
+    const isBookmarked = bookmarks.includes(item.id);
+    const channelClass = `sa-${item.channel || 'rss'}`;
+    const dateStr = item.date ? new Date(item.date).toLocaleDateString('zh-TW') : '未知日期';
+    
+    const sysTags = (item.systems || []).map(s => `<span class="tag tag-erp">${s}</span>`).join('');
+    const typeTags = (item.types || []).map(t => `<span class="tag tag-uiux">${t}</span>`).join('');
 
-function renderCard(a) {
-  const ch  = CHANNEL_META[a.channel] || { label: '?', cls: 'sa-rss' };
-  const bm  = bookmarks.includes(a.id);
-  const rel = relativeTime(a.date);
-
-  const sysTags  = (a.systems||[]).map(s =>
-    `<span class="tag ${SYS_TAG_CLS[s]||'tag-func'}">${s}</span>`).join('');
-  const typeTags = (a.types||[]).slice(0,2).map(t =>
-    `<span class="tag ${TYPE_TAG_CLS[t]||'tag-func'}">${t}</span>`).join('');
-
-  const scoreMeta = a.score ? `
-    <span class="meta-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
-      ${a.score}
-    </span>` : '';
-  const commentMeta = a.comments ? `
-    <span class="meta-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-      ${a.comments}
-    </span>` : '';
-
-  return `
-  <div class="card" onclick="openArticle('${escHtml(a.url)}','${escHtml(a.id)}')">
-    <div class="card-header">
-      <div class="card-source">
-        <div class="source-avatar ${ch.cls}">${ch.label}</div>
-        <span class="source-name">${escHtml(a.source||'')}</span>
+    return `
+      <div class="card" onclick="window.open('${item.url}', '_blank')">
+        <div class="card-header" onclick="event.stopPropagation()">
+          <div class="card-source">
+            <div class="source-avatar ${channelClass}">${(item.source || 'RSS').substring(0,2).toUpperCase()}</div>
+            <span class="source-name" title="${item.source || ''}">${item.source || '未分類來源'}</span>
+          </div>
+          <button class="bookmark-btn ${isBookmarked ? 'active' : ''}" onclick="toggleBookmark('${item.id}')">
+            <svg viewBox="0 0 24 24" fill="${isBookmarked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
+              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="card-title" title="${item.title || ''}">${item.title || '無標題'}</div>
+        <div class="card-summary">${item.summary || '點擊進入閱讀全文內容。'}</div>
+        <div class="card-tags">
+          ${sysTags}
+          ${typeTags}
+        </div>
+        <div class="card-footer">
+          <div class="card-meta">
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              ${dateStr}
+            </div>
+          </div>
+          <div class="open-btn">
+            閱讀
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </div>
+        </div>
       </div>
-      <button class="bookmark-btn" onclick="toggleBookmark(event,'${escHtml(a.id)}')" title="收藏">
-        <svg viewBox="0 0 24 24" fill="${bm ? 'currentColor' : 'none'}" stroke-width="2" style="${bm ? 'color:var(--accent2)' : ''}"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-      </button>
-    </div>
-    <div class="card-title">${escHtml(a.title||'')}</div>
-    ${a.summary ? `<div class="card-summary">${escHtml(a.summary)}</div>` : ''}
-    <div class="card-tags">${sysTags}${typeTags}</div>
-    <div class="card-footer">
-      <div class="card-meta">
-        <span class="meta-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          ${rel}
-        </span>
-        ${scoreMeta}${commentMeta}
-      </div>
-      <span class="open-btn">
-        開啟
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-      </span>
-    </div>
-  </div>`;
+    `;
+  }).join('');
 }
 
-// ── Actions ───────────────────────────────────────────────────
-function openArticle(url, id) {
-  window.open(url, '_blank', 'noopener');
-}
-function toggleBookmark(e, id) {
-  e.stopPropagation();
-  if (bookmarks.includes(id)) {
-    bookmarks = bookmarks.filter(b => b !== id);
+// ── Bookmarks ─────────────────────────────────────────────────
+function toggleBookmark(id) {
+  const idx = bookmarks.indexOf(id);
+  if (idx > -1) {
+    bookmarks.splice(idx, 1);
     showToast('已取消收藏');
   } else {
     bookmarks.push(id);
-    showToast('已加入收藏 ★');
+    showToast('已加入收藏');
   }
   localStorage.setItem('ci-bookmarks', JSON.stringify(bookmarks));
   render();
 }
 
-// ── Helpers ───────────────────────────────────────────────────
-function relativeTime(iso) {
-  if (!iso) return '未知';
-  const diff = (Date.now() - new Date(iso)) / 1000;
-  if (diff < 3600)  return Math.floor(diff / 60) + ' 分鐘前';
-  if (diff < 86400) return Math.floor(diff / 3600) + ' 小時前';
-  return Math.floor(diff / 86400) + ' 天前';
-}
-function escHtml(s) {
-  return String(s || '')
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
-    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
-}
 function showToast(msg) {
   const t = document.getElementById('toast');
   document.getElementById('toast-msg').textContent = msg;
   t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 2200);
+  setTimeout(() => t.classList.remove('show'), 2000);
 }
 
-// ── Init ──────────────────────────────────────────────────────
-loadData();
+// ── Initial Init ──────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', loadData);
 </script>
 </body>
 </html>
