@@ -3,61 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>競品情報 Dashboard</title>
+<title>競品情報 · EIP & CRM</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* ── Reset & Base ──────────────────────────────────────────── */
+/* ── Reset ──────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0 }
 :root {
-  --bg:        #0e0f11;
-  --bg2:       #16181c;
-  --bg3:       #1e2026;
-  --bg4:       #262830;
-  --border:    rgba(255,255,255,.07);
-  --border2:   rgba(255,255,255,.13);
-  --text:      #e8eaf0;
-  --text2:     #8a8f9e;
-  --text3:     #545868;
-  --accent:    #5b7bff;
-  --accent2:   #8fa8ff;
-  --green:     #3ecf8e;
-  --amber:     #f5a623;
-  --pink:      #f06292;
-  --teal:      #26c6da;
-  --font:      'DM Sans', sans-serif;
-  --mono:      'DM Mono', monospace;
-  --r:         8px;
-  --r2:        12px;
-  --r3:        16px;
+  /* Beige × Forest Green palette */
+  --sand-50:  #FAFAF5;
+  --sand-100: #F5F3EC;
+  --sand-200: #EDE9DC;
+  --sand-300: #DDD8C6;
+  --sand-400: #C8C0A8;
+  --sand-500: #A89F87;
+  --sand-600: #857A62;
+
+  --moss-50:  #EEF3EF;
+  --moss-100: #CFDDD1;
+  --moss-200: #9DBEA1;
+  --moss-300: #6A9B70;
+  --moss-400: #3D7245;
+  --moss-500: #2A5430;   /* primary */
+  --moss-600: #1C3B21;
+  --moss-700: #112416;
+
+  --warm-red: #C0503A;
+  --warm-amber: #B5803A;
+  --warm-sky: #3A6E8C;
+
+  --bg:        var(--sand-50);
+  --bg2:       #FFFFFF;
+  --bg3:       var(--sand-100);
+  --border:    var(--sand-300);
+  --border2:   var(--sand-400);
+  --text:      #1C1A14;
+  --text2:     #5A5646;
+  --text3:     #8A8472;
+
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans:  'DM Sans', sans-serif;
+  --mono:  'DM Mono', monospace;
+  --r: 6px;
+  --r2: 10px;
+  --r3: 16px;
 }
+
 html { font-size: 15px; scroll-behavior: smooth }
 body {
-  font-family: var(--font);
+  font-family: var(--sans);
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
-  line-height: 1.6;
 }
 a { color: inherit; text-decoration: none }
-button { font-family: var(--font); cursor: pointer; border: none; background: none }
-input, select { font-family: var(--font) }
+button { font-family: var(--sans); cursor: pointer; border: none; background: none }
+input  { font-family: var(--sans) }
+::-webkit-scrollbar { width: 5px }
+::-webkit-scrollbar-track { background: var(--sand-100) }
+::-webkit-scrollbar-thumb { background: var(--sand-400); border-radius: 3px }
 
-/* ── Scrollbar ─────────────────────────────────────────────── */
-::-webkit-scrollbar { width: 6px; height: 6px }
-::-webkit-scrollbar-track { background: var(--bg) }
-::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 3px }
+/* ── Layout ─────────────────────────────────────────────────── */
+.app { display: flex; min-height: 100vh }
 
-/* ── Layout ────────────────────────────────────────────────── */
-.layout { display: flex; min-height: 100vh }
-
-/* ── Sidebar ───────────────────────────────────────────────── */
+/* ── Sidebar ─────────────────────────────────────────────────── */
 .sidebar {
-  width: 220px;
+  width: 232px;
   flex-shrink: 0;
-  background: var(--bg2);
-  border-right: 1px solid var(--border);
+  background: var(--moss-600);
   display: flex;
   flex-direction: column;
   position: sticky;
@@ -65,158 +79,172 @@ input, select { font-family: var(--font) }
   height: 100vh;
   overflow-y: auto;
 }
-.sidebar-logo {
-  padding: 20px 20px 16px;
-  border-bottom: 1px solid var(--border);
+.sidebar-top {
+  padding: 28px 22px 20px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
 }
-.logo-mark {
+.logo {
   display: flex;
   align-items: center;
-  gap: 9px;
-  margin-bottom: 4px;
+  gap: 10px;
+  margin-bottom: 6px;
 }
-.logo-icon {
-  width: 28px; height: 28px;
-  background: var(--accent);
-  border-radius: 7px;
+.logo-mark {
+  width: 32px; height: 32px;
+  background: var(--sand-200);
+  border-radius: 8px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 14px; font-weight: 600; color: #fff;
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--moss-600);
   flex-shrink: 0;
 }
-.logo-name { font-size: 14px; font-weight: 600; letter-spacing: -.2px }
-.logo-sub  { font-size: 11px; color: var(--text3); font-family: var(--mono) }
+.logo-name {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--sand-100);
+  letter-spacing: .01em;
+}
+.logo-sub {
+  font-size: 11px;
+  color: rgba(255,255,255,.38);
+  font-family: var(--mono);
+  letter-spacing: .04em;
+}
 
-.sidebar-section { padding: 16px 12px 8px; }
-.sidebar-label {
+.nav-section { padding: 18px 12px 6px }
+.nav-label {
   font-size: 10px;
   font-weight: 500;
-  letter-spacing: .08em;
+  letter-spacing: .1em;
   text-transform: uppercase;
-  color: var(--text3);
-  padding: 0 8px;
-  margin-bottom: 4px;
+  color: rgba(255,255,255,.28);
+  padding: 0 10px;
+  margin-bottom: 5px;
 }
 .nav-item {
   display: flex;
   align-items: center;
   gap: 9px;
-  padding: 7px 10px;
+  padding: 8px 10px;
   border-radius: var(--r);
   font-size: 13.5px;
-  color: var(--text2);
+  color: rgba(255,255,255,.55);
   cursor: pointer;
   transition: all .15s;
   margin-bottom: 1px;
-  border: 1px solid transparent;
 }
-.nav-item:hover { background: var(--bg3); color: var(--text) }
-.nav-item.active {
-  background: rgba(91,123,255,.12);
-  border-color: rgba(91,123,255,.2);
-  color: var(--accent2);
-}
+.nav-item:hover { background: rgba(255,255,255,.07); color: rgba(255,255,255,.85) }
+.nav-item.active { background: rgba(255,255,255,.12); color: #fff }
 .nav-dot {
-  width: 8px; height: 8px;
+  width: 7px; height: 7px;
   border-radius: 50%;
   flex-shrink: 0;
 }
+.nd-eip { background: var(--sand-300) }
+.nd-crm { background: var(--moss-200) }
+.nd-all { background: rgba(255,255,255,.4) }
+.nd-rss { background: var(--warm-amber) }
 .nav-count {
   margin-left: auto;
   font-size: 11px;
   font-family: var(--mono);
-  background: var(--bg4);
-  padding: 1px 6px;
+  color: rgba(255,255,255,.28);
+  background: rgba(255,255,255,.06);
+  padding: 1px 7px;
   border-radius: 10px;
-  color: var(--text3);
 }
-.sidebar-footer {
+
+.sync-footer {
   margin-top: auto;
-  padding: 16px 20px;
-  border-top: 1px solid var(--border);
+  padding: 16px 22px;
+  border-top: 1px solid rgba(255,255,255,.07);
   font-size: 11px;
-  color: var(--text3);
+  color: rgba(255,255,255,.3);
 }
-.sync-status {
+.sync-row {
   display: flex;
   align-items: center;
   gap: 6px;
   margin-bottom: 3px;
+  font-family: var(--mono);
 }
-.sync-dot {
+.sync-led {
   width: 6px; height: 6px;
   border-radius: 50%;
-  background: var(--green);
-  animation: pulse 2s infinite;
+  background: #6ECC7A;
+  animation: blink 3s ease-in-out infinite;
 }
-@keyframes pulse {
-  0%,100% { opacity: 1 }
-  50%      { opacity: .4 }
-}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
 
-/* ── Main Content ──────────────────────────────────────────── */
+/* ── Main ───────────────────────────────────────────────────── */
 .main { flex: 1; overflow: hidden }
 
-/* ── Topbar ────────────────────────────────────────────────── */
+/* ── Topbar ─────────────────────────────────────────────────── */
 .topbar {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 32px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 14px 28px;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg2);
+  gap: 16px;
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 40;
 }
-.page-title {
-  font-size: 15px;
+.page-heading {
+  font-family: var(--serif);
+  font-size: 18px;
   font-weight: 500;
+  color: var(--text);
   flex: 1;
+  letter-spacing: -.01em;
 }
-.search-wrap {
-  position: relative;
-}
-.search-wrap svg {
+.search-wrap { position: relative }
+.search-icon {
   position: absolute;
-  left: 10px;
+  left: 11px;
   top: 50%;
   transform: translateY(-50%);
-  width: 14px; height: 14px;
-  stroke: var(--text3);
+  font-size: 14px;
+  color: var(--text3);
   pointer-events: none;
 }
 .search-input {
   background: var(--bg3);
   border: 1px solid var(--border);
-  border-radius: var(--r);
-  padding: 7px 12px 7px 32px;
-  color: var(--text);
+  border-radius: 20px;
+  padding: 7px 14px 7px 34px;
   font-size: 13px;
-  width: 220px;
+  color: var(--text);
+  width: 210px;
   outline: none;
-  transition: border-color .15s, width .2s;
+  transition: border-color .15s, width .2s, box-shadow .15s;
 }
 .search-input::placeholder { color: var(--text3) }
 .search-input:focus {
-  border-color: var(--accent);
-  width: 280px;
+  border-color: var(--moss-400);
+  width: 260px;
+  box-shadow: 0 0 0 3px rgba(42,84,48,.08);
 }
-.icon-btn {
-  width: 32px; height: 32px;
-  border-radius: var(--r);
+.refresh-btn {
+  width: 34px; height: 34px;
+  border-radius: 50%;
   background: var(--bg3);
   border: 1px solid var(--border);
   display: flex; align-items: center; justify-content: center;
   color: var(--text2);
+  font-size: 16px;
   transition: all .15s;
 }
-.icon-btn:hover { background: var(--bg4); color: var(--text); border-color: var(--border2) }
-.icon-btn svg { width: 15px; height: 15px; stroke: currentColor }
+.refresh-btn:hover { background: var(--moss-50); border-color: var(--moss-300); color: var(--moss-500) }
 
-/* ── Content Area ──────────────────────────────────────────── */
-.content { padding: 24px 28px; }
+/* ── Content ─────────────────────────────────────────────────── */
+.content { padding: 26px 32px 48px }
 
-/* ── Metrics Row ───────────────────────────────────────────── */
+/* ── Metrics ─────────────────────────────────────────────────── */
 .metrics-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -228,200 +256,240 @@ input, select { font-family: var(--font) }
   border: 1px solid var(--border);
   border-radius: var(--r2);
   padding: 16px 18px;
-  transition: border-color .2s;
+  transition: border-color .18s;
+  position: relative;
+  overflow: hidden;
 }
+.metric::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px;
+  height: 100%;
+}
+.metric.m-green::before { background: var(--moss-400) }
+.metric.m-sand::before  { background: var(--sand-400) }
+.metric.m-red::before   { background: var(--warm-red) }
+.metric.m-sky::before   { background: var(--warm-sky) }
 .metric:hover { border-color: var(--border2) }
 .metric-top {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 .metric-icon {
-  width: 32px; height: 32px;
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+  opacity: .55;
 }
-.metric-icon svg { width: 16px; height: 16px; stroke: currentColor }
-.mi-blue  { background: rgba(91,123,255,.15); color: var(--accent2) }
-.mi-green { background: rgba(62,207,142,.12); color: var(--green) }
-.mi-amber { background: rgba(245,166,35,.12); color: var(--amber) }
-.mi-pink  { background: rgba(240,98,146,.12); color: var(--pink) }
 .metric-badge {
   font-size: 10px;
   font-family: var(--mono);
   padding: 2px 7px;
   border-radius: 10px;
-  background: var(--bg4);
-  color: var(--text3);
 }
-.metric-badge.up   { background: rgba(62,207,142,.12); color: var(--green) }
-.metric-badge.down { background: rgba(240,98,146,.12);  color: var(--pink)  }
-.metric-val  { font-size: 26px; font-weight: 600; letter-spacing: -.5px }
-.metric-lbl  { font-size: 12px; color: var(--text3); margin-top: 2px }
+.mb-up   { background: #E8F3EB; color: #2A5430 }
+.mb-gray { background: var(--sand-100); color: var(--text3) }
+.metric-val { font-family: var(--serif); font-size: 30px; font-weight: 500; letter-spacing: -.03em; line-height: 1 }
+.metric-lbl { font-size: 11.5px; color: var(--text3); margin-top: 5px }
 
-/* ── Filter Bar ────────────────────────────────────────────── */
-.filter-bar {
+/* ── Filter Bar ─────────────────────────────────────────────── */
+.filter-wrap {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 14px 18px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 20px;
+  gap: 10px;
   flex-wrap: wrap;
 }
-.filter-sep {
-  width: 1px; height: 20px;
-  background: var(--border);
-  margin: 0 4px;
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 .filter-label {
   font-size: 11px;
-  color: var(--text3);
   font-weight: 500;
-  letter-spacing: .05em;
+  color: var(--text3);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
+.filter-sep { width: 1px; height: 18px; background: var(--border); margin: 0 4px }
 .chip {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  padding: 5px 11px;
+  gap: 4px;
+  padding: 5px 12px;
   border-radius: 20px;
   font-size: 12px;
   font-weight: 500;
   cursor: pointer;
   border: 1px solid var(--border);
   color: var(--text2);
-  transition: all .15s;
   background: transparent;
+  transition: all .15s;
 }
-.chip svg { width: 12px; height: 12px; stroke: currentColor }
-.chip:hover { border-color: var(--border2); color: var(--text); background: var(--bg3) }
-.chip.active {
-  border-color: transparent;
-  color: #fff;
-}
-.chip-all.active   { background: var(--bg4); color: var(--text) }
-.chip-erp.active   { background: rgba(91,123,255,.2);  color: var(--accent2); border-color: rgba(91,123,255,.3) }
-.chip-crm.active   { background: rgba(62,207,142,.15); color: var(--green);   border-color: rgba(62,207,142,.25) }
-.chip-eip.active   { background: rgba(245,166,35,.12); color: var(--amber);   border-color: rgba(245,166,35,.2) }
-.chip-uiux.active  { background: rgba(38,198,218,.15); color: var(--teal);    border-color: rgba(38,198,218,.25) }
-.chip-dash.active  { background: rgba(91,123,255,.2);  color: var(--accent2); border-color: rgba(91,123,255,.3) }
-.chip-func.active  { background: rgba(245,166,35,.12); color: var(--amber);   border-color: rgba(245,166,35,.2) }
-.chip-news.active  { background: rgba(240,98,146,.15); color: var(--pink);    border-color: rgba(240,98,146,.25) }
+.chip:hover { border-color: var(--border2); color: var(--text); background: var(--sand-100) }
+.chip.active { border-color: transparent; color: #fff }
+.chip-all.active  { background: var(--moss-500) }
+.chip-eip.active  { background: var(--moss-400) }
+.chip-crm.active  { background: var(--warm-sky) }
+.chip-ux.active   { background: var(--moss-500) }
+.chip-feat.active { background: var(--warm-amber) }
+.chip-trend.active{ background: var(--sand-600) }
+.chip-dash.active { background: var(--warm-sky) }
 
-/* ── Sort + Count Row ──────────────────────────────────────── */
+/* ── List Header ─────────────────────────────────────────────── */
 .list-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
-.result-count {
-  font-size: 13px;
+.result-label {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-style: italic;
   color: var(--text3);
 }
-.result-count span { color: var(--text); font-weight: 500 }
-.sort-wrap {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  color: var(--text3);
-}
+.result-label span { color: var(--text); font-style: normal; font-weight: 500 }
+.sort-group { display: flex; gap: 6px }
 .sort-btn {
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 4px 10px;
+  padding: 5px 11px;
   border-radius: var(--r);
-  background: var(--bg3);
-  border: 1px solid var(--border);
   font-size: 12px;
-  color: var(--text2);
+  color: var(--text3);
+  border: 1px solid var(--border);
+  background: var(--bg2);
   transition: all .15s;
 }
-.sort-btn:hover, .sort-btn.active { border-color: var(--border2); color: var(--text) }
-.sort-btn svg { width: 11px; height: 11px; stroke: currentColor }
+.sort-btn:hover, .sort-btn.active {
+  border-color: var(--moss-300);
+  color: var(--moss-600);
+  background: var(--moss-50);
+}
 
-/* ── Cards Grid ────────────────────────────────────────────── */
+/* ── Cards Grid ─────────────────────────────────────────────── */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 16px;
 }
 
-/* ── Card ──────────────────────────────────────────────────── */
+/* ── Card ───────────────────────────────────────────────────── */
 .card {
   background: var(--bg2);
   border: 1px solid var(--border);
-  border-radius: var(--r2);
-  padding: 16px;
+  border-radius: var(--r3);
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color .18s, transform .2s, box-shadow .2s;
   display: flex;
   flex-direction: column;
-  gap: 11px;
-  cursor: pointer;
-  transition: border-color .18s, transform .18s, box-shadow .18s;
-  position: relative;
-  overflow: hidden;
-}
-.card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(91,123,255,.03) 0%, transparent 60%);
-  pointer-events: none;
 }
 .card:hover {
-  border-color: var(--border2);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,.3);
+  border-color: var(--sand-400);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(28,26,20,.09);
 }
-.card-header {
+
+/* Thumbnail */
+.card-thumb {
+  width: 100%;
+  height: 148px;
+  overflow: hidden;
+  position: relative;
+  background: var(--sand-100);
+  flex-shrink: 0;
+}
+.card-thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease;
+  display: block;
+}
+.card:hover .card-thumb img { transform: scale(1.04) }
+.thumb-placeholder {
+  width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.thumb-icon { font-size: 28px; opacity: .25 }
+.thumb-brand {
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text3);
+  opacity: .5;
+}
+
+/* System badge on thumb */
+.thumb-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: var(--mono);
+  padding: 3px 8px;
+  border-radius: 10px;
+  letter-spacing: .04em;
+}
+.tb-eip { background: var(--moss-600); color: var(--sand-100) }
+.tb-crm { background: var(--warm-sky); color: #fff }
+
+/* ZH-TW badge */
+.thumb-zhtw {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 10px;
+  font-family: var(--mono);
+  background: rgba(255,255,255,.9);
+  color: var(--moss-600);
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* Card body */
+.card-body { padding: 14px 16px 16px; flex: 1; display: flex; flex-direction: column; gap: 10px }
+.card-source-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .card-source {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-}
-.source-avatar {
-  width: 24px; height: 24px;
-  border-radius: 6px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 10px;
-  font-weight: 700;
-  flex-shrink: 0;
-  font-family: var(--mono);
-}
-.sa-rss        { background: rgba(245,166,35,.15);  color: var(--amber) }
-.sa-reddit     { background: rgba(240,98,146,.15);  color: var(--pink) }
-.sa-threads    { background: rgba(38,198,218,.15);   color: var(--teal) }
-.sa-hackernews { background: rgba(245,166,35,.15);  color: var(--amber) }
-.sa-producthunt{ background: rgba(240,98,146,.12);  color: var(--pink) }
-.sa-devto      { background: rgba(62,207,142,.12);  color: var(--green) }
-.source-name {
   font-size: 11px;
   color: var(--text3);
-  max-width: 130px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-family: var(--mono);
 }
-.bookmark-btn {
-  width: 26px; height: 26px;
-  border-radius: 6px;
+.card-bm {
+  width: 24px; height: 24px;
+  border-radius: 4px;
   display: flex; align-items: center; justify-content: center;
   color: var(--text3);
+  font-size: 14px;
   transition: all .15s;
   background: transparent;
-  border: 1px solid transparent;
+  border: none;
+  cursor: pointer;
 }
-.bookmark-btn:hover { background: var(--bg3); color: var(--text); border-color: var(--border) }
-.bookmark-btn svg { width: 13px; height: 13px; stroke: currentColor }
+.card-bm:hover { color: var(--moss-500); background: var(--moss-50) }
+.card-bm.saved { color: var(--moss-500) }
 
 .card-title {
-  font-size: 13.5px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
   color: var(--text);
@@ -432,33 +500,25 @@ input, select { font-family: var(--font) }
 }
 .card-summary {
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--text2);
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
+
+.card-tags { display: flex; gap: 5px; flex-wrap: wrap }
 .tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  padding: 2px 8px;
-  border-radius: 10px;
   font-size: 11px;
   font-weight: 500;
-  line-height: 1.6;
+  padding: 2px 8px;
+  border-radius: 10px;
 }
-.tag-eip   { background: rgba(245,166,35,.1);  color: var(--amber)   }
-.tag-crm   { background: rgba(62,207,142,.1);  color: var(--green)   }
-.tag-uiux  { background: rgba(38,198,218,.1);  color: var(--teal)    }
-.tag-func  { background: rgba(245,166,35,.08); color: var(--amber)   }
-.tag-news  { background: rgba(240,98,146,.08); color: var(--pink)    }
+.tag-ux    { background: #EEF3EF; color: var(--moss-500) }
+.tag-feat  { background: #FAF2E4; color: #7A5520 }
+.tag-trend { background: var(--sand-100); color: var(--sand-600) }
+.tag-dash  { background: #E8F0F5; color: var(--warm-sky) }
 
 .card-footer {
   display: flex;
@@ -466,318 +526,230 @@ input, select { font-family: var(--font) }
   justify-content: space-between;
   margin-top: auto;
 }
-.card-meta {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.meta-item {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+.card-date {
   font-size: 11px;
   color: var(--text3);
   font-family: var(--mono);
 }
-.meta-item svg { width: 11px; height: 11px; stroke: currentColor }
-.open-btn {
+.card-open {
   display: flex;
   align-items: center;
   gap: 4px;
   font-size: 11px;
   font-weight: 500;
+  color: var(--moss-500);
   padding: 4px 10px;
-  border-radius: 6px;
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  color: var(--text2);
+  border-radius: var(--r);
+  border: 1px solid var(--moss-200);
+  background: var(--moss-50);
   transition: all .15s;
 }
-.open-btn:hover {
-  background: rgba(91,123,255,.15);
-  border-color: rgba(91,123,255,.3);
-  color: var(--accent2);
-}
-.open-btn svg { width: 11px; height: 11px; stroke: currentColor }
+.card-open:hover { background: var(--moss-500); color: #fff; border-color: var(--moss-500) }
 
-/* ── Dashboard Section ─────────────────────────────────────── */
-.section-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 14px;
-}
-.section-title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  font-weight: 500;
-}
-.section-title svg { width: 15px; height: 15px; stroke: currentColor; color: var(--accent2) }
-.see-all {
-  font-size: 12px;
+/* ── Empty / Loading ─────────────────────────────────────────── */
+.state-box {
+  text-align: center;
+  padding: 64px 24px;
   color: var(--text3);
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  cursor: pointer;
-  transition: color .15s;
-  background: none;
-  border: none;
 }
-.see-all:hover { color: var(--text2) }
-.see-all svg { width: 12px; height: 12px; stroke: currentColor }
+.state-box .icon { font-size: 36px; margin-bottom: 12px; opacity: .3 }
+.state-box p { font-family: var(--serif); font-size: 16px; font-style: italic }
+.state-box small { font-size: 12px; display: block; margin-top: 6px }
+.spinner {
+  width: 28px; height: 28px;
+  border: 2px solid var(--border);
+  border-top-color: var(--moss-400);
+  border-radius: 50%;
+  margin: 0 auto 14px;
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg) } }
 
-/* ── Distribution Bar ──────────────────────────────────────── */
-.dist-section {
+/* ── Distribution ────────────────────────────────────────────── */
+.dist-row {
   background: var(--bg2);
   border: 1px solid var(--border);
   border-radius: var(--r2);
-  padding: 18px 20px;
-  margin-bottom: 24px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 24px;
 }
 .dist-group h4 {
-  font-size: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .09em;
+  text-transform: uppercase;
   color: var(--text3);
   margin-bottom: 12px;
-  font-weight: 500;
-  letter-spacing: .04em;
-  text-transform: uppercase;
 }
-.dist-row {
+.dist-item {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 8px;
 }
-.dist-label {
-  font-size: 12px;
-  color: var(--text2);
-  width: 80px;
-  flex-shrink: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.dist-track {
-  flex: 1;
-  height: 5px;
-  background: var(--bg4);
-  border-radius: 3px;
-  overflow: hidden;
-}
-.dist-fill { height: 100%; border-radius: 3px; transition: width .6s ease }
-.dist-num {
-  font-size: 11px;
-  font-family: var(--mono);
-  color: var(--text3);
-  width: 24px;
-  text-align: right;
-}
+.dist-name { font-size: 12px; color: var(--text2); width: 76px; flex-shrink: 0 }
+.dist-track { flex: 1; height: 4px; background: var(--sand-200); border-radius: 2px; overflow: hidden }
+.dist-fill  { height: 100%; border-radius: 2px; transition: width .7s ease }
+.df-moss  { background: var(--moss-400) }
+.df-sky   { background: var(--warm-sky) }
+.df-amber { background: var(--warm-amber) }
+.df-red   { background: var(--warm-red) }
+.df-sand  { background: var(--sand-500) }
+.dist-num { font-size: 11px; font-family: var(--mono); color: var(--text3); width: 22px; text-align: right }
 
-/* ── Empty State ───────────────────────────────────────────── */
-.empty {
-  text-align: center;
-  padding: 60px 20px;
-  color: var(--text3);
-}
-.empty svg { width: 40px; height: 40px; stroke: currentColor; margin-bottom: 12px; opacity: .4 }
-.empty p { font-size: 14px }
-
-/* ── Loading ───────────────────────────────────────────────── */
-.loading {
-  text-align: center;
-  padding: 80px;
-  color: var(--text3);
-  font-size: 14px;
-}
-.spinner {
-  width: 28px; height: 28px;
-  border: 2px solid var(--border2);
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  margin: 0 auto 16px;
-  animation: spin .7s linear infinite;
-}
-@keyframes spin { to { transform: rotate(360deg) } }
-
-/* ── Toast ─────────────────────────────────────────────────── */
+/* ── Toast ───────────────────────────────────────────────────── */
 .toast {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
-  background: var(--bg3);
-  border: 1px solid var(--border2);
-  border-radius: var(--r2);
-  padding: 12px 16px;
+  bottom: 24px; right: 24px;
+  background: var(--moss-600);
+  color: var(--sand-100);
   font-size: 13px;
-  color: var(--text);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 8px 24px rgba(0,0,0,.4);
-  transform: translateY(80px);
+  padding: 11px 16px;
+  border-radius: var(--r2);
+  box-shadow: 0 6px 20px rgba(0,0,0,.2);
+  transform: translateY(64px);
   opacity: 0;
   transition: all .25s;
-  z-index: 100;
+  z-index: 99;
 }
 .toast.show { transform: translateY(0); opacity: 1 }
-.toast svg { width: 15px; height: 15px; stroke: var(--green) }
 
-/* ── Responsive ────────────────────────────────────────────── */
+/* ── Card animation ──────────────────────────────────────────── */
+.card { animation: fadeUp .3s ease both }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px) }
+  to   { opacity: 1; transform: translateY(0) }
+}
+.card:nth-child(1){animation-delay:.04s}
+.card:nth-child(2){animation-delay:.08s}
+.card:nth-child(3){animation-delay:.12s}
+.card:nth-child(4){animation-delay:.16s}
+.card:nth-child(5){animation-delay:.20s}
+.card:nth-child(6){animation-delay:.24s}
+.card:nth-child(7){animation-delay:.28s}
+.card:nth-child(8){animation-delay:.32s}
+.card:nth-child(9){animation-delay:.36s}
+
+/* ── Responsive ──────────────────────────────────────────────── */
 @media (max-width: 1100px) {
-  .cards-grid { grid-template-columns: repeat(2, 1fr) }
-  .metrics-row { grid-template-columns: repeat(2, 1fr) }
+  .cards-grid { grid-template-columns: repeat(2,1fr) }
+  .metrics-row { grid-template-columns: repeat(2,1fr) }
 }
 @media (max-width: 720px) {
   .sidebar { display: none }
-  .cards-grid { grid-template-columns: 1fr }
   .content { padding: 16px }
-  .dist-section { grid-template-columns: 1fr }
+  .cards-grid { grid-template-columns: 1fr }
 }
-
-/* ── Animations ────────────────────────────────────────────── */
-.card { animation: fadeUp .3s ease both }
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(10px) }
-  to   { opacity: 1; transform: translateY(0) }
-}
-.card:nth-child(1)  { animation-delay: .03s }
-.card:nth-child(2)  { animation-delay: .06s }
-.card:nth-child(3)  { animation-delay: .09s }
-.card:nth-child(4)  { animation-delay: .12s }
-.card:nth-child(5)  { animation-delay: .15s }
-.card:nth-child(6)  { animation-delay: .18s }
-.card:nth-child(7)  { animation-delay: .21s }
-.card:nth-child(8)  { animation-delay: .24s }
-.card:nth-child(9)  { animation-delay: .27s }
 </style>
 </head>
 <body>
+<div class="app">
 
-<div class="layout">
+  <!-- Sidebar -->
   <aside class="sidebar">
-    <div class="sidebar-logo">
-      <div class="logo-mark">
-        <div class="logo-icon">CI</div>
-        <span class="logo-name">IntelBoard</span>
+    <div class="sidebar-top">
+      <div class="logo">
+        <div class="logo-mark">情</div>
+        <span class="logo-name">競品情報</span>
       </div>
-      <div class="logo-sub">EIP / CRM 競品情報</div>
+      <div class="logo-sub">EIP &amp; CRM · UIUX 設計師視角</div>
     </div>
 
-    <div class="sidebar-section">
-      <div class="sidebar-label">來源管道</div>
-      <div class="nav-item active" data-filter-channel="" onclick="setChannel(this,'')">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="currentColor" width="15" height="15"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-        全部來源
+    <div class="nav-section">
+      <div class="nav-label">來源管道</div>
+      <div class="nav-item active" onclick="setChannel(this,'')" data-ch="">
+        <div class="nav-dot nd-all"></div>全部來源
         <span class="nav-count" id="cnt-all">0</span>
       </div>
-      <div class="nav-item" data-filter-channel="rss" onclick="setChannel(this,'rss')">
-        <div class="nav-dot" style="background:var(--amber)"></div>
-        官方網站 / RSS
+      <div class="nav-item" onclick="setChannel(this,'rss')" data-ch="rss">
+        <div class="nav-dot nd-rss"></div>官方品牌 RSS
         <span class="nav-count" id="cnt-rss">0</span>
-      </div>
-      <div class="nav-item" data-filter-channel="threads" onclick="setChannel(this,'threads')">
-        <div class="nav-dot" style="background:var(--teal)"></div>
-        Threads 社群
-        <span class="nav-count" id="cnt-threads">0</span>
-      </div>
-      <div class="nav-item" data-filter-channel="reddit" onclick="setChannel(this,'reddit')">
-        <div class="nav-dot" style="background:var(--pink)"></div>
-        Reddit
-        <span class="nav-count" id="cnt-reddit">0</span>
       </div>
     </div>
 
-    <div class="sidebar-section">
-      <div class="sidebar-label">核心系統</div>
-      <div class="nav-item" onclick="toggleSystemNav(this,'EIP')">
-        <div class="nav-dot" style="background:var(--amber)"></div>
-        EIP / 人資系統
+    <div class="nav-section">
+      <div class="nav-label">核心系統</div>
+      <div class="nav-item" onclick="setSystem(this,'EIP')" data-sys="EIP">
+        <div class="nav-dot nd-eip"></div>EIP · 人資系統
         <span class="nav-count" id="cnt-EIP">0</span>
       </div>
-      <div class="nav-item" onclick="toggleSystemNav(this,'CRM')">
-        <div class="nav-dot" style="background:var(--green)"></div>
-        CRM / 客戶關係
+      <div class="nav-item" onclick="setSystem(this,'CRM')" data-sys="CRM">
+        <div class="nav-dot nd-crm"></div>CRM · 客戶關係
         <span class="nav-count" id="cnt-CRM">0</span>
       </div>
     </div>
 
-    <div class="sidebar-footer">
-      <div class="sync-status">
-        <div class="sync-dot"></div>
-        自動同步正常
+    <div class="sync-footer">
+      <div class="sync-row">
+        <div class="sync-led"></div>自動同步正常
       </div>
-      <div id="last-sync-time" style="margin-top:2px">讀取中...</div>
+      <div id="sync-time" style="font-family:var(--mono)">—</div>
     </div>
   </aside>
 
+  <!-- Main -->
   <div class="main">
+
+    <!-- Topbar -->
     <div class="topbar">
-      <div class="page-title" id="page-title">全部情報</div>
+      <div class="page-heading" id="page-heading">全部情報</div>
       <div class="search-wrap">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        <input class="search-input" type="text" placeholder="搜尋標題、關鍵字..." id="search-input" oninput="onSearch()">
+        <span class="search-icon">⌕</span>
+        <input class="search-input" type="text" placeholder="搜尋品牌、功能、關鍵字…" id="search-input" oninput="onSearch()">
       </div>
-      <button class="icon-btn" title="重新整理" onclick="loadData()">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
-      </button>
+      <button class="refresh-btn" onclick="loadData()" title="重新整理">↻</button>
     </div>
 
+    <!-- Content -->
     <div class="content">
-      <div class="loading" id="loading">
+
+      <!-- Loading -->
+      <div id="loading" class="state-box">
         <div class="spinner"></div>
-        載入情報資料中...
+        <p>載入情報資料中…</p>
       </div>
 
+      <!-- Metrics -->
       <div class="metrics-row" id="metrics-row" style="display:none">
-        <div class="metric">
+        <div class="metric m-green">
           <div class="metric-top">
-            <div class="metric-icon mi-blue">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/></svg>
-            </div>
-            <span class="metric-badge up" id="badge-new">+0 今日</span>
+            <span class="metric-icon">📋</span>
+            <span class="metric-badge mb-up" id="badge-new">+0 今日</span>
           </div>
-          <div class="metric-val" id="metric-total">0</div>
+          <div class="metric-val" id="m-total">0</div>
           <div class="metric-lbl">累積情報總數</div>
         </div>
-        <div class="metric">
+        <div class="metric m-sand">
           <div class="metric-top">
-            <div class="metric-icon mi-green">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            </div>
-            <span class="metric-badge up">今日新增</span>
+            <span class="metric-icon">🇹🇼</span>
+            <span class="metric-badge mb-gray">繁中優先</span>
           </div>
-          <div class="metric-val" id="metric-new">0</div>
-          <div class="metric-lbl">今日新增篇數</div>
+          <div class="metric-val" id="m-zhtw">0</div>
+          <div class="metric-lbl">繁體中文內容</div>
         </div>
-        <div class="metric">
+        <div class="metric m-sky">
           <div class="metric-top">
-            <div class="metric-icon mi-amber">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-            </div>
-            <span class="metric-badge">體驗精選</span>
+            <span class="metric-icon">✦</span>
+            <span class="metric-badge mb-gray">體驗精選</span>
           </div>
-          <div class="metric-val" id="metric-uiux">0</div>
+          <div class="metric-val" id="m-ux">0</div>
           <div class="metric-lbl">用戶體驗文章</div>
         </div>
-        <div class="metric">
+        <div class="metric m-red">
           <div class="metric-top">
-            <div class="metric-icon mi-pink">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-            </div>
-            <span class="metric-badge">趨勢追蹤</span>
+            <span class="metric-icon">📊</span>
+            <span class="metric-badge mb-gray">排除財經</span>
           </div>
-          <div class="metric-val" id="metric-trend">0</div>
-          <div class="metric-lbl">產業趨勢報告</div>
+          <div class="metric-val" id="m-skip">0</div>
+          <div class="metric-lbl">財經新聞已過濾</div>
         </div>
       </div>
 
-      <div class="dist-section" id="dist-section" style="display:none">
+      <!-- Distribution -->
+      <div class="dist-row" id="dist-row" style="display:none">
         <div class="dist-group">
           <h4>系統分布</h4>
           <div id="dist-systems"></div>
@@ -788,325 +760,316 @@ input, select { font-family: var(--font) }
         </div>
       </div>
 
-      <div class="filter-bar" id="filter-bar" style="display:none">
-        <span class="filter-label">核心系統</span>
-        <button class="chip chip-all active" onclick="setSystem(this,'')">全部</button>
-        <button class="chip chip-eip" onclick="setSystem(this,'EIP')">EIP / 人資</button>
-        <button class="chip chip-crm" onclick="setSystem(this,'CRM')">CRM / 客戶</button>
+      <!-- Filter -->
+      <div class="filter-wrap" id="filter-wrap" style="display:none">
+        <div class="filter-group">
+          <span class="filter-label">系統</span>
+          <button class="chip chip-all active" onclick="setSys(this,'')">全部</button>
+          <button class="chip chip-eip" onclick="setSys(this,'EIP')">EIP / 人資</button>
+          <button class="chip chip-crm" onclick="setSys(this,'CRM')">CRM / 客戶</button>
+        </div>
         <div class="filter-sep"></div>
-        <span class="filter-label">情報類型</span>
-        <button class="chip chip-all active" onclick="setType(this,'')">全部</button>
-        <button class="chip chip-uiux" onclick="setType(this,'用戶體驗')">用戶體驗</button>
-        <button class="chip chip-func" onclick="setType(this,'功能更新')">功能更新</button>
-        <button class="chip chip-news" onclick="setType(this,'產業趨勢')">產業趨勢</button>
-      </div>
-
-      <div class="list-header" id="list-header" style="display:none">
-        <div class="result-count">顯示 <span id="shown-count">0</span> 筆</div>
-        <div class="sort-wrap">
-          排序
-          <button class="sort-btn active" id="sort-date" onclick="setSort('date')">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            最新
-          </button>
-          <button class="sort-btn" id="sort-score" onclick="setSort('score')">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-            繁中優先 / 熱門
-          </button>
+        <div class="filter-group">
+          <span class="filter-label">情報類型</span>
+          <button class="chip chip-all active" onclick="setType(this,'')">全部</button>
+          <button class="chip chip-ux"   onclick="setType(this,'用戶體驗')">用戶體驗</button>
+          <button class="chip chip-feat" onclick="setType(this,'功能更新')">功能更新</button>
+          <button class="chip chip-trend"onclick="setType(this,'產業趨勢')">產業趨勢</button>
+          <button class="chip chip-dash" onclick="setType(this,'Dashboard案例')">Dashboard案例</button>
+        </div>
+        <div class="filter-sep"></div>
+        <div class="filter-group">
+          <button class="chip chip-all" id="zhtw-btn" onclick="toggleZhtw(this)">🇹🇼 繁中優先</button>
         </div>
       </div>
 
+      <!-- List header -->
+      <div class="list-header" id="list-header" style="display:none">
+        <div class="result-label">共 <span id="shown-count">0</span> 筆情報</div>
+        <div class="sort-group">
+          <button class="sort-btn active" id="sort-score" onclick="setSort('score')">✦ 相關度</button>
+          <button class="sort-btn" id="sort-date" onclick="setSort('date')">最新</button>
+        </div>
+      </div>
+
+      <!-- Cards -->
       <div class="cards-grid" id="cards-grid"></div>
 
-      <div class="empty" id="empty-state" style="display:none">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <!-- Empty -->
+      <div class="state-box" id="empty-state" style="display:none">
+        <div class="icon">◎</div>
         <p>沒有符合條件的情報</p>
+        <small>試試放寬篩選條件</small>
       </div>
-    </div>
-  </div>
-</div>
 
-<div class="toast" id="toast">
-  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-  <span id="toast-msg"></span>
-</div>
+    </div><!-- .content -->
+  </div><!-- .main -->
+</div><!-- .app -->
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
 
 <script>
-// ── State ─────────────────────────────────────────────────────
-let allArticles  = [];
-let filterSystem = '';
-let filterType   = '';
-let filterChannel= '';
-let searchQuery  = '';
-let sortMode     = 'date';
-let bookmarks    = JSON.parse(localStorage.getItem('ci-bookmarks') || '[]');
+// ── State ──────────────────────────────────────────────────────
+let all = [];
+let filterSys     = '';
+let filterType    = '';
+let filterChannel = '';
+let filterZhtw    = false;
+let searchQ       = '';
+let sortMode      = 'score';
+let bookmarks     = JSON.parse(localStorage.getItem('ci-bm') || '[]');
 
-// ── Load Data ─────────────────────────────────────────────────
+// ── Load ───────────────────────────────────────────────────────
 async function loadData() {
-  document.getElementById('loading').style.display = 'block';
-  ['metrics-row','dist-section','filter-bar','list-header','cards-grid']
-    .forEach(id => document.getElementById(id).style.display = 'none');
+  show('loading');
+  hide('metrics-row','dist-row','filter-wrap','list-header','cards-grid','empty-state');
 
   try {
-    const res = await fetch('data/articles.json?t=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
-
-    if (Array.isArray(data)) {
-      allArticles = data;
-      const mockStats = {
-        total: data.length,
-        new_today: data.filter(a => String(a.fetched || '').includes(new Date().toISOString().split('T')[0])).length,
-        by_type: {}, by_system: {}, by_channel: {}
-      };
-      data.forEach(a => {
-        if(a.channel) mockStats.by_channel[a.channel] = (mockStats.by_channel[a.channel] || 0) + 1;
-        if(a.systems) a.systems.forEach(s => mockStats.by_system[s] = (mockStats.by_system[s] || 0) + 1);
-        if(a.types) a.types.forEach(t => mockStats.by_type[t] = (mockStats.by_type[t] || 0) + 1);
-      });
-      updateMetrics(mockStats);
-      updateSidebarCounts(mockStats);
-      updateDistribution(mockStats);
-      updateLastSync(data[0]?.fetched || '');
-    } else {
-      allArticles = data.articles || [];
-      updateMetrics(data.stats || {});
-      updateSidebarCounts(data.stats || {});
-      updateDistribution(data.stats || {});
-      updateLastSync(data.stats?.last_updated || '');
-    }
-
-    document.getElementById('loading').style.display = 'none';
-    ['metrics-row','dist-section','filter-bar','list-header','cards-grid']
-      .forEach(id => {
-        document.getElementById(id).style.display = '';
-      });
-
+    const r = await fetch('data/articles.json?t=' + Date.now());
+    if (!r.ok) throw new Error(r.status);
+    const d = await r.json();
+    all = d.articles || [];
+    applyStats(d.stats || {});
+    hide('loading');
+    show('metrics-row','dist-row','filter-wrap','list-header');
     render();
-  } catch (e) {
+  } catch(e) {
     document.getElementById('loading').innerHTML =
-      '<p style="color:var(--pink)">⚠ 無法載入 data/articles.json<br><small style="color:var(--text3)">請確認已執行 collect.py 或檢查路徑</small></p>';
-    console.error(e);
+      `<div class="icon">⚠</div><p>無法載入 data/articles.json</p><small>請確認爬蟲已執行或路徑正確</small>`;
   }
 }
 
-// ── Metrics ───────────────────────────────────────────────────
-function updateMetrics(stats) {
-  document.getElementById('metric-total').textContent = stats.total ?? 0;
-  document.getElementById('metric-new').textContent   = stats.new_today ?? 0;
-  document.getElementById('badge-new').textContent    = '+' + (stats.new_today ?? 0) + ' 今日';
-  document.getElementById('metric-uiux').textContent  = stats.by_type?.['用戶體驗'] ?? 0;
-  document.getElementById('metric-trend').textContent = stats.by_type?.['產業趨勢'] ?? 0;
+function applyStats(s) {
+  setText('m-total', s.total ?? 0);
+  setText('m-zhtw',  s.zhtw_count ?? 0);
+  setText('m-ux',    s.by_type?.['用戶體驗'] ?? 0);
+  setText('m-skip',  s.skipped_finance ?? 0);
+  setText('badge-new', '+' + (s.new_today ?? 0) + ' 今日');
+  setText('cnt-all', s.total ?? 0);
+  setText('cnt-rss', s.by_channel?.rss ?? 0);
+  setText('cnt-EIP', s.by_system?.EIP ?? 0);
+  setText('cnt-CRM', s.by_system?.CRM ?? 0);
+
+  const t = s.last_updated ? new Date(s.last_updated).toLocaleString('zh-TW',{
+    month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'
+  }) : '—';
+  setText('sync-time', t);
+
+  renderDist('dist-systems', s.by_system || {},
+    {EIP:'df-moss', CRM:'df-sky'});
+  renderDist('dist-types', s.by_type || {},
+    {'用戶體驗':'df-moss','功能更新':'df-amber','產業趨勢':'df-sand','Dashboard案例':'df-sky'});
 }
 
-function updateSidebarCounts(stats) {
-  const byChannel = stats.by_channel || {};
-  const bySystem  = stats.by_system  || {};
-  const total     = stats.total || 0;
-  document.getElementById('cnt-all').textContent        = total;
-  ['rss','threads','reddit'].forEach(ch => {
-    const el = document.getElementById('cnt-' + ch);
-    if (el) el.textContent = byChannel[ch] ?? 0;
-  });
-  ['EIP','CRM'].forEach(s => {
-    const el = document.getElementById('cnt-' + s);
-    if (el) el.textContent = bySystem[s] ?? 0;
-  });
-}
-
-function updateLastSync(iso) {
-  const el = document.getElementById('last-sync-time');
-  if (!iso) { el.textContent = '未知'; return; }
-  const d = new Date(iso);
-  el.textContent = d.toLocaleDateString('zh-TW') + ' ' +
-    d.toLocaleTimeString('zh-TW', {hour:'2-digit', minute:'2-digit'});
-}
-
-// ── Distribution Bars ─────────────────────────────────────────
-function updateDistribution(stats) {
-  const sysColors = {EIP:'var(--amber)', CRM:'var(--green)'};
-  const typColors = {用戶體驗:'var(--teal)', 功能更新:'var(--amber)', 產業趨勢:'var(--pink)'};
-
-  renderDist('dist-systems', stats.by_system || {}, sysColors);
-  renderDist('dist-types',   stats.by_type   || {}, typColors);
-}
 function renderDist(id, data, colors) {
-  const container = document.getElementById(id);
-  if (!container) return;
-  const vals = Object.values(data);
-  const max = vals.length ? Math.max(...vals, 1) : 1;
-  container.innerHTML = Object.entries(data).map(([k, v]) => `
-    <div class="dist-row">
-      <span class="dist-label">${k}</span>
-      <div class="dist-track">
-        <div class="dist-fill" style="width:${Math.round(v/max*100)}%;background:${colors[k]||'var(--text3)'}"></div>
-      </div>
+  const max = Math.max(...Object.values(data), 1);
+  document.getElementById(id).innerHTML = Object.entries(data)
+    .sort((a,b) => b[1]-a[1])
+    .map(([k,v]) => `
+    <div class="dist-item">
+      <span class="dist-name">${k}</span>
+      <div class="dist-track"><div class="dist-fill ${colors[k]||'df-sand'}" style="width:${Math.round(v/max*100)}%"></div></div>
       <span class="dist-num">${v}</span>
     </div>`).join('');
 }
 
-// ── Filter & Sort ─────────────────────────────────────────────
-function setSystem(el, val) {
-  filterSystem = val;
-  document.querySelectorAll('.filter-bar .chip').forEach(c => {
-    if (c.onclick && c.onclick.toString().includes("setSystem")) c.classList.remove('active');
-  });
+// ── Filters ────────────────────────────────────────────────────
+function setSys(el, v) {
+  filterSys = v;
+  el.closest('.filter-group').querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
   el.classList.add('active');
   render();
 }
-function setType(el, val) {
-  filterType = val;
-  document.querySelectorAll('.filter-bar .chip').forEach(c => {
-    if (c.onclick && c.onclick.toString().includes("setType")) c.classList.remove('active');
-  });
+function setType(el, v) {
+  filterType = v;
+  el.closest('.filter-group').querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
   el.classList.add('active');
   render();
 }
-function setChannel(el, val) {
-  filterChannel = val;
+function setChannel(el, v) {
+  filterChannel = v;
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
   el.classList.add('active');
-  document.getElementById('page-title').textContent =
-    val ? (val === 'rss' ? '官方網站 / RSS' :
-           val === 'threads' ? 'Threads 社群' : 'Reddit')
-        : '全部情報';
+  const labels = {'':`全部情報`, rss:`官方品牌 RSS`};
+  setText('page-heading', labels[v] || v);
   render();
 }
-function toggleSystemNav(el, sys) {
-  if (filterSystem === sys) {
-    filterSystem = '';
-    el.classList.remove('active');
-    document.querySelector('.chip-all').classList.add('active');
-  } else {
-    filterSystem = sys;
-    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+function setSystem(el, v) {
+  const same = filterSys === v;
+  filterSys = same ? '' : v;
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  if (!same) {
     el.classList.add('active');
+    const labels = {EIP:'EIP · 人資系統', CRM:'CRM · 客戶關係'};
+    setText('page-heading', labels[v]);
+  } else {
+    document.querySelector('[data-ch=""]').classList.add('active');
+    setText('page-heading','全部情報');
   }
   render();
 }
-function onSearch() {
-  searchQuery = document.getElementById('search-input').value.trim().toLowerCase();
+function toggleZhtw(el) {
+  filterZhtw = !filterZhtw;
+  el.classList.toggle('active', filterZhtw);
   render();
 }
-function setSort(mode) {
-  sortMode = mode;
-  document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('sort-' + mode).classList.add('active');
+function setSort(m) {
+  sortMode = m;
+  document.getElementById('sort-score').classList.toggle('active', m==='score');
+  document.getElementById('sort-date').classList.toggle('active',  m==='date');
+  render();
+}
+function onSearch() {
+  searchQ = document.getElementById('search-input').value.trim().toLowerCase();
   render();
 }
 
-// ── Render ────────────────────────────────────────────────────
+// ── Render ─────────────────────────────────────────────────────
 function render() {
-  const container = document.getElementById('cards-grid');
-  const emptyState = document.getElementById('empty-state');
-  
-  let filtered = allArticles.filter(item => {
-    if (filterChannel && item.channel !== filterChannel) return false;
-    
-    if (filterSystem) {
-      if (!item.systems || !item.systems.includes(filterSystem)) return false;
-    }
-    if (filterType) {
-      if (!item.types || !item.types.includes(filterType)) return false;
-    }
-    
-    if (searchQuery) {
-      const t = (item.title || '').toLowerCase();
-      const s = (item.summary || '').toLowerCase();
-      const src = (item.source || '').toLowerCase();
-      if (!t.includes(searchQuery) && !s.includes(searchQuery) && !src.includes(searchQuery)) return false;
+  let items = all.filter(a => {
+    if (filterChannel && a.channel !== filterChannel) return false;
+    if (filterSys     && !a.systems?.includes(filterSys)) return false;
+    if (filterType    && !a.types?.includes(filterType))  return false;
+    if (filterZhtw    && !a.is_zhtw) return false;
+    if (searchQ) {
+      const hay = (a.title + a.summary + a.source + (a.types||[]).join(' ')).toLowerCase();
+      if (!hay.includes(searchQ)) return false;
     }
     return true;
   });
 
   if (sortMode === 'date') {
-    filtered.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
-  } else if (sortMode === 'score') {
-    filtered.sort((a, b) => (b.score || 0) - (a.score || 0));
+    items.sort((a,b) => new Date(b.date) - new Date(a.date));
+  } else {
+    items.sort((a,b) => {
+      // 繁中優先，再依 score
+      if (a.is_zhtw && !b.is_zhtw) return -1;
+      if (!a.is_zhtw && b.is_zhtw) return 1;
+      return (b.score||0) - (a.score||0);
+    });
   }
 
-  document.getElementById('shown-count').textContent = filtered.length;
+  setText('shown-count', items.length);
+  show('list-header');
 
-  if (filtered.length === 0) {
-    container.innerHTML = '';
-    emptyState.style.display = 'block';
+  const grid = document.getElementById('cards-grid');
+  const empty = document.getElementById('empty-state');
+
+  if (items.length === 0) {
+    grid.innerHTML = '';
+    show('empty-state');
     return;
   }
-  emptyState.style.display = 'none';
-
-  container.innerHTML = filtered.map(item => {
-    const isBookmarked = bookmarks.includes(item.id);
-    const channelClass = `sa-${item.channel || 'rss'}`;
-    const dateStr = item.date ? new Date(item.date).toLocaleDateString('zh-TW') : '未知日期';
-    
-    const sysTags = (item.systems || []).map(s => `<span class="tag tag-eip">${s}</span>`).join('');
-    
-    const typeTags = (item.types || []).map(t => {
-      let cls = 'tag-news';
-      if (t === '用戶體驗') cls = 'tag-uiux';
-      if (t === '功能更新') cls = 'tag-func';
-      if (t === '產業趨勢') cls = 'tag-news';
-      return `<span class="tag ${cls}">${t}</span>`;
-    }).join('');
-
-    return `
-      <div class="card" onclick="window.open('${item.url}', '_blank')">
-        <div class="card-header" onclick="event.stopPropagation()">
-          <div class="card-source">
-            <div class="source-avatar ${channelClass}">${(item.source || 'RSS').substring(0,2).toUpperCase()}</div>
-            <span class="source-name" title="${item.source || ''}">${item.source || '未分類來源'}</span>
-          </div>
-          <button class="bookmark-btn ${isBookmarked ? 'active' : ''}" onclick="toggleBookmark('${item.id}')">
-            <svg viewBox="0 0 24 24" fill="${isBookmarked ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2">
-              <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/>
-            </svg>
-          </button>
-        </div>
-        <div class="card-title" title="${item.title || ''}">${item.title || '無標題'}</div>
-        <div class="card-summary">${item.summary || '點擊進入閱讀全文內容。'}</div>
-        <div class="card-tags">
-          ${sysTags}
-          ${typeTags}
-        </div>
-        <div class="card-footer">
-          <div class="card-meta">
-            <div class="meta-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              ${dateStr}
-            </div>
-          </div>
-          <div class="open-btn">
-            閱讀
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </div>
-        </div>
-      </div>
-    `;
-  }).join('');
+  hide('empty-state');
+  grid.innerHTML = items.map(renderCard).join('');
 }
 
-// ── Bookmarks ─────────────────────────────────────────────────
-function toggleBookmark(id) {
-  const idx = bookmarks.indexOf(id);
-  if (idx > -1) {
-    bookmarks.splice(idx, 1);
-    showToast('已取消收藏');
+// ── Card HTML ──────────────────────────────────────────────────
+const SYS_CLS  = {EIP:'tb-eip', CRM:'tb-crm'};
+const TYPE_CLS = {'用戶體驗':'tag-ux','功能更新':'tag-feat','產業趨勢':'tag-trend','Dashboard案例':'tag-dash'};
+const THUMB_COLORS = {
+  EIP: 'background:linear-gradient(135deg,#CFDDD1 0%,#EEF3EF 100%)',
+  CRM: 'background:linear-gradient(135deg,#D3E4EE 0%,#EEF4F7 100%)',
+};
+const THUMB_ICONS = {EIP:'👤', CRM:'🤝', default:'📄'};
+
+function renderCard(a) {
+  const sys   = (a.systems||['EIP'])[0];
+  const bm    = bookmarks.includes(a.id);
+  const tags  = (a.types||[]).slice(0,3);
+  const rel   = relTime(a.date);
+  const safeUrl = esc(a.url);
+  const safeId  = esc(a.id);
+
+  const thumbHtml = a.thumbnail
+    ? `<img src="${esc(a.thumbnail)}" alt="" loading="lazy" onerror="this.parentNode.innerHTML=fallbackThumb('${sys}')">`
+    : `<div class="thumb-placeholder" style="${THUMB_COLORS[sys]||''}">
+        <div class="thumb-icon">${THUMB_ICONS[sys]||THUMB_ICONS.default}</div>
+        <div class="thumb-brand">${esc(a.source)}</div>
+       </div>`;
+
+  const tagHtml = tags.map(t =>
+    `<span class="tag ${TYPE_CLS[t]||'tag-trend'}">${t}</span>`).join('');
+
+  return `
+  <div class="card" onclick="openCard('${safeUrl}')">
+    <div class="card-thumb">
+      ${thumbHtml}
+      <span class="thumb-badge ${SYS_CLS[sys]||'tb-eip'}">${sys}</span>
+      ${a.is_zhtw ? '<span class="thumb-zhtw">繁中</span>' : ''}
+    </div>
+    <div class="card-body">
+      <div class="card-source-row">
+        <span class="card-source">${esc(a.source)}</span>
+        <button class="card-bm ${bm?'saved':''}" onclick="toggleBm(event,'${safeId}')" title="收藏">
+          ${bm ? '★' : '☆'}
+        </button>
+      </div>
+      <div class="card-title">${esc(a.title)}</div>
+      ${a.summary ? `<div class="card-summary">${esc(a.summary)}</div>` : ''}
+      <div class="card-tags">${tagHtml}</div>
+      <div class="card-footer">
+        <span class="card-date">${rel}</span>
+        <span class="card-open">前往 →</span>
+      </div>
+    </div>
+  </div>`;
+}
+
+function fallbackThumb(sys) {
+  return `<div class="thumb-placeholder" style="${THUMB_COLORS[sys]||''}">
+    <div class="thumb-icon">${THUMB_ICONS[sys]||'📄'}</div>
+  </div>`;
+}
+
+// ── Actions ────────────────────────────────────────────────────
+function openCard(url) { window.open(url, '_blank', 'noopener') }
+
+function toggleBm(e, id) {
+  e.stopPropagation();
+  if (bookmarks.includes(id)) {
+    bookmarks = bookmarks.filter(b => b !== id);
+    toast('已取消收藏');
   } else {
     bookmarks.push(id);
-    showToast('已加入收藏');
+    toast('已加入收藏 ★');
   }
-  localStorage.setItem('ci-bookmarks', JSON.stringify(bookmarks));
+  localStorage.setItem('ci-bm', JSON.stringify(bookmarks));
   render();
 }
 
-function showToast(msg) {
-  const t = document.getElementById('toast');
-  document.getElementById('toast-msg').textContent = msg;
-  t.classList.add('show');
-  setTimeout(() => t.classList.remove('show'), 2000);
+// ── Helpers ────────────────────────────────────────────────────
+function relTime(iso) {
+  if (!iso) return '—';
+  const d = (Date.now() - new Date(iso)) / 1000;
+  if (d < 3600)  return Math.floor(d/60)   + ' 分鐘前';
+  if (d < 86400) return Math.floor(d/3600) + ' 小時前';
+  return Math.floor(d/86400) + ' 天前';
+}
+function esc(s) {
+  return String(s||'')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+function setText(id, v) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = v;
+}
+function show(...ids) { ids.forEach(id => { const el = document.getElementById(id); if(el) el.style.display='' }) }
+function hide(...ids) { ids.forEach(id => { const el = document.getElementById(id); if(el) el.style.display='none' }) }
+
+let _toastTimer;
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(() => el.classList.remove('show'), 2200);
 }
 
-window.addEventListener('DOMContentLoaded', loadData);
+// ── Init ───────────────────────────────────────────────────────
+loadData();
 </script>
 </body>
 </html>
