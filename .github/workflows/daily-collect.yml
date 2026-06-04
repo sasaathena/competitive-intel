@@ -2,39 +2,64 @@ name: 每日競品情報收集
 
 on:
   schedule:
-    # 台灣時間早上 09:00 (等於 UTC 01:00)
-    - cron: '0 1 * * *'
-  workflow_dispatch: # 允許你在網頁上點擊 Run workflow 手動觸發
+    # 每天台灣時間 09:00（UTC+8 = UTC 01:00）
+    - cron: "0 1 * * *"
+  # 也可手動在 GitHub Actions 頁面觸發
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 允許推送 data/articles.json
 
 jobs:
-  build:
+  collect:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     steps:
-    - name: 1. 檢查並載入程式碼
-      uses: actions/checkout@v4
+      # 1. 取得程式碼（包含昨天的 data/articles.json）
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
-    - name: 2. 設定 Python 環境
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10'
-        # 註：這裡移除了會導致報錯的 cache 與 scraper 路徑設定
+      # 2. 設定 Python
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
 
-    - name: 3. 安裝 Python 依賴套件
-      run: |
-        python -m pip install --upgrade pip
-        # 如果最外層有 requirements.txt 就安裝，沒有的話也可以直接補上你要的套件
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        # 萬一你沒有 requirements.txt，可以把下面這行的 # 拿掉，手動填入你的套件：
-        # pip install requests beautifulsoup4
+      # 3. 安裝相依套件
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    - name: 4. 執行爬蟲主程式
-      run: |
-        python collect.py
+      # 4. 執行爬蟲
+      - name: Run scraper
+        run: python collect.py
 
-    - name: 5. 🤖 自動將更新後的資料推回 GitHub
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add docs/
-        # 檢查是否有新抓到的資料，有話就 commit 並 push 更新網頁
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update competitive intel data" && git push)
+      # 5. 🛠️ 抓漏核心：如果爬蟲把資料生在外面，我們幫它搬進 docs/data/
+      - name: Move data to docs folder if needed
+        run: |
+          if [ -d "data" ]; then
+            mkdir -p docs/data
+            cp -r data/* docs/data/ || true
+          fi
+          if [ -f "articles.json" ]; then
+            mkdir -p docs/data
+            cp articles.json docs/data/articles.json || true
+          fi
+
+      # 6. 如果有任何異動，commit 並 push 回 GitHub
+      - name: Commit & push updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # 強制讓 Git 去掃描 data 和 docs 資料夾
+          git add data/ docs/ || true
+          # 只在有異動時才 commit（避免空 commit 出錯）
+          git diff --cached --quiet || \
+            git commit -m "chore: 自動更新競品情報 $(date +'%Y-%m-%d')"
+          git push
