@@ -302,7 +302,6 @@ input, select { font-family: var(--font) }
 .chip-all.active   { background: var(--bg4); color: var(--text) }
 .chip-erp.active   { background: rgba(91,123,255,.2);  color: var(--accent2); border-color: rgba(91,123,255,.3) }
 .chip-crm.active   { background: rgba(62,207,142,.15); color: var(--green);   border-color: rgba(62,207,142,.25) }
-.chip-pms.active   { background: rgba(240,98,146,.15); color: var(--pink);    border-color: rgba(240,98,146,.25) }
 .chip-eip.active   { background: rgba(245,166,35,.12); color: var(--amber);   border-color: rgba(245,166,35,.2) }
 .chip-uiux.active  { background: rgba(38,198,218,.15); color: var(--teal);    border-color: rgba(38,198,218,.25) }
 .chip-dash.active  { background: rgba(91,123,255,.2);  color: var(--accent2); border-color: rgba(91,123,255,.3) }
@@ -397,6 +396,7 @@ input, select { font-family: var(--font) }
 }
 .sa-rss        { background: rgba(245,166,35,.15);  color: var(--amber) }
 .sa-reddit     { background: rgba(240,98,146,.15);  color: var(--pink) }
+.sa-threads    { background: rgba(38,198,218,.15);   color: var(--teal) }
 .sa-hackernews { background: rgba(245,166,35,.15);  color: var(--amber) }
 .sa-producthunt{ background: rgba(240,98,146,.12);  color: var(--pink) }
 .sa-devto      { background: rgba(62,207,142,.12);  color: var(--green) }
@@ -454,14 +454,11 @@ input, select { font-family: var(--font) }
   font-weight: 500;
   line-height: 1.6;
 }
-.tag-erp  { background: rgba(91,123,255,.12); color: var(--accent2) }
-.tag-crm  { background: rgba(62,207,142,.1);  color: var(--green)   }
-.tag-pms  { background: rgba(240,98,146,.1);  color: var(--pink)    }
-.tag-eip  { background: rgba(245,166,35,.1);  color: var(--amber)   }
-.tag-uiux { background: rgba(38,198,218,.1);  color: var(--teal)    }
-.tag-dash { background: rgba(91,123,255,.1);  color: var(--accent2) }
-.tag-func { background: rgba(245,166,35,.08); color: var(--amber)   }
-.tag-news { background: rgba(240,98,146,.08); color: var(--pink)    }
+.tag-eip   { background: rgba(245,166,35,.1);  color: var(--amber)   }
+.tag-crm   { background: rgba(62,207,142,.1);  color: var(--green)   }
+.tag-uiux  { background: rgba(38,198,218,.1);  color: var(--teal)    }
+.tag-func  { background: rgba(245,166,35,.08); color: var(--amber)   }
+.tag-news  { background: rgba(240,98,146,.08); color: var(--pink)    }
 
 .card-footer {
   display: flex;
@@ -560,8 +557,11 @@ input, select { font-family: var(--font) }
 .dist-label {
   font-size: 12px;
   color: var(--text2);
-  width: 68px;
+  width: 80px;
   flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .dist-track {
   flex: 1;
@@ -666,11 +666,11 @@ input, select { font-family: var(--font) }
         <div class="logo-icon">CI</div>
         <span class="logo-name">IntelBoard</span>
       </div>
-      <div class="logo-sub">競品情報系統</div>
+      <div class="logo-sub">EIP / CRM 競品情報</div>
     </div>
 
     <div class="sidebar-section">
-      <div class="sidebar-label">來源</div>
+      <div class="sidebar-label">來源管道</div>
       <div class="nav-item active" data-filter-channel="" onclick="setChannel(this,'')">
         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke="currentColor" width="15" height="15"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
         全部來源
@@ -678,52 +678,32 @@ input, select { font-family: var(--font) }
       </div>
       <div class="nav-item" data-filter-channel="rss" onclick="setChannel(this,'rss')">
         <div class="nav-dot" style="background:var(--amber)"></div>
-        RSS 文章
+        官方網站 / RSS
         <span class="nav-count" id="cnt-rss">0</span>
+      </div>
+      <div class="nav-item" data-filter-channel="threads" onclick="setChannel(this,'threads')">
+        <div class="nav-dot" style="background:var(--teal)"></div>
+        Threads 社群
+        <span class="nav-count" id="cnt-threads">0</span>
       </div>
       <div class="nav-item" data-filter-channel="reddit" onclick="setChannel(this,'reddit')">
         <div class="nav-dot" style="background:var(--pink)"></div>
         Reddit
         <span class="nav-count" id="cnt-reddit">0</span>
       </div>
-      <div class="nav-item" data-filter-channel="hackernews" onclick="setChannel(this,'hackernews')">
-        <div class="nav-dot" style="background:var(--amber)"></div>
-        Hacker News
-        <span class="nav-count" id="cnt-hackernews">0</span>
-      </div>
-      <div class="nav-item" data-filter-channel="producthunt" onclick="setChannel(this,'producthunt')">
-        <div class="nav-dot" style="background:var(--pink)"></div>
-        Product Hunt
-        <span class="nav-count" id="cnt-producthunt">0</span>
-      </div>
-      <div class="nav-item" data-filter-channel="devto" onclick="setChannel(this,'devto')">
-        <div class="nav-dot" style="background:var(--green)"></div>
-        Dev.to
-        <span class="nav-count" id="cnt-devto">0</span>
-      </div>
     </div>
 
     <div class="sidebar-section">
-      <div class="sidebar-label">系統</div>
-      <div class="nav-item" onclick="toggleSystemNav(this,'ERP')">
-        <div class="nav-dot" style="background:var(--accent2)"></div>
-        ERP
-        <span class="nav-count" id="cnt-ERP">0</span>
+      <div class="sidebar-label">核心系統</div>
+      <div class="nav-item" onclick="toggleSystemNav(this,'EIP')">
+        <div class="nav-dot" style="background:var(--amber)"></div>
+        EIP / 人資系統
+        <span class="nav-count" id="cnt-EIP">0</span>
       </div>
       <div class="nav-item" onclick="toggleSystemNav(this,'CRM')">
         <div class="nav-dot" style="background:var(--green)"></div>
-        CRM
+        CRM / 客戶關係
         <span class="nav-count" id="cnt-CRM">0</span>
-      </div>
-      <div class="nav-item" onclick="toggleSystemNav(this,'PMS')">
-        <div class="nav-dot" style="background:var(--pink)"></div>
-        PMS
-        <span class="nav-count" id="cnt-PMS">0</span>
-      </div>
-      <div class="nav-item" onclick="toggleSystemNav(this,'EIP')">
-        <div class="nav-dot" style="background:var(--amber)"></div>
-        EIP
-        <span class="nav-count" id="cnt-EIP">0</span>
       </div>
     </div>
 
@@ -780,20 +760,20 @@ input, select { font-family: var(--font) }
             <div class="metric-icon mi-amber">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
             </div>
-            <span class="metric-badge">UIUX 精選</span>
+            <span class="metric-badge">體驗精選</span>
           </div>
           <div class="metric-val" id="metric-uiux">0</div>
-          <div class="metric-lbl">UIUX 體驗文章</div>
+          <div class="metric-lbl">用戶體驗文章</div>
         </div>
         <div class="metric">
           <div class="metric-top">
             <div class="metric-icon mi-pink">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
             </div>
-            <span class="metric-badge">截圖收藏</span>
+            <span class="metric-badge">趨勢追蹤</span>
           </div>
-          <div class="metric-val" id="metric-dash">0</div>
-          <div class="metric-lbl">Dashboard 截圖</div>
+          <div class="metric-val" id="metric-trend">0</div>
+          <div class="metric-lbl">產業趨勢報告</div>
         </div>
       </div>
 
@@ -809,19 +789,16 @@ input, select { font-family: var(--font) }
       </div>
 
       <div class="filter-bar" id="filter-bar" style="display:none">
-        <span class="filter-label">系統</span>
+        <span class="filter-label">核心系統</span>
         <button class="chip chip-all active" onclick="setSystem(this,'')">全部</button>
-        <button class="chip chip-erp" onclick="setSystem(this,'ERP')">ERP</button>
-        <button class="chip chip-crm" onclick="setSystem(this,'CRM')">CRM</button>
-        <button class="chip chip-pms" onclick="setSystem(this,'PMS')">PMS</button>
-        <button class="chip chip-eip" onclick="setSystem(this,'EIP')">EIP</button>
+        <button class="chip chip-eip" onclick="setSystem(this,'EIP')">EIP / 人資</button>
+        <button class="chip chip-crm" onclick="setSystem(this,'CRM')">CRM / 客戶</button>
         <div class="filter-sep"></div>
-        <span class="filter-label">類型</span>
+        <span class="filter-label">情報類型</span>
         <button class="chip chip-all active" onclick="setType(this,'')">全部</button>
-        <button class="chip chip-uiux" onclick="setType(this,'UIUX')">UIUX</button>
-        <button class="chip chip-dash" onclick="setType(this,'Dashboard')">Dashboard</button>
-        <button class="chip chip-func" onclick="setType(this,'功能分析')">功能分析</button>
-        <button class="chip chip-news" onclick="setType(this,'競品新聞')">競品新聞</button>
+        <button class="chip chip-uiux" onclick="setType(this,'用戶體驗')">用戶體驗</button>
+        <button class="chip chip-func" onclick="setType(this,'功能更新')">功能更新</button>
+        <button class="chip chip-news" onclick="setType(this,'產業趨勢')">產業趨勢</button>
       </div>
 
       <div class="list-header" id="list-header" style="display:none">
@@ -834,7 +811,7 @@ input, select { font-family: var(--font) }
           </button>
           <button class="sort-btn" id="sort-score" onclick="setSort('score')">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-            熱門
+            繁中優先 / 熱門
           </button>
         </div>
       </div>
@@ -875,7 +852,6 @@ async function loadData() {
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
 
-    // 💡 關鍵修正：判斷 JSON 格式並做自動相容與統計解析
     if (Array.isArray(data)) {
       allArticles = data;
       const mockStats = {
@@ -909,7 +885,7 @@ async function loadData() {
     render();
   } catch (e) {
     document.getElementById('loading').innerHTML =
-      '<p style="color:var(--pink)">⚠ 無法載入 data/articles.json<br><small style="color:var(--text3)">請先執行爬蟲或確認檔案路徑</small></p>';
+      '<p style="color:var(--pink)">⚠ 無法載入 data/articles.json<br><small style="color:var(--text3)">請確認已執行 collect.py 或檢查路徑</small></p>';
     console.error(e);
   }
 }
@@ -919,8 +895,8 @@ function updateMetrics(stats) {
   document.getElementById('metric-total').textContent = stats.total ?? 0;
   document.getElementById('metric-new').textContent   = stats.new_today ?? 0;
   document.getElementById('badge-new').textContent    = '+' + (stats.new_today ?? 0) + ' 今日';
-  document.getElementById('metric-uiux').textContent  = stats.by_type?.['UIUX'] ?? 0;
-  document.getElementById('metric-dash').textContent  = stats.by_type?.['Dashboard'] ?? 0;
+  document.getElementById('metric-uiux').textContent  = stats.by_type?.['用戶體驗'] ?? 0;
+  document.getElementById('metric-trend').textContent = stats.by_type?.['產業趨勢'] ?? 0;
 }
 
 function updateSidebarCounts(stats) {
@@ -928,11 +904,11 @@ function updateSidebarCounts(stats) {
   const bySystem  = stats.by_system  || {};
   const total     = stats.total || 0;
   document.getElementById('cnt-all').textContent        = total;
-  ['rss','reddit','hackernews','producthunt','devto'].forEach(ch => {
+  ['rss','threads','reddit'].forEach(ch => {
     const el = document.getElementById('cnt-' + ch);
     if (el) el.textContent = byChannel[ch] ?? 0;
   });
-  ['ERP','CRM','PMS','EIP'].forEach(s => {
+  ['EIP','CRM'].forEach(s => {
     const el = document.getElementById('cnt-' + s);
     if (el) el.textContent = bySystem[s] ?? 0;
   });
@@ -948,8 +924,8 @@ function updateLastSync(iso) {
 
 // ── Distribution Bars ─────────────────────────────────────────
 function updateDistribution(stats) {
-  const sysColors = {ERP:'var(--accent2)', CRM:'var(--green)', PMS:'var(--pink)', EIP:'var(--amber)'};
-  const typColors = {UIUX:'var(--teal)', Dashboard:'var(--accent2)', 功能分析:'var(--amber)', 競品新聞:'var(--pink)'};
+  const sysColors = {EIP:'var(--amber)', CRM:'var(--green)'};
+  const typColors = {用戶體驗:'var(--teal)', 功能更新:'var(--amber)', 產業趨勢:'var(--pink)'};
 
   renderDist('dist-systems', stats.by_system || {}, sysColors);
   renderDist('dist-types',   stats.by_type   || {}, typColors);
@@ -957,7 +933,8 @@ function updateDistribution(stats) {
 function renderDist(id, data, colors) {
   const container = document.getElementById(id);
   if (!container) return;
-  const max = Math.max(...Object.values(data), 1);
+  const vals = Object.values(data);
+  const max = vals.length ? Math.max(...vals, 1) : 1;
   container.innerHTML = Object.entries(data).map(([k, v]) => `
     <div class="dist-row">
       <span class="dist-label">${k}</span>
@@ -990,10 +967,8 @@ function setChannel(el, val) {
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
   el.classList.add('active');
   document.getElementById('page-title').textContent =
-    val ? (val === 'rss' ? 'RSS 文章' :
-           val === 'reddit' ? 'Reddit' :
-           val === 'hackernews' ? 'Hacker News' :
-           val === 'producthunt' ? 'Product Hunt' : 'Dev.to')
+    val ? (val === 'rss' ? '官方網站 / RSS' :
+           val === 'threads' ? 'Threads 社群' : 'Reddit')
         : '全部情報';
   render();
 }
@@ -1025,7 +1000,6 @@ function render() {
   const container = document.getElementById('cards-grid');
   const emptyState = document.getElementById('empty-state');
   
-  // 1. 條件篩選
   let filtered = allArticles.filter(item => {
     if (filterChannel && item.channel !== filterChannel) return false;
     
@@ -1045,17 +1019,14 @@ function render() {
     return true;
   });
 
-  // 2. 資料排序
   if (sortMode === 'date') {
     filtered.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
   } else if (sortMode === 'score') {
     filtered.sort((a, b) => (b.score || 0) - (a.score || 0));
   }
 
-  // 3. 更新計數器
   document.getElementById('shown-count').textContent = filtered.length;
 
-  // 4. 畫面顯示邏輯
   if (filtered.length === 0) {
     container.innerHTML = '';
     emptyState.style.display = 'block';
@@ -1063,14 +1034,20 @@ function render() {
   }
   emptyState.style.display = 'none';
 
-  // 5. 生成文章卡片 HTML (💡 欄位對齊關鍵：使用 item.url 和 item.summary)
   container.innerHTML = filtered.map(item => {
     const isBookmarked = bookmarks.includes(item.id);
     const channelClass = `sa-${item.channel || 'rss'}`;
     const dateStr = item.date ? new Date(item.date).toLocaleDateString('zh-TW') : '未知日期';
     
-    const sysTags = (item.systems || []).map(s => `<span class="tag tag-erp">${s}</span>`).join('');
-    const typeTags = (item.types || []).map(t => `<span class="tag tag-uiux">${t}</span>`).join('');
+    const sysTags = (item.systems || []).map(s => `<span class="tag tag-eip">${s}</span>`).join('');
+    
+    const typeTags = (item.types || []).map(t => {
+      let cls = 'tag-news';
+      if (t === '用戶體驗') cls = 'tag-uiux';
+      if (t === '功能更新') cls = 'tag-func';
+      if (t === '產業趨勢') cls = 'tag-news';
+      return `<span class="tag ${cls}">${t}</span>`;
+    }).join('');
 
     return `
       <div class="card" onclick="window.open('${item.url}', '_blank')">
@@ -1129,7 +1106,6 @@ function showToast(msg) {
   setTimeout(() => t.classList.remove('show'), 2000);
 }
 
-// ── Initial Init ──────────────────────────────────────────────
 window.addEventListener('DOMContentLoaded', loadData);
 </script>
 </body>
