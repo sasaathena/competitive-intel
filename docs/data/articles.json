@@ -1,10 +1,10 @@
 {
   "stats": {
-    "total": 10,
-    "new_today": 10,
-    "last_updated": "2026-06-05T12:22:39.243230",
+    "total": 11,
+    "new_today": 11,
+    "last_updated": "2026-06-06T09:32:16.558870",
     "by_channel": {
-      "rss": 10
+      "rss": 11
     }
   },
   "articles": [
@@ -12,12 +12,12 @@
       "id": "rss_030681fbde",
       "channel": "rss",
       "source": "SAP SuccessFactors",
-      "title": "三十年前金士頓為IBM打造亞太系統，三十年後IBM協助金士頓推動亞太人資數位轉型｜商周 - 商周",
-      "summary": "三十年前金士頓為IBM打造亞太系統，三十年後IBM協助金士頓推動亞太人資數位轉型｜商周 商周",
+      "title": "三十年前金士頓為IBM打造亞太系統，三十年後IBM協助金士頓推動亞太人資數位轉型 - 商周",
+      "summary": "三十年前金士頓為IBM打造亞太系統，三十年後IBM協助金士頓推動亞太人資數位轉型 商周",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9idmY2WXJIR1pwX19sUHVaM2l6LWtuRF9RUU1GOFFEbG9JdGpHZnZCMEtBTmxqazlMblEtVlFkM09DeVFPY3pMcVVpT1IwZEV2cXBFcFgtVlFYWHJNT215amFIeFBjWE0?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-01T16:00:00+00:00",
-      "fetched": "2026-06-05T12:22:32.466113",
+      "fetched": "2026-06-06T09:32:06.175580",
       "systems": [
         "EIP"
       ],
@@ -28,15 +28,34 @@
       "score": 90
     },
     {
-      "id": "rss_d5c2254587",
+      "id": "rss_29682fd5a2",
       "channel": "rss",
       "source": "Apollo",
-      "title": "Apollo 尋求投資者參與360億美元債務交易 為 Anthropic 採購 AI 晶片 | 國際焦點 | 國際 - 經濟日報",
-      "summary": "Apollo 尋求投資者參與360億美元債務交易 為 Anthropic 採購 AI 晶片 | 國際焦點 | 國際 經濟日報",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE42MWRDNTcwbEo2ZElTXzJobjg3dzAwaS1zdWxUNDRKaWd5WHlRUzRMMUM5ZnJxYVozaUlRV2ZxYWh3UDRFM2NZNGlYdUJKN2lNb0c2MmR3QTVzUQ?oc=5",
+      "title": "Apollo與黑石敲定350億美元AI晶片融資協議，支持Anthropic擴張 - Investing.com 香港 - 股市報價& 財經新聞",
+      "summary": "Apollo與黑石敲定350億美元AI晶片融資協議，支持Anthropic擴張 Investing.com 香港 - 股市報價& 財經新聞",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5KcENoTkQ0QlpEMjlvMnBWUm96c0NJTDhOWkxRZV9wMXZ3SXFyck5ydUJTcWZQX2Q0eW1pajNtc3RTVlVHeUJjOFdTdThROXlUZ3Y2QVdVUldsUXNjanlUNHp0Q3RnekZiTGc?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-05-29T13:59:47+00:00",
-      "fetched": "2026-06-05T12:22:33.428534",
+      "date": "2026-06-06T00:05:29+00:00",
+      "fetched": "2026-06-06T09:32:09.907390",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": true,
+      "score": 90
+    },
+    {
+      "id": "rss_e02bc1406e",
+      "channel": "rss",
+      "source": "Apollo",
+      "title": "市場傳聞：Apollo與黑石爲Anthropic敲定了$350億的融資方案 - 富途牛牛",
+      "summary": "市場傳聞：Apollo與黑石爲Anthropic敲定了$350億的融資方案 富途牛牛",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcEJhcll2OERtaXJBaTU3dzcwRnN5WlhQbW9fWUlDRkNsQnZNWDFLNVJfdXRiak54d0pyR1ZjbzZIMXUzcldwakNNWTFPSzlZLXJ2c3FxUzhtaHZDdlBZaFhPWGVpeS1QWEtQWk1CWURhX1VzLTFyc1pvemZOdlB5ejNfQmFhMG9SSXp4NFRiZ0N0MWtiaUtfWkU2VFFrai1hN1UtMWR2dTlMVnRjNUQ0a0Z5STl0QQ?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-06-05T23:05:34+00:00",
+      "fetched": "2026-06-06T09:32:10.724710",
       "systems": [
         "EIP"
       ],
@@ -55,7 +74,7 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNEZOMl9pNUk2RWRQU2p3UE1OdmhCeW1jX2ZzSElQUlJETlppWGtzekZJLUU3Zjl0ZkIydFR4UWpWRlA5UEd1S0dxWjlUWUtnQk1EVlI2UkxOakNpbjF1WDUyZExuOHZmS3VIUi0zc0trVnZsZGNBZkFwT3p2M2daNF9xN0NnY3NiNjhrWnh3Q3daMDVN?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-01T10:45:00+00:00",
-      "fetched": "2026-06-05T12:22:38.358621",
+      "fetched": "2026-06-06T09:32:15.451103",
       "systems": [
         "CRM"
       ],
@@ -74,7 +93,7 @@
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE91M2Rwa0d5STZrLUxXUElsUHRqR1ptenFuU1F5bmwzdlVTZF92ZS1GYXpfMTNjUHpkdVF0NkV1ZzUyTG1jZ09lcmlLVlhuTzg2ZE9sUGZTUDU?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-02T06:24:41+00:00",
-      "fetched": "2026-06-05T12:22:38.942340",
+      "fetched": "2026-06-06T09:32:16.258586",
       "systems": [
         "CRM"
       ],
@@ -85,15 +104,15 @@
       "score": 65
     },
     {
-      "id": "rss_0c705f32e2",
+      "id": "rss_b833d656d8",
       "channel": "rss",
-      "source": "Apollo",
-      "title": "Apollo首席經濟學家稱AI熱潮將澆滅聯儲會新任主席沃什快速降息的希望 - Yahoo 財經",
-      "summary": "Apollo首席經濟學家稱AI熱潮將澆滅聯儲會新任主席沃什快速降息的希望 Yahoo 財經",
-      "url": "https://news.google.com/rss/articles/CBMiuANBVV95cUxOcS1UenhBTmRfR3ppSjRpTkg4RmJ5Y3hMWnRDNWFMSGhWSXRaa1ZmS0pPaGVIaE8zSWc1TVVINzlNUGpBbTI2Z0VVb2xUZmI5ZTVpUk0yUS1LZzJ3UFI2bWNGczFtR25tcVFCbTdvc0lHNTJveTc3QmNBcm9fV2ZfUzJqV0dzN1k5ZDlJUTBPVXFIcUdZOUFpOWpzdFRWNWdzLTdDMEpJUTJvdU9ZM3A0R3VKTXV0ZlJKa095emltOW1kbXQzbUxycWRvWkV5M2JIUTFmcE1jdW5TSnhQbXVzc2ZEVkJ1UE1McWFJd09LX2g0bVZHWVFQdDJEazF0WER3c29ielJ5RkYyOUk3a3AzWXdBc05ENTlQRl8yaFVHX3hSR1pQb2l2aXk3VjRQdlZ2amtEQXFvNGdzUy03bF9QTnQzSk80V25fem56d1FCcENHWk5EVUNuemJ1bWUwdXloZmFaTHpReGQ4bmZ3R0o0bElLQTUzSzNxNTN3eDE0OVl6Z1BPeUtNYUtLZmxFa2NnX2IwU01WWnhiYmhRRGxjUlZlbENYZU5xYmJXMFhIMXRPZGkxd1hEZg?oc=5",
+      "source": "Workday",
+      "title": "川普買什麼跌什麼！藏壽司、波音、AI軟體全部套牢 - NOWnews今日新聞",
+      "summary": "川普買什麼跌什麼！藏壽司、波音、AI軟體全部套牢 NOWnews今日新聞",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ZbTFSUk1LQWdxdk8zcExFSHhVZ1J4QXNjWFFScUFlRHRid3JJS2lyNGF3djJlcmkyXzNCNDdNaTF5SnVsUnE3Vzh3NjR4Ym1VSkHSAVJBVV95cUxOWW0xUlJNS0FncXZPM3BMRUh4VWdSeEFzY1hRUnFBZUR0YndySUtpcjRhd3YyZXJpMl8zQjQ3TWkxeUp1bFJxN1c4dzY0eGJtVUpB?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-06-01T16:41:46+00:00",
-      "fetched": "2026-06-05T12:22:33.989079",
+      "date": "2026-06-06T05:18:21+00:00",
+      "fetched": "2026-06-06T09:32:04.923403",
       "systems": [
         "EIP"
       ],
@@ -104,15 +123,15 @@
       "score": 50
     },
     {
-      "id": "rss_bed751df96",
+      "id": "rss_0c705f32e2",
       "channel": "rss",
       "source": "Apollo",
-      "title": "《AI》ＡＰＯＬＬＯ出行(00860.HK)出現「黃金交叉」技術圖表形態 - AASTOCKS.com",
-      "summary": "《AI》ＡＰＯＬＬＯ出行(00860.HK)出現「黃金交叉」技術圖表形態 AASTOCKS.com",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZXZaaUdfNm5OWmNQSXpaVzdKLWt2MWFzVFNxcFhVMG1ZVUlhc2pqZUdKSVNsY1RzUjhuZURRX0FFTVlOWHhfTVdBbHZKNGxVejhYN0xnZEVRSUtFdW15cjJKX2xkYzBxbG94T252d0U4MWFsenpualJRSHpGc2F4TmtvLWo3M0JQTFc1QXlhb1FYZ3M?oc=5",
+      "title": "Apollo首席經濟學家稱AI熱潮將澆滅聯儲會新任主席沃什快速降息的希望 - Yahoo 財經",
+      "summary": "Apollo首席經濟學家稱AI熱潮將澆滅聯儲會新任主席沃什快速降息的希望 Yahoo 財經",
+      "url": "https://news.google.com/rss/articles/CBMiuANBVV95cUxOcS1UenhBTmRfR3ppSjRpTkg4RmJ5Y3hMWnRDNWFMSGhWSXRaa1ZmS0pPaGVIaE8zSWc1TVVINzlNUGpBbTI2Z0VVb2xUZmI5ZTVpUk0yUS1LZzJ3UFI2bWNGczFtR25tcVFCbTdvc0lHNTJveTc3QmNBcm9fV2ZfUzJqV0dzN1k5ZDlJUTBPVXFIcUdZOUFpOWpzdFRWNWdzLTdDMEpJUTJvdU9ZM3A0R3VKTXV0ZlJKa095emltOW1kbXQzbUxycWRvWkV5M2JIUTFmcE1jdW5TSnhQbXVzc2ZEVkJ1UE1McWFJd09LX2g0bVZHWVFQdDJEazF0WER3c29ielJ5RkYyOUk3a3AzWXdBc05ENTlQRl8yaFVHX3hSR1pQb2l2aXk3VjRQdlZ2amtEQXFvNGdzUy03bF9QTnQzSk80V25fem56d1FCcENHWk5EVUNuemJ1bWUwdXloZmFaTHpReGQ4bmZ3R0o0bElLQTUzSzNxNTN3eDE0OVl6Z1BPeUtNYUtLZmxFa2NnX2IwU01WWnhiYmhRRGxjUlZlbENYZU5xYmJXMFhIMXRPZGkxd1hEZg?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-06-04T04:33:00+00:00",
-      "fetched": "2026-06-05T12:22:34.560966",
+      "date": "2026-06-01T16:41:46+00:00",
+      "fetched": "2026-06-06T09:32:09.099274",
       "systems": [
         "EIP"
       ],
@@ -131,7 +150,26 @@
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1UcjlYVmFaT3pNQVJHc29wZUlVSko0bkZJTmdNWUZlY0ozaEdjR3VSVDdLWHB0SDhTdjNwbHdQNGhEa3hGcy0zUFg2Z2g3UWxrVHNaSm9ITFBjcDU4T0Jn?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-02T03:05:00+00:00",
-      "fetched": "2026-06-05T12:22:35.136831",
+      "fetched": "2026-06-06T09:32:11.543224",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "score": 50
+    },
+    {
+      "id": "rss_51536be1b8",
+      "channel": "rss",
+      "source": "Apollo",
+      "title": "2026高雄自動化工業展 高科大秀雙軸轉型硬實力 | 自動化產業 | 商情 - 經濟日報",
+      "summary": "2026高雄自動化工業展 高科大秀雙軸轉型硬實力 | 自動化產業 | 商情 經濟日報",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBYS3lTRDFqb1RoVXRNV0NjUkdxQ2tPUTZaQlJ5elk2MlBQbVJaTUFRMkxwbnZXTTJqX0tTeUtqcmh1ZWk5QmZfZXlDcWJyM1lLQktWal9ZQ1o0dw?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-06-02T08:02:53+00:00",
+      "fetched": "2026-06-06T09:32:12.265740",
       "systems": [
         "EIP"
       ],
@@ -150,7 +188,7 @@
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VdWFzbk9KZDhCSTA1ZEpyeTB2Y1FJSU9lZzhiaTBuc2RTeGxCakRaSUlqc21ra2tLblhNZ0hLdG1Ud294Z1lDZ2JMZFJtdlUxLUk3cEFvY3gwV0JNOXMxZENlaXBRQdIBa0FVX3lxTE5CUm43WW90SlpVNHVpXzd4VU4xT0pHc25aTVhoRWFUcEJxSUsxNzlVcEVPNWVYVnJLYXAweDZRbHFTR29wWlcyRkdyYkNGcEE4X0xCdEdLaUVVenlGNV96Q3BGR1hoZ0FpTVNN?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-01T01:50:08+00:00",
-      "fetched": "2026-06-05T12:22:35.780134",
+      "fetched": "2026-06-06T09:32:13.054848",
       "systems": [
         "EIP"
       ],
@@ -161,34 +199,15 @@
       "score": 50
     },
     {
-      "id": "rss_6987aef651",
+      "id": "rss_a8335250d8",
       "channel": "rss",
-      "source": "Apollo",
-      "title": "博通頂級信評護航 Anthropic創紀錄融資案成本大降 - news.cnyes.com",
-      "summary": "博通頂級信評護航 Anthropic創紀錄融資案成本大降 news.cnyes.com",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1sRGdsLVQtWW1Kazl2UlN1Z3haZGsyZVNWYkxTZVRlX3VQMVExQlh3M1E4QTlOdTRTd09ZSzBEQTd1OFVLUjJiRWUzQQ?oc=5",
+      "source": "Stripe",
+      "title": "從支付到部署：Stripe押注AI Agent經濟 - Binance",
+      "summary": "從支付到部署：Stripe押注AI Agent經濟 Binance",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0zVGQtZmtyVHRJR001bkl3d3pfMXlWbnBNandEdjdDRjE0Sm8tWWUxZXluYXNfUWJMWkVsNVMteEhBS1dPX1hIdVkyS2V0RExqTkpJT3lRaERFbUZWNjBJaXAtQUs5X2lN?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-06-03T16:28:13+00:00",
-      "fetched": "2026-06-05T12:22:36.440161",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": false,
-      "score": 50
-    },
-    {
-      "id": "rss_2faae360e3",
-      "channel": "rss",
-      "source": "HubSpot",
-      "title": "Hububble 協助企業導入AI Agent 營運架構以超過51.8% 的複合年均成長入選《金融時報》亞太高成長企業榜台灣第4 名 - iThome",
-      "summary": "Hububble 協助企業導入AI Agent 營運架構以超過51.8% 的複合年均成長入選《金融時報》亞太高成長企業榜台灣第4 名 iThome",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5UMFJkYmJLaE1vOXJvNUNia1ZFbWFMZmFONnlGQ2JGTmFkY2JwX3czdHRyQUhHTUp5OXdUc3AyVENJcUY3dGdPNkdJdw?oc=5",
-      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-05-29T16:20:45+00:00",
-      "fetched": "2026-06-05T12:22:37.460126",
+      "date": "2026-06-06T06:00:51+00:00",
+      "fetched": "2026-06-06T09:32:14.638400",
       "systems": [
         "CRM"
       ],
