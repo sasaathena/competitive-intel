@@ -1,10 +1,10 @@
 {
   "stats": {
-    "total": 11,
-    "new_today": 11,
-    "last_updated": "2026-06-06T09:32:16.558870",
+    "total": 12,
+    "new_today": 12,
+    "last_updated": "2026-06-07T10:18:24.364679",
     "by_channel": {
-      "rss": 11
+      "rss": 12
     }
   },
   "articles": [
@@ -17,7 +17,26 @@
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9idmY2WXJIR1pwX19sUHVaM2l6LWtuRF9RUU1GOFFEbG9JdGpHZnZCMEtBTmxqazlMblEtVlFkM09DeVFPY3pMcVVpT1IwZEV2cXBFcFgtVlFYWHJNT215amFIeFBjWE0?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-01T16:00:00+00:00",
-      "fetched": "2026-06-06T09:32:06.175580",
+      "fetched": "2026-06-07T10:18:17.625081",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": true,
+      "score": 90
+    },
+    {
+      "id": "rss_ac19a378ca",
+      "channel": "rss",
+      "source": "Apollo",
+      "title": "市場傳聞：Apollo與黑石爲Anthropic敲定了$350億的融資方案 - Moomoo",
+      "summary": "市場傳聞：Apollo與黑石爲Anthropic敲定了$350億的融資方案 Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeGthNldkZEE4RVJ3djU0eUlFdElzZm9yN2tGQldJZlFpYTVCWjIydTlCY1g2ay0tVW5yVWlVakJmS3Nsbm52YkdnYlF3UHR0Z0ZPNUIyNXYxVVp3WFdIU2c2dVhhclJsVm5MVFQxUlZ1RlBkOXdmWGRndW9Xb1c0Ykoxa1pFM0J0X2FMd0o5NXJGMGYwQ3FDVjF2Z29kMlFmN1F4SDZ3NVIzQlBKd3FqbTMwSkItdTFVUXNPcFlR?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-06-05T23:12:23+00:00",
+      "fetched": "2026-06-07T10:18:19.176268",
       "systems": [
         "EIP"
       ],
@@ -36,7 +55,7 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5KcENoTkQ0QlpEMjlvMnBWUm96c0NJTDhOWkxRZV9wMXZ3SXFyck5ydUJTcWZQX2Q0eW1pajNtc3RTVlVHeUJjOFdTdThROXlUZ3Y2QVdVUldsUXNjanlUNHp0Q3RnekZiTGc?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-06T00:05:29+00:00",
-      "fetched": "2026-06-06T09:32:09.907390",
+      "fetched": "2026-06-07T10:18:19.783290",
       "systems": [
         "EIP"
       ],
@@ -54,8 +73,8 @@
       "summary": "市場傳聞：Apollo與黑石爲Anthropic敲定了$350億的融資方案 富途牛牛",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcEJhcll2OERtaXJBaTU3dzcwRnN5WlhQbW9fWUlDRkNsQnZNWDFLNVJfdXRiak54d0pyR1ZjbzZIMXUzcldwakNNWTFPSzlZLXJ2c3FxUzhtaHZDdlBZaFhPWGVpeS1QWEtQWk1CWURhX1VzLTFyc1pvemZOdlB5ejNfQmFhMG9SSXp4NFRiZ0N0MWtiaUtfWkU2VFFrai1hN1UtMWR2dTlMVnRjNUQ0a0Z5STl0QQ?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-06-05T23:05:34+00:00",
-      "fetched": "2026-06-06T09:32:10.724710",
+      "date": "2026-06-05T23:12:28+00:00",
+      "fetched": "2026-06-07T10:18:20.370332",
       "systems": [
         "EIP"
       ],
@@ -74,7 +93,7 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNEZOMl9pNUk2RWRQU2p3UE1OdmhCeW1jX2ZzSElQUlJETlppWGtzekZJLUU3Zjl0ZkIydFR4UWpWRlA5UEd1S0dxWjlUWUtnQk1EVlI2UkxOakNpbjF1WDUyZExuOHZmS3VIUi0zc0trVnZsZGNBZkFwT3p2M2daNF9xN0NnY3NiNjhrWnh3Q3daMDVN?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-01T10:45:00+00:00",
-      "fetched": "2026-06-06T09:32:15.451103",
+      "fetched": "2026-06-07T10:18:23.474801",
       "systems": [
         "CRM"
       ],
@@ -93,7 +112,7 @@
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE91M2Rwa0d5STZrLUxXUElsUHRqR1ptenFuU1F5bmwzdlVTZF92ZS1GYXpfMTNjUHpkdVF0NkV1ZzUyTG1jZ09lcmlLVlhuTzg2ZE9sUGZTUDU?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-02T06:24:41+00:00",
-      "fetched": "2026-06-06T09:32:16.258586",
+      "fetched": "2026-06-07T10:18:24.064373",
       "systems": [
         "CRM"
       ],
@@ -104,6 +123,25 @@
       "score": 65
     },
     {
+      "id": "rss_310611c72b",
+      "channel": "rss",
+      "source": "Workday",
+      "title": "人資科技平台加速代理化！Workday推出Agent Passport，企業治理需求成新焦點 - Yahoo新聞",
+      "summary": "人資科技平台加速代理化！Workday推出Agent Passport，企業治理需求成新焦點 Yahoo新聞",
+      "url": "https://news.google.com/rss/articles/CBMihgNBVV95cUxNMWJPLTRaekVzNW9TekZwTFl1M1lKUDBwWmRxMjFZNEZKam9PU2Q2RGdZcjFWQVlQQ25iV0N6T0JMbWhZUklhSTJwNmczZWtxcnhvNVZYTXQ1NzFJWEZUSFJxbUljLTdXdU83ZnZCUnpyaHFCaVpyTi1hMHJtdzVWUFZONlUtM1J3T0tkYWM3Wk9KMkRYaVNwN0hoOHdmU2doMF95MFNtaU41bmFzc3ItRWVQTlZhbGdia3BkcUxmV1J3Z2dzMHo5NndhVG9SUzFaczc3U19VSFhIWlRWVEMwcjlwUS13REQtVUhMb0ZIQjRMSFVNQjhqeHNBMENjTE1NeHp6MHpPNUhlQWpmVlJrNDhNQ3NOUHpEMUVBQkFtZjEzMEJGWHdPZ21lSkoxcVRSbzlxSXRPRmZsNDFFWHhZeG9VRG9HR2tncGx1Nm5vbFByZ3J4TURJZ0poNGFDOU45eC1UU0Z5RlRpcklTS0ZZTUxFZ29OQ2NkYzdOUmRpU2pvc2xxakE?oc=5",
+      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
+      "date": "2026-06-07T06:24:25+00:00",
+      "fetched": "2026-06-07T10:18:16.170181",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "score": 50
+    },
+    {
       "id": "rss_b833d656d8",
       "channel": "rss",
       "source": "Workday",
@@ -112,7 +150,7 @@
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ZbTFSUk1LQWdxdk8zcExFSHhVZ1J4QXNjWFFScUFlRHRid3JJS2lyNGF3djJlcmkyXzNCNDdNaTF5SnVsUnE3Vzh3NjR4Ym1VSkHSAVJBVV95cUxOWW0xUlJNS0FncXZPM3BMRUh4VWdSeEFzY1hRUnFBZUR0YndySUtpcjRhd3YyZXJpMl8zQjQ3TWkxeUp1bFJxN1c4dzY0eGJtVUpB?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-06T05:18:21+00:00",
-      "fetched": "2026-06-06T09:32:04.923403",
+      "fetched": "2026-06-07T10:18:16.780275",
       "systems": [
         "EIP"
       ],
@@ -131,26 +169,7 @@
       "url": "https://news.google.com/rss/articles/CBMiuANBVV95cUxOcS1UenhBTmRfR3ppSjRpTkg4RmJ5Y3hMWnRDNWFMSGhWSXRaa1ZmS0pPaGVIaE8zSWc1TVVINzlNUGpBbTI2Z0VVb2xUZmI5ZTVpUk0yUS1LZzJ3UFI2bWNGczFtR25tcVFCbTdvc0lHNTJveTc3QmNBcm9fV2ZfUzJqV0dzN1k5ZDlJUTBPVXFIcUdZOUFpOWpzdFRWNWdzLTdDMEpJUTJvdU9ZM3A0R3VKTXV0ZlJKa095emltOW1kbXQzbUxycWRvWkV5M2JIUTFmcE1jdW5TSnhQbXVzc2ZEVkJ1UE1McWFJd09LX2g0bVZHWVFQdDJEazF0WER3c29ielJ5RkYyOUk3a3AzWXdBc05ENTlQRl8yaFVHX3hSR1pQb2l2aXk3VjRQdlZ2amtEQXFvNGdzUy03bF9QTnQzSk80V25fem56d1FCcENHWk5EVUNuemJ1bWUwdXloZmFaTHpReGQ4bmZ3R0o0bElLQTUzSzNxNTN3eDE0OVl6Z1BPeUtNYUtLZmxFa2NnX2IwU01WWnhiYmhRRGxjUlZlbENYZU5xYmJXMFhIMXRPZGkxd1hEZg?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-01T16:41:46+00:00",
-      "fetched": "2026-06-06T09:32:09.099274",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": false,
-      "score": 50
-    },
-    {
-      "id": "rss_1db71fa69a",
-      "channel": "rss",
-      "source": "Apollo",
-      "title": "Fed新主席算盤恐落空？阿波羅示警：AI愈強、降息愈難- 國際 - 工商時報",
-      "summary": "Fed新主席算盤恐落空？阿波羅示警：AI愈強、降息愈難- 國際 工商時報",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1UcjlYVmFaT3pNQVJHc29wZUlVSko0bkZJTmdNWUZlY0ozaEdjR3VSVDdLWHB0SDhTdjNwbHdQNGhEa3hGcy0zUFg2Z2g3UWxrVHNaSm9ITFBjcDU4T0Jn?oc=5",
-      "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-06-02T03:05:00+00:00",
-      "fetched": "2026-06-06T09:32:11.543224",
+      "fetched": "2026-06-07T10:18:18.563067",
       "systems": [
         "EIP"
       ],
@@ -169,7 +188,7 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBYS3lTRDFqb1RoVXRNV0NjUkdxQ2tPUTZaQlJ5elk2MlBQbVJaTUFRMkxwbnZXTTJqX0tTeUtqcmh1ZWk5QmZfZXlDcWJyM1lLQktWal9ZQ1o0dw?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-02T08:02:53+00:00",
-      "fetched": "2026-06-06T09:32:12.265740",
+      "fetched": "2026-06-07T10:18:20.937290",
       "systems": [
         "EIP"
       ],
@@ -188,7 +207,7 @@
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5VdWFzbk9KZDhCSTA1ZEpyeTB2Y1FJSU9lZzhiaTBuc2RTeGxCakRaSUlqc21ra2tLblhNZ0hLdG1Ud294Z1lDZ2JMZFJtdlUxLUk3cEFvY3gwV0JNOXMxZENlaXBRQdIBa0FVX3lxTE5CUm43WW90SlpVNHVpXzd4VU4xT0pHc25aTVhoRWFUcEJxSUsxNzlVcEVPNWVYVnJLYXAweDZRbHFTR29wWlcyRkdyYkNGcEE4X0xCdEdLaUVVenlGNV96Q3BGR1hoZ0FpTVNN?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
       "date": "2026-06-01T01:50:08+00:00",
-      "fetched": "2026-06-06T09:32:13.054848",
+      "fetched": "2026-06-07T10:18:21.510724",
       "systems": [
         "EIP"
       ],
@@ -199,15 +218,15 @@
       "score": 50
     },
     {
-      "id": "rss_a8335250d8",
+      "id": "rss_0be9ac00bb",
       "channel": "rss",
       "source": "Stripe",
-      "title": "從支付到部署：Stripe押注AI Agent經濟 - Binance",
-      "summary": "從支付到部署：Stripe押注AI Agent經濟 Binance",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0zVGQtZmtyVHRJR001bkl3d3pfMXlWbnBNandEdjdDRjE0Sm8tWWUxZXluYXNfUWJMWkVsNVMteEhBS1dPX1hIdVkyS2V0RExqTkpJT3lRaERFbUZWNjBJaXAtQUs5X2lN?oc=5",
+      "title": "從支付到部署：Stripe押注AI Agent經濟 - news.cnyes.com",
+      "summary": "從支付到部署：Stripe押注AI Agent經濟 news.cnyes.com",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9pcmVzNDJLSXRLRFZMWGozVmhzZ252cnl5U2hQSUU1dXhQaHJ3WWxuSy1vVjBpcEZIR0tCNkxpZDJVU2t3YWtfS2ktRQ?oc=5",
       "thumbnail": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300",
-      "date": "2026-06-06T06:00:51+00:00",
-      "fetched": "2026-06-06T09:32:14.638400",
+      "date": "2026-06-07T05:30:12+00:00",
+      "fetched": "2026-06-07T10:18:22.888854",
       "systems": [
         "CRM"
       ],
