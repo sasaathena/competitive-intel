@@ -640,11 +640,14 @@ def collect_all_intelligence():
     en_count   = len(all_articles) - zhtw_count
     by_channel: dict[str, int] = {}
     by_system: dict[str, int]  = {}
+    by_type: dict[str, int] = {}
     for a in all_articles:
         ch = a.get("channel", "unknown")
         by_channel[ch] = by_channel.get(ch, 0) + 1
         for s in a.get("systems", []):
             by_system[s] = by_system.get(s, 0) + 1
+        for t in a.get("types", []): 
+            by_type[t] = by_type.get(t, 0) + 1
 
     output = {
         "stats": {
@@ -654,6 +657,7 @@ def collect_all_intelligence():
             "lang_breakdown": {"zh_TW": zhtw_count, "en": en_count},
             "by_channel": by_channel,
             "by_system": by_system,
+            "by_type": by_type,
         },
         "articles": all_articles,
     }
