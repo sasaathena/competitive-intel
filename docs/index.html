@@ -655,7 +655,7 @@ input  { font-family: var(--sans) }
         <div class="logo-mark">情</div>
         <span class="logo-name">競品情報</span>
       </div>
-      <div class="logo-sub">EIP &amp; CRM · UIUX 設計師視角</div>
+      <div class="logo-sub">EIP &amp; CRM</div>
     </div>
 
     <div class="nav-section">
@@ -724,27 +724,27 @@ input  { font-family: var(--sans) }
         </div>
         <div class="metric m-sand">
           <div class="metric-top">
-            <span class="metric-icon">🇹🇼</span>
-            <span class="metric-badge mb-gray">繁中優先</span>
+            <span class="metric-icon">🗓</span>
+            <span class="metric-badge mb-up" id="badge-today">今日</span>
           </div>
-          <div class="metric-val" id="m-zhtw">0</div>
-          <div class="metric-lbl">繁體中文內容</div>
+          <div class="metric-val" id="m-today">0</div>
+          <div class="metric-lbl">今日新增</div>
         </div>
         <div class="metric m-sky">
           <div class="metric-top">
-            <span class="metric-icon">✦</span>
-            <span class="metric-badge mb-gray">體驗精選</span>
+            <span class="metric-icon">📈</span>
+            <span class="metric-badge mb-gray">趨勢分析</span>
           </div>
-          <div class="metric-val" id="m-ux">0</div>
-          <div class="metric-lbl">用戶體驗文章</div>
+          <div class="metric-val" id="m-trend">0</div>
+          <div class="metric-lbl">產業趨勢</div>
         </div>
         <div class="metric m-red">
           <div class="metric-top">
-            <span class="metric-icon">📊</span>
-            <span class="metric-badge mb-gray">排除財經</span>
+            <span class="metric-icon">⚡</span>
+            <span class="metric-badge mb-gray">產品動態</span>
           </div>
-          <div class="metric-val" id="m-skip">0</div>
-          <div class="metric-lbl">財經新聞已過濾</div>
+          <div class="metric-val" id="m-feat">0</div>
+          <div class="metric-lbl">功能更新</div>
         </div>
       </div>
 
@@ -851,11 +851,12 @@ async function loadData() {
 }
 
 function applyStats(s) {
-  setText('m-total', s.total ?? 0);
-  setText('m-zhtw',  s.zhtw_count ?? 0);
-  setText('m-ux',    s.by_type?.['用戶體驗'] ?? 0);
-  setText('m-skip',  s.skipped_finance ?? 0);
-  setText('badge-new', '+' + (s.new_today ?? 0) + ' 今日');
+  setText('m-total',  s.total ?? 0);
+  setText('m-today',  s.new_today ?? 0);
+  setText('m-trend',  s.by_type?.['產業趨勢'] ?? 0);
+  setText('m-feat',   s.by_type?.['功能更新'] ?? 0);
+  setText('badge-new',    '+' + (s.new_today ?? 0) + ' 今日');
+  setText('badge-today',  (s.new_today ?? 0) + ' 篇');
   setText('cnt-all', s.total ?? 0);
   setText('cnt-rss', s.by_channel?.rss ?? 0);
   setText('cnt-EIP', s.by_system?.EIP ?? 0);
