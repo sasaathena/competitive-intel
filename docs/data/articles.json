@@ -1,18 +1,25 @@
 {
   "stats": {
-    "total": 102,
-    "new_today": 102,
-    "last_updated": "2026-06-08T06:12:06.083158",
+    "total": 100,
+    "new_today": 100,
+    "last_updated": "2026-06-08T06:41:07.176199",
     "lang_breakdown": {
       "zh_TW": 11,
-      "en": 91
+      "en": 89
     },
     "by_channel": {
-      "rss": 102
+      "rss": 100
     },
     "by_system": {
-      "EIP": 65,
-      "CRM": 40
+      "EIP": 64,
+      "CRM": 39
+    },
+    "by_type": {
+      "AI應用": 30,
+      "產業趨勢": 61,
+      "用戶體驗": 13,
+      "Dashboard案例": 6,
+      "功能更新": 3
     }
   },
   "articles": [
@@ -29,7 +36,7 @@
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5KcENoTkQ0QlpEMjlvMnBWUm96c0NJTDhOWkxRZV9wMXZ3SXFyck5ydUJTcWZQX2Q0eW1pajNtc3RTVlVHeUJjOFdTdThROXlUZ3Y2QVdVUldsUXNjanlUNHp0Q3RnekZiTGc?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-06T00:05:29+00:00",
-      "fetched": "2026-06-08T06:10:30.564553",
+      "fetched": "2026-06-08T06:39:35.185613",
       "systems": [
         "EIP"
       ],
@@ -52,7 +59,7 @@
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0taUZyN3dsaUYwNG16bTZ5ZzdIc0FjTEJkaHhnRVVVRDdVTV9UVTRSdUFsWTNLTmFEaFp3cTFrSDM5Smw4YWZyUExYWFhVLWVmVWlXWm0yaVN3V0tWM3liWWxnX18tQWpneUJFVDBOTWM?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T14:46:04+00:00",
-      "fetched": "2026-06-08T06:10:10.603884",
+      "fetched": "2026-06-08T06:39:15.459908",
       "systems": [
         "EIP"
       ],
@@ -75,7 +82,7 @@
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQ082anpxNlE2b3lfMTU3U21kZS1Cb3hLajk4RHQ2ZnZSekJUdEdSdVRaTFk2WTNPZWZtNlpUTHRqU18xcV9qYUZod09XMk1tS2h5VzRrdmQ5cWFMRU1BdkRyS19XYkUxRDFwT210eTNBMDhRVzh3T3JiQUx6cVlfQVVob2xIT0QwZDRkVjlQLTZPY0N2RUVYVWx3WWM5MkFBQ0xjY0Z2aw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T13:53:32+00:00",
-      "fetched": "2026-06-08T06:10:11.204655",
+      "fetched": "2026-06-08T06:39:16.060688",
       "systems": [
         "EIP"
       ],
@@ -98,7 +105,7 @@
       "url": "https://news.google.com/rss/articles/CBMiuANBVV95cUxOcS1UenhBTmRfR3ppSjRpTkg4RmJ5Y3hMWnRDNWFMSGhWSXRaa1ZmS0pPaGVIaE8zSWc1TVVINzlNUGpBbTI2Z0VVb2xUZmI5ZTVpUk0yUS1LZzJ3UFI2bWNGczFtR25tcVFCbTdvc0lHNTJveTc3QmNBcm9fV2ZfUzJqV0dzN1k5ZDlJUTBPVXFIcUdZOUFpOWpzdFRWNWdzLTdDMEpJUTJvdU9ZM3A0R3VKTXV0ZlJKa095emltOW1kbXQzbUxycWRvWkV5M2JIUTFmcE1jdW5TSnhQbXVzc2ZEVkJ1UE1McWFJd09LX2g0bVZHWVFQdDJEazF0WER3c29ielJ5RkYyOUk3a3AzWXdBc05ENTlQRl8yaFVHX3hSR1pQb2l2aXk3VjRQdlZ2amtEQXFvNGdzUy03bF9QTnQzSk80V25fem56d1FCcENHWk5EVUNuemJ1bWUwdXloZmFaTHpReGQ4bmZ3R0o0bElLQTUzSzNxNTN3eDE0OVl6Z1BPeUtNYUtLZmxFa2NnX2IwU01WWnhiYmhRRGxjUlZlbENYZU5xYmJXMFhIMXRPZGkxd1hEZg?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-01T16:41:46+00:00",
-      "fetched": "2026-06-08T06:10:28.762791",
+      "fetched": "2026-06-08T06:39:33.383564",
       "systems": [
         "EIP"
       ],
@@ -122,7 +129,7 @@
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeGthNldkZEE4RVJ3djU0eUlFdElzZm9yN2tGQldJZlFpYTVCWjIydTlCY1g2ay0tVW5yVWlVakJmS3Nsbm52YkdnYlF3UHR0Z0ZPNUIyNXYxVVp3WFdIU2c2dVhhclJsVm5MVFQxUlZ1RlBkOXdmWGRndW9Xb1c0Ykoxa1pFM0J0X2FMd0o5NXJGMGYwQ3FDVjF2Z29kMlFmN1F4SDZ3NVIzQlBKd3FqbTMwSkItdTFVUXNPcFlR?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-05T23:12:23+00:00",
-      "fetched": "2026-06-08T06:10:29.363441",
+      "fetched": "2026-06-08T06:39:33.984268",
       "systems": [
         "EIP"
       ],
@@ -146,7 +153,7 @@
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcEJhcll2OERtaXJBaTU3dzcwRnN5WlhQbW9fWUlDRkNsQnZNWDFLNVJfdXRiak54d0pyR1ZjbzZIMXUzcldwakNNWTFPSzlZLXJ2c3FxUzhtaHZDdlBZaFhPWGVpeS1QWEtQWk1CWURhX1VzLTFyc1pvemZOdlB5ejNfQmFhMG9SSXp4NFRiZ0N0MWtiaUtfWkU2VFFrai1hN1UtMWR2dTlMVnRjNUQ0a0Z5STl0QQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-05T23:12:28+00:00",
-      "fetched": "2026-06-08T06:10:32.966768",
+      "fetched": "2026-06-08T06:39:37.588064",
       "systems": [
         "EIP"
       ],
@@ -169,7 +176,7 @@
       "url": "https://news.google.com/rss/articles/CBMihgNBVV95cUxNMWJPLTRaekVzNW9TekZwTFl1M1lKUDBwWmRxMjFZNEZKam9PU2Q2RGdZcjFWQVlQQ25iV0N6T0JMbWhZUklhSTJwNmczZWtxcnhvNVZYTXQ1NzFJWEZUSFJxbUljLTdXdU83ZnZCUnpyaHFCaVpyTi1hMHJtdzVWUFZONlUtM1J3T0tkYWM3Wk9KMkRYaVNwN0hoOHdmU2doMF95MFNtaU41bmFzc3ItRWVQTlZhbGdia3BkcUxmV1J3Z2dzMHo5NndhVG9SUzFaczc3U19VSFhIWlRWVEMwcjlwUS13REQtVUhMb0ZIQjRMSFVNQjhqeHNBMENjTE1NeHp6MHpPNUhlQWpmVlJrNDhNQ3NOUHpEMUVBQkFtZjEzMEJGWHdPZ21lSkoxcVRSbzlxSXRPRmZsNDFFWHhZeG9VRG9HR2tncGx1Nm5vbFByZ3J4TURJZ0poNGFDOU45eC1UU0Z5RlRpcklTS0ZZTUxFZ29OQ2NkYzdOUmRpU2pvc2xxakE?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-07T06:10:09+00:00",
-      "fetched": "2026-06-08T06:10:08.802130",
+      "fetched": "2026-06-08T06:39:13.657763",
       "systems": [
         "EIP"
       ],
@@ -192,7 +199,7 @@
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPOGhzeVROb2x1cVdmcmE3S09BNlY1VkhLd3JVQktnNFRPbk4xWXJZSTNNdVlrRXp6NU9iUlYxV19PRnU5dVVRZzN2bGxCckJQU2xheEVrNzR6LVd2RTBodVNWa3ByWnc3cnhKQ0xGQnltVlVTczFkNHRoWVBqek5VQXA0NVc3Y1NiTHpGdjc1WmNnWjVTbVc5MVJTYXB3VE9pUFM2MkN0TW40MUtWbjRCNVRsNmRuSVlfQ3N2Q25YOA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T13:05:00+00:00",
-      "fetched": "2026-06-08T06:10:10.003246",
+      "fetched": "2026-06-08T06:39:14.859168",
       "systems": [
         "EIP"
       ],
@@ -215,7 +222,7 @@
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE91Y3oxUGxWUmJCb3RUQi1rRF9rTVdaWnJodm1ZeFMyazJyYUpmMGtRSDdMNVc1aG9BVlpCX3NGVktYYjQ5N3JDZ2VrbzZZaWxSak9aRzgySUdfM3JCeG9MN3laYjBBd2szbWNKbk84SVJoVU5pR1cxZjQtOA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-04T00:11:44+00:00",
-      "fetched": "2026-06-08T06:10:12.405766",
+      "fetched": "2026-06-08T06:39:17.262146",
       "systems": [
         "EIP"
       ],
@@ -238,7 +245,7 @@
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbG8xZDJiMWxKLXdBQl96NDNrQV81eVBCcmpBeXl0bkVsWGpBMUViTUlZaG9KNFNhRElrT3JOOWJYMm9rblZLcFdkV1I0UmlKTEgxZXh4MEwzSEFHaVh1WGZqcjB1RW96RmZ2MXgxLWltUHRkb281Zmp6OUtBU3FMdEoyUTJlcXdFcHdkUkpESjBuNXRmMDFiX05qcDU?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-03T21:51:08+00:00",
-      "fetched": "2026-06-08T06:10:13.006367",
+      "fetched": "2026-06-08T06:39:17.863153",
       "systems": [
         "EIP"
       ],
@@ -261,7 +268,7 @@
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZkwyUWF2d2M4OVYxRjFmQnVOM1VCZTlzZmNHRHRiU1ZEY0JPd1ZYSS1xOHhCclMxTTdLZWVoNXFoUTBUSU5Pc1pGNGdjb01MaTkxMDhvLVZqRW4yYlFpSTlOZGsyalRXcnpuM19uWnZyc0NuUUU5TlpkTEFBTWdSVGZZTk9wMkpac2JuXzVKRUdYXzhJS3I0MTh2WklMSjJJOW9RU2ZYRkdJbG0wVkVOR21SYUZjdzVDeG9QS09B?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-06T02:25:48+00:00",
-      "fetched": "2026-06-08T06:10:37.170607",
+      "fetched": "2026-06-08T06:39:41.792531",
       "systems": [
         "EIP"
       ],
@@ -285,7 +292,7 @@
       "url": "https://medium.com/@saurav.kanegaonkar/self-serve-dashboards-dont-fail-because-of-data-they-fail-because-of-the-question-b64327f31b55?source=rss------dashboard-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*C_FuEjXcpAYJ5qm6oT5r9g.png",
       "date": "2026-06-05T15:25:47+00:00",
-      "fetched": "2026-06-08T06:11:40.036612",
+      "fetched": "2026-06-08T06:40:42.319135",
       "systems": [
         "EIP"
       ],
@@ -311,7 +318,7 @@
       "url": "https://f-ahsan.medium.com/one-query-many-charts-the-dashboard-practice-that-changed-how-i-work-38ee2e9cff10?source=rss------dashboard-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*oFrLJ3rlj-eZHkvMMpBXYg.png",
       "date": "2026-06-04T04:01:02+00:00",
-      "fetched": "2026-06-08T06:11:41.540251",
+      "fetched": "2026-06-08T06:40:43.823530",
       "systems": [
         "EIP"
       ],
@@ -336,7 +343,7 @@
       "url": "https://medium.com/@the_real_quill/embedding-ai-in-crm-building-workstream-understanding-in-dynamics-365-1ac8847b50b7?source=rss------crm-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*KUJNa56KhsCldLFiNA3otA.png",
       "date": "2026-06-07T23:52:12+00:00",
-      "fetched": "2026-06-08T06:11:27.636140",
+      "fetched": "2026-06-08T06:40:29.624650",
       "systems": [
         "CRM"
       ],
@@ -361,7 +368,7 @@
       "url": "https://medium.com/@susmita001124/from-raw-data-to-dashboard-how-i-built-my-first-excel-project-763feed8b59e?source=rss------dashboard-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*37fmgMzawGOO1gE_YKeMgw.png",
       "date": "2026-06-05T18:02:10+00:00",
-      "fetched": "2026-06-08T06:11:39.735833",
+      "fetched": "2026-06-08T06:40:42.018274",
       "systems": [
         "EIP"
       ],
@@ -386,7 +393,7 @@
       "url": "https://medium.com/security-thinking-cap/the-illusion-of-control-dashboards-metrics-and-false-confidence-be4554a0d658?source=rss------dashboard-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*Q2BqZtXOIYxgaVjBf1vR9g.png",
       "date": "2026-06-05T14:26:11+00:00",
-      "fetched": "2026-06-08T06:11:40.337372",
+      "fetched": "2026-06-08T06:40:42.620060",
       "systems": [
         "EIP"
       ],
@@ -411,7 +418,7 @@
       "url": "https://medium.com/@asbpintu/how-i-built-an-interactive-uber-data-analysis-dashboard-using-power-bi-python-and-sql-4d524313e6ec?source=rss------dashboard-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*3c19dA2t1F57sLMHcd4bEg.png",
       "date": "2026-06-05T07:06:02+00:00",
-      "fetched": "2026-06-08T06:11:40.638085",
+      "fetched": "2026-06-08T06:40:42.920922",
       "systems": [
         "EIP"
       ],
@@ -436,7 +443,7 @@
       "url": "https://medium.com/@udaykiran.office/introducing-eleventra-a-modern-angular-21-admin-dashboard-template-0fff3b1ba6a4?source=rss------dashboard-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*qY8UER7OcXiNf_VBrrabfw.png",
       "date": "2026-06-04T16:21:06+00:00",
-      "fetched": "2026-06-08T06:11:40.938877",
+      "fetched": "2026-06-08T06:40:43.221812",
       "systems": [
         "EIP"
       ],
@@ -461,10 +468,10 @@
       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNb3VWUnRPMGgyeGRnSFdrM3dydUN4U0JGVmdEM0t1NzZ4UksxTl9iUWZjZWZxZEZmMG1tV3pOMk5rSERzRWtPSWEzVzZlRHJpZlhNU0o0YlZkXzA2NEtJZXBuWWJiaElLRThnNXVkcm42akY1b0Eza2JGRE1CYk9sZVRZcXVqQ0ZyQ3RsMHZzVWNyRF9hTU9ORHRCUUFMQ0FnZHo1aFZ1bGZVRW1aX2NjZkhGek1IVk9pVGU0U2lzRmZSWTV0OHkydFBGWHo3RWd0NW14RlJSNW9mLXZwRzdHcXk3NVBUaGsxRUE?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-05T17:15:00+00:00",
-      "fetched": "2026-06-08T06:11:02.906512",
+      "fetched": "2026-06-08T06:40:07.259693",
       "systems": [
-        "EIP",
-        "CRM"
+        "CRM",
+        "EIP"
       ],
       "types": [
         "功能更新",
@@ -475,18 +482,18 @@
       "score": 75
     },
     {
-      "id": "art_decd241805",
+      "id": "art_ccbebc65f1",
       "channel": "rss",
       "source": "Workday",
       "brands": [
         "Workday"
       ],
-      "title": "Workday Launches Agent Passport to Test, Verify, and Continuously Monitor Every AI Agent in the Enterprise - PR Newswire",
-      "summary": "Workday Launches Agent Passport to Test, Verify, and Continuously Monitor Every AI Agent in the Enterprise PR Newswire",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNWUtLU0VVUEFrZURGR0VYbXI3eUhjS1FNbUdFV0JGVkFWbW1aTlB0MGY5MFJPcUZmZ1BoakhtdGV3YXh6d3cxUG8zRlFIbWtaREFkSWVKVWdjNlFIeGJVbkQtZzM5U2ZMNFROMzliRTluUWNiMlNlTjJJNUZrVDBmeHM5ZGVjVGRMdHRYSzBPVGkyT2E1YVpHU0luWGRpZ003TWo2YThQcjU2VHB0NzJ1R0dvTXhuQlI2RWNCZjhQM1hJc2VVVDk3WWxpd0JvNkRJTVVOWXNYaE80bC1TZ3NZTFpSMjktNEI4QTlsdGNnanMwdw?oc=5",
+      "title": "Workday Launches Agent Passport to Test, Verify, and Continuously Monitor Every AI Agent in the Enterprise - Workday",
+      "summary": "Workday Launches Agent Passport to Test, Verify, and Continuously Monitor Every AI Agent in the Enterprise Workday",
+      "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxONEIya2QteGo1MVdla1ZhYXF0R2g1d0JXRDBUUjdGMXVBUHJSYnE5dDFXWWJPdVctLWhSSFlrWkF3Nm1TaUNnV1pNUHltdi1EOGU5cFJQOHdvaXVnMzY0aS1xdzAzNmtZOExTNGUxalFwdGtmVU9nVU1ieDluOWYwR1NJRVZremZOLWFBa3JtTlV6SVRDcG92Mk5BZkRnNVZtY2RmcDJFdzNtelJucnVBbENWaU5wRU84aWh6aXFLNS1FZU9rd1lhWmFYeElrLWpkQjhlaG4wNFVkYjRYMjFOTlhTdUhKM0s5N3JfaDRzbXNpdWpaZTBqOUJ0cWZWOFJxODZxTFZ4S29lUElZRktpYzNLSFMzS3lCMVBhSFdPelk?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-06-02T13:05:00+00:00",
-      "fetched": "2026-06-08T06:10:18.181840",
+      "date": "2026-06-02T13:06:11+00:00",
+      "fetched": "2026-06-08T06:39:19.997272",
       "systems": [
         "EIP"
       ],
@@ -510,7 +517,7 @@
       "url": "https://medium.com/illuminations-mirror/hubspot-communitys-solutions-real-questions-real-fixes-may-2026-13ae614888ce?source=rss------hubspot-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*S9yZV8NYWxnRVv4tkiMrhg.jpeg",
       "date": "2026-06-04T14:59:11+00:00",
-      "fetched": "2026-06-08T06:11:23.388874",
+      "fetched": "2026-06-08T06:40:25.636660",
       "systems": [
         "CRM"
       ],
@@ -534,7 +541,7 @@
       "url": "https://medium.com/@abhinav.digital05/the-strategic-guide-to-crm-driving-predictable-business-growth-6e0ad759d04d?source=rss------crm-5",
       "thumbnail": "https://miro.medium.com/v2/da:true/bc1f8416df0cad099e43cda2872716e5864f18a73bda2a7547ea082aca9b5632",
       "date": "2026-06-08T05:10:26+00:00",
-      "fetched": "2026-06-08T06:11:26.132613",
+      "fetched": "2026-06-08T06:40:28.120482",
       "systems": [
         "CRM"
       ],
@@ -558,7 +565,7 @@
       "url": "https://medium.com/@ikarthiksharma01/what-should-beginners-know-before-starting-oracle-fusion-hcm-training-b37103b6869c?source=rss------hcm-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*41kkMITnMj3KHX4MZndxAg.png",
       "date": "2026-06-06T07:16:25+00:00",
-      "fetched": "2026-06-08T06:11:32.214451",
+      "fetched": "2026-06-08T06:40:34.359058",
       "systems": [
         "EIP"
       ],
@@ -581,7 +588,7 @@
       "url": "https://medium.com/@reshwar1506/understanding-sap-successfactors-architecture-a-simple-beginners-guide-7be610696878?source=rss------hcm-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*m75Mu37e5xFP-oZh-kjkrg.png",
       "date": "2026-05-28T11:17:17+00:00",
-      "fetched": "2026-06-08T06:11:33.417155",
+      "fetched": "2026-06-08T06:40:35.562618",
       "systems": [
         "EIP"
       ],
@@ -606,7 +613,7 @@
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5yVmc3OGdtQXVGRjhoaGl2a2hnUk9mOHprMHdjRzYtTENFRlJOUEJjNnRKcEN4Y2JKbW9VM1hidkVraTUzWjVOOWdMSno2MGpQYzNqSi04d185b2xHdjk2YnZjN2stQ05lRlpvOGI0bzhIMkNiVWNpZWtn?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T20:48:04+00:00",
-      "fetched": "2026-06-08T06:10:17.581210",
+      "fetched": "2026-06-08T06:39:21.799364",
       "systems": [
         "EIP"
       ],
@@ -630,10 +637,10 @@
       "url": "https://medium.com/@himanshu.pant415/the-cleanest-way-to-connect-hubspot-crm-to-your-react-app-6047c2da8e59?source=rss------hubspot-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*IDdDZs5lrjCDDLLRqSi1uQ.png",
       "date": "2026-06-05T07:53:38+00:00",
-      "fetched": "2026-06-08T06:11:23.088084",
+      "fetched": "2026-06-08T06:40:25.335730",
       "systems": [
-        "EIP",
-        "CRM"
+        "CRM",
+        "EIP"
       ],
       "types": [
         "產業趨勢"
@@ -654,7 +661,7 @@
       "url": "https://medium.com/@groie.io28/7-common-hubspot-mistakes-that-slow-down-saas-growth-and-how-to-fix-them-5af41ca44908?source=rss------hubspot-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:1200/1*jrU90JYkoC3ku3Y6hVYTdg.png",
       "date": "2026-06-04T12:38:04+00:00",
-      "fetched": "2026-06-08T06:11:23.990365",
+      "fetched": "2026-06-08T06:40:26.238367",
       "systems": [
         "CRM"
       ],
@@ -677,7 +684,7 @@
       "url": "https://medium.com/cdata-software/connect-hubspot-data-to-chatgpt-with-cdata-6d58f803a3e6?source=rss------hubspot-5",
       "thumbnail": "https://miro.medium.com/v2/da:true/resize:fit:300/0*aiqrcmOyt4pmrYvJ",
       "date": "2026-06-03T13:28:12+00:00",
-      "fetched": "2026-06-08T06:11:24.892541",
+      "fetched": "2026-06-08T06:40:27.140854",
       "systems": [
         "CRM"
       ],
@@ -700,7 +707,7 @@
       "url": "https://medium.com/@saascontentstudio5/hubspot-vs-salesforce-which-crm-is-right-for-your-team-detailed-comparison-26dacd8b55bb?source=rss------hubspot-5",
       "thumbnail": "https://miro.medium.com/v2/da:true/bc1f8416df0cad099e43cda2872716e5864f18a73bda2a7547ea082aca9b5632",
       "date": "2026-06-03T11:51:53+00:00",
-      "fetched": "2026-06-08T06:11:25.193136",
+      "fetched": "2026-06-08T06:40:27.441671",
       "systems": [
         "CRM"
       ],
@@ -723,7 +730,7 @@
       "url": "https://medium.com/@tenaxcrm/the-crm-problem-nobody-talks-about-sales-teams-are-drowning-in-information-not-insight-baa06bee8d2f?source=rss------crm-5",
       "thumbnail": "https://miro.medium.com/v2/resize:fit:722/1*TMXX4gcBR5Dkd75MOK5tOA.png",
       "date": "2026-06-08T03:44:02+00:00",
-      "fetched": "2026-06-08T06:11:27.034822",
+      "fetched": "2026-06-08T06:40:29.022959",
       "systems": [
         "CRM"
       ],
@@ -747,7 +754,7 @@
       "url": "https://medium.com/@smartsocialwifi-dubai/hris-system-the-smartest-way-to-streamline-hr-and-boost-employee-productivity-c4dc3763172c?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-05-21T04:58:23+00:00",
-      "fetched": "2026-06-08T06:11:31.206722",
+      "fetched": "2026-06-08T06:40:33.159766",
       "systems": [
         "EIP"
       ],
@@ -770,7 +777,7 @@
       "url": "https://medium.com/@reshwar1506/sap-successfactors-landscape-explained-environments-instances-tenants-provisioning-and-data-cbf33d12721d?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-05T14:05:05+00:00",
-      "fetched": "2026-06-08T06:11:32.515180",
+      "fetched": "2026-06-08T06:40:34.659981",
       "systems": [
         "EIP"
       ],
@@ -793,7 +800,7 @@
       "url": "https://medium.com/@gadi.abhi123/practical-workday-hcm-training-with-real-projects-workday-hcm-course-in-telugu-e8338e273773?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-05-12T05:57:59+00:00",
-      "fetched": "2026-06-08T06:11:34.620119",
+      "fetched": "2026-06-08T06:40:36.765870",
       "systems": [
         "EIP"
       ],
@@ -816,7 +823,7 @@
       "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxNeTAyNmxmYVNxTWpFaTFva3RpRVRlV09Wdk51eWx4NTVyNVVDYzdEWWhKdUNqSXhlM3Y2ZmhyQUE4OE9mV1VaWEQ3SEtHTHExbXV3ZnJCNjdTRHFTQ0hrWnpSU0JCSXdUa1BNWE9DaEpWMk9ZZmF2M3FYZHRFOFlXdzBweVFCdkNvVTBVblAzMFR5WXl5R2E1Z2xKUWQxS0JhZVVTZWdPS3BrSlFzQ3ZYR1BUem1YallCUWxqMHJMRlAyQUlYLTNicnkzMjFnaUtKYmlFRXcxRlR4ZlhlaERfeWY0bTZWY0ZmNVJ3c0VUZi0yMDFzYlZzelQ0NE9LRUIwMklMMk1nM2t5eV95aDJVODJuNno0ZGY3OE84?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-03T21:09:27+00:00",
-      "fetched": "2026-06-08T06:10:21.184701",
+      "fetched": "2026-06-08T06:39:24.803113",
       "systems": [
         "EIP"
       ],
@@ -840,7 +847,7 @@
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZjNzZ3Z1cXhxbXZPN2xFek5WN1NaLXgxQ2ljc3E1UkY1dFpCZEMwMTFtV1hQVFV2aHdaSmVydUJreGp5UDd1VTBmbm9IUnhHbW05YnFST0JhaVVveTRDSHFTM0tDMjRKa0t3VVVNRGstSk5zM28tdy1PenNXUkVYWUR2LWVEdW52N0NwMWIyZjhPVjQtcVlBd19QWWJod2FnUjNfeU41U3JxSXU4a2lKVHlDM0xjMEdPSUVoMzc1NHFoOHZiQWtHd3hlbmRVUQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-06T01:47:19+00:00",
-      "fetched": "2026-06-08T06:10:27.143660",
+      "fetched": "2026-06-08T06:39:31.831199",
       "systems": [
         "EIP"
       ],
@@ -863,7 +870,7 @@
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZmg3U3pWSHRmRVFPb1Q5UnVYX3E0Mjk3dUFDVUFPNk9JZ0x4amRITlFzaEljQ3hvdkhrR2VHWVNMU3lGTXlGZ0NJYUJQczI4QWtFQUJ4QVZhZ3UzMldnamRnTlV2VjIxUThRbDVaNWZpWVFoVjJza2lreDZpTU5JVkQ1UldDVFBaZjBKSUtfNmd6emdfakJQbmI0V2w2bFlwQy1PQURaNjQxMnktYnlPREdB?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-05T06:41:00+00:00",
-      "fetched": "2026-06-08T06:10:38.899639",
+      "fetched": "2026-06-08T06:39:44.681250",
       "systems": [
         "EIP"
       ],
@@ -887,7 +894,7 @@
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUzF4T3N5S2RhdEh1MzhhMl9uYnB2Tm1IS2NJZkRDOW9USFFvY2RzQmcxcmZPMng2WEJtRXU1VE5JalhxRk12RWpHOWpUZmNaQjZsMkZLWlB2NGUzRTlRaWFJSE5jR0Fzb1d5QUxMZTY1MU1HTWUzZ3ZmNXNYZFJXRlBpREtnTzA1bmlpOXBsQVpSRVNMR1lud3BOWDBmN0hUazY4eEgwT3NjdEFxcmNnanhB?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-05T21:02:29+00:00",
-      "fetched": "2026-06-08T06:10:39.500214",
+      "fetched": "2026-06-08T06:39:45.281966",
       "systems": [
         "EIP"
       ],
@@ -910,7 +917,7 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQR0dtWl80ZEpMMmo3TTZGTEk3dnpWbW1Cbi1MT2JwU2tEOUxCLVkyQ3hZSm9rSUdhVEVWbjd6TWlveV9wR3UxV3VyY25tNWw5TnVObnF6QUFTaGtPTm56aUgwT0FIYlcwX3NhRXlHV0tOblMydXo2Zmw0N0g4NjBGOG9NaVdPWWh0LUppSUJJZ2Vha1Z5?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-05T14:49:46+00:00",
-      "fetched": "2026-06-08T06:10:43.103734",
+      "fetched": "2026-06-08T06:39:50.087393",
       "systems": [
         "EIP"
       ],
@@ -933,7 +940,7 @@
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMktJM0pMdlRPQnZQUnJwNWFVZzMtZlJHZ1E1RkRlcG5nbHhYdkZ5WVdYN0gxeE11WEJIbW54N3hCWnNvMzJDaHFENjNtcGlNSlZTaHhFZUFYLUpRRVhiMHp0OUdUbmRQZVlIS0tCSnNVLUVxTVNkVjMtOFlENHZBdGpBYlBmQ0gwREp6SzdTOENIMkRiV0V3bkszUWo?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-06T14:11:00+00:00",
-      "fetched": "2026-06-08T06:10:55.036665",
+      "fetched": "2026-06-08T06:39:59.367411",
       "systems": [
         "CRM"
       ],
@@ -957,7 +964,7 @@
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbFVfNnRvbW53c3RzekRtd05ycTlpNFNIZXVITkpuNGY3Ykk5NklMQ1pZQmVTTndNMG5SOTNENC1jSzVfX3NKeU8xVEVqYWFmb2I1LUMtUWRuVVFyM1FBZlNTVlM3SnZKSVVCVnkyUlRsUmNxMHZSVWpjN1pMa1hkYmhoYjFGLVVlX0JNb0hKTVN6YUJuR1pleGpPajY0UjRJRWk4VzlVUXgwbThqaWNVUmkxUzlIQWNmTTc5T20wUFdrSHc?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-01T07:51:55+00:00",
-      "fetched": "2026-06-08T06:10:56.838291",
+      "fetched": "2026-06-08T06:40:01.770156",
       "systems": [
         "CRM"
       ],
@@ -980,7 +987,7 @@
       "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOMzBWY0hxcGwyb3lNeUg0c1ktMHJuNlJzMldOclFJQmhNRXo5WnRfRXNtZVZiclV6VmdneEJUSGprTWdpX0pVbnBQSjJBUVYxQkJ1dG5sR1lickkyZWx2Y1NxV0Mxc2dUQjhlbWFBcXlWcFEyZ2hRMlpSampIYlJkSklxdU1TQl9lVG9Ub2RGWDZ6aHBsSGdBOW5uUzNsaDl2SGpubE9sLUladmVqQmtkQWliUHItaHBYa21xRGI5anJUeWt2ZEtvaWJ0NllZOEdnUURtMEFIdU9wMDZQRGJYaFkyd0poLTA4?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-01T13:00:00+00:00",
-      "fetched": "2026-06-08T06:11:04.107646",
+      "fetched": "2026-06-08T06:40:10.263214",
       "systems": [
         "CRM"
       ],
@@ -1003,7 +1010,7 @@
       "url": "https://medium.com/@ahmedamohameed/%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D8%B9%D9%84%D9%8A%D9%83%D9%85-%D9%88%D8%B1%D8%AD%D9%85%D8%A9-%D8%A7%D9%84%D9%84%D9%87-%D9%88%D8%A8%D8%B1%D9%83%D8%A7%D8%AA%D9%87-1e1b888488ca?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-07T20:25:48+00:00",
-      "fetched": "2026-06-08T06:11:22.486761",
+      "fetched": "2026-06-08T06:40:24.733978",
       "systems": [
         "CRM"
       ],
@@ -1026,7 +1033,7 @@
       "url": "https://medium.com/@pokidovdima/i-spent-1-080-on-hubspot-before-i-realized-i-was-the-problem-b0f12f1752c5?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-05T16:18:56+00:00",
-      "fetched": "2026-06-08T06:11:22.787507",
+      "fetched": "2026-06-08T06:40:25.034832",
       "systems": [
         "CRM"
       ],
@@ -1049,7 +1056,7 @@
       "url": "https://medium.com/@digitaldiconsultantsmarketing/how-lead-routing-automation-improves-pipeline-performance-4de57f61d4e5?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-04T12:55:42+00:00",
-      "fetched": "2026-06-08T06:11:23.689623",
+      "fetched": "2026-06-08T06:40:25.937584",
       "systems": [
         "CRM"
       ],
@@ -1072,7 +1079,7 @@
       "url": "https://medium.com/@scannyai1/your-crm-should-not-depend-on-manual-document-updates-d0e693d49902?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-04T11:11:00+00:00",
-      "fetched": "2026-06-08T06:11:24.291076",
+      "fetched": "2026-06-08T06:40:26.539154",
       "systems": [
         "CRM"
       ],
@@ -1095,7 +1102,7 @@
       "url": "https://medium.com/@eualangene/hubspot-crm-setup-automation-d46730856100?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-03T21:35:41+00:00",
-      "fetched": "2026-06-08T06:11:24.591760",
+      "fetched": "2026-06-08T06:40:26.839964",
       "systems": [
         "CRM"
       ],
@@ -1118,7 +1125,7 @@
       "url": "https://akillirehber.medium.com/dijital-d%C3%B6n%C3%BC%C5%9F%C3%BCm-partneri-se%C3%A7erken-nelere-bak%C4%B1lmal%C4%B1-c1a889f11588?source=rss------crm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-07T16:24:33+00:00",
-      "fetched": "2026-06-08T06:11:28.237744",
+      "fetched": "2026-06-08T06:40:30.226465",
       "systems": [
         "CRM"
       ],
@@ -1141,7 +1148,7 @@
       "url": "https://medium.com/@bryan-lim-sian-yang/the-hr-perspective-in-a-technological-landscape-overcoming-the-silent-killers-of-enterprise-c4331ffd0d63?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-04T12:58:07+00:00",
-      "fetched": "2026-06-08T06:11:28.800919",
+      "fetched": "2026-06-08T06:40:30.752888",
       "systems": [
         "EIP"
       ],
@@ -1164,7 +1171,7 @@
       "url": "https://medium.com/@bryan-lim-sian-yang/hr-transformation-is-not-in-the-system-change-but-in-the-hr-department-a54dd8530568?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T13:16:18+00:00",
-      "fetched": "2026-06-08T06:11:29.402380",
+      "fetched": "2026-06-08T06:40:31.354522",
       "systems": [
         "EIP"
       ],
@@ -1187,7 +1194,7 @@
       "url": "https://medium.com/@bryan-lim-sian-yang/the-gritty-reality-of-hr-tech-5efd489c35fd?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-05-28T13:04:50+00:00",
-      "fetched": "2026-06-08T06:11:30.003803",
+      "fetched": "2026-06-08T06:40:31.956354",
       "systems": [
         "EIP"
       ],
@@ -1210,7 +1217,7 @@
       "url": "https://medium.com/@bryan-lim-sian-yang/what-is-hr-the-systems-vs-reality-friction-1c99a96f5254?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-05-28T13:04:20+00:00",
-      "fetched": "2026-06-08T06:11:30.304534",
+      "fetched": "2026-06-08T06:40:32.257172",
       "systems": [
         "EIP"
       ],
@@ -1233,7 +1240,7 @@
       "url": "https://medium.com/@bryan-lim-sian-yang/why-your-isms-audit-is-the-best-thing-to-happen-to-your-hr-tech-strategy-49ad9b4dff08?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-05-25T13:08:00+00:00",
-      "fetched": "2026-06-08T06:11:30.605244",
+      "fetched": "2026-06-08T06:40:32.558027",
       "systems": [
         "EIP"
       ],
@@ -1256,7 +1263,7 @@
       "url": "https://medium.com/@bryan-lim-sian-yang/why-the-learning-module-is-the-black-gold-of-your-hcm-architecture-60d1079da85c?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-05-25T13:06:17+00:00",
-      "fetched": "2026-06-08T06:11:30.905939",
+      "fetched": "2026-06-08T06:40:32.858909",
       "systems": [
         "EIP"
       ],
@@ -1279,7 +1286,7 @@
       "url": "https://medium.com/@bryan-lim-sian-yang/the-hr-perspective-in-a-technological-landscape-overcoming-the-silent-killers-of-enterprise-c4331ffd0d63?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-04T12:58:07+00:00",
-      "fetched": "2026-06-08T06:11:32.815877",
+      "fetched": "2026-06-08T06:40:34.960873",
       "systems": [
         "EIP"
       ],
@@ -1302,7 +1309,7 @@
       "url": "https://medium.com/@sasankreddy143/oracle-hcm-absence-management-a-deep-dive-into-accruals-eligibility-and-compliance-ready-leave-d508353c12cd?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-05-13T10:02:13+00:00",
-      "fetched": "2026-06-08T06:11:34.018691",
+      "fetched": "2026-06-08T06:40:36.164238",
       "systems": [
         "EIP"
       ],
@@ -1325,7 +1332,7 @@
       "url": "https://medium.com/@davidjohnsonss650/your-hr-tools-are-costing-you-more-time-than-you-think-6e68b1cc07bc?source=rss------hr_technology-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-03T08:04:52+00:00",
-      "fetched": "2026-06-08T06:11:36.994631",
+      "fetched": "2026-06-08T06:40:39.381942",
       "systems": [
         "EIP"
       ],
@@ -1348,7 +1355,7 @@
       "url": "https://medium.com/@bryan-lim-sian-yang/hr-transformation-is-not-in-the-system-change-but-in-the-hr-department-a54dd8530568?source=rss------hr_technology-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T13:16:18+00:00",
-      "fetched": "2026-06-08T06:11:37.596057",
+      "fetched": "2026-06-08T06:40:39.983703",
       "systems": [
         "EIP"
       ],
@@ -1371,30 +1378,7 @@
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9HeHhHdDZqZi03SVdzeWJycUZGQlZxNUlXRUlQUXhpSFlVY3paN0J2aEhaMlkyQmlSdW0ycl9ZVTF1a0M1NGYyMURnTm1IQ0JzMnotS19UY1ZLelhnRUZMd1hGQkZLVEVFYlBsWmlDTTdKd2hNbWc?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T18:27:39+00:00",
-      "fetched": "2026-06-08T06:10:13.977758",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "AI應用"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 55
-    },
-    {
-      "id": "art_2587616135",
-      "channel": "rss",
-      "source": "Workday",
-      "brands": [
-        "Workday"
-      ],
-      "title": "Can Workday's new Sana AI solutions for enterprises boost its shares? - MSN",
-      "summary": "Can Workday's new Sana AI solutions for enterprises boost its shares? MSN",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSGQzY1JpUlFWVm9ZRDdJVEdyR2VjR3RvQ3NEQzhaNi1IYlV2d205S0Jjclh2MnBIa0J2QWJLUlJhMnpjeklSbDdmeWtwOEJKRkFRdFh2cUlaNjVDTzIxaUMwb1RUaVlkX19RRkRmdWdXaXpRVEpEaElDeUNFYWlOeU93dVB6eEtBZlF0VkdUYS1fWlppWTJVaVpMSUJpZTlRM0lUY2YxUFQ0OEhwY1BqdE5PTkxnekdJb21aQlRDWEc?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-06-05T04:23:21+00:00",
-      "fetched": "2026-06-08T06:10:15.779533",
+      "fetched": "2026-06-08T06:39:18.795773",
       "systems": [
         "EIP"
       ],
@@ -1417,7 +1401,7 @@
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9XYVdEaS1tenZuRDQwbDJlZWRCelhWWjBQb1lxdkh3elRyMzNmeXp6TmNnODZVZ1hELWNoc2Vhd2FZUUZ5WXFsdG9qQy0tZUxxUm43RTBoejdnZVhWNVNMUGh2UUI5NTBfRkdlMU8yNnFQVE4taF9sTU43QQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-07T08:14:03+00:00",
-      "fetched": "2026-06-08T06:10:24.140427",
+      "fetched": "2026-06-08T06:39:28.827452",
       "systems": [
         "EIP"
       ],
@@ -1440,7 +1424,7 @@
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQNElCQzE3aFJWLWFMV3pVZXdtbGZPd2lzS08yZWYycnFhVDNvbVU5ODE5aUJvSmFab19BUTVhTlVPMUtSS2p5S0UwTEZ3OE03MHdzMlBaUzJ3ck1lekxvVHR0YWpxU2o5REliVXBYXy1EcE1GVTJNejRtTWc5bkstenNuN00tQ1NOWkNMXy00c1VEaXBoVEhJZmdQT2RQY2wyVW5tS2g4M3pEUDVPVFI1eXVTV2pDYkN4aHJwcw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-01T15:10:00+00:00",
-      "fetched": "2026-06-08T06:10:40.100898",
+      "fetched": "2026-06-08T06:39:45.882746",
       "systems": [
         "EIP"
       ],
@@ -1463,7 +1447,7 @@
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZUZHVUlCT3VIaVBSTmw0bElMcDd2X3VTZ3A5M3R1WlNyRVBqcVRZZEVYWUc2bE5tdTBiUUhUbHpzNTNuUDJ1cTRaNzNkc2l5Y3hDWjQzcnhKbmhnbU9nVXpDb0I4WXdJU2F6MFBIa2hPTkt0Z1ZOc25aVHl5d2tuQTVpQUVQMGNtNUl3TDVBb3BWSVpreW9HSmMzX2lCb1U?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-06T02:13:00+00:00",
-      "fetched": "2026-06-08T06:10:41.302047",
+      "fetched": "2026-06-08T06:39:47.084097",
       "systems": [
         "EIP"
       ],
@@ -1486,30 +1470,7 @@
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMHNQa2ZEX1ZOTm1PdUx2bXBscTFGbFI3dFdORlQybjJVckhFVEw5c3ZEb2E3Vl9zb1RnLUxNb1poQUdYWWZodEJxM21SZHhsV256V2J5VXNqeU5iNnR0bFEwRUZFcXpqLWlXcmJkM2w2ZVQ3X1otZzNJekJLbGJVUnln?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T11:31:14+00:00",
-      "fetched": "2026-06-08T06:10:45.505899",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "AI應用"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 55
-    },
-    {
-      "id": "art_50ad290714",
-      "channel": "rss",
-      "source": "Apollo",
-      "brands": [
-        "Apollo"
-      ],
-      "title": "Apollo affiliate raises $1.4B for logistics real estate fund - Yahoo Finance",
-      "summary": "Apollo affiliate raises $1.4B for logistics real estate fund Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOT2xzYWNuSXFnMFNuOEtnVW5SVTRkbjQ4SldIakY2dFNodHNoLXhibjlKcEh1NjM0bUlDdWF6TV85b0M1R2o2UlBXd3NfbnhqLWRtMXY2WFV3ZDFsWUxpVFBiZVQzN0hpdzRKQkFscExKb0Q4VFlLUU1ndXl0R2dlbDVnSjRpbjJraHRCSFlVTHhETDRRaEFLdg?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-06-03T18:07:32+00:00",
-      "fetched": "2026-06-08T06:10:46.707032",
+      "fetched": "2026-06-08T06:39:50.688075",
       "systems": [
         "EIP"
       ],
@@ -1533,7 +1494,7 @@
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOLWFzaWFlMDFCX3FFWWE5VnZDcHUyYjB4UWE3QUVHcWVoZ1dqc2hBVnFmRDJyZWJPSVhua0Vra24tOXJGaHRnSWVsY3l4c1JvMllyZGNYeUh0d0RBVW5WLWo5X1g1eFpVeHBvN2VKcDlaRVp5U0xObDdPMUFsRWZWQTk4N0FxcHNaVEJkMlM2LVVITC1VV1Fv?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-05T11:30:22+00:00",
-      "fetched": "2026-06-08T06:10:47.795312",
+      "fetched": "2026-06-08T06:39:52.264993",
       "systems": [
         "EIP"
       ],
@@ -1556,7 +1517,7 @@
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0wSEVoUmtqVFlUN1YxZVB4Z04zYkd0ZDV3TEdmZzcydkRJS01aNmt5Z09qdTg3TnF2V3FmTU5pMkJySVB3OUJRQWZWcUVOZkwzUVZYaXBFUGFlZzN0eWZ0SDJSVzRrS2NVMHl6alVORm5hT3lkWmlNdzZ3?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-03T12:36:16+00:00",
-      "fetched": "2026-06-08T06:10:49.630221",
+      "fetched": "2026-06-08T06:39:53.959880",
       "systems": [
         "CRM"
       ],
@@ -1580,10 +1541,10 @@
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtOWRfRFh1Y3pEN2RKUzZfNDVOY2ZfZWFsRkxPMElacC0zNzVsQ2JXQ0tlZl8waXBHMmJtZWJtRG5kUFlyNzhuTHZpNFI4WFJMWjlyTWR2TC1HVjZ2VWRGejNyM3RGdw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-03T07:00:00+00:00",
-      "fetched": "2026-06-08T06:10:50.230785",
+      "fetched": "2026-06-08T06:39:54.560607",
       "systems": [
-        "EIP",
-        "CRM"
+        "CRM",
+        "EIP"
       ],
       "types": [
         "產業趨勢"
@@ -1604,7 +1565,7 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPOXljYXhPaWFVUnVLVU1CSVVyTHNlSzVMclFDOFBfNzhheFlKVXh4NmstWnQ3Z0h3R2Rib1IzX2U2N25STzZvdjdGS2ZLeUxEQjhudUZxbUE2ejQyRnJOY0RXZWVOT0VJQ2Zramc2dXlITkxHWm53R0l0X0dJc1kzQnB1eG5yTGRNa3ZPNko3V3pYMzdIZlBMbEQ5eTE5bWtlTlp5V0xoTlpibjdFYVpqMVVJVmZYQU3SAbwBQVVfeXFMTVBGT1h3QUNJSmZjbVMyR1BYbFNJcmR4RUp5Z0F1d281SHM3a0djRkY2dW5JSTVNZWphS2c5TzluOXdLYkoyS1p1T1pKWUN3aDhwMldNUFVUWXozVW15NDhzWE1oNDA2M0dmVWJXaVhWWm1MUHJtaXpwcC1xR2VGVmpVVkh4NUxqZkduUkRWNERobF82a1NEU2EzajdERVA3cXAzZERQWmppc2JnVDBZVnpKM0Joa2p0cXNVU2I?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-04T20:47:16+00:00",
-      "fetched": "2026-06-08T06:10:58.702411",
+      "fetched": "2026-06-08T06:40:03.655583",
       "systems": [
         "CRM"
       ],
@@ -1627,7 +1588,7 @@
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBsOHpiQkFVWEI5My04ZndLTl9SUEpxY01qanNrb0lvQkdESm5NcXAxMDg0VG9ubFNVU3g4eUVvc2ZyVG1xTDRjRExWQkZpVGVtZ0N4YTZ1QlR6eVVkWlpQNXE0bVdBS2NNelpVNVN3UFJ2RnpIU1oySFZfYVZ6Zw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-03T04:03:56+00:00",
-      "fetched": "2026-06-08T06:11:01.104787",
+      "fetched": "2026-06-08T06:40:05.457661",
       "systems": [
         "CRM"
       ],
@@ -1650,7 +1611,7 @@
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbVFaSjB6VnpteTFhYUVFdmN0ZlJveGpCQ2xGbUJzZ3dIRDJhekpPYm9RX2FSRTMxWlRSdXpxdFM5UTJaQVBOclRFSm5UbkhYNWhqVDdBb3VDczdnM2VkZGpLbzFLcHZyMDNjNGl0MEhTamk1S3YtMkNqMVJpeGRHSzNZM29La0hPMDAwaWRaZTVvejQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-05T15:17:52+00:00",
-      "fetched": "2026-06-08T06:11:04.708207",
+      "fetched": "2026-06-08T06:40:09.061755",
       "systems": [
         "CRM"
       ],
@@ -1673,7 +1634,7 @@
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTER4a0wtRTJoMGE4RDVTX2VlYS1zWWpGNVJjLUN6NmFHdGVFX2hrak5adTVHVWJnTFRNWHhaT0UxRjd3dDJpTlRGOGw4T29IcTljMUUtc0otcUN6MzZpTS1uZlBSUHFBWUhreXF4QldtN21iSXk4dGNZT0tJVFYxQUVOMDBzbVF2OWEwc0tRb2xKLWs4MXJDY05BQTNBRnhsZzYyT0tHd0hnTDJjc19OWk83SjdoalZfa2hkbzQ0QzFZSmwxanRr?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-04T12:33:08+00:00",
-      "fetched": "2026-06-08T06:11:06.509884",
+      "fetched": "2026-06-08T06:40:11.464496",
       "systems": [
         "CRM"
       ],
@@ -1696,7 +1657,7 @@
       "url": "https://medium.com/crm-analytics/hidden-steps-the-unsung-heroes-of-crm-analytics-b08a4c18530a?source=rss------dashboard-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-07T23:31:05+00:00",
-      "fetched": "2026-06-08T06:11:38.833995",
+      "fetched": "2026-06-08T06:40:41.115738",
       "systems": [
         "CRM"
       ],
@@ -1719,7 +1680,7 @@
       "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQMUxNR2RtbnJzZE4zcHAyS0IzSmtrZG1HT3U5WXlObnZvQkZFTFFMNHFJM05fbjVqdUJncVR1Nk5nc2tWdmZPdnBfRURBZHNnd2hweFFqRS1OM2pELVYySFgxczltSjlSOXlhWFVQOGxfRVR2WGw0bU5MaUVTbUJCaDdlSG1aY2VCcTV6cUU3Vkw3bGtLTzdwUFo2VW90azhyN1l1NmdYbVc2WkdYNnZCYkZqZ0N5MDc5cElTQ1V1NXVReE9pRzY5MTJ5aHJmb3ZqdjlsVkpSM2dMMUg5OW5JdEdFTk1OVXZzOTItUTZ0TXZKYzI0MWI0TTNQX25lUDQ1U0RnUVRBTHE?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T13:05:00+00:00",
-      "fetched": "2026-06-08T06:10:14.578363",
+      "fetched": "2026-06-08T06:39:19.396572",
       "systems": [
         "EIP"
       ],
@@ -1742,7 +1703,30 @@
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1DMVM1OVZJS29oQmdXYWVWSzVxX05QRllCTGRscE1LamlzUHRiYWxqVnJSSm9ob25uMG9PU1ktRHktYkJaZlBYNUF5d3pzdUpYcEJsTUIzZmR4Y0RFaVV4el85MVBOZFAxUVRVM3hRcTZRTVZDR2c?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-06T17:59:42+00:00",
-      "fetched": "2026-06-08T06:10:15.178934",
+      "fetched": "2026-06-08T06:39:20.597886",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 50
+    },
+    {
+      "id": "art_96b63d46c5",
+      "channel": "rss",
+      "source": "Workday",
+      "brands": [
+        "Workday"
+      ],
+      "title": "the Memorial Tournament presented by Workday: How to watch, live scores, tee times, TV times, weather updates - PGA Tour",
+      "summary": "the Memorial Tournament presented by Workday: How to watch, live scores, tee times, TV times, weather updates PGA Tour",
+      "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxOX2hOMkNpcE9mdl8waHRXUXUwV1ljR3RvZWl5cE85SU5BZkwybFZxNkttbU1fQUdJZFkxMWE5REI5a2hJT3JZbDExcGRCWHdRaE55VzhVT08wb0tmMG5NcS1sQ3dzUTI4Z0FwckNSWHRQYTYySEFRTTIwcUx3aS1vanpuUXJIMVFhbXIyR1RXQWd1Y24yeXMwbG9XSG9DYjJiMW40QkJ4NDl4OFFJLUR2aS1mQ0JIWHUtdjRyX3FyUThRRVUyT0w5X2h0cFNHWWRyMXVJRzFDaUNMSS0tQ1RKdFpzZjU5bXRtbFpNclk0Zko4MG95d2hXUnZ4SHRoeDlzODRPd0c4c29UUTk5dVp0NXBjelN2QXVnVmNWZk8tbFVXdW83a29FR0hTaGluRGRjSS1zWDBEeVFqLVlzd0NZ?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-06-06T23:54:34+00:00",
+      "fetched": "2026-06-08T06:39:21.198599",
       "systems": [
         "EIP"
       ],
@@ -1765,53 +1749,7 @@
       "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQdVhmYl96UGFpcTVySjcxdmhDbDRySGJqeVNRWlhuQ0g2aE1tdmwxWjNScmQxaDJlSzZRZ3NDOUpNcGZ2ZXRFUU9ibU4tb2h3STUtY1YtREZYTFNGSWFuT0laMFRfRjAzV0R4eFQ2SHRVY19MT2lIMWJTaW5CX0FENmd6Vm9HOElKVS1oRjk5amJfRWpUSzdwS094c0s5QmdCc25leEJPM2tvc29rYTdXdXJpVXYtbGp4eGVBdUpmaTlkb3FyNS1DRzBEVjB5VkkyNEZVVTJ2QVI2eV9KQjRPMkpybkp6VWtfc3oyMHRaVWFBSDdmb29NSkJDWHpFRGFEVDBMSzd3?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-01T16:15:36+00:00",
-      "fetched": "2026-06-08T06:10:16.380029",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 50
-    },
-    {
-      "id": "art_c3d2042dd4",
-      "channel": "rss",
-      "source": "Workday",
-      "brands": [
-        "Workday"
-      ],
-      "title": "Google Cloud Partnerships: Gemini Enterprise Pushed Deeper into Workday and IBM Delivery - ERP Today",
-      "summary": "Google Cloud Partnerships: Gemini Enterprise Pushed Deeper into Workday and IBM Delivery ERP Today",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE45UTNtMWtZb1lNd1MteHl0ZjZhWGlpTzhXT19FVFJCeHhBVkQ5TU4xMVk2MllXOHRSaDRaYTFkc1BsVEVHa2l0ZHRTU0dDZGRBMFlub21HZEVZbnkwOUd6WG9uQm80RGFHOXc3UUdIMVAzc0pHczkxNDQ2VQ?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-06-04T15:36:05+00:00",
-      "fetched": "2026-06-08T06:10:16.980643",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 50
-    },
-    {
-      "id": "art_96b63d46c5",
-      "channel": "rss",
-      "source": "Workday",
-      "brands": [
-        "Workday"
-      ],
-      "title": "the Memorial Tournament presented by Workday: How to watch, live scores, tee times, TV times, weather updates - PGA Tour",
-      "summary": "the Memorial Tournament presented by Workday: How to watch, live scores, tee times, TV times, weather updates PGA Tour",
-      "url": "https://news.google.com/rss/articles/CBMivwJBVV95cUxOX2hOMkNpcE9mdl8waHRXUXUwV1ljR3RvZWl5cE85SU5BZkwybFZxNkttbU1fQUdJZFkxMWE5REI5a2hJT3JZbDExcGRCWHdRaE55VzhVT08wb0tmMG5NcS1sQ3dzUTI4Z0FwckNSWHRQYTYySEFRTTIwcUx3aS1vanpuUXJIMVFhbXIyR1RXQWd1Y24yeXMwbG9XSG9DYjJiMW40QkJ4NDl4OFFJLUR2aS1mQ0JIWHUtdjRyX3FyUThRRVUyT0w5X2h0cFNHWWRyMXVJRzFDaUNMSS0tQ1RKdFpzZjU5bXRtbFpNclk0Zko4MG95d2hXUnZ4SHRoeDlzODRPd0c4c29UUTk5dVp0NXBjelN2QXVnVmNWZk8tbFVXdW83a29FR0hTaGluRGRjSS1zWDBEeVFqLVlzd0NZ?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-06-07T15:25:44+00:00",
-      "fetched": "2026-06-08T06:10:18.782457",
+      "fetched": "2026-06-08T06:39:22.400074",
       "systems": [
         "EIP"
       ],
@@ -1834,7 +1772,7 @@
       "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNZlUwdmw5NVVUd3RkaWNGOUZMT3BKN1VuTzVjZmZQNUQ2R0RBVmJ4aVl5ZGpWb0J0WUlxN29zWVYzQl9ILUtpaDMzUmZWTUN6NXNUbkI1a09iVVFIeVdfRnh5cEltSFlHcGhhSDFMSmFjMEpiMWJ6TXZLMDVvbGtJT0NCZFpCczBSc0oyT3FkU0tIOUUyeVVkc2tSNHk3b2hFZ0Z2RHlqdmVCNXVaWjA1UFk5aG9RNG1ZX29XZkZSOVFHZWIzTHBKenFGQ1IyRnZEMnR2bXduMFpvOHEtRU5PSmhnQUo0NWpMTTBoZTBlVEtoZGllT2NiNDVQUHZucndHU3ZuZ2tTYW9Wb0FHcF9laG1yMGk0Zms?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-01T18:51:35+00:00",
-      "fetched": "2026-06-08T06:10:19.383025",
+      "fetched": "2026-06-08T06:39:23.000844",
       "systems": [
         "EIP"
       ],
@@ -1857,7 +1795,7 @@
       "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQTHIxU1dFWTE5U3B1TFctbGE2QV9XWWF3X29fXzBmcy1XNGlBRmV6OVhYMGYzYWIwMU5uMTExSmJhdFRRSUhrd05Tb0VPbDk3QUZGY0hmOW1TWnVKV0FseFdxLXFzN3ZnWk5pcm1BVkxDV2ExcDNvcDFwRzlhR21hVHhoTEx2MXhOXzlpN1JacU5Pc0FBc2tQUkFINFVxXzQtN3laREZXY1lCa3hTcDdBLU1zeUNyYW1xd1IyanhoZW5tM1BtQ0tHNHhKdVJDYTVxeWZfenk1cGJ5b3hmNExyUGVCbE9pd1NpT1hrOUh1bmk1QzJXeHBYd1BhejgzS1NoUUMwejBYdlJhUFdud21VdnRLMmttaTQ1bEpneXN3?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-01T16:54:46+00:00",
-      "fetched": "2026-06-08T06:10:19.983611",
+      "fetched": "2026-06-08T06:39:23.601590",
       "systems": [
         "EIP"
       ],
@@ -1880,7 +1818,7 @@
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQXN0UG50RElhRmlYREVKTTRqYXZYa05JMTNpcmticVBkWC1NSUZkdlBjRzg5dDVubGlGZC1yVzNtX3N5TTF1X29FS25DRlVNNU45bkRKNmFwSGhHeGQ3Tm1rZENvemRZcV9BMHpiU3p5ZHFpMno4QWc1T1BWZHBMUVFQMmZrSHowQUZQLWxFQnpHdC13dUJ0MXBKZXFIc2RhbDg0UVljcHR3a3F1Y0dGaHhxMUw3VHk5UnFKQmJoZ1RsRG1qbnJ2bUJkRFU?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-06T22:52:40+00:00",
-      "fetched": "2026-06-08T06:10:20.584207",
+      "fetched": "2026-06-08T06:39:24.202387",
       "systems": [
         "EIP"
       ],
@@ -1903,7 +1841,7 @@
       "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNNXRLMXZaMzBrUlFPdmR5QUxxZzlEc2s5M1NVSUprWXo2NldadjVHdkNRSVJlSzc2Zi1BRzN1YnBvb3A4SEdEZ08xajZ2M2JNNXBUaFh1bTd2ZDJhalpmbW9yRzNsMjl4MlRnMndzdHpMUmw1VE9YTWNEMDgycVdjM3VQWWNwRGRWUHYwRU9qNFFhTmlpUVhmRlhvNVpaV0lMbEVKVVo3MHowS1hlekJ5OFR3cXZ2NjlmUDkxTlp3TGZDcnFhdk1kWHVYb3BsdXJzX0oyeGVBc253Wks0VkljdkVvQnNDMmkxdWJpNUMzcllabFhZQ0V1RlJ0Zw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-01T14:44:54+00:00",
-      "fetched": "2026-06-08T06:10:21.785274",
+      "fetched": "2026-06-08T06:39:25.403856",
       "systems": [
         "EIP"
       ],
@@ -1926,7 +1864,53 @@
       "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOY2tDQmpxQy1FWk1TTTYyd2pFSlZMVzgzNHVLWGQwUGxxUnJZYWJtUGd0Tkx4SGh5MW1vNF9maE5veTU5d1JsRlZUOVBab1BSQVJxdFc2UUdnT1RYc1ZsMGpPT1piNVRrYmFpai1sTWU5WmlaVE9YY25qVHBtLWxsYllqNzNaRWNRd3dMMjNwN1gxSDRKMEE0RjdoR01mUk5ENnlUR0hPS1FZZkdSQnhBNktkcTRXN3BRT2MzUERXN0dUNXJTNS0tc2RrcnlBejcxaHRvVlkwM213djBLTUZ6MG9qZnRLaE5lbzRkQmVZdDJhZ1h6N1NjeUlZbHdxdGMxUEQzclhDYkk3OGROV1AzVl9fU0w1ellXRUQw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-01T15:22:35+00:00",
-      "fetched": "2026-06-08T06:10:22.385902",
+      "fetched": "2026-06-08T06:39:26.004605",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 50
+    },
+    {
+      "id": "art_93648e9ca0",
+      "channel": "rss",
+      "source": "Workday",
+      "brands": [
+        "Workday"
+      ],
+      "title": "Expert Picks: the Memorial Tournament presented by Workday - PGA Tour",
+      "summary": "Expert Picks: the Memorial Tournament presented by Workday PGA Tour",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQb1RZMVlfeEMwZEVLdWVhOC1NWTZ4N3UtS3AwQjd6ZmxuVUFtR2pJU1h1d2Q2TWhDMllQRFJRaTBQTm5CSW8xMW9nQnNjdW40cGg2aGMyZDRld0NBb3VROTNFelhoRE1jaFVadUVfejF2UGhnT1gxZmdXRXQwb2U1aGxQb0hsRFdsV2dmZlZjV0dDR0RoZm9nSGZ5ZFcydEZLZldIUDFBYXNySUthZVV4Znk5Mk9RMmdNVVc5NDdzRjJHNG1QNmF5S3RLN3pxejVYMnJoR2sxT1BwQkRhdkVfLUJPeHBNRld4REcyMWdpcEhfdGx1Ul9RWFZSek1EVnZSSngxTnhtbS1tR1R0VHpiT2dEc213QQ?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-06-02T18:39:59+00:00",
+      "fetched": "2026-06-08T06:39:26.605391",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 50
+    },
+    {
+      "id": "art_7bfa5ef6b9",
+      "channel": "rss",
+      "source": "Workday",
+      "brands": [
+        "Workday"
+      ],
+      "title": "Bad weather halts Round 3 of the Memorial Tournament presented by Workday with J.T. Poston, Ryan Gerard in front - PGA Tour",
+      "summary": "Bad weather halts Round 3 of the Memorial Tournament presented by Workday with J.T. Poston, Ryan Gerard in front PGA Tour",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOUk5qNXZONjBSUVhERFcyaTY3UFY2a2FQN0FBYkJtM2xOTW1KRGV5SmQ0Z3BoV3U4ZUZCWHA2d2RQd1JsT0NqZW51emNoOVc4dmpnOW9ZYWEtX2swX3FDQm5iRTBuNzdwVFV0aTZPdjFKZGk0QVJpbkw1Ykx1TzlJUUNibW1DTXlxNDU5c2dNczBGREVwTnA3Z1JtNHFNeWtCNlhOcHZublJZOGJFZGNTeVBQWEpXbERIdXFXdEh6b200bkFoY2tFemdDblRPNUJlcXhpNnpDVm9Pb053SDE5YTlzNDZteG5NLVg3Y0JNWnFfbjZrNG1QTTA3eWY?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-06-06T23:40:04+00:00",
+      "fetched": "2026-06-08T06:39:27.206024",
       "systems": [
         "EIP"
       ],
@@ -1949,7 +1933,7 @@
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOOHB3UkxPVGlrR3NoZDVkbjRKcUhVX2VGa2E1M0dLRDc0VFIteFgtZUd2cWxYcUNmX2U2Vi0xeVppMEZFMGhyUnBjeTNHdlJxX0lUcUstLXAzaGRPa3lwT2o3czgwRWJ3cF9jQk1fRTdoejJTUkZNeURYbllyOFFjZ2pLRQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-01T23:22:37+00:00",
-      "fetched": "2026-06-08T06:10:23.539820",
+      "fetched": "2026-06-08T06:39:28.226716",
       "systems": [
         "EIP"
       ],
@@ -1972,7 +1956,7 @@
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOVdPMW1VSlRjY2Q1ZUp5WS1WdUZJcmdZc1pwUTNOUnNzTk1uTXVUd3JHQXRzdXlUdkFpcG5MYjY1VzJjYWVBdWRUR2d4aDRaTklmcnBIS1l0dk5FRUJqZFV5LWdSYTcyQVBlTy00MUl2Rlc0dnp3dHlYRFR1Y0oxSG1jS2ViOFk0bVRFNEdzUVl0ZHVKY1h0S1N2V0xNMkNXQXJQYzIwd2xCOE9X?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-08T03:30:27+00:00",
-      "fetched": "2026-06-08T06:10:24.741000",
+      "fetched": "2026-06-08T06:39:29.428354",
       "systems": [
         "EIP"
       ],
@@ -1995,7 +1979,7 @@
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPY0w4WTJRS3NfRHBTVFN6RUVNdU1jZ3MwUWdZa3B5bXA4U1JIRFBtc1pZMGZoRWd1UGFMMmt1N3MySDZhOFppUDdzaEQ1TkgtVkVJZ0NDcG9hWE1XRGxJckVrYjFzcVhsNUJpdjRvVk1TY0NKZlpkQWZlU0pBZjVpNXFuWFlVVjNGcHcxWlp1WERwc2ZrZUFBdHc3eU1MUVFoXzlVQ1h5Mm56RXFaT3JIZ1NfM1pHRjg1UE40dmpOdlY0UktTTnRKWVVCNNIB0AFBVV95cUxNQ0NfLWxLSENFSTFjWUdWYVl0TnIwZlZGbmNsUjB0Zl90emtEUzFGMi1yQWpseEhKWXJ2V2h5Smxhc1RkSENmVmFKYjlUOW5kMzFTNWNtN21aX01ZZmRmdUJobktmZHdvV1I4SGstbTRGSVZtc25NNkl3dzBFZE9yOW9FZ3M0SWxpck9PMkdzdmN4U1lmS0gyZlJZeEh3V09MVks0dmljZmlpbGc0Y0xuTERobkgwNDkyNGhvSHZvQnhDdTlfOV9rVXFmUUwtSDRn?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-03T06:09:07+00:00",
-      "fetched": "2026-06-08T06:10:25.341668",
+      "fetched": "2026-06-08T06:39:30.029044",
       "systems": [
         "EIP"
       ],
@@ -2018,7 +2002,7 @@
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVHpjRFFnenJuRmU4ZWM2aE9nVWlyeVY0NFhMSk1RaXpzU05MVkxRaUQ1LWJ5Q21vMGZUQXpXeEwxQzNtVlBwamZPS01RTFJxOGRxeGtPX3lCNS04WklaU2tUMFN6T19YNjUwYklidDFsQm5UajdEai1SSzdsN2JSdlZ2ajR5cU0?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T12:34:33+00:00",
-      "fetched": "2026-06-08T06:10:26.543051",
+      "fetched": "2026-06-08T06:39:31.230503",
       "systems": [
         "EIP"
       ],
@@ -2041,7 +2025,7 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSWNQOXRET1FpSy1uMTlYUDl6RkY4QVFvSXFKODdaV0VmZVo4VnQ1OUlWYk9iSFFNZHZaYnhnS2ZpaVFZMVIxY1JMX0pCRzFxNmI3VTVjdWQ5cjROWXdaOFVFbERjbURaQUdqSEdQZVZ0OU9fNmlzV0RKV2VDanhHLS1DVC1hWWJHOE5CS245c182SGRIWnJDSy1EcVptWW5jVDZZcNIBpAFBVV95cUxPSWNQOXRET1FpSy1uMTlYUDl6RkY4QVFvSXFKODdaV0VmZVo4VnQ1OUlWYk9iSFFNZHZaYnhnS2ZpaVFZMVIxY1JMX0pCRzFxNmI3VTVjdWQ5cjROWXdaOFVFbERjbURaQUdqSEdQZVZ0OU9fNmlzV0RKV2VDanhHLS1DVC1hWWJHOE5CS245c182SGRIWnJDSy1EcVptWW5jVDZZcA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-07T20:34:11+00:00",
-      "fetched": "2026-06-08T06:10:27.744246",
+      "fetched": "2026-06-08T06:39:32.431852",
       "systems": [
         "EIP"
       ],
@@ -2064,7 +2048,7 @@
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeURFMml0Nm5acGlxWTJfY0pvSHZna3M2XzU3dGd3V3hRWkJTeGpaSkhWeG9YTmZNbTQ0SmFHNk95NFJ4RTZ6aUJfTnJaRGQ2TDhwVG1OMHNkMGtrX3BTZDFpWWJJM2U4RTdhUE9kVGxIRENWRG12WVJ3V0htRTlSTmNaaktTd2RzcVFzRlhNMU45LWtlN1l0QXdYa1VTdw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T12:30:01+00:00",
-      "fetched": "2026-06-08T06:10:49.029625",
+      "fetched": "2026-06-08T06:39:53.359151",
       "systems": [
         "CRM"
       ],
@@ -2087,7 +2071,7 @@
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZTRwdGxrQ3pYenR5NURzeE8xQmVWWGRMZHBZcUJfU216UmtkdDJ2VkZRZVpqVDBCZkFpZUJTOEpHT3JjZkFmbnh0SkZxME9sa2Y2NW5NNzJCanp0d0wtWWQ1bjJ2Yk1yOW81aUltc1NnYTdVYUhqR3lZcWFHb21FaWNEdlpoeDdyYkQwOWI4UTlyUERWYmg4NHdTdkwyendTeXpmU015a0UyZ3p3VWFkTmVXcFVuRnNOU2hJTg?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-07T10:24:52+00:00",
-      "fetched": "2026-06-08T06:10:51.431889",
+      "fetched": "2026-06-08T06:39:55.761904",
       "systems": [
         "CRM"
       ],
@@ -2110,7 +2094,7 @@
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOHRzTGJJMTdTUTZXVG1RWEJnbU9TZUJ2dWdPZGItV0pWVFBGbTJaOXJnWmQ4RWlzQVhKSDZ5STZGM1NSb2QxaGV3UmpRX0FPOUJzajdLQUdiVXprV1BhYVV0bXo0VjNhQ3oyQ3Y2aTFhalA5VDdhWndGS0FOM0x6OFRkQW5jb2tvRDVsN2pJRlR5Vk93U0EwV19lNmcxc190c1BqWkNPSWQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T21:22:56+00:00",
-      "fetched": "2026-06-08T06:10:52.632988",
+      "fetched": "2026-06-08T06:39:56.963219",
       "systems": [
         "CRM"
       ],
@@ -2133,7 +2117,7 @@
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA5UGlwU1ljRGxkYlRLNU1yS1ZqeXZUSlBSeGZpT3g0UW01Z1NiVjJIaElkQWlxeG5iR05GUDd0N2tsZGlhbUdIMElzeXVzSld1UzEzdlp4TG5FQ0tCdzk1b3hIZTVrMURsbHAyUlRWMHpxVEVmVDBMR0NkZHJvdw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T11:51:42+00:00",
-      "fetched": "2026-06-08T06:10:53.233631",
+      "fetched": "2026-06-08T06:39:57.563901",
       "systems": [
         "CRM"
       ],
@@ -2156,7 +2140,7 @@
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9pdkNkeGo1UVhfS05YVzdrOWRRanFwdWtIVzJKMEJOSlNJY0ZFcEtWN1pvQ2ZOMHBnMTdqWEhEU0hibnZCd2xuSEYyZzV0c0t3X0g3OVNQTHpBb3llZEdIck1MbzIxd013Z1oxVmY2RlJ0Zw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-01T16:33:00+00:00",
-      "fetched": "2026-06-08T06:10:54.436061",
+      "fetched": "2026-06-08T06:39:58.766689",
       "systems": [
         "CRM"
       ],
@@ -2179,7 +2163,30 @@
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOWFR0Z0c5Wkt0cFZ2U0V6RXJBV2xMR241RTlhR2F5bzdYVDRCTmJ0N0otN0l5dnlhd2x3Qy1Yb29HNUZkV2FuWjh4Mi15WkgzSUZXXzJnSnlFMDlVYWc3aVZEWTcxN0VLNE16NWl0QzN6aVNHUFlEaXA3dE5uQjkyZGFSNWZZSDFFR2toemtLa0V0d0h6RENKSnRjYWdmTDBRMGU2ZFZPdlZYOVRCZFRGZUhONG5CSVp4QkFPcHA2TlQydkM5aGw0M3phdlo?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-05T11:26:56+00:00",
-      "fetched": "2026-06-08T06:10:55.637235",
+      "fetched": "2026-06-08T06:39:59.968094",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 50
+    },
+    {
+      "id": "art_57c526a913",
+      "channel": "rss",
+      "source": "HubSpot",
+      "brands": [
+        "HubSpot"
+      ],
+      "title": "Zoho CRM Statistics By Market Share And Usage (2026) - Bayelsa Watch",
+      "summary": "Zoho CRM Statistics By Market Share And Usage (2026) Bayelsa Watch",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE00LXduLTVaQ2o5Q0tQNHBLRnBPbzI0eGlSX2xCaUhIbkp3YUw0TUtLdDB5VGVsQUdrcnpScjRqeW05OFFmSzJkWXZlNFQ3Y0xXcTQtY3QtTmM?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-06-08T04:58:02+00:00",
+      "fetched": "2026-06-08T06:40:01.169486",
       "systems": [
         "CRM"
       ],
@@ -2202,7 +2209,7 @@
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQY0I0bzJKZDBNSTBZM0VhNXViR0s3NlpucC05ZUdiX2tadjB2N2RnT2V1eFlIODNyb3M4WVNHWWlGTnZjWGkwS001UWlMV0VxaVJoWHluV2dtMEpoYlozX0luVkZwNmNPR2hrRmpvT3BNQ1Nvb1ZWM1czV3laNlBHR2w3NXJta0FWNDdJczlHY1VLV3ZzdVlUMDF5OVlLTk1GQ1RHRG0yOWpmdGl0RlE?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-03T20:58:00+00:00",
-      "fetched": "2026-06-08T06:10:59.303004",
+      "fetched": "2026-06-08T06:40:03.054717",
       "systems": [
         "CRM"
       ],
@@ -2225,7 +2232,7 @@
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVWNwSGdpcHB4ckpNQ056UmxpeVdVUTRTdW90VU9nZWMxd2tMdkJ3TkdFa3JZM1hwMWFLUjVJTWJPOWJTYlVWdkJiVElMMl95ZUxkZThzVzBoaWdLck5PcEp5TnZRb1hFMW43eDB1OXlBYWtaZTNQRGp6Wk5TLW5oRDhndDB0VnJXbEx3UndCQzA1dDlsZ21uVHd3VS1kSFc1eVJDWVJmc1F4aGlzM0o5NE1POHd1S0xOVjF0RWlndEZmcHlSLVRwTWZ3dHoxLTRiQVJZ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-06T00:25:28+00:00",
-      "fetched": "2026-06-08T06:10:59.903617",
+      "fetched": "2026-06-08T06:40:04.256266",
       "systems": [
         "CRM"
       ],
@@ -2248,7 +2255,7 @@
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMkNLcHBSYlQ4Wlg3N3JCeXpJZDhIWklFcVZ0REhHMWl2UHEwbGIwcno0RnUxRDdWS2lHcEFZLUhmcGJfOHgxZWlFWEgycEdEWlA4SEZVNldvamN2Q19pSFpiN3Jxd2VRNG82Y3NIOWR4RkpDODEyOEJrRGNlVkJoMnl4NnhreEN6dktBb2QtZG9fS0wybTg1eFZkMzBsd3RVN3FadkV1YWRJMHJn?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-04T09:47:00+00:00",
-      "fetched": "2026-06-08T06:11:00.504193",
+      "fetched": "2026-06-08T06:40:04.856939",
       "systems": [
         "CRM"
       ],
@@ -2271,7 +2278,7 @@
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ZRDk0MkN3eWVsTWJfRGxzd19EOThXN1hkby1qSk5vUkdHSDhRZDlGSEc0M3M1MXg2UkR4bk5yRk5vT3pKeVBMbUJBNTY1OHFvX1hmbGg5b2NxYVl5UmNuVlNBeUdRLW5rdmhHRHpCcTdyUFNuQmxLazd3?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-06T11:25:04+00:00",
-      "fetched": "2026-06-08T06:11:01.705351",
+      "fetched": "2026-06-08T06:40:06.058379",
       "systems": [
         "CRM"
       ],
@@ -2294,7 +2301,7 @@
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5rbW1kTXduOVBMQ0d2blYtVjgtRUFNOU5yQWhtbFJBeG9HSmVid3pERVRoWFp2S0JXY1pMRXUxY2J6NmlDTk1tVUpDbTJSbkVveExsNjhMaw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-04T06:16:05+00:00",
-      "fetched": "2026-06-08T06:11:02.305907",
+      "fetched": "2026-06-08T06:40:07.860425",
       "systems": [
         "CRM"
       ],
@@ -2317,7 +2324,7 @@
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQQUtZUzh3WG94M005R1ctV20wa2tBT0JmTzRrcFNkQS1ZNHk4SHQxMkNYcTlHTDg5ZmpqTzVGVnJ4UGxNZjBtWHBzWG1wTndiN3BuVE9YZFZJeE02SnFMWU9OMl9hRmFiVVE3ZWRHbmxwMk9FRjgtYVBSUGVyak5PaE5kNld6Z0szMjlQaXNIX0tDaXNhbF92WHdlcndoemZNcDRfQzZqdHRjT05SOWJSVlkwT0ZHeWNWN2JSVmJic1BHenNqRERXVmJDdWJCR0VHTDNUMWx3?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-05T21:58:01+00:00",
-      "fetched": "2026-06-08T06:11:03.507042",
+      "fetched": "2026-06-08T06:40:08.461126",
       "systems": [
         "CRM"
       ],
@@ -2340,53 +2347,7 @@
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQZWNxekJiRVAwamJuMHpVblpaT095M2Z4dkFTS2w4UVNrTjlsM25WUEpucEotWUtBNGJwbElTQlRIX1VSeWVqWGtWNWd6aGtkYnEtNTlQazJJcU96VHBFTjYzNV91bU1Qa0lZbDdiS0tvSnlPY2E2UVJkYlMxZFozcG1SOUMyYTZvUHc?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-03T21:27:00+00:00",
-      "fetched": "2026-06-08T06:11:05.308747",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 50
-    },
-    {
-      "id": "art_e817ceb7e9",
-      "channel": "rss",
-      "source": "Stripe",
-      "brands": [
-        "Stripe"
-      ],
-      "title": "New Magecart Attack Turns Stripe into a Malware Command Server - CyberSecurityNews",
-      "summary": "New Magecart Attack Turns Stripe into a Malware Command Server CyberSecurityNews",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5hRlVqbmRnS3VLbkZUWURfR2NmaHZrNVVweG5UOWtLdVBPSEhJdDl1SmNrQTZXWEM1cTJKQWVjbmJnZVN1bjlyZkF3QzBOelFuak43TkVkbnp4UjQ2TVdCckRrRmNTLWhUeEs5N3oxZkbSAXZBVV95cUxNRHBqdVo0MXR0RVlsODNJeUxCWGpjVUt3bm4xeFFxenNrTUZvRmZTOEp5VldfNExJZExPVUhXMDBTbVRwc1AwRGpuMTVvMnp0bHFNeFIwRVpPQkRzUTRnRjNMNENvYjBoeG9CSTloUExETFFrWEhB?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-06-05T20:09:20+00:00",
-      "fetched": "2026-06-08T06:11:05.909317",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 50
-    },
-    {
-      "id": "art_e8b00d2eba",
-      "channel": "rss",
-      "source": "Stripe",
-      "brands": [
-        "Stripe"
-      ],
-      "title": "Stripe, Visa, Mastercard close to new stablecoin platform - CoinDesk",
-      "summary": "Stripe, Visa, Mastercard close to new stablecoin platform CoinDesk",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNODcxM3YxYXdjUXRZU1kxNm1qY21RTmVmM2k0V1pxWWJUd21NUWFPNmpUeGFJaG5aMnlEeGdTM25SV21IWW9LbmlseGxEYmtDVWMtQ0NQalhfZXdGS25UNmlidF9LOVlybVR2dUxqdVdMdGh1Y0Z2bjNRMGFydEk4cmd6aFNtWEZmODhBRHZWTQ?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-06-03T19:58:40+00:00",
-      "fetched": "2026-06-08T06:11:07.110283",
+      "fetched": "2026-06-08T06:40:09.662514",
       "systems": [
         "CRM"
       ],
