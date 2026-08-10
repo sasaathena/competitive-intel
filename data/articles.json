@@ -1,52 +1,28 @@
 {
   "stats": {
-    "total": 92,
-    "new_today": 92,
-    "last_updated": "2026-08-09T03:02:14.326195",
+    "total": 93,
+    "new_today": 93,
+    "last_updated": "2026-08-10T03:11:33.443816",
     "lang_breakdown": {
-      "zh_TW": 4,
-      "en": 88
+      "zh_TW": 3,
+      "en": 90
     },
     "by_channel": {
-      "rss": 92
+      "rss": 93
     },
     "by_system": {
-      "EIP": 54,
-      "CRM": 41
+      "EIP": 53,
+      "CRM": 43
     },
     "by_type": {
-      "用戶體驗": 24,
-      "AI應用": 33,
-      "產業趨勢": 44,
-      "功能更新": 4,
-      "Dashboard案例": 3
+      "AI應用": 30,
+      "產業趨勢": 47,
+      "用戶體驗": 23,
+      "Dashboard案例": 6,
+      "功能更新": 3
     }
   },
   "articles": [
-    {
-      "id": "art_1d82525cf5",
-      "channel": "rss",
-      "source": "Workday",
-      "brands": [
-        "Workday"
-      ],
-      "title": "AI原生學習體驗！Workday Learning現已全面推出 - IT PRO Magazine",
-      "summary": "AI原生學習體驗！Workday Learning現已全面推出 IT PRO Magazine",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA0N3F6LTctU0ZpUVJVWkZDREJGeEZsc3VrZTg3Y1BBZ2htSGM0MzhhT0ppR1dXQjRVRFZwZWszYlgzMDN4TldiVFlIdUpFVElfcU1hY0pVRmpzbVk1ZUE?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-03T02:56:29+00:00",
-      "fetched": "2026-08-09T03:00:37.310536",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗",
-        "AI應用"
-      ],
-      "is_zhtw": true,
-      "lang": "zh-TW",
-      "score": 140
-    },
     {
       "id": "art_6382fb350d",
       "channel": "rss",
@@ -59,7 +35,7 @@
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQenl5aDhYSmxEd2o3NWhjX0dfVjZ5NXpCV2NCOHJmdnp1ZzRCbDRveFA3RWxRNXlLNGc0QXc2aVhNTTFpVGI3aENTZnp3dktDM2NsQ29VNy1NSlhad1p3bm1nUFl3VExkbWxPd0RmMkx0eHhEZ2pfTVlUaVpYVXRWQjhOU0ZjSWVYZXpOTEh1ZnA0UWk0MjBGdVVPaU1LQQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-08T00:31:54+00:00",
-      "fetched": "2026-08-09T03:00:55.476709",
+      "fetched": "2026-08-10T03:10:08.841647",
       "systems": [
         "EIP"
       ],
@@ -71,18 +47,41 @@
       "score": 125
     },
     {
-      "id": "art_d1349eff64",
+      "id": "art_01e08e2f07",
+      "channel": "rss",
+      "source": "Apollo",
+      "brands": [
+        "Apollo"
+      ],
+      "title": "Apollo首席經濟學家：AI燒錢速度創歷史之最，警惕「次貸危機式」逆轉衝擊 - Moomoo",
+      "summary": "Apollo首席經濟學家：AI燒錢速度創歷史之最，警惕「次貸危機式」逆轉衝擊 Moomoo",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMXhHU0JjWHlPN183Vk14U1dnS0QyVUZyd3V6dHAwbTIzZHFBZVNqT1dHZk1sSm1zNWE0TGxrZDJMcllQaVVBakhqWjhjZ3I4YXA2MVd0RldDX2FkbWRkbnRHYXJLeGZiZzRiem81SUxlTFd4WEo3TG1YZl9uMjNVOFZmMGM5ZUREcERrRTR3ZVZDZG9lRnNhZ3NxeHZIdUZCTkxKYl9R?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-08T06:14:53+00:00",
+      "fetched": "2026-08-10T03:10:11.844267",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "AI應用"
+      ],
+      "is_zhtw": true,
+      "lang": "zh-TW",
+      "score": 125
+    },
+    {
+      "id": "art_522b3d505d",
       "channel": "rss",
       "source": "Workday",
       "brands": [
         "Workday"
       ],
-      "title": "Workday攜手兩檔高內部持股科技股 洞察成長潛力與投資契機 - 樂聯網",
-      "summary": "Workday攜手兩檔高內部持股科技股 洞察成長潛力與投資契機 樂聯網",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE55YnZ2X0VGamJ6ZlhIaVh4RXlJRkx5YTdjZnJNd1dVbUFrZm14ckZtdmZERDlmRU5pX182MGtxQkhlR256VXBfQnlxdw?oc=5",
+      "title": "Workday攜手兩檔高內部持股科技股 洞察成長潛力與投資契機 - Yahoo股市",
+      "summary": "Workday攜手兩檔高內部持股科技股 洞察成長潛力與投資契機 Yahoo股市",
+      "url": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxQNHhxZkhFLWVXOElrRzZublhudUlfVGNsOVBSY1o3blpNbkNLbVFuVVR0X0dfeFZ5VlhsbFFCMnhBQXBLYWQ2THBRNHNLRXhaV1I5VVJXTkk2UTVva3Z3R3NjWkxFcTZaOThkTWREZ1hLMllEVkduUmtxblRnSWFCSDVvMFZUdl9OS0s1T3NKVXBXOGttVE1hampaZ3ctQzJUb0dYMXRzNmtPU1lzRkFkS3NBbG1UVDhPMFRfNWFSUzNzQjRuNE1EU1k1ZmtiYkswdmY3NTZVQ2FKTTFveEVpSlhLSkNURjhjaFc0Nzl1dzJYc201dldWNTZlSU1BM09tZVRIVDVEYXdBVHo2eUtlYUxnc29yb2V2aHNEWFY2Y1J0Y0JyQU5MWnREVjA1UEQwdml3dElhR0lhSHdmMDVyQTJVS2czbEgwTDZqQWxqcThpeEhHS3h4U1RjVWo4ZzhwNi1Cc3lyNXRSVkR5Z3U2OU5KRk9OeFllOXc?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-06T04:22:57+00:00",
-      "fetched": "2026-08-09T03:00:37.911268",
+      "date": "2026-08-06T04:42:17+00:00",
+      "fetched": "2026-08-10T03:09:50.659241",
       "systems": [
         "EIP"
       ],
@@ -94,54 +93,58 @@
       "score": 120
     },
     {
-      "id": "art_b90d7e0cec",
+      "id": "art_c5f68fe73a",
       "channel": "rss",
-      "source": "科技新報",
+      "source": "Medium-CRM-TW",
       "brands": [
-        "SAP SuccessFactors"
+        "Workday",
+        "HiBob",
+        "HubSpot"
       ],
-      "title": "醫療 AI 評測敲響警鐘，OpenAI、Anthropic 等主流模型皆陷「資訊遺漏」盲點",
-      "summary": "一項名為 NOHARM 的最新獨立醫療 AI 基準研究直指當前主流臨床 AI 工具的共通盲點。這項測試涵蓋了包 […]",
-      "url": "https://technews.tw/2026/08/09/medical-ai-hidden-fatal-flaw/",
-      "thumbnail": "https://img.technews.tw/wp-content/uploads/2026/06/26144520/taiwan-teams-transform-smart-care.jpg",
-      "date": "2026-08-09T00:30:28+00:00",
-      "fetched": "2026-08-09T03:01:34.070412",
+      "title": "How to Create Reports and Dashboards in Dynamics 365 CRM",
+      "summary": "If you’re using Microsoft Dynamics 365 CRM, chances are you’ve already asked yourself: “How do I turn all this customer and sales data… Continue reading on Medium »",
+      "url": "https://medium.com/@digitalaigentix/dynamics-365-reports-dashboards-guide-6d367765922f?source=rss------crm-5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-09T07:53:04+00:00",
+      "fetched": "2026-08-10T03:11:05.142816",
       "systems": [
-        "EIP"
+        "EIP",
+        "CRM"
       ],
       "types": [
+        "用戶體驗",
         "產業趨勢",
-        "AI應用"
+        "Dashboard案例"
       ],
-      "is_zhtw": true,
-      "lang": "zh-TW",
-      "score": 120
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 95
     },
     {
-      "id": "art_98b83a92d9",
+      "id": "art_d9506cfe5e",
       "channel": "rss",
       "source": "Medium-UX-Dashboard",
       "brands": [
         "Workday",
         "HiBob"
       ],
-      "title": "Why Your Dashboard Gets Ignored After Launch",
-      "summary": "“The dashboard is ready.” Continue reading on Medium »",
-      "url": "https://medium.com/@shrikrishnachinta79/why-your-dashboard-gets-ignored-after-launch-544f7d20d443?source=rss------dashboard-5",
+      "title": "Retail Store Inventory Management Dashboard using Microsoft Power BI",
+      "summary": "Transforming Raw Inventory Data into Actionable Business Insights Continue reading on Medium »",
+      "url": "https://medium.com/@omkarpsawardekar47/retail-store-inventory-management-dashboard-using-microsoft-power-bi-caf4cd971d79?source=rss------dashboard-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-08T06:27:04+00:00",
-      "fetched": "2026-08-09T03:01:58.879716",
+      "date": "2026-08-09T16:44:22+00:00",
+      "fetched": "2026-08-10T03:11:17.062865",
       "systems": [
         "EIP"
       ],
       "types": [
         "用戶體驗",
-        "功能更新",
-        "Dashboard案例"
+        "Dashboard案例",
+        "AI應用"
       ],
       "is_zhtw": false,
       "lang": "en",
-      "score": 95
+      "score": 90
     },
     {
       "id": "art_5b3e824fe9",
@@ -155,7 +158,7 @@
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQR2hQYkc0VklzSGxPc1RsTzJuQklJelROczVzMTRzYlhTNk5IRTgydlBQYzhGWUE4X1JEVHVMYkJNVDlEMkxiNFdJWkU4ajJOeGZQTUtPaFVUQjZnWlB0ejhnS0Z3OGxpLTRhcmdsaFg5MjZwUHFYcHowQlI4MEVVNVgzNFpXUGdKUE41bWxCNTVtQU9mZlR2ZlZXVTFYWVdnUEpkLUw0VzZ6dzk3eWxFRjY2QzREblNXYklDOElYTkJpUHFpUmNYVg?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-05T11:42:29+00:00",
-      "fetched": "2026-08-09T03:00:50.292345",
+      "fetched": "2026-08-10T03:10:03.060861",
       "systems": [
         "EIP"
       ],
@@ -181,7 +184,7 @@
       "url": "https://medium.com/@morsoftwarejsc/hris-integration-in-2026-what-you-need-to-know-20ff8413dfe9?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-05T09:47:50+00:00",
-      "fetched": "2026-08-09T03:01:47.346215",
+      "fetched": "2026-08-10T03:11:06.950328",
       "systems": [
         "EIP"
       ],
@@ -205,31 +208,7 @@
       "url": "https://medium.com/@hafsatariq277/how-to-set-up-email-automation-in-hubspot-step-by-step-guide-36d99e075efc?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-02T15:19:10+00:00",
-      "fetched": "2026-08-09T03:01:42.460710",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "用戶體驗",
-        "AI應用"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 80
-    },
-    {
-      "id": "art_0711a6ddd9",
-      "channel": "rss",
-      "source": "Medium-CRM-TW",
-      "brands": [
-        "HubSpot"
-      ],
-      "title": "How I Built an AI-Powered Email Code Generator That Converts Figma Designs to Production HTML in…",
-      "summary": "CRM Engineering · 10 min read · August 2026 Continue reading on Medium »",
-      "url": "https://medium.com/@rajputyash2202/how-i-built-an-ai-powered-email-code-generator-that-converts-figma-designs-to-production-html-in-4a37aa50b3b2?source=rss------crm-5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-08T11:37:28+00:00",
-      "fetched": "2026-08-09T03:01:46.110554",
+      "fetched": "2026-08-10T03:11:02.893485",
       "systems": [
         "CRM"
       ],
@@ -253,13 +232,88 @@
       "url": "https://medium.com/@mayankjain9/why-every-workday-customer-should-understand-umsa-before-their-next-renewal-35a9008d76be?source=rss------hr_technology-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-04T13:57:27+00:00",
-      "fetched": "2026-08-09T03:01:54.674518",
+      "fetched": "2026-08-10T03:11:14.384230",
       "systems": [
         "EIP"
       ],
       "types": [
         "用戶體驗",
         "AI應用"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 80
+    },
+    {
+      "id": "art_d3581149ae",
+      "channel": "rss",
+      "source": "Medium-UX-Dashboard",
+      "brands": [
+        "Workday",
+        "HiBob"
+      ],
+      "title": "Cybersecurity dashboards have a difficult job.",
+      "summary": "They need to show a lot of information — without making the person watching it feel overwhelmed. Continue reading on Medium »",
+      "url": "https://medium.com/@tenfiftee/cybersecurity-dashboards-have-a-difficult-job-5af7e9ce399e?source=rss------dashboard-5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-09T16:31:01+00:00",
+      "fetched": "2026-08-10T03:11:17.363612",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "用戶體驗",
+        "Dashboard案例"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 80
+    },
+    {
+      "id": "art_7dc6c0be49",
+      "channel": "rss",
+      "source": "Medium-UX-Dashboard",
+      "brands": [
+        "Workday",
+        "HiBob"
+      ],
+      "title": "From Raw Data to Dashboard: My Complete Power BI Workflow",
+      "summary": "Data rarely comes in a perfect format. Continue reading on Medium »",
+      "url": "https://medium.com/@2004shaikhhamza/from-raw-data-to-dashboard-my-complete-power-bi-workflow-a14acaca88d4?source=rss------dashboard-5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-09T15:53:08+00:00",
+      "fetched": "2026-08-10T03:11:17.664436",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "用戶體驗",
+        "Dashboard案例"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 80
+    },
+    {
+      "id": "art_4120059a44",
+      "channel": "rss",
+      "source": "Medium-UX-Dashboard",
+      "brands": [
+        "Workday",
+        "HiBob"
+      ],
+      "title": "Student Performance Analysis Dashboard Using Power BI",
+      "summary": "Academic performance is influenced by several factors such as study time, attendance, previous academic performance, sleep, access to… Continue reading on Medium »",
+      "url": "https://medium.com/@rajeevsanap67/student-performance-analysis-dashboard-using-power-bi-27d4ff59b1f7?source=rss------dashboard-5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-09T09:35:23+00:00",
+      "fetched": "2026-08-10T03:11:17.965342",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "用戶體驗",
+        "Dashboard案例"
       ],
       "is_zhtw": false,
       "lang": "en",
@@ -278,32 +332,7 @@
       "url": "https://medium.com/@luxna.ramnauth1/bi-dashboard-e7fac12d58b2?source=rss------dashboard-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-08T14:48:08+00:00",
-      "fetched": "2026-08-09T03:01:57.375747",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗",
-        "Dashboard案例"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 80
-    },
-    {
-      "id": "art_317ec47da0",
-      "channel": "rss",
-      "source": "Medium-UX-Dashboard",
-      "brands": [
-        "Workday",
-        "HiBob"
-      ],
-      "title": "Building My First E-Commerce Sales Analysis Dashboard in Excel",
-      "summary": "Hi everyone! I recently completed my very first end-to-end data analytics project, where I built an E-Commerce Sales Analysis Dashboard… Continue reading on Medium »",
-      "url": "https://medium.com/@saim.muhammad1998/building-my-first-e-commerce-sales-analysis-dashboard-in-excel-671820fd1cd7?source=rss------dashboard-5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-08T12:01:20+00:00",
-      "fetched": "2026-08-09T03:01:58.578851",
+      "fetched": "2026-08-10T03:11:18.867619",
       "systems": [
         "EIP"
       ],
@@ -328,7 +357,7 @@
       "url": "https://medium.com/@shipra.uicet/hris-implementation-guide-a-6-step-framework-for-successful-hris-deployment-4f232bf1b673?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-07T12:05:35+00:00",
-      "fetched": "2026-08-09T03:01:47.045348",
+      "fetched": "2026-08-10T03:11:06.649556",
       "systems": [
         "EIP"
       ],
@@ -351,36 +380,12 @@
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVFdnbTFpc0V0QkZ0aThLNWRCVHIybnJ6Vjdpdll6TWdjTkFlU2lkUnlxclNGS3V2V3EyaENaR0c5M1ZnQVFkVE9ObXZMTktjOW9OXzJLUUlpa0RzNTdMZ0t3YUtqWE15V3RyQXFjOTFMYjBzNWE2WE45Y1U3QV9BS3NpbU80aUwwMGdSMGhkVWxpS2lDRGtreUJtZ3BlOUZGcF9DdHdoRjhROEJhWlRrbGhJeEk?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-07T14:46:40+00:00",
-      "fetched": "2026-08-09T03:00:42.535145",
+      "fetched": "2026-08-10T03:09:55.884734",
       "systems": [
         "EIP"
       ],
       "types": [
         "功能更新",
-        "AI應用"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 70
-    },
-    {
-      "id": "art_1035c84f01",
-      "channel": "rss",
-      "source": "Workday",
-      "brands": [
-        "Workday"
-      ],
-      "title": "AI Weeds Out Older and Minority Job Applicants, Lawsuit Against Workday Claims - CPA Practice Advisor",
-      "summary": "AI Weeds Out Older and Minority Job Applicants, Lawsuit Against Workday Claims CPA Practice Advisor",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaHh0eWVzOFBycE54b1ZoNUlxSTdMNnJBRHFTVENjZGh3SjhCa2ZaaVlyQjBMcks4cUM0OTFNaGpreTU3MVA0UWU1V2FNNmtWNXRmaVA5ZjRBRFZVd3ZqNzZXMHc5MDB5Qk4wUm5yalBIOW1fVWEwMTRXZ09IT1JPV1E0STNXSUtYLVBkdTJETGxDTVdEMnFJaXoxcDNuak5vNTcydUM2aklFSVRCZVBvOWFTQzVJRUR0WEdaQlM2Skl2ZDJNaVFZRkN2VQ?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-05T21:35:44+00:00",
-      "fetched": "2026-08-09T03:00:47.340497",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗",
         "AI應用"
       ],
       "is_zhtw": false,
@@ -399,7 +404,7 @@
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNejBjNE95dGJUSUpZajJheXNkZkI3V2YydjZtRkJDdDhRbWVrWUxEMTNMeUhQenR1LWtDcnc2RnNPV0Vpb2tXZER6eHZ3RmhQdzlseGdwTWU1ZDNlTWUtNDd3NDdTb1p1QmE4N2pTYVZ2Q3ZzTmI4RTJuUlJacWQ5X0wzQzhlSDM0Q0owS21Oel9hOEJnVGNIN3gtMG9ES05kOUxYNzFPU3RfMUJKckJjVlhTM1dWRHpmRmt0M2hMaUtOYXUtblozSDI1VjM1U3RlNkU0anZvUQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-07T13:30:01+00:00",
-      "fetched": "2026-08-09T03:01:05.628603",
+      "fetched": "2026-08-10T03:10:18.994936",
       "systems": [
         "EIP"
       ],
@@ -423,7 +428,7 @@
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdUo1WnF2YzBtOXljSGp4cDNwbnpyakZwc1lHZXI2cm5qa1BDeXFZWld1V1R3QXUtT3BlT2ZoU0pHUnJOaFhzdmFDdGowSUE5dm02M05RdnhBQk5MbFkzeVhqSXlmOFl0OEhUZVZsMWF3YndaT2RoaWVNWFp0TGhWd094bWF2TmJlSEHSAY8BQVVfeXFMTTBPcUVScGZZOVBqRVVFMkN0cTgzektOcjhQNWhRdE5DNk1XdEZvdXhJQlpTdzJJN1BCVHRieGRiWC1oQVVhYlJXamV6NkR0aUdFY1E5S0hiclFLU21FOUhnd3NnMlpwaHhvYjNndkpqTkY1N2NXYW9ReDRJVUZQTS1uZDBSM0lKWnZiZEZONDA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-07T12:35:19+00:00",
-      "fetched": "2026-08-09T03:01:09.832915",
+      "fetched": "2026-08-10T03:10:23.198797",
       "systems": [
         "EIP"
       ],
@@ -447,7 +452,7 @@
       "url": "https://sailolabs.medium.com/hubspot-quickbooks-integration-stop-re-typing-deals-into-invoices-5c50bd326a00?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-07T11:33:12+00:00",
-      "fetched": "2026-08-09T03:01:40.354950",
+      "fetched": "2026-08-10T03:11:00.788258",
       "systems": [
         "CRM"
       ],
@@ -470,7 +475,7 @@
       "url": "https://medium.com/@4CRMs/how-to-automate-renewal-deals-in-hubspot-without-rebuilding-them-by-hand-407afa9d5fc3?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-05T15:49:31+00:00",
-      "fetched": "2026-08-09T03:01:41.859002",
+      "fetched": "2026-08-10T03:11:02.291987",
       "systems": [
         "CRM"
       ],
@@ -482,23 +487,25 @@
       "score": 70
     },
     {
-      "id": "art_d43e504da9",
+      "id": "art_1b16b674d2",
       "channel": "rss",
       "source": "Medium-CRM-TW",
       "brands": [
+        "SAP SuccessFactors",
         "HubSpot"
       ],
-      "title": "Why Do Travel Agencies Need a CRM?",
-      "summary": "The travel industry is built around customer relationships. From the first inquiry to the final booking and future travel plans, customers… Continue reading on Medium »",
-      "url": "https://medium.com/@tanyacrmtravel/why-do-travel-agencies-need-a-crm-88380326db58?source=rss------crm-5",
+      "title": "Agentic AI SDRs Are Everywhere in 2026. Almost Nobody’s Fixing the CRM Underneath",
+      "summary": "Every sales tech vendor has the same slide right now. Autonomous AI SDR, works 24/7, books meetings while you sleep, replaces three junior… Continue reading on Medium »",
+      "url": "https://medium.com/@ishaanvora45/agentic-ai-sdrs-are-everywhere-in-2026-almost-nobodys-fixing-the-crm-underneath-8888d191684d?source=rss------crm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-08T13:18:51+00:00",
-      "fetched": "2026-08-09T03:01:45.208234",
+      "date": "2026-08-09T15:17:47+00:00",
+      "fetched": "2026-08-10T03:11:03.939421",
       "systems": [
+        "EIP",
         "CRM"
       ],
       "types": [
-        "用戶體驗"
+        "AI應用"
       ],
       "is_zhtw": false,
       "lang": "en",
@@ -517,7 +524,7 @@
       "url": "https://medium.com/@dyah.permata/mencegah-burnout-pada-tim-hr-tool-digital-yang-menggantikan-tugas-administrasi-berulang-6599f5aaefa0?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-07-03T08:08:38+00:00",
-      "fetched": "2026-08-09T03:01:47.947782",
+      "fetched": "2026-08-10T03:11:07.551883",
       "systems": [
         "EIP"
       ],
@@ -541,7 +548,7 @@
       "url": "https://medium.com/@vio23120zero/managing-hris-what-it-really-takes-beyond-the-software-be2a0960c14c?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-29T08:05:38+00:00",
-      "fetched": "2026-08-09T03:01:48.248605",
+      "fetched": "2026-08-10T03:11:07.852557",
       "systems": [
         "EIP"
       ],
@@ -565,7 +572,7 @@
       "url": "https://medium.com/@ikarthiksharma01/how-much-time-should-i-spend-learning-oracle-fusion-hcm-daily-1900a1139bcd?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-07-06T09:54:07+00:00",
-      "fetched": "2026-08-09T03:01:51.338539",
+      "fetched": "2026-08-10T03:11:10.981346",
       "systems": [
         "EIP"
       ],
@@ -588,7 +595,7 @@
       "url": "https://medium.com/@ikarthiksharma01/cm-why-should-i-learn-oracle-fusion-hcm-in-2026-3b63397924b5?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-22T10:58:45+00:00",
-      "fetched": "2026-08-09T03:01:51.940198",
+      "fetched": "2026-08-10T03:11:11.582930",
       "systems": [
         "EIP"
       ],
@@ -611,7 +618,7 @@
       "url": "https://medium.com/@eric_82001/content-syndication-for-hcm-human-capital-management-lead-generation-the-complete-guide-c381655955f6?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-17T14:51:51+00:00",
-      "fetched": "2026-08-09T03:01:52.541738",
+      "fetched": "2026-08-10T03:11:12.184290",
       "systems": [
         "EIP"
       ],
@@ -634,57 +641,9 @@
       "url": "https://medium.com/@hosdocumentary/pipedrive-vs-hubspot-2026-which-crm-fits-your-business-8270198f7e7c?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-06T06:26:29+00:00",
-      "fetched": "2026-08-09T03:01:41.257319",
+      "fetched": "2026-08-10T03:11:01.690390",
       "systems": [
         "CRM"
-      ],
-      "types": [
-        "AI應用"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 65
-    },
-    {
-      "id": "art_eddd0e530b",
-      "channel": "rss",
-      "source": "Medium-HubSpot-TW",
-      "brands": [
-        "Workday",
-        "HubSpot"
-      ],
-      "title": "Monday.com vs HubSpot: Architecting the Ultimate 2026 Enterprise Tech Stack",
-      "summary": "A technical analysis of operational Work OS environments, enterprise CRM data pipelines, and cloud-native workflow automations. Continue reading on Medium »",
-      "url": "https://medium.com/@kim.arola99/monday-com-vs-hubspot-architecting-the-ultimate-2026-enterprise-tech-stack-0cdf53e5e3d5?source=rss------hubspot-5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-01T22:48:05+00:00",
-      "fetched": "2026-08-09T03:01:42.761523",
-      "systems": [
-        "CRM",
-        "EIP"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 65
-    },
-    {
-      "id": "art_55bbf90d29",
-      "channel": "rss",
-      "source": "Medium-CRM-TW",
-      "brands": [
-        "SAP SuccessFactors"
-      ],
-      "title": "Telegram Support Team Structure: Roles and Responsibilities",
-      "summary": "Three operators without structure is chaos waiting to happen. The same three people with defined roles become a functional system. Continue reading on Medium »",
-      "url": "https://medium.com/@hotlinetg/telegram-support-team-structure-roles-and-responsibilities-ca65007b5d5e?source=rss------crm-5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-08T15:00:27+00:00",
-      "fetched": "2026-08-09T03:01:44.606645",
-      "systems": [
-        "EIP"
       ],
       "types": [
         "AI應用"
@@ -706,7 +665,7 @@
       "url": "https://medium.com/@bryan-lim-sian-yang/hris-modules-arent-used-as-they-were-designed-fb253193b553?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-11T12:57:04+00:00",
-      "fetched": "2026-08-09T03:01:48.549395",
+      "fetched": "2026-08-10T03:11:08.153298",
       "systems": [
         "EIP"
       ],
@@ -729,7 +688,7 @@
       "url": "https://medium.com/@bryan-lim-sian-yang/ai-will-not-replace-data-governance-in-hr-197a8db7b8e4?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-08T12:58:24+00:00",
-      "fetched": "2026-08-09T03:01:48.850203",
+      "fetched": "2026-08-10T03:11:08.454068",
       "systems": [
         "EIP"
       ],
@@ -752,7 +711,7 @@
       "url": "https://clodain.medium.com/the-hidden-problem-with-corporate-training-are-your-learning-programs-actually-improving-skills-e226e05bcb98?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-07-21T07:03:00+00:00",
-      "fetched": "2026-08-09T03:01:50.436171",
+      "fetched": "2026-08-10T03:11:10.079239",
       "systems": [
         "EIP"
       ],
@@ -776,7 +735,7 @@
       "url": "https://medium.com/@tlssowjanya3/what-are-the-career-opportunities-after-oracle-fusion-hcm-certification-60b23004fbe9?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-07-17T10:12:07+00:00",
-      "fetched": "2026-08-09T03:01:50.736954",
+      "fetched": "2026-08-10T03:11:10.379943",
       "systems": [
         "EIP"
       ],
@@ -799,7 +758,7 @@
       "url": "https://medium.com/@harshavadlakonda0/how-does-oracle-fusion-hcm-training-help-you-get-a-job-69a872fdd697?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-07-15T11:32:52+00:00",
-      "fetched": "2026-08-09T03:01:51.037708",
+      "fetched": "2026-08-10T03:11:10.680647",
       "systems": [
         "EIP"
       ],
@@ -823,7 +782,7 @@
       "url": "https://medium.com/@muhammadali.axix/why-hr-management-in-pakistan-needs-a-smarter-solution-axix-hcm-ca1236f7ad25?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-22T07:50:00+00:00",
-      "fetched": "2026-08-09T03:01:52.240933",
+      "fetched": "2026-08-10T03:11:11.883586",
       "systems": [
         "EIP"
       ],
@@ -846,35 +805,12 @@
       "url": "https://medium.com/@john-zacharia/stop-a-b-testing-your-career-page-like-an-e-commerce-site-985570995e21?source=rss------hr_technology-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-08T17:54:25+00:00",
-      "fetched": "2026-08-09T03:01:53.772198",
+      "fetched": "2026-08-10T03:11:13.482088",
       "systems": [
         "EIP"
       ],
       "types": [
         "AI應用"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 65
-    },
-    {
-      "id": "art_ea50aa2a81",
-      "channel": "rss",
-      "source": "Medium-UX-Dashboard",
-      "brands": [
-        "SAP SuccessFactors"
-      ],
-      "title": "How Smart HR Leaders Turn Data Into Better Decisions.",
-      "summary": "Every HR leader wants to make better decisions, but relying on intuition alone is no longer enough. Today’s workplaces generate valuable… Continue reading on Medium »",
-      "url": "https://medium.com/@aditi.sharma_11918/how-smart-hr-leaders-turn-data-into-better-decisions-cbea7f6310c7?source=rss------dashboard-5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-07T09:59:42+00:00",
-      "fetched": "2026-08-09T03:01:59.481334",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "用戶體驗"
       ],
       "is_zhtw": false,
       "lang": "en",
@@ -892,7 +828,7 @@
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPUWxmMUNZeGt6WDZ0eGNUTlNNa3gxUk0yNFJaZ0stYlk4XzNmV19qUmQyYTc5UXBkazNsRXNWNE9Xamp0b2lJa1dIM2FmMWd2N3V3YkF6bkM0SXVzNHE2cVVJeHJCNld2bWJhbmo0WU1LZHZuSktYUm9VYTRzbzNQag?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-06T17:21:41+00:00",
-      "fetched": "2026-08-09T03:00:38.931147",
+      "fetched": "2026-08-10T03:09:51.680517",
       "systems": [
         "EIP"
       ],
@@ -915,7 +851,7 @@
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPY0hTUy0zc2tZSVpCbWxOSHpURDNvUUtOTnAwUzVMOTVvQWozOG9NMnRTT085NHFqTTZpeFFldDlWaDRhOTIwZTZqc0JjS1R3UWozME5xbnBmSG1UQjRKU195bVE1T0RPV2pOV0dvdEtRNXd4dXpubzMxa25wcDhpUDI4dmYwR1BSbzZLQ04wYXpDNlh3VjFtOEpWaFZ3WjBuZExwQzQ5THNpaERZWDRGalg3TGdoaWJOVGJlODYwMmdEQUJjZWZfcVlPdWU0Zw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-06T04:37:11+00:00",
-      "fetched": "2026-08-09T03:01:18.805896",
+      "fetched": "2026-08-10T03:10:31.524407",
       "systems": [
         "CRM"
       ],
@@ -938,7 +874,7 @@
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNT1V3ekQzTC1XSlJoX09LUVBUS3Atb0lQWWRndTVPTUxoalFLcVlXSkxVTDdMR1pnWWttQ09sRFQ4TVp6b29CZVBpcEN3Q1N1QXpEMHZzVXVoWXhKY0ZtdVgwcFVYdUNLM3l4VlUxUzE3THpNME1sZW9icldSQVBtM0R6bWJNRlQyOTJYa1oyRHpUNmNCTFY0VUFSV3NOU1VZZV9EMzRR?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-05T21:54:35+00:00",
-      "fetched": "2026-08-09T03:01:20.007359",
+      "fetched": "2026-08-10T03:10:32.725528",
       "systems": [
         "CRM"
       ],
@@ -950,18 +886,18 @@
       "score": 60
     },
     {
-      "id": "art_b29cfedc2a",
+      "id": "art_55e8ab55cc",
       "channel": "rss",
       "source": "HubSpot",
       "brands": [
         "HubSpot"
       ],
-      "title": "HubSpot Q2 Adjusted Earnings, Revenue Rise; Sets Q3 Guidance - Yahoo Finance",
-      "summary": "HubSpot Q2 Adjusted Earnings, Revenue Rise; Sets Q3 Guidance Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONjZTQzJGTGN0QTBuWUJqN3c4NkdSS2k5QzU4TkdIaUdHU3ZwZzhFVDBpTUFTa211djk4a2xGV0ZZSEU3b09ETVZfRDFOTDY5aTh2VjZOck1sRWcxdW04Y19vQ0xQVHJILXhoZkNobzI4X2NRTXhjNkxiQ3BDOWR5amlLenFodzdoX29DbndTaHpBNHRtRks5Uy0tSTdwN3hnd0Rz?oc=5",
+      "title": "Assenagon Asset Management S.A. Acquires 130,433 Shares of HubSpot, Inc. $HUBS - MarketBeat",
+      "summary": "Assenagon Asset Management S.A. Acquires 130,433 Shares of HubSpot, Inc. $HUBS MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQLURRcW1OVDgtLU8tdkkxcmdfU2VxYlJ4ZDNNcFljQkE1bzFGWl9zdVpFU1h0a0RpQTJqSEItcWZxZEpubjZ5UWFuVko5b1JrYnJkb0Q5cHNwS2h4OWNXNGI5dnFyZzlXMlVqcmxZT1RyUVVneVF4cnFvcW1rTDlyWlNCcmxyVHVpNU40MjFSZ2hVYnJtVnBtNWs0bjNRMEtEcnVvMlBBdS1YTzR1enJLSk1CTlQ5NkZiR0Rod2oxbWpDejFDUHpFXy1WajQyUQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-05T20:43:00+00:00",
-      "fetched": "2026-08-09T03:01:20.608069",
+      "date": "2026-08-09T07:33:23+00:00",
+      "fetched": "2026-08-10T03:10:33.326115",
       "systems": [
         "CRM"
       ],
@@ -984,7 +920,30 @@
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQVNsb182Y0pva3pibTlySDVYSzhxVzVtS0ZKSEJzcEZWS2JHNUUyd1A0bllZaldNcFdkeUNQNlhzTjZJYlpYTnZxdkoxallzTEpNZEd3bFBUQ21ZNDhtR016ZXdwQjd1T3M0aW9TeURmRDlVSmtidzBxeTJnQWZscUJCMUs1YWpIV1pSSkk3amdMZHhMZmVUbXJCbW1pNmF4eHVFX1Vn?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-05T21:50:18+00:00",
-      "fetched": "2026-08-09T03:01:21.208746",
+      "fetched": "2026-08-10T03:10:33.926656",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "用戶體驗"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 60
+    },
+    {
+      "id": "art_82581e4e72",
+      "channel": "rss",
+      "source": "HubSpot",
+      "brands": [
+        "HubSpot"
+      ],
+      "title": "4,325 Shares in HubSpot, Inc. $HUBS Acquired by Lazard Asset Management LLC - MarketBeat",
+      "summary": "4,325 Shares in HubSpot, Inc. $HUBS Acquired by Lazard Asset Management LLC MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQmFiLWRlV2FYYVFDODJNWWxkQWJiWmQzWHoxV2tIUFlXZExUcWhybEx1bEVIOW9EN3pmeHVPdE00SWpERVAyNW1ob2J6clNBWFFUMEh0c2dJVGNWRzg2WldwM3VSc0QtWkhQV3JuemdaNUdWYW5FTkJfVXpSVDJJcEs5V3FRVktpNnI0dkNrVUhRZmtiQWk1dkZzWjE5bWo1MTBqNjFzUVhyVUxER2I1MGt5TFNxVXhuaEFSRElEY1d6NXFMV3Q0QWZZM2I?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-06T08:47:32+00:00",
+      "fetched": "2026-08-10T03:10:34.527192",
       "systems": [
         "CRM"
       ],
@@ -1007,12 +966,58 @@
       "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQUFXMXFsXzdGRGFBU0h6ck9PbHNyY3V3STY3NUxNZzRIMDRpSVhUNFV2bWgzbjBER3RSWlllQzNuMW83dzJuMGlZckQ5enJXSkp4OFRFMi0yZnlOZU5wRzJvSWNHdnE2SkRDRzdqNDRtanZod09sS3gtbnJ5Z19UbTdCbE1sVXgySURXdXk5Z28tbndoSHAtcXdwUndVd194RzJaQ2F1RUlPWDBual91QTA4NnlLaHBFU29VWXRzV0F1X241ZFFfaFBhTzB0SlRr?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-04T15:05:00+00:00",
-      "fetched": "2026-08-09T03:01:22.540941",
+      "fetched": "2026-08-10T03:10:36.446746",
       "systems": [
         "CRM"
       ],
       "types": [
         "用戶體驗"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 60
+    },
+    {
+      "id": "art_05e41abd78",
+      "channel": "rss",
+      "source": "Medium-HubSpot-TW",
+      "brands": [
+        "HubSpot"
+      ],
+      "title": "How to Replicate Seasonal Deals in HubSpot Year Over Year",
+      "summary": "Some businesses don’t sell continuously. They sell in bursts tied to a season, a harvest, a construction window, a holiday calendar, or an… Continue reading on Medium »",
+      "url": "https://medium.com/@4CRMs/how-to-replicate-seasonal-deals-in-hubspot-year-over-year-93954402dde2?source=rss------hubspot-5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-09T21:23:48+00:00",
+      "fetched": "2026-08-10T03:11:00.186471",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 60
+    },
+    {
+      "id": "art_370852840c",
+      "channel": "rss",
+      "source": "Medium-HubSpot-TW",
+      "brands": [
+        "HubSpot"
+      ],
+      "title": "How to Split a Large Deal into Sub-Deals in HubSpot",
+      "summary": "A large enterprise deal rarely stays as one clean record for long. It gets sold as a single package, but the moment it’s won, the business… Continue reading on Medium »",
+      "url": "https://medium.com/@4CRMs/how-to-split-a-large-deal-into-sub-deals-in-hubspot-048ec7dc85d8?source=rss------hubspot-5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-09T20:48:26+00:00",
+      "fetched": "2026-08-10T03:11:00.487468",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
       ],
       "is_zhtw": false,
       "lang": "en",
@@ -1030,7 +1035,7 @@
       "url": "https://medium.com/@nareshchandra.lohani/why-crm-application-development-services-are-becoming-the-operating-system-for-modern-businesses-8774a3a500d6?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-07T08:56:54+00:00",
-      "fetched": "2026-08-09T03:01:40.655708",
+      "fetched": "2026-08-10T03:11:01.088995",
       "systems": [
         "CRM"
       ],
@@ -1053,7 +1058,7 @@
       "url": "https://medium.com/@sahil_24326/top-10-crm-platforms-for-electrical-contractors-in-2026-9fc39eb27abe?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-06T07:23:12+00:00",
-      "fetched": "2026-08-09T03:01:40.956472",
+      "fetched": "2026-08-10T03:11:01.389625",
       "systems": [
         "CRM"
       ],
@@ -1076,7 +1081,7 @@
       "url": "https://medium.com/@4CRMs/how-to-standardize-deal-creation-in-hubspot-with-templates-de5f90666a41?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-05T16:10:30+00:00",
-      "fetched": "2026-08-09T03:01:41.558166",
+      "fetched": "2026-08-10T03:11:01.991211",
       "systems": [
         "CRM"
       ],
@@ -1099,7 +1104,53 @@
       "url": "https://medium.com/@qnhu995/how-hubspot-and-canva-use-inbound-marketing-to-attract-customers-1152879c479a?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-05T09:19:56+00:00",
-      "fetched": "2026-08-09T03:01:42.159805",
+      "fetched": "2026-08-10T03:11:02.592761",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 60
+    },
+    {
+      "id": "art_a694f46ca3",
+      "channel": "rss",
+      "source": "Medium-CRM-TW",
+      "brands": [
+        "HubSpot"
+      ],
+      "title": "How to Replicate Seasonal Deals in HubSpot Year Over Year",
+      "summary": "Some businesses don’t sell continuously. They sell in bursts tied to a season, a harvest, a construction window, a holiday calendar, or an… Continue reading on Medium »",
+      "url": "https://medium.com/@4CRMs/how-to-replicate-seasonal-deals-in-hubspot-year-over-year-93954402dde2?source=rss------crm-5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-09T21:23:48+00:00",
+      "fetched": "2026-08-10T03:11:03.638740",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 60
+    },
+    {
+      "id": "art_03a657cc63",
+      "channel": "rss",
+      "source": "Medium-CRM-TW",
+      "brands": [
+        "HubSpot"
+      ],
+      "title": "Having a CRM isn’t the same as the CRM doing anything",
+      "summary": "A dental clinic owner asked me this week: “We already have a CRM. Why are we still losing patients?”\n \nHere’s what I told them:\n \nHaving a… Continue reading on Medium »",
+      "url": "https://medium.com/@onaolaomoniyi/having-a-crm-isnt-the-same-as-the-crm-doing-anything-3d61f487ee1b?source=rss------crm-5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-09T11:06:02+00:00",
+      "fetched": "2026-08-10T03:11:04.841822",
       "systems": [
         "CRM"
       ],
@@ -1122,30 +1173,7 @@
       "url": "https://medium.com/@DataKazKN/c%C3%A1ch-xu%E1%BA%A5t-danh-b%E1%BA%A1-zalo-ra-excel-%C4%91%E1%BB%83-l%C3%A0m-s%E1%BA%A1ch-d%E1%BB%AF-li%E1%BB%87u-crm-d1c70535271f?source=rss------crm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-09T01:20:28+00:00",
-      "fetched": "2026-08-09T03:01:43.704528",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 60
-    },
-    {
-      "id": "art_3e31c008c0",
-      "channel": "rss",
-      "source": "Medium-CRM-TW",
-      "brands": [
-        "HubSpot"
-      ],
-      "title": "GLO CUSTOMER MESSAGE",
-      "summary": "Glo sample CRM copy Continue reading on Medium »",
-      "url": "https://medium.com/@nnadoziejoh/glo-customer-message-3347b6d2d698?source=rss------crm-5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-08T11:43:27+00:00",
-      "fetched": "2026-08-09T03:01:45.809585",
+      "fetched": "2026-08-10T03:11:05.744433",
       "systems": [
         "CRM"
       ],
@@ -1168,7 +1196,7 @@
       "url": "https://medium.com/@CH_HRIxDesign/a-paper-review-designerly-hri-hri-21-paper-8b78278f544b?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-07-18T05:43:20+00:00",
-      "fetched": "2026-08-09T03:01:47.646956",
+      "fetched": "2026-08-10T03:11:07.251091",
       "systems": [
         "EIP"
       ],
@@ -1191,7 +1219,7 @@
       "url": "https://medium.com/@bryan-lim-sian-yang/the-hr-perspective-in-a-technological-landscape-overcoming-the-silent-killers-of-enterprise-c4331ffd0d63?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-04T12:58:07+00:00",
-      "fetched": "2026-08-09T03:01:49.150972",
+      "fetched": "2026-08-10T03:11:08.754829",
       "systems": [
         "EIP"
       ],
@@ -1214,7 +1242,7 @@
       "url": "https://medium.com/@bryan-lim-sian-yang/hr-transformation-is-not-in-the-system-change-but-in-the-hr-department-a54dd8530568?source=rss------hris-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-02T13:16:18+00:00",
-      "fetched": "2026-08-09T03:01:49.753773",
+      "fetched": "2026-08-10T03:11:09.356426",
       "systems": [
         "EIP"
       ],
@@ -1237,7 +1265,7 @@
       "url": "https://medium.com/@gokul_ifive/what-is-hcm-and-why-smart-organisations-are-investing-in-it-a0b9e087ae2e?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-26T10:37:36+00:00",
-      "fetched": "2026-08-09T03:01:51.639367",
+      "fetched": "2026-08-10T03:11:11.282129",
       "systems": [
         "EIP"
       ],
@@ -1260,7 +1288,7 @@
       "url": "https://medium.com/@ikarthiksharma01/oracwhy-are-hr-professionals-struggling-to-adapt-to-digital-workforce-management-09a53969ec82?source=rss------hcm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-06-17T11:10:51+00:00",
-      "fetched": "2026-08-09T03:01:52.842729",
+      "fetched": "2026-08-10T03:11:12.485074",
       "systems": [
         "EIP"
       ],
@@ -1283,7 +1311,7 @@
       "url": "https://medium.com/@hipl1.new/what-if-hr-teams-could-ask-workforce-questions-and-get-answers-faster-2186859ad916?source=rss------hr_technology-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-06T18:32:43+00:00",
-      "fetched": "2026-08-09T03:01:54.373691",
+      "fetched": "2026-08-10T03:11:14.083555",
       "systems": [
         "EIP"
       ],
@@ -1306,7 +1334,7 @@
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQckZMNFJmQlhFR04wUXhKWFdzVUJrR2NoSWVnQkFXeFItZUNMcDdoUmJBTjdib0VrWmdfSlpOSXpxX0VRSEVVV3pyeGdrN0sxTDVycjIyejJtZ2w3eDhLUldhRlBOZjhtbVBNbjNxRXl0aDh6eGRVYzV4cm51QnlzWVVDREh6ZkFQMURsZQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-05T18:33:58+00:00",
-      "fetched": "2026-08-09T03:00:41.333755",
+      "fetched": "2026-08-10T03:09:54.082740",
       "systems": [
         "EIP"
       ],
@@ -1329,30 +1357,7 @@
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOaEpVamxmMTBKRUlUVDdTLWI1WlJwY3hTYW05ZjFnX1V4YWFWLVliZHR1d2VWZVI2T2lETjdxZ0xtY2xLMEpFUHZTbzVCaXhqTzNLaF9aTjFaVm41eVl6dDBJUTlOMl9vRktnNEgyR1FEZ0RuanFXTC1CeUZNTF96b184bE92UDB5ekdYVXhHVWJpdlBKRWZ3bVZwM0VEMEVxSEhhbGREdTVURnEwMXlLbWsyY2NnbUNfR0ZR?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-03T20:14:06+00:00",
-      "fetched": "2026-08-09T03:00:41.934476",
-      "systems": [
-        "EIP"
-      ],
-      "types": [
-        "AI應用"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 55
-    },
-    {
-      "id": "art_9b384b65cd",
-      "channel": "rss",
-      "source": "Workday",
-      "brands": [
-        "Workday"
-      ],
-      "title": "Workday's AI Initiative to Transform Business Training - Business Chief",
-      "summary": "Workday's AI Initiative to Transform Business Training Business Chief",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZzZmZFhpMlNxek1pNy1oRHgyeGRxWlBhYnJnZEFhVDBPT0l3VHZseGhzeXdPS3NHU0FFRTdpbUdIaFVRUnRCSVJCTzFjSnZGRWV4WlJ0dDFmeDVFaGZSQ1RvTlhxODlIa3pxTjRCNVNfV2Y1Um1zX2NSUWVmWUxzQUpQVUhiLTJqSTJ4bQ?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-03T07:00:00+00:00",
-      "fetched": "2026-08-09T03:00:43.135843",
+      "fetched": "2026-08-10T03:09:54.683441",
       "systems": [
         "EIP"
       ],
@@ -1375,7 +1380,30 @@
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQkVfTWJwUUdFd2hDdkVjMWU0MjlONERwUkV4V092ZFpmalJGaV9OdjJfcTVMeDRZLUp4TzhWODk4b0dDdndYdkl3cmZpOVMzMWdCbmI2NkpPaVZKS1c4ekRfVDl2NlJPcGF3eThlZXpPM251MVhIRkp6WTRUclF2OV9oeUctZk03cjFYX0E1Vm9XZlVReGpFRnVxZ1FBZTBxS3ctaEdfZ2ZUMHczZHc?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-04T07:00:00+00:00",
-      "fetched": "2026-08-09T03:00:44.337222",
+      "fetched": "2026-08-10T03:09:55.284142",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "AI應用"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 55
+    },
+    {
+      "id": "art_9b384b65cd",
+      "channel": "rss",
+      "source": "Workday",
+      "brands": [
+        "Workday"
+      ],
+      "title": "Workday's AI Initiative to Transform Business Training - Business Chief",
+      "summary": "Workday's AI Initiative to Transform Business Training Business Chief",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZzZmZFhpMlNxek1pNy1oRHgyeGRxWlBhYnJnZEFhVDBPT0l3VHZseGhzeXdPS3NHU0FFRTdpbUdIaFVRUnRCSVJCTzFjSnZGRWV4WlJ0dDFmeDVFaGZSQ1RvTlhxODlIa3pxTjRCNVNfV2Y1Um1zX2NSUWVmWUxzQUpQVUhiLTJqSTJ4bQ?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-03T07:00:00+00:00",
+      "fetched": "2026-08-10T03:09:57.085912",
       "systems": [
         "EIP"
       ],
@@ -1398,7 +1426,7 @@
       "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYS1iRWJVamJ2NEI2RXlVM2pETENCZVh0YkpkckV6NFZKMElHS2ZlNzRDTGZEMzJZTTVfX0RvLWJYWWFxTlJDaFVhR1VTOGtVaEhtZnoxZWdOZnJIclZST0hjZVNtUEdadFpJbEdHbkNhQkdTX2M3WnRzVWluRnhvdEJ0dk5MZ1Z1WVVaallNNG8?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-06T11:00:00+00:00",
-      "fetched": "2026-08-09T03:00:44.937930",
+      "fetched": "2026-08-10T03:09:58.887692",
       "systems": [
         "EIP"
       ],
@@ -1421,7 +1449,7 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNVAxaktaTzB1OElwcmRXek1fUkRmcjk4REZzVW5ybUVlNVZ1N0pLM3dJQ1o5Vm5zcHgwMWc4RDduN3doVmwyTXpRanBGNy1TcDhVMjg2VkI5ZFZDOS1IU0tfVC1ZcVlrU1BwRE5hR0FrM2R4X1JvQk5YWUlzTHFIWDlEUDFhQ0RmbU92RC11Yk5OaVFJaFhCSWlB?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-04T11:00:09+00:00",
-      "fetched": "2026-08-09T03:00:46.739814",
+      "fetched": "2026-08-10T03:09:59.488402",
       "systems": [
         "EIP"
       ],
@@ -1433,18 +1461,18 @@
       "score": 55
     },
     {
-      "id": "art_4f12e325cd",
+      "id": "art_b35bca8b23",
       "channel": "rss",
-      "source": "Apollo",
+      "source": "Workday",
       "brands": [
-        "Apollo"
+        "Workday"
       ],
-      "title": "Apollo to Buy European Budget Airline easyJet for $7.7 Billion - WSJ",
-      "summary": "Apollo to Buy European Budget Airline easyJet for $7.7 Billion WSJ",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdnptcHVKZEFhWlhkTkRER3lCWWVBNEJhbkh1OVZHRVdaWE41Ql9jZUtYaXFaNjBReDlIOTVMWHNUOVNuLXNHRXQxZjY0MVNYcHNVbDB1WVRaeWw0WnotWEpCQXJHWnhJNFh6a09DalB5Q3VhdnMyTkFoaE1BUXZ5UXFCWV9HeVpuM05BOHdLWkxEYnpZOUJZbXVhZVdic3ZjaWlSbU5CcE5waFpK?oc=5",
+      "title": "What Workday, OpenAI, and a German court have in common - Gradient Flow | Ben Lorica",
+      "summary": "What Workday, OpenAI, and a German court have in common Gradient Flow | Ben Lorica",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1rNUkwTFEzQUt5dDdHeG1HeFQ5d2xNSzN6ODh3Tjk1M3VOVWFpVlZLVk1CTE1GQ2lKUUh4SXNTLUdKOWdKb1N4VGN2Q0pZV3F3NElEeGRZWUxpS0t5a1JZWlRSZElPdnMzTGY2LVg3RjdNX3hkTTlnbTVn?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-06T17:15:00+00:00",
-      "fetched": "2026-08-09T03:01:02.625231",
+      "date": "2026-08-04T13:01:30+00:00",
+      "fetched": "2026-08-10T03:10:00.089192",
       "systems": [
         "EIP"
       ],
@@ -1467,7 +1495,30 @@
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNanBXWEw5alMyMnpncGpTN2RXUmlrY1J3OEI1QWI4RmNTVEQ4X2NfUWZjYWZoekFSbUFibFA5VFRjS05iX3B5REdJcWRON2RpWUlReDhXODNNdVM3SnRNTWRaTWtKLUJLODd5QlA1eGplRlM2cmxwX3ZRSkJRdFVDY1o3NkRlT1VBZW1Sb1Z2RzRwWmxIUGw00gGcAUFVX3lxTE4zUnlHVF9fYTFjakJ5eWZOYVF0emZUVEp5VllBNVBsMUxvS3g1anVGUXVrUWY1V09xc3JkWEFwMnBwTHZJcTI3THhNUFByVE5LQzdiY1VEVVBISy03Ym4xSnJoWVIwWnZUdmx4Y3NiOVRxYWJoM1BkRVhuZ0lxOGhfakZpUWhHbW43N1k1WHFmWVd6cTAxZWZSREc2Vg?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-06T14:20:10+00:00",
-      "fetched": "2026-08-09T03:01:03.826519",
+      "fetched": "2026-08-10T03:10:17.193149",
+      "systems": [
+        "EIP"
+      ],
+      "types": [
+        "AI應用"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 55
+    },
+    {
+      "id": "art_4f12e325cd",
+      "channel": "rss",
+      "source": "Apollo",
+      "brands": [
+        "Apollo"
+      ],
+      "title": "Apollo to Buy European Budget Airline easyJet for $7.7 Billion - WSJ",
+      "summary": "Apollo to Buy European Budget Airline easyJet for $7.7 Billion WSJ",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdnptcHVKZEFhWlhkTkRER3lCWWVBNEJhbkh1OVZHRVdaWE41Ql9jZUtYaXFaNjBReDlIOTVMWHNUOVNuLXNHRXQxZjY0MVNYcHNVbDB1WVRaeWw0WnotWEpCQXJHWnhJNFh6a09DalB5Q3VhdnMyTkFoaE1BUXZ5UXFCWV9HeVpuM05BOHdLWkxEYnpZOUJZbXVhZVdic3ZjaWlSbU5CcE5waFpK?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-06T17:15:00+00:00",
+      "fetched": "2026-08-10T03:10:21.997601",
       "systems": [
         "EIP"
       ],
@@ -1491,7 +1542,7 @@
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWExkcDdOYXJBSzF6dFU3T3pZNllpRzFxVTFiNEZWNHEweDhBa3VyTEtKaWdZNUwxeGktdUZPa3Q3dW91dXZLNkkxcUZxLUpIdkozWUVDSWxrTVpOZDMzTmhDRTlOQzBnYTB4cXAzZ0NHWVh2ZFRtR29QeV9VQ0JMWQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-06T14:41:39+00:00",
-      "fetched": "2026-08-09T03:01:11.538713",
+      "fetched": "2026-08-10T03:10:24.912615",
       "systems": [
         "EIP"
       ],
@@ -1503,7 +1554,7 @@
       "score": 55
     },
     {
-      "id": "art_e18d6d4022",
+      "id": "art_52383db6f5",
       "channel": "rss",
       "source": "HubSpot",
       "brands": [
@@ -1511,56 +1562,10 @@
       ],
       "title": "HubSpot (HUBS) Adds Former Google AI Leader Jerry Dischler To Its Board - simplywall.st",
       "summary": "HubSpot (HUBS) Adds Former Google AI Leader Jerry Dischler To Its Board simplywall.st",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPN1lVUG1UUm9IV1ZlZ05ESUt6aC1pc19pemc3SjNUbXRmWExGd3NuTGdYR2twN2w2ZkdVLVR4SnNjVjZjek1zWXFXUTVJUXVKNFdqaWhOVm4yNE5veV9TZ0FweThVajRGYTJFUVIzUTBQUjBxdE1OdnN4ZlBGYzNaRlJVM1d4a003bllrV0JZYXhkSTRRVEhERl93X1RYY3RBazhXNGN4S1RWdzdMY1ViNDRSZHplVXBBckpkWFlqMDJFdUhnRHfSAcYBQVVfeXFMTzdZVVBtVFJvSFdWZWdORElLemgtaXNfaXpnN0ozVG10ZlhMRndzbkxnWEdrcDdsNmZHVS1UeEpzY1Y2Y3pNc1lxV1E1SVF1SjRXamloTlZuMjROb3lfU2dBcHk4VWo0RmEyRVFSM1EwUFIwcXRNTnZzeGZQRmMzWkZSVTNXeGtNN25Za1dCWWF4ZEk0UVRIREZfd19UWGN0QWs4VzRjeEtUVnc3TGNVYjQ0UmR6ZVVwQXJKZFhZajAyRXVIZ0R3?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOM1FDNlVxWTNMaGtpQ0Fhcjl5WWRLR21EcF92bWFXUm9sQzZZREg4Z1ZCcF83RjJUM0d4VmEwd0RveFRjZUlQMGpjVzZPMEQ5NldTX3RmQ21GMEVuVEVGbHFrUzhXMzlCTW9WbEl5RVY2Ry1LeGZXeUFIMFRQWk9JejFidEJtVWhabU9FYUZ2Um5XS0YxbWxMMm1YbHZEYUVZMV9mbThOb29mbmN3NVI2OHNuVTExaHJkekZuY0ZrU0TSAcYBQVVfeXFMTzdZVVBtVFJvSFdWZWdORElLemgtaXNfaXpnN0ozVG10ZlhMRndzbkxnWEdrcDdsNmZHVS1UeEpzY1Y2Y3pNc1lxV1E1SVF1SjRXamloTlZuMjROb3lfU2dBcHk4VWo0RmEyRVFSM1EwUFIwcXRNTnZzeGZQRmMzWkZSVTNXeGtNN25Za1dCWWF4ZEk0UVRIREZfd19UWGN0QWs4VzRjeEtUVnc3TGNVYjQ0UmR6ZVVwQXJKZFhZajAyRXVIZ0R3?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-06T14:41:59+00:00",
-      "fetched": "2026-08-09T03:01:14.601204",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "AI應用"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 55
-    },
-    {
-      "id": "art_31acd3b710",
-      "channel": "rss",
-      "source": "HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "title": "Hubspot faces largest single-day stock drop in 12-year NYSE history amid AI concerns - The Business Journals",
-      "summary": "Hubspot faces largest single-day stock drop in 12-year NYSE history amid AI concerns The Business Journals",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaEx4eTc5bkNHbTcwRTktMTRBQk5sVGhweHlMTUtqWDRONHdKZUs4MUxRZEQ2T05fbFVQRzFmQzlNSFl2ZDM2SU5ndjltY2xSS0tia0dyYzBXQ0dYY2ZCbnliNXZ6WnVIUGQ3ZTVrbTBZeDI0eDNyOV9NaTZiZzlMYVEzYw?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-06T18:05:00+00:00",
-      "fetched": "2026-08-09T03:01:17.003874",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "AI應用"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 55
-    },
-    {
-      "id": "art_466de1de9e",
-      "channel": "rss",
-      "source": "HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "title": "HubSpot Inc (HUBS) (Q2 2026) Earnings Call Highlights: AI Adoption Surges Amidst Cautious ... - Yahoo Finance",
-      "summary": "HubSpot Inc (HUBS) (Q2 2026) Earnings Call Highlights: AI Adoption Surges Amidst Cautious ... Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUHA0U3FwWWcyR250TTFQR2tnUjJzMF9UUnNZTmZaQ25QZzhRSmxMVEhJZU81aDV6Y25UWWdpZzNrMk91T2s4V0ZTMkM5NmVJdFpPeGdHYzhhdTk2MDlweE1ieWRpX2dhX1FVb3VOQmNfaU1Yek1TQkljeXBJSmdOTEtubEloOHJfX1VJTjkxY2JGUQ?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-06T05:12:00+00:00",
-      "fetched": "2026-08-09T03:01:19.406577",
+      "date": "2026-08-06T14:41:58+00:00",
+      "fetched": "2026-08-10T03:10:26.719784",
       "systems": [
         "CRM"
       ],
@@ -1584,10 +1589,10 @@
       "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPYlR5ZlFQYXlreGFHaEJuclpBOTJacll2TzhYOVhhUjgwTTN1TjZYYVFDRjZULVhiQjhkVm1zVmppcnBhaFRSek9JQUFmUjY3R1pUNU82Zktmamp6RkY2QV9TOVI5WnFvSzduM2hLYlVUcE1UNTNOZDd3MVVXNTBpYUlSWmhIekNZQjJDMjR3MWh0Ykc3ZXV3WFFEMzNHRjRUY3pROFF0ZnZIUjdjNm1wdFJ4YzBSOFJIVkRTZHloTHpyNjdLZVZ4cUFYaWd3SXZQU1RERnBzY3JDWDdYTVA2enRhQVI2eFBxdTlvWmxvWE5WLXJrcXg4?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-06T13:00:00+00:00",
-      "fetched": "2026-08-09T03:01:24.343049",
+      "fetched": "2026-08-10T03:10:35.846176",
       "systems": [
-        "CRM",
-        "EIP"
+        "EIP",
+        "CRM"
       ],
       "types": [
         "產業趨勢"
@@ -1608,37 +1613,12 @@
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUEcxWXhKX0wtLVpiX2F0MkhXREE2M2VoSm9FaVRpWXVRMlJYcVhqel9heVd5dWZkc2JNNmtGcVdRdVdXMHdBTV9lczRMSkE0X3NpcDAxaE9VQjEzS2d0RmRwWFg0ZVE5RUswVzFSSVFkMkRDWjlzZkhlLTRzVGxQdldIcl9xVW1aRjFEVldaX3F2RjdXS3o5SjJrY2w?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-04T15:51:20+00:00",
-      "fetched": "2026-08-09T03:01:24.943720",
+      "fetched": "2026-08-10T03:10:38.248467",
       "systems": [
         "CRM"
       ],
       "types": [
         "AI應用"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 55
-    },
-    {
-      "id": "art_bd5757a7d7",
-      "channel": "rss",
-      "source": "Stripe",
-      "brands": [
-        "SAP SuccessFactors",
-        "Stripe"
-      ],
-      "title": "Synchrony Financial And Stripe Enable CareCredit Financing For Health And Wellness Providers Using Stripe - marketscreener.com",
-      "summary": "Synchrony Financial And Stripe Enable CareCredit Financing For Health And Wellness Providers Using Stripe marketscreener.com",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNRWxCbUptMjhaaDFtd0dfQV9HbW9uRXJRa21TWV9WMWJLQ01pYzJSX3RTRXZhRnFuaGRQMmhHbi1RdHJnRDFoMXFkVWpUdVdYMVhoMFBCVk1adWo0TzhoYjlLbWRhOHZ5eHFGWU5fcXcxRlhhRjEyRUtRZ0RsNTF0Uk9wenRsMllPNVN6TDhSc2xiVGs3VUlmTnJKWG5BUFc0cVV4YTgwNWI4YjhzUFBQRWZQM3ZBbVRxaTB3dzZQM3kyUUV0bHZlYUc1WWJNLVZzWDVIUlFTdU5RcVpWWVEtdlh1aEFEZVQ5?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-06T14:36:26+00:00",
-      "fetched": "2026-08-09T03:01:29.148632",
-      "systems": [
-        "CRM",
-        "EIP"
-      ],
-      "types": [
-        "產業趨勢"
       ],
       "is_zhtw": false,
       "lang": "en",
@@ -1656,7 +1636,7 @@
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBRT2pQdWZwMm1HcmdqdFVteVZhbG1zc0ktWDBWYkRwN294SmxnR3pQTUY0Vk9pVDVoVDJNRDNPdnBCMjNseGtmQTYtek0tU1VmdTV5S1U0N1YtOTFmaExablJlQQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-06T11:26:00+00:00",
-      "fetched": "2026-08-09T03:00:39.531873",
+      "fetched": "2026-08-10T03:09:52.281102",
       "systems": [
         "EIP"
       ],
@@ -1679,7 +1659,7 @@
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNX3M4SGprcVRtdWZYMjl1c2c5ZklpSU5BbmlGSFYxZzhEU2dkYWhtd2dHbi1RcHUzR29qSUJJakJIN2tLMUFtRkJiMnpIMW1nWXR0X2Z0NV9EQjAzSjRlMHN3Nm9WaGdyUENlWGFuT2JXLVUxdXRoTzB1eS05eDhITDRlOW5DUm5NdE5GaldNd0pwNG5PY3VSTHFVQU42WDN5MG1EMDlVempXNzJSVTJnQ2xiZTk4Y0tOcVdtYkRObw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-03T12:30:00+00:00",
-      "fetched": "2026-08-09T03:00:43.736566",
+      "fetched": "2026-08-10T03:09:56.485308",
       "systems": [
         "EIP"
       ],
@@ -1702,7 +1682,7 @@
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUEQ0MHVlZ2hvY3E4Sk0wSUN5UHROR1dqU1VWdWZOMHBZUGgxbklSTFo2LUc3eFI2QzJKbTE4WUcwczB3a2VDbVV0ZzNNRDZvTF9Mc21SQThLSGFUdTRIcHpESUNEMWZia1lMYVRaWU9MRXVOQ2JRVGhIVWJQaldqbW1aZjN2WUpzLS0ydHo4ajJlN2RwTnlvek9LNU5kVC1CZENQdHpB0gG8AUFVX3lxTE5vX0d2WXhmWE5RWkhiWUs4LVRBMXJ1WFo5UkpmZDhuQkpKVnNialAzWk9FQ1JiN1gwVXBZYjR2M01jU013eGFXcjBTQno5RExlZUVscVk3aUQ3YzBaanJVSzlOYlVYNFRxa25rcUVCOEFSVW5rcjRIQkkwM1UwWm83d01jVENiN2NqdlJFQWJKNVFaZ2dvbVgtenVuUXZNZFdMWWs5WF9pckR1WmJFbjU3X0E4NW9WSWNmQW93?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-04T21:23:26+00:00",
-      "fetched": "2026-08-09T03:00:45.538602",
+      "fetched": "2026-08-10T03:09:58.286966",
       "systems": [
         "EIP"
       ],
@@ -1725,7 +1705,7 @@
       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNM1NlQU55SjVHMHhCcXlOWFNRNVREN2pOS2FEZ2xVUVBOZUZ2VEZNUmR6Nkh5eG8yWFdURDEycWtDTk9ReHZ5RF9RZmw4ekZ0VmJGWWhYX1ppTlliUi1lTmpKX3NNdS1XdGpyakVlTW1LOHVSUEo0cjBFcW5SRExaOEVUMlByZ2FJUXZCS3lDMjFQbFAzTjJ6Z1Vtb196S3JLUGhVMWhId25IMm5LYmR4ZTZxcUR0U05LM0J6eWo3RnlXWHFpci1QZjQyMUVjOURqcG9kNWF0UHNCYXZLaExNMjI2bm5BQQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-05T08:46:11+00:00",
-      "fetched": "2026-08-09T03:00:50.893043",
+      "fetched": "2026-08-10T03:10:03.661420",
       "systems": [
         "EIP"
       ],
@@ -1748,7 +1728,7 @@
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRkZQVTJRMGVjX1J3b2VSb19Gc2JFckhHVWRrQzdESnE5WGRfVndZOWE5bmdqQU5KM29UMzlUSzRTcExJTGxLcFRwUXpqNThHU2t5X1d5SHZKbW40cTI2amZFUjFhQXhyYnAtMU9VYjJvZEZLWVFaVDNwMlozcVFLTGl1WTE?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-04T10:33:10+00:00",
-      "fetched": "2026-08-09T03:01:04.427240",
+      "fetched": "2026-08-10T03:10:17.793855",
       "systems": [
         "EIP"
       ],
@@ -1771,7 +1751,7 @@
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYy1Qek1seUVyQlVFZ2RkNEtUTnc2YWk5NV9GRGtQdGJOLU81M2lDSlg3VUlRTE5lbHdtT2NIZFVFd3JhMVBvVEJFWEsxYm9LMkRmUnl3N05uTjcxR05DWTBrSXdQUC1acGhCT253cjh1Y1NsakY2VnUtdnRVdWZrcWtkbnJpU3ZzdDlYc2MtR0RpVHotY3dmaVNIS2h6U1o0S3AtY1hhVzFIcDVjZWlIdkZ2VXRkdDl4UzZRaEdrMWc?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-04T17:31:27+00:00",
-      "fetched": "2026-08-09T03:01:09.232188",
+      "fetched": "2026-08-10T03:10:22.598163",
       "systems": [
         "EIP"
       ],
@@ -1783,30 +1763,7 @@
       "score": 50
     },
     {
-      "id": "art_6158ed9882",
-      "channel": "rss",
-      "source": "HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "title": "HubSpot’s (NYSE:HUBS) Q2 CY2026 Sales Beat Estimates But Stock Drops 20.2% - Yahoo Finance",
-      "summary": "HubSpot’s (NYSE:HUBS) Q2 CY2026 Sales Beat Estimates But Stock Drops 20.2% Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWFlWbWhUeTY1QkE1eW8zX2RXLU40b0hhVkZ2ZFBrTnhYWXVvT2VZakpUXzhlTUZBaVZkcXdpUW1hN1BMc05hWEx4eElrdFdZNk1uSFR5RWdzR0lyeVdqeWd2MDJraFBiWlh5T1F4M1YwdlVWX2EtbGo5eTU5ZmduZXJCd19PNE41QlBhWFNfNWI3ZFZHYWFn?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-05T22:11:43+00:00",
-      "fetched": "2026-08-09T03:01:12.799078",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 50
-    },
-    {
-      "id": "art_a537135578",
+      "id": "art_9f4a887943",
       "channel": "rss",
       "source": "HubSpot",
       "brands": [
@@ -1814,10 +1771,10 @@
       ],
       "title": "HubSpot Q2 Earnings Call Highlights - TradingView",
       "summary": "HubSpot Q2 Earnings Call Highlights TradingView",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVVRPQ3BnM3V3b1FwNWVoSml3eFhmd0IydE4yYVVjRDNQeDBrVWFidE5IX1hQWVdCeDVOX2twSDV6MC14bkczU1hpQlN1M05aOG5odENSaEsyWnJWZnZubmsyMTdXeXpiOVZWZmd1elRqZEdRUktXaFpoMlF3VkxZZGlVOVlSVGlhdkVYVG1oMS1fNnNKU2xhd1dXaEE?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObUstN1RSZWlRcm1memdHUHFLelBJaEViQnNvVXo1Z2o1SmY1MGEtN0FWRWNUOXVKWHRKQ05IUld3ZWdBRklOeHRnTG02NTdlTGExUkhmMVJqVnl2Yk5vR2hDa0hZQ01fUUUxQ0JjYUhtak1iZ2lBQjFUVUNkZ2dfWmhYQXczZjQ3UjRvaVFUTktJVnhIcHV4cmJCZw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-08T13:04:04+00:00",
-      "fetched": "2026-08-09T03:01:13.399753",
+      "fetched": "2026-08-10T03:10:26.119197",
       "systems": [
         "CRM"
       ],
@@ -1829,18 +1786,18 @@
       "score": 50
     },
     {
-      "id": "art_1f5fed2324",
+      "id": "art_8e46906ef0",
       "channel": "rss",
       "source": "HubSpot",
       "brands": [
         "HubSpot"
       ],
-      "title": "HubSpot Customer Agent Resolves 72% of Support Tickets Without Human Escalation - CX Today",
-      "summary": "HubSpot Customer Agent Resolves 72% of Support Tickets Without Human Escalation CX Today",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWmgyZHV0UUVleExhU3U3QzFCVUt5M3Qyc2ZxVklDaHg3YnZ1b0RMN3N6MHJNVy04OFVFaDhwSUF2cy13VzY5WTk2UE0yRWZCaExWaW1NOTlkOHFjUDducmJ0dnQ4Q0xZX3dUZm1HVlZlTkRtZUhVUjR3MXJnT3Q3UUJsSml5dmJ0QW8w?oc=5",
+      "title": "HubSpot (HUBS) Reports Q2 Earnings: What Key Metrics Have to Say - Yahoo Finance",
+      "summary": "HubSpot (HUBS) Reports Q2 Earnings: What Key Metrics Have to Say Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdmFycS1STWkwQ2xrZTJOdkZSQnNqeHZEWkQyTFJiRGdudnZjNHRDUlR5YW42bG92aVlBTHQ2elF4cWZ3UVZtR01xQ0lrbFVZN1VicFIxak9JQXNsMGFwRlRhaUtxQW13TEkxRWRCamRhOGIyOUcwZTNwRHZvaFFod29wVzcyMnczZ2lZS1FLV1FmN1F4M3lzU1BvUWFhUQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-06T11:45:22+00:00",
-      "fetched": "2026-08-09T03:01:14.000452",
+      "date": "2026-08-05T22:00:04+00:00",
+      "fetched": "2026-08-10T03:10:27.320354",
       "systems": [
         "CRM"
       ],
@@ -1863,7 +1820,7 @@
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSnAwU09NVk9Kb3Y5ZlRzMVJVS0NYbUNZVFlZSnlVdW1aNFlZY2pEWHVPV0RpR2tDbFdUOG5tT1lMUmxycFFqeXI1TkhFaHQzdTBONVg4STJza3NWX0IyTGVOZFQ5RVEzdmpQT04yQWwteDVMS3pfUlllMllWc0lGekdpZ2FuYTNnRG5sYWZtN1lVY2NWRWJEOTVCTXJnOVlqUWtMa2F1SFlFQWdqZ0FNM0t6ajJ4R2ZwOHRJbFh3MA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-04T03:56:02+00:00",
-      "fetched": "2026-08-09T03:01:15.201892",
+      "fetched": "2026-08-10T03:10:27.920986",
       "systems": [
         "CRM"
       ],
@@ -1886,7 +1843,7 @@
       "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVWVrSVNuSFduVUE5UDI1QUF6VUVsUXRvNnU5UDlIUTJYT2FYSDc4anN1eTBFUWMtYnktUmpnZXRKQnlzX3J0cE01S21xMnZ0NTRFcTI2OEo3cGM0NnA5TzAzNDMtZHJUdVZ5b19hQ0g0SkwzUmFSbHk4Z25nV2twZDBJYzM3dTd1MGhoZ0VJLVJDck5zV0lwOUhZQWRLdlZYR1AwclVMQ2NOQkZRRkJVT1JRVHpleWFrUVV3ZWZkVUJ2YVlRcVVWekpFeS11c2tyM2NYcUNVWQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-05T22:11:00+00:00",
-      "fetched": "2026-08-09T03:01:16.403204",
+      "fetched": "2026-08-10T03:10:29.122197",
       "systems": [
         "CRM"
       ],
@@ -1898,18 +1855,64 @@
       "score": 50
     },
     {
-      "id": "art_53fba7a4d2",
+      "id": "art_42fba43753",
       "channel": "rss",
       "source": "HubSpot",
       "brands": [
         "HubSpot"
       ],
-      "title": "HubSpot: Q2 Earnings Snapshot - Yahoo Finance",
-      "summary": "HubSpot: Q2 Earnings Snapshot Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZndZenhwemRDQTRLTTZKcThJNVBXSDZqM296UXFkS2RGbXE0SnM3eUZwUTlqM3J6WUdlYzQ1WkxybzdNOG5EVWZZQWNVMlpsem1JaXMxcmszZGdJd2hxcHRpOEZiSFc2ZjQ5RUpGODY2ckdEeV9qaDQ2cU1IMzBSaDg2Q1hsVEJQTzJtTHVxX0FVUVZXeDVCYQ?oc=5",
+      "title": "KeyCorp Cuts HubSpot (NYSE:HUBS) Price Target to $285.00 - MarketBeat",
+      "summary": "KeyCorp Cuts HubSpot (NYSE:HUBS) Price Target to $285.00 MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOLXNtLUFkU0lIa1lMUUwzZEFPNE9tajBIektDenRSN3R6SlQ0MDNzUDRGaHRGXzdObDhuREJmZG4zYVRoYjBUc3BWM2VnVHVLSzFMS0k0NnVWWnZOc0VmMHp2VThBeEhkSFJ5eUw0VFIxR01ReU1ZejhFbXpOQ01qM3J1VHNhNWNGam5IWWVHSWQwWXFBdFdCd3RuNHBWMm1JQ0tEWDlMVGE?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-05T20:21:59+00:00",
-      "fetched": "2026-08-09T03:01:18.205209",
+      "date": "2026-08-06T15:51:43+00:00",
+      "fetched": "2026-08-10T03:10:30.323275",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 50
+    },
+    {
+      "id": "art_27c11eac71",
+      "channel": "rss",
+      "source": "HubSpot",
+      "brands": [
+        "HubSpot"
+      ],
+      "title": "Why HubSpot (HUBS) Is Down 11.3% After Cutting Revenue Outlook Despite Strong Q2 Profit Turnaround - simplywall.st",
+      "summary": "Why HubSpot (HUBS) Is Down 11.3% After Cutting Revenue Outlook Despite Strong Q2 Profit Turnaround simplywall.st",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNOWtfQm8tZ3pUQ3U1cDJiRl82WldHNHBNeXJ1THBSSDlWSVplNjZRTWlmQjlQZV83NXVLX2Uyd2FiZllFdDVnSkc0elM3OUhlV05hSVROUWk3c0hUTTJ4SF9zbzJXNjhiWF9XZS1nLTlZcXpZbjIzdV9DVWk4VTFxZ1QtczdGd1czT3MySTFKcFBTQml2LWJxU3pFNXlCZTRxQU05VFNrb0VJcGZtTkxsaGVVNUdqT2NYVTZNX2c5VVhoZ9IBxwFBVV95cUxPMS1wdXpwc2J1ZEpSLV9NTnlzTlhDeXJfMDN4aHB0bldCYVVwSXpweFpmQkFWc2wxa0N4R0ptWUtqQXV0ak5CbjdqWGFTU1FMNTUycUlxakNYOUZmSHhiUElVMDh0a0c4TTVNd2xZaEozZ0RGME4ySkE5YmQ3Vm5Ka1hBZUwzU0dUdDVsRnJUalRKcU5TcGUtUjhXNVNjSV9xY25zZkJ0U0VsczROTXBuODZ0SVJUclRqOXdNb2NBOEJqZFlHRS1J?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-09T14:33:14+00:00",
+      "fetched": "2026-08-10T03:10:30.923833",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 50
+    },
+    {
+      "id": "art_f5ed9ee2d7",
+      "channel": "rss",
+      "source": "HubSpot",
+      "brands": [
+        "HubSpot"
+      ],
+      "title": "HubSpot, Inc. $HUBS Shares Sold by Sei Investments Co. - MarketBeat",
+      "summary": "HubSpot, Inc. $HUBS Shares Sold by Sei Investments Co. MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOU2wyY2lNZFZFdERPRHkyN21kanR5SFM2MTc3OEtZUktwcFoweUZRTkZ3a3pCUndrMm9YNnB4eFVVWmFZNjFYTGdMV1J3OGZOUXozRGtFSS1SM3ZOTjBLTmdtd0hUZlEzbzB3VFM4NUJfRENDWVB5dm9MM1ZPZGF2Y1NId2ZsLUlTX3lBQWxPYTU5ZHNJRllUdnR4SmtvdmZ5VUNveFVxa1dtWjNpYzNvaw?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-03T09:45:12+00:00",
+      "fetched": "2026-08-10T03:10:32.125098",
       "systems": [
         "CRM"
       ],
@@ -1932,7 +1935,7 @@
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQRWF2Rm5hUGZKdzJGd3h6ZmhjWVZuRUtzUExINWhQNFViUTh3SXhzS2JBM3ByWXRxOXVtNmktWDdidkZhYlg3MGpFTVcyOVVnWnAxU2NaUnBJNS05S0RnVmRaOWRIanhKM1oyOHE3cmp2czJOdHNOa2NIdjJLNXNsbDFaZkFJUkZjQ0lsSFcwYzdiREM4c01yQkhmUDlyRVU1N1A4cER0dG1Pd2l3OE5zMVVEeEp1Zw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-07T00:38:36+00:00",
-      "fetched": "2026-08-09T03:01:23.141595",
+      "fetched": "2026-08-10T03:10:37.047319",
       "systems": [
         "CRM"
       ],
@@ -1955,7 +1958,7 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOY2xJM2V3N3phN2h0NjdiT2pMNHNIMzZZdGZyOVBLMUJLV2ZLR1pVRkp0TktLZkZmNUFQanNjWEoxTlB5dklURzMwaXR4Y28wY3ByanhQcEZ1MGp5NHRISEFBSmJpVjJ2YmNJYUtkVkZCb05MdUxuUVpHZDF4U1d2aXNhYWk3akR1akFvdngzcF9URG1lenN3RFQyMlloSWNyQkpVVUZCLTFkWmtubWs4WHVOWQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-04T07:00:00+00:00",
-      "fetched": "2026-08-09T03:01:23.742348",
+      "fetched": "2026-08-10T03:10:37.647906",
       "systems": [
         "CRM"
       ],
@@ -1978,7 +1981,30 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRHZ4YlFUOHJKZFpUQ3FvMk01dnQ3RFVBYjV4MGRmQUZMSGM2ZU96b3VCV3lyVWswTHJSOC1iaW1MeWVkVzFwLXNMaF9sM3lmR1oxVGtjdE52LVB6M0ZzeUVXVGdVVE9RR3BkZEZ1Vjg5UEwzRm94eWhwVHFsc3pFak5wRE1tQTZ0OW56WUtrSnpfcWJndVptdjlqdzFnVUJRNF9sTjF5NXdMUG1yMFhPTklIZFdYTlU?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-06T13:00:00+00:00",
-      "fetched": "2026-08-09T03:01:25.544414",
+      "fetched": "2026-08-10T03:10:38.849083",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 50
+    },
+    {
+      "id": "art_2a0a3ebc3e",
+      "channel": "rss",
+      "source": "Stripe",
+      "brands": [
+        "Stripe"
+      ],
+      "title": "Stripe Uses Graph Search and State Machines to Automate Database Remediation - infoq.com",
+      "summary": "Stripe Uses Graph Search and State Machines to Automate Database Remediation infoq.com",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9Od1hUcUZkMVItYnpwYWJsSzQyS3h5ZWxzYXIwdld2WW5NR3lHbVg1R0locE1tbDczVW5lMzdvMGVSUEJZTTAwZkV5WXdtWG5TUG84cERuUEhKUFFEY3JQb19pekNDblhtdktISTdTVQ?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-09T06:58:30+00:00",
+      "fetched": "2026-08-10T03:10:39.449607",
       "systems": [
         "CRM"
       ],
@@ -2001,7 +2027,7 @@
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPY3g1ODNWZFhEZ2NPazV0YzdLMkhCUEdGdDhMeGptaFliZklvZS1rUjJqOHRna2h2ZENMVkY5aFNDazVkTlF2RWp0U2lFa2lHdFdPWVRjRHNucnRDY0lyalZ6cExFTXlHOHNXdnUwdUhRaE81ZF85QVB3OVhHbXIyblRqZUpFRjlEY2NBUm1XeHJRd1htVzJhSm9JLTl1VVZaZ1B0UGIxUDdDVl9iN2QzcGVTaTg?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-06T16:08:00+00:00",
-      "fetched": "2026-08-09T03:01:26.145115",
+      "fetched": "2026-08-10T03:10:40.050176",
       "systems": [
         "CRM"
       ],
@@ -2024,7 +2050,7 @@
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUk5JdVUxbV9veTh3MXVqZTBmYlA5MS1VTDNhQ2NkZE5lamhvLWg3UTYyTFEtVzRwS0Jka0Q5Y1NaUkdvVFR3QzhpTmo3eTNQZ1NySnBYVkVIbDZqT3hGUFFqcTl1bDNsb0FBNWJqbXVCX0FtVTBaVFoxMjUxWW5OTjFvOUVhU0pFelhkSDNUVWlGUW1EVUtReGpXcVhCOEJ6RkJQLVNKaDlEcUhZenBNQUstR2Jtc3haTDY0eXFPNA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-05T12:00:00+00:00",
-      "fetched": "2026-08-09T03:01:26.745801",
+      "fetched": "2026-08-10T03:10:40.650843",
       "systems": [
         "CRM"
       ],
@@ -2047,7 +2073,7 @@
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQck84SjVjRlR6TFZlSjZRU1JVNFRkdW5WTW9Cc2dmTXFkcDFaNWlJMUhGM1d4RUNkcm8wNG80dWxETEJvQlEwajB4S3FVbkZsek5GY1NkZzlPaEgzRjMxcFJUbU1yaE44dEsxY0UxNzFvSGRlLTlPSUZqZ2VqM29VbEtraDNHcHBkU29tQXJPZTJpTzRPWV9NUUZaMmt0TE90M2I0Y3JMYmlVMXBZRnB3R1NmXzJKcGlPRU1KQmJRM0p1ak9GZkI0T1Vham1QUQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-07T04:03:41+00:00",
-      "fetched": "2026-08-09T03:01:27.346506",
+      "fetched": "2026-08-10T03:10:41.251409",
       "systems": [
         "CRM"
       ],
@@ -2070,7 +2096,7 @@
       "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNaWRpcGVOemFTV08yN2M2U2p0ZjBic2xocWpSc3FWNmN2RHJiMVZWdVNGXzFFN3BUdDJwQndIVk9PU2tDc1otSFhwUnMyaDJDNWdRT1I4S2RaS2NfdXNaa3FwN2YtWW54Zy1DZlhJQ2xPeW5JSzVtZm84OTJvYTZkZlJHMU0xLUswOHpiZ01QLW1TVDF6SVFoRUlOT21qVXM5bk1MY2NnZnlTa09UOW85eU9Gd2g3RmYxcDJDVmFlb2g3dU1ISXp2X2JOeWljQy10eXIyaFNEQllmY19pSDVhVXNNZE5EbUJKajlUQUlHRk52NDVyYXptbWdCYzVkRnVsaVdVNUlKdzc?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-05T19:42:00+00:00",
-      "fetched": "2026-08-09T03:01:27.947233",
+      "fetched": "2026-08-10T03:10:41.852007",
       "systems": [
         "CRM"
       ],
@@ -2093,30 +2119,7 @@
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZVdRbnVSRldYa29ILXZoRVNYaFFpTVcyTmx0MmNkcjllZ0llaFZJbmhXQjFrQ3NmUk5TaHkwR0R2dmZQWW1ERXdwZFRicnl0MHU5WDVUVnkyeDVFamJOeVJ1akpQYVBCa1g1aUVvX3V1OHdybldJdUFLSlJnT3VMXzYwSUxHaC03UTQ3ckZ2RldmM0VldFJNYk9rWjdvSTFLd0NoQ3JNMFNLVXhKdnlyS2hMdVRDTVpjSTg5TjJR?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-08T15:39:17+00:00",
-      "fetched": "2026-08-09T03:01:28.547941",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "產業趨勢"
-      ],
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 50
-    },
-    {
-      "id": "art_7ab038f897",
-      "channel": "rss",
-      "source": "Stripe",
-      "brands": [
-        "Stripe"
-      ],
-      "title": "Penn State football season opener named ‘Stripe Out’ game - yourerie.com",
-      "summary": "Penn State football season opener named ‘Stripe Out’ game yourerie.com",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOREtfa3I3LW95R3RISXVJY1g1OEc1ZU0zQ2U4NEJOTlFpWFhpd3NweF9EMTFZeE16aTRQYVJFU3JuRzJVWW03YjNXc21Hc1A3ZXJLVjFUWUhqekJJNG1qRnRVcmh1U3RmQ0tBOGwwd1FTS2VkYzJHODlLOE5zVWs2RDA1MlM4bnUtZURCd0Z3eTY2MlVIeHl3TVIwUlZ6c1BK0gGXAUFVX3lxTE1DS1ZvLXQ0OXZ3T0pKUG5kVEJ0NTc2ckU5d2Zhd1RyclQ5S21QcUF0Wlg0c1ZhdkRUZEg3dmMyYWhkSlVubjQ3LVVXQWt3aFQzR0pLWWsySmdhX3JFenpwVlVwSzY4emphUWR1LW9RbG5faWNobTBQRlI2WldES0NVRUNfX3Zyc01UMm9QSEtUc3ZreFNtNUU?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-08-05T21:22:05+00:00",
-      "fetched": "2026-08-09T03:01:29.749374",
+      "fetched": "2026-08-10T03:10:42.452616",
       "systems": [
         "CRM"
       ],
@@ -2139,7 +2142,30 @@
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZTRJLUdNVjQ4aHFLakJzS1NUTWxnQ1lpZEMtTjRfNTlYQUw0Z0xtamNiNlRqWURJU0FCdnl5dXdHclRiaEFrQWdlcEptZ2xSUkh4M1otU2FodXRfZUFMNTctN2lKVDl6T3dXRnl6bllGVC1WUzFJMG1QTkxEQUVpOE9OeFJLdDlRLTkyOE9xQzZLUXh1Q21UUm9UQmVvVmVFd3dQdlVSeURnZw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-04T13:30:00+00:00",
-      "fetched": "2026-08-09T03:01:30.350082",
+      "fetched": "2026-08-10T03:10:43.053194",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "產業趨勢"
+      ],
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 50
+    },
+    {
+      "id": "art_8fb311c013",
+      "channel": "rss",
+      "source": "Stripe",
+      "brands": [
+        "Stripe"
+      ],
+      "title": "Penn State football season opener named ‘Stripe Out’ game - WETM",
+      "summary": "Penn State football season opener named ‘Stripe Out’ game WETM",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY3V3a0d2cHh1b1FtOFFlU3dUZ0hsU0tKZlNmZFdQbHhlb240S281ckVIWjZyUVpVdXhHNE9OY0NjXzBNVHlhVERuckNxM0lPNlpyOW9MZ29scFhwYVNlWFlWUFp1QlNhTzhYMU80eENxcnc2VEUxQVYzeWZIVWNZYW9OVGl2bmRWYTBjMnl6NmRjaDJTSjYzddIBngFBVV95cUxPSWp4X2QyMUZwRXVXZGFIMEVIWGhsR1NrSDdyM2I0U2RkS0Y2cGFSZEpQRWczQjhhX01rS1NtME9FSm5TdnNBc2NDbmtyYy1iNzlXaGZMenFKdllwS1U2MW1keFZRTWw4QUppUjZwSkNYYVFfUDVOSDUxanpPVXk5dEk4UTlQNl9SNTJpSjRmQzNKc3R5RzFqTHJldnIzZw?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-08-05T21:22:03+00:00",
+      "fetched": "2026-08-10T03:10:43.653816",
       "systems": [
         "CRM"
       ],
@@ -2162,7 +2188,7 @@
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa0s4aWJ5NmtvdlI2ZkJpTEY4S01QQUwzazQ4eEhmbEhCMVQ3aUpKV2g5V0lQdk0zeXBKOHBET2dmOUY0c3A2QThnOXY0b21oSGJrenFtSEJEYnhoNkVacm8xUWFUeDhEZ2JQaWRQc08wU1F2cUZ3YWNhLWNYUV8tZlgwR3JmYy1XdUtrX0ZRZzhoelQ4dkk1Q2hSdlk2VmdpWHc?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-03T10:39:35+00:00",
-      "fetched": "2026-08-09T03:01:30.950782",
+      "fetched": "2026-08-10T03:10:44.254354",
       "systems": [
         "CRM"
       ],
