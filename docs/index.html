@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>競品情報 · EIP & CRM</title>
+<title>競品情報 · PMS · CRM · HR</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -143,7 +143,8 @@ input  { font-family: var(--sans) }
   border-radius: 50%;
   flex-shrink: 0;
 }
-.nd-eip { background: var(--sand-300) }
+.nd-pms { background: var(--warm-amber) }
+.nd-hr  { background: var(--sand-300) }
 .nd-crm { background: var(--moss-200) }
 .nd-all { background: rgba(255,255,255,.4) }
 .nd-rss { background: var(--warm-amber) }
@@ -336,12 +337,16 @@ input  { font-family: var(--sans) }
 .chip:hover { border-color: var(--border2); color: var(--text); background: var(--sand-100) }
 .chip.active { border-color: transparent; color: #fff }
 .chip-all.active  { background: var(--moss-500) }
-.chip-eip.active  { background: var(--moss-400) }
+.chip-pms.active  { background: var(--warm-amber) }
+.chip-hr.active   { background: var(--moss-400) }
 .chip-crm.active  { background: var(--warm-sky) }
 .chip-ux.active   { background: var(--moss-500) }
 .chip-feat.active { background: var(--warm-amber) }
 .chip-trend.active{ background: var(--sand-600) }
 .chip-dash.active { background: var(--warm-sky) }
+.chip-ai.active   { background: var(--warm-red) }
+.chip-zh.active   { background: var(--moss-500) }
+.chip-ja.active   { background: var(--warm-red) }
 
 /* ── List Header ─────────────────────────────────────────────── */
 .list-header {
@@ -445,22 +450,25 @@ input  { font-family: var(--sans) }
   border-radius: 10px;
   letter-spacing: .04em;
 }
-.tb-eip { background: var(--moss-600); color: var(--sand-100) }
-.tb-crm { background: var(--warm-sky); color: #fff }
+.tb-pms { background: var(--warm-amber); color: #fff }
+.tb-hr  { background: var(--moss-600);   color: var(--sand-100) }
+.tb-crm { background: var(--warm-sky);   color: #fff }
 
-/* ZH-TW badge */
-.thumb-zhtw {
+/* Language badge (top-right of thumb) */
+.thumb-lang {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 10px;
   font-family: var(--mono);
-  background: rgba(255,255,255,.9);
-  color: var(--moss-600);
   padding: 2px 7px;
   border-radius: 10px;
   font-weight: 500;
+  background: rgba(255,255,255,.92);
 }
+.lang-zh { color: var(--moss-600) }
+.lang-en { color: var(--text3) }
+.lang-ja { color: var(--warm-red) }
 
 /* Card body */
 .card-body { padding: 14px 16px 16px; flex: 1; display: flex; flex-direction: column; gap: 10px }
@@ -519,6 +527,7 @@ input  { font-family: var(--sans) }
 .tag-feat  { background: #FAF2E4; color: #7A5520 }
 .tag-trend { background: var(--sand-100); color: var(--sand-600) }
 .tag-dash  { background: #E8F0F5; color: var(--warm-sky) }
+.tag-ai    { background: #FBE9E4; color: var(--warm-red) }
 
 .card-footer {
   display: flex;
@@ -655,7 +664,7 @@ input  { font-family: var(--sans) }
         <div class="logo-mark">情</div>
         <span class="logo-name">競品情報</span>
       </div>
-      <div class="logo-sub">EIP &amp; CRM</div>
+      <div class="logo-sub">PMS · CRM · HR</div>
     </div>
 
     <div class="nav-section">
@@ -672,13 +681,17 @@ input  { font-family: var(--sans) }
 
     <div class="nav-section">
       <div class="nav-label">核心系統</div>
-      <div class="nav-item" onclick="setSystem(this,'EIP')" data-sys="EIP">
-        <div class="nav-dot nd-eip"></div>EIP · 人資系統
-        <span class="nav-count" id="cnt-EIP">0</span>
+      <div class="nav-item" onclick="setSystem(this,'PMS')" data-sys="PMS">
+        <div class="nav-dot nd-pms"></div>PMS · 旅宿管理
+        <span class="nav-count" id="cnt-PMS">0</span>
       </div>
       <div class="nav-item" onclick="setSystem(this,'CRM')" data-sys="CRM">
         <div class="nav-dot nd-crm"></div>CRM · 客戶關係
         <span class="nav-count" id="cnt-CRM">0</span>
+      </div>
+      <div class="nav-item" onclick="setSystem(this,'HR')" data-sys="HR">
+        <div class="nav-dot nd-hr"></div>HR · 人資系統
+        <span class="nav-count" id="cnt-HR">0</span>
       </div>
     </div>
 
@@ -765,8 +778,9 @@ input  { font-family: var(--sans) }
         <div class="filter-group">
           <span class="filter-label">系統</span>
           <button class="chip chip-all active" onclick="setSys(this,'')">全部</button>
-          <button class="chip chip-eip" onclick="setSys(this,'EIP')">EIP / 人資</button>
+          <button class="chip chip-pms" onclick="setSys(this,'PMS')">PMS / 旅宿</button>
           <button class="chip chip-crm" onclick="setSys(this,'CRM')">CRM / 客戶</button>
+          <button class="chip chip-hr"  onclick="setSys(this,'HR')">HR / 人資</button>
         </div>
         <div class="filter-sep"></div>
         <div class="filter-group">
@@ -776,10 +790,14 @@ input  { font-family: var(--sans) }
           <button class="chip chip-feat" onclick="setType(this,'功能更新')">功能更新</button>
           <button class="chip chip-trend"onclick="setType(this,'產業趨勢')">產業趨勢</button>
           <button class="chip chip-dash" onclick="setType(this,'Dashboard案例')">Dashboard案例</button>
+          <button class="chip chip-ai"   onclick="setType(this,'AI應用')">AI應用</button>
         </div>
         <div class="filter-sep"></div>
         <div class="filter-group">
-          <button class="chip chip-all" id="zhtw-btn" onclick="toggleZhtw(this)">🇹🇼 繁中優先</button>
+          <span class="filter-label">語系優先</span>
+          <button class="chip chip-all active" onclick="setLangPri(this,'')">全部</button>
+          <button class="chip chip-zh" onclick="setLangPri(this,'zh-TW')">🇹🇼 繁中</button>
+          <button class="chip chip-ja" onclick="setLangPri(this,'ja')">🇯🇵 日文</button>
         </div>
       </div>
 
@@ -815,10 +833,19 @@ let all = [];
 let filterSys     = '';
 let filterType    = '';
 let filterChannel = '';
-let filterZhtw    = false;
+let filterLangPri = '';   // '', 'zh-TW', 'ja'
 let searchQ       = '';
 let sortMode      = 'score';
 let bookmarks     = JSON.parse(localStorage.getItem('ci-bm') || '[]');
+
+// 舊資料相容：以前的 systems 值可能是 'EIP'，前端一律映射為 'HR'
+const SYS_ALIAS = { EIP: 'HR' };
+function normSystems(sys) {
+  if (!Array.isArray(sys)) return [];
+  return [...new Set(sys.map(s => SYS_ALIAS[s] || s))];
+}
+// 語系優先權：繁中 > 日 > 英
+const LANG_PRIORITY = { 'zh-TW': 3, ja: 2, en: 1 };
 
 // ── Load ───────────────────────────────────────────────────────
 async function loadData() {
@@ -829,7 +856,7 @@ async function loadData() {
     const r = await fetch('data/articles.json?t=' + Date.now());
     if (!r.ok) throw new Error(r.status);
     const d = await r.json();
-    all = d.articles || [];
+    all = (d.articles || []).map(a => ({ ...a, systems: normSystems(a.systems) }));
     applyStats(d.stats || {});
     hide('loading');
 
@@ -851,6 +878,10 @@ async function loadData() {
 }
 
 function applyStats(s) {
+  // 舊資料相容：把 by_system.EIP 併入 HR
+  const bs = { ...(s.by_system || {}) };
+  if (bs.EIP) { bs.HR = (bs.HR || 0) + bs.EIP; delete bs.EIP; }
+
   setText('m-total',  s.total ?? 0);
   setText('m-today',  s.new_today ?? 0);
   setText('m-trend',  s.by_type?.['產業趨勢'] ?? 0);
@@ -859,18 +890,19 @@ function applyStats(s) {
   setText('badge-today',  (s.new_today ?? 0) + ' 篇');
   setText('cnt-all', s.total ?? 0);
   setText('cnt-rss', s.by_channel?.rss ?? 0);
-  setText('cnt-EIP', s.by_system?.EIP ?? 0);
-  setText('cnt-CRM', s.by_system?.CRM ?? 0);
+  setText('cnt-PMS', bs.PMS ?? 0);
+  setText('cnt-CRM', bs.CRM ?? 0);
+  setText('cnt-HR',  bs.HR  ?? 0);
 
   const t = s.last_updated ? new Date(s.last_updated).toLocaleString('zh-TW',{
     month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'
   }) : '—';
   setText('sync-time', t);
 
-  renderDist('dist-systems', s.by_system || {},
-    {EIP:'df-moss', CRM:'df-sky'});
+  renderDist('dist-systems', bs,
+    {PMS:'df-amber', CRM:'df-sky', HR:'df-moss'});
   renderDist('dist-types', s.by_type || {},
-    {'用戶體驗':'df-moss','功能更新':'df-amber','產業趨勢':'df-sand','Dashboard案例':'df-sky'});
+    {'用戶體驗':'df-moss','功能更新':'df-amber','產業趨勢':'df-sand','Dashboard案例':'df-sky','AI應用':'df-red'});
 }
 
 function renderDist(id, data, colors) {
@@ -912,17 +944,18 @@ function setSystem(el, v) {
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
   if (!same) {
     el.classList.add('active');
-    const labels = {EIP:'EIP · 人資系統', CRM:'CRM · 客戶關係'};
-    setText('page-heading', labels[v]);
+    const labels = {PMS:'PMS · 旅宿管理', CRM:'CRM · 客戶關係', HR:'HR · 人資系統'};
+    setText('page-heading', labels[v] || v);
   } else {
     document.querySelector('[data-ch=""]').classList.add('active');
     setText('page-heading','全部情報');
   }
   render();
 }
-function toggleZhtw(el) {
-  filterZhtw = !filterZhtw;
-  el.classList.toggle('active', filterZhtw);
+function setLangPri(el, v) {
+  filterLangPri = v;
+  el.closest('.filter-group').querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
   render();
 }
 function setSort(m) {
@@ -937,12 +970,18 @@ function onSearch() {
 }
 
 // ── Render ─────────────────────────────────────────────────────
+function langOf(a) {
+  // 舊資料無 lang 欄位時的 fallback
+  if (a.lang) return a.lang;
+  return a.is_zhtw ? 'zh-TW' : 'en';
+}
+
 function render() {
   let items = all.filter(a => {
     if (filterChannel && a.channel !== filterChannel) return false;
     if (filterSys     && !a.systems?.includes(filterSys)) return false;
     if (filterType    && !a.types?.includes(filterType))  return false;
-    if (filterZhtw    && !a.is_zhtw) return false;
+    if (filterLangPri && langOf(a) !== filterLangPri) return false;
     if (searchQ) {
       const hay = (a.title + a.summary + a.source + (a.types||[]).join(' ')).toLowerCase();
       if (!hay.includes(searchQ)) return false;
@@ -954,9 +993,10 @@ function render() {
     items.sort((a,b) => new Date(b.date) - new Date(a.date));
   } else {
     items.sort((a,b) => {
-      // 繁中優先，再依 score
-      if (a.is_zhtw && !b.is_zhtw) return -1;
-      if (!a.is_zhtw && b.is_zhtw) return 1;
+      // 語系優先（繁中 > 日 > 英），再依 score
+      const la = LANG_PRIORITY[langOf(a)] || 0;
+      const lb = LANG_PRIORITY[langOf(b)] || 0;
+      if (la !== lb) return lb - la;
       return (b.score||0) - (a.score||0);
     });
   }
@@ -980,21 +1020,25 @@ function render() {
 }
 
 // ── Card HTML ──────────────────────────────────────────────────
-const SYS_CLS  = {EIP:'tb-eip', CRM:'tb-crm'};
-const TYPE_CLS = {'用戶體驗':'tag-ux','功能更新':'tag-feat','產業趨勢':'tag-trend','Dashboard案例':'tag-dash'};
+const SYS_CLS  = {PMS:'tb-pms', CRM:'tb-crm', HR:'tb-hr'};
+const TYPE_CLS = {'用戶體驗':'tag-ux','功能更新':'tag-feat','產業趨勢':'tag-trend','Dashboard案例':'tag-dash','AI應用':'tag-ai'};
 const THUMB_COLORS = {
-  EIP: 'background:linear-gradient(135deg,#CFDDD1 0%,#EEF3EF 100%)',
+  PMS: 'background:linear-gradient(135deg,#F1E1C0 0%,#FAF4E6 100%)',
+  HR:  'background:linear-gradient(135deg,#CFDDD1 0%,#EEF3EF 100%)',
   CRM: 'background:linear-gradient(135deg,#D3E4EE 0%,#EEF4F7 100%)',
 };
-const THUMB_ICONS = {EIP:'👤', CRM:'🤝', default:'📄'};
+const THUMB_ICONS = {PMS:'🏨', HR:'👤', CRM:'🤝', default:'📄'};
+const LANG_LABEL  = {'zh-TW':'繁', en:'EN', ja:'日'};
+const LANG_CLS    = {'zh-TW':'lang-zh', en:'lang-en', ja:'lang-ja'};
 
 function renderCard(a) {
-  const sys   = (a.systems||['EIP'])[0];
+  const sys   = (a.systems||['HR'])[0];
   const bm    = bookmarks.includes(a.id);
   const tags  = (a.types||[]).slice(0,3);
   const rel   = relTime(a.date);
   const safeUrl = esc(a.url);
   const safeId  = esc(a.id);
+  const lang    = langOf(a);
 
   const thumbHtml = a.thumbnail
     ? `<img src="${esc(a.thumbnail)}" alt="" loading="lazy" onerror="this.parentNode.innerHTML=fallbackThumb('${sys}')">`
@@ -1010,8 +1054,8 @@ function renderCard(a) {
   <div class="card" onclick="openCard('${safeUrl}')">
     <div class="card-thumb">
       ${thumbHtml}
-      <span class="thumb-badge ${SYS_CLS[sys]||'tb-eip'}">${sys}</span>
-      ${a.is_zhtw ? '<span class="thumb-zhtw">繁中</span>' : ''}
+      <span class="thumb-badge ${SYS_CLS[sys]||'tb-hr'}">${sys}</span>
+      <span class="thumb-lang ${LANG_CLS[lang]||'lang-en'}">${LANG_LABEL[lang]||'EN'}</span>
     </div>
     <div class="card-body">
       <div class="card-source-row">
