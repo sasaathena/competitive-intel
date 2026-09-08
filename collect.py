@@ -1,20 +1,21 @@
 """
-PMS / CRM / HR Intelligence Collector
-優化版（2026-09）
+PMS / CRM / HR / TECH Intelligence Collector
+優化版（2026-09，實體 + 內容分類雙軸）
 
-收集範圍：繁體中文（優先） > 英文 > 日文
+收集範圍：繁體中文（優先） > 英文
 收集來源：
-  - Google News RSS（繁中 + 英文 + 日文）
+  - Google News RSS（繁中 + 英文，品牌驅動）
   - 科技新報、Inside、Mashdigi、方格子（zh-TW）
   - Medium tag / publication（en + zh-TW）
-  - 日本媒體：ITmedia、ASCII.jp、Impress Watch（ja）
+  - 科技趨勢 TECH_FEEDS：AI 前沿、國際科技、台灣科技、設計/UX
   - Threads（公開 profile scraping）
 
 特性：
-  - 語言優先權：繁體中文 > 英文 > 日文
-  - 雙層過濾：財經域名黑名單 + 標題財經關鍵字 + 產品白名單
-  - PMS / CRM / HR 品牌白名單（旅宿 Property Management + Channel Manager）
-  - Dashboard / UX / AI 標籤分析
+  - 追蹤範圍：以「公司/產品實體」為單位（PMS/CRM/HR/TECH 四個系統）
+  - 內容類型：分類標籤（產品更新/功能發布/融資動態/財報營運/人事異動/產業趨勢/AI 技術/用戶體驗）
+  - 不再使用財經黑名單、產品白名單過濾；全部收下由 UI 篩選
+  - 收錄門檻：命中任一追蹤實體（品牌 或 TECH 來源）
+  - 語言優先權：繁體中文 > 英文
   - Thumbnail fallback & 網路防禦機制
   - 分數計算：語言、標籤、來源加權
   - GitHub Pages articles.json 相容格式
@@ -75,6 +76,38 @@ TARGET_SOURCES = {
         "system": "HR",
         "keywords": ["HiBob", "HRIS", "employee engagement", "dashboard"],
     },
+    "BambooHR": {
+        "system": "HR",
+        "keywords": ["BambooHR", "small business HR", "HRIS"],
+    },
+    "Gusto": {
+        "system": "HR",
+        "keywords": ["Gusto payroll", "Gusto HR", "Gusto benefits"],
+    },
+    "Rippling": {
+        "system": "HR",
+        "keywords": ["Rippling", "workforce management", "employee onboarding"],
+    },
+    "Deel": {
+        "system": "HR",
+        "keywords": ["Deel", "global payroll", "EOR", "contractor management"],
+    },
+    "Personio": {
+        "system": "HR",
+        "keywords": ["Personio", "European HR", "SMB HRIS"],
+    },
+    "Paylocity": {
+        "system": "HR",
+        "keywords": ["Paylocity", "payroll platform", "workforce solutions"],
+    },
+    "ADP Workforce Now": {
+        "system": "HR",
+        "keywords": ["ADP Workforce Now", "ADP payroll", "ADP HR"],
+    },
+    "Ceridian Dayforce": {
+        "system": "HR",
+        "keywords": ["Ceridian Dayforce", "Dayforce", "Ceridian HCM"],
+    },
     # ── CRM ─────────────────────────────────────────────
     "HubSpot": {
         "system": "CRM",
@@ -85,6 +118,38 @@ TARGET_SOURCES = {
         "system": "CRM",
         "keywords": ["Stripe billing", "Stripe subscription", "Stripe Atlas", "Stripe CRM", "Stripe payroll"],
         "narrow": True,
+    },
+    "Salesforce": {
+        "system": "CRM",
+        "keywords": ["Salesforce", "Sales Cloud", "Service Cloud", "Marketing Cloud", "Einstein AI"],
+    },
+    "Zoho CRM": {
+        "system": "CRM",
+        "keywords": ["Zoho CRM", "Zoho One", "Zoho Bigin"],
+    },
+    "Pipedrive": {
+        "system": "CRM",
+        "keywords": ["Pipedrive", "sales pipeline CRM", "deal management"],
+    },
+    "Zendesk Sell": {
+        "system": "CRM",
+        "keywords": ["Zendesk Sell", "Zendesk CRM", "Zendesk sales"],
+    },
+    "Freshsales": {
+        "system": "CRM",
+        "keywords": ["Freshsales", "Freshworks CRM", "Freshsales Suite"],
+    },
+    "Monday CRM": {
+        "system": "CRM",
+        "keywords": ["Monday CRM", "monday.com sales", "monday sales CRM"],
+    },
+    "Copper CRM": {
+        "system": "CRM",
+        "keywords": ["Copper CRM", "Copper for Google", "Google Workspace CRM"],
+    },
+    "Close.com": {
+        "system": "CRM",
+        "keywords": ["Close CRM", "Close.com", "inside sales CRM"],
     },
     # ── PMS（旅宿 Property Management + Channel Manager）───
     "Cloudbeds": {
@@ -126,6 +191,30 @@ TARGET_SOURCES = {
     "RateGain": {
         "system": "PMS",
         "keywords": ["RateGain", "hospitality distribution", "rate management"],
+    },
+    "Guesty": {
+        "system": "PMS",
+        "keywords": ["Guesty", "short-term rental", "vacation rental software"],
+    },
+    "Hostaway": {
+        "system": "PMS",
+        "keywords": ["Hostaway", "vacation rental management", "STR software"],
+    },
+    "WebRezPro": {
+        "system": "PMS",
+        "keywords": ["WebRezPro", "cloud hotel software"],
+    },
+    "InnRoad": {
+        "system": "PMS",
+        "keywords": ["InnRoad", "small hotel PMS"],
+    },
+    "Sirvoy": {
+        "system": "PMS",
+        "keywords": ["Sirvoy", "hotel booking system"],
+    },
+    "roomMaster": {
+        "system": "PMS",
+        "keywords": ["roomMaster", "InnQuest", "hospitality PMS"],
     },
     # ── 亞太 / 日系 PMS ───────────────────────────────────
     "tripla": {
@@ -184,7 +273,7 @@ ZH_MEDIA_FEEDS = [
     },
     {
         "name": "方格子-CRM",
-        "url": "https://vocus.cc/api/rss?search=CRM+客戶管理",
+        "url": "https://vocus.cc/api/rss?search=CRM",
         "lang": "zh-TW",
         "source_score_bonus": 25,
     },
@@ -204,106 +293,41 @@ MEDIUM_FEEDS = [
     {"name": "Medium-PMS",       "url": "https://medium.com/feed/tag/property-management", "lang": "en", "source_score_bonus": 10},
     {"name": "Medium-Hospitality","url": "https://medium.com/feed/tag/hospitality-technology", "lang": "en", "source_score_bonus": 10},
     {"name": "Medium-UX-Dashboard","url": "https://medium.com/feed/tag/dashboard", "lang": "en", "source_score_bonus": 5},
-    # 中文 publication（熱門台灣科技 pub）
-    {"name": "Medium-Tech-TW",   "url": "https://medium.com/feed/starbugs-io", "lang": "zh-TW", "source_score_bonus": 20},
-    {"name": "Medium-PM-TW",     "url": "https://medium.com/feed/pmの生存日記",  "lang": "zh-TW", "source_score_bonus": 20},
+    # 中文 publication — starbugs-io / pmの生存日記 已停刊/搬遷，改用仍活躍的中文 tag
+    {"name": "Medium-CRM-TW",    "url": "https://medium.com/feed/tag/客戶關係管理", "lang": "zh-TW", "source_score_bonus": 15},
 ]
 
 # ──────────────────────────────────────────
-# 日文媒體 RSS
+# 科技趨勢 / AI 發展 (TECH_FEEDS) — 主題型來源，非品牌驅動
+# 四個子桶，source 名稱以 "TECH/<bucket>·<publication>" 前綴
+# 用於前端在「科技趨勢」Tab 底下做子分類（AI 前沿/國際科技/台灣科技/設計UX）
 # ──────────────────────────────────────────
 
-JP_MEDIA_FEEDS = [
-    {
-        "name": "ITmedia エンタープライズ",
-        "url": "https://rss.itmedia.co.jp/rss/2.0/enterprise.xml",
-        "lang": "ja",
-        "source_score_bonus": 15,
-    },
-    {
-        "name": "ITmedia ビジネス",
-        "url": "https://rss.itmedia.co.jp/rss/2.0/business_ent.xml",
-        "lang": "ja",
-        "source_score_bonus": 15,
-    },
-    {
-        "name": "ASCII.jp ビジネス",
-        "url": "https://ascii.jp/rss.xml",
-        "lang": "ja",
-        "source_score_bonus": 10,
-    },
-    {
-        "name": "Impress Internet Watch",
-        "url": "https://internet.watch.impress.co.jp/data/rss/1.0/iw/feed.rdf",
-        "lang": "ja",
-        "source_score_bonus": 10,
-    },
+TECH_FEEDS = [
+    # A. AI 前沿（Anthropic / OpenAI / Figma 已停用 RSS；改用 Google DeepMind + HuggingFace）
+    {"name": "TECH/AI·DeepMind",    "url": "https://deepmind.google/blog/rss.xml",          "lang": "en", "source_score_bonus": 20},
+    {"name": "TECH/AI·HuggingFace", "url": "https://huggingface.co/blog/feed.xml",          "lang": "en", "source_score_bonus": 15},
+
+    # B. 國際科技
+    {"name": "TECH/Global·TechCrunch",   "url": "https://techcrunch.com/feed/",                             "lang": "en", "source_score_bonus": 15},
+    {"name": "TECH/Global·TheVerge",     "url": "https://www.theverge.com/rss/index.xml",                   "lang": "en", "source_score_bonus": 15},
+    {"name": "TECH/Global·Wired",        "url": "https://www.wired.com/feed/rss",                           "lang": "en", "source_score_bonus": 10},
+    {"name": "TECH/Global·MITTechReview","url": "https://www.technologyreview.com/feed/",                   "lang": "en", "source_score_bonus": 15},
+    {"name": "TECH/Global·HackerNews",   "url": "https://hnrss.org/frontpage",                              "lang": "en", "source_score_bonus": 10},
+
+    # C. 台灣 / 中文科技（technews/inside/mashdigi 已在 ZH_MEDIA_FEEDS，這裡補新來源；PanX SSL 錯誤已停用）
+    {"name": "TECH/TW·iThome",         "url": "https://www.ithome.com.tw/rss",                    "lang": "zh-TW", "source_score_bonus": 25},
+    {"name": "TECH/TW·TechOrange",     "url": "https://buzzorange.com/techorange/feed/",          "lang": "zh-TW", "source_score_bonus": 20},
+    {"name": "TECH/TW·sspai",          "url": "https://sspai.com/feed",                            "lang": "zh-TW", "source_score_bonus": 15},
+
+    # D. 設計 / UX（呼應本專案 UIUX 導向）
+    {"name": "TECH/Design·NNGroup",       "url": "https://www.nngroup.com/feed/rss/",              "lang": "en", "source_score_bonus": 20},
+    {"name": "TECH/Design·Smashing",      "url": "https://www.smashingmagazine.com/feed/",         "lang": "en", "source_score_bonus": 15},
+    {"name": "TECH/Design·UXCollective",  "url": "https://uxdesign.cc/feed",                       "lang": "en", "source_score_bonus": 15},
 ]
 
-# ──────────────────────────────────────────
-# 過濾黑白名單
-# ──────────────────────────────────────────
-
-# 財經 / 投資類域名黑名單（子字串比對，命中即丟）
-FINANCE_DOMAIN_BLACKLIST = {
-    # 中文財經
-    "cnyes.com", "money.udn.com", "wealth.com.tw", "moneydj.com",
-    "ctee.com.tw", "wantrich.chinatimes.com", "fund.cnyes.com",
-    "stock.yahoo.com", "tw.stock.yahoo.com", "histock.tw", "wantgoo.com",
-    # 英文財經
-    "bloomberg.com", "reuters.com/business", "ft.com", "wsj.com",
-    "marketwatch.com", "seekingalpha.com", "investing.com",
-    "barrons.com", "fool.com", "benzinga.com",
-    # 日文財經
-    "zaikei.co.jp", "diamond.jp/zai", "toyokeizai.net",
-    "kabutan.jp", "minkabu.jp", "traders.co.jp",
-}
-
-# 標題財經關鍵字（命中即丟，多語）
-FINANCE_TITLE_KEYWORDS = [
-    # zh
-    "股價", "財報", "營收", "毛利", "EPS", "IPO", "上市", "上櫃", "上市櫃",
-    "增資", "私募", "配息", "除權息", "殖利率", "本益比", "分析師目標價",
-    "個股", "大盤", "股息", "市值", "投資人", "分析師日", "投資人日",
-    "金融分析師", "法說會", "股東會",
-    # en
-    "earnings beat", "earnings miss", "revenue beat", "guidance",
-    "IPO filing", "analyst rating", "price target", "dividend",
-    "market cap", "earnings per share", "quarterly results",
-    "stock forecast", "stock upgrade", "stock downgrade",
-    "financial analyst day", "analyst day", "investor day",
-    # ja
-    "決算", "増資", "株価", "配当", "上場", "IPO", "業績予想",
-    "アナリスト", "格付け",
-]
-
-# 產品範圍關鍵字（白名單）— 命中才收
-PRODUCT_KEYWORDS = [
-    # ── PMS / Property Management（旅宿）
-    "PMS", "property management", "hotel management", "channel manager",
-    "booking engine", "revenue management", "hospitality",
-    "旅宿", "客房管理", "訂房系統", "民宿管理", "通路管理", "飯店管理",
-    "予約管理", "宿泊管理", "ホテル管理", "宿泊施設", "客室管理",
-    # ── HR / EIP
-    "EIP", "HRIS", "HCM", "HR", "人資", "人事", "員工體驗", "考勤", "薪資",
-    "人才管理", "績效管理", "排班", "員工",
-    "人事システム", "勤怠", "労務", "人事管理",
-    # ── CRM / Sales / Marketing
-    "CRM", "sales", "marketing", "customer experience", "客戶關係",
-    "客戶體驗", "銷售自動化", "行銷自動化", "顧客管理",
-    "顧客関係", "営業支援", "マーケティングオートメーション",
-    # ── Product / UX
-    "dashboard", "analytics", "workflow", "ui", "ux",
-    "儀表板", "工作流", "使用者體驗", "ユーザー体験", "ダッシュボード",
-    # ── General tech
-    "feature", "release", "automation", "ai", "integration",
-    "功能更新", "功能", "自動化", "數據分析", "人工智慧",
-    "改版", "SaaS", "數位轉型", "デジタルトランスフォーメーション",
-    "機能追加", "リリース", "導入事例",
-    # ── Brand names as fallback
-    "Workday", "SuccessFactors", "HiBob", "HubSpot",
-    "Cloudbeds", "Mews", "Opera PMS", "SiteMinder",
-]
+# 用於判定 source 是否屬於 TECH（未命中品牌白名單也收）
+TECH_SOURCE_PREFIX = "TECH/"
 
 # ──────────────────────────────────────────
 # 語言 & 過濾邏輯
@@ -327,18 +351,13 @@ def _has_japanese_kana(text: str) -> bool:
 
 def detect_lang(text: str, source_lang_hint: str | None = None) -> str:
     """
-    回傳 'zh-TW' | 'en' | 'ja'。
-    優先序：來源 hint > 假名（日文）> 繁體字集 > 預設英文。
+    回傳 'zh-TW' | 'en'。
+    優先序：來源 hint > 繁體字集 > 預設英文。
+    （日文來源已停用；日本品牌若被英/中報導仍會被收，語言依內容判定。）
     """
-    if source_lang_hint in ("zh-TW", "en", "ja"):
-        if source_lang_hint == "zh-TW" and not is_traditional_chinese(text):
-            # 來源標繁中但內容其實含日文假名 → 判日文
-            if _has_japanese_kana(text):
-                return "ja"
+    if source_lang_hint in ("zh-TW", "en"):
         return source_lang_hint
 
-    if _has_japanese_kana(text):
-        return "ja"
     if is_traditional_chinese(text):
         return "zh-TW"
     return "en"
@@ -360,28 +379,6 @@ def is_traditional_chinese(text: str) -> bool:
         return False
     ratio = simp_hits / max(trad_hits, 1)
     return ratio < 0.5
-
-
-def is_finance_noise(url: str, title: str, body: str = "") -> bool:
-    """
-    財經 / 投資雜訊過濾：
-    1) 域名黑名單命中 → 丟
-    2) 標題財經關鍵字命中 → 丟
-    """
-    host = (urlparse(url).netloc or "").lower()
-    path = (urlparse(url).path or "").lower()
-    full = host + path
-    if any(bad in full for bad in FINANCE_DOMAIN_BLACKLIST):
-        return True
-    t = title.lower()
-    if any(kw.lower() in t for kw in FINANCE_TITLE_KEYWORDS):
-        return True
-    return False
-
-
-def is_product_content(text: str) -> bool:
-    text_lower = text.lower()
-    return any(k.lower() in text_lower for k in PRODUCT_KEYWORDS)
 
 
 def brand_in_text(text: str) -> list[str]:
@@ -427,41 +424,85 @@ SYSTEMS_KEYWORDS = {
 }
 
 
-def classify_systems(brands: list[str], text: str) -> list[str]:
+def classify_systems(brands: list[str], text: str, source_name: str = "") -> list[str]:
     """
-    先從品牌回推 system，再用文字關鍵字補強。
-    多命中則多標（PMS/HR/CRM 可共存）。
+    先從品牌回推 system，再用文字關鍵字補強；
+    若來源屬 TECH_FEEDS 且未命中任何品牌，標記為 TECH。
+    多命中則多標（PMS/HR/CRM/TECH 可共存）。
     """
     systems = {TARGET_SOURCES[b]["system"] for b in brands if b in TARGET_SOURCES}
     lower = text.lower()
     for sys_name, kws in SYSTEMS_KEYWORDS.items():
         if any(k.lower() in lower for k in kws):
             systems.add(sys_name)
+    if source_name.startswith(TECH_SOURCE_PREFIX):
+        systems.add("TECH")
     return sorted(systems)
 
 # ──────────────────────────────────────────
-# 標籤分析
+# 內容類型分類（實體 + 內容分類雙軸的分類軸）
+# 意圖為主的 8 類，取代舊 5 類黑白名單策略
 # ──────────────────────────────────────────
 
+CONTENT_TYPE_RULES: list[tuple[str, list[str]]] = [
+    # 產品更新：產品層級公告
+    ("產品更新", [
+        "release", "launch", "unveils", "rolls out", "ships", "ga release",
+        "推出", "上線", "改版", "版本", "發表", "問世",
+    ]),
+    # 功能發布：feature 顆粒度
+    ("功能發布", [
+        "new feature", "feature update", "adds", "introduces", "now supports", "brings",
+        "新增", "新功能", "支援", "加入", "上新",
+    ]),
+    # 融資動態：早期到成長期資金
+    ("融資動態", [
+        "funding", "raises", "raised", "series a", "series b", "series c", "series d",
+        "seed round", "valuation", "closes round", "venture round",
+        "融資", "募資", "估值", "投資", "獲投", "輪次",
+    ]),
+    # 財報 / 營運數據：財務相關
+    ("財報營運", [
+        "earnings", "revenue", "quarterly", "guidance", "arr ", "mrr ", "profit",
+        "fiscal", "gaap", "financial results",
+        "財報", "營收", "季報", "業績", "毛利", "獲利", "營業額",
+    ]),
+    # 人事異動：高管、招募
+    ("人事異動", [
+        "ceo", "cto", "cfo", "cpo", "hires", "appoints", "joins", "resigns", "steps down",
+        "chief officer", "chairman", "chairwoman", "president",
+        "上任", "離任", "出任", "接任", "空降", "挖角", "任命", "辭任",
+    ]),
+    # 產業趨勢：分析型
+    ("產業趨勢", [
+        "market", "trend", "report", "forecast", "study", "survey", "analysis",
+        "趨勢", "研究", "調查", "洞察", "報告", "分析",
+    ]),
+    # AI 技術
+    ("AI 技術", [
+        "ai ", " ai,", "artificial intelligence", "llm", "gpt", "claude", "gemini",
+        "generative", "copilot", "agent ", "agentic", "openai", "anthropic",
+        "人工智慧", "生成式", "大模型", "智能體",
+    ]),
+    # 用戶體驗：UX/設計向（延續 UIUX 專案主線）
+    ("用戶體驗", [
+        "ux", "ui/", "user experience", "usability", "redesign", "design system",
+        "dashboard", "onboarding", "interface",
+        "介面", "體驗", "設計", "重新設計", "儀表板", "使用者",
+    ]),
+]
+
+
 def analyze_tags(title: str, summary: str) -> list[str]:
-    text = f"{title} {summary}".lower()
-    tags = []
-
-    if any(k in text for k in ["ui", "ux", "dashboard", "介面", "設計", "體驗", "使用者"]):
-        tags.append("用戶體驗")
-
-    if any(k in text for k in ["release", "feature", "更新", "新功能", "launch", "改版", "版本"]):
-        tags.append("功能更新")
-
-    if any(k in text for k in ["report", "trend", "研究", "分析", "survey", "趨勢", "洞察"]):
-        tags.append("產業趨勢")
-
-    if "dashboard" in text or "儀表板" in text:
-        tags.append("Dashboard案例")
-
-    if any(k in text for k in ["ai", "人工智慧", "generative", "llm", "chatgpt", "copilot"]):
-        tags.append("AI應用")
-
+    """
+    以內容意圖為主的分類，一篇文章可命中多類。
+    未命中任何規則 → 預設歸為「產業趨勢」（fallback）。
+    """
+    text = f" {title} {summary} ".lower()
+    tags: list[str] = []
+    for tag, kws in CONTENT_TYPE_RULES:
+        if any(k in text for k in kws):
+            tags.append(tag)
     return tags or ["產業趨勢"]
 
 # ──────────────────────────────────────────
@@ -477,17 +518,18 @@ def calculate_score(
     brand_hits: int = 0,
 ) -> int:
     score = 40
-    # 語言加權：繁中 > 日文 > 英文
+    # 語言加權：繁中 > 英文
     if lang == "zh-TW":
         score += 40
-    elif lang == "ja":
-        score += 20
-    # 標籤加權
-    if "功能更新" in tags:    score += 15
-    if "用戶體驗" in tags:    score += 15
-    if "Dashboard案例" in tags: score += 10
-    if "AI應用" in tags:      score += 10
-    if "產業趨勢" in tags:    score += 5
+    # 標籤加權（新 8 類）
+    if "產品更新" in tags:  score += 15
+    if "功能發布" in tags:  score += 15
+    if "用戶體驗" in tags:  score += 15
+    if "AI 技術" in tags:   score += 12
+    if "人事異動" in tags:  score += 8
+    if "融資動態" in tags:  score += 8
+    if "產業趨勢" in tags:  score += 5
+    if "財報營運" in tags:  score -= 5   # 不擋、只降權
     # 來源加權
     score += source_bonus
     # 品牌命中數加權
@@ -580,24 +622,20 @@ def parse_rss_item(
 
     combined = title + " " + desc
 
-    # 過濾：財經雜訊（域名 + 標題關鍵字）
-    if is_finance_noise(url, title, desc):
-        return None
-    # 過濾：非產品範圍
-    if not is_product_content(combined):
-        return None
-
     tags       = analyze_tags(title, desc)
     lang       = detect_lang(combined, source_lang)
     is_zhtw    = (lang == "zh-TW")
     brands     = brand_in_text(combined)
     brand_hits = len(brands)
 
-    # 如果找不到任何品牌，不列入
-    if brand_hits == 0:
+    is_tech_source = source_name.startswith(TECH_SOURCE_PREFIX)
+
+    # 收錄門檻（實體制）：命中任一追蹤品牌，或來源為 TECH 主題來源。
+    # 兩者皆非 → 丟。這是唯一的過濾閘門，取代舊的財經/產品雙層黑白名單。
+    if brand_hits == 0 and not is_tech_source:
         return None
 
-    systems = classify_systems(brands, combined)
+    systems = classify_systems(brands, combined, source_name)
     if not systems:
         return None
 
@@ -634,8 +672,6 @@ def collect_google_news() -> list[dict]:
         {"hl": "zh-TW", "gl": "TW", "ceid": "TW:zh-Hant", "lang": "zh-TW", "bonus": 30},
         # 英文版（次要）
         {"hl": "en-US", "gl": "US", "ceid": "US:en",       "lang": "en",    "bonus": 0},
-        # 日文版
-        {"hl": "ja",    "gl": "JP", "ceid": "JP:ja",       "lang": "ja",    "bonus": 15},
     ]
 
     for brand, info in TARGET_SOURCES.items():
@@ -669,11 +705,11 @@ def collect_google_news() -> list[dict]:
 # ──────────────────────────────────────────
 
 def collect_media_feeds() -> list[dict]:
-    """抓取繁中 + 英文 Medium + 日文媒體 RSS。"""
+    """抓取繁中媒體 + 英文 Medium + TECH 主題 RSS。"""
     articles = []
     print("\n📰 [多語系媒體 RSS] 開始掃描...")
 
-    all_feeds = ZH_MEDIA_FEEDS + MEDIUM_FEEDS + JP_MEDIA_FEEDS
+    all_feeds = ZH_MEDIA_FEEDS + MEDIUM_FEEDS + TECH_FEEDS
 
     for feed in all_feeds:
         print(f"  ├── [{feed.get('lang','?')}] {feed['name']} ...")
@@ -751,16 +787,13 @@ def collect_threads() -> list[dict]:
         img   = og_img.get("content", FALLBACK_THUMBNAIL) if og_img else FALLBACK_THUMBNAIL
 
         combined = title + " " + desc
-        if is_finance_noise(url, title, desc):
-            continue
-        if not is_product_content(combined):
-            continue
 
         brands = brand_in_text(combined)
         if not brands:
+            # Threads 屬品牌帳號抓取，未命中任一追蹤品牌即略過
             continue
 
-        systems = classify_systems(brands, combined)
+        systems = classify_systems(brands, combined, source_name=f"Threads/@{account}")
         if not systems:
             continue
 
@@ -835,20 +868,21 @@ def enrich_thumbnails(articles: list[dict], limit: int = 30) -> list[dict]:
 # 主流程
 # ──────────────────────────────────────────
 
-LANG_PRIORITY = {"zh-TW": 3, "ja": 2, "en": 1}
+LANG_PRIORITY = {"zh-TW": 2, "en": 1}
 
 
 def collect_all_intelligence():
-    print("🚀 開始執行競品情報收集（2026-09 · PMS/CRM/HR）")
-    print(f"   語言優先：繁體中文 > 英文 > 日文")
+    print("🚀 開始執行競品情報收集（2026-09 · PMS/CRM/HR/TECH）")
+    print(f"   收錄軸：實體（品牌）+ 內容分類（8 類）")
+    print(f"   語言優先：繁體中文 > 英文")
     print(f"   收集時間：{datetime.utcnow().isoformat()} UTC\n")
 
     all_articles: list[dict] = []
 
-    # 1. Google News RSS（繁中 + 英文 + 日文）
+    # 1. Google News RSS（繁中 + 英文，品牌驅動）
     all_articles += collect_google_news()
 
-    # 2. 多語系媒體 RSS（zh-TW + Medium + 日媒）
+    # 2. 媒體 RSS（zh-TW 主流 + Medium 標籤 + TECH 主題）
     all_articles += collect_media_feeds()
 
     # 3. Threads（公開貼文 scraping）
@@ -869,7 +903,6 @@ def collect_all_intelligence():
 
     # 統計
     zhtw_count = sum(1 for a in all_articles if a.get("lang") == "zh-TW")
-    ja_count   = sum(1 for a in all_articles if a.get("lang") == "ja")
     en_count   = sum(1 for a in all_articles if a.get("lang") == "en")
     by_channel: dict[str, int] = {}
     by_system: dict[str, int]  = {}
@@ -887,7 +920,7 @@ def collect_all_intelligence():
             "total": len(all_articles),
             "new_today": len(all_articles),
             "last_updated": datetime.utcnow().isoformat(),
-            "lang_breakdown": {"zh_TW": zhtw_count, "en": en_count, "ja": ja_count},
+            "lang_breakdown": {"zh_TW": zhtw_count, "en": en_count},
             "by_channel": by_channel,
             "by_system": by_system,
             "by_type": by_type,
@@ -903,7 +936,8 @@ def collect_all_intelligence():
     print(f"   總計   : {len(all_articles)} 篇")
     print(f"   繁體中文: {zhtw_count} 篇")
     print(f"   英文   : {en_count} 篇")
-    print(f"   日文   : {ja_count} 篇")
+    print(f"   系統分布: {by_system}")
+    print(f"   類型分布: {by_type}")
     print(f"   輸出   : data/articles.json")
 
 
