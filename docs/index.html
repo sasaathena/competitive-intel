@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>競品情報 · PMS · CRM · HR</title>
+<title>競品情報 · 產品競品 × 科技趨勢</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
 /* ── Reset ──────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0 }
 :root {
-  /* Beige × Forest Green palette */
+  /* Beige × Forest Green palette (Product view) */
   --sand-50:  #FAFAF5;
   --sand-100: #F5F3EC;
   --sand-200: #EDE9DC;
@@ -25,13 +25,23 @@
   --moss-200: #9DBEA1;
   --moss-300: #6A9B70;
   --moss-400: #3D7245;
-  --moss-500: #2A5430;   /* primary */
+  --moss-500: #2A5430;
   --moss-600: #1C3B21;
   --moss-700: #112416;
 
   --warm-red: #C0503A;
   --warm-amber: #B5803A;
   --warm-sky: #3A6E8C;
+
+  /* Amber palette (Tech view) */
+  --amber-50:  #FBF6EC;
+  --amber-100: #F4E7CE;
+  --amber-200: #E9CFA1;
+  --amber-300: #D9AF6E;
+  --amber-400: #C88A3B;
+  --amber-500: #A66C22;
+  --amber-600: #7A4E17;
+  --amber-700: #4C2F0A;
 
   --bg:        var(--sand-50);
   --bg2:       #FFFFFF;
@@ -42,12 +52,23 @@
   --text2:     #5A5646;
   --text3:     #8A8472;
 
+  --sidebar-bg: var(--moss-600);
+  --accent:     var(--moss-500);
+  --accent-soft: var(--moss-50);
+
   --serif: 'Playfair Display', Georgia, serif;
   --sans:  'DM Sans', sans-serif;
   --mono:  'DM Mono', monospace;
   --r: 6px;
   --r2: 10px;
   --r3: 16px;
+}
+
+/* Tech view accent swap */
+body.view-tech {
+  --sidebar-bg: var(--amber-700);
+  --accent: var(--amber-500);
+  --accent-soft: var(--amber-50);
 }
 
 html { font-size: 15px; scroll-behavior: smooth }
@@ -69,18 +90,19 @@ input  { font-family: var(--sans) }
 
 /* ── Sidebar ─────────────────────────────────────────────────── */
 .sidebar {
-  width: 232px;
+  width: 236px;
   flex-shrink: 0;
-  background: var(--moss-600);
+  background: var(--sidebar-bg);
   display: flex;
   flex-direction: column;
   position: sticky;
   top: 0;
   height: 100vh;
   overflow-y: auto;
+  transition: background .25s ease;
 }
 .sidebar-top {
-  padding: 28px 22px 20px;
+  padding: 24px 22px 18px;
   border-bottom: 1px solid rgba(255,255,255,.08);
 }
 .logo {
@@ -97,8 +119,9 @@ input  { font-family: var(--sans) }
   font-family: var(--serif);
   font-size: 15px;
   font-weight: 600;
-  color: var(--moss-600);
+  color: var(--sidebar-bg);
   flex-shrink: 0;
+  transition: color .25s ease;
 }
 .logo-name {
   font-family: var(--serif);
@@ -109,18 +132,18 @@ input  { font-family: var(--sans) }
 }
 .logo-sub {
   font-size: 11px;
-  color: rgba(255,255,255,.38);
+  color: rgba(255,255,255,.4);
   font-family: var(--mono);
   letter-spacing: .04em;
 }
 
-.nav-section { padding: 18px 12px 6px }
+.nav-section { padding: 16px 12px 4px }
 .nav-label {
   font-size: 10px;
   font-weight: 500;
   letter-spacing: .1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,.28);
+  color: rgba(255,255,255,.32);
   padding: 0 10px;
   margin-bottom: 5px;
 }
@@ -131,28 +154,33 @@ input  { font-family: var(--sans) }
   padding: 8px 10px;
   border-radius: var(--r);
   font-size: 13.5px;
-  color: rgba(255,255,255,.55);
+  color: rgba(255,255,255,.6);
   cursor: pointer;
   transition: all .15s;
   margin-bottom: 1px;
 }
-.nav-item:hover { background: rgba(255,255,255,.07); color: rgba(255,255,255,.85) }
-.nav-item.active { background: rgba(255,255,255,.12); color: #fff }
+.nav-item:hover { background: rgba(255,255,255,.07); color: rgba(255,255,255,.9) }
+.nav-item.active { background: rgba(255,255,255,.14); color: #fff }
 .nav-dot {
   width: 7px; height: 7px;
   border-radius: 50%;
   flex-shrink: 0;
 }
-.nd-pms { background: var(--warm-amber) }
-.nd-hr  { background: var(--sand-300) }
-.nd-crm { background: var(--moss-200) }
-.nd-all { background: rgba(255,255,255,.4) }
-.nd-rss { background: var(--warm-amber) }
+.nd-pms   { background: var(--warm-amber) }
+.nd-hr    { background: var(--sand-300) }
+.nd-crm   { background: var(--moss-200) }
+.nd-all   { background: rgba(255,255,255,.4) }
+.nd-rss   { background: var(--warm-amber) }
+.nd-th    { background: var(--warm-red) }
+.nd-ai    { background: #E67E5A }
+.nd-glo   { background: #8FB8D6 }
+.nd-tw    { background: #F0D28C }
+.nd-uxs   { background: #D5B48A }
 .nav-count {
   margin-left: auto;
   font-size: 11px;
   font-family: var(--mono);
-  color: rgba(255,255,255,.28);
+  color: rgba(255,255,255,.32);
   background: rgba(255,255,255,.06);
   padding: 1px 7px;
   border-radius: 10px;
@@ -161,9 +189,9 @@ input  { font-family: var(--sans) }
 .sync-footer {
   margin-top: auto;
   padding: 16px 22px;
-  border-top: 1px solid rgba(255,255,255,.07);
+  border-top: 1px solid rgba(255,255,255,.08);
   font-size: 11px;
-  color: rgba(255,255,255,.3);
+  color: rgba(255,255,255,.35);
 }
 .sync-row {
   display: flex;
@@ -187,7 +215,7 @@ input  { font-family: var(--sans) }
 .topbar {
   background: var(--bg2);
   border-bottom: 1px solid var(--border);
-  padding: 14px 32px;
+  padding: 10px 32px;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -195,13 +223,38 @@ input  { font-family: var(--sans) }
   top: 0;
   z-index: 40;
 }
+.view-tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--bg3);
+  padding: 4px;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+}
+.view-tab {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 18px;
+  color: var(--text3);
+  transition: all .18s ease;
+  letter-spacing: .01em;
+}
+.view-tab:hover { color: var(--text2) }
+.view-tab.active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
+}
 .page-heading {
   font-family: var(--serif);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  color: var(--text);
+  color: var(--text2);
   flex: 1;
   letter-spacing: -.01em;
+  font-style: italic;
+  padding-left: 6px;
 }
 .search-wrap { position: relative }
 .search-icon {
@@ -226,10 +279,11 @@ input  { font-family: var(--sans) }
 }
 .search-input::placeholder { color: var(--text3) }
 .search-input:focus {
-  border-color: var(--moss-400);
+  border-color: var(--accent);
   width: 260px;
   box-shadow: 0 0 0 3px rgba(42,84,48,.08);
 }
+body.view-tech .search-input:focus { box-shadow: 0 0 0 3px rgba(200,138,59,.15) }
 .refresh-btn {
   width: 34px; height: 34px;
   border-radius: 50%;
@@ -240,17 +294,17 @@ input  { font-family: var(--sans) }
   font-size: 16px;
   transition: all .15s;
 }
-.refresh-btn:hover { background: var(--moss-50); border-color: var(--moss-300); color: var(--moss-500) }
+.refresh-btn:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent) }
 
 /* ── Content ─────────────────────────────────────────────────── */
-.content { padding: 26px 32px 48px }
+.content { padding: 24px 32px 48px }
 
 /* ── Metrics ─────────────────────────────────────────────────── */
 .metrics-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .metric {
   background: var(--bg2);
@@ -272,6 +326,7 @@ input  { font-family: var(--sans) }
 .metric.m-sand::before  { background: var(--sand-400) }
 .metric.m-red::before   { background: var(--warm-red) }
 .metric.m-sky::before   { background: var(--warm-sky) }
+.metric.m-amber::before { background: var(--amber-400) }
 .metric:hover { border-color: var(--border2) }
 .metric-top {
   display: flex;
@@ -279,10 +334,7 @@ input  { font-family: var(--sans) }
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.metric-icon {
-  font-size: 16px;
-  opacity: .55;
-}
+.metric-icon { font-size: 16px; opacity: .55 }
 .metric-badge {
   font-size: 10px;
   font-family: var(--mono);
@@ -299,8 +351,8 @@ input  { font-family: var(--sans) }
   background: var(--bg2);
   border: 1px solid var(--border);
   border-radius: var(--r2);
-  padding: 14px 18px;
-  margin-bottom: 20px;
+  padding: 12px 16px;
+  margin-bottom: 18px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -310,6 +362,7 @@ input  { font-family: var(--sans) }
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-wrap: wrap;
 }
 .filter-label {
   font-size: 11px;
@@ -336,24 +389,33 @@ input  { font-family: var(--sans) }
 }
 .chip:hover { border-color: var(--border2); color: var(--text); background: var(--sand-100) }
 .chip.active { border-color: transparent; color: #fff }
-.chip-all.active  { background: var(--moss-500) }
-.chip-pms.active  { background: var(--warm-amber) }
-.chip-hr.active   { background: var(--moss-400) }
-.chip-crm.active  { background: var(--warm-sky) }
-.chip-ux.active   { background: var(--moss-500) }
-.chip-feat.active { background: var(--warm-amber) }
-.chip-trend.active{ background: var(--sand-600) }
-.chip-dash.active { background: var(--warm-sky) }
-.chip-ai.active   { background: var(--warm-red) }
-.chip-zh.active   { background: var(--moss-500) }
-.chip-ja.active   { background: var(--warm-red) }
+.chip-all.active     { background: var(--accent) }
+.chip-pms.active     { background: var(--warm-amber) }
+.chip-hr.active      { background: var(--moss-400) }
+.chip-crm.active     { background: var(--warm-sky) }
+.chip-tech.active    { background: var(--amber-500) }
+.chip-zh.active      { background: var(--moss-500) }
+/* content type chips */
+.chip-ct-prod.active { background: var(--moss-500) }
+.chip-ct-feat.active { background: var(--warm-amber) }
+.chip-ct-fund.active { background: #4C7C8E }
+.chip-ct-fin.active  { background: var(--sand-600) }
+.chip-ct-hire.active { background: #7B5CA6 }
+.chip-ct-trend.active{ background: var(--sand-600) }
+.chip-ct-ai.active   { background: var(--warm-red) }
+.chip-ct-ux.active   { background: var(--moss-400) }
+/* tech sub-buckets */
+.chip-sb-ai.active   { background: #E67E5A }
+.chip-sb-glo.active  { background: #4C7C8E }
+.chip-sb-tw.active   { background: var(--warm-amber) }
+.chip-sb-ux.active   { background: var(--amber-500) }
 
 /* ── List Header ─────────────────────────────────────────────── */
 .list-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 .result-label {
   font-family: var(--serif);
@@ -376,9 +438,9 @@ input  { font-family: var(--sans) }
   transition: all .15s;
 }
 .sort-btn:hover, .sort-btn.active {
-  border-color: var(--moss-300);
-  color: var(--moss-600);
-  background: var(--moss-50);
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
 }
 
 /* ── Cards Grid ─────────────────────────────────────────────── */
@@ -398,7 +460,17 @@ input  { font-family: var(--sans) }
   transition: border-color .18s, transform .2s, box-shadow .2s;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
+.card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--moss-400);
+  z-index: 2;
+}
+.card.card-tech::before { background: var(--amber-400) }
 .card:hover {
   border-color: var(--sand-400);
   transform: translateY(-3px);
@@ -429,30 +501,50 @@ input  { font-family: var(--sans) }
   flex-direction: column;
   gap: 8px;
 }
-.thumb-icon { font-size: 28px; opacity: .25 }
+.thumb-icon { font-size: 28px; opacity: .3 }
 .thumb-brand {
   font-family: var(--serif);
   font-size: 13px;
   font-weight: 500;
   color: var(--text3);
-  opacity: .5;
+  opacity: .55;
 }
 
-/* System badge on thumb */
+/* System / entity badge on thumb (Product view: emphasise brand) */
 .thumb-badge {
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 10px;
+  font-size: 10.5px;
   font-weight: 500;
   font-family: var(--mono);
   padding: 3px 8px;
   border-radius: 10px;
   letter-spacing: .04em;
 }
-.tb-pms { background: var(--warm-amber); color: #fff }
-.tb-hr  { background: var(--moss-600);   color: var(--sand-100) }
-.tb-crm { background: var(--warm-sky);   color: #fff }
+.tb-pms  { background: var(--warm-amber); color: #fff }
+.tb-hr   { background: var(--moss-600);   color: var(--sand-100) }
+.tb-crm  { background: var(--warm-sky);   color: #fff }
+.tb-tech { background: var(--amber-500);  color: #fff }
+
+/* Brand chip — emphasised in Product view */
+.thumb-brand-chip {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.94);
+  color: var(--text);
+  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  max-width: calc(100% - 20px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 /* Language badge (top-right of thumb) */
 .thumb-lang {
@@ -468,7 +560,6 @@ input  { font-family: var(--sans) }
 }
 .lang-zh { color: var(--moss-600) }
 .lang-en { color: var(--text3) }
-.lang-ja { color: var(--warm-red) }
 
 /* Card body */
 .card-body { padding: 14px 16px 16px; flex: 1; display: flex; flex-direction: column; gap: 10px }
@@ -478,9 +569,20 @@ input  { font-family: var(--sans) }
   justify-content: space-between;
 }
 .card-source {
-  font-size: 11px;
+  font-size: 11.5px;
   color: var(--text3);
   font-family: var(--mono);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: calc(100% - 40px);
+}
+.card-tech .card-source {
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--amber-600);
+  font-style: italic;
 }
 .card-bm {
   width: 24px; height: 24px;
@@ -492,9 +594,10 @@ input  { font-family: var(--sans) }
   background: transparent;
   border: none;
   cursor: pointer;
+  flex-shrink: 0;
 }
-.card-bm:hover { color: var(--moss-500); background: var(--moss-50) }
-.card-bm.saved { color: var(--moss-500) }
+.card-bm:hover { color: var(--accent); background: var(--accent-soft) }
+.card-bm.saved { color: var(--accent) }
 
 .card-title {
   font-size: 14px;
@@ -523,11 +626,14 @@ input  { font-family: var(--sans) }
   padding: 2px 8px;
   border-radius: 10px;
 }
-.tag-ux    { background: #EEF3EF; color: var(--moss-500) }
-.tag-feat  { background: #FAF2E4; color: #7A5520 }
-.tag-trend { background: var(--sand-100); color: var(--sand-600) }
-.tag-dash  { background: #E8F0F5; color: var(--warm-sky) }
-.tag-ai    { background: #FBE9E4; color: var(--warm-red) }
+.tag-ct-prod  { background: #EEF3EF; color: var(--moss-500) }
+.tag-ct-feat  { background: #FAF2E4; color: #7A5520 }
+.tag-ct-fund  { background: #E1EBF0; color: #345D6D }
+.tag-ct-fin   { background: #F0EBD8; color: #6A5A2F }
+.tag-ct-hire  { background: #EEE6F4; color: #6B4C97 }
+.tag-ct-trend { background: var(--sand-100); color: var(--sand-600) }
+.tag-ct-ai    { background: #FBE9E4; color: var(--warm-red) }
+.tag-ct-ux    { background: #E7F0E9; color: var(--moss-500) }
 
 .card-footer {
   display: flex;
@@ -546,14 +652,14 @@ input  { font-family: var(--sans) }
   gap: 4px;
   font-size: 11px;
   font-weight: 500;
-  color: var(--moss-500);
+  color: var(--accent);
   padding: 4px 10px;
   border-radius: var(--r);
-  border: 1px solid var(--moss-200);
-  background: var(--moss-50);
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
   transition: all .15s;
 }
-.card-open:hover { background: var(--moss-500); color: #fff; border-color: var(--moss-500) }
+.card-open:hover { background: var(--accent); color: #fff }
 
 /* ── Empty / Loading ─────────────────────────────────────────── */
 .state-box {
@@ -567,7 +673,7 @@ input  { font-family: var(--sans) }
 .spinner {
   width: 28px; height: 28px;
   border: 2px solid var(--border);
-  border-top-color: var(--moss-400);
+  border-top-color: var(--accent);
   border-radius: 50%;
   margin: 0 auto 14px;
   animation: spin .8s linear infinite;
@@ -580,7 +686,7 @@ input  { font-family: var(--sans) }
   border: 1px solid var(--border);
   border-radius: var(--r2);
   padding: 16px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
@@ -599,21 +705,24 @@ input  { font-family: var(--sans) }
   gap: 10px;
   margin-bottom: 8px;
 }
-.dist-name { font-size: 12px; color: var(--text2); width: 76px; flex-shrink: 0 }
+.dist-name { font-size: 12px; color: var(--text2); width: 92px; flex-shrink: 0 }
 .dist-track { flex: 1; height: 4px; background: var(--sand-200); border-radius: 2px; overflow: hidden }
 .dist-fill  { height: 100%; border-radius: 2px; transition: width .7s ease }
 .df-moss  { background: var(--moss-400) }
 .df-sky   { background: var(--warm-sky) }
 .df-amber { background: var(--warm-amber) }
+.df-amber2{ background: var(--amber-500) }
 .df-red   { background: var(--warm-red) }
 .df-sand  { background: var(--sand-500) }
-.dist-num { font-size: 11px; font-family: var(--mono); color: var(--text3); width: 22px; text-align: right }
+.df-purple{ background: #7B5CA6 }
+.df-teal  { background: #4C7C8E }
+.dist-num { font-size: 11px; font-family: var(--mono); color: var(--text3); width: 26px; text-align: right }
 
 /* ── Toast ───────────────────────────────────────────────────── */
 .toast {
   position: fixed;
   bottom: 24px; right: 24px;
-  background: var(--moss-600);
+  background: var(--sidebar-bg);
   color: var(--sand-100);
   font-size: 13px;
   padding: 11px 16px;
@@ -646,11 +755,14 @@ input  { font-family: var(--sans) }
 @media (max-width: 1100px) {
   .cards-grid { grid-template-columns: repeat(2,1fr) }
   .metrics-row { grid-template-columns: repeat(2,1fr) }
+  .dist-row    { grid-template-columns: 1fr }
 }
 @media (max-width: 720px) {
   .sidebar { display: none }
   .content { padding: 16px }
   .cards-grid { grid-template-columns: 1fr }
+  .topbar { padding: 8px 16px; flex-wrap: wrap }
+  .page-heading { display: none }
 }
 </style>
 </head>
@@ -661,39 +773,13 @@ input  { font-family: var(--sans) }
   <aside class="sidebar">
     <div class="sidebar-top">
       <div class="logo">
-        <div class="logo-mark">情</div>
+        <div class="logo-mark" id="logo-mark">情</div>
         <span class="logo-name">競品情報</span>
       </div>
-      <div class="logo-sub">PMS · CRM · HR</div>
+      <div class="logo-sub" id="logo-sub">PRODUCT · TECH</div>
     </div>
 
-    <div class="nav-section">
-      <div class="nav-label">來源管道</div>
-      <div class="nav-item active" onclick="setChannel(this,'')" data-ch="">
-        <div class="nav-dot nd-all"></div>全部來源
-        <span class="nav-count" id="cnt-all">0</span>
-      </div>
-      <div class="nav-item" onclick="setChannel(this,'rss')" data-ch="rss">
-        <div class="nav-dot nd-rss"></div>官方品牌 RSS
-        <span class="nav-count" id="cnt-rss">0</span>
-      </div>
-    </div>
-
-    <div class="nav-section">
-      <div class="nav-label">核心系統</div>
-      <div class="nav-item" onclick="setSystem(this,'PMS')" data-sys="PMS">
-        <div class="nav-dot nd-pms"></div>PMS · 旅宿管理
-        <span class="nav-count" id="cnt-PMS">0</span>
-      </div>
-      <div class="nav-item" onclick="setSystem(this,'CRM')" data-sys="CRM">
-        <div class="nav-dot nd-crm"></div>CRM · 客戶關係
-        <span class="nav-count" id="cnt-CRM">0</span>
-      </div>
-      <div class="nav-item" onclick="setSystem(this,'HR')" data-sys="HR">
-        <div class="nav-dot nd-hr"></div>HR · 人資系統
-        <span class="nav-count" id="cnt-HR">0</span>
-      </div>
-    </div>
+    <div id="sidebar-nav"></div>
 
     <div class="sync-footer">
       <div class="sync-row">
@@ -708,6 +794,10 @@ input  { font-family: var(--sans) }
 
     <!-- Topbar -->
     <div class="topbar">
+      <div class="view-tabs" role="tablist" aria-label="頂層分區">
+        <button class="view-tab active" id="tab-product" onclick="setView('product')" role="tab">產品競品</button>
+        <button class="view-tab" id="tab-tech" onclick="setView('tech')" role="tab">科技趨勢</button>
+      </div>
       <div class="page-heading" id="page-heading">全部情報</div>
       <div class="search-wrap">
         <span class="search-icon">⌕</span>
@@ -726,80 +816,22 @@ input  { font-family: var(--sans) }
       </div>
 
       <!-- Metrics -->
-      <div class="metrics-row" id="metrics-row" style="display:none">
-        <div class="metric m-green">
-          <div class="metric-top">
-            <span class="metric-icon">📋</span>
-            <span class="metric-badge mb-up" id="badge-new">+0 今日</span>
-          </div>
-          <div class="metric-val" id="m-total">0</div>
-          <div class="metric-lbl">累積情報總數</div>
-        </div>
-        <div class="metric m-sand">
-          <div class="metric-top">
-            <span class="metric-icon">🗓</span>
-            <span class="metric-badge mb-up" id="badge-today">今日</span>
-          </div>
-          <div class="metric-val" id="m-today">0</div>
-          <div class="metric-lbl">今日新增</div>
-        </div>
-        <div class="metric m-sky">
-          <div class="metric-top">
-            <span class="metric-icon">📈</span>
-            <span class="metric-badge mb-gray">趨勢分析</span>
-          </div>
-          <div class="metric-val" id="m-trend">0</div>
-          <div class="metric-lbl">產業趨勢</div>
-        </div>
-        <div class="metric m-red">
-          <div class="metric-top">
-            <span class="metric-icon">⚡</span>
-            <span class="metric-badge mb-gray">產品動態</span>
-          </div>
-          <div class="metric-val" id="m-feat">0</div>
-          <div class="metric-lbl">功能更新</div>
-        </div>
-      </div>
+      <div class="metrics-row" id="metrics-row" style="display:none"></div>
 
       <!-- Distribution -->
       <div class="dist-row" id="dist-row" style="display:none">
         <div class="dist-group">
-          <h4>系統分布</h4>
+          <h4 id="dist-left-title">系統分布</h4>
           <div id="dist-systems"></div>
         </div>
         <div class="dist-group">
-          <h4>類型分布</h4>
+          <h4>內容類型分布</h4>
           <div id="dist-types"></div>
         </div>
       </div>
 
       <!-- Filter -->
-      <div class="filter-wrap" id="filter-wrap" style="display:none">
-        <div class="filter-group">
-          <span class="filter-label">系統</span>
-          <button class="chip chip-all active" onclick="setSys(this,'')">全部</button>
-          <button class="chip chip-pms" onclick="setSys(this,'PMS')">PMS / 旅宿</button>
-          <button class="chip chip-crm" onclick="setSys(this,'CRM')">CRM / 客戶</button>
-          <button class="chip chip-hr"  onclick="setSys(this,'HR')">HR / 人資</button>
-        </div>
-        <div class="filter-sep"></div>
-        <div class="filter-group">
-          <span class="filter-label">情報類型</span>
-          <button class="chip chip-all active" onclick="setType(this,'')">全部</button>
-          <button class="chip chip-ux"   onclick="setType(this,'用戶體驗')">用戶體驗</button>
-          <button class="chip chip-feat" onclick="setType(this,'功能更新')">功能更新</button>
-          <button class="chip chip-trend"onclick="setType(this,'產業趨勢')">產業趨勢</button>
-          <button class="chip chip-dash" onclick="setType(this,'Dashboard案例')">Dashboard案例</button>
-          <button class="chip chip-ai"   onclick="setType(this,'AI應用')">AI應用</button>
-        </div>
-        <div class="filter-sep"></div>
-        <div class="filter-group">
-          <span class="filter-label">語系優先</span>
-          <button class="chip chip-all active" onclick="setLangPri(this,'')">全部</button>
-          <button class="chip chip-zh" onclick="setLangPri(this,'zh-TW')">🇹🇼 繁中</button>
-          <button class="chip chip-ja" onclick="setLangPri(this,'ja')">🇯🇵 日文</button>
-        </div>
-      </div>
+      <div class="filter-wrap" id="filter-wrap" style="display:none"></div>
 
       <!-- List header -->
       <div class="list-header" id="list-header" style="display:none">
@@ -830,22 +862,92 @@ input  { font-family: var(--sans) }
 <script>
 // ── State ──────────────────────────────────────────────────────
 let all = [];
-let filterSys     = '';
-let filterType    = '';
-let filterChannel = '';
-let filterLangPri = '';   // '', 'zh-TW', 'ja'
+let view          = 'product';    // 'product' | 'tech'
+let filterSys     = '';           // Product: '', 'PMS', 'CRM', 'HR'
+let filterSubCat  = '';           // Tech:    '', 'AI', 'Global', 'TW', 'Design'
+let filterType    = '';           // 內容類型 (八分類)
+let filterChannel = '';           // '', 'rss', 'threads'
+let filterLangPri = '';           // '', 'zh-TW'
+let filterBrand   = '';           // Product view brand dropdown
+let onlyBookmarks = false;
 let searchQ       = '';
 let sortMode      = 'score';
 let bookmarks     = JSON.parse(localStorage.getItem('ci-bm') || '[]');
 
-// 舊資料相容：以前的 systems 值可能是 'EIP'，前端一律映射為 'HR'
+// 舊資料相容
 const SYS_ALIAS = { EIP: 'HR' };
 function normSystems(sys) {
   if (!Array.isArray(sys)) return [];
   return [...new Set(sys.map(s => SYS_ALIAS[s] || s))];
 }
-// 語系優先權：繁中 > 日 > 英
-const LANG_PRIORITY = { 'zh-TW': 3, ja: 2, en: 1 };
+// 舊 type 名稱→新分類 mapping（向後相容既有資料）
+const TYPE_ALIAS = {
+  '功能更新': '功能發布',
+  'Dashboard案例': '用戶體驗',
+  'AI應用': 'AI 技術',
+};
+function normTypes(types) {
+  if (!Array.isArray(types)) return [];
+  return [...new Set(types.map(t => TYPE_ALIAS[t] || t))];
+}
+
+// 語系優先權：繁中 > 英
+const LANG_PRIORITY = { 'zh-TW': 2, en: 1 };
+
+// 新 8 分類（依用戶指定順序）
+const CONTENT_TYPES = [
+  { key: '產品更新',   cls: 'ct-prod'  },
+  { key: '功能發布',   cls: 'ct-feat'  },
+  { key: '融資動態',   cls: 'ct-fund'  },
+  { key: '財報營運',   cls: 'ct-fin'   },
+  { key: '人事異動',   cls: 'ct-hire'  },
+  { key: '產業趨勢',   cls: 'ct-trend' },
+  { key: 'AI 技術',    cls: 'ct-ai'    },
+  { key: '用戶體驗',   cls: 'ct-ux'    },
+];
+const TYPE_CLS = Object.fromEntries(CONTENT_TYPES.map(t => [t.key, `tag-${t.cls}`]));
+const TYPE_DIST_CLS = {
+  '產品更新': 'df-moss', '功能發布': 'df-amber', '融資動態': 'df-teal',
+  '財報營運': 'df-sand', '人事異動': 'df-purple', '產業趨勢': 'df-sand',
+  'AI 技術': 'df-red',  '用戶體驗': 'df-moss'
+};
+
+// Tech 子分類（source name 前綴判定）
+const TECH_SUBCATS = [
+  { key: '', label: '全部主題', dot: 'nd-all' },
+  { key: 'AI',     label: 'AI 前沿',   dot: 'nd-ai',  prefix: 'TECH/AI'     },
+  { key: 'Global', label: '國際科技',  dot: 'nd-glo', prefix: 'TECH/Global' },
+  { key: 'TW',     label: '台灣科技',  dot: 'nd-tw',  prefix: 'TECH/TW'     },
+  { key: 'Design', label: '設計 / UX', dot: 'nd-uxs', prefix: 'TECH/Design' },
+];
+function techSubOf(sourceName) {
+  if (!sourceName) return '';
+  for (const s of TECH_SUBCATS) {
+    if (s.prefix && sourceName.startsWith(s.prefix)) return s.key;
+  }
+  return '';
+}
+
+// ── URL sync ──────────────────────────────────────────────────
+function syncURL() {
+  const p = new URLSearchParams();
+  if (view !== 'product') p.set('view', view);
+  if (filterSys)     p.set('sys',  filterSys);
+  if (filterSubCat)  p.set('sub',  filterSubCat);
+  if (filterType)    p.set('type', filterType);
+  if (filterBrand)   p.set('brand', filterBrand);
+  const q = p.toString();
+  history.replaceState(null, '', q ? '?' + q : location.pathname);
+}
+function loadURL() {
+  const p = new URLSearchParams(location.search);
+  const v = p.get('view');
+  if (v === 'tech' || v === 'product') view = v;
+  filterSys    = p.get('sys')   || '';
+  filterSubCat = p.get('sub')   || '';
+  filterType   = p.get('type')  || '';
+  filterBrand  = p.get('brand') || '';
+}
 
 // ── Load ───────────────────────────────────────────────────────
 async function loadData() {
@@ -856,53 +958,270 @@ async function loadData() {
     const r = await fetch('data/articles.json?t=' + Date.now());
     if (!r.ok) throw new Error(r.status);
     const d = await r.json();
-    all = (d.articles || []).map(a => ({ ...a, systems: normSystems(a.systems) }));
+    all = (d.articles || []).map(a => ({
+      ...a,
+      systems: normSystems(a.systems),
+      types:   normTypes(a.types),
+      _sub:    techSubOf(a.source || '')
+    }));
+    applyView();
     applyStats(d.stats || {});
     hide('loading');
-
-    show(
-    'metrics-row',
-    'dist-row',
-    'filter-wrap',
-    'list-header',
-    'cards-grid'
-   );
-  
-   render();
-    
-
+    show('metrics-row','dist-row','filter-wrap','list-header','cards-grid');
+    render();
   } catch(e) {
     document.getElementById('loading').innerHTML =
       `<div class="icon">⚠</div><p>無法載入 data/articles.json</p><small>請確認爬蟲已執行或路徑正確</small>`;
   }
 }
 
+// ── View switch ────────────────────────────────────────────────
+function setView(v) {
+  if (view === v) return;
+  view = v;
+  // 切換 view 時清掉不屬於該 view 的 filter
+  if (v === 'product') { filterSubCat = ''; }
+  else                 { filterSys = ''; filterBrand = ''; }
+  applyView();
+  render();
+  syncURL();
+}
+function applyView() {
+  document.body.classList.toggle('view-tech', view === 'tech');
+  document.getElementById('tab-product').classList.toggle('active', view === 'product');
+  document.getElementById('tab-tech').classList.toggle('active', view === 'tech');
+  setText('logo-sub', view === 'tech' ? 'AI · TREND · UX' : 'PMS · CRM · HR');
+  renderSidebar();
+  renderFilterBar();
+  renderMetricsSkeleton();
+}
+
+// ── Sidebar (dynamic per view) ────────────────────────────────
+function renderSidebar() {
+  const stats = computeCounts();
+  let html = '';
+
+  // 來源管道（共用）
+  html += `<div class="nav-section">
+    <div class="nav-label">來源管道</div>
+    <div class="nav-item ${filterChannel===''?'active':''}" onclick="setChannel('')">
+      <div class="nav-dot nd-all"></div>全部來源
+      <span class="nav-count">${stats.total}</span>
+    </div>
+    <div class="nav-item ${filterChannel==='rss'?'active':''}" onclick="setChannel('rss')">
+      <div class="nav-dot nd-rss"></div>RSS 訂閱
+      <span class="nav-count">${stats.byChannel.rss || 0}</span>
+    </div>
+    <div class="nav-item ${filterChannel==='threads'?'active':''}" onclick="setChannel('threads')">
+      <div class="nav-dot nd-th"></div>Threads
+      <span class="nav-count">${stats.byChannel.threads || 0}</span>
+    </div>
+  </div>`;
+
+  if (view === 'product') {
+    html += `<div class="nav-section">
+      <div class="nav-label">核心系統</div>
+      <div class="nav-item ${filterSys===''?'active':''}" onclick="setSysNav('')">
+        <div class="nav-dot nd-all"></div>全部系統
+        <span class="nav-count">${stats.productTotal}</span>
+      </div>
+      <div class="nav-item ${filterSys==='PMS'?'active':''}" onclick="setSysNav('PMS')">
+        <div class="nav-dot nd-pms"></div>PMS · 旅宿管理
+        <span class="nav-count">${stats.bySystem.PMS || 0}</span>
+      </div>
+      <div class="nav-item ${filterSys==='CRM'?'active':''}" onclick="setSysNav('CRM')">
+        <div class="nav-dot nd-crm"></div>CRM · 客戶關係
+        <span class="nav-count">${stats.bySystem.CRM || 0}</span>
+      </div>
+      <div class="nav-item ${filterSys==='HR'?'active':''}" onclick="setSysNav('HR')">
+        <div class="nav-dot nd-hr"></div>HR · 人資系統
+        <span class="nav-count">${stats.bySystem.HR || 0}</span>
+      </div>
+    </div>`;
+  } else {
+    html += `<div class="nav-section">
+      <div class="nav-label">主題分類</div>` +
+      TECH_SUBCATS.map(s => `
+        <div class="nav-item ${filterSubCat===s.key?'active':''}" onclick="setSubCat('${s.key}')">
+          <div class="nav-dot ${s.dot}"></div>${s.label}
+          <span class="nav-count">${s.key ? (stats.bySub[s.key] || 0) : stats.techTotal}</span>
+        </div>`).join('') +
+      `</div>`;
+  }
+
+  // 收藏
+  html += `<div class="nav-section">
+    <div class="nav-label">個人</div>
+    <div class="nav-item ${onlyBookmarks?'active':''}" onclick="toggleBookmarksNav()">
+      <div class="nav-dot nd-th"></div>我的收藏
+      <span class="nav-count">${bookmarks.length}</span>
+    </div>
+  </div>`;
+
+  document.getElementById('sidebar-nav').innerHTML = html;
+}
+
+// ── Filter bar (dynamic per view) ─────────────────────────────
+function renderFilterBar() {
+  let html = '';
+
+  if (view === 'product') {
+    html += `<div class="filter-group">
+      <span class="filter-label">系統</span>
+      <button class="chip chip-all ${filterSys===''?'active':''}" onclick="setSys('')">全部</button>
+      <button class="chip chip-pms ${filterSys==='PMS'?'active':''}" onclick="setSys('PMS')">PMS</button>
+      <button class="chip chip-crm ${filterSys==='CRM'?'active':''}" onclick="setSys('CRM')">CRM</button>
+      <button class="chip chip-hr  ${filterSys==='HR'?'active':''}"  onclick="setSys('HR')">HR</button>
+    </div>
+    <div class="filter-sep"></div>
+    <div class="filter-group">
+      <span class="filter-label">品牌</span>
+      <select onchange="setBrand(this.value)" style="font-size:12px;padding:5px 10px;border-radius:6px;border:1px solid var(--border);background:var(--bg2);color:var(--text2);cursor:pointer;">
+        <option value="">全部品牌</option>
+        ${brandOptions().map(b => `<option value="${esc(b)}" ${filterBrand===b?'selected':''}>${esc(b)}</option>`).join('')}
+      </select>
+    </div>`;
+  } else {
+    html += `<div class="filter-group">
+      <span class="filter-label">主題</span>` +
+      TECH_SUBCATS.map(s => {
+        const cls = s.key === '' ? 'chip-all' : `chip-sb-${s.key.toLowerCase().replace('global','glo').replace('design','ux')}`;
+        return `<button class="chip ${cls} ${filterSubCat===s.key?'active':''}" onclick="setSubCat('${s.key}')">${s.label}</button>`;
+      }).join('') +
+      `</div>`;
+  }
+
+  html += `<div class="filter-sep"></div>
+  <div class="filter-group">
+    <span class="filter-label">內容類型</span>
+    <button class="chip chip-all ${filterType===''?'active':''}" onclick="setType('')">全部</button>` +
+    CONTENT_TYPES.map(t =>
+      `<button class="chip chip-${t.cls} ${filterType===t.key?'active':''}" onclick="setType('${t.key}')">${t.key}</button>`
+    ).join('') +
+  `</div>
+  <div class="filter-sep"></div>
+  <div class="filter-group">
+    <span class="filter-label">語系</span>
+    <button class="chip chip-all ${filterLangPri===''?'active':''}" onclick="setLangPri('')">全部</button>
+    <button class="chip chip-zh ${filterLangPri==='zh-TW'?'active':''}" onclick="setLangPri('zh-TW')">🇹🇼 繁中</button>
+  </div>`;
+
+  document.getElementById('filter-wrap').innerHTML = html;
+}
+
+// ── Metrics（view-aware skeleton） ─────────────────────────────
+function renderMetricsSkeleton() {
+  const bar = view === 'tech' ? 'm-amber' : 'm-green';
+  document.getElementById('metrics-row').innerHTML = `
+    <div class="metric ${bar}">
+      <div class="metric-top"><span class="metric-icon">📋</span>
+        <span class="metric-badge mb-up" id="badge-new">+0 今日</span></div>
+      <div class="metric-val" id="m-total">0</div>
+      <div class="metric-lbl">當前顯示情報</div>
+    </div>
+    <div class="metric m-sand">
+      <div class="metric-top"><span class="metric-icon">🗓</span>
+        <span class="metric-badge mb-up" id="badge-today">今日</span></div>
+      <div class="metric-val" id="m-today">0</div>
+      <div class="metric-lbl">今日新增</div>
+    </div>
+    <div class="metric ${view==='tech'?'m-sky':'m-red'}">
+      <div class="metric-top"><span class="metric-icon">${view==='tech'?'💡':'⚡'}</span>
+        <span class="metric-badge mb-gray">${view==='tech'?'熱門主題':'產品動態'}</span></div>
+      <div class="metric-val" id="m-mid">0</div>
+      <div class="metric-lbl">${view==='tech'?'今日熱門類型':'產品更新+功能發布'}</div>
+    </div>
+    <div class="metric m-sky">
+      <div class="metric-top"><span class="metric-icon">${view==='tech'?'📚':'🏷'}</span>
+        <span class="metric-badge mb-gray">${view==='tech'?'來源數':'品牌覆蓋'}</span></div>
+      <div class="metric-val" id="m-right">0</div>
+      <div class="metric-lbl">${view==='tech'?'不同 publication 數':'涵蓋品牌數'}</div>
+    </div>`;
+  document.getElementById('dist-left-title').textContent = view === 'tech' ? '主題分類分布' : '系統分布';
+}
+
+// ── Stats ─────────────────────────────────────────────────────
+function computeCounts() {
+  const byChannel = {}, bySystem = {}, bySub = {};
+  let productTotal = 0, techTotal = 0;
+  for (const a of all) {
+    byChannel[a.channel] = (byChannel[a.channel] || 0) + 1;
+    for (const s of a.systems || []) {
+      bySystem[s] = (bySystem[s] || 0) + 1;
+      if (s === 'TECH') techTotal++;
+      else if (s === 'PMS' || s === 'CRM' || s === 'HR') productTotal++;
+    }
+    if (a._sub) bySub[a._sub] = (bySub[a._sub] || 0) + 1;
+  }
+  return { total: all.length, byChannel, bySystem, bySub, productTotal, techTotal };
+}
+function brandOptions() {
+  const set = new Set();
+  for (const a of all) {
+    if (view === 'product' && !(a.systems || []).some(s => s !== 'TECH')) continue;
+    (a.brands || []).forEach(b => set.add(b));
+  }
+  return [...set].sort();
+}
+
 function applyStats(s) {
-  // 舊資料相容：把 by_system.EIP 併入 HR
-  const bs = { ...(s.by_system || {}) };
-  if (bs.EIP) { bs.HR = (bs.HR || 0) + bs.EIP; delete bs.EIP; }
-
-  setText('m-total',  s.total ?? 0);
-  setText('m-today',  s.new_today ?? 0);
-  setText('m-trend',  s.by_type?.['產業趨勢'] ?? 0);
-  setText('m-feat',   s.by_type?.['功能更新'] ?? 0);
-  setText('badge-new',    '+' + (s.new_today ?? 0) + ' 今日');
-  setText('badge-today',  (s.new_today ?? 0) + ' 篇');
-  setText('cnt-all', s.total ?? 0);
-  setText('cnt-rss', s.by_channel?.rss ?? 0);
-  setText('cnt-PMS', bs.PMS ?? 0);
-  setText('cnt-CRM', bs.CRM ?? 0);
-  setText('cnt-HR',  bs.HR  ?? 0);
-
   const t = s.last_updated ? new Date(s.last_updated).toLocaleString('zh-TW',{
     month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'
   }) : '—';
   setText('sync-time', t);
+}
 
-  renderDist('dist-systems', bs,
-    {PMS:'df-amber', CRM:'df-sky', HR:'df-moss'});
-  renderDist('dist-types', s.by_type || {},
-    {'用戶體驗':'df-moss','功能更新':'df-amber','產業趨勢':'df-sand','Dashboard案例':'df-sky','AI應用':'df-red'});
+function updateMetrics(items) {
+  const today = items.filter(a => {
+    const d = new Date(a.date);
+    return (Date.now() - d) < 86400 * 1000;
+  }).length;
+  setText('m-total', items.length);
+  setText('m-today', today);
+  setText('badge-new',   '+' + today + ' 今日');
+  setText('badge-today', today + ' 篇');
+
+  if (view === 'tech') {
+    // 熱門主題（top type + 次數）
+    const typeCount = {};
+    for (const a of items) for (const t of a.types || []) typeCount[t] = (typeCount[t] || 0) + 1;
+    const top = Object.entries(typeCount).sort((a,b) => b[1]-a[1])[0];
+    setText('m-mid', top ? top[1] : 0);
+    // 來源多樣性
+    const srcSet = new Set(items.map(a => (a.source || '').split('·')[0]));
+    setText('m-right', srcSet.size);
+  } else {
+    // 產品更新 + 功能發布 合計
+    let prod = 0;
+    for (const a of items) if ((a.types || []).some(t => t === '產品更新' || t === '功能發布')) prod++;
+    setText('m-mid', prod);
+    // 品牌覆蓋
+    const brandSet = new Set();
+    for (const a of items) (a.brands || []).forEach(b => brandSet.add(b));
+    setText('m-right', brandSet.size);
+  }
+
+  // Distribution
+  const distLeft = {};
+  if (view === 'tech') {
+    for (const a of items) if (a._sub) {
+      const label = TECH_SUBCATS.find(s => s.key === a._sub)?.label || a._sub;
+      distLeft[label] = (distLeft[label] || 0) + 1;
+    }
+  } else {
+    for (const a of items) for (const s of a.systems || []) {
+      if (s === 'TECH') continue;
+      distLeft[s] = (distLeft[s] || 0) + 1;
+    }
+  }
+  const distTypes = {};
+  for (const a of items) for (const t of a.types || []) distTypes[t] = (distTypes[t] || 0) + 1;
+
+  renderDist('dist-systems', distLeft,
+    view === 'tech'
+      ? {'AI 前沿':'df-red','國際科技':'df-teal','台灣科技':'df-amber','設計 / UX':'df-amber2'}
+      : {PMS:'df-amber', CRM:'df-sky', HR:'df-moss'});
+  renderDist('dist-types', distTypes, TYPE_DIST_CLS);
 }
 
 function renderDist(id, data, colors) {
@@ -911,53 +1230,21 @@ function renderDist(id, data, colors) {
     .sort((a,b) => b[1]-a[1])
     .map(([k,v]) => `
     <div class="dist-item">
-      <span class="dist-name">${k}</span>
+      <span class="dist-name">${esc(k)}</span>
       <div class="dist-track"><div class="dist-fill ${colors[k]||'df-sand'}" style="width:${Math.round(v/max*100)}%"></div></div>
       <span class="dist-num">${v}</span>
     </div>`).join('');
 }
 
-// ── Filters ────────────────────────────────────────────────────
-function setSys(el, v) {
-  filterSys = v;
-  el.closest('.filter-group').querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-  el.classList.add('active');
-  render();
-}
-function setType(el, v) {
-  filterType = v;
-  el.closest('.filter-group').querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-  el.classList.add('active');
-  render();
-}
-function setChannel(el, v) {
-  filterChannel = v;
-  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-  el.classList.add('active');
-  const labels = {'':`全部情報`, rss:`官方品牌 RSS`};
-  setText('page-heading', labels[v] || v);
-  render();
-}
-function setSystem(el, v) {
-  const same = filterSys === v;
-  filterSys = same ? '' : v;
-  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-  if (!same) {
-    el.classList.add('active');
-    const labels = {PMS:'PMS · 旅宿管理', CRM:'CRM · 客戶關係', HR:'HR · 人資系統'};
-    setText('page-heading', labels[v] || v);
-  } else {
-    document.querySelector('[data-ch=""]').classList.add('active');
-    setText('page-heading','全部情報');
-  }
-  render();
-}
-function setLangPri(el, v) {
-  filterLangPri = v;
-  el.closest('.filter-group').querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
-  el.classList.add('active');
-  render();
-}
+// ── Filter setters ────────────────────────────────────────────
+function setSys(v)     { filterSys = v;     onlyBookmarks = false; renderSidebar(); renderFilterBar(); render(); syncURL(); }
+function setSysNav(v)  { setSys(v); }
+function setSubCat(v)  { filterSubCat = v;  onlyBookmarks = false; renderSidebar(); renderFilterBar(); render(); syncURL(); }
+function setType(v)    { filterType = v;    renderFilterBar(); render(); syncURL(); }
+function setChannel(v) { filterChannel = v; renderSidebar();   render(); syncURL(); }
+function setLangPri(v) { filterLangPri = v; renderFilterBar(); render(); }
+function setBrand(v)   { filterBrand = v;   renderFilterBar(); render(); syncURL(); }
+function toggleBookmarksNav() { onlyBookmarks = !onlyBookmarks; renderSidebar(); render(); }
 function setSort(m) {
   sortMode = m;
   document.getElementById('sort-score').classList.toggle('active', m==='score');
@@ -971,19 +1258,30 @@ function onSearch() {
 
 // ── Render ─────────────────────────────────────────────────────
 function langOf(a) {
-  // 舊資料無 lang 欄位時的 fallback
-  if (a.lang) return a.lang;
+  if (a.lang && a.lang !== 'ja') return a.lang;
+  if (a.lang === 'ja') return 'en'; // 舊資料若為 ja，視為英文歸類
   return a.is_zhtw ? 'zh-TW' : 'en';
+}
+function belongsToView(a) {
+  const sys = a.systems || [];
+  const isTech = sys.includes('TECH');
+  const isProduct = sys.some(s => s === 'PMS' || s === 'CRM' || s === 'HR');
+  if (view === 'tech')    return isTech;
+  return isProduct;   // Product view 排除純 TECH 文章
 }
 
 function render() {
   let items = all.filter(a => {
+    if (!belongsToView(a)) return false;
+    if (onlyBookmarks && !bookmarks.includes(a.id)) return false;
     if (filterChannel && a.channel !== filterChannel) return false;
-    if (filterSys     && !a.systems?.includes(filterSys)) return false;
-    if (filterType    && !a.types?.includes(filterType))  return false;
+    if (view === 'product' && filterSys && !a.systems?.includes(filterSys)) return false;
+    if (view === 'tech' && filterSubCat && a._sub !== filterSubCat) return false;
+    if (filterType && !a.types?.includes(filterType)) return false;
     if (filterLangPri && langOf(a) !== filterLangPri) return false;
+    if (filterBrand && !(a.brands || []).includes(filterBrand)) return false;
     if (searchQ) {
-      const hay = (a.title + a.summary + a.source + (a.types||[]).join(' ')).toLowerCase();
+      const hay = (a.title + a.summary + a.source + (a.types||[]).join(' ') + (a.brands||[]).join(' ')).toLowerCase();
       if (!hay.includes(searchQ)) return false;
     }
     return true;
@@ -993,7 +1291,6 @@ function render() {
     items.sort((a,b) => new Date(b.date) - new Date(a.date));
   } else {
     items.sort((a,b) => {
-      // 語系優先（繁中 > 日 > 英），再依 score
       const la = LANG_PRIORITY[langOf(a)] || 0;
       const lb = LANG_PRIORITY[langOf(b)] || 0;
       if (la !== lb) return lb - la;
@@ -1003,63 +1300,89 @@ function render() {
 
   setText('shown-count', items.length);
   show('list-header');
+  updateMetrics(items);
+
+  // page heading
+  const parts = [view === 'tech' ? '科技趨勢' : '產品競品'];
+  if (view === 'product' && filterSys)    parts.push(filterSys);
+  if (view === 'tech'    && filterSubCat) parts.push(TECH_SUBCATS.find(s => s.key === filterSubCat)?.label || filterSubCat);
+  if (filterType)  parts.push(filterType);
+  if (onlyBookmarks) parts.push('★ 收藏');
+  setText('page-heading', parts.join(' · '));
 
   const grid = document.getElementById('cards-grid');
-  const empty = document.getElementById('empty-state');
-
   if (items.length === 0) {
     grid.innerHTML = '';
     hide('cards-grid');
     show('empty-state');
     return;
   }
-  
-   hide('empty-state');
-   show('cards-grid');
-   grid.innerHTML = items.map(renderCard).join('');
+  hide('empty-state');
+  show('cards-grid');
+  grid.innerHTML = items.map(renderCard).join('');
 }
 
 // ── Card HTML ──────────────────────────────────────────────────
-const SYS_CLS  = {PMS:'tb-pms', CRM:'tb-crm', HR:'tb-hr'};
-const TYPE_CLS = {'用戶體驗':'tag-ux','功能更新':'tag-feat','產業趨勢':'tag-trend','Dashboard案例':'tag-dash','AI應用':'tag-ai'};
+const SYS_CLS  = { PMS:'tb-pms', CRM:'tb-crm', HR:'tb-hr', TECH:'tb-tech' };
+const SYS_LABEL= { PMS:'PMS', CRM:'CRM', HR:'HR', TECH:'TECH' };
 const THUMB_COLORS = {
   PMS: 'background:linear-gradient(135deg,#F1E1C0 0%,#FAF4E6 100%)',
   HR:  'background:linear-gradient(135deg,#CFDDD1 0%,#EEF3EF 100%)',
   CRM: 'background:linear-gradient(135deg,#D3E4EE 0%,#EEF4F7 100%)',
+  TECH:'background:linear-gradient(135deg,#F4E7CE 0%,#FBF6EC 100%)',
 };
-const THUMB_ICONS = {PMS:'🏨', HR:'👤', CRM:'🤝', default:'📄'};
-const LANG_LABEL  = {'zh-TW':'繁', en:'EN', ja:'日'};
-const LANG_CLS    = {'zh-TW':'lang-zh', en:'lang-en', ja:'lang-ja'};
+const THUMB_ICONS = { PMS:'🏨', HR:'👤', CRM:'🤝', TECH:'✨', default:'📄' };
+const LANG_LABEL  = { 'zh-TW':'繁', en:'EN' };
+const LANG_CLS    = { 'zh-TW':'lang-zh', en:'lang-en' };
+
+function primarySystem(a) {
+  const sys = a.systems || [];
+  if (view === 'tech' && sys.includes('TECH')) return 'TECH';
+  const order = ['PMS','CRM','HR','TECH'];
+  return order.find(s => sys.includes(s)) || 'HR';
+}
+function cleanSource(src) {
+  if (!src) return '';
+  // TECH/AI·Anthropic → Anthropic
+  const parts = src.split('·');
+  return parts.length > 1 ? parts.slice(1).join('·') : src;
+}
 
 function renderCard(a) {
-  const sys   = (a.systems||['HR'])[0];
+  const sys   = primarySystem(a);
   const bm    = bookmarks.includes(a.id);
-  const tags  = (a.types||[]).slice(0,3);
+  const tags  = (a.types || []).slice(0,3);
   const rel   = relTime(a.date);
   const safeUrl = esc(a.url);
   const safeId  = esc(a.id);
   const lang    = langOf(a);
+  const isTech  = sys === 'TECH';
+  const brand   = (a.brands || [])[0];
 
   const thumbHtml = a.thumbnail
-    ? `<img src="${esc(a.thumbnail)}" alt="" loading="lazy" onerror="this.parentNode.innerHTML=fallbackThumb('${sys}')">`
+    ? `<img src="${esc(a.thumbnail)}" alt="" loading="lazy" onerror="this.parentNode.innerHTML=fallbackThumb('${sys}','${esc(a.source)}')">`
     : `<div class="thumb-placeholder" style="${THUMB_COLORS[sys]||''}">
         <div class="thumb-icon">${THUMB_ICONS[sys]||THUMB_ICONS.default}</div>
-        <div class="thumb-brand">${esc(a.source)}</div>
+        <div class="thumb-brand">${esc(cleanSource(a.source))}</div>
        </div>`;
 
   const tagHtml = tags.map(t =>
-    `<span class="tag ${TYPE_CLS[t]||'tag-trend'}">${t}</span>`).join('');
+    `<span class="tag ${TYPE_CLS[t]||'tag-ct-trend'}">${esc(t)}</span>`).join('');
+
+  const brandChip = (!isTech && brand)
+    ? `<span class="thumb-brand-chip">${esc(brand)}</span>` : '';
 
   return `
-  <div class="card" onclick="openCard('${safeUrl}')">
+  <div class="card ${isTech ? 'card-tech' : ''}" onclick="openCard('${safeUrl}')">
     <div class="card-thumb">
       ${thumbHtml}
-      <span class="thumb-badge ${SYS_CLS[sys]||'tb-hr'}">${sys}</span>
+      <span class="thumb-badge ${SYS_CLS[sys]||'tb-hr'}">${SYS_LABEL[sys]||sys}</span>
       <span class="thumb-lang ${LANG_CLS[lang]||'lang-en'}">${LANG_LABEL[lang]||'EN'}</span>
+      ${brandChip}
     </div>
     <div class="card-body">
       <div class="card-source-row">
-        <span class="card-source">${esc(a.source)}</span>
+        <span class="card-source" title="${esc(a.source)}">${esc(cleanSource(a.source))}</span>
         <button class="card-bm ${bm?'saved':''}" onclick="toggleBm(event,'${safeId}')" title="收藏">
           ${bm ? '★' : '☆'}
         </button>
@@ -1075,9 +1398,10 @@ function renderCard(a) {
   </div>`;
 }
 
-function fallbackThumb(sys) {
+function fallbackThumb(sys, src) {
   return `<div class="thumb-placeholder" style="${THUMB_COLORS[sys]||''}">
     <div class="thumb-icon">${THUMB_ICONS[sys]||'📄'}</div>
+    <div class="thumb-brand">${esc(cleanSource(src||''))}</div>
   </div>`;
 }
 
@@ -1094,6 +1418,7 @@ function toggleBm(e, id) {
     toast('已加入收藏 ★');
   }
   localStorage.setItem('ci-bm', JSON.stringify(bookmarks));
+  renderSidebar();
   render();
 }
 
@@ -1127,6 +1452,7 @@ function toast(msg) {
 }
 
 // ── Init ───────────────────────────────────────────────────────
+loadURL();
 loadData();
 </script>
 </body>
