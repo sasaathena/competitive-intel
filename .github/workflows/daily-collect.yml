@@ -7,6 +7,11 @@ on:
   # 也可手動在 GitHub Actions 頁面觸發
   workflow_dispatch:
 
+# 同一 workflow 排隊執行，避免兩份跑同時 push 造成衝突
+concurrency:
+  group: daily-collect
+  cancel-in-progress: false
+
 permissions:
   contents: write   # 允許推送資料回儲存庫
 
@@ -16,11 +21,11 @@ jobs:
     timeout-minutes: 15
 
     steps:
-      # 1. 取得程式碼（包含昨天的歷史資料）
+      # 1. 取得程式碼（完整歷史，rebase 才不會踩到 shallow update 限制）
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
 
       # 2. 設定 Python
       - name: Set up Python 3.12
@@ -52,16 +57,30 @@ jobs:
           fi
 
       # 6. 如果有任何異動，commit 並 push 回 GitHub
+      #    - 執行期間 main 可能被別的 PR 合併推進，因此加 pull-rebase + retry
+      #    - -X theirs：articles.json 衝突時以本次 collect 的新資料為準
       - name: Commit & push updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # 確保將 data 和 docs 的變更都加入暫存區
+
           git add data/ docs/ || true
-          
-          # 只在有異動時才 commit（避免空 commit 導致 Action 失敗）
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: 自動更新競品情報 $(date +'%Y-%m-%d')"
-            git push origin HEAD:main
+
+          if git diff --cached --quiet; then
+            echo "沒有異動，略過 commit"
+            exit 0
           fi
+
+          git commit -m "chore: 自動更新競品情報 $(date +'%Y-%m-%d')"
+
+          for i in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push origin main; then
+              echo "第 $i 次 push 成功"
+              exit 0
+            fi
+            echo "第 $i 次 push 失敗，等 5 秒重試..."
+            sleep 5
+          done
+
+          echo "3 次重試後仍失敗，放棄"
+          exit 1
