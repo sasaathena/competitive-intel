@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>競品情報 · 產品競品 × 科技趨勢</title>
+<title>情報助理 · 產品情報與知識累積</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -124,11 +124,11 @@ input  { font-family: var(--sans) }
   transition: color .25s ease;
 }
 .logo-name {
-  font-family: var(--serif);
+  font-family: var(--sans), "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--sand-100);
-  letter-spacing: .01em;
+  letter-spacing: .02em;
 }
 .logo-sub {
   font-size: 11px;
@@ -166,9 +166,9 @@ input  { font-family: var(--sans) }
   border-radius: 50%;
   flex-shrink: 0;
 }
-.nd-pms   { background: var(--warm-amber) }
-.nd-hr    { background: var(--sand-300) }
 .nd-crm   { background: var(--moss-200) }
+.nd-pms   { background: var(--warm-amber) }
+.nd-fbm   { background: #D08A6D }
 .nd-all   { background: rgba(255,255,255,.4) }
 .nd-rss   { background: var(--warm-amber) }
 .nd-th    { background: var(--warm-red) }
@@ -390,20 +390,18 @@ body.view-tech .search-input:focus { box-shadow: 0 0 0 3px rgba(200,138,59,.15) 
 .chip:hover { border-color: var(--border2); color: var(--text); background: var(--sand-100) }
 .chip.active { border-color: transparent; color: #fff }
 .chip-all.active     { background: var(--accent) }
-.chip-pms.active     { background: var(--warm-amber) }
-.chip-hr.active      { background: var(--moss-400) }
 .chip-crm.active     { background: var(--warm-sky) }
+.chip-pms.active     { background: var(--warm-amber) }
+.chip-fbm.active     { background: #B5603D }
 .chip-tech.active    { background: var(--amber-500) }
 .chip-zh.active      { background: var(--moss-500) }
-/* content type chips */
-.chip-ct-prod.active { background: var(--moss-500) }
-.chip-ct-feat.active { background: var(--warm-amber) }
-.chip-ct-fund.active { background: #4C7C8E }
-.chip-ct-fin.active  { background: var(--sand-600) }
-.chip-ct-hire.active { background: #7B5CA6 }
-.chip-ct-trend.active{ background: var(--sand-600) }
-.chip-ct-ai.active   { background: var(--warm-red) }
-.chip-ct-ux.active   { background: var(--moss-400) }
+/* content type chips (PRD 6 類) */
+.chip-ct-p01.active  { background: var(--moss-500) }
+.chip-ct-u01.active  { background: var(--warm-amber) }
+.chip-ct-u02.active  { background: var(--sand-600) }
+.chip-ct-a01.active  { background: var(--warm-red) }
+.chip-ct-t01.active  { background: var(--warm-sky) }
+.chip-ct-t02.active  { background: #4C7C8E }
 /* tech sub-buckets */
 .chip-sb-ai.active   { background: #E67E5A }
 .chip-sb-glo.active  { background: #4C7C8E }
@@ -493,21 +491,50 @@ body.view-tech .search-input:focus { box-shadow: 0 0 0 3px rgba(200,138,59,.15) 
   display: block;
 }
 .card:hover .card-thumb img { transform: scale(1.04) }
-.thumb-placeholder {
+/* Monogram fallback — 代替 Unsplash 預設圖的品牌字母卡 */
+.thumb-monogram {
   width: 100%; height: 100%;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  gap: 8px;
+  overflow: hidden;
 }
-.thumb-icon { font-size: 28px; opacity: .3 }
-.thumb-brand {
+.thumb-monogram::before {
+  /* 微弱網格紋，避免大面積純色 */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(28,26,20,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28,26,20,.045) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+.mg-letter {
   font-family: var(--serif);
-  font-size: 13px;
   font-weight: 500;
-  color: var(--text3);
-  opacity: .55;
+  font-size: 92px;
+  line-height: 1;
+  letter-spacing: -.03em;
+  color: rgba(28, 26, 20, .68);
+  user-select: none;
+  position: relative;      /* 疊在 ::before 網格之上 */
+}
+body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
+.mg-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: rgba(28, 26, 20, .5);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  max-width: calc(100% - 24px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* System / entity badge on thumb (Product view: emphasise brand) */
@@ -522,9 +549,9 @@ body.view-tech .search-input:focus { box-shadow: 0 0 0 3px rgba(200,138,59,.15) 
   border-radius: 10px;
   letter-spacing: .04em;
 }
-.tb-pms  { background: var(--warm-amber); color: #fff }
-.tb-hr   { background: var(--moss-600);   color: var(--sand-100) }
 .tb-crm  { background: var(--warm-sky);   color: #fff }
+.tb-pms  { background: var(--warm-amber); color: #fff }
+.tb-fbm  { background: #B5603D;            color: #fff }
 .tb-tech { background: var(--amber-500);  color: #fff }
 
 /* Brand chip — emphasised in Product view */
@@ -626,14 +653,13 @@ body.view-tech .search-input:focus { box-shadow: 0 0 0 3px rgba(200,138,59,.15) 
   padding: 2px 8px;
   border-radius: 10px;
 }
-.tag-ct-prod  { background: #EEF3EF; color: var(--moss-500) }
-.tag-ct-feat  { background: #FAF2E4; color: #7A5520 }
-.tag-ct-fund  { background: #E1EBF0; color: #345D6D }
-.tag-ct-fin   { background: #F0EBD8; color: #6A5A2F }
-.tag-ct-hire  { background: #EEE6F4; color: #6B4C97 }
-.tag-ct-trend { background: var(--sand-100); color: var(--sand-600) }
-.tag-ct-ai    { background: #FBE9E4; color: var(--warm-red) }
-.tag-ct-ux    { background: #E7F0E9; color: var(--moss-500) }
+/* PRD 6 類 tag colour */
+.tag-ct-p01   { background: #EEF3EF; color: var(--moss-500) }   /* 競品與產品更新 - 森林綠 */
+.tag-ct-u01   { background: #FAF2E4; color: #7A5520 }           /* UIUX 設計案例 - 米棕 */
+.tag-ct-u02   { background: var(--sand-100); color: var(--sand-600) } /* UX 研究趨勢 - 米灰 */
+.tag-ct-a01   { background: #FBE9E4; color: var(--warm-red) }   /* AI 工具與工作流 - 磚紅 */
+.tag-ct-t01   { background: #E1EBF0; color: #345D6D }           /* 前端 API - 藍 */
+.tag-ct-t02   { background: #E3EEF0; color: #345D5F }           /* 架構資料 - 深青藍 */
 
 .card-footer {
   display: flex;
@@ -716,7 +742,192 @@ body.view-tech .search-input:focus { box-shadow: 0 0 0 3px rgba(200,138,59,.15) 
 .df-sand  { background: var(--sand-500) }
 .df-purple{ background: #7B5CA6 }
 .df-teal  { background: #4C7C8E }
+.df-fbm   { background: #B5603D }
 .dist-num { font-size: 11px; font-family: var(--mono); color: var(--text3); width: 26px; text-align: right }
+
+/* ── Release Status Badge（PRD §5.4）─────────────────────────── */
+.thumb-status {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: rgba(255,255,255,.94);
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+  z-index: 2;
+}
+.status-ann  { color: #345D6D }
+.status-beta { color: #B5803A }
+.status-ga   { color: var(--moss-500); background: #DAEEDE }
+.status-dep  { color: var(--warm-red) }
+.status-unv  { color: var(--text3) }
+.drawer-status {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 10px;
+  background: var(--bg3);
+  letter-spacing: .03em;
+}
+
+/* ── Card Detail Drawer ─────────────────────────────────────── */
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(28,26,20,.42);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .22s ease;
+  z-index: 90;
+}
+.drawer-overlay.show { opacity: 1; pointer-events: auto }
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(560px, 94vw);
+  height: 100vh;
+  background: var(--bg2);
+  border-left: 1px solid var(--border);
+  box-shadow: -8px 0 28px rgba(0,0,0,.08);
+  transform: translateX(100%);
+  transition: transform .26s cubic-bezier(.4,0,.2,1);
+  z-index: 91;
+  display: flex;
+  flex-direction: column;
+}
+.drawer.show { transform: translateX(0) }
+.drawer-head {
+  padding: 20px 24px 14px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.drawer-head-main { flex: 1; min-width: 0 }
+.drawer-eyebrow {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 6px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.drawer-eyebrow .sep { opacity: .4 }
+.drawer-title {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--text);
+  letter-spacing: -.01em;
+}
+.drawer-close {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--bg3);
+  color: var(--text2);
+  font-size: 18px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  border: none;
+  transition: all .15s;
+}
+.drawer-close:hover { background: var(--sand-200); color: var(--text) }
+.drawer-meta {
+  padding: 12px 24px;
+  background: var(--bg3);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--text2);
+  align-items: center;
+}
+.drawer-meta .dm-item { display: inline-flex; gap: 6px; align-items: center }
+.drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 22px 24px 24px;
+}
+.drawer-section { margin-bottom: 22px }
+.drawer-section:last-child { margin-bottom: 4px }
+.drawer-section h5 {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 10px;
+}
+.drawer-section p {
+  font-size: 13.5px;
+  line-height: 1.68;
+  color: var(--text);
+}
+.drawer-section .placeholder {
+  color: var(--text3);
+  font-style: italic;
+  font-size: 12.5px;
+  background: var(--bg3);
+  padding: 10px 12px;
+  border-radius: var(--r);
+  border: 1px dashed var(--border);
+  display: block;
+}
+.drawer-tags { display: flex; gap: 6px; flex-wrap: wrap }
+.drawer-foot {
+  padding: 14px 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 10px;
+  background: var(--bg2);
+}
+.drawer-foot .btn-primary {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: var(--r);
+  background: var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  transition: filter .15s;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.drawer-foot .btn-primary:hover { filter: brightness(1.08) }
+.drawer-foot .btn-secondary {
+  padding: 10px 16px;
+  border-radius: var(--r);
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  color: var(--text2);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .15s;
+}
+.drawer-foot .btn-secondary:hover { border-color: var(--border2); color: var(--text) }
+.drawer-foot .btn-secondary.saved {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent);
+}
 
 /* ── Toast ───────────────────────────────────────────────────── */
 .toast {
@@ -774,9 +985,9 @@ body.view-tech .search-input:focus { box-shadow: 0 0 0 3px rgba(200,138,59,.15) 
     <div class="sidebar-top">
       <div class="logo">
         <div class="logo-mark" id="logo-mark">情</div>
-        <span class="logo-name">競品情報</span>
+        <span class="logo-name">情報助理</span>
       </div>
-      <div class="logo-sub" id="logo-sub">PRODUCT · TECH</div>
+      <div class="logo-sub" id="logo-sub">CRM · PMS · FBM</div>
     </div>
 
     <div id="sidebar-nav"></div>
@@ -795,7 +1006,7 @@ body.view-tech .search-input:focus { box-shadow: 0 0 0 3px rgba(200,138,59,.15) 
     <!-- Topbar -->
     <div class="topbar">
       <div class="view-tabs" role="tablist" aria-label="頂層分區">
-        <button class="view-tab active" id="tab-product" onclick="setView('product')" role="tab">產品競品</button>
+        <button class="view-tab active" id="tab-product" onclick="setView('product')" role="tab">產品領域</button>
         <button class="view-tab" id="tab-tech" onclick="setView('tech')" role="tab">科技趨勢</button>
       </div>
       <div class="page-heading" id="page-heading">全部情報</div>
@@ -856,6 +1067,10 @@ body.view-tech .search-input:focus { box-shadow: 0 0 0 3px rgba(200,138,59,.15) 
   </div><!-- .main -->
 </div><!-- .app -->
 
+<!-- Card Detail Drawer -->
+<div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="情報詳情"></aside>
+
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
@@ -863,7 +1078,7 @@ body.view-tech .search-input:focus { box-shadow: 0 0 0 3px rgba(200,138,59,.15) 
 // ── State ──────────────────────────────────────────────────────
 let all = [];
 let view          = 'product';    // 'product' | 'tech'
-let filterSys     = '';           // Product: '', 'PMS', 'CRM', 'HR'
+let filterSys     = '';           // Product: '', 'CRM', 'PMS', 'FBM'
 let filterSubCat  = '';           // Tech:    '', 'AI', 'Global', 'TW', 'Design'
 let filterType    = '';           // 內容類型 (八分類)
 let filterChannel = '';           // '', 'rss', 'threads'
@@ -874,42 +1089,89 @@ let searchQ       = '';
 let sortMode      = 'score';
 let bookmarks     = JSON.parse(localStorage.getItem('ci-bm') || '[]');
 
-// 舊資料相容
-const SYS_ALIAS = { EIP: 'HR' };
+// 系統別名：Phase A 完全棄用 HR / EIP（映射為 null → 於 normSystems 排除）
+const SYS_ALIAS = { EIP: null, HR: null };
 function normSystems(sys) {
   if (!Array.isArray(sys)) return [];
-  return [...new Set(sys.map(s => SYS_ALIAS[s] || s))];
+  const out = [];
+  const seen = new Set();
+  for (const s of sys) {
+    const mapped = Object.prototype.hasOwnProperty.call(SYS_ALIAS, s) ? SYS_ALIAS[s] : s;
+    if (!mapped) continue;
+    if (seen.has(mapped)) continue;
+    seen.add(mapped);
+    out.push(mapped);
+  }
+  return out;
 }
-// 舊 type 名稱→新分類 mapping（向後相容既有資料）
+
+// 舊 type 名稱 → PRD 6 類映射（商業新聞類別：融資/財報/人事 → null 直接丟棄）
 const TYPE_ALIAS = {
-  '功能更新': '功能發布',
-  'Dashboard案例': '用戶體驗',
-  'AI應用': 'AI 技術',
+  // Phase A 新 6 類 → 保留自身
+  'P01 競品與產品更新':    'P01 競品與產品更新',
+  'U01 UI/UX 設計案例':    'U01 UI/UX 設計案例',
+  'U02 UX 研究與設計趨勢': 'U02 UX 研究與設計趨勢',
+  'A01 AI 工具與工作流':   'A01 AI 工具與工作流',
+  'T01 前端與 API 基礎':   'T01 前端與 API 基礎',
+  'T02 產品架構與資料模型': 'T02 產品架構與資料模型',
+  // 舊 8 類 → 新 6 類
+  '產品更新':      'P01 競品與產品更新',
+  '功能發布':      'P01 競品與產品更新',
+  '功能更新':      'P01 競品與產品更新',
+  '用戶體驗':      'U01 UI/UX 設計案例',
+  'Dashboard案例': 'U01 UI/UX 設計案例',
+  '產業趨勢':      'U02 UX 研究與設計趨勢',
+  'AI 技術':       'A01 AI 工具與工作流',
+  'AI應用':        'A01 AI 工具與工作流',
+  // 商業新聞類別：丟棄
+  '融資動態': null,
+  '財報營運': null,
+  '人事異動': null,
 };
 function normTypes(types) {
   if (!Array.isArray(types)) return [];
-  return [...new Set(types.map(t => TYPE_ALIAS[t] || t))];
+  const out = [];
+  const seen = new Set();
+  for (const t of types) {
+    const mapped = Object.prototype.hasOwnProperty.call(TYPE_ALIAS, t) ? TYPE_ALIAS[t] : t;
+    if (!mapped) continue;
+    if (seen.has(mapped)) continue;
+    seen.add(mapped);
+    out.push(mapped);
+  }
+  return out;
 }
 
 // 語系優先權：繁中 > 英
 const LANG_PRIORITY = { 'zh-TW': 2, en: 1 };
 
-// 新 8 分類（依用戶指定順序）
+// PRD 6 類（P01/U01/U02/A01/T01/T02）
 const CONTENT_TYPES = [
-  { key: '產品更新',   cls: 'ct-prod'  },
-  { key: '功能發布',   cls: 'ct-feat'  },
-  { key: '融資動態',   cls: 'ct-fund'  },
-  { key: '財報營運',   cls: 'ct-fin'   },
-  { key: '人事異動',   cls: 'ct-hire'  },
-  { key: '產業趨勢',   cls: 'ct-trend' },
-  { key: 'AI 技術',    cls: 'ct-ai'    },
-  { key: '用戶體驗',   cls: 'ct-ux'    },
+  { key: 'P01 競品與產品更新',    cls: 'ct-p01' },
+  { key: 'U01 UI/UX 設計案例',    cls: 'ct-u01' },
+  { key: 'U02 UX 研究與設計趨勢', cls: 'ct-u02' },
+  { key: 'A01 AI 工具與工作流',   cls: 'ct-a01' },
+  { key: 'T01 前端與 API 基礎',   cls: 'ct-t01' },
+  { key: 'T02 產品架構與資料模型', cls: 'ct-t02' },
 ];
+// 顯示用標籤（去掉 PRD 代碼前綴；內部 key 仍保留 P01/U01... 以利 traceability）
+const TYPE_SHORT = {
+  'P01 競品與產品更新':    '競品與產品更新',
+  'U01 UI/UX 設計案例':    'UI/UX 設計案例',
+  'U02 UX 研究與設計趨勢': 'UX 研究與設計趨勢',
+  'A01 AI 工具與工作流':   'AI 工具與工作流',
+  'T01 前端與 API 基礎':   '前端與 API 基礎',
+  'T02 產品架構與資料模型': '產品架構與資料模型',
+};
+function typeLabel(k) { return TYPE_SHORT[k] || k; }
 const TYPE_CLS = Object.fromEntries(CONTENT_TYPES.map(t => [t.key, `tag-${t.cls}`]));
 const TYPE_DIST_CLS = {
-  '產品更新': 'df-moss', '功能發布': 'df-amber', '融資動態': 'df-teal',
-  '財報營運': 'df-sand', '人事異動': 'df-purple', '產業趨勢': 'df-sand',
-  'AI 技術': 'df-red',  '用戶體驗': 'df-moss'
+  'P01 競品與產品更新':    'df-moss',
+  'U01 UI/UX 設計案例':    'df-amber',
+  'U02 UX 研究與設計趨勢': 'df-sand',
+  'A01 AI 工具與工作流':   'df-red',
+  'T01 前端與 API 基礎':   'df-sky',
+  'T02 產品架構與資料模型': 'df-teal',
 };
 
 // Tech 子分類（source name 前綴判定）
@@ -990,7 +1252,7 @@ function applyView() {
   document.body.classList.toggle('view-tech', view === 'tech');
   document.getElementById('tab-product').classList.toggle('active', view === 'product');
   document.getElementById('tab-tech').classList.toggle('active', view === 'tech');
-  setText('logo-sub', view === 'tech' ? 'AI · TREND · UX' : 'PMS · CRM · HR');
+  setText('logo-sub', view === 'tech' ? 'AI · GLOBAL · UX' : 'CRM · PMS · FBM');
   renderSidebar();
   renderFilterBar();
   renderMetricsSkeleton();
@@ -1025,17 +1287,17 @@ function renderSidebar() {
         <div class="nav-dot nd-all"></div>全部系統
         <span class="nav-count">${stats.productTotal}</span>
       </div>
+      <div class="nav-item ${filterSys==='CRM'?'active':''}" onclick="setSysNav('CRM')">
+        <div class="nav-dot nd-crm"></div>CRM · MarTech
+        <span class="nav-count">${stats.bySystem.CRM || 0}</span>
+      </div>
       <div class="nav-item ${filterSys==='PMS'?'active':''}" onclick="setSysNav('PMS')">
         <div class="nav-dot nd-pms"></div>PMS · 旅宿管理
         <span class="nav-count">${stats.bySystem.PMS || 0}</span>
       </div>
-      <div class="nav-item ${filterSys==='CRM'?'active':''}" onclick="setSysNav('CRM')">
-        <div class="nav-dot nd-crm"></div>CRM · 客戶關係
-        <span class="nav-count">${stats.bySystem.CRM || 0}</span>
-      </div>
-      <div class="nav-item ${filterSys==='HR'?'active':''}" onclick="setSysNav('HR')">
-        <div class="nav-dot nd-hr"></div>HR · 人資系統
-        <span class="nav-count">${stats.bySystem.HR || 0}</span>
+      <div class="nav-item ${filterSys==='FBM'?'active':''}" onclick="setSysNav('FBM')">
+        <div class="nav-dot nd-fbm"></div>FBM · 餐飲訂位
+        <span class="nav-count">${stats.bySystem.FBM || 0}</span>
       </div>
     </div>`;
   } else {
@@ -1069,9 +1331,9 @@ function renderFilterBar() {
     html += `<div class="filter-group">
       <span class="filter-label">系統</span>
       <button class="chip chip-all ${filterSys===''?'active':''}" onclick="setSys('')">全部</button>
+      <button class="chip chip-crm ${filterSys==='CRM'?'active':''}" onclick="setSys('CRM')">CRM/MarTech</button>
       <button class="chip chip-pms ${filterSys==='PMS'?'active':''}" onclick="setSys('PMS')">PMS</button>
-      <button class="chip chip-crm ${filterSys==='CRM'?'active':''}" onclick="setSys('CRM')">CRM</button>
-      <button class="chip chip-hr  ${filterSys==='HR'?'active':''}"  onclick="setSys('HR')">HR</button>
+      <button class="chip chip-fbm ${filterSys==='FBM'?'active':''}" onclick="setSys('FBM')">FBM</button>
     </div>
     <div class="filter-sep"></div>
     <div class="filter-group">
@@ -1096,7 +1358,7 @@ function renderFilterBar() {
     <span class="filter-label">內容類型</span>
     <button class="chip chip-all ${filterType===''?'active':''}" onclick="setType('')">全部</button>` +
     CONTENT_TYPES.map(t =>
-      `<button class="chip chip-${t.cls} ${filterType===t.key?'active':''}" onclick="setType('${t.key}')">${t.key}</button>`
+      `<button class="chip chip-${t.cls} ${filterType===t.key?'active':''}" onclick="setType('${t.key}')" title="${esc(t.key)}">${esc(typeLabel(t.key))}</button>`
     ).join('') +
   `</div>
   <div class="filter-sep"></div>
@@ -1129,7 +1391,7 @@ function renderMetricsSkeleton() {
       <div class="metric-top"><span class="metric-icon">${view==='tech'?'💡':'⚡'}</span>
         <span class="metric-badge mb-gray">${view==='tech'?'熱門主題':'產品動態'}</span></div>
       <div class="metric-val" id="m-mid">0</div>
-      <div class="metric-lbl">${view==='tech'?'今日熱門類型':'產品更新+功能發布'}</div>
+      <div class="metric-lbl">${view==='tech'?'今日熱門類型':'競品與產品更新'}</div>
     </div>
     <div class="metric m-sky">
       <div class="metric-top"><span class="metric-icon">${view==='tech'?'📚':'🏷'}</span>
@@ -1149,7 +1411,7 @@ function computeCounts() {
     for (const s of a.systems || []) {
       bySystem[s] = (bySystem[s] || 0) + 1;
       if (s === 'TECH') techTotal++;
-      else if (s === 'PMS' || s === 'CRM' || s === 'HR') productTotal++;
+      else if (s === 'PMS' || s === 'CRM' || s === 'FBM') productTotal++;
     }
     if (a._sub) bySub[a._sub] = (bySub[a._sub] || 0) + 1;
   }
@@ -1191,9 +1453,9 @@ function updateMetrics(items) {
     const srcSet = new Set(items.map(a => (a.source || '').split('·')[0]));
     setText('m-right', srcSet.size);
   } else {
-    // 產品更新 + 功能發布 合計
+    // P01 競品與產品更新 合計
     let prod = 0;
-    for (const a of items) if ((a.types || []).some(t => t === '產品更新' || t === '功能發布')) prod++;
+    for (const a of items) if ((a.types || []).some(t => t === 'P01 競品與產品更新')) prod++;
     setText('m-mid', prod);
     // 品牌覆蓋
     const brandSet = new Set();
@@ -1220,7 +1482,7 @@ function updateMetrics(items) {
   renderDist('dist-systems', distLeft,
     view === 'tech'
       ? {'AI 前沿':'df-red','國際科技':'df-teal','台灣科技':'df-amber','設計 / UX':'df-amber2'}
-      : {PMS:'df-amber', CRM:'df-sky', HR:'df-moss'});
+      : {CRM:'df-sky', PMS:'df-amber', FBM:'df-fbm'});
   renderDist('dist-types', distTypes, TYPE_DIST_CLS);
 }
 
@@ -1230,7 +1492,7 @@ function renderDist(id, data, colors) {
     .sort((a,b) => b[1]-a[1])
     .map(([k,v]) => `
     <div class="dist-item">
-      <span class="dist-name">${esc(k)}</span>
+      <span class="dist-name" title="${esc(k)}">${esc(typeLabel(k))}</span>
       <div class="dist-track"><div class="dist-fill ${colors[k]||'df-sand'}" style="width:${Math.round(v/max*100)}%"></div></div>
       <span class="dist-num">${v}</span>
     </div>`).join('');
@@ -1265,9 +1527,9 @@ function langOf(a) {
 function belongsToView(a) {
   const sys = a.systems || [];
   const isTech = sys.includes('TECH');
-  const isProduct = sys.some(s => s === 'PMS' || s === 'CRM' || s === 'HR');
+  const isProduct = sys.some(s => s === 'CRM' || s === 'PMS' || s === 'FBM');
   if (view === 'tech')    return isTech;
-  return isProduct;   // Product view 排除純 TECH 文章
+  return isProduct;   // 產品領域 view 排除純 TECH 文章
 }
 
 function render() {
@@ -1303,7 +1565,7 @@ function render() {
   updateMetrics(items);
 
   // page heading
-  const parts = [view === 'tech' ? '科技趨勢' : '產品競品'];
+  const parts = [view === 'tech' ? '科技趨勢' : '產品領域'];
   if (view === 'product' && filterSys)    parts.push(filterSys);
   if (view === 'tech'    && filterSubCat) parts.push(TECH_SUBCATS.find(s => s.key === filterSubCat)?.label || filterSubCat);
   if (filterType)  parts.push(filterType);
@@ -1320,26 +1582,53 @@ function render() {
   hide('empty-state');
   show('cards-grid');
   grid.innerHTML = items.map(renderCard).join('');
+  attachThumbErrorHandlers(grid);
 }
 
 // ── Card HTML ──────────────────────────────────────────────────
-const SYS_CLS  = { PMS:'tb-pms', CRM:'tb-crm', HR:'tb-hr', TECH:'tb-tech' };
-const SYS_LABEL= { PMS:'PMS', CRM:'CRM', HR:'HR', TECH:'TECH' };
+const SYS_CLS   = { CRM:'tb-crm', PMS:'tb-pms', FBM:'tb-fbm', TECH:'tb-tech' };
+const SYS_LABEL = { CRM:'CRM', PMS:'PMS', FBM:'FBM', TECH:'TECH' };
 const THUMB_COLORS = {
-  PMS: 'background:linear-gradient(135deg,#F1E1C0 0%,#FAF4E6 100%)',
-  HR:  'background:linear-gradient(135deg,#CFDDD1 0%,#EEF3EF 100%)',
-  CRM: 'background:linear-gradient(135deg,#D3E4EE 0%,#EEF4F7 100%)',
-  TECH:'background:linear-gradient(135deg,#F4E7CE 0%,#FBF6EC 100%)',
+  CRM:  'background:linear-gradient(135deg,#D3E4EE 0%,#EEF4F7 100%)',
+  PMS:  'background:linear-gradient(135deg,#F1E1C0 0%,#FAF4E6 100%)',
+  FBM:  'background:linear-gradient(135deg,#E8CDBE 0%,#F7EDE4 100%)',
+  TECH: 'background:linear-gradient(135deg,#F4E7CE 0%,#FBF6EC 100%)',
 };
-const THUMB_ICONS = { PMS:'🏨', HR:'👤', CRM:'🤝', TECH:'✨', default:'📄' };
+// 後端沒抽到圖時會寫入這張 Unsplash URL，當 fallback sentinel 處理
+const FALLBACK_THUMB_SIG = 'photo-1552664730';
+function isFallbackThumb(u) { return !u || String(u).includes(FALLBACK_THUMB_SIG); }
+function monogramLetter(brand, source) {
+  const raw = (brand || cleanSource(source) || '').replace(/^the\s+/i, '').trim();
+  const ch = raw.charAt(0);
+  return ch ? ch.toUpperCase() : '◎';
+}
+function monogramHTML(sys, brand, source, showCaption) {
+  const letter = monogramLetter(brand, source);
+  const caption = showCaption
+    ? `<div class="mg-caption">${esc(cleanSource(source || ''))}</div>`
+    : '';
+  return `<div class="thumb-monogram" style="${THUMB_COLORS[sys]||''}">
+    <div class="mg-letter">${esc(letter)}</div>
+    ${caption}
+  </div>`;
+}
 const LANG_LABEL  = { 'zh-TW':'繁', en:'EN' };
 const LANG_CLS    = { 'zh-TW':'lang-zh', en:'lang-en' };
+
+// 產品更新狀態（PRD §5.4）
+const STATUS_META = {
+  Announced:  { cls: 'status-ann',  label: '已公布' },
+  Beta:       { cls: 'status-beta', label: '測試版' },
+  GA:         { cls: 'status-ga',   label: '正式發布' },
+  Deprecated: { cls: 'status-dep',  label: '已淘汰' },
+  Unverified: { cls: 'status-unv',  label: '未確認' },
+};
 
 function primarySystem(a) {
   const sys = a.systems || [];
   if (view === 'tech' && sys.includes('TECH')) return 'TECH';
-  const order = ['PMS','CRM','HR','TECH'];
-  return order.find(s => sys.includes(s)) || 'HR';
+  const order = ['CRM','PMS','FBM','TECH'];
+  return order.find(s => sys.includes(s)) || 'CRM';
 }
 function cleanSource(src) {
   if (!src) return '';
@@ -1359,26 +1648,36 @@ function renderCard(a) {
   const isTech  = sys === 'TECH';
   const brand   = (a.brands || [])[0];
 
-  const thumbHtml = a.thumbnail
-    ? `<img src="${esc(a.thumbnail)}" alt="" loading="lazy" onerror="this.parentNode.innerHTML=fallbackThumb('${sys}','${esc(a.source)}')">`
-    : `<div class="thumb-placeholder" style="${THUMB_COLORS[sys]||''}">
-        <div class="thumb-icon">${THUMB_ICONS[sys]||THUMB_ICONS.default}</div>
-        <div class="thumb-brand">${esc(cleanSource(a.source))}</div>
-       </div>`;
+  // Product view 下方已有 brand chip，不需 caption；Tech view 顯示來源名
+  const mgShowCaption = isTech;
+  const thumbHtml = isFallbackThumb(a.thumbnail)
+    ? monogramHTML(sys, brand, a.source, mgShowCaption)
+    : `<img src="${esc(a.thumbnail)}" alt="" loading="lazy"
+            data-sys="${sys}"
+            data-brand="${esc(brand || '')}"
+            data-source="${esc(a.source || '')}"
+            data-caption="${mgShowCaption ? '1' : '0'}">`;
 
   const tagHtml = tags.map(t =>
-    `<span class="tag ${TYPE_CLS[t]||'tag-ct-trend'}">${esc(t)}</span>`).join('');
+    `<span class="tag ${TYPE_CLS[t]||'tag-ct-u02'}" title="${esc(t)}">${esc(typeLabel(t))}</span>`).join('');
 
   const brandChip = (!isTech && brand)
     ? `<span class="thumb-brand-chip">${esc(brand)}</span>` : '';
 
+  // Release status badge：Unverified 隱藏避免噪音
+  const status = a.release_status || 'Unverified';
+  const sm = STATUS_META[status];
+  const statusHtml = (sm && status !== 'Unverified')
+    ? `<span class="thumb-status ${sm.cls}" title="產品狀態">${sm.label}</span>` : '';
+
   return `
-  <div class="card ${isTech ? 'card-tech' : ''}" onclick="openCard('${safeUrl}')">
+  <div class="card ${isTech ? 'card-tech' : ''}" onclick="openCardDetail('${safeId}')">
     <div class="card-thumb">
       ${thumbHtml}
-      <span class="thumb-badge ${SYS_CLS[sys]||'tb-hr'}">${SYS_LABEL[sys]||sys}</span>
+      <span class="thumb-badge ${SYS_CLS[sys]||'tb-crm'}">${SYS_LABEL[sys]||sys}</span>
       <span class="thumb-lang ${LANG_CLS[lang]||'lang-en'}">${LANG_LABEL[lang]||'EN'}</span>
       ${brandChip}
+      ${statusHtml}
     </div>
     <div class="card-body">
       <div class="card-source-row">
@@ -1398,14 +1697,21 @@ function renderCard(a) {
   </div>`;
 }
 
-function fallbackThumb(sys, src) {
-  return `<div class="thumb-placeholder" style="${THUMB_COLORS[sys]||''}">
-    <div class="thumb-icon">${THUMB_ICONS[sys]||'📄'}</div>
-    <div class="thumb-brand">${esc(cleanSource(src||''))}</div>
-  </div>`;
+function attachThumbErrorHandlers(root) {
+  // 掛在 outerHTML 替換：只替換 <img>，保留 badge / lang / brand chip
+  root.querySelectorAll('.card-thumb img').forEach(img => {
+    img.addEventListener('error', () => {
+      const sys = img.dataset.sys || 'CRM';
+      const brand = img.dataset.brand || '';
+      const source = img.dataset.source || '';
+      const showCaption = img.dataset.caption === '1';
+      img.outerHTML = monogramHTML(sys, brand, source, showCaption);
+    }, { once: true });
+  });
 }
 
 // ── Actions ────────────────────────────────────────────────────
+// 卡片點擊：Phase A 起改為開啟詳情抽屜（原本直接外連由抽屜「前往原文」承接）
 function openCard(url) { window.open(url, '_blank', 'noopener') }
 
 function toggleBm(e, id) {
@@ -1421,6 +1727,127 @@ function toggleBm(e, id) {
   renderSidebar();
   render();
 }
+
+// ── Card Detail Drawer（Phase A）───────────────────────────────
+let drawerArticleId = null;
+
+function openCardDetail(id) {
+  const a = all.find(x => x.id === id);
+  if (!a) return;
+  drawerArticleId = id;
+
+  const bm      = bookmarks.includes(id);
+  const status  = a.release_status || 'Unverified';
+  const sm      = STATUS_META[status] || STATUS_META.Unverified;
+  const types   = (a.types || []).slice(0, 4);
+  const typeTags = types.map(t =>
+    `<span class="tag ${TYPE_CLS[t]||'tag-ct-u02'}" title="${esc(t)}">${esc(typeLabel(t))}</span>`).join('');
+  const brand   = (a.brands || [])[0];
+  const sys     = primarySystem(a);
+  const dateStr = a.date
+    ? new Date(a.date).toLocaleDateString('zh-TW', { year:'numeric', month:'2-digit', day:'2-digit' })
+    : '—';
+  const sourceLabel = cleanSource(a.source || '');
+  const lang = langOf(a);
+  const langLbl = LANG_LABEL[lang] || 'EN';
+
+  // 事實摘要 vs AI 推論分開呈現（PRD §11.1 要求）
+  const factHtml = a.summary
+    ? `<p>${esc(a.summary)}</p>`
+    : '<span class="placeholder">無原文摘要</span>';
+  const aiAnalysisHtml = a.ai_analysis
+    ? `<p>${esc(a.ai_analysis)}</p>`
+    : '<span class="placeholder">尚未產生 AI 分析（Phase B 導入）</span>';
+  const uxInsightHtml = a.ux_insight
+    ? `<p>${esc(a.ux_insight)}</p>`
+    : '<span class="placeholder">尚未產生 UI/UX 啟發（Phase B 導入）</span>';
+  const workRelHtml = a.work_relevance
+    ? `<p>${esc(a.work_relevance)}</p>`
+    : '<span class="placeholder">尚未產生工作關聯（Phase B 導入）</span>';
+  const reasonHtml = a.recommendation_reason
+    ? `<p>${esc(a.recommendation_reason)}</p>`
+    : '<span class="placeholder">尚未產生推薦理由（Phase B 導入 100 分制推薦）</span>';
+
+  const d = document.getElementById('drawer');
+  d.innerHTML = `
+    <div class="drawer-head">
+      <div class="drawer-head-main">
+        <div class="drawer-eyebrow">
+          <span>${esc(SYS_LABEL[sys] || sys)}</span>
+          ${brand ? `<span class="sep">·</span><span>${esc(brand)}</span>` : ''}
+          <span class="sep">·</span><span>${esc(langLbl)}</span>
+        </div>
+        <div class="drawer-title">${esc(a.title || '')}</div>
+      </div>
+      <button class="drawer-close" onclick="closeDrawer()" aria-label="關閉">×</button>
+    </div>
+    <div class="drawer-meta">
+      <span class="dm-item">${esc(sourceLabel || '—')}</span>
+      <span class="dm-item">${dateStr}</span>
+      <span class="dm-item drawer-status ${sm.cls}">${sm.label}</span>
+    </div>
+    <div class="drawer-body">
+      <div class="drawer-section">
+        <h5>主題分類</h5>
+        <div class="drawer-tags">${typeTags || '<span class="placeholder">尚未分類</span>'}</div>
+      </div>
+      <div class="drawer-section">
+        <h5>事實摘要</h5>
+        ${factHtml}
+      </div>
+      <div class="drawer-section">
+        <h5>AI 分析</h5>
+        ${aiAnalysisHtml}
+      </div>
+      <div class="drawer-section">
+        <h5>UI/UX 啟發</h5>
+        ${uxInsightHtml}
+      </div>
+      <div class="drawer-section">
+        <h5>工作關聯</h5>
+        ${workRelHtml}
+      </div>
+      <div class="drawer-section">
+        <h5>推薦理由</h5>
+        ${reasonHtml}
+      </div>
+    </div>
+    <div class="drawer-foot">
+      <a class="btn-primary" href="${esc(a.url)}" target="_blank" rel="noopener">前往原文 →</a>
+      <button class="btn-secondary ${bm?'saved':''}" onclick="toggleBmInDrawer(event,'${esc(a.id)}')">
+        ${bm ? '★ 已收藏' : '☆ 收藏'}
+      </button>
+    </div>
+  `;
+  d.classList.add('show');
+  d.setAttribute('aria-hidden', 'false');
+  document.getElementById('drawer-overlay').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDrawer() {
+  const d = document.getElementById('drawer');
+  d.classList.remove('show');
+  d.setAttribute('aria-hidden', 'true');
+  document.getElementById('drawer-overlay').classList.remove('show');
+  document.body.style.overflow = '';
+  drawerArticleId = null;
+}
+
+function toggleBmInDrawer(e, id) {
+  e.stopPropagation();
+  const idx = bookmarks.indexOf(id);
+  if (idx >= 0) { bookmarks.splice(idx, 1); toast('已取消收藏'); }
+  else          { bookmarks.push(id);        toast('已加入收藏 ★'); }
+  localStorage.setItem('ci-bm', JSON.stringify(bookmarks));
+  openCardDetail(id);  // re-render button state
+  renderSidebar();
+  render();
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && drawerArticleId) closeDrawer();
+});
 
 // ── Helpers ────────────────────────────────────────────────────
 function relTime(iso) {
