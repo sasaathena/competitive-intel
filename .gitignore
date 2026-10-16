@@ -1,0 +1,33 @@
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+*.out
+
+# Local artifacts
+competitive-intel.zip
+
+# OS temp files
+Thumbs.db
+Desktop.ini

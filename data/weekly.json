@@ -1,34 +1,34 @@
 {
-  "generated_at": "2026-10-16T05:55:12.472375",
+  "generated_at": "2026-10-16T07:19:24.998299",
   "window_days": 7,
-  "total": 145,
-  "priority_count": 42,
+  "total": 180,
+  "priority_count": 46,
   "by_system": {
-    "CRM": 52,
-    "TECH": 71,
-    "FBM": 8,
-    "PMS": 14
+    "CRM": 74,
+    "TECH": 75,
+    "FBM": 18,
+    "PMS": 16
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 38
+      "count": 44
     },
     {
       "brand": "Salesforce",
-      "count": 17
-    },
-    {
-      "brand": "Guesty",
-      "count": 7
+      "count": 28
     },
     {
       "brand": "Resy",
-      "count": 6
+      "count": 13
     },
     {
       "brand": "Zoho CRM",
-      "count": 5
+      "count": 8
+    },
+    {
+      "brand": "Guesty",
+      "count": 6
     },
     {
       "brand": "Mews",
@@ -37,20 +37,28 @@
     {
       "brand": "Cloudbeds",
       "count": 2
+    },
+    {
+      "brand": "Tripleseat",
+      "count": 2
+    },
+    {
+      "brand": "Stripe",
+      "count": 2
     }
   ],
   "top_types": [
     {
       "type": "A01 AI 工具與工作流",
-      "count": 66
+      "count": 78
     },
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 51
+      "count": 68
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 25
+      "count": 32
     },
     {
       "type": "T01 前端與 API 基礎",
@@ -58,7 +66,7 @@
     },
     {
       "type": "T02 產品架構與資料模型",
-      "count": 5
+      "count": 7
     },
     {
       "type": "U01 UI/UX 設計案例",
@@ -69,52 +77,52 @@
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 45
+      "count": 47
     },
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 27
-    },
-    {
-      "system": "TECH",
-      "type": "P01 競品與產品更新",
-      "count": 19
+      "count": 36
     },
     {
       "system": "CRM",
       "type": "A01 AI 工具與工作流",
-      "count": 19
+      "count": 29
+    },
+    {
+      "system": "TECH",
+      "type": "P01 競品與產品更新",
+      "count": 21
     },
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
+      "count": 16
+    },
+    {
+      "system": "FBM",
+      "type": "U02 UX 研究與設計趨勢",
       "count": 15
     },
     {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 12
+      "count": 13
     },
     {
-      "system": "FBM",
-      "type": "U02 UX 研究與設計趨勢",
+      "system": "CRM",
+      "type": "P01 競品與產品更新",
+      "count": 9
+    },
+    {
+      "system": "CRM",
+      "type": "T02 產品架構與資料模型",
       "count": 6
     },
     {
       "system": "TECH",
       "type": "U02 UX 研究與設計趨勢",
       "count": 6
-    },
-    {
-      "system": "CRM",
-      "type": "P01 競品與產品更新",
-      "count": 5
-    },
-    {
-      "system": "CRM",
-      "type": "T02 產品架構與資料模型",
-      "count": 4
     }
   ],
   "top_articles": [
