@@ -984,7 +984,7 @@ def parse_rss_item(
         "source":   source_name,
         "brands":   brands,
         "title":    title,
-        "summary":  desc[:280],
+        "summary":  desc[:500],
         "url":      url,
         "thumbnail": rss_image or FALLBACK_THUMBNAIL,
         "date":     pub_iso,
@@ -1159,7 +1159,7 @@ def collect_threads() -> list[dict]:
             "source":   source_name,
             "brands":   brands,
             "title":    title,
-            "summary":  desc[:280],
+            "summary":  desc[:500],
             "url":      url,
             "thumbnail": img,
             "date":     now_iso,
@@ -1229,6 +1229,110 @@ def enrich_thumbnails(articles: list[dict], limit: int = 500) -> list[dict]:
     return articles
 
 # ──────────────────────────────────────────
+# Summary 補強（批次抓文章 og:description / meta / 首段）
+# ──────────────────────────────────────────
+
+def fetch_article_summary(url: str) -> str | None:
+    """
+    收集多個候選摘要源，回傳最有價值（最長且合理）的那個：
+      - og:description / meta description / twitter:description
+      - <article>/<main> 內前 3 段 <p> 串接
+      - 任何前 3 段 <p> 串接
+    若 Google News URL 的 JS 牆無法展開 → 回 None。
+    """
+    r = safe_get(url, timeout=8)
+    if not r:
+        return None
+
+    html = r.text
+    # Google News 包裝 → 展開到真實 URL（2024+ 多半失敗，JS 渲染後才有真實連結）
+    if "news.google.com" in (r.url or ""):
+        real = _unwrap_google_news(html)
+        if not real:
+            return None
+        r2 = safe_get(real, timeout=8)
+        if not r2:
+            return None
+        html = r2.text
+
+    try:
+        soup = BeautifulSoup(html, "html.parser")
+    except Exception:
+        return None
+
+    candidates: list[str] = []
+
+    # Meta descriptions
+    for sel in (
+        ("meta", {"property": "og:description"}),
+        ("meta", {"name": "description"}),
+        ("meta", {"property": "twitter:description"}),
+        ("meta", {"name": "twitter:description"}),
+    ):
+        tag = soup.find(*sel)
+        if tag:
+            content = (tag.get("content") or "").strip()
+            if content and len(content) >= 40:
+                candidates.append(content)
+
+    # Article body: 前 3 段有意義的 <p> 串接
+    def _collect_paragraphs(container, min_len=50, max_paragraphs=3):
+        parts = []
+        for p in container.find_all("p"):
+            text = p.get_text(" ", strip=True)
+            if len(text) >= min_len:
+                parts.append(text)
+                if len(parts) >= max_paragraphs:
+                    break
+        return parts
+
+    # Scope 1: <article> or <main>
+    for container in soup.find_all(["article", "main"]):
+        parts = _collect_paragraphs(container)
+        if parts:
+            candidates.append(" ".join(parts))
+            break
+    # Scope 2: fallback 任何位置
+    if not any(len(c) >= 200 for c in candidates):
+        parts = _collect_paragraphs(soup, min_len=60)
+        if parts:
+            candidates.append(" ".join(parts))
+
+    if not candidates:
+        return None
+    # 取最長的那個，截至 500
+    best = max(candidates, key=len)
+    return best[:500] if len(best) >= 50 else None
+
+
+def enrich_summaries(articles: list[dict], limit: int = 100, threshold: int = 180) -> list[dict]:
+    """
+    對 summary 過短（< threshold 字）的文章補抓詳細摘要。
+    依分數由高到低處理，限制總數避免過度抓取。
+    """
+    pending = [a for a in articles if len((a.get("summary") or "")) < threshold]
+    pending.sort(key=lambda x: x.get("score", 0), reverse=True)
+    pending = pending[:limit]
+
+    pre_hit = len(articles) - len(pending)
+    print(f"\n📝 Summary 補抓：原生摘要已夠長 {pre_hit}/{len(articles)}，"
+          f"需外部抓取 {len(pending)} 篇（limit={limit}）")
+
+    enriched = 0
+    for i, art in enumerate(pending, 1):
+        new_summary = fetch_article_summary(art.get("url", ""))
+        if new_summary and len(new_summary) > len(art.get("summary") or ""):
+            art["summary"] = new_summary
+            enriched += 1
+        if i % 25 == 0 or i == len(pending):
+            print(f"  ├── 進度 {i}/{len(pending)}（本輪補強 {enriched} 篇）")
+        time.sleep(0.3)
+
+    print(f"  └── 補抓完成：{enriched}/{len(pending)} 篇成功取得更完整摘要")
+    return articles
+
+
+# ──────────────────────────────────────────
 # 主流程
 # ──────────────────────────────────────────
 
@@ -1264,6 +1368,9 @@ def collect_all_intelligence():
 
     # 補抓 thumbnail（控制速率）
     all_articles = enrich_thumbnails(all_articles, limit=30)
+
+    # 補抓 summary（擴大 limit 讓非 Google News 文章全數受惠；GN URL 卡 JS 牆跳過）
+    all_articles = enrich_summaries(all_articles, limit=200)
 
     # 統計
     zhtw_count = sum(1 for a in all_articles if a.get("lang") == "zh-TW")
