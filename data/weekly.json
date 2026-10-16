@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-16T05:16:01.646239",
+  "generated_at": "2026-10-16T05:55:12.472375",
   "window_days": 7,
-  "total": 158,
-  "priority_count": 51,
+  "total": 145,
+  "priority_count": 42,
   "by_system": {
-    "CRM": 60,
-    "PMS": 15,
-    "TECH": 75,
-    "FBM": 8
+    "CRM": 52,
+    "TECH": 71,
+    "FBM": 8,
+    "PMS": 14
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 46
+      "count": 38
     },
     {
       "brand": "Salesforce",
-      "count": 22
+      "count": 17
     },
     {
       "brand": "Guesty",
@@ -42,19 +42,19 @@
   "top_types": [
     {
       "type": "A01 AI 工具與工作流",
-      "count": 69
+      "count": 66
     },
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 60
+      "count": 51
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 26
+      "count": 25
     },
     {
       "type": "T01 前端與 API 基礎",
-      "count": 18
+      "count": 17
     },
     {
       "type": "T02 產品架構與資料模型",
@@ -69,17 +69,17 @@
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 48
+      "count": 45
     },
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 35
+      "count": 27
     },
     {
       "system": "TECH",
       "type": "P01 競品與產品更新",
-      "count": 20
+      "count": 19
     },
     {
       "system": "CRM",
@@ -89,12 +89,12 @@
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
-      "count": 16
+      "count": 15
     },
     {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 13
+      "count": 12
     },
     {
       "system": "FBM",

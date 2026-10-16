@@ -1,6 +1,6 @@
 {
   "stats": {
-    "total": 206,
+    "total": 193,
     "new_today": 206,
     "last_updated": "2026-10-16T03:23:22.172168",
     "lang_breakdown": {
@@ -64,40 +64,6 @@
         "novelty": 6
       },
       "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_8fad400683",
-      "channel": "rss",
-      "source": "Salesforce",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "title": "CRM/Salesforce|美股|盤前盤後股價、歷史股價走勢與公司服務介紹 - 美股放大鏡",
-      "summary": "CRM/Salesforce|美股|盤前盤後股價、歷史股價走勢與公司服務介紹 美股放大鏡",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5oMmFpWmlMMHlmVThTSkk1NTVrM1ZoQ3g2QkdQZ1c2SDdwcjhnYko3dHAzclhlZGtCVnRIOTBqLXpmVHZvU0ZZTVQ4bzN4VVFKXzZ3?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-13T21:23:28+00:00",
-      "fetched": "2026-10-16T03:19:18.846899",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": true,
-      "lang": "zh-TW",
-      "score": 79,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 8,
-        "novelty": 6
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     },
     {
       "id": "art_9664f71463",
@@ -166,39 +132,6 @@
       "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     },
     {
-      "id": "art_e08e9eb579",
-      "channel": "rss",
-      "source": "tripla",
-      "brands": [
-        "tripla"
-      ],
-      "title": "TRIPLA CO LTD | 5136.T 股價走勢與即時報價 - BigGo 財經",
-      "summary": "TRIPLA CO LTD | 5136.T 股價走勢與即時報價 BigGo 財經",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE44OGF3MzBQLXNuSDdpWm5LNEh3U1p3bG5RRTFaY0FMNEpnaWdrdTFtaUZyZVVmVGNrNG1YWmxoWUVoZlpaaHlRNjhXMC1JNFQxX1Z3?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-09T07:00:00+00:00",
-      "fetched": "2026-10-16T03:20:25.819796",
-      "systems": [
-        "PMS"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": true,
-      "lang": "zh-TW",
-      "score": 77,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 6,
-        "novelty": 6
-      },
-      "recommendation_reason": "追蹤品牌 tripla 的更新；歸類於「UX 研究/趨勢」；近 1 週發布"
-    },
-    {
       "id": "art_666631b1db",
       "channel": "rss",
       "source": "TECH/TW·iThome",
@@ -228,38 +161,6 @@
         "source_trust": 11,
         "recency": 10,
         "novelty": 9
-      },
-      "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布；繁體中文內容"
-    },
-    {
-      "id": "art_08f86dc4c8",
-      "channel": "rss",
-      "source": "TECH/TW·TechOrange",
-      "brands": [],
-      "title": "Grok Voice 3.0 超車 OpenAI、Google，星鏈、特斯拉已如何應用語音 Agent？",
-      "summary": "SpaceX 旗下 AI 業務 SpaceXSI（原 xAI）10/14 推出 Grok Voice 3.0，在第三方語音 AI 綜合評測中超越 OpenAI、Google。除了模型性能，SpaceXSI 也展示 Grok Voice 的商業化進展：衛星網路服務商 Starlink（星鏈）平日約有 2 萬通客服與銷售來電使用 Grok Voice 處理，其中約 70% 無須真人介入；Tesla（特斯拉）車輛每天也有數百萬次語音 AI 對話。 從 Starlink 客服到 Tesla 車內操作，Grok Voice 已承擔哪些工作？ Starlink 的語",
-      "url": "https://techorange.com/2026/10/16/grok-voice-3-0-ai-agent/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-      "thumbnail": "https://techorange.com/app/uploads/2026/10/6301d107de9ea9a3-720x480.jpg",
-      "date": "2026-10-16T06:30:00+08:00",
-      "fetched": "2026-10-16T03:22:35.754806",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": true,
-      "lang": "zh-TW",
-      "score": 61,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 15,
-        "applicability": 18,
-        "source_trust": 11,
-        "recency": 10,
-        "novelty": 7
       },
       "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布；繁體中文內容"
     },
@@ -1459,39 +1360,6 @@
       "recommendation_reason": "追蹤品牌 Resy 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_197ca990b8",
-      "channel": "rss",
-      "source": "HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "title": "Sales Software Stocks Q2 Highlights: HubSpot (NYSE:HUBS) - StockStory",
-      "summary": "Sales Software Stocks Q2 Highlights: HubSpot (NYSE:HUBS) StockStory",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQci1ZVTZBSVg5UlozLXBpVTQwWFR6SXZqM2ZqanJnOWlEVFd1S2d4cWd4b1lub0ZHRlVMenRMOVgyMjhMUU92cjMtQWFQMXZIczdORlBoZTlOYTEyT2EzYU10Y25KZVFBU3d3cFFOd3d4S1pQMEljSVlRZ3F3VDhqOXVPcXBBRVlEZ3lqLW9Ua0ZTMjRJWWQ0T2dscThqMlgzZUxOVUZMem1JVWJ3cnJzbg?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-14T07:00:00+00:00",
-      "fetched": "2026-10-16T03:19:04.283429",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 77,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 10,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
       "id": "art_e38aa84939",
       "channel": "rss",
       "source": "HubSpot",
@@ -1525,39 +1393,6 @@
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     },
     {
-      "id": "art_6ebc578d9d",
-      "channel": "rss",
-      "source": "HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "title": "Why Is HubSpot (NYSE:HUB) Drawing Attention in the NYSE Composite? - Kalkine Media",
-      "summary": "Why Is HubSpot (NYSE:HUB) Drawing Attention in the NYSE Composite? Kalkine Media",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaUpfWDFOSzQxV0JFUXdSa2xlQjFrX2t6YUtFdlJMY29kRS1tY3FweVhuRExiekFTaGJJSnZtZllCX1VpajZOOVVYeGl5NkxtNGc5elprRDJxemcwUEIwcUN1amZGa0F0QnlucThJSnVQNVF2eXhMZi11RVdKM294cU5ObEgyQzJaRkV2Uk81QW1GUnBHc25xcm91UWRMWGFkbFJyWGlZeXBTeVpM?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-15T19:19:00+00:00",
-      "fetched": "2026-10-16T03:19:09.728062",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 77,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 10,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
       "id": "art_9e4db9a108",
       "channel": "rss",
       "source": "HubSpot",
@@ -1570,40 +1405,6 @@
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-14T14:58:00+00:00",
       "fetched": "2026-10-16T03:19:10.935208",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 77,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 10,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_1d2d95f4d0",
-      "channel": "rss",
-      "source": "Salesforce",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "title": "Can Agentforce Reshape the Enterprise-Cloud Story for Salesforce (NYSE:CRM)? - Kalkine Media",
-      "summary": "Can Agentforce Reshape the Enterprise-Cloud Story for Salesforce (NYSE:CRM)? Kalkine Media",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNc2NlM1JVbzFTdEdtdjVWM1k0UktKdHhCcFYwT0cyc0ctLWtDdlNySjExbk1wTUIyQnotTkhYc0Zwa1JVZWNKcjd0d3ZKMzVYZDBIYXBYb2NudnlKUFlGYW0wZF9lR2J1QWI5UHZuS0xZUUpDRHdKeW15UFZJNW9QdldsaGktSkpENl9wU2NVS3pCaWhET2Y2dWJaRXlmenVJMXFKRTBxd3RTeXp5SWw4akUzNlpELXZCLXc?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-14T06:01:00+00:00",
-      "fetched": "2026-10-16T03:19:28.330697",
       "systems": [
         "CRM"
       ],
@@ -2021,73 +1822,6 @@
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     },
     {
-      "id": "art_a852c9dee5",
-      "channel": "rss",
-      "source": "HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "title": "HubSpot, Inc. (HUBS) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-      "summary": "HubSpot, Inc. (HUBS) Stock Price, News, Quote & History Yahoo! Finance Canada",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBLN1VzZEhIdkVWaV9mUFkxMzlrTjlwV3NJdWk4eHZGWjlqZW4ta1cySmFTRjhQQmpHOHhXOU8taHNrd2c3cWNLdFZkRHN1RzhtY3c?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-13T15:24:43+00:00",
-      "fetched": "2026-10-16T03:19:06.099544",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 75,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 8,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_30a7bec908",
-      "channel": "rss",
-      "source": "Salesforce",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "title": "Q2 Earnings Highs And Lows: Salesforce (NYSE:CRM) Vs The Rest Of The Sales Software Stocks - StockStory",
-      "summary": "Q2 Earnings Highs And Lows: Salesforce (NYSE:CRM) Vs The Rest Of The Sales Software Stocks StockStory",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUWhpVGphRl82dU1RSFdsMG1zMUdrYmIzdzAxSHpCT253V2VubjY4cF9rN2ZnbU1LZGJnTmpDV19Ub1FLaW4zaWs4am10TllIZzd3aU1uMmJFdXBWc3pleFZfOUdsdjdCdmw0cmZVLW9jR3lwZjVhSy1kSTdDVS1wOFBuLVFQZEloa2ozNE1iY0M1bHM1dFFkT0o2WG1fTDFxZkVkWFEtbW9FTzJzTFowZW11SHB5SXN1TGxUMmVkbWxYWl92bVdvU3lPcmpFcF8tMGFhUmRRdG1Zdw?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-12T07:00:00+00:00",
-      "fetched": "2026-10-16T03:19:23.492775",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 75,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 8,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
       "id": "art_df242ed9cc",
       "channel": "rss",
       "source": "Salesforce",
@@ -2152,74 +1886,6 @@
         "novelty": 2
       },
       "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_e372fc04d2",
-      "channel": "rss",
-      "source": "Salesforce",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "title": "Salesforce (NYSE:CRM) Stock Rating Upgraded by Bank of America - MarketBeat",
-      "summary": "Salesforce (NYSE:CRM) Stock Rating Upgraded by Bank of America MarketBeat",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSjM2OVZkYXBMYi1GQlE0VXFZdE9ZcWFEOERyeEUxU2ktSUdyaDVfVTJ4a3lSOERUVzlPcW9URUhsMkpBUjg4WGR2ZnZ4Mi1EWURxR0VWMndPQkFGemhubnB0N3RLM3psYTFzam41R3g3dFZwUWstVW1aNVFRTUVtSDF6cGswQ09GOE5EWm9GUHp0TmxZT1d2TWwtRjlJX09ieGpMZmtoNUxNVEoyUkpzZ3ZhZmgyQ0hWWU1OYmxtMA?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-12T12:11:51+00:00",
-      "fetched": "2026-10-16T03:19:29.540338",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 75,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 8,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_c0d7326428",
-      "channel": "rss",
-      "source": "Monday CRM",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "title": "Q2 Earnings Highs And Lows: Salesforce (NYSE:CRM) Vs The Rest Of The Sales Software Stocks - Yahoo Finance",
-      "summary": "Q2 Earnings Highs And Lows: Salesforce (NYSE:CRM) Vs The Rest Of The Sales Software Stocks Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNkx2NVJwc1RkaHRITngxRTlnMGFkUDRHN0h2TXVXSjZuTTY4N3Y0Ym1PdmltMVQ5T1FDZVVSSHJSQ0NnUk9MT0xiODlWRnhjczVqWTk0X0xsYzBCRldDem5NTVF5dklIZVBBNkJOWUFXMlBCdGVIaDNNX18wNEdrMk5oQlYzZndndDJxSTJma3dvckhKeUJJcElpWFp0bEk?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-13T16:59:04+00:00",
-      "fetched": "2026-10-16T03:19:42.121421",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 75,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 8,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     },
     {
       "id": "art_e9bde3816c",
@@ -4394,37 +4060,6 @@
       "recommendation_reason": "歸類於「AI 工具/工作流」；近 3 天發布"
     },
     {
-      "id": "art_287b7f7f97",
-      "channel": "rss",
-      "source": "TECH/Global·TheVerge",
-      "brands": [],
-      "title": "Trump posts AI-edited photo to brag about White House restoration work",
-      "summary": "Posts from this topic will be added to your daily email digest and your homepage feed. Posts from this topic will be added to your daily email digest and your homepage feed. Posts from this topic will be added to your daily email digest and your homepage feed.",
-      "url": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T03:22:12.925460",
-      "fetched": "2026-10-16T03:22:12.925553",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 47,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 15,
-        "applicability": 8,
-        "source_trust": 11,
-        "recency": 10,
-        "novelty": 3
-      },
-      "recommendation_reason": "歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
       "id": "art_7046ca9567",
       "channel": "rss",
       "source": "TECH/Global·TheVerge",
@@ -4672,37 +4307,6 @@
         "novelty": 4
       },
       "recommendation_reason": "歸類於「AI 工具/工作流」；來自品牌官方或專業媒體"
-    },
-    {
-      "id": "art_4cdfa2663e",
-      "channel": "rss",
-      "source": "TECH/Global·MITTechReview",
-      "brands": [],
-      "title": "AI labs are buying data from dead startups to train their models",
-      "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code ba",
-      "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-13T09:00:00+00:00",
-      "fetched": "2026-10-16T03:22:21.870512",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 45,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 15,
-        "applicability": 8,
-        "source_trust": 11,
-        "recency": 8,
-        "novelty": 3
-      },
-      "recommendation_reason": "歸類於「AI 工具/工作流」；近 3 天發布"
     },
     {
       "id": "art_d0c74577d9",
@@ -5831,37 +5435,6 @@
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-16T01:43:17+00:00",
       "fetched": "2026-10-16T03:22:26.111588",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "T01 前端與 API 基礎"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 35,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 10,
-        "applicability": 4,
-        "source_trust": 11,
-        "recency": 10,
-        "novelty": 0
-      },
-      "recommendation_reason": "歸類於「前端/API」；近 3 天發布"
-    },
-    {
-      "id": "art_d600f4c050",
-      "channel": "rss",
-      "source": "TECH/Global·HackerNews",
-      "brands": [],
-      "title": "Tesla Roadster",
-      "summary": "Article URL: https://www.tesla.com/roadster Comments URL: https://news.ycombinator.com/item?id=50112657 Points: 234 # Comments: 247",
-      "url": "https://www.tesla.com/roadster",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T01:32:45+00:00",
-      "fetched": "2026-10-16T03:22:26.414482",
       "systems": [
         "TECH"
       ],
