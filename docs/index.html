@@ -593,7 +593,7 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
 .card-source-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 8px;
 }
 .card-source {
   font-size: 11.5px;
@@ -602,7 +602,8 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: calc(100% - 40px);
+  flex: 1;
+  min-width: 0;
 }
 .card-tech .card-source {
   font-family: var(--serif);
@@ -744,6 +745,191 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
 .df-teal  { background: #4C7C8E }
 .df-fbm   { background: #B5603D }
 .dist-num { font-size: 11px; font-family: var(--mono); color: var(--text3); width: 26px; text-align: right }
+
+/* ── Daily Brief（PRD §9）────────────────────────────────────── */
+.daily-section { margin-bottom: 32px }
+.daily-section h2 {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 14px;
+  font-style: italic;
+  letter-spacing: -.01em;
+}
+.daily-section h2 .ds-count {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-style: normal;
+  color: var(--text3);
+  margin-left: 8px;
+  letter-spacing: .04em;
+}
+.ov-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.ov-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 14px 18px;
+  position: relative;
+  overflow: hidden;
+}
+.ov-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 3px; height: 100%;
+  background: var(--accent);
+}
+.ov-card.ov-date::before     { background: var(--sand-400) }
+.ov-card.ov-priority::before { background: var(--moss-500) }
+.ov-card.ov-topcat::before   { background: var(--warm-amber) }
+.ov-card-label {
+  font-size: 10px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 6px;
+  font-family: var(--mono);
+}
+.ov-card-val {
+  font-family: var(--serif);
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: -.02em;
+  line-height: 1.1;
+}
+.ov-card.ov-date .ov-card-val,
+.ov-card.ov-topcat .ov-card-val {
+  font-size: 15px;
+  font-family: var(--sans);
+  font-weight: 500;
+}
+.ov-highlight {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  border-radius: var(--r2);
+  padding: 14px 18px;
+  color: var(--text);
+}
+.ov-highlight-label {
+  font-size: 10px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 4px;
+  font-family: var(--mono);
+}
+.ov-highlight-text {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-style: italic;
+}
+
+.featured-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.action-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: border-color .15s, transform .15s;
+}
+.action-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.action-card-kicker {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.action-card-title {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.action-card-meta {
+  font-size: 11px;
+  color: var(--text3);
+  font-family: var(--mono);
+  letter-spacing: .02em;
+}
+.actions-empty {
+  grid-column: 1 / -1;
+  padding: 24px;
+  text-align: center;
+  font-style: italic;
+  color: var(--text3);
+  background: var(--bg2);
+  border: 1px dashed var(--border);
+  border-radius: var(--r2);
+}
+
+/* ── Recommendation Score Tier（PRD §6.2）──────────────────── */
+.card-tier {
+  font-family: var(--mono);
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: .04em;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.tier-priority  { background: var(--moss-500); color: #fff }
+.tier-recommend { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent) }
+.tier-weekly    { background: var(--sand-100); color: var(--text3) }
+
+/* ── Score Breakdown in Drawer ─────────────────────────────── */
+.score-bar-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 44px;
+  gap: 10px;
+  align-items: center;
+  font-size: 11.5px;
+  margin-bottom: 7px;
+}
+.score-bar-label { color: var(--text2); font-family: var(--mono); letter-spacing: .03em }
+.score-bar-track { height: 5px; background: var(--sand-200); border-radius: 3px; overflow: hidden }
+.score-bar-fill  { height: 100%; background: var(--accent); border-radius: 3px; transition: width .5s ease }
+.score-bar-val   { font-family: var(--mono); color: var(--text3); text-align: right }
+.score-total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--bg3);
+  border-radius: var(--r);
+  margin-bottom: 14px;
+}
+.score-total-label { font-size: 11px; color: var(--text3); font-family: var(--mono); letter-spacing: .06em; text-transform: uppercase }
+.score-total-val {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--accent);
+}
+.score-total-max { font-size: 12px; color: var(--text3) }
 
 /* ── Release Status Badge（PRD §5.4）─────────────────────────── */
 .thumb-status {
@@ -1006,7 +1192,8 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
     <!-- Topbar -->
     <div class="topbar">
       <div class="view-tabs" role="tablist" aria-label="頂層分區">
-        <button class="view-tab active" id="tab-product" onclick="setView('product')" role="tab">產品領域</button>
+        <button class="view-tab active" id="tab-daily" onclick="setView('daily')" role="tab">每日情報</button>
+        <button class="view-tab" id="tab-product" onclick="setView('product')" role="tab">產品領域</button>
         <button class="view-tab" id="tab-tech" onclick="setView('tech')" role="tab">科技趨勢</button>
       </div>
       <div class="page-heading" id="page-heading">全部情報</div>
@@ -1024,6 +1211,50 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
       <div id="loading" class="state-box">
         <div class="spinner"></div>
         <p>載入情報資料中…</p>
+      </div>
+
+      <!-- Daily Brief View -->
+      <div id="daily-view" style="display:none">
+        <section class="daily-section">
+          <h2>今日總覽</h2>
+          <div class="ov-cards">
+            <div class="ov-card ov-date">
+              <div class="ov-card-label">日期</div>
+              <div class="ov-card-val" id="ov-date">—</div>
+            </div>
+            <div class="ov-card">
+              <div class="ov-card-label">今日新增</div>
+              <div class="ov-card-val" id="ov-new">0</div>
+            </div>
+            <div class="ov-card ov-priority">
+              <div class="ov-card-label">優先閱讀 (≥75)</div>
+              <div class="ov-card-val" id="ov-prio">0</div>
+            </div>
+            <div class="ov-card ov-topcat">
+              <div class="ov-card-label">熱門類別</div>
+              <div class="ov-card-val" id="ov-topcat">—</div>
+            </div>
+          </div>
+          <div class="ov-highlight" id="ov-highlight-wrap" style="display:none">
+            <div class="ov-highlight-label">今日最值得關注</div>
+            <div class="ov-highlight-text" id="ov-highlight-text">—</div>
+          </div>
+        </section>
+
+        <section class="daily-section">
+          <h2>精選情報 <span class="ds-count" id="featured-count"></span></h2>
+          <div class="featured-cards" id="featured-cards"></div>
+          <div class="state-box" id="featured-empty" style="display:none">
+            <div class="icon">◎</div>
+            <p>今日無足夠高品質情報</p>
+            <small>依 PRD 規則：不為填版面而產生推薦</small>
+          </div>
+        </section>
+
+        <section class="daily-section">
+          <h2>今日建議行動</h2>
+          <div class="actions-grid" id="actions-grid"></div>
+        </section>
       </div>
 
       <!-- Metrics -->
@@ -1077,7 +1308,7 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
 <script>
 // ── State ──────────────────────────────────────────────────────
 let all = [];
-let view          = 'product';    // 'product' | 'tech'
+let view          = 'daily';      // 'daily' | 'product' | 'tech'
 let filterSys     = '';           // Product: '', 'CRM', 'PMS', 'FBM'
 let filterSubCat  = '';           // Tech:    '', 'AI', 'Global', 'TW', 'Design'
 let filterType    = '';           // 內容類型 (八分類)
@@ -1204,7 +1435,7 @@ function syncURL() {
 function loadURL() {
   const p = new URLSearchParams(location.search);
   const v = p.get('view');
-  if (v === 'tech' || v === 'product') view = v;
+  if (v === 'tech' || v === 'product' || v === 'daily') view = v;
   filterSys    = p.get('sys')   || '';
   filterSubCat = p.get('sub')   || '';
   filterType   = p.get('type')  || '';
@@ -1243,19 +1474,38 @@ function setView(v) {
   view = v;
   // 切換 view 時清掉不屬於該 view 的 filter
   if (v === 'product') { filterSubCat = ''; }
-  else                 { filterSys = ''; filterBrand = ''; }
+  else if (v === 'tech') { filterSys = ''; filterBrand = ''; }
+  else /* daily */     { filterSys = ''; filterSubCat = ''; filterBrand = ''; }
   applyView();
   render();
   syncURL();
 }
 function applyView() {
-  document.body.classList.toggle('view-tech', view === 'tech');
+  document.body.classList.toggle('view-tech',  view === 'tech');
+  document.body.classList.toggle('view-daily', view === 'daily');
+  document.getElementById('tab-daily').classList.toggle('active',   view === 'daily');
   document.getElementById('tab-product').classList.toggle('active', view === 'product');
-  document.getElementById('tab-tech').classList.toggle('active', view === 'tech');
-  setText('logo-sub', view === 'tech' ? 'AI · GLOBAL · UX' : 'CRM · PMS · FBM');
+  document.getElementById('tab-tech').classList.toggle('active',    view === 'tech');
+  const subMap = { daily: '每日精選 · 優先閱讀', product: 'CRM · PMS · FBM', tech: 'AI · GLOBAL · UX' };
+  setText('logo-sub', subMap[view] || 'INTEL');
   renderSidebar();
   renderFilterBar();
   renderMetricsSkeleton();
+  toggleDailyChrome();
+}
+
+// Daily view 隱藏傳統的 metrics/dist/filter/list，顯示 Daily Brief 區塊
+function toggleDailyChrome() {
+  const isDaily = view === 'daily';
+  const dailyView = document.getElementById('daily-view');
+  if (dailyView) dailyView.style.display = isDaily ? '' : 'none';
+  ['metrics-row','dist-row','filter-wrap','list-header','cards-grid'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.style.display = isDaily ? 'none' : '';
+  });
+  const empty = document.getElementById('empty-state');
+  if (empty && isDaily) empty.style.display = 'none';
 }
 
 // ── Sidebar (dynamic per view) ────────────────────────────────
@@ -1533,6 +1783,8 @@ function belongsToView(a) {
 }
 
 function render() {
+  if (view === 'daily') { renderDaily(); return; }
+
   let items = all.filter(a => {
     if (!belongsToView(a)) return false;
     if (onlyBookmarks && !bookmarks.includes(a.id)) return false;
@@ -1585,6 +1837,96 @@ function render() {
   attachThumbErrorHandlers(grid);
 }
 
+// ── Daily Brief render（PRD §9）──────────────────────────────
+function renderDaily() {
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('zh-TW', { year:'numeric', month:'2-digit', day:'2-digit', weekday:'short' });
+  setText('ov-date', dateStr);
+  setText('page-heading', '每日情報 · ' + dateStr);
+
+  const dayMs = 86400 * 1000;
+  const today24h = all.filter(a => a.date && (now - new Date(a.date)) < dayMs).length;
+  const priority = all.filter(a => (+a.score || 0) >= 75).length;
+  setText('ov-new',  today24h);
+  setText('ov-prio', priority);
+
+  // 熱門類別
+  const typeCount = {};
+  for (const a of all) for (const t of (a.types || [])) typeCount[t] = (typeCount[t] || 0) + 1;
+  const topEntry = Object.entries(typeCount).sort((a,b) => b[1] - a[1])[0];
+  const topLabel = topEntry ? (typeLabel(topEntry[0]) + ' (' + topEntry[1] + ')') : '—';
+  setText('ov-topcat', topLabel);
+
+  // 今日最值得關注：score 最高的那篇
+  const top1 = [...all].sort((a,b) => (+b.score || 0) - (+a.score || 0))[0];
+  const hlWrap = document.getElementById('ov-highlight-wrap');
+  if (top1 && (+top1.score || 0) >= 55) {
+    hlWrap.style.display = '';
+    setText('ov-highlight-text', top1.title);
+    hlWrap.onclick = () => openCardDetail(top1.id);
+    hlWrap.style.cursor = 'pointer';
+  } else {
+    hlWrap.style.display = 'none';
+  }
+
+  // 精選：score ≥ 55，依分類多樣性挑選（每類最多 1 篇），top 5，依分數排序
+  const sortedByScore = [...all]
+    .filter(a => (+a.score || 0) >= 55)
+    .sort((a,b) => (+b.score || 0) - (+a.score || 0));
+  const featured = [];
+  const seenTypes = new Set();
+  for (const a of sortedByScore) {
+    const primaryType = (a.types || [])[0];
+    if (primaryType && seenTypes.has(primaryType)) continue;
+    featured.push(a);
+    if (primaryType) seenTypes.add(primaryType);
+    if (featured.length >= 5) break;
+  }
+
+  const grid = document.getElementById('featured-cards');
+  const emptyBox = document.getElementById('featured-empty');
+  const cntLabel = document.getElementById('featured-count');
+  cntLabel.textContent = featured.length ? `· ${featured.length} 篇` : '';
+  if (featured.length < 3) {
+    // PRD 規則：不足 3 則不湊版面
+    grid.innerHTML = '';
+    grid.style.display = 'none';
+    emptyBox.style.display = '';
+  } else {
+    grid.style.display = '';
+    emptyBox.style.display = 'none';
+    grid.innerHTML = featured.map(renderCard).join('');
+    attachThumbErrorHandlers(grid);
+  }
+
+  // 建議行動：P01 / U01 / A01 各挑最高分一篇
+  const actionTypes = [
+    { tag: 'P01 競品與產品更新', kicker: '競品案例', fallback: '目前無高分競品更新' },
+    { tag: 'U01 UI/UX 設計案例', kicker: '設計學習', fallback: '目前無高分設計案例' },
+    { tag: 'A01 AI 工具與工作流', kicker: 'AI 工具',  fallback: '目前無高分 AI 工具' },
+  ];
+  const actionsHtml = actionTypes.map(cfg => {
+    const pick = all
+      .filter(a => (a.types || []).includes(cfg.tag) && (+a.score || 0) >= 40)
+      .sort((a,b) => (+b.score || 0) - (+a.score || 0))[0];
+    if (!pick) {
+      return `<div class="action-card" style="opacity:.5;cursor:default">
+        <div class="action-card-kicker">${esc(cfg.kicker)}</div>
+        <div class="action-card-title">${esc(cfg.fallback)}</div>
+      </div>`;
+    }
+    const srcLabel = cleanSource(pick.source || '');
+    const brand = (pick.brands || [])[0];
+    const meta = [brand || srcLabel, '分數 ' + (pick.score || 0)].filter(Boolean).join(' · ');
+    return `<div class="action-card" onclick="openCardDetail('${esc(pick.id)}')">
+      <div class="action-card-kicker">${esc(cfg.kicker)}</div>
+      <div class="action-card-title">${esc(pick.title)}</div>
+      <div class="action-card-meta">${esc(meta)}</div>
+    </div>`;
+  }).join('');
+  document.getElementById('actions-grid').innerHTML = actionsHtml;
+}
+
 // ── Card HTML ──────────────────────────────────────────────────
 const SYS_CLS   = { CRM:'tb-crm', PMS:'tb-pms', FBM:'tb-fbm', TECH:'tb-tech' };
 const SYS_LABEL = { CRM:'CRM', PMS:'PMS', FBM:'FBM', TECH:'TECH' };
@@ -1623,6 +1965,25 @@ const STATUS_META = {
   Deprecated: { cls: 'status-dep',  label: '已淘汰' },
   Unverified: { cls: 'status-unv',  label: '未確認' },
 };
+
+// 推薦區間（PRD §6.2）
+function scoreTier(score) {
+  const s = +score || 0;
+  if (s >= 75) return { cls: 'tier-priority',  label: '⚡ 優先', priority: 3 };
+  if (s >= 55) return { cls: 'tier-recommend', label: '推薦',   priority: 2 };
+  if (s >= 40) return { cls: 'tier-weekly',    label: '彙整',   priority: 1 };
+  return null;
+}
+
+// 6 維度顯示名
+const SCORE_DIM_META = [
+  { key: 'work_relevance', label: '工作相關性', max: 25 },
+  { key: 'domain_match',   label: '產品領域',   max: 20 },
+  { key: 'applicability',  label: '可應用程度', max: 20 },
+  { key: 'source_trust',   label: '來源可信度', max: 15 },
+  { key: 'recency',        label: '時效性',     max: 10 },
+  { key: 'novelty',        label: '新穎性',     max: 10 },
+];
 
 function primarySystem(a) {
   const sys = a.systems || [];
@@ -1682,6 +2043,7 @@ function renderCard(a) {
     <div class="card-body">
       <div class="card-source-row">
         <span class="card-source" title="${esc(a.source)}">${esc(cleanSource(a.source))}</span>
+        ${(() => { const t = scoreTier(a.score); return t ? `<span class="card-tier ${t.cls}" title="分數 ${a.score}">${t.label}</span>` : ''; })()}
         <button class="card-bm ${bm?'saved':''}" onclick="toggleBm(event,'${safeId}')" title="收藏">
           ${bm ? '★' : '☆'}
         </button>
@@ -1810,6 +2172,7 @@ function openCardDetail(id) {
       <div class="drawer-section">
         <h5>推薦理由</h5>
         ${reasonHtml}
+        ${renderScoreBreakdown(a)}
       </div>
     </div>
     <div class="drawer-foot">
@@ -1823,6 +2186,35 @@ function openCardDetail(id) {
   d.setAttribute('aria-hidden', 'false');
   document.getElementById('drawer-overlay').classList.add('show');
   document.body.style.overflow = 'hidden';
+}
+
+function renderScoreBreakdown(a) {
+  const total = +a.score || 0;
+  const bd    = a.score_breakdown;
+  if (!bd) {
+    return `<div style="margin-top:10px"><div class="score-total">
+      <span class="score-total-label">總分</span>
+      <span><span class="score-total-val">${total}</span><span class="score-total-max"> / 100</span></span>
+    </div></div>`;
+  }
+  const tier = scoreTier(total);
+  const tierHtml = tier ? `<span class="card-tier ${tier.cls}" style="margin-left:8px">${tier.label}</span>` : '';
+  const rows = SCORE_DIM_META.map(m => {
+    const v = +bd[m.key] || 0;
+    const pct = Math.min(100, Math.round(v / m.max * 100));
+    return `<div class="score-bar-row">
+      <span class="score-bar-label">${m.label}</span>
+      <div class="score-bar-track"><div class="score-bar-fill" style="width:${pct}%"></div></div>
+      <span class="score-bar-val">${v} / ${m.max}</span>
+    </div>`;
+  }).join('');
+  return `<div style="margin-top:12px">
+    <div class="score-total">
+      <span class="score-total-label">總分</span>
+      <span><span class="score-total-val">${total}</span><span class="score-total-max"> / 100</span>${tierHtml}</span>
+    </div>
+    ${rows}
+  </div>`;
 }
 
 function closeDrawer() {
