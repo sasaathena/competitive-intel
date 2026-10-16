@@ -454,28 +454,50 @@ CONTENT_TYPE_RULES: list[tuple[str, list[str]]] = [
         "新增", "新功能", "支援", "加入", "上新",
         "淘汰", "停止支援", "下架", "整合",
     ]),
-    # U01 UIUX 設計案例：具體操作模式 / 介面實作
+    # U01 UIUX 設計案例：具體操作模式 / 介面實作 / 設計 case study
     (TAG_U01, [
+        # 核心設計詞
         "ui/", "ux design", "redesign", "design system", "component library",
         "dashboard", "onboarding", "interface design", "interaction design",
+        "product design", "visual design", "mobile ui", "mobile app design",
+        "case study", "design case", "ux case", "ui case",
+        # UI 元素與模式
+        "design pattern", "ui pattern", "ux pattern",
         "form design", "data table", "navigation pattern", "empty state",
+        "modal", "dropdown", "autocomplete", "search bar",
+        "typography", "color palette", "colour palette", "icon design",
+        # 中文
         "ui 設計", "ux 設計", "介面設計", "重新設計", "儀表板", "元件庫",
         "操作流程", "資訊架構", "互動設計", "表單設計", "資料表",
+        "設計系統", "設計模式", "操作模式", "體驗設計", "視覺設計",
+        "行動版", "版面設計", "導航設計", "按鈕設計",
     ]),
-    # U02 UX 研究與設計趨勢：研究方法 / 可用性 / 趨勢分析
+    # U02 UX 研究與設計趨勢：僅強信號（研究方法 / 可用性 / 趨勢分析）
+    #   注意：此規則主要承接 UX 研究類文章，避免 "research/study/report" 等通用詞誤收。
+    #   當其他 5 類全未命中，analyze_tags 會 fallback 到 U02（在 return 處）。
     (TAG_U02, [
-        "usability study", "ux research", "user research", "a/b test", "user testing",
-        "accessibility", "wcag", "design trend", "nielsen",
-        "research", "study", "survey", "report", "forecast", "analysis",
-        "可用性", "使用性", "使用者研究", "無障礙", "設計趨勢",
-        "研究", "調查", "洞察", "報告", "分析", "趨勢",
+        "usability study", "ux research", "user research",
+        "a/b test", "user testing",
+        "accessibility", "wcag",
+        "design trend", "ux trend", "ux benchmark",
+        "nielsen norman", "nn/g",
+        "可用性", "使用性", "使用者研究", "無障礙",
+        "設計趨勢", "ux 研究",
     ]),
     # A01 AI 工具與工作流
     (TAG_A01, [
         "ai ", " ai,", "artificial intelligence", "llm", "gpt", "claude", "gemini",
-        "generative", "copilot", "agent ", "agentic", "openai", "anthropic",
+        "generative ai", "generative model", "copilot", "agent ", "agentic",
+        "openai", "anthropic", "huggingface", "hugging face",
+        "machine learning", " ml ", "deep learning",
+        "transformer", "neural network", "diffusion model",
+        "fine-tune", "fine-tuning", "rag ", " rag,", "retrieval augmented",
+        "embedding", "multimodal", "multi-modal",
+        "benchmark", "evaluation", "eval ", "inference", "model card",
+        "chatbot", "ai agent", "ai safety",
         "workflow automation", "n8n", "zapier", "automation", "mcp",
-        "人工智慧", "生成式", "大模型", "智能體", "工作流", "自動化",
+        "人工智慧", "生成式", "大模型", "大型語言模型", "智能體", "機器學習",
+        "多模態", "推論", "微調", "工作流", "自動化",
     ]),
     # T01 前端與 API 基礎
     (TAG_T01, [
@@ -495,17 +517,29 @@ CONTENT_TYPE_RULES: list[tuple[str, list[str]]] = [
 ]
 
 
-def analyze_tags(title: str, summary: str) -> list[str]:
+def analyze_tags(title: str, summary: str, source_name: str = "") -> list[str]:
     """
     PRD 6 類分類，一篇文章可命中多類。
-    未命中任何規則 → fallback 歸為 U02（研究/趨勢作為兜底）。
+    未命中任何規則時，依來源做智慧 fallback：
+      - TECH/AI·*     → A01（HuggingFace/DeepMind 等 AI 研究常用模型名，不含通用 AI 詞）
+      - TECH/Design·* → U02（Smashing/UXCollective 等的 UX 評論/研究）
+      - TECH/Global·* / TECH/TW·* → []（泛科技新聞雜訊，返回空清單 → 由呼叫端丟棄）
+      - 品牌文章或其他 → U02 兜底
     """
     text = f" {title} {summary} ".lower()
     tags: list[str] = []
     for tag, kws in CONTENT_TYPE_RULES:
         if any(k in text for k in kws):
             tags.append(tag)
-    return tags or [TAG_U02]
+    if tags:
+        return tags
+    if source_name.startswith("TECH/AI"):
+        return [TAG_A01]
+    if source_name.startswith("TECH/Design"):
+        return [TAG_U02]
+    if source_name.startswith("TECH/Global") or source_name.startswith("TECH/TW"):
+        return []  # 泛科技新聞無分類命中 → 丟棄
+    return [TAG_U02]
 
 # ──────────────────────────────────────────
 # 分數計算
@@ -774,7 +808,7 @@ def parse_rss_item(
 
     combined = title + " " + desc
 
-    tags       = analyze_tags(title, desc)
+    tags       = analyze_tags(title, desc, source_name)
     lang       = detect_lang(combined, source_lang)
     is_zhtw    = (lang == "zh-TW")
     brands     = brand_in_text(combined)
@@ -789,6 +823,10 @@ def parse_rss_item(
 
     systems = classify_systems(brands, combined, source_name)
     if not systems:
+        return None
+
+    # analyze_tags 回空 → 泛科技來源文章未命中任何分類 → 丟
+    if not tags:
         return None
 
     score = calculate_score(title, desc, tags, lang, source_score_bonus, brand_hits)
@@ -954,7 +992,7 @@ def collect_threads() -> list[dict]:
         if not systems:
             continue
 
-        tags = analyze_tags(title, desc)
+        tags = analyze_tags(title, desc, f"Threads/@{account}")
         lang = detect_lang(combined)
         is_zhtw = (lang == "zh-TW")
         score = calculate_score(title, desc, tags, lang, source_bonus=20, brand_hits=len(brands))
