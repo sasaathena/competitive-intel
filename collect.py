@@ -552,27 +552,163 @@ def calculate_score(
     lang: str,
     source_bonus: int = 0,
     brand_hits: int = 0,
-) -> int:
+    systems: list[str] | None = None,
+    source_name: str = "",
+    pub_date_iso: str = "",
+) -> dict:
     """
-    Phase A 分數：延續「語言 + 標籤 + 來源 + 品牌」加權規則，標籤改為 PRD 6 類。
-    Phase B 會改為 PRD §6.1 的 100 分制 6 維度 + recommendation_reason。
+    PRD §6.1 — 100 分制 6 維度推薦分數。
+    回傳 {"total": int, "dimensions": {...}}
+
+    維度：
+      - work_relevance (25) 工作相關性：追蹤品牌命中 + CRM/PMS/FBM 系統匹配
+      - domain_match   (20) 產品領域匹配度
+      - applicability  (20) 可應用程度（依 PRD 6 類加權）
+      - source_trust   (15) 來源可信度
+      - recency        (10) 時效性
+      - novelty        (10) 新穎性與學習價值
     """
-    score = 40
-    # 語言加權：繁中 > 英文
-    if lang == "zh-TW":
-        score += 40
-    # PRD 6 類加權（P01/U01 直接產品設計相關 → 高；A01 AI 工具 → 中高；T01/T02 技術 → 中；U02 研究趨勢 → 中）
-    if TAG_P01 in tags: score += 15
-    if TAG_U01 in tags: score += 15
-    if TAG_A01 in tags: score += 12
-    if TAG_U02 in tags: score += 10
-    if TAG_T02 in tags: score += 10
-    if TAG_T01 in tags: score += 8
-    # 來源加權
-    score += source_bonus
-    # 品牌命中數加權
-    score += min(brand_hits * 5, 20)
-    return score
+    systems = systems or []
+
+    # 1. 工作相關性 (25) — 品牌 15 + 核心系統 10
+    work_rel = 0
+    if brand_hits > 0:
+        work_rel += 15
+    if any(s in systems for s in ("CRM", "PMS", "FBM")):
+        work_rel += 10
+    work_rel = min(work_rel, 25)
+
+    # 2. 產品領域匹配度 (20)
+    if any(s in systems for s in ("CRM", "PMS", "FBM")):
+        domain = 20
+    elif "TECH" in systems and any(t in tags for t in (TAG_A01, TAG_U01)):
+        domain = 15
+    elif "TECH" in systems and any(t in tags for t in (TAG_U02, TAG_T01, TAG_T02)):
+        domain = 10
+    else:
+        domain = 5
+
+    # 3. 可應用程度 (20) — PRD 6 類加權（可累加，上限 20）
+    appli = 0
+    if TAG_P01 in tags: appli += 10  # 競品/產品更新最直接可應用
+    if TAG_U01 in tags: appli += 10  # 設計案例可直接參考
+    if TAG_A01 in tags: appli += 8   # AI 工具可直接試
+    if TAG_U02 in tags: appli += 5   # 研究趨勢間接
+    if TAG_T02 in tags: appli += 5   # 架構資料
+    if TAG_T01 in tags: appli += 4   # 前端技術
+    appli = min(appli, 20)
+
+    # 4. 來源可信度 (15)
+    #    官方品牌 > 專業設計/AI 媒體 > 國際科技媒體 > Medium / 方格子 > Threads
+    if source_name in TARGET_SOURCES:
+        trust = 15  # 品牌官方新聞
+    elif source_name.startswith("TECH/Design") or source_name.startswith("TECH/AI"):
+        trust = 13
+    elif source_name.startswith("TECH/Global") or source_name.startswith("TECH/TW"):
+        trust = 11
+    elif source_name in ("科技新報", "Inside", "Mashdigi"):
+        trust = 11
+    elif source_name.startswith("方格子"):
+        trust = 9
+    elif source_name.startswith("Medium"):
+        trust = 8
+    elif source_name.startswith("Threads"):
+        trust = 6
+    else:
+        trust = 7
+
+    # 5. 時效性 (10)
+    try:
+        pub = datetime.fromisoformat(pub_date_iso.replace("Z", "+00:00")) if pub_date_iso else None
+    except Exception:
+        pub = None
+    if pub is None:
+        recency = 3
+    else:
+        try:
+            now = datetime.now(pub.tzinfo) if pub.tzinfo else datetime.utcnow()
+            age_days = (now - pub).days
+        except Exception:
+            age_days = 999
+        if   age_days <= 1:  recency = 10
+        elif age_days <= 3:  recency = 8
+        elif age_days <= 7:  recency = 6
+        elif age_days <= 14: recency = 4
+        elif age_days <= 30: recency = 2
+        else:                recency = 1
+
+    # 6. 新穎性與學習價值 (10)
+    novelty = 0
+    if lang == "zh-TW":        novelty += 3  # 繁中稀缺
+    if TAG_A01 in tags:        novelty += 3  # AI 新知學習價值高
+    if TAG_U02 in tags:        novelty += 2  # 研究趨勢
+    if TAG_T02 in tags:        novelty += 2  # 架構知識
+    if source_bonus >= 20:     novelty += 1  # 高品質來源額外加
+    novelty = min(novelty, 10)
+
+    total = work_rel + domain + appli + trust + recency + novelty
+    return {
+        "total": total,
+        "dimensions": {
+            "work_relevance": work_rel,
+            "domain_match":   domain,
+            "applicability":  appli,
+            "source_trust":   trust,
+            "recency":        recency,
+            "novelty":        novelty,
+        },
+    }
+
+# ──────────────────────────────────────────
+# 推薦理由產生（規則式）— PRD §6.3 要求每則推薦都應提供理由
+# ──────────────────────────────────────────
+
+_TAG_SHORT_LABEL = {
+    TAG_P01: "競品/產品更新",
+    TAG_U01: "UIUX 設計案例",
+    TAG_U02: "UX 研究/趨勢",
+    TAG_A01: "AI 工具/工作流",
+    TAG_T01: "前端/API",
+    TAG_T02: "產品架構",
+}
+
+
+def generate_recommendation_reason(
+    tags: list[str],
+    brands: list[str],
+    systems: list[str],
+    dimensions: dict,
+    lang: str,
+    source_name: str,
+) -> str:
+    """
+    依據分數維度與分類組合推薦理由，最多 3 個組件。
+    """
+    bits: list[str] = []
+
+    # 1. 追蹤品牌
+    if brands and dimensions.get("work_relevance", 0) >= 20:
+        bits.append(f"追蹤品牌 {brands[0]} 的更新")
+    # 2. 主要分類
+    primary_type = next((t for t in tags if t in _TAG_SHORT_LABEL), None)
+    if primary_type:
+        bits.append(f"歸類於「{_TAG_SHORT_LABEL[primary_type]}」")
+    # 3. 時效性
+    if dimensions.get("recency", 0) >= 8:
+        bits.append("近 3 天發布")
+    elif dimensions.get("recency", 0) >= 6:
+        bits.append("近 1 週發布")
+    # 4. 來源可信度
+    if dimensions.get("source_trust", 0) >= 13:
+        bits.append("來自品牌官方或專業媒體")
+    # 5. 繁中加分（備用，若前面不夠 3 則）
+    if lang == "zh-TW" and len(bits) < 3:
+        bits.append("繁體中文內容")
+
+    if not bits:
+        return "一般推薦內容"
+    return "；".join(bits[:3])
+
 
 # ──────────────────────────────────────────
 # 產品更新狀態（PRD §5.4）
@@ -829,7 +965,14 @@ def parse_rss_item(
     if not tags:
         return None
 
-    score = calculate_score(title, desc, tags, lang, source_score_bonus, brand_hits)
+    pub_iso = parse_date(pub)
+    score_obj = calculate_score(
+        title, desc, tags, lang, source_score_bonus, brand_hits,
+        systems=systems, source_name=source_name, pub_date_iso=pub_iso,
+    )
+    reason = generate_recommendation_reason(
+        tags, brands, systems, score_obj["dimensions"], lang, source_name,
+    )
     release_status = detect_release_status(title, desc)
 
     # Phase 1：先吃 RSS 內嵌圖片（零外部請求）；拿不到才留 fallback，等 Phase 2 補抓
@@ -844,14 +987,16 @@ def parse_rss_item(
         "summary":  desc[:280],
         "url":      url,
         "thumbnail": rss_image or FALLBACK_THUMBNAIL,
-        "date":     parse_date(pub),
+        "date":     pub_iso,
         "fetched":  datetime.utcnow().isoformat(),
         "systems":  systems,
         "types":    tags,
         "release_status": release_status,
         "is_zhtw":  is_zhtw,
         "lang":     lang,
-        "score":    score,
+        "score":    score_obj["total"],
+        "score_breakdown": score_obj["dimensions"],
+        "recommendation_reason": reason,
     }
 
 # ──────────────────────────────────────────
@@ -992,29 +1137,41 @@ def collect_threads() -> list[dict]:
         if not systems:
             continue
 
-        tags = analyze_tags(title, desc, f"Threads/@{account}")
+        source_name = f"Threads/@{account}"
+        tags = analyze_tags(title, desc, source_name)
+        if not tags:
+            continue
         lang = detect_lang(combined)
         is_zhtw = (lang == "zh-TW")
-        score = calculate_score(title, desc, tags, lang, source_bonus=20, brand_hits=len(brands))
+        now_iso = datetime.utcnow().isoformat()
+        score_obj = calculate_score(
+            title, desc, tags, lang, source_bonus=20, brand_hits=len(brands),
+            systems=systems, source_name=source_name, pub_date_iso=now_iso,
+        )
+        reason = generate_recommendation_reason(
+            tags, brands, systems, score_obj["dimensions"], lang, source_name,
+        )
         release_status = detect_release_status(title, desc)
 
         articles.append({
             "id":       make_id(url + desc[:30]),
             "channel":  "threads",
-            "source":   f"Threads/@{account}",
+            "source":   source_name,
             "brands":   brands,
             "title":    title,
             "summary":  desc[:280],
             "url":      url,
             "thumbnail": img,
-            "date":     datetime.utcnow().isoformat(),
-            "fetched":  datetime.utcnow().isoformat(),
+            "date":     now_iso,
+            "fetched":  now_iso,
             "systems":  systems,
             "types":    tags,
             "release_status": release_status,
             "is_zhtw":  is_zhtw,
             "lang":     lang,
-            "score":    score,
+            "score":    score_obj["total"],
+            "score_breakdown": score_obj["dimensions"],
+            "recommendation_reason": reason,
         })
         time.sleep(SLEEP_BETWEEN_REQUESTS)
 
