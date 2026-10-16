@@ -316,6 +316,34 @@ TECH_FEEDS = [
 
 # 用於判定 source 是否屬於 TECH（未命中品牌白名單也收）
 TECH_SOURCE_PREFIX = "TECH/"
+BRAND_SOURCE_PREFIX = "BRAND/"  # 品牌官方 blog 直連 RSS（繞過 Google News 的 JS 牆）
+
+# ──────────────────────────────────────────
+# 品牌官方 blog RSS（直連，摘要品質優於 Google News）
+# 2026-10 驗證可用；失效時應在 enrich 期間記錄錯誤
+# ──────────────────────────────────────────
+BRAND_FEEDS = [
+    # CRM / MarTech
+    {"name": "BRAND/HubSpot·Marketing", "url": "https://blog.hubspot.com/marketing/rss.xml",
+     "brand": "HubSpot", "system": "CRM", "lang": "en", "bonus": 30},
+    {"name": "BRAND/HubSpot·Sales",     "url": "https://blog.hubspot.com/sales/rss.xml",
+     "brand": "HubSpot", "system": "CRM", "lang": "en", "bonus": 30},
+    {"name": "BRAND/HubSpot·Service",   "url": "https://blog.hubspot.com/service/rss.xml",
+     "brand": "HubSpot", "system": "CRM", "lang": "en", "bonus": 30},
+    {"name": "BRAND/HubSpot·Customers", "url": "https://blog.hubspot.com/customers/rss.xml",
+     "brand": "HubSpot", "system": "CRM", "lang": "en", "bonus": 25},
+    {"name": "BRAND/Salesforce",        "url": "https://www.salesforce.com/blog/feed/",
+     "brand": "Salesforce", "system": "CRM", "lang": "en", "bonus": 30},
+    {"name": "BRAND/Stripe",            "url": "https://stripe.com/blog/feed.rss",
+     "brand": "Stripe", "system": "CRM", "lang": "en", "bonus": 25},
+    {"name": "BRAND/Zoho",              "url": "https://www.zoho.com/blog/feed/",
+     "brand": "Zoho CRM", "system": "CRM", "lang": "en", "bonus": 25},
+    # FBM
+    {"name": "BRAND/Resy",              "url": "https://blog.resy.com/feed/",
+     "brand": "Resy", "system": "FBM", "lang": "en", "bonus": 25},
+    {"name": "BRAND/Tripleseat",        "url": "https://www.tripleseat.com/feed/",
+     "brand": "Tripleseat", "system": "FBM", "lang": "en", "bonus": 25},
+]
 
 # ──────────────────────────────────────────
 # 語言 & 過濾邏輯
@@ -954,6 +982,8 @@ def parse_rss_item(
     source_name: str,
     source_lang: str,
     source_score_bonus: int,
+    force_brand: str | None = None,
+    force_system: str | None = None,
 ) -> dict | None:
     """
     從 BeautifulSoup RSS <item> 解析出文章 dict。
@@ -991,13 +1021,16 @@ def parse_rss_item(
     lang       = detect_lang(combined, source_lang)
     is_zhtw    = (lang == "zh-TW")
     brands     = brand_in_text(combined)
+    # 品牌官方 blog：強制注入品牌（文章正文未必提到自己品牌）
+    if force_brand and force_brand not in brands:
+        brands.insert(0, force_brand)
     brand_hits = len(brands)
 
     is_tech_source = source_name.startswith(TECH_SOURCE_PREFIX)
+    is_brand_feed  = source_name.startswith(BRAND_SOURCE_PREFIX)
 
-    # 收錄門檻（實體制）：命中任一追蹤品牌，或來源為 TECH 主題來源。
-    # 兩者皆非 → 丟。這是唯一的過濾閘門，取代舊的財經/產品雙層黑白名單。
-    if brand_hits == 0 and not is_tech_source:
+    # 收錄門檻：命中任一追蹤品牌、或 TECH 主題來源、或品牌官方 blog。
+    if brand_hits == 0 and not is_tech_source and not is_brand_feed:
         return None
 
     # 關鍵字排除：金融 / 政治 / 加密幣 / 體育等 UIUX 設計師不關心的雜訊
@@ -1005,6 +1038,8 @@ def parse_rss_item(
         return None
 
     systems = classify_systems(brands, combined, source_name)
+    if force_system and force_system not in systems:
+        systems.append(force_system)
     if not systems:
         return None
 
@@ -1127,6 +1162,40 @@ def collect_media_feeds() -> list[dict]:
 
     print(f"  └── 媒體 RSS 小計：{len(articles)} 篇")
     return articles
+
+# ──────────────────────────────────────────
+# 收集器：品牌官方 blog RSS（直連，繞過 Google News JS 牆）
+# ──────────────────────────────────────────
+
+def collect_brand_blogs() -> list[dict]:
+    """抓品牌官方 blog RSS。直連 URL → 補抓摘要時能完整取得內文。"""
+    articles = []
+    print("\n🏢 [品牌官方 blog RSS] 開始掃描...")
+    for feed in BRAND_FEEDS:
+        print(f"  ├── [{feed['brand']}] {feed['name']} ...")
+        resp = safe_get(feed["url"], timeout=12)
+        if not resp:
+            continue
+        try:
+            soup = BeautifulSoup(resp.content, "xml")
+        except Exception:
+            soup = BeautifulSoup(resp.content, "html.parser")
+        items = soup.find_all("item") or soup.find_all("entry")
+        for item in items[:MAX_ITEMS_PER_FEED]:
+            art = parse_rss_item(
+                item,
+                feed["name"],
+                feed.get("lang", "en"),
+                feed.get("bonus", 25),
+                force_brand=feed.get("brand"),
+                force_system=feed.get("system"),
+            )
+            if art:
+                articles.append(art)
+            time.sleep(SLEEP_BETWEEN_REQUESTS * 0.3)
+    print(f"  └── 品牌 blog 小計：{len(articles)} 篇")
+    return articles
+
 
 # ──────────────────────────────────────────
 # 收集器：Threads（公開 profile 文字抓取）
@@ -1493,7 +1562,10 @@ def collect_all_intelligence():
     # 2. 媒體 RSS（zh-TW 主流 + Medium 標籤 + TECH 主題）
     all_articles += collect_media_feeds()
 
-    # 3. Threads（公開貼文 scraping）
+    # 3. 品牌官方 blog RSS（直連，優質摘要來源）
+    all_articles += collect_brand_blogs()
+
+    # 4. Threads（公開貼文 scraping）
     all_articles += collect_threads()
 
     # 去重
