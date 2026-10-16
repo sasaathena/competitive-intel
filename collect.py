@@ -1,6 +1,6 @@
 """
-PMS / CRM / HR / TECH Intelligence Collector
-優化版（2026-09，實體 + 內容分類雙軸）
+CRM / PMS / FBM / TECH Intelligence Collector
+Phase A（2026-10，實體 + 內容分類雙軸；PRD 6 類）
 
 收集範圍：繁體中文（優先） > 英文
 收集來源：
@@ -11,10 +11,13 @@ PMS / CRM / HR / TECH Intelligence Collector
   - Threads（公開 profile scraping）
 
 特性：
-  - 追蹤範圍：以「公司/產品實體」為單位（PMS/CRM/HR/TECH 四個系統）
-  - 內容類型：分類標籤（產品更新/功能發布/融資動態/財報營運/人事異動/產業趨勢/AI 技術/用戶體驗）
+  - 追蹤範圍：以「公司/產品實體」為單位（CRM/MarTech、PMS/旅宿、FBM/餐飲訂位、TECH 四個系統）
+  - 內容類型：PRD 6 類（P01 競品與產品更新 / U01 UIUX 設計案例 /
+                      U02 UX 研究與設計趨勢 / A01 AI 工具與工作流 /
+                      T01 前端與 API 基礎 / T02 產品架構與資料模型）
   - 不再使用財經黑名單、產品白名單過濾；全部收下由 UI 篩選
   - 收錄門檻：命中任一追蹤實體（品牌 或 TECH 來源）
+  - 產品狀態：Announced / Beta / GA / Deprecated / Unverified
   - 語言優先權：繁體中文 > 英文
   - Thumbnail fallback & 網路防禦機制
   - 分數計算：語言、標籤、來源加權
@@ -59,56 +62,7 @@ SLEEP_BETWEEN_REQUESTS = 0.6  # 秒
 # ──────────────────────────────────────────
 
 TARGET_SOURCES = {
-    # ── HR / EIP（EIP 併入 HR）───────────────────────────────
-    "Workday": {
-        "system": "HR",
-        "keywords": ["Workday", "HCM", "employee experience", "人資", "員工體驗", "workflow", "dashboard"],
-    },
-    "SAP SuccessFactors": {
-        "system": "HR",
-        "keywords": ["SuccessFactors", "人才管理", "employee experience", "HR", "SAP HCM"],
-    },
-    "Apollo": {
-        "system": "HR",
-        "keywords": ["Apollo HR", "MayoHR", "人事管理", "考勤", "薪資", "EIP"],
-    },
-    "HiBob": {
-        "system": "HR",
-        "keywords": ["HiBob", "HRIS", "employee engagement", "dashboard"],
-    },
-    "BambooHR": {
-        "system": "HR",
-        "keywords": ["BambooHR", "small business HR", "HRIS"],
-    },
-    "Gusto": {
-        "system": "HR",
-        "keywords": ["Gusto payroll", "Gusto HR", "Gusto benefits"],
-    },
-    "Rippling": {
-        "system": "HR",
-        "keywords": ["Rippling", "workforce management", "employee onboarding"],
-    },
-    "Deel": {
-        "system": "HR",
-        "keywords": ["Deel", "global payroll", "EOR", "contractor management"],
-    },
-    "Personio": {
-        "system": "HR",
-        "keywords": ["Personio", "European HR", "SMB HRIS"],
-    },
-    "Paylocity": {
-        "system": "HR",
-        "keywords": ["Paylocity", "payroll platform", "workforce solutions"],
-    },
-    "ADP Workforce Now": {
-        "system": "HR",
-        "keywords": ["ADP Workforce Now", "ADP payroll", "ADP HR"],
-    },
-    "Ceridian Dayforce": {
-        "system": "HR",
-        "keywords": ["Ceridian Dayforce", "Dayforce", "Ceridian HCM"],
-    },
-    # ── CRM ─────────────────────────────────────────────
+    # ── CRM / MarTech ───────────────────────────────────
     "HubSpot": {
         "system": "CRM",
         "keywords": ["HubSpot", "CRM", "marketing automation", "sales hub", "customer experience", "AI CRM"],
@@ -233,6 +187,31 @@ TARGET_SOURCES = {
         "system": "PMS",
         "keywords": ["TL-リンカーン", "TLリンカーン", "TL-Lincoln"],
     },
+    # ── FBM（餐飲訂位 / 訂席 / 宴會管理）─────────────────
+    "inline": {
+        "system": "FBM",
+        "keywords": ["inline 訂位", "inline 候位", "inline 餐廳", "inline reservation", "inline waitlist"],
+    },
+    "EZTABLE": {
+        "system": "FBM",
+        "keywords": ["EZTABLE", "EZ TABLE", "簡單桌", "餐廳訂位 EZTABLE"],
+    },
+    "OpenTable": {
+        "system": "FBM",
+        "keywords": ["OpenTable", "restaurant reservation", "GuestCenter", "dining reservation"],
+    },
+    "Resy": {
+        "system": "FBM",
+        "keywords": ["Resy reservation", "Resy restaurant", "Resy guest list"],
+    },
+    "SevenRooms": {
+        "system": "FBM",
+        "keywords": ["SevenRooms", "guest management platform", "restaurant CRM", "hospitality CRM"],
+    },
+    "Tripleseat": {
+        "system": "FBM",
+        "keywords": ["Tripleseat", "event management software", "banquet software", "宴會管理", "catering management"],
+    },
 }
 
 # ──────────────────────────────────────────
@@ -266,16 +245,22 @@ ZH_MEDIA_FEEDS = [
         "source_score_bonus": 25,
     },
     {
-        "name": "方格子-EIP",
-        "url": "https://vocus.cc/api/rss?search=EIP+人資",
-        "lang": "zh-TW",
-        "source_score_bonus": 25,
-    },
-    {
         "name": "方格子-CRM",
         "url": "https://vocus.cc/api/rss?search=CRM",
         "lang": "zh-TW",
         "source_score_bonus": 25,
+    },
+    {
+        "name": "方格子-訂位",
+        "url": "https://vocus.cc/api/rss?search=餐廳訂位",
+        "lang": "zh-TW",
+        "source_score_bonus": 20,
+    },
+    {
+        "name": "方格子-旅宿",
+        "url": "https://vocus.cc/api/rss?search=旅宿管理",
+        "lang": "zh-TW",
+        "source_score_bonus": 20,
     },
 ]
 
@@ -284,16 +269,19 @@ ZH_MEDIA_FEEDS = [
 # ──────────────────────────────────────────
 
 MEDIUM_FEEDS = [
-    # 繁體中文 tag（Medium tag RSS）
+    # CRM / MarTech
     {"name": "Medium-HubSpot",   "url": "https://medium.com/feed/tag/hubspot", "lang": "en", "source_score_bonus": 10},
     {"name": "Medium-CRM",       "url": "https://medium.com/feed/tag/crm",     "lang": "en", "source_score_bonus": 10},
-    {"name": "Medium-HRIS",      "url": "https://medium.com/feed/tag/hris",    "lang": "en", "source_score_bonus": 10},
-    {"name": "Medium-HCM",       "url": "https://medium.com/feed/tag/hcm",     "lang": "en", "source_score_bonus": 10},
-    {"name": "Medium-HR-Tech",   "url": "https://medium.com/feed/tag/hr-technology", "lang": "en", "source_score_bonus": 10},
+    {"name": "Medium-MarTech",   "url": "https://medium.com/feed/tag/martech", "lang": "en", "source_score_bonus": 10},
+    # PMS / Hospitality
     {"name": "Medium-PMS",       "url": "https://medium.com/feed/tag/property-management", "lang": "en", "source_score_bonus": 10},
     {"name": "Medium-Hospitality","url": "https://medium.com/feed/tag/hospitality-technology", "lang": "en", "source_score_bonus": 10},
+    # FBM / Restaurant Tech
+    {"name": "Medium-Restaurant","url": "https://medium.com/feed/tag/restaurant-technology", "lang": "en", "source_score_bonus": 10},
+    # UIUX / Design
+    {"name": "Medium-UX-Design", "url": "https://medium.com/feed/tag/ux-design", "lang": "en", "source_score_bonus": 10},
     {"name": "Medium-UX-Dashboard","url": "https://medium.com/feed/tag/dashboard", "lang": "en", "source_score_bonus": 5},
-    # 中文 publication — starbugs-io / pmの生存日記 已停刊/搬遷，改用仍活躍的中文 tag
+    # 中文 publication
     {"name": "Medium-CRM-TW",    "url": "https://medium.com/feed/tag/客戶關係管理", "lang": "zh-TW", "source_score_bonus": 15},
 ]
 
@@ -401,25 +389,29 @@ def brand_in_text(text: str) -> list[str]:
 
 
 # ──────────────────────────────────────────
-# 系統分類（PMS / HR / CRM）— 除了品牌回推，也用關鍵字直接分類
+# 系統分類（CRM / PMS / FBM）— 除了品牌回推，也用關鍵字直接分類
 # ──────────────────────────────────────────
 
 SYSTEMS_KEYWORDS = {
+    "CRM": [
+        "crm", "customer relationship", "sales hub", "marketing automation",
+        "martech", "customer data platform", "cdp",
+        "客戶關係", "客戶體驗", "銷售自動化", "行銷自動化", "顧客管理",
+        "會員分眾", "標籤管理", "會員等級", "edm",
+        "顧客関係", "営業支援", "マーケティングオートメーション",
+    ],
     "PMS": [
         "pms", "property management", "channel manager", "booking engine",
         "revenue management", "hospitality",
         "旅宿", "客房管理", "訂房系統", "民宿管理", "飯店管理", "通路管理",
         "予約管理", "宿泊管理", "ホテル管理", "宿泊施設", "客室管理",
     ],
-    "HR": [
-        "hr", "hris", "hcm", "eip", "payroll",
-        "人資", "人事", "員工", "考勤", "薪資", "人才管理", "績效", "排班",
-        "人事システム", "勤怠", "労務", "人事管理",
-    ],
-    "CRM": [
-        "crm", "customer relationship", "sales hub", "marketing automation",
-        "客戶關係", "客戶體驗", "銷售自動化", "行銷自動化", "顧客管理",
-        "顧客関係", "営業支援", "マーケティングオートメーション",
+    "FBM": [
+        "restaurant reservation", "table management", "waitlist", "banquet",
+        "catering management", "guest management", "dining reservation",
+        "restaurant pos",
+        "餐飲訂位", "訂位系統", "候位", "桌位安排", "宴會管理",
+        "餐飲營運", "訂席", "餐廳訂位",
     ],
 }
 
@@ -428,7 +420,7 @@ def classify_systems(brands: list[str], text: str, source_name: str = "") -> lis
     """
     先從品牌回推 system，再用文字關鍵字補強；
     若來源屬 TECH_FEEDS 且未命中任何品牌，標記為 TECH。
-    多命中則多標（PMS/HR/CRM/TECH 可共存）。
+    多命中則多標（CRM/PMS/FBM/TECH 可共存）。
     """
     systems = {TARGET_SOURCES[b]["system"] for b in brands if b in TARGET_SOURCES}
     lower = text.lower()
@@ -440,70 +432,80 @@ def classify_systems(brands: list[str], text: str, source_name: str = "") -> lis
     return sorted(systems)
 
 # ──────────────────────────────────────────
-# 內容類型分類（實體 + 內容分類雙軸的分類軸）
-# 意圖為主的 8 類，取代舊 5 類黑白名單策略
+# 內容類型分類（PRD 6 類）
+#   P01 競品與產品更新 / U01 UIUX 設計案例 / U02 UX 研究與設計趨勢
+#   A01 AI 工具與工作流 / T01 前端與 API 基礎 / T02 產品架構與資料模型
 # ──────────────────────────────────────────
 
+TAG_P01 = "P01 競品與產品更新"
+TAG_U01 = "U01 UI/UX 設計案例"
+TAG_U02 = "U02 UX 研究與設計趨勢"
+TAG_A01 = "A01 AI 工具與工作流"
+TAG_T01 = "T01 前端與 API 基礎"
+TAG_T02 = "T02 產品架構與資料模型"
+
 CONTENT_TYPE_RULES: list[tuple[str, list[str]]] = [
-    # 產品更新：產品層級公告
-    ("產品更新", [
-        "release", "launch", "unveils", "rolls out", "ships", "ga release",
-        "推出", "上線", "改版", "版本", "發表", "問世",
-    ]),
-    # 功能發布：feature 顆粒度
-    ("功能發布", [
+    # P01 競品與產品更新：新功能、改版、淘汰、整合
+    (TAG_P01, [
+        "release", "launches", "launched", "unveils", "rolls out", "ships", "ga release",
         "new feature", "feature update", "adds", "introduces", "now supports", "brings",
+        "deprecated", "sunset", "end-of-life", "end of life",
+        "推出", "上線", "改版", "版本", "發表", "問世",
         "新增", "新功能", "支援", "加入", "上新",
+        "淘汰", "停止支援", "下架", "整合",
     ]),
-    # 融資動態：早期到成長期資金
-    ("融資動態", [
-        "funding", "raises", "raised", "series a", "series b", "series c", "series d",
-        "seed round", "valuation", "closes round", "venture round",
-        "融資", "募資", "估值", "投資", "獲投", "輪次",
+    # U01 UIUX 設計案例：具體操作模式 / 介面實作
+    (TAG_U01, [
+        "ui/", "ux design", "redesign", "design system", "component library",
+        "dashboard", "onboarding", "interface design", "interaction design",
+        "form design", "data table", "navigation pattern", "empty state",
+        "ui 設計", "ux 設計", "介面設計", "重新設計", "儀表板", "元件庫",
+        "操作流程", "資訊架構", "互動設計", "表單設計", "資料表",
     ]),
-    # 財報 / 營運數據：財務相關
-    ("財報營運", [
-        "earnings", "revenue", "quarterly", "guidance", "arr ", "mrr ", "profit",
-        "fiscal", "gaap", "financial results",
-        "財報", "營收", "季報", "業績", "毛利", "獲利", "營業額",
+    # U02 UX 研究與設計趨勢：研究方法 / 可用性 / 趨勢分析
+    (TAG_U02, [
+        "usability study", "ux research", "user research", "a/b test", "user testing",
+        "accessibility", "wcag", "design trend", "nielsen",
+        "research", "study", "survey", "report", "forecast", "analysis",
+        "可用性", "使用性", "使用者研究", "無障礙", "設計趨勢",
+        "研究", "調查", "洞察", "報告", "分析", "趨勢",
     ]),
-    # 人事異動：高管、招募
-    ("人事異動", [
-        "ceo", "cto", "cfo", "cpo", "hires", "appoints", "joins", "resigns", "steps down",
-        "chief officer", "chairman", "chairwoman", "president",
-        "上任", "離任", "出任", "接任", "空降", "挖角", "任命", "辭任",
-    ]),
-    # 產業趨勢：分析型
-    ("產業趨勢", [
-        "market", "trend", "report", "forecast", "study", "survey", "analysis",
-        "趨勢", "研究", "調查", "洞察", "報告", "分析",
-    ]),
-    # AI 技術
-    ("AI 技術", [
+    # A01 AI 工具與工作流
+    (TAG_A01, [
         "ai ", " ai,", "artificial intelligence", "llm", "gpt", "claude", "gemini",
         "generative", "copilot", "agent ", "agentic", "openai", "anthropic",
-        "人工智慧", "生成式", "大模型", "智能體",
+        "workflow automation", "n8n", "zapier", "automation", "mcp",
+        "人工智慧", "生成式", "大模型", "智能體", "工作流", "自動化",
     ]),
-    # 用戶體驗：UX/設計向（延續 UIUX 專案主線）
-    ("用戶體驗", [
-        "ux", "ui/", "user experience", "usability", "redesign", "design system",
-        "dashboard", "onboarding", "interface",
-        "介面", "體驗", "設計", "重新設計", "儀表板", "使用者",
+    # T01 前端與 API 基礎
+    (TAG_T01, [
+        "rest api", "graphql", "webhook", "oauth", "http", " api ", "api,",
+        "sdk", "frontend", "front-end", "react", "vue", "typescript", "javascript",
+        "html", "css",
+        "前端", "介面串接", "身份驗證", "驗證機制", "狀態管理",
+    ]),
+    # T02 產品架構與資料模型
+    (TAG_T02, [
+        "architecture", "data model", "erd", "schema", "database", " dbms",
+        "microservice", "integration", "data pipeline", "event-driven",
+        "multi-tenant", "permission model",
+        "架構", "資料模型", "資料結構", "資料關聯", "系統整合", "模組架構",
+        "權限模型",
     ]),
 ]
 
 
 def analyze_tags(title: str, summary: str) -> list[str]:
     """
-    以內容意圖為主的分類，一篇文章可命中多類。
-    未命中任何規則 → 預設歸為「產業趨勢」（fallback）。
+    PRD 6 類分類，一篇文章可命中多類。
+    未命中任何規則 → fallback 歸為 U02（研究/趨勢作為兜底）。
     """
     text = f" {title} {summary} ".lower()
     tags: list[str] = []
     for tag, kws in CONTENT_TYPE_RULES:
         if any(k in text for k in kws):
             tags.append(tag)
-    return tags or ["產業趨勢"]
+    return tags or [TAG_U02]
 
 # ──────────────────────────────────────────
 # 分數計算
@@ -517,24 +519,64 @@ def calculate_score(
     source_bonus: int = 0,
     brand_hits: int = 0,
 ) -> int:
+    """
+    Phase A 分數：延續「語言 + 標籤 + 來源 + 品牌」加權規則，標籤改為 PRD 6 類。
+    Phase B 會改為 PRD §6.1 的 100 分制 6 維度 + recommendation_reason。
+    """
     score = 40
     # 語言加權：繁中 > 英文
     if lang == "zh-TW":
         score += 40
-    # 標籤加權（新 8 類）
-    if "產品更新" in tags:  score += 15
-    if "功能發布" in tags:  score += 15
-    if "用戶體驗" in tags:  score += 15
-    if "AI 技術" in tags:   score += 12
-    if "人事異動" in tags:  score += 8
-    if "融資動態" in tags:  score += 8
-    if "產業趨勢" in tags:  score += 5
-    if "財報營運" in tags:  score -= 5   # 不擋、只降權
+    # PRD 6 類加權（P01/U01 直接產品設計相關 → 高；A01 AI 工具 → 中高；T01/T02 技術 → 中；U02 研究趨勢 → 中）
+    if TAG_P01 in tags: score += 15
+    if TAG_U01 in tags: score += 15
+    if TAG_A01 in tags: score += 12
+    if TAG_U02 in tags: score += 10
+    if TAG_T02 in tags: score += 10
+    if TAG_T01 in tags: score += 8
     # 來源加權
     score += source_bonus
     # 品牌命中數加權
     score += min(brand_hits * 5, 20)
     return score
+
+# ──────────────────────────────────────────
+# 產品更新狀態（PRD §5.4）
+#   Announced / Beta / GA / Deprecated / Unverified
+#   偵測順序：Deprecated > Beta > GA > Announced，皆未命中 → Unverified
+#   PRD 要求：無法從可靠來源確認狀態時，不得自行推測，標記 Unverified。
+# ──────────────────────────────────────────
+
+RELEASE_STATUS_RULES: list[tuple[str, list[str]]] = [
+    ("Deprecated", [
+        "deprecated", "sunset", "sunsetting", "end-of-life", "end of life",
+        "discontinued", "retiring", "retired",
+        "淘汰", "停止支援", "下架", "退場",
+    ]),
+    ("Beta", [
+        "beta", "preview", "early access", "limited release", "limited availability",
+        "測試版", "預覽版", "搶先體驗", "有限開放",
+    ]),
+    ("GA", [
+        "now available", "generally available", "general availability",
+        "ga release", "launches", " launched", "ships", "shipped",
+        "正式推出", "正式上線", "全面開放", "全面推出", "正式發布",
+    ]),
+    ("Announced", [
+        "announces", "announced", "unveils", "to launch",
+        "coming soon", "will launch", "will debut",
+        "預告", "即將推出", "宣布", "即將發表",
+    ]),
+]
+
+
+def detect_release_status(title: str, summary: str) -> str:
+    text = (title + " " + summary).lower()
+    for status, kws in RELEASE_STATUS_RULES:
+        if any(k in text for k in kws):
+            return status
+    return "Unverified"
+
 
 # ──────────────────────────────────────────
 # 網路工具
@@ -556,19 +598,128 @@ def resolve_news_url(url: str) -> str:
     return r.url if r else url
 
 
+# 常見影像副檔名（含 query string 容錯），用於 enclosure 無 type 時的回退判斷
+_IMG_EXT_RE = re.compile(r"\.(?:jpe?g|png|webp|gif)(?:[?#]|$)", re.IGNORECASE)
+# 從一段 HTML 片段抽第一個 <img src="…"> 的 URL
+_IMG_SRC_RE = re.compile(r'<img[^>]+?src=["\']([^"\']+)["\']', re.IGNORECASE)
+
+
+def extract_rss_image(item, description_html: str = "") -> str | None:
+    """
+    從 RSS <item> 內的常見欄位抽取第一張圖的 URL。
+    依序嘗試：
+      1. media:thumbnail / media:content[url]（Yahoo Media 命名空間）
+      2. enclosure[url] 且 type=image/* 或副檔名為圖片
+      3. content:encoded 內的第一張 <img>
+      4. description 內嵌 <img>（最後退路）
+    回傳 None 表示找不到。
+    """
+    # 1) media:thumbnail / media:content（lxml-xml 剝除 ns prefix → "thumbnail" / "content"）
+    for tag in item.find_all(True):
+        local = (tag.name or "").split(":")[-1].lower()
+        if local in ("thumbnail", "content") and tag.get("url"):
+            m_type = (tag.get("type") or "").lower()
+            # 若 type 存在但非 image/*，可能是影片/音訊，略過
+            if m_type and not m_type.startswith("image"):
+                continue
+            url = (tag.get("url") or "").strip()
+            if url.startswith("http"):
+                return url
+
+    # 2) enclosure
+    enc = item.find("enclosure")
+    if enc:
+        url = (enc.get("url") or "").strip()
+        if url:
+            enc_type = (enc.get("type") or "").lower()
+            if enc_type.startswith("image/") or _IMG_EXT_RE.search(url):
+                return url
+
+    # 3) content:encoded 第一張 img（Medium、WordPress 常用）
+    for tag in item.find_all(True):
+        local = (tag.name or "").split(":")[-1].lower()
+        if local == "encoded":
+            raw = tag.get_text() or ""
+            m = _IMG_SRC_RE.search(raw)
+            if m:
+                return m.group(1).strip()
+
+    # 4) description 內嵌 img（Mashdigi / 部分 Google News 條目）
+    if description_html:
+        m = _IMG_SRC_RE.search(description_html)
+        if m:
+            return m.group(1).strip()
+
+    return None
+
+
 def fetch_thumbnail(url: str) -> str:
-    if "news.google.com" in url:
-        return FALLBACK_THUMBNAIL
-    real_url = resolve_news_url(url)
-    r = safe_get(real_url, timeout=6)
+    """
+    單次 GET 抓取網頁並取 og:image / twitter:image / link[rel=image_src]。
+    若最終 URL 仍停在 news.google.com（JS 跳轉未解析），嘗試從 wrapper HTML
+    萃取真實文章 URL 再抓一次。
+    """
+    r = safe_get(url, timeout=6)
     if not r:
         return FALLBACK_THUMBNAIL
-    soup = BeautifulSoup(r.text, "html.parser")
-    for attr in [("meta", {"property": "og:image"}), ("meta", {"name": "twitter:image"})]:
-        tag = soup.find(*attr)
-        if tag and tag.get("content"):
-            return tag["content"]
+
+    final_url = r.url
+    html = r.text
+
+    # Google News wrapper 展開
+    if "news.google.com" in (final_url or ""):
+        real_url = _unwrap_google_news(html)
+        if not real_url:
+            return FALLBACK_THUMBNAIL
+        r2 = safe_get(real_url, timeout=6)
+        if not r2:
+            return FALLBACK_THUMBNAIL
+        html = r2.text
+
+    soup = BeautifulSoup(html, "html.parser")
+    for selector in (
+        ("meta", {"property": "og:image"}),
+        ("meta", {"property": "og:image:url"}),
+        ("meta", {"name": "twitter:image"}),
+        ("meta", {"property": "twitter:image"}),
+        ("link", {"rel": "image_src"}),
+    ):
+        tag = soup.find(*selector)
+        if tag:
+            img = tag.get("content") or tag.get("href")
+            if img and img.startswith("http"):
+                return img.strip()
     return FALLBACK_THUMBNAIL
+
+
+def _unwrap_google_news(html: str) -> str | None:
+    """從 Google News redirect wrapper HTML 萃取真實文章 URL。"""
+    soup = BeautifulSoup(html, "html.parser")
+
+    # canonical link
+    link = soup.find("link", rel="canonical")
+    if link and link.get("href") and "google.com" not in link["href"]:
+        return link["href"].strip()
+
+    # meta http-equiv="refresh"
+    meta = soup.find(
+        "meta",
+        attrs={"http-equiv": lambda v: bool(v) and v.lower() == "refresh"},
+    )
+    if meta:
+        content = meta.get("content", "")
+        m = re.search(r"url=([^;]+)", content, re.IGNORECASE)
+        if m:
+            u = m.group(1).strip().strip("'\"")
+            if u.startswith("http") and "google.com" not in u:
+                return u
+
+    # 第一個指向外站的 <a href>
+    for a in soup.find_all("a", href=True):
+        href = (a.get("href") or "").strip()
+        if href.startswith("http") and "google.com" not in href:
+            return href
+    return None
 
 
 def parse_date(pub: str) -> str:
@@ -614,10 +765,11 @@ def parse_rss_item(
 
     pub = pub_tag.get_text(strip=True) if pub_tag else ""
 
+    desc_html = ""
     desc = ""
     if desc_tag:
-        raw = desc_tag.get_text()
-        desc = BeautifulSoup(raw, "html.parser").get_text(" ", strip=True)
+        desc_html = desc_tag.get_text()
+        desc = BeautifulSoup(desc_html, "html.parser").get_text(" ", strip=True)
     desc = desc[:400]
 
     combined = title + " " + desc
@@ -640,6 +792,10 @@ def parse_rss_item(
         return None
 
     score = calculate_score(title, desc, tags, lang, source_score_bonus, brand_hits)
+    release_status = detect_release_status(title, desc)
+
+    # Phase 1：先吃 RSS 內嵌圖片（零外部請求）；拿不到才留 fallback，等 Phase 2 補抓
+    rss_image = extract_rss_image(item, desc_html)
 
     return {
         "id":       make_id(url),
@@ -649,11 +805,12 @@ def parse_rss_item(
         "title":    title,
         "summary":  desc[:280],
         "url":      url,
-        "thumbnail": FALLBACK_THUMBNAIL,  # 延遲抓取，避免封鎖
+        "thumbnail": rss_image or FALLBACK_THUMBNAIL,
         "date":     parse_date(pub),
         "fetched":  datetime.utcnow().isoformat(),
         "systems":  systems,
         "types":    tags,
+        "release_status": release_status,
         "is_zhtw":  is_zhtw,
         "lang":     lang,
         "score":    score,
@@ -801,6 +958,7 @@ def collect_threads() -> list[dict]:
         lang = detect_lang(combined)
         is_zhtw = (lang == "zh-TW")
         score = calculate_score(title, desc, tags, lang, source_bonus=20, brand_hits=len(brands))
+        release_status = detect_release_status(title, desc)
 
         articles.append({
             "id":       make_id(url + desc[:30]),
@@ -815,6 +973,7 @@ def collect_threads() -> list[dict]:
             "fetched":  datetime.utcnow().isoformat(),
             "systems":  systems,
             "types":    tags,
+            "release_status": release_status,
             "is_zhtw":  is_zhtw,
             "lang":     lang,
             "score":    score,
@@ -846,22 +1005,32 @@ def deduplicate(articles: list[dict]) -> list[dict]:
 # Thumbnail 補抓（批次，控制速率）
 # ──────────────────────────────────────────
 
-def enrich_thumbnails(articles: list[dict], limit: int = 30) -> list[dict]:
+def enrich_thumbnails(articles: list[dict], limit: int = 500) -> list[dict]:
     """
-    只對分數最高的前 N 篇補抓 thumbnail，避免大量請求觸發封鎖。
+    對仍為 fallback 的文章補抓 og:image。按分數由高到低處理，
+    確保即使途中中斷/失敗，優先命中的仍是上層文章。
     """
-    print(f"\n🖼️  補抓 Thumbnail（前 {limit} 篇）...")
-    top = sorted(articles, key=lambda x: x["score"], reverse=True)[:limit]
-    top_ids = {a["id"] for a in top}
+    pending = [a for a in articles if a.get("thumbnail") == FALLBACK_THUMBNAIL]
+    pending.sort(key=lambda x: x.get("score", 0), reverse=True)
+    pending = pending[:limit]
 
-    for art in articles:
-        if art["id"] not in top_ids:
-            continue
-        if art["thumbnail"] != FALLBACK_THUMBNAIL:
-            continue  # 已有圖，略過
-        art["thumbnail"] = fetch_thumbnail(art["url"])
-        time.sleep(0.3)
+    pre_hit = len(articles) - len(pending)
+    print(f"\n🖼️  Thumbnail 補抓：RSS 內嵌已命中 {pre_hit}/{len(articles)}，"
+          f"需外部抓取 {len(pending)} 篇")
 
+    enriched = 0
+    for i, art in enumerate(pending, 1):
+        img = fetch_thumbnail(art["url"])
+        if img and img != FALLBACK_THUMBNAIL:
+            art["thumbnail"] = img
+            enriched += 1
+        if i % 25 == 0 or i == len(pending):
+            print(f"  ├── 進度 {i}/{len(pending)}（本輪新增 {enriched} 張）")
+        time.sleep(0.25)
+
+    final_hit = sum(1 for a in articles if a.get("thumbnail") != FALLBACK_THUMBNAIL)
+    print(f"  └── 總命中：{final_hit}/{len(articles)} 篇有真實縮圖"
+          f"（{final_hit * 100 // max(len(articles), 1)}%）")
     return articles
 
 # ──────────────────────────────────────────
@@ -872,8 +1041,8 @@ LANG_PRIORITY = {"zh-TW": 2, "en": 1}
 
 
 def collect_all_intelligence():
-    print("🚀 開始執行競品情報收集（2026-09 · PMS/CRM/HR/TECH）")
-    print(f"   收錄軸：實體（品牌）+ 內容分類（8 類）")
+    print("🚀 開始執行情報收集（Phase A · CRM/PMS/FBM/TECH · PRD 6 類）")
+    print(f"   收錄軸：實體（品牌）+ 內容分類（PRD 6 類：P01/U01/U02/A01/T01/T02）")
     print(f"   語言優先：繁體中文 > 英文")
     print(f"   收集時間：{datetime.utcnow().isoformat()} UTC\n")
 
@@ -907,6 +1076,7 @@ def collect_all_intelligence():
     by_channel: dict[str, int] = {}
     by_system: dict[str, int]  = {}
     by_type: dict[str, int] = {}
+    by_status: dict[str, int] = {}
     for a in all_articles:
         ch = a.get("channel", "unknown")
         by_channel[ch] = by_channel.get(ch, 0) + 1
@@ -914,6 +1084,8 @@ def collect_all_intelligence():
             by_system[s] = by_system.get(s, 0) + 1
         for t in a.get("types", []):
             by_type[t] = by_type.get(t, 0) + 1
+        st = a.get("release_status", "Unverified")
+        by_status[st] = by_status.get(st, 0) + 1
 
     output = {
         "stats": {
@@ -924,6 +1096,7 @@ def collect_all_intelligence():
             "by_channel": by_channel,
             "by_system": by_system,
             "by_type": by_type,
+            "by_release_status": by_status,
         },
         "articles": all_articles,
     }
