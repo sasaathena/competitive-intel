@@ -1,32 +1,32 @@
 {
   "stats": {
-    "total": 209,
-    "new_today": 209,
-    "last_updated": "2026-10-16T05:30:42.899815",
+    "total": 193,
+    "new_today": 206,
+    "last_updated": "2026-10-16T03:23:22.172168",
     "lang_breakdown": {
-      "zh_TW": 28,
-      "en": 181
+      "zh_TW": 26,
+      "en": 180
     },
     "by_channel": {
-      "rss": 209
+      "rss": 206
     },
     "by_system": {
-      "CRM": 59,
-      "PMS": 17,
-      "TECH": 124,
-      "FBM": 9
+      "CRM": 60,
+      "PMS": 16,
+      "TECH": 122,
+      "FBM": 8
     },
     "by_type": {
-      "U02 UX 研究與設計趨勢": 74,
-      "P01 競品與產品更新": 27,
+      "U02 UX 研究與設計趨勢": 71,
+      "P01 競品與產品更新": 26,
       "A01 AI 工具與工作流": 101,
-      "T02 產品架構與資料模型": 6,
-      "T01 前端與 API 基礎": 22,
+      "T02 產品架構與資料模型": 7,
+      "T01 前端與 API 基礎": 23,
       "U01 UI/UX 設計案例": 5
     },
     "by_release_status": {
-      "Unverified": 196,
-      "Announced": 5,
+      "Unverified": 192,
+      "Announced": 6,
       "Beta": 1,
       "GA": 7
     }
@@ -44,7 +44,7 @@
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQVRoX1UydkJ3OE5hNkFFYjZNeWN6OFBfcV9qRTRNeXdnTk82enAxS2djLXpzMVh6anQwbVNzQlppdjA2cmQzdEhpZGttX2ttN2kxNWpLMVpQLVhiRmxiS3YyTFN3b2gxVFZiOTFiWTFKaEstRkJMM3QtYjBwX1MyV016WTI?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T04:07:10+00:00",
-      "fetched": "2026-10-16T05:25:11.696450",
+      "fetched": "2026-10-16T03:19:18.245725",
       "systems": [
         "CRM"
       ],
@@ -66,40 +66,6 @@
       "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     },
     {
-      "id": "art_8fad400683",
-      "channel": "rss",
-      "source": "Salesforce",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "title": "CRM/Salesforce|美股|盤前盤後股價、歷史股價走勢與公司服務介紹 - 美股放大鏡",
-      "summary": "CRM/Salesforce|美股|盤前盤後股價、歷史股價走勢與公司服務介紹 美股放大鏡",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5oMmFpWmlMMHlmVThTSkk1NTVrM1ZoQ3g2QkdQZ1c2SDdwcjhnYko3dHAzclhlZGtCVnRIOTBqLXpmVHZvU0ZZTVQ4bzN4VVFKXzZ3?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-13T21:23:28+00:00",
-      "fetched": "2026-10-16T05:25:12.297336",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": true,
-      "lang": "zh-TW",
-      "score": 79,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 8,
-        "novelty": 6
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
       "id": "art_9664f71463",
       "channel": "rss",
       "source": "Salesforce",
@@ -111,7 +77,7 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZEE5QnJNVFBLRVlzRzJpemZMSlU4VXZjYjNNWUJ0b1d6WFhTMzVIYXJiRWo0WlRXTG9TcmVoVlB5ZG9CVTY3QjdWd2N2bG9pY3dGTlRwbkRGX29uU1BKWmZzOUdXaFpuUzdFaDRJQXZTU0J0Nmw5NUZCblZWTEhIdWUxc2JrZEJ0dDJtd3pSYnBHWks2?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T14:15:58+00:00",
-      "fetched": "2026-10-16T05:25:12.898248",
+      "fetched": "2026-10-16T03:19:19.452559",
       "systems": [
         "CRM"
       ],
@@ -144,7 +110,7 @@
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOenBaQTU2ZzUzcmkyVklYa0hzZ1ZRaWg4bDRuVEc3Yk81OW9VcUlSUzRGbkFiU2NDUW9kQ240aVUzM1Zud0lMTUJCZ3lZbDlEc2pJNEpvY0JpdE84MGktUVVSRFlnMnJDdmlDM2Rvd1Fsd2VjMnNfa0xKQ3pCRlhqVEJiakdfNVdiTlRzV1ZR?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T15:32:32+00:00",
-      "fetched": "2026-10-16T05:25:13.499382",
+      "fetched": "2026-10-16T03:19:20.058266",
       "systems": [
         "CRM"
       ],
@@ -166,39 +132,6 @@
       "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     },
     {
-      "id": "art_e08e9eb579",
-      "channel": "rss",
-      "source": "tripla",
-      "brands": [
-        "tripla"
-      ],
-      "title": "TRIPLA CO LTD | 5136.T 股價走勢與即時報價 - BigGo 財經",
-      "summary": "TRIPLA CO LTD | 5136.T 股價走勢與即時報價 BigGo 財經",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE44OGF3MzBQLXNuSDdpWm5LNEh3U1p3bG5RRTFaY0FMNEpnaWdrdTFtaUZyZVVmVGNrNG1YWmxoWUVoZlpaaHlRNjhXMC1JNFQxX1Z3?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-09T07:00:00+00:00",
-      "fetched": "2026-10-16T05:26:10.172767",
-      "systems": [
-        "PMS"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": true,
-      "lang": "zh-TW",
-      "score": 77,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 6,
-        "novelty": 6
-      },
-      "recommendation_reason": "追蹤品牌 tripla 的更新；歸類於「UX 研究/趨勢」；近 1 週發布"
-    },
-    {
       "id": "art_666631b1db",
       "channel": "rss",
       "source": "TECH/TW·iThome",
@@ -207,8 +140,8 @@
       "summary": "AI代理大量參與程式開發，讓Anthropic既有的Git版本控制架構面臨擴充瓶頸，因此花費5個月開發 Scion版本控制系統 ，並將內部大型單一程式碼儲存庫完整遷移至新系統，改由伺服器處理程式碼提交、合併及歷史查詢，減輕開發環境與持續整合（CI）系統的負擔。 Anthropic今年5月平均每天合併約2,500筆程式碼變更，到了9月已超過3萬筆。該公司主要程式庫的主分支歷史資料接近100 GB，壓縮後工作副本仍超過25 GB，光是CI系統每天就要取出指定版本的程式碼約2,500萬次。 Anthropic開發團隊過去曾使用數百臺Git鏡像伺服器，以及淺層複製（Shallow Clone），還有只在工作目錄保留所需檔案（Sparse Checkout）等方法，但隨著程式碼變更量增加，維護負擔也越來越重。",
       "url": "https://www.ithome.com.tw/news/179733",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:28:08.942147",
-      "fetched": "2026-10-16T05:28:08.942274",
+      "date": "2026-10-16T03:22:31.072883",
+      "fetched": "2026-10-16T03:22:31.073052",
       "systems": [
         "TECH"
       ],
@@ -232,80 +165,16 @@
       "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布；繁體中文內容"
     },
     {
-      "id": "art_2fca9e70c8",
-      "channel": "rss",
-      "source": "TECH/TW·TechOrange",
-      "brands": [],
-      "title": "Meta 推美最強開放模型 Muse Spark Open，8,160 億參數為何兩台 Mac 就能跑？",
-      "summary": "Meta 本週動作頻頻，先是發表新一代閉源 AI 模型 Muse Wonder，又於美國時間 10/15 發布新一代 AI 模型 Muse Spark Open，並宣稱是迄今最強的美國開放權重模型，總參數高達 8,160 億，主攻程式開發與 AI Agent（AI 代理）任務。其中更引人關注的是，Meta 與 Apple 合作，讓這款超大型模型能在兩台 Mac Studio 上運行。 這不僅讓企業及開發者有機會自行下載、調整和部署高能力模型，也展示大型 AI 推理不必完全依賴傳統 GPU 伺服器的新選擇。究竟過去需要龐大運算與記憶體資源的模型，為何現在能在兩台桌上型電腦上運行？ Meta 重返開放模型競爭，追上中國對手了嗎？ 近年中國 AI 業者積極推進開放權重模型，逐漸取得市場優勢。根據 Hugging Face 統計，截至今年 3 月的過去一年，中國模型占平台下載量達 41%，已超越美",
-      "url": "https://techorange.com/2026/10/16/meta-muse-spark-open-ai/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-      "thumbnail": "https://techorange.com/app/uploads/2026/10/441db6978ef26b37-720x480.jpg",
-      "date": "2026-10-16T11:51:31+08:00",
-      "fetched": "2026-10-16T05:28:12.714053",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": true,
-      "lang": "zh-TW",
-      "score": 61,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 15,
-        "applicability": 18,
-        "source_trust": 11,
-        "recency": 10,
-        "novelty": 7
-      },
-      "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布；繁體中文內容"
-    },
-    {
-      "id": "art_08f86dc4c8",
-      "channel": "rss",
-      "source": "TECH/TW·TechOrange",
-      "brands": [],
-      "title": "Grok Voice 3.0 超車 OpenAI、Google，星鏈、特斯拉已如何應用語音 Agent？",
-      "summary": "SpaceX 旗下 AI 業務 SpaceXSI（原 xAI）10/14 推出 Grok Voice 3.0，在第三方語音 AI 綜合評測中超越 OpenAI、Google。除了模型性能，SpaceXSI 也展示 Grok Voice 的商業化進展：衛星網路服務商 Starlink（星鏈）平日約有 2 萬通客服與銷售來電使用 Grok Voice 處理，其中約 70% 無須真人介入；Tesla（特斯拉）車輛每天也有數百萬次語音 AI 對話。 從 Starlink 客服到 Tesla 車內操作，Grok Voice 已承擔哪些工作？ Starlink 的語音 Agent 已不只負責接聽電話。根據 SpaceXSI 8 月公布的實際部署案例，Starlink 利用 Grok Voice 建立客製化 Agent，處理帳務、設備故障、物流及銷售等工作。 例如客戶反映設備故障，Agent 能先執行診",
-      "url": "https://techorange.com/2026/10/16/grok-voice-3-0-ai-agent/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-      "thumbnail": "https://techorange.com/app/uploads/2026/10/6301d107de9ea9a3-720x480.jpg",
-      "date": "2026-10-16T06:30:00+08:00",
-      "fetched": "2026-10-16T05:28:13.315807",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": true,
-      "lang": "zh-TW",
-      "score": 61,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 15,
-        "applicability": 18,
-        "source_trust": 11,
-        "recency": 10,
-        "novelty": 7
-      },
-      "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布；繁體中文內容"
-    },
-    {
       "id": "art_851c6215b6",
       "channel": "rss",
       "source": "TECH/TW·TechOrange",
       "brands": [],
       "title": "「硬體是 AI 的牙齒」：Matter 募得 4.5 億美元，押注機器人與下一波硬科技",
-      "summary": "矽谷創投公司 Matter Venture Partners 上個月宣布完成第二期基金募資，規模達 4.5 億美元，較第一期基金的 3 億美元進一步擴大，將投資早期硬科技新創，涵蓋半導體、機器人、實體 AI、量子運算、先進製造與能源等領域。 AI 熱潮帶動硬體投資，今年深科技投資已達 900 億美元 《The New York Times》指出，2022 年 ChatGPT 問世後，多數創投業者紛紛搶進 AI 新創，希望搭上 OpenAI 的成功浪潮，但 Matter 共同創辦人 Wen Hsieh 看到了不同的機會。職涯多半從事硬體投資的 Hsieh 認為，AI 熱潮將帶動支撐這項技術的硬體需求，因此於 2023 年創立 Matter。 如今，硬體已成為矽谷的新熱門話題。隨著 AI 衝擊創投業過去最倚重的軟體領域，愈來愈多投資人轉向實體科技。根據 PitchBook 資料，創投業者在 2",
+      "summary": "矽谷創投公司 Matter Venture Partners 上個月宣布完成第二期基金募資，規模達 4.5 億美元，較第一期基金的 3 億美元進一步擴大，將投資早期硬科技新創，涵蓋半導體、機器人、實體 AI、量子運算、先進製造與能源等領域。 AI 熱潮帶動硬體投資，今年深科技投資已達 900 億美元 《The New York Times》指出，2022 年 ChatGPT 問世後，多數創投業者紛紛搶進 AI 新創，希望搭上 OpenAI 的成功浪潮，但 Matter 共同創辦人 Wen Hsieh 看到了不同的機會。職涯多半從事硬體投資的 Hsieh ",
       "url": "https://techorange.com/2026/10/15/infinite-demand-robots-inside-matter-venture-partners-450-million-bet-physical-ai/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
       "thumbnail": "https://techorange.com/app/uploads/2026/10/c5f329ae8ea512a0-720x480.jpg",
       "date": "2026-10-15T17:00:36+08:00",
-      "fetched": "2026-10-16T05:28:14.218341",
+      "fetched": "2026-10-16T03:22:36.663266",
       "systems": [
         "TECH"
       ],
@@ -333,11 +202,11 @@
       "source": "TECH/TW·TechOrange",
       "brands": [],
       "title": "從自駕光達到機器人：禾賽推空間相機 Kosmo，把真實場域變成訓練數據",
-      "summary": "機器人在展場迎賓、揮手、跳舞的畫面已經不少見，但要走進門市或工廠分擔實際工作，仍有一段距離。自駕車光達供應商禾賽（Hesai），10/14 在上海工廠發表空間相機 Kosmo。這台外形像葡萄酒瓶的裝置結合光達與攝影機，目標是協助開發者更有效率地收集真實世界的空間數據，用來訓練機器人。 據《Reuters》報導，禾賽共同創辦人暨執行長李一帆在發表會上表示，要訓練機器人理解真實世界、執行揮手跳舞以外的複雜任務，所需的高品質空間數據仍有很大缺口。如果數據是機器人走進真實場域的門檻之一，一台手持相機能幫上多少忙？ 機器人還停在迎賓跳舞，禾賽點出空間數據的缺口 李一帆指出，機器人解決實際生產力問題的能力仍然有限。而禾賽共同創辦人暨技術長向少卿，更加具體地說明這個缺口：「實體 AI（Physical AI）需要準確、負擔得起、能大規模取得的真實世界數據，而要同時滿足這三項，一直是個難題。」實體 AI ",
+      "summary": "機器人在展場迎賓、揮手、跳舞的畫面已經不少見，但要走進門市或工廠分擔實際工作，仍有一段距離。自駕車光達供應商禾賽（Hesai），10/14 在上海工廠發表空間相機 Kosmo。這台外形像葡萄酒瓶的裝置結合光達與攝影機，目標是協助開發者更有效率地收集真實世界的空間數據，用來訓練機器人。 據《Reuters》報導，禾賽共同創辦人暨執行長李一帆在發表會上表示，要訓練機器人理解真實世界、執行揮手跳舞以外的複雜任務，所需的高品質空間數據仍有很大缺口。如果數據是機器人走進真實場域的門檻之一，一台手持相機能幫上多少忙？ 機器人還停在迎賓跳舞，禾賽點出空間數據的缺口 李",
       "url": "https://techorange.com/2026/10/15/hesai-kosmo-spatial-camera-robotics/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
       "thumbnail": "https://techorange.com/app/uploads/2026/10/8c001f49eaa067be-720x462.webp",
       "date": "2026-10-15T14:08:39+08:00",
-      "fetched": "2026-10-16T05:28:14.820198",
+      "fetched": "2026-10-16T03:22:37.275318",
       "systems": [
         "TECH"
       ],
@@ -365,11 +234,11 @@
       "source": "TECH/TW·TechOrange",
       "brands": [],
       "title": "台灣微軟、雲馥數位從 KPI、成本到 Agent 治理談企業 AI 主權實戰",
-      "summary": "TechOrange 科技報橘於 10 月 13 日舉辦「企業 AI 主權高峰論壇午宴」，邀集多位高科技製造業與金融業中高階主管蒞臨餐敘交流，共同探討企業如何讓 AI 從試點走向規模化生產力，分享第一線落地經驗 。科技報橘社長戴季全表示，「AI 不是將 20 人的團隊縮減為 2 人；而是讓 20 人都具備 AI 能力，使公司規模與產出發揮 20 倍以上的乘數效應。」 台灣微軟商用企業與新興市場事業部總經理李光耀致詞時表示，AI 導入已不再是長達半年的大型專案，可能 3 個星期就能完成一個專案並快速迭代，新模型推出的速度也以週計算，因此企業不需要盲目追逐新工具或模型，平台廠商會持續整合最新能力。 李光耀強調，企業若要真正放大 AI 的效益，第一步是先想清楚「為什麼要 AI」，並掌握資料在哪、權限如何管控。「我們看到很多的 project 失敗，不是因為技術、不是因為 tools，而是因為沒有",
+      "summary": "TechOrange 科技報橘於 10 月 13 日舉辦「企業 AI 主權高峰論壇午宴」，邀集多位高科技製造業與金融業中高階主管蒞臨餐敘交流，共同探討企業如何讓 AI 從試點走向規模化生產力，分享第一線落地經驗 。科技報橘社長戴季全表示，「AI 不是將 20 人的團隊縮減為 2 人；而是讓 20 人都具備 AI 能力，使公司規模與產出發揮 20 倍以上的乘數效應。」 台灣微軟商用企業與新興市場事業部總經理李光耀致詞時表示，AI 導入已不再是長達半年的大型專案，可能 3 個星期就能完成一個專案並快速迭代，新模型推出的速度也以週計算，因此企業不需要盲目追逐新",
       "url": "https://techorange.com/2026/10/15/cloudriches-microsoft-aiagent/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
       "thumbnail": "https://techorange.com/app/uploads/2026/10/133d494e1556813c-720x447.jpg",
       "date": "2026-10-15T14:07:16+08:00",
-      "fetched": "2026-10-16T05:28:15.120940",
+      "fetched": "2026-10-16T03:22:37.579484",
       "systems": [
         "TECH"
       ],
@@ -397,11 +266,11 @@
       "source": "TECH/TW·TechOrange",
       "brands": [],
       "title": "Anthropic 為何捨棄 Git？自研 Scion 揭 AI Agent 時代開發新瓶頸",
-      "summary": "AI Coding Agent（AI 程式開發代理）讓工程師寫程式的速度大幅提升，但如果程式碼產出快到連既有開發工具都難以負荷，會發生什麼事、又如何解決？AI 公司 Anthropic 就遇上了這個問題，稱甚至決定捨棄廣泛使用的 Git，自行打造新的版本控制系統 Scion。 類似的開發流程瓶頸，也開始出現在其他企業。哈佛大學研究人員 Fiona Chen 與 James Stratton 分析 718 家企業、約 3 億筆工程工作紀錄，發現導入 AI Coding Agent 後，程式碼產出增加約 30%，但程式碼從提交審查到完成合併的時間也增加約 49%，最終完成的軟體工作量則未出現統計上顯著的提升。 根據 Anthropic 10/13 公布的工程文章，隨著 Claude 大量參與程式開發，其內部每日合併的程式碼變更，從今年 5 月約 2,500 次增至 9 月超過 3 萬次，成長逾",
+      "summary": "AI Coding Agent（AI 程式開發代理）讓工程師寫程式的速度大幅提升，但如果程式碼產出快到連既有開發工具都難以負荷，會發生什麼事、又如何解決？AI 公司 Anthropic 就遇上了這個問題，稱甚至決定捨棄廣泛使用的 Git，自行打造新的版本控制系統 Scion。 類似的開發流程瓶頸，也開始出現在其他企業。哈佛大學研究人員 Fiona Chen 與 James Stratton 分析 718 家企業、約 3 億筆工程工作紀錄，發現導入 AI Coding Agent 後，程式碼產出增加約 30%，但程式碼從提交審查到完成合併的時間也增加約 4",
       "url": "https://techorange.com/2026/10/15/anthropic-source-control-redesigning/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
       "thumbnail": "https://techorange.com/app/uploads/2026/10/ac7d91689ebb4e54-720x409.png",
       "date": "2026-10-15T12:52:55+08:00",
-      "fetched": "2026-10-16T05:28:15.421822",
+      "fetched": "2026-10-16T03:22:37.881458",
       "systems": [
         "TECH"
       ],
@@ -410,6 +279,38 @@
         "A01 AI 工具與工作流"
       ],
       "release_status": "Unverified",
+      "is_zhtw": true,
+      "lang": "zh-TW",
+      "score": 61,
+      "score_breakdown": {
+        "work_relevance": 0,
+        "domain_match": 15,
+        "applicability": 18,
+        "source_trust": 11,
+        "recency": 10,
+        "novelty": 7
+      },
+      "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布；繁體中文內容"
+    },
+    {
+      "id": "art_0bddf65f09",
+      "channel": "rss",
+      "source": "TECH/TW·TechOrange",
+      "brands": [],
+      "title": "Facebook 推「可以對話的演算法」：用 LLM 讓使用者描述喜好，推薦內容即時調整",
+      "summary": "Facebook 成為最新一個讓使用者更能掌控推薦演算法的社群平台。Meta 近日宣布在 Facebook 推出 AI 功能「Your Algorithm」，讓使用者能以自然語言描述自己的內容偏好，進而影響動態消息與 Reels 短影音中出現的內容。 結合 AI 與三點選單，使用者可直接告訴演算法想看什麼 透過「Your Algorithm」，使用者能直接新增並管理自己想在動態消息與 Reels 中看到的主題。Meta 表示，這項功能的目的是讓內容推薦更貼近使用者的興趣。 Facebook 的排序系統原本就會從使用者按讚、留言的貼文，以及觀看的內容等數千",
+      "url": "https://techorange.com/2026/10/14/meta-introducing-your-algorithm-facebook/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+      "thumbnail": "https://techorange.com/app/uploads/2026/10/c573bb89dcebd43b-720x513.jpg",
+      "date": "2026-10-14T16:31:56+08:00",
+      "fetched": "2026-10-16T03:22:39.720811",
+      "systems": [
+        "TECH"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "release_status": "Announced",
       "is_zhtw": true,
       "lang": "zh-TW",
       "score": 61,
@@ -433,7 +334,7 @@
       "url": "https://sspai.com/post/116355",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-16T08:23:12+08:00",
-      "fetched": "2026-10-16T05:28:18.573518",
+      "fetched": "2026-10-16T03:22:40.586778",
       "systems": [
         "TECH"
       ],
@@ -456,47 +357,16 @@
       "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布；繁體中文內容"
     },
     {
-      "id": "art_9784f90bd9",
-      "channel": "rss",
-      "source": "TECH/TW·iThome",
-      "brands": [],
-      "title": "91APP雲端平臺資料庫Commerce Cloud遭自動化攻擊",
-      "summary": "10月16日電商技術服務公司91APP（6741） 於股市公開資訊觀測站發布重大訊息 ，表示旗下的Commerce Cloud資料庫於兩天前（10月14日）發現遭受自動化攻擊，攻擊者非法擷取部分資訊，91APP委請第三方資安公正單位協助調查、向警方報案，並採取必要防護措施降低影響，依法通報相關主管機關，目前遭攻擊的情況已得到控制。 根據91APP的初步評估，此次事故對公司營運無重大影響。為防範個資遭詐騙集團利用，該公司透過電子郵件等相關管道進行反詐騙宣導。",
-      "url": "https://www.ithome.com.tw/news/179741",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:28:07.138094",
-      "fetched": "2026-10-16T05:28:07.138209",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": true,
-      "lang": "zh-TW",
-      "score": 51,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 15,
-        "applicability": 8,
-        "source_trust": 11,
-        "recency": 10,
-        "novelty": 7
-      },
-      "recommendation_reason": "歸類於「AI 工具/工作流」；近 3 天發布；繁體中文內容"
-    },
-    {
       "id": "art_be827ef07f",
       "channel": "rss",
       "source": "TECH/TW·TechOrange",
       "brands": [],
       "title": "美國上百家人形機器人公司，機器人投資基金執行長為何只看好特斯拉、Figure AI 與 Apptronik？",
-      "summary": "隨著機器人技術越來越進步，市場競爭也變得越來越激烈。然而，全球各地機器人公司如雨後春筍般冒出，究竟誰能在市場上脫穎而出，領域投資專家給出了獨特的看法。 專注於機器人相關企業投資的封閉式基金 RoboStrategy 執行長 Andrew Kang 認為，美國的人形機器人相關公司多達百餘家，但他真正看好的，只有特斯拉（Tesla）、Figure AI 與 Apptronik 三家。 Andrew Kang 說，他相信特斯拉、Figure AI 與 Apptronik，能夠於未來向消費者市場，推出真正可以操作物品、理解現實世界的人形機器人產品，並且發展成足夠龐大的企業。",
+      "summary": "封閉式基金 RoboStrategy 執行長 Andrew Kang 認為，真正值得投資的機器人公司，只有特斯拉（Tesla）、Figure AI 與 Apptronik，但 Optimus 業務還有待馬斯克回神。",
       "url": "https://techorange.com/2026/10/16/humanoid-ai-robot-companies-win/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
       "thumbnail": "https://techorange.com/app/uploads/2026/09/b822703a60bfc1fc-720x405.jpg",
       "date": "2026-10-16T09:35:12+08:00",
-      "fetched": "2026-10-16T05:28:13.014905",
+      "fetched": "2026-10-16T03:22:35.449798",
       "systems": [
         "TECH"
       ],
@@ -523,11 +393,11 @@
       "source": "TECH/TW·TechOrange",
       "brands": [],
       "title": "AlphaGo 推手 David Silver 不走 LLM 路線，要讓 AI 在模擬「熔爐」裡從零自學",
-      "summary": "當多數 AI 實驗室都在大型語言模型（LLM）上加碼，曾主導 AlphaGo 的 David Silver 選了另一條路。他離開 Google DeepMind 後於倫敦創立 Ineffable Intelligence，今年 4 月宣布募得 11 億美元種子輪、估值 51 億美元。美國時間 10 月 13 日，Silver 與共同創辦人之一 Lasse Espeholt 在領投方之一 Sequoia Capital 的 Podcast 節目《Training Data》中，說明這家新創準備怎麼做：不走 LLM 以海量人類資料預訓練的路線，而是讓 AI 從一無所知開始，在模擬世界中持續從經驗中學習。 預訓練（pre-training）是指先用大量網路文字等人類資料訓練模型，也是當今 LLM 的起點。Silver 想打造的，則是「一個能持續學習、永遠不斷發現知識的系統」。問題是，若不依賴人類",
+      "summary": "當多數 AI 實驗室都在大型語言模型（LLM）上加碼，曾主導 AlphaGo 的 David Silver 選了另一條路。他離開 Google DeepMind 後於倫敦創立 Ineffable Intelligence，今年 4 月宣布募得 11 億美元種子輪、估值 51 億美元。美國時間 10 月 13 日，Silver 與共同創辦人之一 Lasse Espeholt 在領投方之一 Sequoia Capital 的 Podcast 節目《Training Data》中，說明這家新創準備怎麼做：不走 LLM 以海量人類資料預訓練的路線，而是讓 AI ",
       "url": "https://techorange.com/2026/10/15/david-silver-ineffable-superlearner-without-llm/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
       "thumbnail": "https://techorange.com/app/uploads/2026/10/c1b141470ece72f6-720x405.jpg",
       "date": "2026-10-15T17:56:27+08:00",
-      "fetched": "2026-10-16T05:28:13.917421",
+      "fetched": "2026-10-16T03:22:36.361125",
       "systems": [
         "TECH"
       ],
@@ -554,11 +424,11 @@
       "source": "TECH/TW·TechOrange",
       "brands": [],
       "title": "鼎新數智 Agent Space 重新定義淨零永續工作新範式",
-      "summary": "隨著全球供應鏈對碳排資訊的要求日益提高，企業面對的挑戰，已不只是交出產品碳足跡報告，更在於如何回應客戶減碳要求，同時兼顧產品成本與訂單獲利。鼎新數智發揮 ERP 企業營運數據優勢，以企業已在用的 ERP 為底，透過 Agent Space 跨職能 Agent 協作，串聯碳數據與 ERP 中的物料、採購、生產及訂單毛利資訊，協助企業辨識排放熱點、研擬減碳方案，並評估其對整體營運的影響，讓碳管理從資訊揭露進一步延伸至企業經營決策。 在 10 月 14 日至 16 日舉行的「2026 台灣國際淨零永續展」中，鼎新以「Agent Space 讓減碳看得見成效」為主題，於台北南港展覽館 1 館 4 樓 M0406 攤位，展出「永續管理」、「淨零管理」及「廠務能源管理」三大職能專家 Agent。透過多智能體協作，展示企業如何串聯碳排與營運數據，將減碳建議轉化為兼顧營運需求的具體改善方案。 Agent ",
+      "summary": "隨著全球供應鏈對碳排資訊的要求日益提高，企業面對的挑戰，已不只是交出產品碳足跡報告，更在於如何回應客戶減碳要求，同時兼顧產品成本與訂單獲利。鼎新數智發揮 ERP 企業營運數據優勢，以企業已在用的 ERP 為底，透過 Agent Space 跨職能 Agent 協作，串聯碳數據與 ERP 中的物料、採購、生產及訂單毛利資訊，協助企業辨識排放熱點、研擬減碳方案，並評估其對整體營運的影響，讓碳管理從資訊揭露進一步延伸至企業經營決策。 在 10 月 14 日至 16 日舉行的「2026 台灣國際淨零永續展」中，鼎新以「Agent Space 讓減碳看得見成效」為",
       "url": "https://techorange.com/2026/10/15/datasys-agentspace/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
       "thumbnail": "https://techorange.com/app/uploads/2026/10/c99f4a55dae17493-720x480.jpg",
       "date": "2026-10-15T14:59:22+08:00",
-      "fetched": "2026-10-16T05:28:14.519267",
+      "fetched": "2026-10-16T03:22:36.969619",
       "systems": [
         "TECH"
       ],
@@ -585,11 +455,11 @@
       "source": "TECH/TW·TechOrange",
       "brands": [],
       "title": "AI 需求延伸至 2030 年：客戶搶先洽談訂單，ASML 坦言擴產 30% 恐仍不夠",
-      "summary": "荷蘭半導體設備製造商 ASML 表示，隨著 AI 相關投資持續推升晶片製造需求，部分客戶已開始洽談 2029 年與 2030 年的先進製程設備訂單。即使公司已計畫在 2027 年將部分設備產能提高 30%，預期 2027 年與 2028 年的供應量仍不足以滿足客戶需求，因此正評估進一步提高 2028 年的產能。 ASML 週三公布第三季財報，單季淨銷售額創下 116.6 億歐元的紀錄，淨利則從第二季的 29.2 億歐元增至 49.6 億歐元。公司也將全年銷售額預測從 430 億至 450 億歐元，上修為 440 億至 450 億歐元，並預估第四季銷售額將達 142 億至 152 億歐元。 AI 投資推升設備需求，ASML 評估進一步擴產 ASML 執行長 Christophe Fouquet 表示，客戶正上調短期與中期的設備需求預測，主要受到市場對 AI 相關投資規模及持續時間的預期所帶動",
+      "summary": "荷蘭半導體設備製造商 ASML 表示，隨著 AI 相關投資持續推升晶片製造需求，部分客戶已開始洽談 2029 年與 2030 年的先進製程設備訂單。即使公司已計畫在 2027 年將部分設備產能提高 30%，預期 2027 年與 2028 年的供應量仍不足以滿足客戶需求，因此正評估進一步提高 2028 年的產能。 ASML 週三公布第三季財報，單季淨銷售額創下 116.6 億歐元的紀錄，淨利則從第二季的 29.2 億歐元增至 49.6 億歐元。公司也將全年銷售額預測從 430 億至 450 億歐元，上修為 440 億至 450 億歐元，並預估第四季銷售額將",
       "url": "https://techorange.com/2026/10/15/asml-ai-chip-demand-stretching-2030-expects-supply-shortages/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
       "thumbnail": "https://techorange.com/app/uploads/2026/10/9530d58057090068-720x451.png",
       "date": "2026-10-15T11:39:48+08:00",
-      "fetched": "2026-10-16T05:28:15.722738",
+      "fetched": "2026-10-16T03:22:38.188352",
       "systems": [
         "TECH"
       ],
@@ -616,11 +486,11 @@
       "source": "TECH/TW·TechOrange",
       "brands": [],
       "title": "【監控的 AI 也會被騙】專家警告惡意代理人可能騙過監控者，建議另加不靠 AI 的日誌與網路分析",
-      "summary": "企業把越來越多、越來越複雜的任務交給 AI 代理人（AI Agent），監督也隨之成為難題。代理人行動更快、運作時間更長、數量也更多，人類根本來不及審查。 今年 7 月的 Hugging Face 事件，把這個問題推到極致。OpenAI 一款尚未發布的前沿 AI 代理人，在進行極限網路安全評測時，自行突破隔離沙盒，入侵開源 AI 平台 Hugging Face。當時有將近 12,000 個代理人彼此協調行動，速度遠超過人類能追蹤的程度。 代理人規模太大，連調查都得靠 AI 非營利 AI 安全與對齊（AI Alignment）研究機構 Redwood Research 的首席科學家 Ryan Greenblatt，參與這起事件的調查。他表示，調查資料包含上千份極長的紀錄，許多代理人連續運作了好幾天，不靠 AI 協助根本無法掌握全貌。他自嘲這是一場「slop-vestigation」，意思是一",
+      "summary": "企業把越來越多、越來越複雜的任務交給 AI 代理人（AI Agent），監督也隨之成為難題。代理人行動更快、運作時間更長、數量也更多，人類根本來不及審查。 今年 7 月的 Hugging Face 事件，把這個問題推到極致。OpenAI 一款尚未發布的前沿 AI 代理人，在進行極限網路安全評測時，自行突破隔離沙盒，入侵開源 AI 平台 Hugging Face。當時有將近 12,000 個代理人彼此協調行動，速度遠超過人類能追蹤的程度。 代理人規模太大，連調查都得靠 AI 非營利 AI 安全與對齊（AI Alignment）研究機構 Redwood Re",
       "url": "https://techorange.com/2026/10/15/rogue-ai-agents/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
       "thumbnail": "https://techorange.com/app/uploads/2026/10/4b0452cf9d333c6a-720x402.jpeg",
       "date": "2026-10-15T10:07:26+08:00",
-      "fetched": "2026-10-16T05:28:16.023593",
+      "fetched": "2026-10-16T03:22:38.494966",
       "systems": [
         "TECH"
       ],
@@ -647,11 +517,11 @@
       "source": "TECH/TW·TechOrange",
       "brands": [],
       "title": "GitHub 爆紅的 REA 真能逆向任何軟體？從 51 件實作看 AI Agent 的能力與限制",
-      "summary": "AI Coding Agent 不只能協助開發者寫程式，現在也開始挑戰沒有原始碼的軟體，甚至嘗試重新實作其中的功能。開源專案 REA（Reverse Engineer Anything）近期在 GitHub 爆紅，截至 10 月 14 日已累積約 22.6 萬顆 Stars。它讓 Claude Code、Codex、Cursor 等 AI Coding Agent 能操作專業逆向工程工具，分析已編譯的執行檔、封閉式應用程式及部分韌體映像。 REA 官方更展示了 AI Agent 協助重建遊戲函式的成果，但這套號稱能「逆向任何東西」的工具，真能分析並重建各種軟體嗎？它究竟能做到什麼程度，又有哪些限制？ 從程式分析到功能重建，REA 如何讓 AI Agent 參與逆向工程？ 逆向工程是指在沒有原始碼的情況下，透過分析程式執行檔、指令或行為，理解軟體的內部運作方式。過去，工程師可以使用 Ghid",
+      "summary": "AI Coding Agent 不只能協助開發者寫程式，現在也開始挑戰沒有原始碼的軟體，甚至嘗試重新實作其中的功能。開源專案 REA（Reverse Engineer Anything）近期在 GitHub 爆紅，截至 10 月 14 日已累積約 22.6 萬顆 Stars。它讓 Claude Code、Codex、Cursor 等 AI Coding Agent 能操作專業逆向工程工具，分析已編譯的執行檔、封閉式應用程式及部分韌體映像。 REA 官方更展示了 AI Agent 協助重建遊戲函式的成果，但這套號稱能「逆向任何東西」的工具，真能分析並重建各",
       "url": "https://techorange.com/2026/10/15/rea-ai-agent-reverse-engineer-github/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
       "thumbnail": "https://techorange.com/app/uploads/2026/10/d8f5eb8972c131df-720x410.png",
       "date": "2026-10-15T06:33:00+08:00",
-      "fetched": "2026-10-16T05:28:16.324439",
+      "fetched": "2026-10-16T03:22:38.802012",
       "systems": [
         "TECH"
       ],
@@ -678,11 +548,11 @@
       "source": "TECH/TW·TechOrange",
       "brands": [],
       "title": "AI 蠕蟲年底成形？Anthropic 示警小模型自我複製，外媒質疑實驗條件",
-      "summary": "AI 能不能像電腦蠕蟲一樣，自行找到下一台裝置、把自己複製過去，而且不需要龐大的資料中心？Anthropic 前沿紅隊（Frontier Red Team）在 10/12 發布研究，在模擬的 Android 裝置網路中測試開放權重模型的自我複製能力，其中 GLM-5.2 在 5 次試驗中有 4 次擴散到全部 8 個節點。Anthropic 推估，若小模型維持過往的進步速度，今年底就可能具備同等能力。 研究一發布，科技媒體《The Register》就質疑實驗環境是刻意留下漏洞的特製節點。雙方對威脅多快到來看法不同，卻都把焦點放在同一道防線上：那些防護薄弱的廉價 IoT 裝置。AI 蠕蟲離現實還有多遠？企業和裝置製造商現在又該先補哪些洞？ 便宜電視盒就能跑模型，AI 已在模擬環境中自我複製 Anthropic 這次想回答的問題是：AI 能否不靠資料中心，在廉價的 IoT 裝置上自我複製？研究",
+      "summary": "AI 能不能像電腦蠕蟲一樣，自行找到下一台裝置、把自己複製過去，而且不需要龐大的資料中心？Anthropic 前沿紅隊（Frontier Red Team）在 10/12 發布研究，在模擬的 Android 裝置網路中測試開放權重模型的自我複製能力，其中 GLM-5.2 在 5 次試驗中有 4 次擴散到全部 8 個節點。Anthropic 推估，若小模型維持過往的進步速度，今年底就可能具備同等能力。 研究一發布，科技媒體《The Register》就質疑實驗環境是刻意留下漏洞的特製節點。雙方對威脅多快到來看法不同，卻都把焦點放在同一道防線上：那些防護薄弱",
       "url": "https://techorange.com/2026/10/14/anthropic-self-replicating-ai-iot/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
       "thumbnail": "https://techorange.com/app/uploads/2026/10/9d45f144b4cc126a-720x450.png",
       "date": "2026-10-14T18:15:13+08:00",
-      "fetched": "2026-10-16T05:28:16.926141",
+      "fetched": "2026-10-16T03:22:39.414098",
       "systems": [
         "TECH"
       ],
@@ -712,8 +582,8 @@
       "summary": "開源網路資料傳輸工具curl於10月14日 發布8.23.0版 ，修補HTTP/2資料上傳功能存在的高風險漏洞 CVE-2026-92392 。攻擊者若控制接收上傳資料的伺服器，可利用這項漏洞，在特定條件下遠端執行程式碼。漏洞影響curl 8.12.0至8.22.0的部分版本，但8.14.3、8.16.2及8.20.2起的相應分支版本不受影響。 curl當天共公布24項安全漏洞 ，其中只有CVE-2026-92392被列為高風險。 這是一項記憶體釋放後使用（Use-After-Free）漏洞。當curl透過HTTP/2上傳資料時，接收資料的伺服器若傳回特定串流重設訊息（RST_STREAM），curl可能在後續處理上傳作業及連線重試時，繼續存取已釋放的記憶體，導致程式崩潰。 由於libcurl程式庫也被其他應用程式採用，這項漏洞的影響不限於curl命令列工具。企業除了確認curl版本，也應檢查相關軟體是否使用受影響版本的libcurl。curl官方建議升級至8.23.0版；無法立即升級的使用者，可將修補程式套用至既有版本，或暫時停用HTTP/2，避免觸發這項漏洞。部分Linux發行版也",
       "url": "https://www.ithome.com.tw/news/179711",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:28:09.844137",
-      "fetched": "2026-10-16T05:28:09.844275",
+      "date": "2026-10-16T03:22:31.986154",
+      "fetched": "2026-10-16T03:22:31.986475",
       "systems": [
         "TECH"
       ],
@@ -736,68 +606,6 @@
       "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布；繁體中文內容"
     },
     {
-      "id": "art_6ec674159d",
-      "channel": "rss",
-      "source": "TECH/TW·iThome",
-      "brands": [],
-      "title": "TypeSafe擴充Jev決策模型，支援圖片判斷與物件定位",
-      "summary": "美國AI新創公司TypeSafe AI發布決策型AI模型Jev 1.14.0，同步開放圖片輸入與長上下文等實驗性功能。新版新增Box物件定位功能，回傳位置座標與信心分數，讓應用程式直接使用判斷結果。不過，官方提醒影像相關功能尚未達到正式環境的可靠度要求。\nJev是TypeSafe開發的決策型AI模型，與逐字生成回答的聊天模型不同，開發者提供資料與問題後，Jev會直接回傳是非判斷、分類選項或評分，並提供機率資訊，供程式決定後續動作。圖片輸入功能則讓Jev能夠分析影像內容，執行分類與比對等工作。",
-      "url": "https://www.ithome.com.tw/news/179738",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:28:07.438902",
-      "fetched": "2026-10-16T05:28:07.439058",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "P01 競品與產品更新"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": true,
-      "lang": "zh-TW",
-      "score": 40,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 5,
-        "applicability": 10,
-        "source_trust": 11,
-        "recency": 10,
-        "novelty": 4
-      },
-      "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布；繁體中文內容"
-    },
-    {
-      "id": "art_9507934050",
-      "channel": "rss",
-      "source": "TECH/TW·iThome",
-      "brands": [],
-      "title": "美國CISA警告影響Atlassian旗下多款系統的重大漏洞遭積極利用",
-      "summary": "10月15日美國網路安全與基礎設施安全局（CISA）表示， 他們已掌握一個新漏洞遭積極利用的證據 ，將其加入已遭利用的漏洞名單（KEV），並要求聯邦機構需在3天內（ 10月18日前 ）完成修補。此弱點是：兩週前 Atlassian公布及修補的 任意檔案讀取漏洞CVE-2026-21589。 CVE-2026-21589引起外界高度關注的原因，不光是漏洞本身相當危險（CVSS v4.0評分為9.3），影響範圍也相當廣泛，涵蓋Atlassian旗下8款應用系統的Data Center元件。",
-      "url": "https://www.ithome.com.tw/news/179739",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:28:07.739710",
-      "fetched": "2026-10-16T05:28:07.739867",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "P01 競品與產品更新"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": true,
-      "lang": "zh-TW",
-      "score": 40,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 5,
-        "applicability": 10,
-        "source_trust": 11,
-        "recency": 10,
-        "novelty": 4
-      },
-      "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布；繁體中文內容"
-    },
-    {
       "id": "art_d47dc7e133",
       "channel": "rss",
       "source": "TECH/TW·iThome",
@@ -806,8 +614,8 @@
       "summary": "澳洲情報與資安機構澳洲通訊局（ASD）推出新版資安指引ASD Essentials ，逐步取代沿用近10年的Essential Eight框架。新版框架不再以單一成熟度等級呈現組織整體資安狀態，而是改為分別評估不同安全領域的防護成效。 ASD Essentials由多份指引組成 ，除了針對企業IT、營運技術（OT）及雲端環境分別提供資安防護專章，也提供從Essential Eight轉換至新版框架的指引，以及實施規畫與評估流程等配套文件。組織可依自身技術環境選擇適用指引，再根據風險決定優先改善的安全領域，規畫並實施防護措施，持續評估成效。ASD也另外提供董事會及高階主管的資安治理指引，以及導入AI時的安全考量，未來可能針對其他技術環境推出新指引。 針對AI安全，ASD指出 ，新版框架同樣適用於使用、開發或部署AI的組織。組織應將自行開發或使用的AI模型、模型訓練與運作所需資料、提供AI服務的基礎架構，以及API、連接器等系統介面納入資產盤點，並管理AI代理及相關服務使用的帳號、非人類身分與存取權限。企業也須防範攻擊者透過電子郵件、文件或網頁內容，對AI代理進行間接提示詞注入。此外，組織",
       "url": "https://www.ithome.com.tw/news/179715",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:28:09.543352",
-      "fetched": "2026-10-16T05:28:09.543478",
+      "date": "2026-10-16T03:22:31.682652",
+      "fetched": "2026-10-16T03:22:31.682842",
       "systems": [
         "TECH"
       ],
@@ -837,8 +645,8 @@
       "summary": "雲端服務業者AWS對外說明如何將模組格基式數位簽章演算法（ML-DSA）導入軟體供應鏈，透過AWS KMS、AWS Private CA及IAM Roles Anywhere等服務，將抗量子數位簽章整合至軟體建置與部署流程。基本上，目前這套做法涵蓋執行檔、容器映像檔，以及軟體物料清單（SBOM）的簽章與驗證，可因應未來量子電腦可能破解傳統數位簽章演算法的風險。",
       "url": "https://www.ithome.com.tw/news/179700",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:28:10.144950",
-      "fetched": "2026-10-16T05:28:10.145113",
+      "date": "2026-10-16T03:22:32.287190",
+      "fetched": "2026-10-16T03:22:32.287344",
       "systems": [
         "TECH"
       ],
@@ -868,8 +676,39 @@
       "summary": "蘋果新品發表前後往往伴隨大量預購與優惠資訊，詐騙集團也趁機利用熱門話題。資安公司趨勢科技旗下TrendLife研究人員在10月13日示警，指出在Apple 2026年新品發表前後，發現多個搭上新款iPhone熱度的可疑網站，包括假預購頁面、廣告與聯盟行銷導流網站，以及可能利用iPhone安全漏洞發動攻擊的惡意網站。部分網站甚至不需要使用者輸入密碼，只要手機存在已知漏洞，開啟網頁就可能面臨風險。",
       "url": "https://www.ithome.com.tw/news/179731",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:28:10.746338",
-      "fetched": "2026-10-16T05:28:10.746493",
+      "date": "2026-10-16T03:22:32.897682",
+      "fetched": "2026-10-16T03:22:32.897849",
+      "systems": [
+        "TECH"
+      ],
+      "types": [
+        "P01 競品與產品更新"
+      ],
+      "release_status": "Unverified",
+      "is_zhtw": true,
+      "lang": "zh-TW",
+      "score": 40,
+      "score_breakdown": {
+        "work_relevance": 0,
+        "domain_match": 5,
+        "applicability": 10,
+        "source_trust": 11,
+        "recency": 10,
+        "novelty": 4
+      },
+      "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布；繁體中文內容"
+    },
+    {
+      "id": "art_3c0369f39d",
+      "channel": "rss",
+      "source": "TECH/TW·iThome",
+      "brands": [],
+      "title": "【資安日報】10月15日，Windows Update憑證2027年到期，微軟提醒企業留意更新中斷風險",
+      "summary": "● Windows Update憑證2027年到期，微軟提醒企業留意更新中斷風險 ● MITRE ATT&CK第20版新增提示注入、AI輔助資料外洩等攻擊技術 ● Meta GitHub儲存庫遭駭，外洩產品程式碼及1,500人個資 ● Shadowserver警示仍有數百組Danfoss冷藏控制器暴露於公開網路 ● 日本量販連鎖Mr Max、超商Lawson、卡拉OK業者資料外洩 法國數百家超市近日發生Danfoss冷藏控制系統遭駭事件，駭客遠端操控設備啟動除霜功能，導致溫度異常升高，大量生鮮及冷凍食品被迫報廢。事件發生後，資安監測組織Shadowserver基金會於10月15日警告，迄今全球仍至少有365組Danfoss AK-SM800A控制器暴露於網際網路，可能面臨未授權存取風險，從地理區域來看，以法國的108組最多，其次是美國的36組與比利時的33組，整體暴露數量雖較前幾日的550組以上有所減少，但風險尚未消除，呼籲業者將設備移出公開網路。 詳全文 俄羅斯最大網路服務業者之一的Yandex，過去一週內有三座資料中心接連遭到烏克蘭無人機攻擊，這三波攻擊發生在10月7日至8日深夜、",
+      "url": "https://www.ithome.com.tw/news/179720",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-10-16T03:22:34.727505",
+      "fetched": "2026-10-16T03:22:34.727749",
       "systems": [
         "TECH"
       ],
@@ -900,7 +739,7 @@
       "url": "https://sspai.com/post/116193",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T08:31:01+08:00",
-      "fetched": "2026-10-16T05:28:20.077025",
+      "fetched": "2026-10-16T03:22:42.105991",
       "systems": [
         "TECH"
       ],
@@ -933,7 +772,7 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUUI4WFdxcnBJMEtnMjdXaHNURjNLdmQwRGN6UU12M1N4ekJPZm9OQW9TMHBBZ1NtSU5jbE1DZld3Y2FQdE5RTjVPRnAwdGdwZWVlQmZXREdYVHVPbzU3VWdPTEpNbHkybVJOakVQaFh5ZkhuZi1jNXlBQVlhUUFXSWpuTzhmX3BkZ1ZIcnB3WUtqWHF0?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T15:50:42+00:00",
-      "fetched": "2026-10-16T05:25:00.699220",
+      "fetched": "2026-10-16T03:19:06.705319",
       "systems": [
         "CRM"
       ],
@@ -967,7 +806,7 @@
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdjlnNk5iYWpPSGd4bmt4QXA3X1BWWjdhcnRrczd3alRiYlFING1NM3R3UG05UExFc25YaWNzazdQZUtFQzBXU0NIUVNfR0FETEl5MW5fQ1JJUU52TGV0STAzUWJCNmZOOTRiU0hhdzRpSjEwa2xPTFV5ODRGLVBCVEZXZDBPRkdNYW83a3hjVmF2c0xVNEc4?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T15:49:31+00:00",
-      "fetched": "2026-10-16T05:25:03.102491",
+      "fetched": "2026-10-16T03:19:09.121705",
       "systems": [
         "CRM"
       ],
@@ -1001,7 +840,7 @@
       "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSHdENlktQjBCZjZSSUNGSU5fY2Q5ai13TmJ6eHU0SzVtbFhxNWUwQWhWTXh4QVFydWR1Vkp6NTBFTEN5cFV4VVBRbDY4RHBQOGl6MVkzdUFMOHJvek5XRXQ0VWJ6WTRLcDRlVk5Jb0E2UnIyakt3b0RaajFQMzczOHBFWTYxLUFvN2NCRF9BLUs3azg5Zkg5bDBZSk9PUGpvWUlmSElaOFQxeXNXRFh5bFktNVkyYkhMU05uSGpIYnVuRmVVdnNaMA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T19:09:29+00:00",
-      "fetched": "2026-10-16T05:25:40.433826",
+      "fetched": "2026-10-16T03:19:48.771398",
       "systems": [
         "CRM"
       ],
@@ -1035,7 +874,7 @@
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSDF0X0RPWVdGd1pGNi1KRF9SM09XdDVKWXo4dE1yWXhuRnVTOFB3ZnpOVnhGRFVGWUZZeERGMF8xYy1ralhhSncxOVVtQ1ZYcjludHJpazlJMEJMNWpKaGJXTF9ZMGM0b0dOalFqZkdLNzBaUEhYVkdHalZxcEFOVWNReVVjR2ZhbXNLN3hlbGhRNkJhSmVLSEY4UzFzNlhkc2xPeWRzeHpVRzhHVnhObU81TXBJYUE1Vjl2U1NUNDR2bG1EUjZlSHd5Y0I?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-12T13:01:07+00:00",
-      "fetched": "2026-10-16T05:25:21.112174",
+      "fetched": "2026-10-16T03:19:27.726715",
       "systems": [
         "CRM"
       ],
@@ -1069,7 +908,7 @@
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPU3N1MnBUUEE2ZWpGWlBad3hUQm5xbUhSNGF4dE5mS2VSTGVaak9kUWRIWXVhanlBb1lhQWtoaFJ5RHl0dDg3M0dUZmdSM2cwdDZQSEJkaVhlWnRXVUpXVzliX1puTFpXQk9qeVRjbnZwSUxJNVZEOFNLd21HM0pnLWd3TmRTUExhQ05PTlJxVUJVQQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T14:49:53+00:00",
-      "fetched": "2026-10-16T05:25:19.309452",
+      "fetched": "2026-10-16T03:19:25.911728",
       "systems": [
         "CRM"
       ],
@@ -1102,7 +941,7 @@
       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQNlItM1N2TDYzOHg2ck8wX0ZkNnJUOTMwbk9nNGJhS2dHNnVzc3NGUkhpWVhHbHA2MlhtVEFycjF4MW1HLVVvaVQ5d3FZVWZHUmNLcmhRSkpzN1huRHdRV2RPTzRZR28tT0dBaHV4ZHNpc3NpakxMMTZEdGxkbUU2OGNYdmFHdjAtU0hhekNxc01WWGZGV1ZYUUVZZDlTU1JXazdBUnExaE9ETHlyNFVjY005MXdpcVh1cVlhVzd3ZEw3MUlZeG1lTlRvcHZDdmRKS0kybHIwNTE0bk0?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T12:30:00+00:00",
-      "fetched": "2026-10-16T05:25:19.910395",
+      "fetched": "2026-10-16T03:19:26.516493",
       "systems": [
         "CRM"
       ],
@@ -1135,7 +974,7 @@
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQ1Qxbm9NNFd6QXN6MTZraTcySUpUQmlBT04xaU40ckFzOGxhSW5UcDY5VEhzeFpaV1R0SlBsQkUyWmJnRXMyOW02bXJKa0pHRWJSNXR3UnR3NFJhVU9OVDFUa1BEYlFjQzE3ZjNLYUwxX3JmQlNianJZbUtTZHMyTkYzX3RSOUpoRmJGZlJpMUtHeFBn?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T16:00:00+00:00",
-      "fetched": "2026-10-16T05:26:25.816263",
+      "fetched": "2026-10-16T03:20:43.366513",
       "systems": [
         "FBM"
       ],
@@ -1168,7 +1007,7 @@
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdzRKSkRRckQ3NjREcm1EX1ZsbjFaeDVkdng3YkFzQW5pOVFveUlSQkttZW1SVUFwT0hvemVOMmhfcEZneDdfS0JnakhYcGxjbmhNcWVDWV9iR0NzalRhVFdDU1VjU0RYaUhhUnZaRHdUU2N1QTBSUHZ5RVA4OU9ZV1RsX0dKemxsT1g1ck5UeXN5MlFsVkVqMUZFRDh0QkNnVmJMVXhlTWxsQQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T16:26:00+00:00",
-      "fetched": "2026-10-16T05:25:17.506850",
+      "fetched": "2026-10-16T03:19:24.099032",
       "systems": [
         "CRM"
       ],
@@ -1201,7 +1040,7 @@
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOakY4eklkanlkQ1E0QWxrYXk3dUVfNmtfU0VwRVBOWkZ6LVNfZVdaNFZNVFVCS1dnNjEwNlhVSkJDaVhRSTczbUlJdDlSWjZUQ3h4ZjU5UnJTMG9SSmdHRUJnbkwycWc4ak1CZjlSTHlQWWVsWm9SSDdySkZsUHdYS0c0eWN4VHpJSFIyVW1CY1hqcVF1enlzT3hkdFNsdzdXSDk3Mk9fdVpsMzhtcmRMakdnLVY2YXJzeHc?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T15:57:15+00:00",
-      "fetched": "2026-10-16T05:25:18.107757",
+      "fetched": "2026-10-16T03:19:24.699998",
       "systems": [
         "CRM"
       ],
@@ -1234,7 +1073,40 @@
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOOHFnYUtWcXBsRlg1UVJ0eDQyaVJOVXVLOVUwVnZObzM5QzZJQ3NoTERNQ213WHlpb2hqRDByNVFqNzREVTRsei13dVd1QW45VXRJVTRSSklydzBIQnBqWnFIZmJDNHdtN0YyZDY3UDE5ZE5yRUdpbk9GZ0c2bXhqdTlvQS1ON1JLUE5TX3VFQm5oa3JvaXVqbHVTemRRZUNqVTN2a2xIam5wTVFmZHV2WA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T15:09:21+00:00",
-      "fetched": "2026-10-16T05:25:18.708622",
+      "fetched": "2026-10-16T03:19:25.305203",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "A01 AI 工具與工作流"
+      ],
+      "release_status": "Unverified",
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 79,
+      "score_breakdown": {
+        "work_relevance": 25,
+        "domain_match": 20,
+        "applicability": 8,
+        "source_trust": 15,
+        "recency": 8,
+        "novelty": 3
+      },
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+    },
+    {
+      "id": "art_c3ddcf4634",
+      "channel": "rss",
+      "source": "Salesforce",
+      "brands": [
+        "Salesforce"
+      ],
+      "title": "Salesforce Gets Rare Double Upgrade From Bank of America: ‘AI Should Deepen Dependence,’ Analyst Says - TradingView",
+      "summary": "Salesforce Gets Rare Double Upgrade From Bank of America: ‘AI Should Deepen Dependence,’ Analyst Says TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNVjFZaGZ5U2dQN0Qxc1I2UU5zOV92QmV1dDdQblNlOVZLd3hzRlhMYUpYcmFEeXBXVGw4RTZqZlBwRWdRVHNtaV96bXZSMDU0ZVJTOXEtbk1TU1l6XzU4elZWLS1DWThjS1dPNXlzOGIxanZveURjaTUxNndqUHRGN2ktcHJNa0N3bjVCMERrMk11X183N1Z5NGE2Q0dqaG1yNUNLVWFaWWRlcWxvMUlMMXFaV1RWUWtmT3VUWlRwRzA1YUZDdzJYUk5FVVd2ZnpaY3RHaXVmdmwxQ3JaN2lTVFh4b0ZoMmppa3RSTQ?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-10-12T15:40:28+00:00",
+      "fetched": "2026-10-16T03:19:30.145897",
       "systems": [
         "CRM"
       ],
@@ -1267,7 +1139,7 @@
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1qQnc1MEU2b05maGlaSDc5YUZPVEdmMWJ1VVZ6MjhYaE1Ob0VuR21RZUw1QTVvRjROOHpZWmJoWlVzMGZiUUFfR1lFdlRmcVM5RFYtdzJycjY5c29HeXNfRDR2dWFzdTdONXJF?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-12T12:04:59+00:00",
-      "fetched": "2026-10-16T05:25:35.026395",
+      "fetched": "2026-10-16T03:19:43.330993",
       "systems": [
         "CRM"
       ],
@@ -1300,7 +1172,7 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdTBYWGR4LXNhY2tUaWhpUHREX3RDSzFRV1BBS0lfbE12R3VYV1k4cl9pcFkwMmxoQldsQ3JwN3JzeXMtVWppVWU2UnRoQ2M2bjJHMTJLZW9qYmowM19GMW16ZXB3dmd0Njd3eERZbG4zTm8tSDhMeUNITlk2ZjRLZ3lOR2tORFlsanpJa0lIenBHN0cyNDgyY3d2TEoyMFY2MXpV?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T13:11:20+00:00",
-      "fetched": "2026-10-16T05:25:35.627295",
+      "fetched": "2026-10-16T03:19:43.937436",
       "systems": [
         "CRM"
       ],
@@ -1334,7 +1206,7 @@
       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPZjg0VzZ4Q0N2ZjRhMXN3bzJ6Ml94aXM5c0pjSTFwMUUyVUNDZjVESzRHSFdRSzJQZEUxUUVBVVZpWTYwSE91b1JOVlp4RGo3UW90RXoxdWNnU05Mb2N3SkhQUnVkQ0RhYXptdWgyT2Z6ZGtnbUdfVFZhb2U3MlhIcWtFc19FalFEYnh6UHR0WnozZ1U3YUNlSmxHTW9Wdlp2RU1yRHdSM3RFMU5Fa1gxckpSTFpzeTZiWmw2Y050YU1OVzEzUWpWaGhjQWZqeEdJT3pPZ3JMeGFFMmM?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-12T06:17:20+00:00",
-      "fetched": "2026-10-16T05:25:36.228103",
+      "fetched": "2026-10-16T03:19:44.540811",
       "systems": [
         "CRM"
       ],
@@ -1367,7 +1239,7 @@
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQ1hZUktKdVlpaVVRMjZDdUh4UFhkUnJSRTFUc0Y1Xy0tQ2ZQdXJmMS13ZkVtOEtKQmxTODZ0cjhiUk1rZWpOa3dmRVR6R1ZZelYtLWp6MkdTNk5FN2h6b2NTekxieXJERmlpOTkzNFc1UVJpRjJRZXk3VEpveXp6d1dXWDhTeXR5c1lqRmtsVzhHM25USEpqd2JSTk1Tek9tUlE?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T20:16:44+00:00",
-      "fetched": "2026-10-16T05:25:39.232224",
+      "fetched": "2026-10-16T03:19:47.563084",
       "systems": [
         "CRM"
       ],
@@ -1400,7 +1272,7 @@
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FOEZUYlc2Q0NzVU91TE5fUXZTVXJHZndPeDlCbFlVS1Y0QWp5ZE1kSFNBVTlESkxzdERfTHRmbVVoRm1JWFZ5WUU4cVd4ajNaV093YzB0VHRZTnBkSHJKTTVqMl9lR3BS?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-12T12:46:21+00:00",
-      "fetched": "2026-10-16T05:26:01.861473",
+      "fetched": "2026-10-16T03:20:15.072834",
       "systems": [
         "PMS"
       ],
@@ -1433,7 +1305,7 @@
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBRU1hjb0RjYXFKek80Q09YZXF4eFVmMXpCOW91TzVOdUt4aW9HZXNRcTJZSndDNkVBYmpIRUhQWnk1VWhBd2JuQ1gtd29ZTFRZZjY5bEQydUQ4UFdTcWxESGphRWFDU09zb2hoaVJvSTBaajA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T23:59:33+00:00",
-      "fetched": "2026-10-16T05:25:15.703862",
+      "fetched": "2026-10-16T03:19:22.280925",
       "systems": [
         "CRM"
       ],
@@ -1466,7 +1338,7 @@
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE8xd2xVYzYwbW1TNUpSVnFZVExpSWVPVkxHanNLOFUycmNtMFFOZWNCNUlaNmR3OTZ1c2w0bzBLTU4tYVJxWEpGWV9DUjgwZXo2VXJZNEsyLVF5bUlMWndEYjB3TFkyNEpoV1ZzakZZaTdKMTlX?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T14:09:13+00:00",
-      "fetched": "2026-10-16T05:26:46.581572",
+      "fetched": "2026-10-16T03:21:05.330564",
       "systems": [
         "FBM"
       ],
@@ -1488,39 +1360,6 @@
       "recommendation_reason": "追蹤品牌 Resy 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_197ca990b8",
-      "channel": "rss",
-      "source": "HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "title": "Sales Software Stocks Q2 Highlights: HubSpot (NYSE:HUBS) - StockStory",
-      "summary": "Sales Software Stocks Q2 Highlights: HubSpot (NYSE:HUBS) StockStory",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQci1ZVTZBSVg5UlozLXBpVTQwWFR6SXZqM2ZqanJnOWlEVFd1S2d4cWd4b1lub0ZHRlVMenRMOVgyMjhMUU92cjMtQWFQMXZIczdORlBoZTlOYTEyT2EzYU10Y25KZVFBU3d3cFFOd3d4S1pQMEljSVlRZ3F3VDhqOXVPcXBBRVlEZ3lqLW9Ua0ZTMjRJWWQ0T2dscThqMlgzZUxOVUZMem1JVWJ3cnJzbg?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-14T07:00:00+00:00",
-      "fetched": "2026-10-16T05:24:58.295694",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 77,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 10,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
       "id": "art_e38aa84939",
       "channel": "rss",
       "source": "HubSpot",
@@ -1532,40 +1371,7 @@
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbTJfOTBRYkpqSy1YVkY1ZTJwRmpoV0wyZlJqZTFDUG9TZEJDMmhFX2pRamNYbHFTc1NtMVZUOFNHNHJtT1BuUnJfZGdubndSQnJmTWxQejhaZllNOGpFQXE1WHhocVc0bFJNM3dtYTQwSnlVNzdWQ0U4bmtRcDl2VnFKRi1vOE51ZmhZTF82OUZCdUx4dHVEVFhzNFQzRWdLYzV0Z285Y1l1T2FoWjJGeUN1TlNiaF83U1ZiWVRpLVQyaVlZWC1zR3NrV29RX0k?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-14T13:00:00+00:00",
-      "fetched": "2026-10-16T05:25:01.300080",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 77,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 10,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_6ebc578d9d",
-      "channel": "rss",
-      "source": "HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "title": "Why Is HubSpot (NYSE:HUB) Drawing Attention in the NYSE Composite? - Kalkine Media",
-      "summary": "Why Is HubSpot (NYSE:HUB) Drawing Attention in the NYSE Composite? Kalkine Media",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaUpfWDFOSzQxV0JFUXdSa2xlQjFrX2t6YUtFdlJMY29kRS1tY3FweVhuRExiekFTaGJJSnZtZllCX1VpajZOOVVYeGl5NkxtNGc5elprRDJxemcwUEIwcUN1amZGa0F0QnlucThJSnVQNVF2eXhMZi11RVdKM294cU5ObEgyQzJaRkV2Uk81QW1GUnBHc25xcm91UWRMWGFkbFJyWGlZeXBTeVpM?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-15T19:19:00+00:00",
-      "fetched": "2026-10-16T05:25:03.703270",
+      "fetched": "2026-10-16T03:19:07.307888",
       "systems": [
         "CRM"
       ],
@@ -1598,41 +1404,7 @@
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOT2lfbGRDdDBRQ1lOVGp5N0Q0OE5DZnk0bjhiQjVfWUVoUjdtZ0pqYmxNMm9KSUJhSkRIcVlIbXdCeWF4SWltVlo4MzJENy1aS1N2OWRyOXpTNW5EcFNfMmwyQjNMUld2dEo5MUtuSXFfMnZTNHZ5WC1xek1KdFRYLVpwUEFIUmFkY0Joa0t3dms4MDFrMXpfOWo4MmVjaHRjdXp1ZmxGT09pZURLNE5NSGVSbFJjNFpEMFpkc1A5SzA0WkpZRXlONzBnbw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-14T14:58:00+00:00",
-      "fetched": "2026-10-16T05:25:04.905144",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 77,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 10,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_1d2d95f4d0",
-      "channel": "rss",
-      "source": "Salesforce",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "title": "Can Agentforce Reshape the Enterprise-Cloud Story for Salesforce (NYSE:CRM)? - Kalkine Media",
-      "summary": "Can Agentforce Reshape the Enterprise-Cloud Story for Salesforce (NYSE:CRM)? Kalkine Media",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNc2NlM1JVbzFTdEdtdjVWM1k0UktKdHhCcFYwT0cyc0ctLWtDdlNySjExbk1wTUIyQnotTkhYc0Zwa1JVZWNKcjd0d3ZKMzVYZDBIYXBYb2NudnlKUFlGYW0wZF9lR2J1QWI5UHZuS0xZUUpDRHdKeW15UFZJNW9QdldsaGktSkpENl9wU2NVS3pCaWhET2Y2dWJaRXlmenVJMXFKRTBxd3RTeXp5SWw4akUzNlpELXZCLXc?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-14T06:01:00+00:00",
-      "fetched": "2026-10-16T05:25:21.713055",
+      "fetched": "2026-10-16T03:19:10.935208",
       "systems": [
         "CRM"
       ],
@@ -1665,40 +1437,7 @@
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTnY4NzFVNDlSMjhlRGx2aXQ3WGdWdmVLVjFoc1RHS3VOLXo1bUZJUFE5bGZWZ3psdWxkU1B5RDdZTHZYZUNtdGdKMnIzNFpiS1djSl8wSGktcmkxMWJzWjB5dUU3WUJjd2Q0WHI3RE8wVHZNWGpNczRpQTdlZ1ZXbw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-14T19:28:13+00:00",
-      "fetched": "2026-10-16T05:25:23.515857",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 77,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 10,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_18fcb3f8de",
-      "channel": "rss",
-      "source": "Salesforce",
-      "brands": [
-        "Salesforce"
-      ],
-      "title": "Salesforce Selected by HMRC to Modernise Tax Services for UK Citizens and Businesses - Salesforce",
-      "summary": "Salesforce Selected by HMRC to Modernise Tax Services for UK Citizens and Businesses Salesforce",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcWNGcDlCVGpVWnZhRDU1N0J3LXptUjRLRUwyTVFybjBWTzJxNml5NFNVLUEwWmR4NElEaHhTTHNIekp4alZvazV0c2s1VTJTazJzYmEyOXlpLW1MMEx5WVVDVzZVei1mNzdKc1VKaEQ2Yk1SeE1Vb3hMVUlzR09jV2g2S2VkQVkwcG5SVjJHVkJBdVZmbjVBeER5YVNTVkFhUFZsOVpidUhiQV9FOWxaMGpMNmJDSU1Ia0IzZE9uRldXYWpMcE5QcTRFc2Q?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-15T15:31:31+00:00",
-      "fetched": "2026-10-16T05:25:24.116709",
+      "fetched": "2026-10-16T03:19:30.750680",
       "systems": [
         "CRM"
       ],
@@ -1731,7 +1470,7 @@
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQY1JiZU8xakh3SG9WdFRZVmZ3T0dwd1hLUDNnMHRDa3QwM0dtRWFtOFYtR1FHeVpBN3BrdGZKVHV2d1NSOXVPVFljX3MydGJwc2hIWG5MWW41ME1oSXE1MHFWa2h5Tzl2WXptTEFHWExWV29LWTVmUVF5WjJKcjROWXRQbzZZQnZfYVU3LU5JWlM5a0Z5X0tCLTh1eWR5XzlTQS1OdUU1UG9URDA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T13:45:28+00:00",
-      "fetched": "2026-10-16T05:25:25.640699",
+      "fetched": "2026-10-16T03:19:33.708364",
       "systems": [
         "CRM"
       ],
@@ -1764,7 +1503,7 @@
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUFBUV2hsZ1NoUlNWTXotV2tVUmtYRVZ6RGZ1X2hXTVNSTW9CQ0hxcW9oVGx3WEVxS01uUjFPcnZWRmZ3aDVwcjY1UkRrZjRZaUhDanZOWHV6UUFuaWFTQWNMWE1HTGx3bExOdWtqNWw4amdoZkd6NzZyRVdwaW9Ga0NwQnVqLUpBRl85QVRURlpDNGtTS0tGb1M4ckE2cGFuVHNSVlhTVldxMU4xeWJUWTNnZThWSGFENGszQg?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-11T16:54:10+00:00",
-      "fetched": "2026-10-16T05:25:33.223911",
+      "fetched": "2026-10-16T03:19:41.515834",
       "systems": [
         "CRM"
       ],
@@ -1797,40 +1536,7 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNN3FaazJ2V3lBRllvUUpQUnU1b1B2V2R2MUU3WTNTd1l1QUxUTHhXbFdMNmFENnNpSW9GR250YXI5Z3ZlMnY0UjNINUdvblZ2MmRLOS1iclpVeXBBN0hDbnJjeDVYSDdheHA0TUs3elcxMm9SWDBJTnMyaDFJeW81djBJNjRzNHJGOEV4aGRYUzlPMlJlaV8xMHFR?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T12:03:09+00:00",
-      "fetched": "2026-10-16T05:25:51.013417",
-      "systems": [
-        "PMS"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 77,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 10,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 Mews 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_e018cf5d30",
-      "channel": "rss",
-      "source": "Opera PMS",
-      "brands": [
-        "Mews"
-      ],
-      "title": "ClearCourse Strengthens Hospitality Technology Offering with Acquisitions of SK Chase and Elina PMS - Luxury Hospitality Magazine",
-      "summary": "ClearCourse Strengthens Hospitality Technology Offering with Acquisitions of SK Chase and Elina PMS Luxury Hospitality Magazine",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMEk5blozUnpKSEZDOWlaZTVCbU9lMGdkc05Hb3gxQ244aVZsUmdlc3BTaHdOUFZ2UXJ1UG41SDhVQ2g5NXA0OHpETEJkSXFuYW42enhaMlA2dWdXNmZfMjhocXdUaXlrWWN6dkZXLWhLWFppOEZGRUlhT01yWF9uam5FMmVtRjBfcWRPRkg2Yzl5cVBGaVJ0Qmh5cVlMb3pBQ1BQbTVEakY2UnJIV2FqYkFjV0hoWlM1OGpNQk1aQ2VaTjQ?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-15T13:44:33+00:00",
-      "fetched": "2026-10-16T05:25:55.692937",
+      "fetched": "2026-10-16T03:20:00.991314",
       "systems": [
         "PMS"
       ],
@@ -1863,7 +1569,7 @@
       "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPTzY0R2dSdUk0dFRKdkcxVmpraWNVQU81N2JlTVFUbTA4RDVTNGRhb1pFeHFlb1FkSUkwZGVNVXZzT0k1RFFGU3FLX1hMaThLZk1wdDN5YXJmelB6UDRTa1o1cE9CN1diRVQ4LVVkV2VfS3FlWExteWVsMHJyTVg2dzhpZU52SjhfSWRnd1RnLWtLU3gtaE5nTWM5Ukszek00dnJSVEhJNkZCbkVOankyMkY0VWtYNGhITlpPLWJEZEVzT1RFLU1oV0NVUFNLMUt6YkVCLUlkRDQ3TlBMdXNuT3BXX1pDU0hPbXRLSjA2T2o3ZUMxdDVpdEFydEpjOTBhSDhJ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-14T17:31:00+00:00",
-      "fetched": "2026-10-16T05:26:02.462409",
+      "fetched": "2026-10-16T03:20:15.676555",
       "systems": [
         "PMS"
       ],
@@ -1896,7 +1602,7 @@
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5WMzRWYUJ6LUdtMTcyQW1YaHZteFdTLVp6emxrTkxXWnpFaHAyVEFuSHNZSF85YlNRdkgxRG40Y1Q4ZlRteGVNUjY2S0Y4SU9uc21kdVpiOXZCckJWN29VZngyZjlLTzhtVVUxd0kxNA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T01:39:58+00:00",
-      "fetched": "2026-10-16T05:26:04.865730",
+      "fetched": "2026-10-16T03:20:18.095151",
       "systems": [
         "PMS"
       ],
@@ -1929,7 +1635,7 @@
       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOYkVPckNBYW8tdHpnQzhDZC1JMUd1blJpb2ZISU1QeE0xcmpvQUVNUVgtUGJIN055ZzJmTkVjWlJjWFd1MHAzRnN2RnhLNTJISENGWmZuT2FTZHEydkxmaEZUQTlNdWRoZ3hjdXNZOUNjU3puLVI1OGc1MHRSUjlQckEwSDB2WTVNZHNSS1FJb0hFdlF1QW9DYkFZZjFySzR5cFNpY3Nhc29qLWU4anU5TEZSWHFseEpyX0tEZ0x1NkZQZGF0aGhIYURyVzB2QkxzbG5RQg?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-14T20:31:00+00:00",
-      "fetched": "2026-10-16T05:26:05.466562",
+      "fetched": "2026-10-16T03:20:18.701093",
       "systems": [
         "PMS"
       ],
@@ -1951,18 +1657,18 @@
       "recommendation_reason": "追蹤品牌 Guesty 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     },
     {
-      "id": "art_9517bdb69a",
+      "id": "art_6ef5913cd9",
       "channel": "rss",
       "source": "Guesty",
       "brands": [
         "Guesty"
       ],
-      "title": "Japan Short-Term Rental Market Set to Surge to USD 38.2 Billion - openPR.com",
-      "summary": "Japan Short-Term Rental Market Set to Surge to USD 38.2 Billion openPR.com",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcFRFd3dtXzB0VEloUFdPa1lNYU1yZktaOFlBTC14TndPVkp0WWdRdm5Ga21tRDN4YjlWcFo1clBrZEtLYVRBVjl0b01RdGVvZlZTWmpCNG1pb0cwYTNnVDZ4LVhBVTlyeWNpdFFyaUw1RnR3RjNQcmcxUWhXSGNseGlhLUwybkhFbkQ0emJuZTR2Q21QOHNBdlRRQnhzeGhS?oc=5",
+      "title": "iGMS Measures the Real Impact of New York's Short-Term Rental Law, Finding Supply 80% Below Where It Would Otherwise Be - The Joplin Globe",
+      "summary": "iGMS Measures the Real Impact of New York's Short-Term Rental Law, Finding Supply 80% Below Where It Would Otherwise Be The Joplin Globe",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQcmxJYWJTS085Z2VCOWdGWFlndFpnVmVseGRGUE5Ed21KSHRnSGU0YTd0bWwxU2hEQWdxUW9wSEhCSXhyeFJqVGZ6QUd0VG5HRGFYTVQ1eS14OE5mdUxQNGFPX2pBaDZRdWNvWGgxclZqanZNR3dzeFl4X20ySnZUWnozVFNGVHR4NDlPSjVzc3BFX1FpY2d0ckVYeW10MXl3MFdKeUo1U0ZodURmTWVfLUJ5OVhlUGgtZVZ2YVZPenJrT0IzeGRCTDVnS3VLckgtY2x6VTlqa3JmVUs0SU9WbWFFc3Y1bmVGVGZXRzZGX2c3aDJaSzM0VTJ3SVpjVDl6YjRGeFdySkhmMmh0bHA4Z2xwYw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-14T09:53:31+00:00",
-      "fetched": "2026-10-16T05:26:07.268835",
+      "date": "2026-10-14T17:32:26+00:00",
+      "fetched": "2026-10-16T03:20:19.305970",
       "systems": [
         "PMS"
       ],
@@ -1995,7 +1701,7 @@
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5DYldCODhnZG5QcWhfZFJoM1pDcWhBT1l2bGFlRzNCcVhlTzR4RU5XSUJpQWR3WEdpZm9jWV96c0dfN2QtY0RYamR2SXVBbHJtTWY2T05LeTM0SS1xbGVET2d4SWF5czFqemllTVdtbWlOUk9IbmxJ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T16:14:38+00:00",
-      "fetched": "2026-10-16T05:26:38.261469",
+      "fetched": "2026-10-16T03:20:56.711705",
       "systems": [
         "FBM"
       ],
@@ -2028,7 +1734,7 @@
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAzREZzSU55NkF3NkM4S2R1M3lpazFqa2RUTkRhUUtVYUdQM19uZjJiWUJDZUhzYzNGd1JNdnVGQmRkZ0NNRG03NjM1MVNVbGx4MGpmTXE3U181SWs?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T05:32:30+00:00",
-      "fetched": "2026-10-16T05:26:45.980692",
+      "fetched": "2026-10-16T03:21:04.725787",
       "systems": [
         "FBM"
       ],
@@ -2061,7 +1767,7 @@
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9BNEZCV3ExSEVicXlzdGZILXJ1SWVCdDRfSzA0cDdqZVp2bzJZRktiZnlXbjAzcjBaN0pJbGtxY1N6TXpIY2tMblpIRVR1UDg2S0RkWA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-14T12:55:19+00:00",
-      "fetched": "2026-10-16T05:26:50.185888",
+      "fetched": "2026-10-16T03:21:08.358691",
       "systems": [
         "FBM"
       ],
@@ -2083,39 +1789,6 @@
       "recommendation_reason": "追蹤品牌 Resy 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     },
     {
-      "id": "art_22d699b91a",
-      "channel": "rss",
-      "source": "SevenRooms",
-      "brands": [
-        "SevenRooms"
-      ],
-      "title": "How Much Did SevenRooms Raise? Funding & Key Investors - Clay",
-      "summary": "How Much Did SevenRooms Raise? Funding & Key Investors Clay",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE00dFpVS1A4dGRQc2NoZWhQU3N3dmhFWHVsYTdVMFdvZ2JrNTRKTFlkMlJ3Zi1Eakk3blYxekstaGVPalQtcUNpRExtdVRYUmdjUjctbGtiQ0NBRkVPS3VN?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T02:39:06+00:00",
-      "fetched": "2026-10-16T05:26:55.457031",
-      "systems": [
-        "FBM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 77,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 10,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 SevenRooms 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
       "id": "art_c07d48320b",
       "channel": "rss",
       "source": "HubSpot",
@@ -2127,74 +1800,7 @@
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONXlXNUtPZVJzcDB4ak5jYnpXX0xzQzdlVndadGF2cWdTcWlOakNiUjY3aWxDanBPdDdKNDl2MzYyeDdwenN0WjljSGFqS2VFY3dJSE1tOTctNUxHV3ZWeWQ2RkUtRExCZEg4MU5ZMVJHTUVPQmxvZ0Nsa0paV25US0FyZGg3S1BlSjVjVC04U1JXdw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-12T08:03:10+00:00",
-      "fetched": "2026-10-16T05:24:58.896563",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 75,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 8,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_a852c9dee5",
-      "channel": "rss",
-      "source": "HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "title": "HubSpot, Inc. (HUBS) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-      "summary": "HubSpot, Inc. (HUBS) Stock Price, News, Quote & History Yahoo! Finance Canada",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBLN1VzZEhIdkVWaV9mUFkxMzlrTjlwV3NJdWk4eHZGWjlqZW4ta1cySmFTRjhQQmpHOHhXOU8taHNrd2c3cWNLdFZkRHN1RzhtY3c?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-13T15:24:43+00:00",
-      "fetched": "2026-10-16T05:25:00.098330",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 75,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 8,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_30a7bec908",
-      "channel": "rss",
-      "source": "Salesforce",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "title": "Q2 Earnings Highs And Lows: Salesforce (NYSE:CRM) Vs The Rest Of The Sales Software Stocks - StockStory",
-      "summary": "Q2 Earnings Highs And Lows: Salesforce (NYSE:CRM) Vs The Rest Of The Sales Software Stocks StockStory",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPUWhpVGphRl82dU1RSFdsMG1zMUdrYmIzdzAxSHpCT253V2VubjY4cF9rN2ZnbU1LZGJnTmpDV19Ub1FLaW4zaWs4am10TllIZzd3aU1uMmJFdXBWc3pleFZfOUdsdjdCdmw0cmZVLW9jR3lwZjVhSy1kSTdDVS1wOFBuLVFQZEloa2ozNE1iY0M1bHM1dFFkT0o2WG1fTDFxZkVkWFEtbW9FTzJzTFowZW11SHB5SXN1TGxUMmVkbWxYWl92bVdvU3lPcmpFcF8tMGFhUmRRdG1Zdw?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-12T07:00:00+00:00",
-      "fetched": "2026-10-16T05:25:16.905611",
+      "fetched": "2026-10-16T03:19:04.890797",
       "systems": [
         "CRM"
       ],
@@ -2227,7 +1833,7 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMUlGSEdTLTRYNy1aN2NMYzBxRmNJdnQ1N25FUXloZmxWU04zeGlYQm1EYkJuX0l2VERJWEpGSW41aW93QnNSY2NhdEozRDkyUjRFa3lJUzFaaU04S3lIa1JDZlRJQ2FGVmxIVWJuVWNDcVRCMXEtNTVucUNGOHEtWUpjYzM3MWNZR0NOS2hQamdYd0w3RHVSQ3RjeFB0Z3d6OEpQbVVxXzlkXzhZLTVvT0o0SQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T16:00:39+00:00",
-      "fetched": "2026-10-16T05:25:20.511302",
+      "fetched": "2026-10-16T03:19:27.120953",
       "systems": [
         "CRM"
       ],
@@ -2260,7 +1866,7 @@
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQQllReDRXeWpDWjIxUWUyTHhYVkRZMFBlazF4YlA3em1xc0pNOG9mdmxYY2NxV0I4OElJSlpPX2pDQmtiTDZEYzF6ZU5DWlk3ZTNrSzNqUHlsRkNMeThocHAzeHB1RnczZmFWeEtkZ0IwZm1ZaGtkeDliSGRhMGdXZW1CQzlIUzRjdWV3WXhFcjh0d29KVzQ2YXdGMmJ0VEdkV1dpN0g1bUVQTzVPdGtmd1BhTi0tcVphZ0tOak9ZdElEbW5sZkxIU0w5NXF2T0J2ZEZj?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-12T16:45:00+00:00",
-      "fetched": "2026-10-16T05:25:22.313998",
+      "fetched": "2026-10-16T03:19:28.935573",
       "systems": [
         "CRM"
       ],
@@ -2282,125 +1888,23 @@
       "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     },
     {
-      "id": "art_e372fc04d2",
-      "channel": "rss",
-      "source": "Salesforce",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "title": "Salesforce (NYSE:CRM) Stock Rating Upgraded by Bank of America - MarketBeat",
-      "summary": "Salesforce (NYSE:CRM) Stock Rating Upgraded by Bank of America MarketBeat",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSjM2OVZkYXBMYi1GQlE0VXFZdE9ZcWFEOERyeEUxU2ktSUdyaDVfVTJ4a3lSOERUVzlPcW9URUhsMkpBUjg4WGR2ZnZ4Mi1EWURxR0VWMndPQkFGemhubnB0N3RLM3psYTFzam41R3g3dFZwUWstVW1aNVFRTUVtSDF6cGswQ09GOE5EWm9GUHp0TmxZT1d2TWwtRjlJX09ieGpMZmtoNUxNVEoyUkpzZ3ZhZmgyQ0hWWU1OYmxtMA?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-12T12:11:51+00:00",
-      "fetched": "2026-10-16T05:25:22.914934",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 75,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 8,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_c0d7326428",
-      "channel": "rss",
-      "source": "Monday CRM",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "title": "Q2 Earnings Highs And Lows: Salesforce (NYSE:CRM) Vs The Rest Of The Sales Software Stocks - Yahoo Finance",
-      "summary": "Q2 Earnings Highs And Lows: Salesforce (NYSE:CRM) Vs The Rest Of The Sales Software Stocks Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNkx2NVJwc1RkaHRITngxRTlnMGFkUDRHN0h2TXVXSjZuTTY4N3Y0Ym1PdmltMVQ5T1FDZVVSSHJSQ0NnUk9MT0xiODlWRnhjczVqWTk0X0xsYzBCRldDem5NTVF5dklIZVBBNkJOWUFXMlBCdGVIaDNNX18wNEdrMk5oQlYzZndndDJxSTJma3dvckhKeUJJcElpWFp0bEk?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-13T16:59:04+00:00",
-      "fetched": "2026-10-16T05:25:33.824868",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 75,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 8,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_4b0fddffa6",
-      "channel": "rss",
-      "source": "Monday CRM",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "title": "CRM - Salesforce, Inc. | News - OTC Markets",
-      "summary": "CRM - Salesforce, Inc. | News OTC Markets",
-      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPa2h0N1NVSE43OXpBY3pUWXBub1hQV1Rpc3lWcU1LdDZhRkQ1YzRTeXpJTl9SN056TUhJYXVGS0syUFk0WjRlRUJZWmxzRmZIbE5JSzlERWk3OXhmQ3JqdzNLdS1FbVpOTXFPX0VOb0RLd0FpWlM5NHotOFhROTVNYzVCYWRsRTZkb0VIbjQ0bDY1X2ZVSGJRUzkyYzZlVnk3Qk5Cc2ozS2x2c2cxd2NLQjFDUEJTT25SbnBCOTJ0LXlUS3MyZDdYOC1ueXFYY0NtNkhncnhsVV9neTZLdkZ3YUtsczh0a1FyVm9UYmJtQjlQNnh5ZE9SUFV2SVZQT29fMkFDZ2Rn?oc=5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-13T07:00:00+00:00",
-      "fetched": "2026-10-16T05:25:36.829011",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 75,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 5,
-        "source_trust": 15,
-        "recency": 8,
-        "novelty": 2
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_47430a39e0",
+      "id": "art_e9bde3816c",
       "channel": "rss",
       "source": "Monday CRM",
       "brands": [
         "HubSpot"
       ],
-      "title": "The Best CRM Software for Accountants: What Actually Matters When You’re Choosing One - finchannel",
-      "summary": "The Best CRM Software for Accountants: What Actually Matters When You’re Choosing One finchannel",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQaGhFRE5SaTZNOXBPQks5THRyTGZ2bDFUeGowYUQ0RWtkYmxlRVZiZVpCT08tMUc1ZFctS2xYcXVkV3ZZOVAyUE0yT3hQdjVzRjVrS0d4bkd2MTAwMWJ1M0FPQ3dZUi1IQlE4NEx4dzNldlhHWWZaT2lKR0VwdEtiRXFXeW1DQ1Q5dVJQNDJuUGU5SHI2Qm1uNWc1NXNIU2FrbTVpRllVVnF2U192MWExbS1BajNWNkxfeldoN1o4WnAtTk9OcWhRRElDeUxnNXNvVmhDclpB?oc=5",
+      "title": "Dynamics CRM Mailchimp Integration | Unify Sales & Marketing with Marketing4Dynamics - MSDynamicsWorld.com",
+      "summary": "Dynamics CRM Mailchimp Integration | Unify Sales & Marketing with Marketing4Dynamics MSDynamicsWorld.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaEtiRUhfVkFBWUhhVmJxYlk2bFRCOWJYMVJ3WnRVV0R6ZnRFRkhsSVcwOW9wLVdXZE5Ielc1aVJtcmhRV3ZrWGRRVW5DNlBKOW9xcGgyLW95ajJyYXZZS3NzcVZsNmZkZUtTUmh5bmlKRU1CdElLcGlKQmVxSFgxR203eFgzbnhLTjNfanNaY3NUQ3JMQWNaVFJyVHVpeTdIWEw5U2Q5T0g2OHFfRkE?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-12T10:49:27+00:00",
-      "fetched": "2026-10-16T05:25:41.635481",
+      "date": "2026-10-13T10:09:12+00:00",
+      "fetched": "2026-10-16T03:19:49.977436",
       "systems": [
         "CRM"
       ],
       "types": [
-        "U02 UX 研究與設計趨勢"
+        "T02 產品架構與資料模型"
       ],
       "release_status": "Unverified",
       "is_zhtw": false,
@@ -2414,7 +1918,7 @@
         "recency": 8,
         "novelty": 2
       },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「產品架構」；近 3 天發布"
     },
     {
       "id": "art_31d01217b6",
@@ -2428,7 +1932,7 @@
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQVBYUVBUOFJNWVN3RnUtRmFvemFqSDdpZUZnclptb2RfOHNYbVNBdGN5bGxYbDZZOENrMW1rcWVvWjRKYlh6SjVULVhBeTBvcllTNEFLb04xeXVZUUFZd0U2VjhhOUZWUmF3Ukp6Q0tEQXJqWXVtVlpWS0F5YmxIclJCRVZRNTY5VVdVQlhHWXpHUGRXM3dwcWZvMno3WHJndGk4eDVOXzJid2JNWDZEUjc1YkYzRHdlZ1JxNG0wM1drMzJjWDdwb2cxMlp3aFU?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-12T09:57:00+00:00",
-      "fetched": "2026-10-16T05:26:00.759058",
+      "fetched": "2026-10-16T03:20:13.353596",
       "systems": [
         "PMS"
       ],
@@ -2461,7 +1965,7 @@
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNRDlLb1dMcU1PbFktcXJyZFd5OHJfRmlsTFdvd2phWTI3Z1paNlNzdXBnNlRuQWgzajhBaXVnVDhJdkxWV0dQelRCVHBzYkQzV2FVMk94Y2Z6MDlDNHhjdnNVWEQyQU04M0tQcENQSi00QmdZTnU0dW1iQWdSdDRSYURDR1lVeTItaXNuUFp1cURaQQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T14:56:18+00:00",
-      "fetched": "2026-10-16T05:26:03.063227",
+      "fetched": "2026-10-16T03:20:16.280324",
       "systems": [
         "PMS"
       ],
@@ -2494,7 +1998,7 @@
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPcHZYOW9LbGZfcklyZm5DLWpoT2ZNaS1BZDNtbm05UzNwY05jaFc3M1A5cWVzaWJYRUJJajJQckZUOXNwZ1Bxd0RqNTBibzhCalNlU0FjdkZsNWx5cjd3RGgyaWJTeExrYkF6WG8yVHNHaVFsRXBqR2tKbEthbTJCdVpWeTlvRzJCU1BmMkdGNGUtNHdJMDNBdzNGcGZDeEpVZWJmT3NpeUJVNDV1TEE?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-12T10:30:00+00:00",
-      "fetched": "2026-10-16T05:26:03.664112",
+      "fetched": "2026-10-16T03:20:16.886094",
       "systems": [
         "PMS"
       ],
@@ -2527,7 +2031,7 @@
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE84ZFRqVFZ4WDk0MnZZRUQ4Vm9laFBGejRzeUlqUmpJYVpJUzc2QWx5RkVjbVdIbVR3Mk51TmpYYzNOR1VtUGN2b1Nkdk9LdHNPbmpLNmhrc2x2YmMxSUZ6SkNxVVc2U1Q1?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T14:01:54+00:00",
-      "fetched": "2026-10-16T05:26:54.391445",
+      "fetched": "2026-10-16T03:21:13.198539",
       "systems": [
         "FBM"
       ],
@@ -2560,7 +2064,7 @@
       "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOby1xcHo4VGpneG0yTXAyeXR3LXNCXzRKelZ5ZzEzYnhxTlZnVm56d3JYSUktd0F5ZXd3MHF6alFaZmVMNzQzVm81WGVEbTVOUFhvMTN4czRaYXdqaS1mY1ZGdXg1ejRCS05fZE9YanBNQVJBRUNURGVKVjZTOGVQakRZMkl3YjRIMy1VdWVrWlg2bXVDd2NLY3Z4UlZKclF6MG56bm1vVkNySzQ2ZkZWQnVrOE9VbnRlYW1sc0Z0NEpiWG94TU1NWEJpLUY0Ry03VXQ5akstejJNeUl5YjlwNmw1cGU3ZnpPbVNaSTA4UWI?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-14T15:00:08+00:00",
-      "fetched": "2026-10-16T05:25:43.881576",
+      "fetched": "2026-10-16T03:19:53.557269",
       "systems": [
         "PMS"
       ],
@@ -2593,7 +2097,7 @@
       "url": "https://medium.com/@amroar/marketing-automation-isnt-set-and-forget-the-hidden-cost-of-workflows-nobody-reviews-c186917f72e1?source=rss------hubspot-5",
       "thumbnail": "https://cdn-images-1.medium.com/max/1920/1*L9N2qWAL7X5Z7V7hIhmSXA.png",
       "date": "2026-10-14T09:32:52+00:00",
-      "fetched": "2026-10-16T05:27:07.489065",
+      "fetched": "2026-10-16T03:21:26.648022",
       "systems": [
         "CRM"
       ],
@@ -2626,7 +2130,7 @@
       "url": "https://medium.com/@pixenmidia/crm-automation-for-small-businesses-in-the-uae-stop-losing-leads-in-spreadsheets-c1d7bfd25a47?source=rss------crm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T18:13:35+00:00",
-      "fetched": "2026-10-16T05:27:13.223774",
+      "fetched": "2026-10-16T03:21:31.820990",
       "systems": [
         "CRM"
       ],
@@ -2659,7 +2163,7 @@
       "url": "https://medium.com/@precious.chindongo/when-an-approved-mcp-tool-drifts-name-checks-still-let-it-write-87d31e65526e?source=rss------martech-5",
       "thumbnail": "https://cdn-images-1.medium.com/max/2000/1*iiy-G1fv68SDWhEuDGSE4w.png",
       "date": "2026-10-15T16:58:44+00:00",
-      "fetched": "2026-10-16T05:27:14.172693",
+      "fetched": "2026-10-16T03:21:33.472722",
       "systems": [
         "CRM"
       ],
@@ -2692,7 +2196,7 @@
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPOG9CMTJxakxwS1ZzclRiZ0FHZllEcV85UjZkVi0xTF9xdzlxYzJKRDRtZGloR0JUQkhfOTdjaEh0M0VranlMSmxJZm1vdGFIRVRPcy1hc1dwQ2R1Vjk5NzBiZjRCUW42bXJuOE5MVWlLUUE2Vk9DM2JucFpmR25LNG01b0RoV01iNUlUNElkaw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-09T20:07:30+00:00",
-      "fetched": "2026-10-16T05:24:59.497417",
+      "fetched": "2026-10-16T03:19:05.495490",
       "systems": [
         "CRM"
       ],
@@ -2725,7 +2229,7 @@
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOTM2cnNRemNjT0lpWU41T2pLNkVGSlhaZnpSSkpMSzV1S2ZocWNzM3Eyc2d5YTk3UkM1Tndnb0JURm55dHFDMTluNVhJbXpSbm1teGJvV0Z0eXNaTEM5ZkNHb053aE5mWHNkMjNtOGNGd2lRVHZXa2I0b0hSSDlkOEViX3JBNVZGYXQyQnMzQ24yLUs0ektOaTQ4Q1Voekk2c042akJCYTRya1ZCQVAtX1JEaEJvN1VFRXNGUWRoWGc?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-09T10:21:08+00:00",
-      "fetched": "2026-10-16T05:25:01.901001",
+      "fetched": "2026-10-16T03:19:07.913260",
       "systems": [
         "CRM"
       ],
@@ -2758,7 +2262,7 @@
       "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOdG8yMWRqZHE4R21oemFhd2Z2aENMRjFzbTlGQ3NOc0JYMXdicHQ1N3ZwUWZRUm1tbUhvRDBSY2JHTDBzWGVFbDdkNWVKbHhycy11ekFnTXJGa3hlRHgwQnR5V095OXFTZFhuTWpYeEtNQWhIdmpNVXkwS2FWQTRUNVFaU0NNU1lVSjVsVEVKSEhDZzg4a1pBbHlqR2pmNUd4R2tUYnRWMA?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-10T22:47:00+00:00",
-      "fetched": "2026-10-16T05:25:04.304215",
+      "fetched": "2026-10-16T03:19:10.330262",
       "systems": [
         "CRM"
       ],
@@ -2791,7 +2295,7 @@
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxObkVhRHdFRmMxZGVCanJaV2QzWjdtUnJRZm02bDdSRWEwbHpzcGE1c0cyZHZCZDV2dXBlZ2wtTWVxNFA3TXg3TkF1ZFBjd3FGV0VUMC1yNlg2SUxYRkRtMHdOSFRPSDZ5UVVfVGg4TFhMdEhaVXhwNmdrNEw5QktBczl6OTBfWHBEbnl6bDBJcmd6QVI5WW5oV1pMcWJ3Q0phZnBNRFlPSUFScUtILVJHdWtfdVRiQk5oZ2UyVEJYZWMtZjNm?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-09T07:00:00+00:00",
-      "fetched": "2026-10-16T05:25:05.506055",
+      "fetched": "2026-10-16T03:19:11.538579",
       "systems": [
         "CRM"
       ],
@@ -2824,7 +2328,7 @@
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNN1hOWjZTNzZvQWd2VGgzV09SNE1YRktaTGFHQmIxSkpiNV9YRlNUUUFxLUhaU2dJT1VjcGRzYnlzc1VkOWo1WmRRN3RoREpLdHZ6UWxpUGs5WEhkUGJvRkVTY1dzR3hPTm5ybHBwM084b0NjTnhjSFppcFR4eHZSWTIxMmNBUQ?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-09T07:00:00+00:00",
-      "fetched": "2026-10-16T05:25:16.304754",
+      "fetched": "2026-10-16T03:19:22.888232",
       "systems": [
         "CRM"
       ],
@@ -2846,6 +2350,39 @@
       "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「UX 研究/趨勢」；近 1 週發布"
     },
     {
+      "id": "art_8c11cdfb5b",
+      "channel": "rss",
+      "source": "Monday CRM",
+      "brands": [
+        "HubSpot"
+      ],
+      "title": "Microsoft Turns Dynamics 365 Into an Ambient CRM Layer - The Futurum Group",
+      "summary": "Microsoft Turns Dynamics 365 Into an Ambient CRM Layer The Futurum Group",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbElHMmN6M21oam13V19ZMGJITkFNcnIzUG5SUWVuRS15SmFHY1NZUGU5Y3N1Q3dBa1U3Rm9QSjFBaC01T2U4RHV0RE1oVjFSdl9HT09EeXBIcFZDRTV4YUJtOThkQlVzLVZGMU11U3hGZG8zN01zTFp5MDFRUmdwWDNtdE5WbHEtdXdlM0g4UXU0cm8?oc=5",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-10-09T13:26:41+00:00",
+      "fetched": "2026-10-16T03:19:45.144977",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "U02 UX 研究與設計趨勢"
+      ],
+      "release_status": "Unverified",
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 73,
+      "score_breakdown": {
+        "work_relevance": 25,
+        "domain_match": 20,
+        "applicability": 5,
+        "source_trust": 15,
+        "recency": 6,
+        "novelty": 2
+      },
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 1 週發布"
+    },
+    {
       "id": "art_ab4d027b97",
       "channel": "rss",
       "source": "Mews",
@@ -2857,7 +2394,7 @@
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd3JINmFGSWtpLVplbFkyYjd5UXVJdVhOZUhDRWk3ZWktM2h0UDVmX3RQWVh1cGthX0JTVlF6WUNuZEZseUJ3VEN5ZFg4amJZcDFYWDZyRGtUaU9UdHU0bWFsRk00b3MydlVOakthanEwQW05UVJpbDBXV0lvaEJWbW9lV0JNSE5iUWxCbXNldGdzQjNGd0haQWNyanhJbjJvS3VVRVZR?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-09T10:44:35+00:00",
-      "fetched": "2026-10-16T05:25:45.606593",
+      "fetched": "2026-10-16T03:19:55.546030",
       "systems": [
         "PMS"
       ],
@@ -2890,7 +2427,7 @@
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcVJkc01ONzZRTUhrek5rbGdrWkFoRHZZTWhQTWtXZVBJb0w2U09idkdaWHdNWHFUTmFteThmZ3NCT2daeGVEVzAxTU9mLU9CbGVqY0xrMVk2YlVWZVVDVHMwelpsYnYybVJSUFpaZ09FaWpfYXZvblVncWVsN05uRE80a3VUb0JFRHFGRWQtVjl5NWtRNmVKeGpIYVhYaEk?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-09T11:11:07+00:00",
-      "fetched": "2026-10-16T05:25:46.207448",
+      "fetched": "2026-10-16T03:19:56.152428",
       "systems": [
         "PMS"
       ],
@@ -2923,7 +2460,7 @@
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1PN24wc2p5dktTcDkxNE9KRUc2NEhuMEdfMmNTcVRJdThlbXpaR1gyZHR3aWxEYVZiOGNVQzlrWUZkdFk4Q2ZmRFFrX2REa0o4VHA1UTJFbThGeXJuVjVQV2o0THZ2MDNYT1J5a2o2MlpiSXc?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-09T06:05:15+00:00",
-      "fetched": "2026-10-16T05:25:47.409032",
+      "fetched": "2026-10-16T03:19:57.366233",
       "systems": [
         "PMS"
       ],
@@ -2956,7 +2493,7 @@
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8xOWVpTDhxOHZabDFFVnJqQWVxaVJrb0lUNWdzR2NmZTdTRExYTjU2NFdmNFVOUmVNaGhoUV9KajZ4WU1va0M2VEk0OTQ2NjQ3TEE?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-09T23:07:48+00:00",
-      "fetched": "2026-10-16T05:26:51.988176",
+      "fetched": "2026-10-16T03:21:10.776305",
       "systems": [
         "FBM"
       ],
@@ -2989,7 +2526,7 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBNbWJmU0hTUzBaZ1VBallPLWQwNW85UDA1dDl5WXJVVFMwUnROMEJ6YTc5OVNLTmNKSUxoSmFWVGFRdDIzUmZfYTY3bEtLSEw5VkhwNTVQa0RnZw?oc=5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-09T21:08:03+00:00",
-      "fetched": "2026-10-16T05:26:53.189856",
+      "fetched": "2026-10-16T03:21:11.986725",
       "systems": [
         "FBM"
       ],
@@ -3011,39 +2548,6 @@
       "recommendation_reason": "追蹤品牌 Resy 的更新；歸類於「UX 研究/趨勢」；近 1 週發布"
     },
     {
-      "id": "art_c36cf663d2",
-      "channel": "rss",
-      "source": "Medium-CRM",
-      "brands": [
-        "HubSpot"
-      ],
-      "title": "How AI-Powered CRM Software Helps Businesses Build Stronger Customer Relationships",
-      "summary": "Businesses today need more than a place to store customer information. Sales teams must respond to inquiries quickly, follow up… Continue reading on Medium »",
-      "url": "https://medium.com/@crystalfernendaz13/how-ai-powered-crm-software-helps-businesses-build-stronger-customer-relationships-be719a796b31?source=rss------crm-5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:03:00+00:00",
-      "fetched": "2026-10-16T05:27:10.815656",
-      "systems": [
-        "CRM"
-      ],
-      "types": [
-        "P01 競品與產品更新"
-      ],
-      "release_status": "GA",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 73,
-      "score_breakdown": {
-        "work_relevance": 25,
-        "domain_match": 20,
-        "applicability": 10,
-        "source_trust": 8,
-        "recency": 10,
-        "novelty": 0
-      },
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
-    },
-    {
       "id": "art_40bdfb823b",
       "channel": "rss",
       "source": "Medium-HubSpot",
@@ -3056,7 +2560,7 @@
       "url": "https://medium.com/@sarita_8513/salesforce-or-hubspot-who-is-winning-the-crm-race-in-the-ai-era-a5803e989f80?source=rss------hubspot-5",
       "thumbnail": "https://cdn-images-1.medium.com/max/1400/1*ywA3nxcWLJmUbdoqfer9lw.png",
       "date": "2026-10-12T11:12:50+00:00",
-      "fetched": "2026-10-16T05:27:10.198692",
+      "fetched": "2026-10-16T03:21:29.390146",
       "systems": [
         "CRM"
       ],
@@ -3090,7 +2594,7 @@
       "url": "https://medium.com/@skyfalloutreach/zoho-crm-and-outlook-or-gmail-email-problems-what-to-check-1c26e9546e57?source=rss------crm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T21:07:58+00:00",
-      "fetched": "2026-10-16T05:27:11.417484",
+      "fetched": "2026-10-16T03:21:29.994676",
       "systems": [
         "CRM"
       ],
@@ -3124,7 +2628,7 @@
       "url": "https://medium.com/@skyfalloutreach/what-is-zoho-crm-a-plain-language-guide-for-business-owners-b0878c119d52?source=rss------crm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T20:39:57+00:00",
-      "fetched": "2026-10-16T05:27:11.718542",
+      "fetched": "2026-10-16T03:21:30.300724",
       "systems": [
         "CRM"
       ],
@@ -3158,7 +2662,7 @@
       "url": "https://medium.com/@skyfalloutreach/zoho-crm-your-first-30-days-in-order-c5231d7ddc78?source=rss------crm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T20:12:52+00:00",
-      "fetched": "2026-10-16T05:27:12.019719",
+      "fetched": "2026-10-16T03:21:30.606094",
       "systems": [
         "CRM"
       ],
@@ -3192,7 +2696,7 @@
       "url": "https://medium.com/@skyfalloutreach/zoho-crm-duplicate-records-and-double-data-entry-how-to-stop-them-ef1e8cdc450d?source=rss------crm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T19:45:17+00:00",
-      "fetched": "2026-10-16T05:27:12.320775",
+      "fetched": "2026-10-16T03:21:30.912116",
       "systems": [
         "CRM"
       ],
@@ -3226,7 +2730,7 @@
       "url": "https://medium.com/@skyfalloutreach/zoho-crm-too-complicated-six-documented-ways-to-simplify-it-d299a74bfb65?source=rss------crm-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T19:16:51+00:00",
-      "fetched": "2026-10-16T05:27:12.621701",
+      "fetched": "2026-10-16T03:21:31.214321",
       "systems": [
         "CRM"
       ],
@@ -3259,7 +2763,40 @@
       "url": "https://medium.com/@dynasum/microsoft-dynamics-365-30-crm-skills-changing-the-flow-of-work-798e086a2b98?source=rss------crm-5",
       "thumbnail": "https://cdn-images-1.medium.com/max/1532/1*cDs9mUacxV0T_pxHUBWodg.png",
       "date": "2026-10-15T18:27:18+00:00",
-      "fetched": "2026-10-16T05:27:12.922714",
+      "fetched": "2026-10-16T03:21:31.515532",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "U02 UX 研究與設計趨勢"
+      ],
+      "release_status": "Unverified",
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 70,
+      "score_breakdown": {
+        "work_relevance": 25,
+        "domain_match": 20,
+        "applicability": 5,
+        "source_trust": 8,
+        "recency": 10,
+        "novelty": 2
+      },
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
+    },
+    {
+      "id": "art_b627e2d87b",
+      "channel": "rss",
+      "source": "Medium-CRM",
+      "brands": [
+        "HubSpot"
+      ],
+      "title": "How I Simplified Complex B2B Operations Through an End-to-End CRM System",
+      "summary": "Who is this project for? Continue reading on Medium »",
+      "url": "https://medium.com/@bhoomis805/how-i-simplified-complex-b2b-operations-through-an-end-to-end-crm-system-bfb23c05165f?source=rss------crm-5",
+      "thumbnail": "https://cdn-images-1.medium.com/max/2600/1*nrtqcW26EJyfnbGM9thZaw.png",
+      "date": "2026-10-15T16:44:52+00:00",
+      "fetched": "2026-10-16T03:21:32.731007",
       "systems": [
         "CRM"
       ],
@@ -3292,7 +2829,7 @@
       "url": "https://medium.com/@elaraksa6/top-property-management-companies-how-to-choose-the-right-one-e915da4c3523?source=rss------property_management-5",
       "thumbnail": "https://cdn-images-1.medium.com/max/2600/1*6z5y9lpT7e2gky-zV9BArA.jpeg",
       "date": "2026-10-15T13:15:34+00:00",
-      "fetched": "2026-10-16T05:27:19.275404",
+      "fetched": "2026-10-16T03:21:38.343661",
       "systems": [
         "PMS"
       ],
@@ -3325,7 +2862,7 @@
       "url": "https://medium.com/@ComputanBlog/who-offers-both-crm-consulting-and-custom-cms-development-for-marketers-f04e1ae3f509?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T12:15:42+00:00",
-      "fetched": "2026-10-16T05:27:07.790165",
+      "fetched": "2026-10-16T03:21:26.952117",
       "systems": [
         "CRM"
       ],
@@ -3358,7 +2895,7 @@
       "url": "https://medium.com/@marketing_30465/zwiron-hubspot-integration-sync-hubspot-crm-data-to-your-data-warehouse-6f8a80b1814e?source=rss------hubspot-5",
       "thumbnail": "https://cdn-images-1.medium.com/max/1785/1*kcxU0awJfCTqlnUcqskmEw.png",
       "date": "2026-10-13T07:56:54+00:00",
-      "fetched": "2026-10-16T05:27:08.091264",
+      "fetched": "2026-10-16T03:21:27.255153",
       "systems": [
         "CRM"
       ],
@@ -3391,7 +2928,7 @@
       "url": "https://medium.com/@britneywrenzms51/hubspot-crm-italiano-cosa-trovi-e-cosa-serve-se-vendi-sul-territorio-ed7e5bd315a3?source=rss------hubspot-5",
       "thumbnail": "https://cdn-images-1.medium.com/max/2400/1*I9n5_hfbn9GiJD4n36gkrw.png",
       "date": "2026-10-13T07:00:25+00:00",
-      "fetched": "2026-10-16T05:27:08.392375",
+      "fetched": "2026-10-16T03:21:27.562017",
       "systems": [
         "CRM"
       ],
@@ -3425,7 +2962,7 @@
       "url": "https://milan-panchasara.medium.com/custom-crm-or-salesforce-hubspot-5-signs-youve-outgrown-off-the-shelf-a215d3e83bfa?source=rss------hubspot-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T00:46:01+00:00",
-      "fetched": "2026-10-16T05:27:08.693375",
+      "fetched": "2026-10-16T03:21:27.869240",
       "systems": [
         "CRM"
       ],
@@ -3458,7 +2995,7 @@
       "url": "https://medium.com/@marketing.thalox/hubspot-multilingual-content-6-handoffs-you-need-to-get-right-e6488fa2d4fb?source=rss------hubspot-5",
       "thumbnail": "https://cdn-images-1.medium.com/max/2600/1*ZN3MosrdzsjkleN6-jKHJQ.jpeg",
       "date": "2026-10-12T14:41:13+00:00",
-      "fetched": "2026-10-16T05:27:09.295443",
+      "fetched": "2026-10-16T03:21:28.482007",
       "systems": [
         "CRM"
       ],
@@ -3491,7 +3028,7 @@
       "url": "https://medium.com/@marketing.thalox/how-to-build-the-5-most-important-hubspot-reports-for-your-business-3295ec4853e4?source=rss------hubspot-5",
       "thumbnail": "https://cdn-images-1.medium.com/max/2600/1*CsBSakKn62A7weNqipY-fA.jpeg",
       "date": "2026-10-12T14:36:51+00:00",
-      "fetched": "2026-10-16T05:27:09.596419",
+      "fetched": "2026-10-16T03:21:28.785801",
       "systems": [
         "CRM"
       ],
@@ -3524,7 +3061,7 @@
       "url": "https://medium.com/@wheelsupcollective/hubspot-integrations-that-can-boost-your-sales-pipeline-28befc21ebf8?source=rss------hubspot-5",
       "thumbnail": "https://cdn-images-1.medium.com/max/925/0*gjwUZn_1nWj_VkcC.png",
       "date": "2026-10-12T14:01:02+00:00",
-      "fetched": "2026-10-16T05:27:09.897599",
+      "fetched": "2026-10-16T03:21:29.086849",
       "systems": [
         "CRM"
       ],
@@ -3546,6 +3083,39 @@
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「產品架構」；近 3 天發布"
     },
     {
+      "id": "art_78065224c3",
+      "channel": "rss",
+      "source": "Medium-CRM",
+      "brands": [
+        "HubSpot"
+      ],
+      "title": "Qual o melhor CRM com WhatsApp integrado para pequenas e médias empresas no Brasil?",
+      "summary": "O melhor CRM com WhatsApp integrado para pequenas e médias empresas no Brasil é o que conecta a API oficial da Meta, reúne todas as… Continue reading on Medium »",
+      "url": "https://medium.com/@cpnjbiz/qual-o-melhor-crm-com-whatsapp-integrado-para-pequenas-e-m%C3%A9dias-empresas-no-brasil-0a79106aa467?source=rss------crm-5",
+      "thumbnail": "https://cdn-images-1.medium.com/max/1500/0*BeQYnlM7y0Sd1s3N",
+      "date": "2026-10-15T16:54:07+00:00",
+      "fetched": "2026-10-16T03:21:32.430027",
+      "systems": [
+        "CRM"
+      ],
+      "types": [
+        "T01 前端與 API 基礎"
+      ],
+      "release_status": "Unverified",
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 67,
+      "score_breakdown": {
+        "work_relevance": 25,
+        "domain_match": 20,
+        "applicability": 4,
+        "source_trust": 8,
+        "recency": 10,
+        "novelty": 0
+      },
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「前端/API」；近 3 天發布"
+    },
+    {
       "id": "art_7887ae1354",
       "channel": "rss",
       "source": "Medium-Hospitality",
@@ -3557,7 +3127,7 @@
       "url": "https://medium.com/@guidehotelier/hotel-booking-engines-in-india-a-complete-guide-for-hotels-a67340067de6?source=rss------hospitality_technology-5",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-07T06:48:24+00:00",
-      "fetched": "2026-10-16T05:27:23.240344",
+      "fetched": "2026-10-16T03:21:42.770880",
       "systems": [
         "PMS"
       ],
@@ -3588,7 +3158,7 @@
       "url": "https://huggingface.co/blog/meta-muse-spark-open",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T00:00:00+00:00",
-      "fetched": "2026-10-16T05:27:42.120330",
+      "fetched": "2026-10-16T03:22:02.461357",
       "systems": [
         "TECH"
       ],
@@ -3616,11 +3186,11 @@
       "source": "TECH/Global·HackerNews",
       "brands": [],
       "title": "Muse Spark Open",
-      "summary": "https://dev.meta.ai/resources/blog/build-with-muse-spark-ope... https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B https://9to5mac.com/2026/10/15/meta-launches-new-muse-spark-... Comments URL: https://news.ycombinator.com/item?id=50107379 Points: 713 # Comments: 378",
+      "summary": "https://dev.meta.ai/resources/blog/build-with-muse-spark-ope... https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B https://9to5mac.com/2026/10/15/meta-launches-new-muse-spark-... Comments URL: https://news.ycombinator.com/item?id=50107379 Points: 659 # Comments: 361",
       "url": "https://research.meta.ai/blog/muse-spark-open",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T17:47:39+00:00",
-      "fetched": "2026-10-16T05:28:05.248010",
+      "fetched": "2026-10-16T03:22:29.153369",
       "systems": [
         "TECH"
       ],
@@ -3653,7 +3223,39 @@
       "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T20:04:53+00:00",
-      "fetched": "2026-10-16T05:27:47.697618",
+      "fetched": "2026-10-16T03:22:07.736197",
+      "systems": [
+        "TECH"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "release_status": "GA",
+      "is_zhtw": false,
+      "lang": "en",
+      "score": 57,
+      "score_breakdown": {
+        "work_relevance": 0,
+        "domain_match": 15,
+        "applicability": 18,
+        "source_trust": 11,
+        "recency": 10,
+        "novelty": 3
+      },
+      "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
+      "id": "art_07840b4d49",
+      "channel": "rss",
+      "source": "TECH/Global·TechCrunch",
+      "brands": [],
+      "title": "Google’s Universal Cart shopping tool launches in the US",
+      "summary": "Google on Thursday said “Universal Cart,” a tool that lets users collect and monitor products they find across search and in the Gemini app, is now available to U.S. users. The company first previewed the tool at Google I/O in May. The idea is to make online shopping easier to manage. Find something you like, save it to your cart, and move on. When you return later, your items and shopping progress are still there, so you don’t have to hunt down the same products or start over. Universal Cart ca",
+      "url": "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/",
+      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      "date": "2026-10-15T14:29:33+00:00",
+      "fetched": "2026-10-16T03:22:10.779053",
       "systems": [
         "TECH"
       ],
@@ -3681,11 +3283,11 @@
       "source": "TECH/Global·MITTechReview",
       "brands": [],
       "title": "The Download: open model trade-offs and geothermal power’s promise",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Open models have real benefits. Do they outweigh the risks? Anthropic recently released a report arguing that a powerful new model released by the Chinese company Z.ai, poses a major cyberattack…",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Open models have real benefits. Do they outweigh the risks? Anthropic recently released a report arguing that a powerful new model released by",
       "url": "https://www.technologyreview.com/2026/10/13/1146382/the-download-open-models-trade-offs-geothermal-power/",
       "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2023/05/identity-distortion3.jpeg?fit=1456,818",
       "date": "2026-10-13T12:00:00+00:00",
-      "fetched": "2026-10-16T05:28:00.320915",
+      "fetched": "2026-10-16T03:22:21.259643",
       "systems": [
         "TECH"
       ],
@@ -3713,11 +3315,11 @@
       "source": "TECH/Global·MITTechReview",
       "brands": [],
       "title": "Open models have real benefits. Do they outweigh the risks?",
-      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can read more from the series here. Late last month, Anthropic released a report arguing that the model GLM-5.3 poses a major cyberattack risk. The report’s core concern is that the…",
+      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can read more from the series here. Late last month, Anthropic released a report arguing that the model GLM-5.3 poses a major",
       "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T10:00:00+00:00",
-      "fetched": "2026-10-16T05:28:00.621921",
+      "fetched": "2026-10-16T03:22:21.564474",
       "systems": [
         "TECH"
       ],
@@ -3749,7 +3351,7 @@
       "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-06T19:57:04+00:00",
-      "fetched": "2026-10-16T05:27:38.281216",
+      "fetched": "2026-10-16T03:21:58.500089",
       "systems": [
         "TECH"
       ],
@@ -3781,7 +3383,7 @@
       "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
       "thumbnail": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w528-h297-n-nu-rw-lo",
       "date": "2026-10-15T16:08:03+00:00",
-      "fetched": "2026-10-16T05:27:36.777787",
+      "fetched": "2026-10-16T03:21:56.976426",
       "systems": [
         "TECH"
       ],
@@ -3812,7 +3414,7 @@
       "url": "https://huggingface.co/blog/microsoft/thinkingbox",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-03T22:56:48+00:00",
-      "fetched": "2026-10-16T05:27:43.923997",
+      "fetched": "2026-10-16T03:22:04.284180",
       "systems": [
         "TECH"
       ],
@@ -3844,7 +3446,7 @@
       "url": "https://smashingmagazine.com/2026/09/death-button-why-best-interface-is-no-interface/",
       "thumbnail": "http://files.smashing.media/articles/death-button-why-best-interface-is-no-interface/death-button-why-best-interface-is-no-interface.jpg",
       "date": "2026-09-09T10:00:00+00:00",
-      "fetched": "2026-10-16T05:28:27.597224",
+      "fetched": "2026-10-16T03:22:49.960617",
       "systems": [
         "TECH"
       ],
@@ -3876,7 +3478,7 @@
       "url": "https://smashingmagazine.com/2026/07/bull-and-bear-case-digital-design-age-ai/",
       "thumbnail": "http://files.smashing.media/articles/bull-and-bear-case-digital-design-age-ai/bull-and-bear-case-digital-design-age-ai.jpg",
       "date": "2026-07-29T13:00:00+00:00",
-      "fetched": "2026-10-16T05:28:30.304467",
+      "fetched": "2026-10-16T03:22:52.711955",
       "systems": [
         "TECH"
       ],
@@ -3908,7 +3510,7 @@
       "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-16T01:44:47+00:00",
-      "fetched": "2026-10-16T05:27:41.519029",
+      "fetched": "2026-10-16T03:22:01.851764",
       "systems": [
         "TECH"
       ],
@@ -3939,7 +3541,7 @@
       "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T20:34:01+00:00",
-      "fetched": "2026-10-16T05:27:41.819652",
+      "fetched": "2026-10-16T03:22:02.155570",
       "systems": [
         "TECH"
       ],
@@ -3970,7 +3572,7 @@
       "url": "https://huggingface.co/blog/flux-3",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T00:00:00+00:00",
-      "fetched": "2026-10-16T05:27:42.420970",
+      "fetched": "2026-10-16T03:22:02.766501",
       "systems": [
         "TECH"
       ],
@@ -4001,7 +3603,7 @@
       "url": "https://huggingface.co/blog/allenai/hiro-acev2",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-14T16:12:42+00:00",
-      "fetched": "2026-10-16T05:27:42.721568",
+      "fetched": "2026-10-16T03:22:03.071169",
       "systems": [
         "TECH"
       ],
@@ -4032,7 +3634,7 @@
       "url": "https://uxdesign.cc/i-ran-a-7-week-ai-workshop-for-designers-that-wasnt-really-about-ai-804035e7b328?source=rss----138adf9c44c---4",
       "thumbnail": "https://cdn-images-1.medium.com/max/1090/1*k8ZtBFSgpFpKPc4Mh1ZfNA.png",
       "date": "2026-10-15T22:08:34+00:00",
-      "fetched": "2026-10-16T05:28:31.530802",
+      "fetched": "2026-10-16T03:22:54.173935",
       "systems": [
         "TECH"
       ],
@@ -4063,7 +3665,7 @@
       "url": "https://uxdesign.cc/the-ai-experience-doesnt-care-about-your-org-chart-5ed595c7b373?source=rss----138adf9c44c---4",
       "thumbnail": "https://cdn-images-1.medium.com/max/1024/1*6NmwSGMnZgD1hsraDqel3g.png",
       "date": "2026-10-15T22:00:47+00:00",
-      "fetched": "2026-10-16T05:28:32.132644",
+      "fetched": "2026-10-16T03:22:54.783824",
       "systems": [
         "TECH"
       ],
@@ -4094,7 +3696,7 @@
       "url": "https://uxdesign.cc/nobody-wants-your-ai-app-cff8629064a4?source=rss----138adf9c44c---4",
       "thumbnail": "https://cdn-images-1.medium.com/max/1024/1*_oMEmp-Z-xsaX5uRmZJI4Q.jpeg",
       "date": "2026-10-14T22:09:56+00:00",
-      "fetched": "2026-10-16T05:28:32.433292",
+      "fetched": "2026-10-16T03:22:55.089448",
       "systems": [
         "TECH"
       ],
@@ -4125,7 +3727,7 @@
       "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
       "thumbnail": "https://lh3.googleusercontent.com/5PC4h7MzjC0ojOxiK-nPcRz0b6kUybKnCBjLL3nsb9T9qt7-2ciORJPnrObeFaYbAMqPxIhH4Wq9HD-U73lCivpFBcK8gABvhXXDo2lzUUSk9olsZQ=w528-h297-n-nu-rw-lo",
       "date": "2026-10-14T02:00:14+00:00",
-      "fetched": "2026-10-16T05:27:37.078493",
+      "fetched": "2026-10-16T03:21:57.280745",
       "systems": [
         "TECH"
       ],
@@ -4156,7 +3758,7 @@
       "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T19:43:07+00:00",
-      "fetched": "2026-10-16T05:27:37.379183",
+      "fetched": "2026-10-16T03:21:57.586411",
       "systems": [
         "TECH"
       ],
@@ -4187,7 +3789,7 @@
       "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T16:01:58+00:00",
-      "fetched": "2026-10-16T05:27:37.679874",
+      "fetched": "2026-10-16T03:21:57.888577",
       "systems": [
         "TECH"
       ],
@@ -4218,7 +3820,7 @@
       "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T16:01:52+00:00",
-      "fetched": "2026-10-16T05:27:37.980555",
+      "fetched": "2026-10-16T03:21:58.194152",
       "systems": [
         "TECH"
       ],
@@ -4249,7 +3851,7 @@
       "url": "https://www.nngroup.com/articles/ai-editorial-process/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-11T17:00:00+00:00",
-      "fetched": "2026-10-16T05:28:24.779356",
+      "fetched": "2026-10-16T03:22:46.822782",
       "systems": [
         "TECH"
       ],
@@ -4281,7 +3883,7 @@
       "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-13T17:05:48+00:00",
-      "fetched": "2026-10-16T05:27:43.022161",
+      "fetched": "2026-10-16T03:22:03.376145",
       "systems": [
         "TECH"
       ],
@@ -4303,37 +3905,6 @@
       "recommendation_reason": "歸類於「AI 工具/工作流」；近 3 天發布；來自品牌官方或專業媒體"
     },
     {
-      "id": "art_97d7dc6dd6",
-      "channel": "rss",
-      "source": "TECH/Global·TechCrunch",
-      "brands": [],
-      "title": "Even Benchmark thinks AI is eroding the venture pact against backing rivals",
-      "summary": "For decades, the unwritten rule of venture capital was that a firm doesn’t back two companies that compete head-on. But speaking at TechCrunch Disrupt earlier this week, the partners of Benchmark readily acknowledged that the AI boom is straining that rule. It’s been on the verge of snapping for some time. The towering AI labs OpenAI and Anthropic share dozens of the same investors at this point. Then, at the end of September, Factory, a startup that builds an AI agent to write software, said it",
-      "url": "https://techcrunch.com/2026/10/15/even-benchmark-thinks-ai-is-eroding-the-venture-pact-against-backing-rivals/",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:16:46+00:00",
-      "fetched": "2026-10-16T05:27:46.194361",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 47,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 15,
-        "applicability": 8,
-        "source_trust": 11,
-        "recency": 10,
-        "novelty": 3
-      },
-      "recommendation_reason": "歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
       "id": "art_d37081d910",
       "channel": "rss",
       "source": "TECH/Global·TechCrunch",
@@ -4343,7 +3914,7 @@
       "url": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T19:55:25+00:00",
-      "fetched": "2026-10-16T05:27:47.998279",
+      "fetched": "2026-10-16T03:22:08.039350",
       "systems": [
         "TECH"
       ],
@@ -4374,7 +3945,7 @@
       "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T19:14:26+00:00",
-      "fetched": "2026-10-16T05:27:48.599798",
+      "fetched": "2026-10-16T03:22:08.648740",
       "systems": [
         "TECH"
       ],
@@ -4405,7 +3976,7 @@
       "url": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T15:02:36+00:00",
-      "fetched": "2026-10-16T05:27:50.103367",
+      "fetched": "2026-10-16T03:22:10.171931",
       "systems": [
         "TECH"
       ],
@@ -4436,7 +4007,7 @@
       "url": "https://techcrunch.com/2026/10/15/ramp-reaches-60b-valuation-as-it-pushes-deeper-into-ai/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T14:47:09+00:00",
-      "fetched": "2026-10-16T05:27:50.404124",
+      "fetched": "2026-10-16T03:22:10.473743",
       "systems": [
         "TECH"
       ],
@@ -4466,39 +4037,8 @@
       "summary": "Posts from this topic will be added to your daily email digest and your homepage feed. Posts from this topic will be added to your daily email digest and your homepage feed. Posts from this topic will be added to your daily email digest and your homepage feed.",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:27:51.418202",
-      "fetched": "2026-10-16T05:27:51.418430",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 47,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 15,
-        "applicability": 8,
-        "source_trust": 11,
-        "recency": 10,
-        "novelty": 3
-      },
-      "recommendation_reason": "歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
-      "id": "art_287b7f7f97",
-      "channel": "rss",
-      "source": "TECH/Global·TheVerge",
-      "brands": [],
-      "title": "Trump posts AI-edited photo to brag about White House restoration work",
-      "summary": "Posts from this topic will be added to your daily email digest and your homepage feed. Posts from this topic will be added to your daily email digest and your homepage feed. Posts from this topic will be added to your daily email digest and your homepage feed.",
-      "url": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:27:52.319880",
-      "fetched": "2026-10-16T05:27:52.320034",
+      "date": "2026-10-16T03:22:12.012044",
+      "fetched": "2026-10-16T03:22:12.012212",
       "systems": [
         "TECH"
       ],
@@ -4528,8 +4068,8 @@
       "summary": "Posts from this topic will be added to your daily email digest and your homepage feed. Posts from this topic will be added to your daily email digest and your homepage feed. Posts from this topic will be added to your daily email digest and your homepage feed.",
       "url": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:27:52.620513",
-      "fetched": "2026-10-16T05:27:52.620705",
+      "date": "2026-10-16T03:22:13.230829",
+      "fetched": "2026-10-16T03:22:13.231053",
       "systems": [
         "TECH"
       ],
@@ -4559,8 +4099,8 @@
       "summary": "Posts from this topic will be added to your daily email digest and your homepage feed. Posts from this topic will be added to your daily email digest and your homepage feed. Posts from this topic will be added to your daily email digest and your homepage feed.",
       "url": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T05:27:53.221535",
-      "fetched": "2026-10-16T05:27:53.221696",
+      "date": "2026-10-16T03:22:13.838550",
+      "fetched": "2026-10-16T03:22:13.838710",
       "systems": [
         "TECH"
       ],
@@ -4591,7 +4131,7 @@
       "url": "https://www.wired.com/story/uncanny-valley-podcast-we-got-hot-and-heavy-with-metas-muse-and-underwhelmed-by-apples-homeview/",
       "thumbnail": "https://media.wired.com/photos/6acff05076c17d102a553f12/master/pass/Uncanny-Valley-Meta-Sexting-Business-2296314651.jpg",
       "date": "2026-10-15T21:18:15+00:00",
-      "fetched": "2026-10-16T05:27:55.715994",
+      "fetched": "2026-10-16T03:22:15.146631",
       "systems": [
         "TECH"
       ],
@@ -4622,7 +4162,7 @@
       "url": "https://www.wired.com/story/ai-hacks-leave-a-mess-that-ai-companies-arent-cleaning-up/",
       "thumbnail": "https://media.wired.com/photos/6ad00a8917414371d605a797/master/pass/Model-Behavior-Cybersecurity-Experts-Discuss-AI-Threats-Business.jpg",
       "date": "2026-10-15T21:00:28+00:00",
-      "fetched": "2026-10-16T05:27:56.016760",
+      "fetched": "2026-10-16T03:22:15.450616",
       "systems": [
         "TECH"
       ],
@@ -4653,7 +4193,7 @@
       "url": "https://uxdesign.cc/the-synth-everyone-owned-and-few-could-program-a-lesson-for-ai-design-6f618ec2aea0?source=rss----138adf9c44c---4",
       "thumbnail": "https://cdn-images-1.medium.com/max/1024/1*VBnrM4huWLMjvsHgMb6uyQ.jpeg",
       "date": "2026-10-13T09:03:24+00:00",
-      "fetched": "2026-10-16T05:28:33.937597",
+      "fetched": "2026-10-16T03:22:56.614258",
       "systems": [
         "TECH"
       ],
@@ -4684,7 +4224,7 @@
       "url": "https://www.nngroup.com/articles/ai-assistant-context/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-09T17:00:00+00:00",
-      "fetched": "2026-10-16T05:28:21.771541",
+      "fetched": "2026-10-16T03:22:43.773806",
       "systems": [
         "TECH"
       ],
@@ -4715,7 +4255,7 @@
       "url": "https://www.nngroup.com/articles/context-libraries/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-09T17:00:00+00:00",
-      "fetched": "2026-10-16T05:28:22.072363",
+      "fetched": "2026-10-16T03:22:44.080450",
       "systems": [
         "TECH"
       ],
@@ -4746,7 +4286,7 @@
       "url": "https://www.nngroup.com/articles/disclose-ai-paced/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-25T17:00:00+00:00",
-      "fetched": "2026-10-16T05:28:23.275475",
+      "fetched": "2026-10-16T03:22:45.296760",
       "systems": [
         "TECH"
       ],
@@ -4769,37 +4309,6 @@
       "recommendation_reason": "歸類於「AI 工具/工作流」；來自品牌官方或專業媒體"
     },
     {
-      "id": "art_4cdfa2663e",
-      "channel": "rss",
-      "source": "TECH/Global·MITTechReview",
-      "brands": [],
-      "title": "AI labs are buying data from dead startups to train their models",
-      "summary": "When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pending amount (likely around…",
-      "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-13T09:00:00+00:00",
-      "fetched": "2026-10-16T05:28:00.922814",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 45,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 15,
-        "applicability": 8,
-        "source_trust": 11,
-        "recency": 8,
-        "novelty": 3
-      },
-      "recommendation_reason": "歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
       "id": "art_d0c74577d9",
       "channel": "rss",
       "source": "TECH/Design·NNGroup",
@@ -4809,7 +4318,7 @@
       "url": "https://www.nngroup.com/articles/big-ball-of-mud-ai/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-02T17:00:00+00:00",
-      "fetched": "2026-10-16T05:28:22.673952",
+      "fetched": "2026-10-16T03:22:44.690488",
       "systems": [
         "TECH"
       ],
@@ -4840,7 +4349,7 @@
       "url": "https://huggingface.co/blog/building-with-ml-intern",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-08T00:00:00+00:00",
-      "fetched": "2026-10-16T05:27:43.322782",
+      "fetched": "2026-10-16T03:22:03.681792",
       "systems": [
         "TECH"
       ],
@@ -4871,7 +4380,7 @@
       "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-07T13:21:03+00:00",
-      "fetched": "2026-10-16T05:27:43.623346",
+      "fetched": "2026-10-16T03:22:03.982594",
       "systems": [
         "TECH"
       ],
@@ -4902,7 +4411,7 @@
       "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-02T04:01:31+00:00",
-      "fetched": "2026-10-16T05:27:44.224597",
+      "fetched": "2026-10-16T03:22:04.590720",
       "systems": [
         "TECH"
       ],
@@ -4933,7 +4442,7 @@
       "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-30T20:01:45+00:00",
-      "fetched": "2026-10-16T05:27:38.581910",
+      "fetched": "2026-10-16T03:21:58.804544",
       "systems": [
         "TECH"
       ],
@@ -4964,7 +4473,7 @@
       "url": "https://deepmind.google/blog/introducing-synthid-bio/",
       "thumbnail": "https://lh3.googleusercontent.com/wNhpZFcXYLXFb6alIt0H5NRvEoso2ONZDhPKz6MYEcGltHPbDeHddzkvv5GXl3abW1PZ5ci1Y9lKoYOIjMuHLxATXfWp88-Al6eEmDENrpejIFeimw=w528-h297-n-nu-rw-lo",
       "date": "2026-09-30T15:03:07+00:00",
-      "fetched": "2026-10-16T05:27:38.882573",
+      "fetched": "2026-10-16T03:21:59.105841",
       "systems": [
         "TECH"
       ],
@@ -4995,7 +4504,7 @@
       "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-24T16:20:39+00:00",
-      "fetched": "2026-10-16T05:27:39.183212",
+      "fetched": "2026-10-16T03:21:59.410886",
       "systems": [
         "TECH"
       ],
@@ -5026,7 +4535,7 @@
       "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
       "thumbnail": "https://lh3.googleusercontent.com/CsJavGl89SJwjdXVDdaKtAEpLbqHa_nzOW89VTThwA8rgYr9Gf3CSiUWk18i5thA57k8zhwdwmvf3F2yagtJ-P1ag-9ppxsPXcUe99DRY9asIRP2yA=w528-h297-n-nu-rw-lo",
       "date": "2026-09-23T16:00:57+00:00",
-      "fetched": "2026-10-16T05:27:39.483808",
+      "fetched": "2026-10-16T03:21:59.716809",
       "systems": [
         "TECH"
       ],
@@ -5057,7 +4566,7 @@
       "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-23T15:25:14+00:00",
-      "fetched": "2026-10-16T05:27:39.784457",
+      "fetched": "2026-10-16T03:22:00.022493",
       "systems": [
         "TECH"
       ],
@@ -5088,7 +4597,7 @@
       "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-15T17:05:57+00:00",
-      "fetched": "2026-10-16T05:27:40.085173",
+      "fetched": "2026-10-16T03:22:00.326197",
       "systems": [
         "TECH"
       ],
@@ -5119,7 +4628,7 @@
       "url": "https://www.nngroup.com/articles/ai-functionality-study-guide/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-25T17:00:00+00:00",
-      "fetched": "2026-10-16T05:28:22.974716",
+      "fetched": "2026-10-16T03:22:44.993757",
       "systems": [
         "TECH"
       ],
@@ -5150,7 +4659,7 @@
       "url": "https://www.nngroup.com/articles/designing-ai-study-guide/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-18T17:00:00+00:00",
-      "fetched": "2026-10-16T05:28:23.576266",
+      "fetched": "2026-10-16T03:22:45.603286",
       "systems": [
         "TECH"
       ],
@@ -5181,7 +4690,7 @@
       "url": "https://www.nngroup.com/articles/3-agent-context-roles/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-18T17:00:00+00:00",
-      "fetched": "2026-10-16T05:28:23.877053",
+      "fetched": "2026-10-16T03:22:45.909818",
       "systems": [
         "TECH"
       ],
@@ -5212,7 +4721,7 @@
       "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
       "thumbnail": "https://lh3.googleusercontent.com/vOjFcTcdX2GCEB9yk-tJ7GAfyhTAMo-zW7scq3TrT9qk1mYw5qE0BdUqI8XQclMuUchZr7pYUFdVt3ZzrXc1NGFFJOqi7kIUX_QuAXZR7lkVzxjk=w528-h297-n-nu-rw-lo",
       "date": "2026-09-08T14:00:15+00:00",
-      "fetched": "2026-10-16T05:27:40.385924",
+      "fetched": "2026-10-16T03:22:00.629723",
       "systems": [
         "TECH"
       ],
@@ -5243,7 +4752,7 @@
       "url": "https://deepmind.google/blog/introducing-weathernext-3-our-most-advanced-and-accurate-global-weather-ai-model/",
       "thumbnail": "https://lh3.googleusercontent.com/I3SASQw4etgOOVbcWS0lr7J14HFqWcee_ln6M0TBOWlvVg2XYCi3kpz4eAi81cAkyq47YvgU1FLzAlaiCNMLcsx9sFA3ufURiSg76Yz8hVm1-u_fYEY=w528-h297-n-nu-rw-lo",
       "date": "2026-09-03T15:02:08+00:00",
-      "fetched": "2026-10-16T05:27:40.686548",
+      "fetched": "2026-10-16T03:22:00.930788",
       "systems": [
         "TECH"
       ],
@@ -5274,7 +4783,7 @@
       "url": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-02T16:24:24+00:00",
-      "fetched": "2026-10-16T05:27:40.987163",
+      "fetched": "2026-10-16T03:22:01.237171",
       "systems": [
         "TECH"
       ],
@@ -5305,7 +4814,7 @@
       "url": "https://huggingface.co/blog/open-tts-leaderboard",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-30T00:00:00+00:00",
-      "fetched": "2026-10-16T05:27:44.525198",
+      "fetched": "2026-10-16T03:22:04.894615",
       "systems": [
         "TECH"
       ],
@@ -5336,7 +4845,7 @@
       "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-29T13:07:00+00:00",
-      "fetched": "2026-10-16T05:27:44.825854",
+      "fetched": "2026-10-16T03:22:05.200227",
       "systems": [
         "TECH"
       ],
@@ -5367,7 +4876,7 @@
       "url": "https://huggingface.co/blog/Hcompany/holo4",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-28T09:44:05+00:00",
-      "fetched": "2026-10-16T05:27:45.126422",
+      "fetched": "2026-10-16T03:22:05.505253",
       "systems": [
         "TECH"
       ],
@@ -5398,7 +4907,7 @@
       "url": "https://huggingface.co/blog/rl-environments",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-28T00:00:00+00:00",
-      "fetched": "2026-10-16T05:27:45.427091",
+      "fetched": "2026-10-16T03:22:05.811169",
       "systems": [
         "TECH"
       ],
@@ -5429,7 +4938,7 @@
       "url": "https://huggingface.co/blog/evaleval-aisi",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-22T00:00:00+00:00",
-      "fetched": "2026-10-16T05:27:45.727720",
+      "fetched": "2026-10-16T03:22:06.116171",
       "systems": [
         "TECH"
       ],
@@ -5460,7 +4969,7 @@
       "url": "https://www.nngroup.com/articles/test-earlier-with-ai/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-11T17:00:00+00:00",
-      "fetched": "2026-10-16T05:28:24.478584",
+      "fetched": "2026-10-16T03:22:46.520013",
       "systems": [
         "TECH"
       ],
@@ -5491,7 +5000,7 @@
       "url": "https://www.nngroup.com/articles/ai-work-study-guide/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-04T17:00:00+00:00",
-      "fetched": "2026-10-16T05:28:25.080130",
+      "fetched": "2026-10-16T03:22:47.129118",
       "systems": [
         "TECH"
       ],
@@ -5522,7 +5031,7 @@
       "url": "https://www.nngroup.com/articles/ai-empathy-mapping/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-28T17:00:00+00:00",
-      "fetched": "2026-10-16T05:28:25.982407",
+      "fetched": "2026-10-16T03:22:48.049384",
       "systems": [
         "TECH"
       ],
@@ -5553,7 +5062,7 @@
       "url": "https://smashingmagazine.com/2026/08/eu-guidelines-ai-labelling/",
       "thumbnail": "http://files.smashing.media/articles/eu-guidelines-ai-labelling/eu-guidelines-ai-labelling.jpg",
       "date": "2026-08-13T10:00:00+00:00",
-      "fetched": "2026-10-16T05:28:29.101203",
+      "fetched": "2026-10-16T03:22:51.490563",
       "systems": [
         "TECH"
       ],
@@ -5580,11 +5089,11 @@
       "source": "TECH/Design·Smashing",
       "brands": [],
       "title": "Thinking Outside The Box: Digital Design In The AI Era",
-      "summary": "Many of the AI tools we interact with take the form of text boxes. But what if there was a different way to interact with AI? Oleksii Hrzhehorzhevskyi explores a different approach to creating a new AI assistant and how designers can navigate the field as AI continues to change it.",
+      "summary": "Many of the AI tools we interact with take the form of text boxes. But what if there was a different way to interact with AI? Oleksii Hrzhehorzhevskyi explores a different approach to creating a new AI assistant and how designers can navigate the field as AI continues to change i",
       "url": "https://smashingmagazine.com/2026/07/digital-design-ai-era/",
       "thumbnail": "http://files.smashing.media/articles/digital-design-ai-era/digital-design-ai-era.jpg",
       "date": "2026-07-28T10:00:00+00:00",
-      "fetched": "2026-10-16T05:28:30.605271",
+      "fetched": "2026-10-16T03:22:53.018569",
       "systems": [
         "TECH"
       ],
@@ -5615,7 +5124,7 @@
       "url": "https://uxdesign.cc/designing-for-ai-human-in-the-loop-means-making-sure-the-human-is-not-out-of-the-loop-e38826309c91?source=rss----138adf9c44c---4",
       "thumbnail": "https://cdn-images-1.medium.com/max/1024/1*HzHXq_X2ih01vbqVZYkmfw.png",
       "date": "2026-10-15T22:09:29+00:00",
-      "fetched": "2026-10-16T05:28:31.229692",
+      "fetched": "2026-10-16T03:22:53.867518",
       "systems": [
         "TECH"
       ],
@@ -5646,7 +5155,7 @@
       "url": "https://uxdesign.cc/nobody-feels-heard-by-a-report-c5a06d96bc39?source=rss----138adf9c44c---4",
       "thumbnail": "https://cdn-images-1.medium.com/max/2600/1*Ok5Itk7d8_4S-9NmG94wVQ.png",
       "date": "2026-10-15T22:02:52+00:00",
-      "fetched": "2026-10-16T05:28:31.831919",
+      "fetched": "2026-10-16T03:22:54.481029",
       "systems": [
         "TECH"
       ],
@@ -5677,7 +5186,7 @@
       "url": "https://uxdesign.cc/what-i-told-the-cfo-when-he-asked-why-design-matters-ceadb07c929e?source=rss----138adf9c44c---4",
       "thumbnail": "https://cdn-images-1.medium.com/max/1024/1*JIZUQJsUnSEFm_wNbadV0Q.png",
       "date": "2026-10-14T22:09:29+00:00",
-      "fetched": "2026-10-16T05:28:32.733947",
+      "fetched": "2026-10-16T03:22:55.394673",
       "systems": [
         "TECH"
       ],
@@ -5708,7 +5217,7 @@
       "url": "https://uxdesign.cc/how-getting-good-at-your-job-can-stop-you-getting-better-023b6e7637ec?source=rss----138adf9c44c---4",
       "thumbnail": "https://cdn-images-1.medium.com/max/1100/1*jULnucn4Py_Gko-irtzTwA.png",
       "date": "2026-10-14T08:53:49+00:00",
-      "fetched": "2026-10-16T05:28:33.035148",
+      "fetched": "2026-10-16T03:22:55.697324",
       "systems": [
         "TECH"
       ],
@@ -5735,11 +5244,11 @@
       "source": "TECH/Design·Smashing",
       "brands": [],
       "title": "Rethinking Data Visualisation: A UX Approach To Dashboards That Actually Drives Decisions",
-      "summary": "Data visualisation sits at the intersection of two disciplines that rarely talk to each other: data and design. Meriem Benhabiles explores what changes when you bring structured UX thinking to dashboards and data presentations, from the questions you ask before opening any tool to the decisions that determine whether an insight actually lands.",
+      "summary": "Data visualisation sits at the intersection of two disciplines that rarely talk to each other: data and design. Meriem Benhabiles explores what changes when you bring structured UX thinking to dashboards and data presentations, from the questions you ask before opening any tool t",
       "url": "https://smashingmagazine.com/2026/08/rethinking-data-visualisation-ux-approach-dashboards/",
       "thumbnail": "http://files.smashing.media/articles/rethinking-data-visualisation-ux-approach-dashboards/rethinking-data-visualisation-ux-approach-dashboards.jpg",
       "date": "2026-08-26T13:00:00+00:00",
-      "fetched": "2026-10-16T05:28:28.198819",
+      "fetched": "2026-10-16T03:22:50.571840",
       "systems": [
         "TECH"
       ],
@@ -5770,7 +5279,7 @@
       "url": "https://uxdesign.cc/taste-is-not-a-design-methodology-e02b37aea148?source=rss----138adf9c44c---4",
       "thumbnail": "https://cdn-images-1.medium.com/max/1024/1*1rtoPxLZAPWMMjnMRsDQcQ.png",
       "date": "2026-10-13T22:27:46+00:00",
-      "fetched": "2026-10-16T05:28:33.335900",
+      "fetched": "2026-10-16T03:22:56.001254",
       "systems": [
         "TECH"
       ],
@@ -5801,7 +5310,7 @@
       "url": "https://uxdesign.cc/how-to-talk-about-a-design-that-looks-worse-on-paper-da73da6d7b57?source=rss----138adf9c44c---4",
       "thumbnail": "https://cdn-images-1.medium.com/max/2600/1*Ir1ZRUV2-1dwTOlIwXOMrQ.jpeg",
       "date": "2026-10-13T22:26:58+00:00",
-      "fetched": "2026-10-16T05:28:33.636908",
+      "fetched": "2026-10-16T03:22:56.308538",
       "systems": [
         "TECH"
       ],
@@ -5832,7 +5341,7 @@
       "url": "https://www.wired.com/story/nightmare-scenario-zero-click-spyware-is-infecting-phones-via-targeted-ads/",
       "thumbnail": "https://media.wired.com/photos/6acfe05dd7a1c8d94ba22a02/master/pass/Security_SophisticatedZero-ClickSpywareFoundBeingDistr-ezgif.com-video-to-gif-converter.gif",
       "date": "2026-10-15T10:00:00+00:00",
-      "fetched": "2026-10-16T05:27:57.820778",
+      "fetched": "2026-10-16T03:22:17.282939",
       "systems": [
         "TECH"
       ],
@@ -5854,16 +5363,16 @@
       "recommendation_reason": "歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_d497b161c5",
+      "id": "art_c37b387716",
       "channel": "rss",
       "source": "TECH/Global·HackerNews",
       "brands": [],
-      "title": "Tesla makes cars that fly? [video]",
-      "summary": "Article URL: https://www.youtube.com/watch?v=7p5LxFdc-Qg Comments URL: https://news.ycombinator.com/item?id=50114077 Points: 12 # Comments: 4",
-      "url": "https://www.youtube.com/watch?v=7p5LxFdc-Qg",
+      "title": "Woman arrested after blocking delivery robot in Center City Philadelphia",
+      "summary": "Article URL: https://6abc.com/post/woman-arrested-blocking-delivery-robot-center-city-philadelphia-confrontation/19941323/ Comments URL: https://news.ycombinator.com/item?id=50112963 Points: 36 # Comments: 26",
+      "url": "https://6abc.com/post/woman-arrested-blocking-delivery-robot-center-city-philadelphia-confrontation/19941323/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-16T04:27:54+00:00",
-      "fetched": "2026-10-16T05:28:01.935850",
+      "date": "2026-10-16T02:04:26+00:00",
+      "fetched": "2026-10-16T03:22:25.499648",
       "systems": [
         "TECH"
       ],
@@ -5890,11 +5399,11 @@
       "source": "TECH/Global·HackerNews",
       "brands": [],
       "title": "Comparing Chromium Development at Google and Igalia",
-      "summary": "Without subscribers, LWN would simply not exist.  Please consider signing up for a subscription and helping\n       to keep LWN publishing. Sharon Yang is a Chromium developer who worked at Google on the browser\nand now works on it at Igalia.  On the final day of FOSSY 2026, she gave a\npresentation on her experiences with both of those companies, comparing and\ncontrasting the ways each one operates and how that affects work on the\ncode base.  She enjoyed working at Google and feels the same about",
+      "summary": "The primary benefit from subscribing to LWN is helping to keep us publishing, but, beyond that, subscribers get\n       immediate access to all site content and access to a number of extra\n       site features.  Please sign up today! Sharon Yang is a Chromium developer who worked at Google on the browser\nand now works on it at Igalia.  On the final day of FOSSY 2026, she gave a\npresentation on her experiences with both of those companies, comparing and\ncontrasting the ways each one operates and h",
       "url": "https://lwn.net/Articles/1094721/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-16T01:56:37+00:00",
-      "fetched": "2026-10-16T05:28:02.237584",
+      "fetched": "2026-10-16T03:22:25.805695",
       "systems": [
         "TECH"
       ],
@@ -5925,7 +5434,7 @@
       "url": "https://github.com/Saffsanity/sill",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-16T01:43:17+00:00",
-      "fetched": "2026-10-16T05:28:02.538605",
+      "fetched": "2026-10-16T03:22:26.111588",
       "systems": [
         "TECH"
       ],
@@ -5956,7 +5465,7 @@
       "url": "https://www.vlt.io/blog/competition-keeps-javascript-moving",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-16T00:52:40+00:00",
-      "fetched": "2026-10-16T05:28:02.839647",
+      "fetched": "2026-10-16T03:22:26.719016",
       "systems": [
         "TECH"
       ],
@@ -5987,7 +5496,7 @@
       "url": "https://ipinfo.io/blog/rpki-protects-70-internet-routes",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-16T00:52:35+00:00",
-      "fetched": "2026-10-16T05:28:03.140718",
+      "fetched": "2026-10-16T03:22:27.025095",
       "systems": [
         "TECH"
       ],
@@ -6014,11 +5523,11 @@
       "source": "TECH/Global·HackerNews",
       "brands": [],
       "title": "Business accounts will consent to Meta scraping their websites Starting Oct. 30",
-      "summary": "Article URL: https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/ Comments URL: https://news.ycombinator.com/item?id=50111852 Points: 125 # Comments: 53",
+      "summary": "Article URL: https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/ Comments URL: https://news.ycombinator.com/item?id=50111852 Points: 67 # Comments: 21",
       "url": "https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T23:37:42+00:00",
-      "fetched": "2026-10-16T05:28:03.441694",
+      "fetched": "2026-10-16T03:22:27.331010",
       "systems": [
         "TECH"
       ],
@@ -6049,7 +5558,7 @@
       "url": "https://github.com/johnrash/bebox",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T23:22:53+00:00",
-      "fetched": "2026-10-16T05:28:03.742572",
+      "fetched": "2026-10-16T03:22:27.632319",
       "systems": [
         "TECH"
       ],
@@ -6075,12 +5584,12 @@
       "channel": "rss",
       "source": "TECH/Global·HackerNews",
       "brands": [],
-      "title": "What I self-host",
-      "summary": "Article URL: https://viceconsole.fyi/blog/2026/10/10/what-i-self-host/ Comments URL: https://news.ycombinator.com/item?id=50109715 Points: 361 # Comments: 229",
+      "title": "What I Self-Host",
+      "summary": "I’ve always had a foot in the self-hosting world, long before it was called that. My freshman year of university, I ran a website from a Linux box underneath my bed. There was some downtime when my roommate got tired of the fan noise and turned it off. For several years I ran MythTV , then XBMC (later known as Kodi). Recently, I lived for a few years in India, where streaming services are extremely inexpensive by western standards. We had Netflix, Disney Plus (Hotstar in India), and Spotify. Aft",
       "url": "https://viceconsole.fyi/blog/2026/10/10/what-i-self-host/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T20:23:25+00:00",
-      "fetched": "2026-10-16T05:28:04.043555",
+      "fetched": "2026-10-16T03:22:27.935732",
       "systems": [
         "TECH"
       ],
@@ -6107,11 +5616,11 @@
       "source": "TECH/Global·HackerNews",
       "brands": [],
       "title": "New Withings Users Must Pay $99/Year for Apple Health Syncing",
-      "summary": "Article URL: https://support.withings.com/hc/en-us/community/posts/51887047154577-Unacceptable-Apple-Health-Sync-is-now-behind-a-99-year-paywall-for-new-accounts Comments URL: https://news.ycombinator.com/item?id=50109375 Points: 215 # Comments: 155",
+      "summary": "Article URL: https://support.withings.com/hc/en-us/community/posts/51887047154577-Unacceptable-Apple-Health-Sync-is-now-behind-a-99-year-paywall-for-new-accounts Comments URL: https://news.ycombinator.com/item?id=50109375 Points: 182 # Comments: 143",
       "url": "https://support.withings.com/hc/en-us/community/posts/51887047154577-Unacceptable-Apple-Health-Sync-is-now-behind-a-99-year-paywall-for-new-accounts",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T19:55:49+00:00",
-      "fetched": "2026-10-16T05:28:04.344640",
+      "fetched": "2026-10-16T03:22:28.237808",
       "systems": [
         "TECH"
       ],
@@ -6138,11 +5647,11 @@
       "source": "TECH/Global·HackerNews",
       "brands": [],
       "title": "Someone on Torrent Sites Kept Fucking with My Sonarr",
-      "summary": "Article URL: https://thereallo.dev/blog/someone-on-torrent-sites-kept-fucking-with-my-sonarr-setup Comments URL: https://news.ycombinator.com/item?id=50108872 Points: 282 # Comments: 133",
+      "summary": "Article URL: https://thereallo.dev/blog/someone-on-torrent-sites-kept-fucking-with-my-sonarr-setup Comments URL: https://news.ycombinator.com/item?id=50108872 Points: 259 # Comments: 118",
       "url": "https://thereallo.dev/blog/someone-on-torrent-sites-kept-fucking-with-my-sonarr-setup",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T19:21:38+00:00",
-      "fetched": "2026-10-16T05:28:04.645631",
+      "fetched": "2026-10-16T03:22:28.541611",
       "systems": [
         "TECH"
       ],
@@ -6173,7 +5682,7 @@
       "url": "https://www.eink.com/news/detail/EInk-Launches-Latest-Version-of-Color-ePaper-Platform-E-Ink-Kaleido-4",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T18:38:16+00:00",
-      "fetched": "2026-10-16T05:28:04.946717",
+      "fetched": "2026-10-16T03:22:28.847844",
       "systems": [
         "TECH"
       ],
@@ -6204,38 +5713,7 @@
       "url": "https://zachlandes.com/trolley-problem/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T16:24:52+00:00",
-      "fetched": "2026-10-16T05:28:05.549031",
-      "systems": [
-        "TECH"
-      ],
-      "types": [
-        "T01 前端與 API 基礎"
-      ],
-      "release_status": "Unverified",
-      "is_zhtw": false,
-      "lang": "en",
-      "score": 35,
-      "score_breakdown": {
-        "work_relevance": 0,
-        "domain_match": 10,
-        "applicability": 4,
-        "source_trust": 11,
-        "recency": 10,
-        "novelty": 0
-      },
-      "recommendation_reason": "歸類於「前端/API」；近 3 天發布"
-    },
-    {
-      "id": "art_28e2cf6a4f",
-      "channel": "rss",
-      "source": "TECH/Global·HackerNews",
-      "brands": [],
-      "title": "BIPM decides to stop adding leap seconds to UTC",
-      "summary": "The General Conference on Weights and Measures (CGPM), at its 28th meeting, recalling that the CGPM, when adopting Resolution 2 “On the definition of time scales” at its 26th meeting (2018), confirmed that Coordinated Universal Time (UTC) is a time scale produced by the International Bureau of Weights and Measures (BIPM) with the same rate as International Atomic Time (TAI), but differing from TAI only by an integral number of seconds, stated that UTC is the only recommended time scale for inter",
-      "url": "https://www.bipm.org/en/cgpm-2026/resolution-5",
-      "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-      "date": "2026-10-15T16:11:36+00:00",
-      "fetched": "2026-10-16T05:28:05.850016",
+      "fetched": "2026-10-16T03:22:29.460044",
       "systems": [
         "TECH"
       ],
@@ -6266,7 +5744,7 @@
       "url": "https://www.krea.ai/krea-3",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-15T16:04:05+00:00",
-      "fetched": "2026-10-16T05:28:06.151152",
+      "fetched": "2026-10-16T03:22:29.766615",
       "systems": [
         "TECH"
       ],
@@ -6297,7 +5775,7 @@
       "url": "https://www.nngroup.com/articles/empathy-mapping/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-10-02T17:00:00+00:00",
-      "fetched": "2026-10-16T05:28:22.373149",
+      "fetched": "2026-10-16T03:22:44.387148",
       "systems": [
         "TECH"
       ],
@@ -6328,7 +5806,7 @@
       "url": "https://www.nngroup.com/training/december/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-16T06:59:19+00:00",
-      "fetched": "2026-10-16T05:28:24.177863",
+      "fetched": "2026-10-16T03:22:46.213906",
       "systems": [
         "TECH"
       ],
@@ -6359,7 +5837,7 @@
       "url": "https://www.nngroup.com/training/nov-asia-au/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-03T04:50:49+00:00",
-      "fetched": "2026-10-16T05:28:25.380865",
+      "fetched": "2026-10-16T03:22:47.435885",
       "systems": [
         "TECH"
       ],
@@ -6390,7 +5868,7 @@
       "url": "https://www.nngroup.com/training/september/?utm_source=rss&utm_medium=feed&utm_campaign=rss-syndication",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-09-01T20:37:45+00:00",
-      "fetched": "2026-10-16T05:28:25.681635",
+      "fetched": "2026-10-16T03:22:47.742887",
       "systems": [
         "TECH"
       ],
@@ -6421,7 +5899,7 @@
       "url": "https://smashingmagazine.com/2026/09/desktop-wallpaper-calendars-october-2026/",
       "thumbnail": "http://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/0fdda8cd-7c63-4b61-86f6-f3188d312aaf/oct-20-magical-october-preview-opt.png",
       "date": "2026-09-30T13:30:00+00:00",
-      "fetched": "2026-10-16T05:28:26.694842",
+      "fetched": "2026-10-16T03:22:49.043394",
       "systems": [
         "TECH"
       ],
@@ -6448,11 +5926,11 @@
       "source": "TECH/Design·Smashing",
       "brands": [],
       "title": "A Practical Guide To Naming Things",
-      "summary": "A practical guide to naming UI components, with useful resources, naming conventions, and structures. You’ll find more [useful guides](https://www.smashingmagazine.com/category/guides/) and [online workshops](https://smashingconf.com/online-workshops) here on Smashing Magazine, so make sure to browse and explore.",
+      "summary": "A practical guide to naming UI components, with useful resources, naming conventions, and structures. You’ll find more [useful guides](https://www.smashingmagazine.com/category/guides/) and [online workshops](https://smashingconf.com/online-workshops) here on Smashing Magazine, s",
       "url": "https://smashingmagazine.com/2026/10/how-name-things/",
       "thumbnail": "http://files.smashing.media/articles/how-name-things-choose-accordion-icons/how-name-things.jpg",
       "date": "2026-10-06T10:00:00+00:00",
-      "fetched": "2026-10-16T05:28:26.394051",
+      "fetched": "2026-10-16T03:22:48.738119",
       "systems": [
         "TECH"
       ],
@@ -6483,7 +5961,7 @@
       "url": "https://smashingmagazine.com/2026/09/building-ux-roi-case-survives-boardroom/",
       "thumbnail": "http://files.smashing.media/articles/building-ux-roi-case-survives-boardroom/building-ux-roi-case-survives-boardroom.jpg",
       "date": "2026-09-11T13:00:00+00:00",
-      "fetched": "2026-10-16T05:28:27.296500",
+      "fetched": "2026-10-16T03:22:49.653369",
       "systems": [
         "TECH"
       ],
@@ -6514,7 +5992,7 @@
       "url": "https://smashingmagazine.com/2026/08/desktop-wallpaper-calendars-september-2026/",
       "thumbnail": "http://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/55161fb1-16dc-47e1-a118-5ecd0f0a3fbb/sept-17-autumn-rains-preview-opt.png",
       "date": "2026-08-31T11:00:00+00:00",
-      "fetched": "2026-10-16T05:28:27.898035",
+      "fetched": "2026-10-16T03:22:50.265873",
       "systems": [
         "TECH"
       ],
@@ -6541,11 +6019,11 @@
       "source": "TECH/Design·Smashing",
       "brands": [],
       "title": "Why Your Website Should Never Stop Changing",
-      "summary": "Every website peaks on launch day and slowly drifts from there, not because it breaks, but because nobody has time to keep it current. Autonomous websites, continuously optimized by agents after launch, aim to change that. Pierre Burgy shares what they learned building for full website autonomy and the deeper design problem they uncovered along the way.",
+      "summary": "Every website peaks on launch day and slowly drifts from there, not because it breaks, but because nobody has time to keep it current. Autonomous websites, continuously optimized by agents after launch, aim to change that. Pierre Burgy shares what they learned building for full w",
       "url": "https://smashingmagazine.com/2026/08/why-website-should-never-stop-changing/",
       "thumbnail": "http://files.smashing.media/articles/why-website-should-never-stop-changing/why-website-should-never-stop-changing.jpg",
       "date": "2026-08-25T08:00:00+00:00",
-      "fetched": "2026-10-16T05:28:28.499607",
+      "fetched": "2026-10-16T03:22:50.878535",
       "systems": [
         "TECH"
       ],
@@ -6572,11 +6050,11 @@
       "source": "TECH/Design·Smashing",
       "brands": [],
       "title": "Building Tactile UX: Honoring Intentional Design With Lottie",
-      "summary": "When tasked with building a highly interactive, tactile web experience, the architecture must serve the art direction. In this article, Alexey Kopytin explains their architectural rationale for building a digital stress-relief squeeze toy game using Lottie animations, DOM events, and distance-based math to maintain absolute control over their designers’ intentional motion.",
+      "summary": "When tasked with building a highly interactive, tactile web experience, the architecture must serve the art direction. In this article, Alexey Kopytin explains their architectural rationale for building a digital stress-relief squeeze toy game using Lottie animations, DOM events,",
       "url": "https://smashingmagazine.com/2026/08/building-tactile-ux-honoring-intentional-design-lottie/",
       "thumbnail": "http://files.smashing.media/articles/building-tactile-ux-honoring-intentional-design-lottie/building-tactile-ux-honoring-intentional-design-lottie.jpg",
       "date": "2026-08-11T10:00:00+00:00",
-      "fetched": "2026-10-16T05:28:29.402103",
+      "fetched": "2026-10-16T03:22:51.797698",
       "systems": [
         "TECH"
       ],
@@ -6607,7 +6085,7 @@
       "url": "https://smashingmagazine.com/2026/07/desktop-wallpaper-calendars-august-2026/",
       "thumbnail": "http://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/9d979d10-f87f-4935-828a-de2ecd2de311/aug-17-happiness-happens-in-august-preview.png",
       "date": "2026-07-31T08:00:00+00:00",
-      "fetched": "2026-10-16T05:28:30.003762",
+      "fetched": "2026-10-16T03:22:52.405686",
       "systems": [
         "TECH"
       ],
@@ -6634,11 +6112,11 @@
       "source": "TECH/Design·Smashing",
       "brands": [],
       "title": "Stop Treating CSS Container Queries Like Traditional Media Queries",
-      "summary": "Despite broad browser support, container queries remain surprisingly underused and frequently misunderstood. Let’s look at how they differ from media queries, when to reach for each, and how container queries help reusable components respond naturally to the contexts in which they appear. - CSS - Tools - Techniques",
+      "summary": "Despite broad browser support, container queries remain surprisingly underused and frequently misunderstood. Let’s look at how they differ from media queries, when to reach for each, and how container queries help reusable components respond naturally to the contexts in which the",
       "url": "https://smashingmagazine.com/2026/09/stop-treating-css-container-queries-traditional-media-queries/",
       "thumbnail": "http://files.smashing.media/articles/stop-treating-css-container-queries-traditional-media-queries/stop-treating-css-container-queries-traditional-media-queries.jpg",
       "date": "2026-09-16T13:00:00+00:00",
-      "fetched": "2026-10-16T05:28:26.995742",
+      "fetched": "2026-10-16T03:22:49.349453",
       "systems": [
         "TECH"
       ],
@@ -6669,7 +6147,7 @@
       "url": "https://smashingmagazine.com/2026/08/timing-charts-blueprint-smil-animations/",
       "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978",
       "date": "2026-08-20T13:00:00+00:00",
-      "fetched": "2026-10-16T05:28:28.800453",
+      "fetched": "2026-10-16T03:22:51.185391",
       "systems": [
         "TECH"
       ],
@@ -6700,7 +6178,7 @@
       "url": "https://smashingmagazine.com/2026/08/how-baseline-can-help-ship-less-javascript/",
       "thumbnail": "http://files.smashing.media/articles/how-baseline-can-help-ship-less-javascript/how-baseline-can-help-ship-less-javascript.jpg",
       "date": "2026-08-07T13:00:00+00:00",
-      "fetched": "2026-10-16T05:28:29.702898",
+      "fetched": "2026-10-16T03:22:52.103361",
       "systems": [
         "TECH"
       ],

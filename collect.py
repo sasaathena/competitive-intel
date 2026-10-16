@@ -711,6 +711,49 @@ def generate_recommendation_reason(
 
 
 # ──────────────────────────────────────────
+# 關鍵字排除清單（Phase B+ 內容雜訊過濾）
+#   UIUX 設計師不關心的常見雜訊：純財經、選舉政治、加密貨幣、
+#   汽車銷售、體育、天災等。只匹配嚴格 phrase 避免誤殺產品類文章
+#   （不加 "stock"/"earnings"/"upgrade" 等單獨詞）。
+# ──────────────────────────────────────────
+
+EXCLUDE_KEYWORDS: list[str] = [
+    # ── 金融雜訊 ───────────────────────────
+    "股價", "股息", "配息", "漲停", "跌停", "盤後", "盤勢",
+    "法人買超", "法人賣超", "外資賣超", "外資買超",
+    "評等調整", "評等上調", "評等下調", "券商調評", "分析師目標價",
+    "stock price", "stock rating", "stock upgrade", "stock downgrade",
+    "upgraded by", "downgraded by", "price target", "analyst target",
+    "earnings beat", "earnings miss", "quarterly earnings",
+    "wall street", "nyse:", "nasdaq:",
+    # ── 政治選舉 ───────────────────────────
+    "選舉", "立委", "總統大選", "候選人", "投票率", "政黨",
+    "election", "senate ", "congress ", "president trump", "president biden",
+    "white house",
+    # ── 加密貨幣 ───────────────────────────
+    "加密貨幣", "比特幣", "以太幣", "區塊鏈炒作",
+    "crypto", "bitcoin", "ethereum", " nft ", "nft ",
+    "polymarket",
+    # ── 汽車 / 體育 / 天災 ──────────────────
+    "奧運", "冠軍賽", "世足", "nba finals",
+    "roadster", "電動車銷量",
+    "颱風", "地震", "ukraine war", "russia invasion",
+    "spacex",
+]
+
+
+def should_exclude(title: str, summary: str) -> str | None:
+    """
+    回傳命中的 keyword（表示應排除），否則回 None。
+    """
+    text = (" " + title + " " + summary + " ").lower()
+    for kw in EXCLUDE_KEYWORDS:
+        if kw.lower() in text:
+            return kw
+    return None
+
+
+# ──────────────────────────────────────────
 # 產品更新狀態（PRD §5.4）
 #   Announced / Beta / GA / Deprecated / Unverified
 #   偵測順序：Deprecated > Beta > GA > Announced，皆未命中 → Unverified
@@ -957,6 +1000,10 @@ def parse_rss_item(
     if brand_hits == 0 and not is_tech_source:
         return None
 
+    # 關鍵字排除：金融 / 政治 / 加密幣 / 體育等 UIUX 設計師不關心的雜訊
+    if should_exclude(title, desc):
+        return None
+
     systems = classify_systems(brands, combined, source_name)
     if not systems:
         return None
@@ -1131,6 +1178,9 @@ def collect_threads() -> list[dict]:
         brands = brand_in_text(combined)
         if not brands:
             # Threads 屬品牌帳號抓取，未命中任一追蹤品牌即略過
+            continue
+
+        if should_exclude(title, desc):
             continue
 
         systems = classify_systems(brands, combined, source_name=f"Threads/@{account}")

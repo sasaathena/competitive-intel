@@ -658,6 +658,7 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
   color: var(--text);
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -667,6 +668,7 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
   color: var(--text2);
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -769,6 +771,38 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
 .df-teal  { background: #4C7C8E }
 .df-fbm   { background: #B5603D }
 .dist-num { font-size: 11px; font-family: var(--mono); color: var(--text3); width: 26px; text-align: right }
+
+/* ── Daily Headline（Phase B+3 今日主題一句摘要）─────────── */
+.daily-headline {
+  background: linear-gradient(135deg, var(--accent-soft) 0%, var(--bg2) 100%);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--r2);
+  padding: 18px 22px;
+  margin-bottom: 24px;
+}
+.daily-headline-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.daily-headline-text {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--text);
+  letter-spacing: -.01em;
+  font-style: italic;
+}
+.daily-headline-text strong {
+  color: var(--accent);
+  font-weight: 600;
+  font-style: normal;
+}
 
 /* ── Daily Brief（PRD §9）────────────────────────────────────── */
 .daily-section { margin-bottom: 32px }
@@ -890,6 +924,7 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
   margin-bottom: 8px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1130,6 +1165,7 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
   font-weight: 500;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1425,6 +1461,11 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
 
       <!-- Daily Brief View -->
       <div id="daily-view" style="display:none">
+        <div class="daily-headline" id="daily-headline-wrap" style="display:none">
+          <div class="daily-headline-label" id="daily-headline-label">今日主題</div>
+          <div class="daily-headline-text" id="daily-headline-text">—</div>
+        </div>
+
         <section class="daily-section">
           <h2>今日總覽</h2>
           <div class="ov-cards">
@@ -2267,12 +2308,83 @@ function jumpToCombo(sys, type) {
   syncURL();
 }
 
+// ── Daily Headline（Phase B+3）─────────────────────────────
+function computeDailyHeadline() {
+  const now = Date.now();
+  const w48h = 2 * 86400 * 1000;
+  const w7d  = 7 * 86400 * 1000;
+  let pool = all.filter(a => {
+    if (!a.date) return false;
+    return (now - new Date(a.date)) < w48h && (+a.score || 0) >= 55;
+  });
+  let span = '48h';
+  if (pool.length < 3) {
+    pool = all.filter(a => a.date && (now - new Date(a.date)) < w7d && (+a.score || 0) >= 55);
+    span = '7d';
+  }
+  if (pool.length < 3) return null;
+  return { pool, span };
+}
+
+function dailyHeadlineText(pool, span) {
+  const brandCount = {}, typeCount = {};
+  for (const a of pool) {
+    for (const b of (a.brands || [])) brandCount[b] = (brandCount[b] || 0) + 1;
+    for (const t of (a.types   || [])) typeCount[t]  = (typeCount[t]  || 0) + 1;
+  }
+  const topBrands = Object.entries(brandCount).sort((a,b) => b[1]-a[1]);
+  const topTypes  = Object.entries(typeCount).sort((a,b) => b[1]-a[1]);
+  const [b1, c1] = topBrands[0] || [null, 0];
+  const [b2, c2] = topBrands[1] || [null, 0];
+  const [b3, c3] = topBrands[2] || [null, 0];
+  const [t1, tc1] = topTypes[0] || [null, 0];
+
+  const spanLabel = span === '7d' ? '近 7 日' : '今日';
+
+  // Rule 1: brand dominant
+  if (b1 && c1 >= 3 && c1 > 2 * (c2 || 0)) {
+    const brandTypes = {};
+    for (const a of pool) {
+      if (!(a.brands || []).includes(b1)) continue;
+      for (const t of (a.types || [])) brandTypes[t] = (brandTypes[t] || 0) + 1;
+    }
+    const top = Object.entries(brandTypes).sort((a,b) => b[1]-a[1])[0];
+    const typePart = top ? `，以「${esc(typeLabel(top[0]))}」為主` : '';
+    return `${spanLabel} <strong>${esc(b1)}</strong> 動作最多（${c1} 篇優先閱讀）${typePart}`;
+  }
+  // Rule 2: type dominant
+  if (t1 && tc1 >= 5) {
+    const brandList = topBrands.filter(([b]) => b).slice(0, 3).map(([b]) => b);
+    const brandPart = brandList.length ? `，涵蓋 ${brandList.map(esc).join('、')} 等品牌` : '';
+    return `${spanLabel}主軸：「<strong>${esc(typeLabel(t1))}</strong>」（${tc1} 篇）${brandPart}`;
+  }
+  // Rule 3: multi-brand hot
+  if (b1 && c1 >= 2 && b2 && c2 >= 2) {
+    const parts = [[b1,c1],[b2,c2],[b3,c3]].filter(x => x[0] && x[1] >= 2)
+      .map(([b,c]) => `<strong>${esc(b)}</strong> (${c})`).join('、');
+    return `${spanLabel}多家競品活躍：${parts}`;
+  }
+  // Fallback
+  return `${spanLabel}共 ${pool.length} 篇優先閱讀，無顯著主題`;
+}
+
 // ── Daily Brief render（PRD §9）──────────────────────────────
 function renderDaily() {
   const now = new Date();
   const dateStr = now.toLocaleDateString('zh-TW', { year:'numeric', month:'2-digit', day:'2-digit', weekday:'short' });
   setText('ov-date', dateStr);
   setText('page-heading', '每日情報 · ' + dateStr);
+
+  // 今日主題一句摘要
+  const headline = computeDailyHeadline();
+  const headlineWrap = document.getElementById('daily-headline-wrap');
+  if (headline) {
+    headlineWrap.style.display = '';
+    setText('daily-headline-label', headline.span === '7d' ? '近 7 日主題' : '今日主題');
+    document.getElementById('daily-headline-text').innerHTML = dailyHeadlineText(headline.pool, headline.span);
+  } else {
+    headlineWrap.style.display = 'none';
+  }
 
   const dayMs = 86400 * 1000;
   const today24h = all.filter(a => a.date && (now - new Date(a.date)) < dayMs).length;
@@ -2543,22 +2655,14 @@ function openCardDetail(id) {
   const lang = langOf(a);
   const langLbl = LANG_LABEL[lang] || 'EN';
 
-  // 事實摘要 vs AI 推論分開呈現（PRD §11.1 要求）
+  // 事實摘要（原文客觀內容）
   const factHtml = a.summary
     ? `<p>${esc(a.summary)}</p>`
     : '<span class="placeholder">無原文摘要</span>';
-  const aiAnalysisHtml = a.ai_analysis
-    ? `<p>${esc(a.ai_analysis)}</p>`
-    : '<span class="placeholder">尚未產生 AI 分析（Phase B 導入）</span>';
-  const uxInsightHtml = a.ux_insight
-    ? `<p>${esc(a.ux_insight)}</p>`
-    : '<span class="placeholder">尚未產生 UI/UX 啟發（Phase B 導入）</span>';
-  const workRelHtml = a.work_relevance
-    ? `<p>${esc(a.work_relevance)}</p>`
-    : '<span class="placeholder">尚未產生工作關聯（Phase B 導入）</span>';
+  // 推薦理由（規則式產生）
   const reasonHtml = a.recommendation_reason
     ? `<p>${esc(a.recommendation_reason)}</p>`
-    : '<span class="placeholder">尚未產生推薦理由（Phase B 導入 100 分制推薦）</span>';
+    : '<span class="placeholder">尚無推薦理由（本篇分數過低或資料不足）</span>';
 
   const d = document.getElementById('drawer');
   d.innerHTML = `
@@ -2586,18 +2690,6 @@ function openCardDetail(id) {
       <div class="drawer-section">
         <h5>事實摘要</h5>
         ${factHtml}
-      </div>
-      <div class="drawer-section">
-        <h5>AI 分析</h5>
-        ${aiAnalysisHtml}
-      </div>
-      <div class="drawer-section">
-        <h5>UI/UX 啟發</h5>
-        ${uxInsightHtml}
-      </div>
-      <div class="drawer-section">
-        <h5>工作關聯</h5>
-        ${workRelHtml}
       </div>
       <div class="drawer-section">
         <h5>推薦理由</h5>
