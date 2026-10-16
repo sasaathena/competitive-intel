@@ -903,16 +903,16 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
 /* ── Score Breakdown in Drawer ─────────────────────────────── */
 .score-bar-row {
   display: grid;
-  grid-template-columns: 110px 1fr 44px;
+  grid-template-columns: 92px 1fr 68px;
   gap: 10px;
   align-items: center;
   font-size: 11.5px;
   margin-bottom: 7px;
 }
-.score-bar-label { color: var(--text2); font-family: var(--mono); letter-spacing: .03em }
+.score-bar-label { color: var(--text2); font-family: var(--mono); letter-spacing: .03em; white-space: nowrap }
 .score-bar-track { height: 5px; background: var(--sand-200); border-radius: 3px; overflow: hidden }
 .score-bar-fill  { height: 100%; background: var(--accent); border-radius: 3px; transition: width .5s ease }
-.score-bar-val   { font-family: var(--mono); color: var(--text3); text-align: right }
+.score-bar-val   { font-family: var(--mono); color: var(--text3); text-align: right; white-space: nowrap }
 .score-total {
   display: flex;
   align-items: baseline;
@@ -1783,6 +1783,7 @@ function belongsToView(a) {
 }
 
 function render() {
+  toggleDailyChrome();  // 確保傳統視圖元素在 daily view 下保持隱藏（避免 loadData 的 show() 殘留）
   if (view === 'daily') { renderDaily(); return; }
 
   let items = all.filter(a => {
