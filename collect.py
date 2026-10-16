@@ -31,7 +31,7 @@ import re
 import json
 import time
 import hashlib
-from datetime import datetime
+from datetime import datetime, timedelta
 from email.utils import parsedate_to_datetime
 from urllib.parse import urlparse
 
@@ -1333,6 +1333,96 @@ def enrich_summaries(articles: list[dict], limit: int = 100, threshold: int = 18
 
 
 # ──────────────────────────────────────────
+# Weekly Summary（PRD §FR-07 每週趨勢彙整）
+# ──────────────────────────────────────────
+
+def build_weekly_summary(articles: list[dict], days: int = 7) -> dict:
+    """
+    聚合最近 N 天（預設 7）的情報，產出每週趨勢摘要。
+    PRD §FR-07：多則情報或明確來源支持才稱趨勢；單一事件不當趨勢。
+    """
+    from collections import Counter
+    now = datetime.utcnow()
+    cutoff = now - timedelta(days=days)
+
+    recent = []
+    for a in articles:
+        try:
+            d = datetime.fromisoformat((a.get("date") or "").replace("Z", "+00:00"))
+            if d.tzinfo:
+                d = d.replace(tzinfo=None)
+            if d >= cutoff:
+                recent.append(a)
+        except Exception:
+            continue
+
+    # 熱門品牌（最少 2 篇才列入 → 符合 PRD「單一事件不當趨勢」）
+    brand_counter: Counter = Counter()
+    for a in recent:
+        for b in a.get("brands", []):
+            brand_counter[b] += 1
+    top_brands = [{"brand": b, "count": c} for b, c in brand_counter.most_common(10) if c >= 2]
+
+    # 熱門類別（PRD 6 類）
+    type_counter: Counter = Counter()
+    for a in recent:
+        for t in a.get("types", []):
+            type_counter[t] += 1
+    top_types = [{"type": t, "count": c} for t, c in type_counter.most_common()]
+
+    # 系統分布
+    sys_counter: Counter = Counter()
+    for a in recent:
+        for s in a.get("systems", []):
+            sys_counter[s] += 1
+
+    # 熱門主題組合（系統 × 類別）—— 兩兩交叉組合，count ≥ 2 才列
+    combo_counter: Counter = Counter()
+    for a in recent:
+        systems_ = [s for s in a.get("systems", []) if s != "TECH"] or ["TECH"]
+        for s in systems_:
+            for t in a.get("types", []):
+                combo_counter[(s, t)] += 1
+    top_combos = [
+        {"system": s, "type": t, "count": c}
+        for (s, t), c in combo_counter.most_common(10)
+        if c >= 2
+    ]
+
+    # TOP 5 文章（分數排序）
+    top_articles = sorted(recent, key=lambda x: x.get("score", 0), reverse=True)[:5]
+    top_article_meta = [
+        {
+            "id":    a["id"],
+            "title": a.get("title", ""),
+            "score": a.get("score", 0),
+            "source": a.get("source", ""),
+            "brands": a.get("brands", []),
+            "types":  a.get("types", []),
+            "date":   a.get("date", ""),
+            "url":    a.get("url", ""),
+            "recommendation_reason": a.get("recommendation_reason", ""),
+        }
+        for a in top_articles
+    ]
+
+    # 優先文章數（≥ 75）
+    priority_count = sum(1 for a in recent if (a.get("score", 0) or 0) >= 75)
+
+    return {
+        "generated_at": now.isoformat(),
+        "window_days":  days,
+        "total":        len(recent),
+        "priority_count": priority_count,
+        "by_system":    dict(sys_counter),
+        "top_brands":   top_brands,
+        "top_types":    top_types,
+        "top_combos":   top_combos,
+        "top_articles": top_article_meta,
+    }
+
+
+# ──────────────────────────────────────────
 # 主流程
 # ──────────────────────────────────────────
 
@@ -1406,6 +1496,13 @@ def collect_all_intelligence():
     os.makedirs("data", exist_ok=True)
     with open("data/articles.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
+
+    # 每週趨勢彙整
+    weekly = build_weekly_summary(all_articles, days=7)
+    with open("data/weekly.json", "w", encoding="utf-8") as f:
+        json.dump(weekly, f, ensure_ascii=False, indent=2)
+    print(f"   每週趨勢: {weekly['total']} 篇 / 熱門品牌 {len(weekly['top_brands'])} / 主題組合 {len(weekly['top_combos'])}")
+    print(f"   輸出   : data/weekly.json")
 
     print(f"\n==== 🎉 收集完成 ====")
     print(f"   總計   : {len(all_articles)} 篇")
