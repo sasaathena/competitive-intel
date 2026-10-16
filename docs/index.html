@@ -99,7 +99,15 @@ input  { font-family: var(--sans) }
   top: 0;
   height: 100vh;
   overflow-y: auto;
-  transition: background .25s ease;
+  overflow-x: hidden;
+  transition: width .28s cubic-bezier(.4,0,.2,1),
+              opacity .18s ease,
+              background .25s ease;
+}
+body.sidebar-collapsed .sidebar {
+  width: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 .sidebar-top {
   padding: 24px 22px 18px;
@@ -176,6 +184,9 @@ input  { font-family: var(--sans) }
 .nd-glo   { background: #8FB8D6 }
 .nd-tw    { background: #F0D28C }
 .nd-uxs   { background: #D5B48A }
+.nd-daily { background: #BFD4A3 }
+.nd-weekly{ background: #B2D8CC }
+.nd-bm    { background: #F0D28C }
 .nav-count {
   margin-left: auto;
   font-size: 11px;
@@ -223,6 +234,19 @@ input  { font-family: var(--sans) }
   top: 0;
   z-index: 40;
 }
+.sidebar-toggle {
+  width: 32px; height: 32px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text2);
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all .15s;
+  flex-shrink: 0;
+}
+.sidebar-toggle:hover { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
 .view-tabs {
   display: flex;
   gap: 4px;
@@ -886,6 +910,60 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
   border-radius: var(--r2);
 }
 
+/* ── Weekly Trend ────────────────────────────────────────────── */
+.brand-bars { display: flex; flex-direction: column; gap: 2px; }
+.brand-bar-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 50px;
+  gap: 12px;
+  align-items: center;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: var(--r);
+  transition: background .15s;
+}
+.brand-bar-row:hover { background: var(--bg3); }
+.brand-bar-label {
+  color: var(--text);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.brand-bar-track { height: 6px; background: var(--sand-200); border-radius: 3px; overflow: hidden; }
+.brand-bar-fill { height: 100%; background: var(--accent); border-radius: 3px; transition: width .6s ease; }
+.brand-bar-val { font-family: var(--mono); color: var(--text3); text-align: right; font-size: 12px; }
+
+.combo-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.combo-item {
+  padding: 14px 16px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  cursor: pointer;
+  transition: border-color .15s, transform .15s;
+}
+.combo-item:hover { border-color: var(--accent); transform: translateY(-2px); }
+.combo-item-tags {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.combo-item-tags .thumb-badge {
+  position: static;
+  font-size: 10px;
+  padding: 3px 8px;
+}
+.combo-item-count {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  color: var(--text3);
+  letter-spacing: .03em;
+}
+
 /* ── Recommendation Score Tier（PRD §6.2）──────────────────── */
 .card-tier {
   font-family: var(--mono);
@@ -961,6 +1039,140 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
   border-radius: 10px;
   background: var(--bg3);
   letter-spacing: .03em;
+}
+
+/* ── Preview Drawer（本週趨勢用的過濾預覽，位於文章詳情抽屜之下）─ */
+.preview-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(28,26,20,.32);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+  z-index: 84;
+}
+.preview-overlay.show { opacity: 1; pointer-events: auto }
+.preview-drawer {
+  position: fixed;
+  top: 0; right: 0;
+  width: min(420px, 92vw);
+  height: 100vh;
+  background: var(--bg2);
+  border-left: 1px solid var(--border);
+  box-shadow: -6px 0 20px rgba(0,0,0,.06);
+  transform: translateX(100%);
+  transition: transform .26s cubic-bezier(.4,0,.2,1);
+  z-index: 85;
+  display: flex;
+  flex-direction: column;
+}
+.preview-drawer.show { transform: translateX(0) }
+
+.preview-head {
+  padding: 18px 22px 14px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.preview-head-main { flex: 1; min-width: 0 }
+.preview-eyebrow {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 6px;
+  display: flex; align-items: center; gap: 8px;
+}
+.preview-title {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.preview-title .ds-count {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--text3);
+  letter-spacing: .04em;
+}
+.preview-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 6px 10px 20px;
+}
+.preview-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: var(--r);
+  cursor: pointer;
+  transition: background .15s;
+}
+.preview-item:hover { background: var(--bg3) }
+.preview-item + .preview-item {
+  border-top: 1px solid var(--border);
+  margin-top: 0;
+  padding-top: 12px;
+}
+.preview-item-title {
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--text);
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.preview-item-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 11px;
+  color: var(--text3);
+  font-family: var(--mono);
+  flex-wrap: wrap;
+}
+.preview-item-meta .sep { opacity: .5 }
+.preview-empty {
+  padding: 48px 20px;
+  text-align: center;
+  font-style: italic;
+  color: var(--text3);
+}
+.preview-foot {
+  padding: 12px 20px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 10px;
+  background: var(--bg2);
+}
+.preview-foot .btn-view-all {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: var(--r);
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  color: var(--text2);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  transition: all .15s;
+}
+.preview-foot .btn-view-all:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
 }
 
 /* ── Card Detail Drawer ─────────────────────────────────────── */
@@ -1191,11 +1403,9 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
 
     <!-- Topbar -->
     <div class="topbar">
-      <div class="view-tabs" role="tablist" aria-label="頂層分區">
-        <button class="view-tab active" id="tab-daily" onclick="setView('daily')" role="tab">每日情報</button>
-        <button class="view-tab" id="tab-product" onclick="setView('product')" role="tab">產品領域</button>
-        <button class="view-tab" id="tab-tech" onclick="setView('tech')" role="tab">科技趨勢</button>
-      </div>
+      <button class="sidebar-toggle" id="sidebar-toggle" onclick="toggleSidebar()" title="切換側欄" aria-label="切換側欄">
+        <span id="sidebar-toggle-icon">☰</span>
+      </button>
       <div class="page-heading" id="page-heading">全部情報</div>
       <div class="search-wrap">
         <span class="search-icon">⌕</span>
@@ -1257,6 +1467,46 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
         </section>
       </div>
 
+      <!-- Weekly Trend View -->
+      <div id="weekly-view" style="display:none">
+        <section class="daily-section">
+          <h2>本週總覽 <span class="ds-count" id="weekly-window-label"></span></h2>
+          <div class="ov-cards">
+            <div class="ov-card ov-date">
+              <div class="ov-card-label">窗口</div>
+              <div class="ov-card-val" id="w-window">近 7 日</div>
+            </div>
+            <div class="ov-card">
+              <div class="ov-card-label">本週新增</div>
+              <div class="ov-card-val" id="w-total">0</div>
+            </div>
+            <div class="ov-card ov-priority">
+              <div class="ov-card-label">優先 ≥75</div>
+              <div class="ov-card-val" id="w-prio">0</div>
+            </div>
+            <div class="ov-card ov-topcat">
+              <div class="ov-card-label">熱門品牌</div>
+              <div class="ov-card-val" id="w-topbrand">—</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="daily-section">
+          <h2>熱門品牌 <span class="ds-count" id="w-brand-count"></span></h2>
+          <div class="brand-bars" id="w-brands"></div>
+        </section>
+
+        <section class="daily-section">
+          <h2>主題組合 <span class="ds-count">系統 × 類別，≥2 篇才列入</span></h2>
+          <div class="combo-list" id="w-combos"></div>
+        </section>
+
+        <section class="daily-section">
+          <h2>本週 TOP 5</h2>
+          <div class="featured-cards" id="w-top-cards"></div>
+        </section>
+      </div>
+
       <!-- Metrics -->
       <div class="metrics-row" id="metrics-row" style="display:none"></div>
 
@@ -1298,6 +1548,10 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
   </div><!-- .main -->
 </div><!-- .app -->
 
+<!-- Preview Drawer（本週趨勢的過濾預覽）-->
+<div class="preview-overlay" id="preview-overlay" onclick="closePreview()"></div>
+<aside class="preview-drawer" id="preview-drawer" aria-hidden="true" aria-label="過濾預覽"></aside>
+
 <!-- Card Detail Drawer -->
 <div class="drawer-overlay" id="drawer-overlay" onclick="closeDrawer()"></div>
 <aside class="drawer" id="drawer" aria-hidden="true" aria-label="情報詳情"></aside>
@@ -1308,7 +1562,8 @@ body.view-tech .mg-letter { color: rgba(76, 47, 10, .72); }
 <script>
 // ── State ──────────────────────────────────────────────────────
 let all = [];
-let view          = 'daily';      // 'daily' | 'product' | 'tech'
+let weekly = null;                // 每週趨勢資料（lazy load）
+let view          = 'daily';      // 'daily' | 'weekly' | 'product' | 'tech'
 let filterSys     = '';           // Product: '', 'CRM', 'PMS', 'FBM'
 let filterSubCat  = '';           // Tech:    '', 'AI', 'Global', 'TW', 'Design'
 let filterType    = '';           // 內容類型 (八分類)
@@ -1435,7 +1690,7 @@ function syncURL() {
 function loadURL() {
   const p = new URLSearchParams(location.search);
   const v = p.get('view');
-  if (v === 'tech' || v === 'product' || v === 'daily') view = v;
+  if (['tech','product','daily','weekly','bookmarks'].includes(v)) view = v;
   filterSys    = p.get('sys')   || '';
   filterSubCat = p.get('sub')   || '';
   filterType   = p.get('type')  || '';
@@ -1473,20 +1728,26 @@ function setView(v) {
   if (view === v) return;
   view = v;
   // 切換 view 時清掉不屬於該 view 的 filter
-  if (v === 'product') { filterSubCat = ''; }
-  else if (v === 'tech') { filterSys = ''; filterBrand = ''; }
-  else /* daily */     { filterSys = ''; filterSubCat = ''; filterBrand = ''; }
+  if (v === 'product') { filterSubCat = ''; onlyBookmarks = false; }
+  else if (v === 'tech') { filterSys = ''; filterBrand = ''; onlyBookmarks = false; }
+  else if (v === 'bookmarks') { filterSys = ''; filterSubCat = ''; filterBrand = ''; onlyBookmarks = true; }
+  else /* daily or weekly */ { filterSys = ''; filterSubCat = ''; filterBrand = ''; onlyBookmarks = false; }
   applyView();
   render();
   syncURL();
 }
 function applyView() {
-  document.body.classList.toggle('view-tech',  view === 'tech');
-  document.body.classList.toggle('view-daily', view === 'daily');
-  document.getElementById('tab-daily').classList.toggle('active',   view === 'daily');
-  document.getElementById('tab-product').classList.toggle('active', view === 'product');
-  document.getElementById('tab-tech').classList.toggle('active',    view === 'tech');
-  const subMap = { daily: '每日精選 · 優先閱讀', product: 'CRM · PMS · FBM', tech: 'AI · GLOBAL · UX' };
+  document.body.classList.toggle('view-tech',   view === 'tech');
+  document.body.classList.toggle('view-daily',  view === 'daily');
+  document.body.classList.toggle('view-weekly', view === 'weekly');
+  document.body.classList.toggle('view-bookmarks', view === 'bookmarks');
+  const subMap = {
+    daily:     '每日精選 · 優先閱讀',
+    weekly:    '本週趨勢 · 7 天彙整',
+    product:   'CRM · PMS · FBM',
+    tech:      'AI · GLOBAL · UX',
+    bookmarks: '收藏管理 · PERSONAL',
+  };
   setText('logo-sub', subMap[view] || 'INTEL');
   renderSidebar();
   renderFilterBar();
@@ -1494,82 +1755,67 @@ function applyView() {
   toggleDailyChrome();
 }
 
-// Daily view 隱藏傳統的 metrics/dist/filter/list，顯示 Daily Brief 區塊
+// ── Sidebar 收合（PRD UI 修正 #2）─────────────────────────
+function setSidebarCollapsed(collapsed) {
+  document.body.classList.toggle('sidebar-collapsed', !!collapsed);
+  const icon = document.getElementById('sidebar-toggle-icon');
+  if (icon) icon.textContent = collapsed ? '☰' : '◂';
+}
+function toggleSidebar() {
+  const now = document.body.classList.contains('sidebar-collapsed');
+  setSidebarCollapsed(!now);
+}
+
+// 隱藏傳統 metrics/filter/cards，顯示對應的專用版面（daily / weekly）
 function toggleDailyChrome() {
-  const isDaily = view === 'daily';
-  const dailyView = document.getElementById('daily-view');
-  if (dailyView) dailyView.style.display = isDaily ? '' : 'none';
+  const isDaily  = view === 'daily';
+  const isWeekly = view === 'weekly';
+  const hideChrome = isDaily || isWeekly;
+  const dailyView  = document.getElementById('daily-view');
+  const weeklyView = document.getElementById('weekly-view');
+  if (dailyView)  dailyView.style.display  = isDaily  ? '' : 'none';
+  if (weeklyView) weeklyView.style.display = isWeekly ? '' : 'none';
   ['metrics-row','dist-row','filter-wrap','list-header','cards-grid'].forEach(id => {
     const el = document.getElementById(id);
     if (!el) return;
-    el.style.display = isDaily ? 'none' : '';
+    el.style.display = hideChrome ? 'none' : '';
   });
   const empty = document.getElementById('empty-state');
-  if (empty && isDaily) empty.style.display = 'none';
+  if (empty && hideChrome) empty.style.display = 'none';
 }
 
-// ── Sidebar (dynamic per view) ────────────────────────────────
+// ── Sidebar: 主導覽（情報概覽 / 情報探索 / 個人）────────────
 function renderSidebar() {
   const stats = computeCounts();
-  let html = '';
-
-  // 來源管道（共用）
-  html += `<div class="nav-section">
-    <div class="nav-label">來源管道</div>
-    <div class="nav-item ${filterChannel===''?'active':''}" onclick="setChannel('')">
-      <div class="nav-dot nd-all"></div>全部來源
-      <span class="nav-count">${stats.total}</span>
+  const html = `
+    <div class="nav-section">
+      <div class="nav-label">情報概覽</div>
+      <div class="nav-item ${view==='daily'?'active':''}" onclick="setView('daily')">
+        <div class="nav-dot nd-daily"></div>每日情報
+      </div>
+      <div class="nav-item ${view==='weekly'?'active':''}" onclick="setView('weekly')">
+        <div class="nav-dot nd-weekly"></div>本週趨勢
+      </div>
     </div>
-    <div class="nav-item ${filterChannel==='rss'?'active':''}" onclick="setChannel('rss')">
-      <div class="nav-dot nd-rss"></div>RSS 訂閱
-      <span class="nav-count">${stats.byChannel.rss || 0}</span>
-    </div>
-    <div class="nav-item ${filterChannel==='threads'?'active':''}" onclick="setChannel('threads')">
-      <div class="nav-dot nd-th"></div>Threads
-      <span class="nav-count">${stats.byChannel.threads || 0}</span>
-    </div>
-  </div>`;
-
-  if (view === 'product') {
-    html += `<div class="nav-section">
-      <div class="nav-label">核心系統</div>
-      <div class="nav-item ${filterSys===''?'active':''}" onclick="setSysNav('')">
-        <div class="nav-dot nd-all"></div>全部系統
+    <div class="nav-section">
+      <div class="nav-label">情報探索</div>
+      <div class="nav-item ${view==='product'?'active':''}" onclick="setView('product')">
+        <div class="nav-dot nd-crm"></div>產品領域
         <span class="nav-count">${stats.productTotal}</span>
       </div>
-      <div class="nav-item ${filterSys==='CRM'?'active':''}" onclick="setSysNav('CRM')">
-        <div class="nav-dot nd-crm"></div>CRM · MarTech
-        <span class="nav-count">${stats.bySystem.CRM || 0}</span>
+      <div class="nav-item ${view==='tech'?'active':''}" onclick="setView('tech')">
+        <div class="nav-dot nd-ai"></div>科技趨勢
+        <span class="nav-count">${stats.techTotal}</span>
       </div>
-      <div class="nav-item ${filterSys==='PMS'?'active':''}" onclick="setSysNav('PMS')">
-        <div class="nav-dot nd-pms"></div>PMS · 旅宿管理
-        <span class="nav-count">${stats.bySystem.PMS || 0}</span>
-      </div>
-      <div class="nav-item ${filterSys==='FBM'?'active':''}" onclick="setSysNav('FBM')">
-        <div class="nav-dot nd-fbm"></div>FBM · 餐飲訂位
-        <span class="nav-count">${stats.bySystem.FBM || 0}</span>
-      </div>
-    </div>`;
-  } else {
-    html += `<div class="nav-section">
-      <div class="nav-label">主題分類</div>` +
-      TECH_SUBCATS.map(s => `
-        <div class="nav-item ${filterSubCat===s.key?'active':''}" onclick="setSubCat('${s.key}')">
-          <div class="nav-dot ${s.dot}"></div>${s.label}
-          <span class="nav-count">${s.key ? (stats.bySub[s.key] || 0) : stats.techTotal}</span>
-        </div>`).join('') +
-      `</div>`;
-  }
-
-  // 收藏
-  html += `<div class="nav-section">
-    <div class="nav-label">個人</div>
-    <div class="nav-item ${onlyBookmarks?'active':''}" onclick="toggleBookmarksNav()">
-      <div class="nav-dot nd-th"></div>我的收藏
-      <span class="nav-count">${bookmarks.length}</span>
     </div>
-  </div>`;
-
+    <div class="nav-section">
+      <div class="nav-label">個人</div>
+      <div class="nav-item ${view==='bookmarks'?'active':''}" onclick="setView('bookmarks')">
+        <div class="nav-dot nd-bm"></div>我的收藏
+        <span class="nav-count">${bookmarks.length}</span>
+      </div>
+    </div>
+  `;
   document.getElementById('sidebar-nav').innerHTML = html;
 }
 
@@ -1778,13 +2024,15 @@ function belongsToView(a) {
   const sys = a.systems || [];
   const isTech = sys.includes('TECH');
   const isProduct = sys.some(s => s === 'CRM' || s === 'PMS' || s === 'FBM');
-  if (view === 'tech')    return isTech;
+  if (view === 'bookmarks') return true;  // 收藏 view 不限 system
+  if (view === 'tech')      return isTech;
   return isProduct;   // 產品領域 view 排除純 TECH 文章
 }
 
 function render() {
-  toggleDailyChrome();  // 確保傳統視圖元素在 daily view 下保持隱藏（避免 loadData 的 show() 殘留）
-  if (view === 'daily') { renderDaily(); return; }
+  toggleDailyChrome();  // 確保傳統視圖元素在 daily/weekly view 下保持隱藏
+  if (view === 'daily')  { renderDaily();  return; }
+  if (view === 'weekly') { renderWeekly(); return; }
 
   let items = all.filter(a => {
     if (!belongsToView(a)) return false;
@@ -1836,6 +2084,187 @@ function render() {
   show('cards-grid');
   grid.innerHTML = items.map(renderCard).join('');
   attachThumbErrorHandlers(grid);
+}
+
+// ── Weekly Trend render（PRD §FR-07）───────────────────────
+async function ensureWeekly() {
+  if (weekly) return weekly;
+  try {
+    const r = await fetch('data/weekly.json?t=' + Date.now());
+    if (r.ok) { weekly = await r.json(); return weekly; }
+  } catch (e) {}
+  return null;
+}
+
+async function renderWeekly() {
+  const w = await ensureWeekly();
+  const container = document.getElementById('weekly-view');
+  if (!w) {
+    container.style.display = '';
+    container.innerHTML = `
+      <div class="state-box">
+        <div class="icon">⚠</div>
+        <p>無法載入 data/weekly.json</p>
+        <small>請確認 collect.py 已輸出該檔</small>
+      </div>`;
+    return;
+  }
+
+  setText('page-heading', '本週趨勢 · 近 ' + w.window_days + ' 日');
+  setText('w-window', '近 ' + w.window_days + ' 日');
+  setText('w-total',  w.total);
+  setText('w-prio',   w.priority_count);
+  const topBrand = (w.top_brands || [])[0];
+  setText('w-topbrand', topBrand ? `${topBrand.brand} (${topBrand.count})` : '—');
+  const gen = w.generated_at ? new Date(w.generated_at).toLocaleString('zh-TW',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}) : '—';
+  setText('weekly-window-label', '· 生成於 ' + gen);
+
+  // 熱門品牌 bar chart
+  const brands = w.top_brands || [];
+  const brandMax = Math.max(1, ...brands.map(b => b.count));
+  setText('w-brand-count', brands.length ? `· top ${brands.length}` : '· 無足夠資料');
+  const brandsEl = document.getElementById('w-brands');
+  brandsEl.innerHTML = brands.length
+    ? brands.map(b => {
+        const pct = Math.round(b.count / brandMax * 100);
+        return `<div class="brand-bar-row" onclick="previewBrand('${esc(b.brand)}')" title="點擊預覽此品牌本週文章">
+          <span class="brand-bar-label">${esc(b.brand)}</span>
+          <div class="brand-bar-track"><div class="brand-bar-fill" style="width:${pct}%"></div></div>
+          <span class="brand-bar-val">${b.count}</span>
+        </div>`;
+      }).join('')
+    : '<div class="actions-empty">本週無品牌命中 ≥2 篇</div>';
+
+  // 主題組合
+  const combos = w.top_combos || [];
+  const combosEl = document.getElementById('w-combos');
+  combosEl.innerHTML = combos.length
+    ? combos.map(c => {
+        const sysCls  = SYS_CLS[c.system]   || 'tb-crm';
+        const sysLbl  = SYS_LABEL[c.system] || c.system;
+        const typeCls = TYPE_CLS[c.type]    || 'tag-ct-u02';
+        return `<div class="combo-item" onclick="previewCombo('${esc(c.system)}','${esc(c.type)}')" title="點擊預覽此組合文章">
+          <div class="combo-item-tags">
+            <span class="thumb-badge ${sysCls}">${esc(sysLbl)}</span>
+            <span class="tag ${typeCls}">${esc(typeLabel(c.type))}</span>
+          </div>
+          <div class="combo-item-count">${c.count} 篇相關情報</div>
+        </div>`;
+      }).join('')
+    : '<div class="actions-empty">本週無組合達 ≥2 篇</div>';
+
+  // TOP 5 cards（優先用 all[] 內同 id 的物件以享用完整欄位，fallback 到 meta）
+  const topHtml = (w.top_articles || []).map(meta => {
+    const art = all.find(x => x.id === meta.id) || meta;
+    return renderCard(art);
+  }).join('');
+  const topEl = document.getElementById('w-top-cards');
+  topEl.innerHTML = topHtml;
+  attachThumbErrorHandlers(topEl);
+}
+
+// ── Preview Drawer（Weekly 預覽，不改 view）─────────────────
+let _previewViewAllFn = null;  // 當前 preview 的「前往完整篩選」callback
+
+function openPreview({ title, eyebrow, filterFn, viewAllFn }) {
+  const matching = all.filter(filterFn).sort((a,b) => (b.score||0) - (a.score||0));
+  const items = matching.slice(0, 15);
+  const total = matching.length;
+  _previewViewAllFn = viewAllFn || null;
+
+  const itemsHtml = items.length
+    ? items.map(a => {
+        const tier = scoreTier(a.score);
+        const tierHtml = tier
+          ? `<span class="card-tier ${tier.cls}" style="padding:1px 6px;font-size:9.5px">${tier.label}</span>`
+          : '';
+        const srcLabel = cleanSource(a.source || '');
+        return `<div class="preview-item" onclick="openCardDetail('${esc(a.id)}')">
+          <div class="preview-item-title">${esc(a.title)}</div>
+          <div class="preview-item-meta">
+            <span>${esc(srcLabel)}</span>
+            <span class="sep">·</span>
+            <span>分數 ${a.score || 0}</span>
+            ${tierHtml}
+          </div>
+        </div>`;
+      }).join('')
+    : '<div class="preview-empty">無匹配文章</div>';
+
+  const viewAllHtml = _previewViewAllFn && total > 0
+    ? `<button class="btn-view-all" onclick="previewViewAll()">前往完整篩選（${total} 篇）→</button>`
+    : '';
+
+  const d = document.getElementById('preview-drawer');
+  d.innerHTML = `
+    <div class="preview-head">
+      <div class="preview-head-main">
+        <div class="preview-eyebrow"><span>${esc(eyebrow)}</span></div>
+        <div class="preview-title">
+          <span style="flex:1;min-width:0">${esc(title)}</span>
+          <span class="ds-count">${total} 篇</span>
+        </div>
+      </div>
+      <button class="drawer-close" onclick="closePreview()" aria-label="關閉">×</button>
+    </div>
+    <div class="preview-body">${itemsHtml}</div>
+    ${viewAllHtml ? `<div class="preview-foot">${viewAllHtml}</div>` : ''}
+  `;
+  d.classList.add('show');
+  d.setAttribute('aria-hidden', 'false');
+  document.getElementById('preview-overlay').classList.add('show');
+}
+
+function previewViewAll() {
+  const fn = _previewViewAllFn;
+  if (fn) fn();
+}
+
+function closePreview() {
+  const d = document.getElementById('preview-drawer');
+  d.classList.remove('show');
+  d.setAttribute('aria-hidden', 'true');
+  document.getElementById('preview-overlay').classList.remove('show');
+}
+
+function previewBrand(brand) {
+  openPreview({
+    title: brand,
+    eyebrow: '品牌預覽',
+    filterFn: a => (a.brands || []).includes(brand),
+    viewAllFn: () => { closePreview(); jumpToBrand(brand); },
+  });
+}
+
+function previewCombo(sys, type) {
+  openPreview({
+    title: `${SYS_LABEL[sys] || sys} × ${typeLabel(type)}`,
+    eyebrow: '主題組合預覽',
+    filterFn: a => (a.systems || []).includes(sys) && (a.types || []).includes(type),
+    viewAllFn: () => { closePreview(); jumpToCombo(sys, type); },
+  });
+}
+
+function jumpToBrand(brand) {
+  view = 'product';
+  filterBrand = brand;
+  applyView();
+  render();
+  syncURL();
+}
+
+function jumpToCombo(sys, type) {
+  if (sys === 'TECH') {
+    view = 'tech';
+    filterType = type;
+  } else {
+    view = 'product';
+    filterSys = sys;
+    filterType = type;
+  }
+  applyView();
+  render();
+  syncURL();
 }
 
 // ── Daily Brief render（PRD §9）──────────────────────────────
@@ -2239,7 +2668,11 @@ function toggleBmInDrawer(e, id) {
 }
 
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && drawerArticleId) closeDrawer();
+  if (e.key !== 'Escape') return;
+  // 若文章詳情抽屜開著，先關它；再按 Esc 才關預覽
+  if (drawerArticleId) { closeDrawer(); return; }
+  const preview = document.getElementById('preview-drawer');
+  if (preview && preview.classList.contains('show')) closePreview();
 });
 
 // ── Helpers ────────────────────────────────────────────────────

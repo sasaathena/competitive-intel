@@ -1,0 +1,201 @@
+{
+  "generated_at": "2026-10-16T05:16:01.646239",
+  "window_days": 7,
+  "total": 158,
+  "priority_count": 51,
+  "by_system": {
+    "CRM": 60,
+    "PMS": 15,
+    "TECH": 75,
+    "FBM": 8
+  },
+  "top_brands": [
+    {
+      "brand": "HubSpot",
+      "count": 46
+    },
+    {
+      "brand": "Salesforce",
+      "count": 22
+    },
+    {
+      "brand": "Guesty",
+      "count": 7
+    },
+    {
+      "brand": "Resy",
+      "count": 6
+    },
+    {
+      "brand": "Zoho CRM",
+      "count": 5
+    },
+    {
+      "brand": "Mews",
+      "count": 4
+    },
+    {
+      "brand": "Cloudbeds",
+      "count": 2
+    }
+  ],
+  "top_types": [
+    {
+      "type": "A01 AI 工具與工作流",
+      "count": 69
+    },
+    {
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 60
+    },
+    {
+      "type": "P01 競品與產品更新",
+      "count": 26
+    },
+    {
+      "type": "T01 前端與 API 基礎",
+      "count": 18
+    },
+    {
+      "type": "T02 產品架構與資料模型",
+      "count": 5
+    },
+    {
+      "type": "U01 UI/UX 設計案例",
+      "count": 1
+    }
+  ],
+  "top_combos": [
+    {
+      "system": "TECH",
+      "type": "A01 AI 工具與工作流",
+      "count": 48
+    },
+    {
+      "system": "CRM",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 35
+    },
+    {
+      "system": "TECH",
+      "type": "P01 競品與產品更新",
+      "count": 20
+    },
+    {
+      "system": "CRM",
+      "type": "A01 AI 工具與工作流",
+      "count": 19
+    },
+    {
+      "system": "TECH",
+      "type": "T01 前端與 API 基礎",
+      "count": 16
+    },
+    {
+      "system": "PMS",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 13
+    },
+    {
+      "system": "FBM",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 6
+    },
+    {
+      "system": "TECH",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 6
+    },
+    {
+      "system": "CRM",
+      "type": "P01 競品與產品更新",
+      "count": 5
+    },
+    {
+      "system": "CRM",
+      "type": "T02 產品架構與資料模型",
+      "count": 4
+    }
+  ],
+  "top_articles": [
+    {
+      "id": "art_e008710223",
+      "title": "HubSpot adds spending controls and flexible billing as AI usage grows - MarTech",
+      "score": 91,
+      "source": "HubSpot",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-10-15T15:50:42+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUUI4WFdxcnBJMEtnMjdXaHNURjNLdmQwRGN6UU12M1N4ekJPZm9OQW9TMHBBZ1NtSU5jbE1DZld3Y2FQdE5RTjVPRnAwdGdwZWVlQmZXREdYVHVPbzU3VWdPTEpNbHkybVJOakVQaFh5ZkhuZi1jNXlBQVlhUUFXSWpuTzhmX3BkZ1ZIcnB3WUtqWHF0?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
+      "id": "art_44ae84fe81",
+      "title": "HubSpot Adds AI Credit Caps, Seat Swaps and Pay-As-You-Go - CMSWire",
+      "score": 91,
+      "source": "HubSpot",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-10-15T15:49:31+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdjlnNk5iYWpPSGd4bmt4QXA3X1BWWjdhcnRrczd3alRiYlFING1NM3R3UG05UExFc25YaWNzazdQZUtFQzBXU0NIUVNfR0FETEl5MW5fQ1JJUU52TGV0STAzUWJCNmZOOTRiU0hhdzRpSjEwa2xPTFV5ODRGLVBCVEZXZDBPRkdNYW83a3hjVmF2c0xVNEc4?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
+      "id": "art_a40b7e0c05",
+      "title": "Creatio Releases Version 10.1 With Expanded AI Development, CRM and Automation Capabilities - citybiz",
+      "score": 91,
+      "source": "Monday CRM",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-10-15T19:09:29+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSHdENlktQjBCZjZSSUNGSU5fY2Q5ai13TmJ6eHU0SzVtbFhxNWUwQWhWTXh4QVFydWR1Vkp6NTBFTEN5cFV4VVBRbDY4RHBQOGl6MVkzdUFMOHJvek5XRXQ0VWJ6WTRLcDRlVk5Jb0E2UnIyakt3b0RaajFQMzczOHBFWTYxLUFvN2NCRF9BLUs3azg5Zkg5bDBZSk9PUGpvWUlmSElaOFQxeXNXRFh5bFktNVkyYkhMU05uSGpIYnVuRmVVdnNaMA?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
+      "id": "art_42328201bf",
+      "title": "Salesforce launches Agent Allowlist SaaS - SaasRise",
+      "score": 89,
+      "source": "Salesforce",
+      "brands": [
+        "Salesforce"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-10-12T13:01:07+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSDF0X0RPWVdGd1pGNi1KRF9SM09XdDVKWXo4dE1yWXhuRnVTOFB3ZnpOVnhGRFVGWUZZeERGMF8xYy1ralhhSncxOVVtQ1ZYcjludHJpazlJMEJMNWpKaGJXTF9ZMGM0b0dOalFqZkdLNzBaUEhYVkdHalZxcEFOVWNReVVjR2ZhbXNLN3hlbGhRNkJhSmVLSEY4UzFzNlhkc2xPeWRzeHpVRzhHVnhObU81TXBJYUE1Vjl2U1NUNDR2bG1EUjZlSHd5Y0I?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
+      "id": "art_c83a9ccdc0",
+      "title": "Argano Acquires Oktana To Expand Salesforce, Data, And AI Capabilities - Pulse 2.0",
+      "score": 81,
+      "source": "Salesforce",
+      "brands": [
+        "Salesforce"
+      ],
+      "types": [
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-10-15T14:49:53+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPU3N1MnBUUEE2ZWpGWlBad3hUQm5xbUhSNGF4dE5mS2VSTGVaak9kUWRIWXVhanlBb1lhQWtoaFJ5RHl0dDg3M0dUZmdSM2cwdDZQSEJkaVhlWnRXVUpXVzliX1puTFpXQk9qeVRjbnZwSUxJNVZEOFNLd21HM0pnLWd3TmRTUExhQ05PTlJxVUJVQQ?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+    }
+  ]
+}
