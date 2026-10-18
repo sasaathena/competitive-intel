@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-17T05:24:21.031809",
+  "generated_at": "2026-10-18T05:30:13.805741",
   "window_days": 7,
-  "total": 195,
-  "priority_count": 57,
+  "total": 193,
+  "priority_count": 53,
   "by_system": {
-    "CRM": 82,
     "FBM": 23,
-    "TECH": 75,
-    "PMS": 18
+    "CRM": 83,
+    "TECH": 74,
+    "PMS": 16
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 52
+      "count": 50
     },
     {
       "brand": "Salesforce",
-      "count": 31
+      "count": 35
     },
     {
       "brand": "Resy",
@@ -28,18 +28,18 @@
     },
     {
       "brand": "Guesty",
-      "count": 7
+      "count": 6
     },
     {
       "brand": "inline",
       "count": 4
     },
     {
-      "brand": "Cloudbeds",
+      "brand": "OpenTable",
       "count": 4
     },
     {
-      "brand": "OpenTable",
+      "brand": "Cloudbeds",
       "count": 3
     },
     {
@@ -54,15 +54,15 @@
   "top_types": [
     {
       "type": "A01 AI 工具與工作流",
-      "count": 82
+      "count": 79
     },
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 77
+      "count": 75
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 34
+      "count": 32
     },
     {
       "type": "T01 前端與 API 基礎",
@@ -74,14 +74,14 @@
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 2
+      "count": 3
     }
   ],
   "top_combos": [
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 51
+      "count": 47
     },
     {
       "system": "CRM",
@@ -95,13 +95,13 @@
     },
     {
       "system": "TECH",
-      "type": "P01 競品與產品更新",
-      "count": 17
+      "type": "T01 前端與 API 基礎",
+      "count": 18
     },
     {
       "system": "TECH",
-      "type": "T01 前端與 API 基礎",
-      "count": 17
+      "type": "P01 競品與產品更新",
+      "count": 15
     },
     {
       "system": "FBM",
@@ -111,7 +111,7 @@
     {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 13
+      "count": 11
     },
     {
       "system": "CRM",
@@ -131,9 +131,25 @@
   ],
   "top_articles": [
     {
+      "id": "art_3a6af77c97",
+      "title": "OpenTable CEO on AI agent partnerships bringing in new diners - CNBC",
+      "score": 91,
+      "source": "OpenTable",
+      "brands": [
+        "OpenTable"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-10-16T18:55:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNc1c1bWlaSDdoUlR0bGxGZHhpV0Z3UTNMVW9JRHF1blJ1VDBsWVgyMDBQOWhFMndad3dOQ1lwVVZpRmVGZS1TWXlWYklYeGR2YmhiVXVhcTNLUTl3M0NFWUZ5UXhDazI5QjYzZVRtZHJwQzlSWmFtaHpvZjVWaFJWOXpQTzVSUTVZdlNiZEVhYmlxVkJIcTNnbjNSUzZwMTRxUzdXcFI3aw?oc=5",
+      "recommendation_reason": "追蹤品牌 OpenTable 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
       "id": "art_44ae84fe81",
       "title": "HubSpot Adds AI Credit Caps, Seat Swaps and Pay-As-You-Go - CMSWire",
-      "score": 91,
+      "score": 89,
       "source": "HubSpot",
       "brands": [
         "HubSpot"
@@ -147,25 +163,9 @@
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_e008710223",
-      "title": "HubSpot adds spending controls and flexible billing as AI usage grows - MarTech",
-      "score": 91,
-      "source": "HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-10-15T15:50:42+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUUI4WFdxcnBJMEtnMjdXaHNURjNLdmQwRGN6UU12M1N4ekJPZm9OQW9TMHBBZ1NtSU5jbE1DZld3Y2FQdE5RTjVPRnAwdGdwZWVlQmZXREdYVHVPbzU3VWdPTEpNbHkybVJOakVQaFh5ZkhuZi1jNXlBQVlhUUFXSWpuTzhmX3BkZ1ZIcnB3WUtqWHF0?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
-    },
-    {
       "id": "art_6447896c3a",
       "title": "Salesforce (CRM) Unveils Hunter For AI Powered Outbound Sales - Yahoo Finance",
-      "score": 91,
+      "score": 89,
       "source": "Monday CRM",
       "brands": [
         "HubSpot",
@@ -178,22 +178,6 @@
       "date": "2026-10-16T04:26:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYzVvOVMzd04yWGFTMmRoQVVoT091ajBxMWdSWEJBd3BOS2FsZGpCd1B0WnVrOEg3cmZNdmROUnIzNExmVlVkWElmNVU5RHV2VVI5TWU0cjVkaGxvU1c4N0dKRGtob25saFk5bHNaWG9takNCbE1GWVhMTkdUUEEyUEF2LTdaanlyeDZLMjlldnFPQXNCb0JIUnB1Tlc?oc=5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
-    },
-    {
-      "id": "art_3a6af77c97",
-      "title": "OpenTable CEO on AI agent partnerships bringing in new diners - CNBC",
-      "score": 91,
-      "source": "OpenTable",
-      "brands": [
-        "OpenTable"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-10-16T18:54:39+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNc1c1bWlaSDdoUlR0bGxGZHhpV0Z3UTNMVW9JRHF1blJ1VDBsWVgyMDBQOWhFMndad3dOQ1lwVVZpRmVGZS1TWXlWYklYeGR2YmhiVXVhcTNLUTl3M0NFWUZ5UXhDazI5QjYzZVRtZHJwQzlSWmFtaHpvZjVWaFJWOXpQTzVSUTVZdlNiZEVhYmlxVkJIcTNnbjNSUzZwMTRxUzdXcFI3aw?oc=5",
-      "recommendation_reason": "追蹤品牌 OpenTable 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
       "id": "art_42328201bf",
@@ -210,6 +194,21 @@
       "date": "2026-10-12T13:01:07+00:00",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNSDF0X0RPWVdGd1pGNi1KRF9SM09XdDVKWXo4dE1yWXhuRnVTOFB3ZnpOVnhGRFVGWUZZeERGMF8xYy1ralhhSncxOVVtQ1ZYcjludHJpazlJMEJMNWpKaGJXTF9ZMGM0b0dOalFqZkdLNzBaUEhYVkdHalZxcEFOVWNReVVjR2ZhbXNLN3hlbGhRNkJhSmVLSEY4UzFzNlhkc2xPeWRzeHpVRzhHVnhObU81TXBJYUE1Vjl2U1NUNDR2bG1EUjZlSHd5Y0I?oc=5",
       "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「競品/產品更新」；近 1 週發布"
+    },
+    {
+      "id": "art_8d1dfd0c7d",
+      "title": "AI 代理害用戶被 Resy 停權——Keycard、JPMorgan Chase 與 AAuth｜AI Engineer - BigGo 財經",
+      "score": 85,
+      "source": "Resy",
+      "brands": [
+        "Resy"
+      ],
+      "types": [
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-10-17T23:31:25+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5yTTg0MENDSkV0M2lUYy1XbjlmaTFnakhkSnpNWmpPOTVpMW56ek82NTltbjZPWVA4VXNkYTFzc0p1WkJ2ZmFaaWlaQkhIQ2FnMDlaa0RkZFA5aXh1aEtoNExNcw?oc=5",
+      "recommendation_reason": "追蹤品牌 Resy 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     }
   ]
 }
