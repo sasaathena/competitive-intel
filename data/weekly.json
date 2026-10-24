@@ -1,49 +1,49 @@
 {
-  "generated_at": "2026-10-23T05:49:23.607145",
+  "generated_at": "2026-10-24T05:28:26.329575",
   "window_days": 7,
-  "total": 234,
-  "priority_count": 83,
+  "total": 219,
+  "priority_count": 75,
   "by_system": {
-    "CRM": 88,
-    "FBM": 33,
-    "PMS": 27,
-    "TECH": 87
+    "CRM": 96,
+    "FBM": 29,
+    "TECH": 66,
+    "PMS": 29
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 49
+      "count": 52
     },
     {
       "brand": "Salesforce",
-      "count": 37
+      "count": 39
     },
     {
       "brand": "Resy",
-      "count": 20
+      "count": 18
     },
     {
       "brand": "Cloudbeds",
-      "count": 15
+      "count": 14
     },
     {
       "brand": "Zoho CRM",
-      "count": 8
-    },
-    {
-      "brand": "inline",
-      "count": 6
+      "count": 11
     },
     {
       "brand": "OpenTable",
-      "count": 6
-    },
-    {
-      "brand": "Mews",
       "count": 5
     },
     {
       "brand": "Guesty",
+      "count": 5
+    },
+    {
+      "brand": "inline",
+      "count": 5
+    },
+    {
+      "brand": "Mews",
       "count": 4
     },
     {
@@ -54,22 +54,22 @@
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 101
+      "count": 99
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 95
+      "count": 91
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 38
-    },
-    {
-      "type": "T01 前端與 API 基礎",
-      "count": 23
+      "count": 34
     },
     {
       "type": "T02 產品架構與資料模型",
+      "count": 13
+    },
+    {
+      "type": "T01 前端與 API 基礎",
       "count": 9
     },
     {
@@ -79,34 +79,29 @@
   ],
   "top_combos": [
     {
-      "system": "TECH",
-      "type": "A01 AI 工具與工作流",
-      "count": 57
-    },
-    {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
       "count": 55
     },
     {
+      "system": "TECH",
+      "type": "A01 AI 工具與工作流",
+      "count": 50
+    },
+    {
       "system": "CRM",
       "type": "A01 AI 工具與工作流",
-      "count": 25
+      "count": 29
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 25
+      "count": 23
     },
     {
       "system": "TECH",
       "type": "P01 競品與產品更新",
-      "count": 22
-    },
-    {
-      "system": "TECH",
-      "type": "T01 前端與 API 基礎",
-      "count": 19
+      "count": 17
     },
     {
       "system": "PMS",
@@ -114,6 +109,11 @@
       "count": 12
     },
     {
+      "system": "CRM",
+      "type": "P01 競品與產品更新",
+      "count": 10
+    },
+    {
       "system": "PMS",
       "type": "A01 AI 工具與工作流",
       "count": 9
@@ -125,14 +125,14 @@
     },
     {
       "system": "CRM",
-      "type": "P01 競品與產品更新",
-      "count": 6
+      "type": "T02 產品架構與資料模型",
+      "count": 8
     }
   ],
   "top_articles": [
     {
-      "id": "art_def73fa05a",
-      "title": "Cloudbeds Brings AI Travel Demand Directly to Hoteliers With Meta’s Muse Integration - Hotel Online",
+      "id": "art_498910b6d9",
+      "title": "Cloudbeds brings AI travel demand directly to hoteliers with Meta’s Muse integration - Hospitality Net",
       "score": 93,
       "source": "Cloudbeds",
       "brands": [
@@ -143,14 +143,14 @@
         "A01 AI 工具與工作流",
         "T02 產品架構與資料模型"
       ],
-      "date": "2026-10-20T16:18:30+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcDJISnNIZXp2eGFOY2l5WlhwOVVCbXlqZnlKMWdPYzB5d0JsbFlldUNNTEFIRTRhSXhHZlhUM0ExTDktNTJrcTYxb1lvOTFJSVhVbTFMSm1NRFVYV3NNZkFEWlItR0NmR2dVT3RBd0VhX2pmUDhyQzRyWDQyNUpfU3hQNjRNYVRuWGkwUlBCUDdnWXhxb25ZQ01JeFpIa1pEZXRiY2U5RXJfM0VSZkpSRFpOdHZ4ZjBU?oc=5",
+      "date": "2026-10-20T13:15:06+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNU2QtRmNtTF9xR1hYaUtqOVIxWmtvd1J5ejBvM1gwTDRySl9JQmYxRUZJeU5PWjhwT2kxcWpVbGpWYTlJR2Q1ek1hZWZEXzA5MXNVTTZvRkswVHB6YVcyUUpPX09UaGt5dzVHdE5RR0g3UjhvZ0dybER4cmxWQkFEeW5RSkttTm9aUEtjNWhmZTcwY0hfQ0ExLVRLbVdQQmJkSldXVGRGUVV3TzVVRXVFemtMOUphV29RZ2dMeXdWMWVpbTNLWWc?oc=5",
       "recommendation_reason": "追蹤品牌 Cloudbeds 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
       "id": "art_edcdc8f028",
       "title": "Cloudbeds Brings AI Travel Demand Directly To Hoteliers News - Breaking Travel News",
-      "score": 91,
+      "score": 89,
       "source": "Cloudbeds",
       "brands": [
         "Cloudbeds"
@@ -166,7 +166,7 @@
     {
       "id": "art_ede9eda687",
       "title": "roommaster Introduces AI Connector, Bringing Live Hotel PMS Data into ChatGPT, Claude, Microsoft Copilot and Google Gemini - Hospitality Net",
-      "score": 89,
+      "score": 87,
       "source": "Mews",
       "brands": [
         "Mews",
@@ -179,40 +179,38 @@
       ],
       "date": "2026-10-19T15:42:58+00:00",
       "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQa2phQS1uY0lMbWpSRXVrV01ZQ20xVnZyVnVLU1Ixa3RfZEk0UW5qNkdXdU5SQlJTZ2NORG9hMjdldmVkRG44SGxlbGlVM0t0cmlRemdFbXJGbW1VVUtabHp3b0RKNS1QVE12azFPaWh1akd1ZFdlNHlySEZBdm1VNnJaOTdHR1NkRGg3MFY1bjZNZUdOTWt2ZXJxaHBKZzdyZjRxbGd4cnFVSW9KWXJybHdRTEpMYXg3dkVZNG0wM3pHWkxnbER3ZXIwOV9ZUnhER2NWNVdVS3dMT2xsVVhoVGRRdHdCWkI1cy11S2VTTFhUSThQSmc?oc=5",
-      "recommendation_reason": "追蹤品牌 Mews 的更新；歸類於「競品/產品更新」；近 3 天發布"
+      "recommendation_reason": "追蹤品牌 Mews 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
-      "id": "art_92f21795b3",
-      "title": "Yelp adds AI phone agent, OpenTable booking and pro tools - StreetInsider",
-      "score": 89,
-      "source": "OpenTable",
+      "id": "art_377b6ce0ff",
+      "title": "Claudeforce：首屈一指的AI遇見首屈一指的CRM - Salesforce",
+      "score": 85,
+      "source": "Salesforce",
       "brands": [
-        "OpenTable"
+        "HubSpot",
+        "Salesforce"
       ],
       "types": [
-        "P01 競品與產品更新",
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-10-20T11:01:32+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWmljZGhoQnZINFNNV0lMTDd6VVBkQUxvS0l2NWNwRjFzamUzQk1kSEFJX1MzS1NURGZ5SFRtZXZzVnFzMGZUVWlDMG9USVladlMwVlJWVHdkdjVacHdvVUw4SDI5bnlfbkcwbkw3Mjh1MjFZS0l0d3dkS2Y2QzhNWmltMkY3eWZfZmlmRTZjeENORHUyRXdyaTJoTkYzbjZmU2drVWV0UVFWaF9mODN0aTN0X0ZhOGstdVE?oc=5",
-      "recommendation_reason": "追蹤品牌 OpenTable 的更新；歸類於「競品/產品更新」；近 3 天發布"
+      "date": "2026-10-23T17:37:43+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1wTTJiU3l5RzE3dnBwU2c1OG4wN21iRWY3OWVwakM2VzlWWGo3eTBoZFhrb2Y2NlpJd3ZFOEp2QUw3UlpUQVU1NmJYZ3o5R3JYcFE4TQ?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     },
     {
-      "id": "art_eee3251c0b",
-      "title": "Challenges You Face with HubSpot Without AI Voice Agent Integration",
-      "score": 88,
-      "source": "Medium-HubSpot",
+      "id": "art_aa55d179b1",
+      "title": "Salesforce臺灣將邁入第二年，觀察：AI Agent導入從試點走向企業流程，軟體使用入口正隨AI轉變 - iThome",
+      "score": 85,
+      "source": "Salesforce",
       "brands": [
-        "HubSpot"
+        "Salesforce"
       ],
       "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流",
-        "T02 產品架構與資料模型"
+        "A01 AI 工具與工作流"
       ],
-      "date": "2026-10-22T09:41:51+00:00",
-      "url": "https://medium.com/@parkerfelix691/challenges-you-face-with-hubspot-without-ai-voice-agent-integration-cf3da36ed6a5?source=rss------hubspot-5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+      "date": "2026-10-22T09:40:29+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9MMVlNS2JFMVpEYUZycDdydTVjZFdCOUo4UWlTUXJUMFJEelpRWENMQ2FsMVZwUTEzQUROWGxHQTI4VWs0aXNkUlFWTHlkdw?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     }
   ]
 }
