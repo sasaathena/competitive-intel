@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-24T05:28:26.329575",
+  "generated_at": "2026-10-25T05:45:23.353730",
   "window_days": 7,
-  "total": 219,
-  "priority_count": 75,
+  "total": 217,
+  "priority_count": 63,
   "by_system": {
-    "CRM": 96,
+    "CRM": 93,
     "FBM": 29,
-    "TECH": 66,
-    "PMS": 29
+    "TECH": 72,
+    "PMS": 24
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 52
+      "count": 51
     },
     {
       "brand": "Salesforce",
-      "count": 39
+      "count": 36
     },
     {
       "brand": "Resy",
-      "count": 18
+      "count": 17
     },
     {
       "brand": "Cloudbeds",
@@ -28,7 +28,11 @@
     },
     {
       "brand": "Zoho CRM",
-      "count": 11
+      "count": 9
+    },
+    {
+      "brand": "inline",
+      "count": 6
     },
     {
       "brand": "OpenTable",
@@ -36,104 +40,117 @@
     },
     {
       "brand": "Guesty",
-      "count": 5
-    },
-    {
-      "brand": "inline",
-      "count": 5
-    },
-    {
-      "brand": "Mews",
       "count": 4
     },
     {
+      "brand": "Mews",
+      "count": 2
+    },
+    {
       "brand": "roomMaster",
-      "count": 3
+      "count": 2
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 99
+      "count": 98
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 91
+      "count": 83
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 34
+      "count": 30
+    },
+    {
+      "type": "T01 前端與 API 基礎",
+      "count": 19
     },
     {
       "type": "T02 產品架構與資料模型",
       "count": 13
     },
     {
-      "type": "T01 前端與 API 基礎",
-      "count": 9
-    },
-    {
       "type": "U01 UI/UX 設計案例",
-      "count": 2
+      "count": 3
     }
   ],
   "top_combos": [
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 55
+      "count": 54
     },
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 50
+      "count": 46
     },
     {
       "system": "CRM",
       "type": "A01 AI 工具與工作流",
-      "count": 29
+      "count": 28
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 23
+      "count": 25
+    },
+    {
+      "system": "TECH",
+      "type": "T01 前端與 API 基礎",
+      "count": 15
     },
     {
       "system": "TECH",
       "type": "P01 競品與產品更新",
-      "count": 17
+      "count": 14
     },
     {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 12
+      "count": 10
     },
     {
       "system": "CRM",
       "type": "P01 競品與產品更新",
-      "count": 10
+      "count": 9
+    },
+    {
+      "system": "TECH",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 9
     },
     {
       "system": "PMS",
       "type": "A01 AI 工具與工作流",
-      "count": 9
-    },
-    {
-      "system": "TECH",
-      "type": "U02 UX 研究與設計趨勢",
-      "count": 9
-    },
-    {
-      "system": "CRM",
-      "type": "T02 產品架構與資料模型",
       "count": 8
     }
   ],
   "top_articles": [
     {
+      "id": "art_867464c6e1",
+      "title": "Salesforce (CRM) Unveils Hunter For AI Driven Sales Workflows - Yahoo Finance",
+      "score": 91,
+      "source": "Monday CRM",
+      "brands": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-10-24T18:09:08+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMkpoODhxQzR0QUt4VnZiWk1tMm9ZTGg5VlZVam45MmpuaHNUa0ZlY2U4eENQMkd4enFtRXJmbFBPTDktUEhPY2hGNUZ3UUx6QWpfX3NBeGtTZ3prWlIxSnRsZGNuVmFUOW9Pb1VnNWNsbGktN0JlMkppT2ZuTHJqM0tURTFEaWxGSjBrYmFobnV1Zm0zTHhVZ2NhSW0?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
       "id": "art_498910b6d9",
       "title": "Cloudbeds brings AI travel demand directly to hoteliers with Meta’s Muse integration - Hospitality Net",
-      "score": 93,
+      "score": 91,
       "source": "Cloudbeds",
       "brands": [
         "Cloudbeds"
@@ -145,7 +162,7 @@
       ],
       "date": "2026-10-20T13:15:06+00:00",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNU2QtRmNtTF9xR1hYaUtqOVIxWmtvd1J5ejBvM1gwTDRySl9JQmYxRUZJeU5PWjhwT2kxcWpVbGpWYTlJR2Q1ek1hZWZEXzA5MXNVTTZvRkswVHB6YVcyUUpPX09UaGt5dzVHdE5RR0g3UjhvZ0dybER4cmxWQkFEeW5RSkttTm9aUEtjNWhmZTcwY0hfQ0ExLVRLbVdQQmJkSldXVGRGUVV3TzVVRXVFemtMOUphV29RZ2dMeXdWMWVpbTNLWWc?oc=5",
-      "recommendation_reason": "追蹤品牌 Cloudbeds 的更新；歸類於「競品/產品更新」；近 3 天發布"
+      "recommendation_reason": "追蹤品牌 Cloudbeds 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
       "id": "art_edcdc8f028",
@@ -182,35 +199,20 @@
       "recommendation_reason": "追蹤品牌 Mews 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
-      "id": "art_377b6ce0ff",
-      "title": "Claudeforce：首屈一指的AI遇見首屈一指的CRM - Salesforce",
-      "score": 85,
-      "source": "Salesforce",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-10-23T17:37:43+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1wTTJiU3l5RzE3dnBwU2c1OG4wN21iRWY3OWVwakM2VzlWWGo3eTBoZFhrb2Y2NlpJd3ZFOEp2QUw3UlpUQVU1NmJYZ3o5R3JYcFE4TQ?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
-      "id": "art_aa55d179b1",
-      "title": "Salesforce臺灣將邁入第二年，觀察：AI Agent導入從試點走向企業流程，軟體使用入口正隨AI轉變 - iThome",
-      "score": 85,
-      "source": "Salesforce",
+      "id": "art_76343598a8",
+      "title": "Marketing Cloud Winter ’27 Release: What You Need to Know",
+      "score": 82,
+      "source": "BRAND/Salesforce",
       "brands": [
         "Salesforce"
       ],
       "types": [
+        "P01 競品與產品更新",
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-10-22T09:40:29+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9MMVlNS2JFMVpEYUZycDdydTVjZFdCOUo4UWlTUXJUMFJEelpRWENMQ2FsMVZwUTEzQUROWGxHQTI4VWs0aXNkUlFWTHlkdw?oc=5",
-      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+      "date": "2026-10-22T18:17:11+00:00",
+      "url": "https://www.salesforce.com/blog/marketing-cloud-winter-27-release-what-you-need-to-know/",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「競品/產品更新」；近 3 天發布"
     }
   ]
 }
