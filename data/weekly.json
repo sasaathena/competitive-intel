@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-26T05:51:49.723797",
+  "generated_at": "2026-10-27T06:04:16.811594",
   "window_days": 7,
-  "total": 221,
-  "priority_count": 59,
+  "total": 232,
+  "priority_count": 51,
   "by_system": {
-    "CRM": 92,
-    "TECH": 74,
-    "PMS": 29,
-    "FBM": 27
+    "CRM": 96,
+    "FBM": 33,
+    "TECH": 76,
+    "PMS": 27
   },
   "top_brands": [
     {
@@ -20,49 +20,45 @@
     },
     {
       "brand": "Resy",
-      "count": 17
+      "count": 23
     },
     {
       "brand": "Cloudbeds",
-      "count": 16
+      "count": 18
     },
     {
       "brand": "Zoho CRM",
-      "count": 9
+      "count": 10
     },
     {
       "brand": "inline",
       "count": 5
     },
     {
-      "brand": "Mews",
-      "count": 4
+      "brand": "OpenTable",
+      "count": 5
     },
     {
       "brand": "Guesty",
-      "count": 4
-    },
-    {
-      "brand": "OpenTable",
-      "count": 4
-    },
-    {
-      "brand": "roomMaster",
       "count": 3
+    },
+    {
+      "brand": "Mews",
+      "count": 2
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 99
+      "count": 109
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 85
+      "count": 82
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 32
+      "count": 36
     },
     {
       "type": "T01 前端與 API 基礎",
@@ -70,83 +66,66 @@
     },
     {
       "type": "T02 產品架構與資料模型",
-      "count": 15
+      "count": 10
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 3
+      "count": 4
     }
   ],
   "top_combos": [
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 54
+      "count": 59
     },
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 49
-    },
-    {
-      "system": "CRM",
-      "type": "A01 AI 工具與工作流",
-      "count": 25
+      "count": 48
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 24
+      "count": 31
+    },
+    {
+      "system": "CRM",
+      "type": "A01 AI 工具與工作流",
+      "count": 26
+    },
+    {
+      "system": "TECH",
+      "type": "P01 競品與產品更新",
+      "count": 17
     },
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
-      "count": 16
-    },
-    {
-      "system": "TECH",
-      "type": "P01 競品與產品更新",
-      "count": 13
+      "count": 17
     },
     {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 13
+      "count": 12
     },
     {
       "system": "CRM",
       "type": "P01 競品與產品更新",
-      "count": 11
+      "count": 10
     },
     {
       "system": "PMS",
       "type": "A01 AI 工具與工作流",
-      "count": 10
+      "count": 8
     },
     {
-      "system": "CRM",
-      "type": "T02 產品架構與資料模型",
-      "count": 9
+      "system": "PMS",
+      "type": "P01 競品與產品更新",
+      "count": 7
     }
   ],
   "top_articles": [
-    {
-      "id": "art_867464c6e1",
-      "title": "Salesforce (CRM) Unveils Hunter For AI Driven Sales Workflows - Yahoo Finance",
-      "score": 91,
-      "source": "Monday CRM",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-10-24T18:09:08+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMkpoODhxQzR0QUt4VnZiWk1tMm9ZTGg5VlZVam45MmpuaHNUa0ZlY2U4eENQMkd4enFtRXJmbFBPTDktUEhPY2hGNUZ3UUx6QWpfX3NBeGtTZ3prWlIxSnRsZGNuVmFUOW9Pb1VnNWNsbGktN0JlMkppT2ZuTHJqM0tURTFEaWxGSjBrYmFobnV1Zm0zTHhVZ2NhSW0?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
-    },
     {
       "id": "art_498910b6d9",
       "title": "Cloudbeds brings AI travel demand directly to hoteliers with Meta’s Muse integration - Hospitality Net",
@@ -182,26 +161,27 @@
       "recommendation_reason": "追蹤品牌 Cloudbeds 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
-      "id": "art_edcdc8f028",
-      "title": "Cloudbeds Brings AI Travel Demand Directly To Hoteliers News - Breaking Travel News",
-      "score": 87,
-      "source": "Cloudbeds",
+      "id": "art_867464c6e1",
+      "title": "Salesforce (CRM) Unveils Hunter For AI Driven Sales Workflows - Yahoo Finance",
+      "score": 89,
+      "source": "Monday CRM",
       "brands": [
-        "Cloudbeds"
+        "HubSpot",
+        "Salesforce"
       ],
       "types": [
         "P01 競品與產品更新",
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-10-21T10:18:44+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNc0hGRUpUQWZoREhKQnhsUkxCUnY3Y014MjFseVRSbl9UOGtOVHEzVmVlVlczWlV5aU83Q1pmQnhuTV9faV9uQ3pYLVJMNEJpWjRWcWMxdkRUbnN4c1JBbGplaU83RVUxNkp2U1VuWlRJdml6TkU4QU90eXJkTTNCVE0wZzF3dmZjeExpeDJpTUszbnhjNTMza1JwaU5saTMyTWc?oc=5",
-      "recommendation_reason": "追蹤品牌 Cloudbeds 的更新；歸類於「競品/產品更新」；近 1 週發布"
+      "date": "2026-10-24T18:09:08+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMkpoODhxQzR0QUt4VnZiWk1tMm9ZTGg5VlZVam45MmpuaHNUa0ZlY2U4eENQMkd4enFtRXJmbFBPTDktUEhPY2hGNUZ3UUx6QWpfX3NBeGtTZ3prWlIxSnRsZGNuVmFUOW9Pb1VnNWNsbGktN0JlMkppT2ZuTHJqM0tURTFEaWxGSjBrYmFobnV1Zm0zTHhVZ2NhSW0?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_ede9eda687",
-      "title": "roommaster Introduces AI Connector, Bringing Live Hotel PMS Data into ChatGPT, Claude, Microsoft Copilot and Google Gemini - Hospitality Net",
+      "id": "art_481a601b01",
+      "title": "roommaster Introduces AI Connector, Bringing Live Hotel PMS Data Into ChatGPT, Claude, Microsoft Copilot and Google Gemini - Hotel Online",
       "score": 87,
-      "source": "Mews",
+      "source": "roomMaster",
       "brands": [
         "Mews",
         "Guestline",
@@ -211,9 +191,24 @@
         "P01 競品與產品更新",
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-10-19T15:42:58+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQa2phQS1uY0lMbWpSRXVrV01ZQ20xVnZyVnVLU1Ixa3RfZEk0UW5qNkdXdU5SQlJTZ2NORG9hMjdldmVkRG44SGxlbGlVM0t0cmlRemdFbXJGbW1VVUtabHp3b0RKNS1QVE12azFPaWh1akd1ZFdlNHlySEZBdm1VNnJaOTdHR1NkRGg3MFY1bjZNZUdOTWt2ZXJxaHBKZzdyZjRxbGd4cnFVSW9KWXJybHdRTEpMYXg3dkVZNG0wM3pHWkxnbER3ZXIwOV9ZUnhER2NWNVdVS3dMT2xsVVhoVGRRdHdCWkI1cy11S2VTTFhUSThQSmc?oc=5",
+      "date": "2026-10-20T18:34:18+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQbUE3QVVuYjc0TmE3NjFjLVM5aXg5RkVkQnZBSVZVOUhnbG1tT0IxUS1fR0gxOUZJdWFCMy1ZN1A4cVNSVDhCbFN1dVUwdkFlU2tESWN6VF9aNVg3ODdONW9GWEdVR0dGUVlyb04wbFB4b3FsRV9ud2JRelhtbUpCMHA5Wmpkemd5VFNUdmN1RkdNYUh6YndzUXpWaFFsdXB6UHZzRS1xdjlCZGJ2WmFESHN1V3NrbHJsVkN5aG5La1h2bnNmSE9nN1BsVFpNajViUGQweFpjWnJYV2VnR09lR3lKYVdPMEVr?oc=5",
       "recommendation_reason": "追蹤品牌 Mews 的更新；歸類於「競品/產品更新」；近 1 週發布"
+    },
+    {
+      "id": "art_3b7de1dacb",
+      "title": "Salesforce Bets $5.7 Billion on AI Marketing With Braze Acquisition - TradingView",
+      "score": 81,
+      "source": "Salesforce",
+      "brands": [
+        "Salesforce"
+      ],
+      "types": [
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-10-20T13:23:35+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbXVDYnhnSmgtTmV1bTYzR2pYdlVoNXhBLWI1VGxlVXlpOXQ3V1VaT0JDR0p1UFJNSFVLVGc4TkNlV1I1a2JfWWhCZndDV2pPRThBOXgwWFVQTkpvTlZJU3dqSlZCWFRFVjFvaTBxOThKYWVXY254RUFieTY2aGZZbFdDZTNKajVzUExnTUtFZnhPd2JTNTU1RDl0aWs2dXhYYlFfb0g1RkE5a1VmYll6MmNicWlfcVFyUkduNXR1b2hWZw?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 1 週發布"
     }
   ]
 }
