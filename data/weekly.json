@@ -1,56 +1,60 @@
 {
-  "generated_at": "2026-10-29T06:50:40.674207",
+  "generated_at": "2026-10-30T06:53:15.612984",
   "window_days": 7,
-  "total": 229,
-  "priority_count": 55,
+  "total": 233,
+  "priority_count": 67,
   "by_system": {
     "CRM": 97,
-    "FBM": 32,
-    "TECH": 77,
-    "PMS": 24
+    "TECH": 80,
+    "PMS": 23,
+    "FBM": 34
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 63
+      "count": 62
     },
     {
       "brand": "Salesforce",
-      "count": 30
+      "count": 29
     },
     {
       "brand": "Resy",
-      "count": 19
-    },
-    {
-      "brand": "Cloudbeds",
-      "count": 12
+      "count": 25
     },
     {
       "brand": "Zoho CRM",
-      "count": 10
+      "count": 13
+    },
+    {
+      "brand": "Cloudbeds",
+      "count": 9
+    },
+    {
+      "brand": "RateGain",
+      "count": 4
     },
     {
       "brand": "inline",
-      "count": 7
+      "count": 4
     },
     {
       "brand": "OpenTable",
-      "count": 5
+      "count": 4
     },
     {
       "brand": "RMS Cloud",
       "count": 3
     },
     {
-      "brand": "RateGain",
+      "brand": "Guesty",
       "count": 3
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 101
+      "count": 111
     },
     {
       "type": "A01 AI 工具與工作流",
@@ -58,7 +62,7 @@
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 33
+      "count": 26
     },
     {
       "type": "T01 前端與 API 基礎",
@@ -66,62 +70,62 @@
     },
     {
       "type": "T02 產品架構與資料模型",
-      "count": 8
+      "count": 10
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 8
+      "count": 7
     }
   ],
   "top_combos": [
     {
-      "system": "CRM",
-      "type": "U02 UX 研究與設計趨勢",
-      "count": 54
-    },
-    {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 53
+      "count": 57
+    },
+    {
+      "system": "CRM",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 56
     },
     {
       "system": "CRM",
       "type": "A01 AI 工具與工作流",
-      "count": 33
+      "count": 32
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 28
-    },
-    {
-      "system": "TECH",
-      "type": "P01 競品與產品更新",
-      "count": 19
-    },
-    {
-      "system": "TECH",
-      "type": "T01 前端與 API 基礎",
-      "count": 16
+      "count": 32
     },
     {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
+      "count": 19
+    },
+    {
+      "system": "TECH",
+      "type": "P01 競品與產品更新",
+      "count": 17
+    },
+    {
+      "system": "TECH",
+      "type": "T01 前端與 API 基礎",
       "count": 15
     },
     {
       "system": "CRM",
       "type": "P01 競品與產品更新",
-      "count": 7
+      "count": 6
     },
     {
-      "system": "PMS",
-      "type": "P01 競品與產品更新",
-      "count": 5
+      "system": "CRM",
+      "type": "T02 產品架構與資料模型",
+      "count": 6
     },
     {
       "system": "TECH",
-      "type": "T02 產品架構與資料模型",
+      "type": "U01 UI/UX 設計案例",
       "count": 4
     }
   ],
@@ -129,7 +133,7 @@
     {
       "id": "art_b454834c11",
       "title": "Salesforce Service Cloud adds Einstein generative AI tools - TechTarget",
-      "score": 91,
+      "score": 89,
       "source": "Salesforce",
       "brands": [
         "Salesforce"
@@ -160,19 +164,36 @@
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
-      "id": "art_3ce79d995e",
-      "title": "基金更新：TODD ASSET MANAGEMENT LLC新建$5,770萬的$CRM股票頭寸 - Moomoo",
-      "score": 81,
-      "source": "Monday CRM",
+      "id": "art_a7f916f0b8",
+      "title": "Introducing the new Zoho Analytics: Agentic analytics for every business",
+      "score": 86,
+      "source": "BRAND/Zoho",
       "brands": [
-        "HubSpot"
+        "Zoho CRM"
       ],
       "types": [
-        "U02 UX 研究與設計趨勢"
+        "P01 競品與產品更新",
+        "U01 UI/UX 設計案例",
+        "A01 AI 工具與工作流"
       ],
-      "date": "2026-10-28T03:03:38+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQnkxbFZQc0oyeEhBMnZGTXY2RW55S2ZGckhXSlRrZUI3MGI2TnJuNTlUUzk4Y2Y3Zlo0SmZnV1F1SGV0ZVdyajJhMVltV2p2TUVDbG1acURQdDViMGZuVjNwZ19FMktLUE8wYmhJeUlTeVpGODBQRlhUYUs5cWpKTXU5LWNNZzlYbFRmMllVejFOMEZVUlZpNkgtNU9DeUpZ?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
+      "date": "2026-10-28T19:06:15+00:00",
+      "url": "https://www.zoho.com/blog/analytics/new-zoho-analytics-agentic-analytics.html",
+      "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
+      "id": "art_dfa97a2ce1",
+      "title": "千家臺灣中小企業採用，老牌印度協作軟體業者主打企業級AI、擴大在臺布局",
+      "score": 81,
+      "source": "TECH/TW·iThome",
+      "brands": [
+        "Zoho CRM"
+      ],
+      "types": [
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-10-30T06:49:59.295435",
+      "url": "https://www.ithome.com.tw/news/180077",
+      "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     },
     {
       "id": "art_66e348318b",
@@ -185,23 +206,8 @@
       "types": [
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-10-27T23:30:28+00:00",
+      "date": "2026-10-29T09:15:48+00:00",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOY3RvV1k3ZHY0NFhuMWpyN0xkUlhuNFhYTllOTzZ3cXBSOUhoQVdPY0xtUDd6VFM0VEpzZklGOHBhd1NvRzI2OEVfSktiSlhPLW1Xa3d5N2RpelVoOTYtblQxMTF5YjBTWUV1X0hEWGxlYmlSNF92MWlaNUtGcW1DYUZrVFA5VGVrZWIxdnprd2ZfYklYNDhEaWV2YXI?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
-      "id": "art_97d328774b",
-      "title": "CRM-Connected AI and the Fight to Control Customer Data - CX Today",
-      "score": 81,
-      "source": "Monday CRM",
-      "brands": [
-        "HubSpot"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-10-27T09:49:35+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VNGV1VGxTMmVDS3dEQnNRUUJhc1JwYXpoUkx4NmVLS1hTVFNzNlIybHB2Wm5tS1NYWFVNZjNVM3VUXzJRU2lBZkVxeGdaOFBmUFJiU0Y3aWNQUHU5eHhuMkV3VXhjMnR3N1VReTNhelY2Rm1iTEhfU0hIOVBXRHM?oc=5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     }
   ]
