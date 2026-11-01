@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-31T06:42:25.045148",
+  "generated_at": "2026-11-01T07:12:52.098380",
   "window_days": 7,
-  "total": 211,
-  "priority_count": 61,
+  "total": 207,
+  "priority_count": 48,
   "by_system": {
-    "CRM": 87,
-    "TECH": 74,
-    "PMS": 19,
-    "FBM": 32
+    "CRM": 83,
+    "TECH": 77,
+    "FBM": 32,
+    "PMS": 16
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 54
+      "count": 49
     },
     {
       "brand": "Salesforce",
-      "count": 29
+      "count": 30
     },
     {
       "brand": "Resy",
@@ -35,11 +35,11 @@
       "count": 5
     },
     {
-      "brand": "RateGain",
-      "count": 4
+      "brand": "RMS Cloud",
+      "count": 3
     },
     {
-      "brand": "RMS Cloud",
+      "brand": "RateGain",
       "count": 3
     },
     {
@@ -47,22 +47,22 @@
       "count": 2
     },
     {
-      "brand": "Mews",
+      "brand": "Stripe",
       "count": 2
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 101
+      "count": 100
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 83
+      "count": 79
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 19
+      "count": 18
     },
     {
       "type": "T01 前端與 API 基礎",
@@ -70,23 +70,23 @@
     },
     {
       "type": "T02 產品架構與資料模型",
-      "count": 10
+      "count": 12
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 5
+      "count": 6
     }
   ],
   "top_combos": [
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 56
+      "count": 57
     },
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 50
+      "count": 51
     },
     {
       "system": "FBM",
@@ -96,12 +96,12 @@
     {
       "system": "CRM",
       "type": "A01 AI 工具與工作流",
-      "count": 27
+      "count": 22
     },
     {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 18
+      "count": 15
     },
     {
       "system": "TECH",
@@ -111,22 +111,22 @@
     {
       "system": "TECH",
       "type": "P01 競品與產品更新",
-      "count": 10
-    },
-    {
-      "system": "CRM",
-      "type": "P01 競品與產品更新",
-      "count": 7
+      "count": 11
     },
     {
       "system": "CRM",
       "type": "T02 產品架構與資料模型",
-      "count": 6
+      "count": 7
     },
     {
       "system": "TECH",
       "type": "T02 產品架構與資料模型",
-      "count": 4
+      "count": 5
+    },
+    {
+      "system": "CRM",
+      "type": "P01 競品與產品更新",
+      "count": 5
     }
   ],
   "top_articles": [
@@ -147,23 +147,6 @@
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_867464c6e1",
-      "title": "Salesforce (CRM) Unveils Hunter For AI Driven Sales Workflows - Yahoo Finance",
-      "score": 87,
-      "source": "Monday CRM",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-10-24T18:09:08+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMkpoODhxQzR0QUt4VnZiWk1tMm9ZTGg5VlZVam45MmpuaHNUa0ZlY2U4eENQMkd4enFtRXJmbFBPTDktUEhPY2hGNUZ3UUx6QWpfX3NBeGtTZ3prWlIxSnRsZGNuVmFUOW9Pb1VnNWNsbGktN0JlMkppT2ZuTHJqM0tURTFEaWxGSjBrYmFobnV1Zm0zTHhVZ2NhSW0?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 1 週發布"
-    },
-    {
       "id": "art_a7f916f0b8",
       "title": "Introducing the new Zoho Analytics: Agentic analytics for every business",
       "score": 84,
@@ -181,21 +164,6 @@
       "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_66e348318b",
-      "title": "HubSpot embraces GenAI with Service Hub updates and more - TechTarget",
-      "score": 81,
-      "source": "HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-10-29T09:15:48+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOY3RvV1k3ZHY0NFhuMWpyN0xkUlhuNFhYTllOTzZ3cXBSOUhoQVdPY0xtUDd6VFM0VEpzZklGOHBhd1NvRzI2OEVfSktiSlhPLW1Xa3d5N2RpelVoOTYtblQxMTF5YjBTWUV1X0hEWGxlYmlSNF92MWlaNUtGcW1DYUZrVFA5VGVrZWIxdnprd2ZfYklYNDhEaWV2YXI?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
       "id": "art_9f196d8b39",
       "title": "TPM Holdings Accelerates Investment in AI and Salesforce CRM for the Built World - Yahoo Finance",
       "score": 81,
@@ -210,6 +178,37 @@
       "date": "2026-10-30T13:48:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNmxTaHgyaG56TXBTa1ZCbnpkVnpQQ2Z2WmQ2bFdvMWV2aXFZNTM5RHlYOVZibUplYkhzdVRYYk5NN3pfeTVJamZiNWlCMm9GRldWdDZzTXNJdmdRZkhQZ2tvVk1RcU9fUDQ4X2NHeVF6dUhVZ2w3aHlac2ZPMVp2S3A1R0ZWR3VlU1dFaFRsVzBYWUp0YmtSaTVjd0JUVXpYakxpSg?oc=5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+    },
+    {
+      "id": "art_89a55b78c5",
+      "title": "Zoho DataPrep 3.0: Agentic AI, Code Studio and 10+ new connectors",
+      "score": 79,
+      "source": "BRAND/Zoho",
+      "brands": [
+        "Zoho CRM"
+      ],
+      "types": [
+        "A01 AI 工具與工作流",
+        "T02 產品架構與資料模型"
+      ],
+      "date": "2026-10-28T14:05:54+00:00",
+      "url": "https://www.zoho.com/blog/dataprep/announcing-zoho-dataprep-3-0-agentic-ai.html",
+      "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+    },
+    {
+      "id": "art_3ce79d995e",
+      "title": "基金更新：TODD ASSET MANAGEMENT LLC新建$5,770萬的$CRM股票頭寸 - Moomoo",
+      "score": 77,
+      "source": "Monday CRM",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "U02 UX 研究與設計趨勢"
+      ],
+      "date": "2026-10-28T03:03:38+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQnkxbFZQc0oyeEhBMnZGTXY2RW55S2ZGckhXSlRrZUI3MGI2TnJuNTlUUzk4Y2Y3Zlo0SmZnV1F1SGV0ZVdyajJhMVltV2p2TUVDbG1acURQdDViMGZuVjNwZ19FMktLUE8wYmhJeUlTeVpGODBQRlhUYUs5cWpKTXU5LWNNZzlYbFRmMllVejFOMEZVUlZpNkgtNU9DeUpZ?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 1 週發布"
     }
   ]
 }
