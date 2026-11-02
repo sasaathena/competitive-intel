@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-01T07:12:52.098380",
+  "generated_at": "2026-11-02T07:17:24.977814",
   "window_days": 7,
-  "total": 207,
-  "priority_count": 48,
+  "total": 199,
+  "priority_count": 44,
   "by_system": {
-    "CRM": 83,
-    "TECH": 77,
-    "FBM": 32,
-    "PMS": 16
+    "CRM": 86,
+    "TECH": 70,
+    "FBM": 31,
+    "PMS": 14
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 49
+      "count": 52
     },
     {
       "brand": "Salesforce",
-      "count": 30
+      "count": 28
     },
     {
       "brand": "Resy",
-      "count": 25
+      "count": 24
     },
     {
       "brand": "Zoho CRM",
@@ -28,45 +28,45 @@
     },
     {
       "brand": "inline",
-      "count": 5
+      "count": 4
     },
     {
       "brand": "Cloudbeds",
-      "count": 5
-    },
-    {
-      "brand": "RMS Cloud",
-      "count": 3
+      "count": 4
     },
     {
       "brand": "RateGain",
       "count": 3
     },
     {
-      "brand": "Guesty",
+      "brand": "RMS Cloud",
+      "count": 3
+    },
+    {
+      "brand": "Pipedrive",
       "count": 2
     },
     {
-      "brand": "Stripe",
+      "brand": "OpenTable",
       "count": 2
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 100
+      "count": 96
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 79
+      "count": 76
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 18
+      "count": 19
     },
     {
       "type": "T01 前端與 API 基礎",
-      "count": 15
+      "count": 13
     },
     {
       "type": "T02 產品架構與資料模型",
@@ -74,66 +74,100 @@
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 6
+      "count": 7
     }
   ],
   "top_combos": [
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 57
+      "count": 51
     },
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 51
+      "count": 49
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 31
+      "count": 30
     },
     {
       "system": "CRM",
       "type": "A01 AI 工具與工作流",
-      "count": 22
+      "count": 25
     },
     {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 15
+      "count": 13
     },
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
-      "count": 14
+      "count": 11
     },
     {
       "system": "TECH",
       "type": "P01 競品與產品更新",
-      "count": 11
+      "count": 10
     },
     {
       "system": "CRM",
       "type": "T02 產品架構與資料模型",
+      "count": 8
+    },
+    {
+      "system": "CRM",
+      "type": "P01 競品與產品更新",
       "count": 7
     },
     {
       "system": "TECH",
       "type": "T02 產品架構與資料模型",
-      "count": 5
-    },
-    {
-      "system": "CRM",
-      "type": "P01 競品與產品更新",
-      "count": 5
+      "count": 4
     }
   ],
   "top_articles": [
     {
+      "id": "art_d7062a29d8",
+      "title": "「押對模型靠運氣，保有選擇權靠架構。」勤英科技 MixRoute 助企業掌握模型、成本與治理三大主導權",
+      "score": 95,
+      "source": "TECH/TW·TechOrange",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流",
+        "T01 前端與 API 基礎",
+        "T02 產品架構與資料模型"
+      ],
+      "date": "2026-11-02T09:44:17+08:00",
+      "url": "https://techorange.com/2026/11/02/elite-cloud-mixroute-smart-routing/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
+      "id": "art_7484bec5cf",
+      "title": "企業 AI 如何建立共同語言？雲馥數位蔡嘉豪：以 Fabric IQ 串起資料語意與業務脈絡",
+      "score": 91,
+      "source": "TECH/TW·TechOrange",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-11-02T12:10:22+08:00",
+      "url": "https://techorange.com/2026/11/02/cloudriches-aiagent-fabric-iq/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
       "id": "art_a877b0ba3a",
       "title": "Otto Launches World’s First Voice AI CRM, Letting Field Sales Reps Update Deals with a Phone Call - CXOToday.com",
-      "score": 89,
+      "score": 87,
       "source": "Monday CRM",
       "brands": [
         "HubSpot"
@@ -144,12 +178,12 @@
       ],
       "date": "2026-10-28T11:53:25+00:00",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQQWotaTI1ZWZlRzRGamVLS2VNQ0pLWUc1eE13ejZLYmM4dzVYX3NERkVKSnhvWGdyMzgyTmxVeDhkZDNoc0FfN21nMEFyRTVKOTFzOGdhVXlsSnZTOVU4NEZ3VE9RX1lPa3U1RHh2TDR6T2JxYzJMbVdlQ25UQlZfTzNpaHlqWlhEWkRQV29NM2Z5TGVQQk5nMUxNeVdhZGR3UE0xMmtSYjBaVUlNcDBvVl9qTnZ1d1otcjVheGNUUmEtYjU3NUQ2THFVV3c?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
       "id": "art_a7f916f0b8",
       "title": "Introducing the new Zoho Analytics: Agentic analytics for every business",
-      "score": 84,
+      "score": 82,
       "source": "BRAND/Zoho",
       "brands": [
         "Zoho CRM"
@@ -161,54 +195,22 @@
       ],
       "date": "2026-10-28T19:06:15+00:00",
       "url": "https://www.zoho.com/blog/analytics/new-zoho-analytics-agentic-analytics.html",
-      "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「競品/產品更新」；近 3 天發布"
+      "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
-      "id": "art_9f196d8b39",
-      "title": "TPM Holdings Accelerates Investment in AI and Salesforce CRM for the Built World - Yahoo Finance",
+      "id": "art_6ee28b281a",
+      "title": "Estonia’s Pipedrive to cut 70% of local workforce as AI disrupts its business model - Estonian World",
       "score": 81,
-      "source": "Monday CRM",
+      "source": "Pipedrive",
       "brands": [
-        "HubSpot",
-        "Salesforce"
+        "Pipedrive"
       ],
       "types": [
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-10-30T13:48:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNmxTaHgyaG56TXBTa1ZCbnpkVnpQQ2Z2WmQ2bFdvMWV2aXFZNTM5RHlYOVZibUplYkhzdVRYYk5NN3pfeTVJamZiNWlCMm9GRldWdDZzTXNJdmdRZkhQZ2tvVk1RcU9fUDQ4X2NHeVF6dUhVZ2w3aHlac2ZPMVp2S3A1R0ZWR3VlU1dFaFRsVzBYWUp0YmtSaTVjd0JUVXpYakxpSg?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
-      "id": "art_89a55b78c5",
-      "title": "Zoho DataPrep 3.0: Agentic AI, Code Studio and 10+ new connectors",
-      "score": 79,
-      "source": "BRAND/Zoho",
-      "brands": [
-        "Zoho CRM"
-      ],
-      "types": [
-        "A01 AI 工具與工作流",
-        "T02 產品架構與資料模型"
-      ],
-      "date": "2026-10-28T14:05:54+00:00",
-      "url": "https://www.zoho.com/blog/dataprep/announcing-zoho-dataprep-3-0-agentic-ai.html",
-      "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
-      "id": "art_3ce79d995e",
-      "title": "基金更新：TODD ASSET MANAGEMENT LLC新建$5,770萬的$CRM股票頭寸 - Moomoo",
-      "score": 77,
-      "source": "Monday CRM",
-      "brands": [
-        "HubSpot"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "date": "2026-10-28T03:03:38+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQnkxbFZQc0oyeEhBMnZGTXY2RW55S2ZGckhXSlRrZUI3MGI2TnJuNTlUUzk4Y2Y3Zlo0SmZnV1F1SGV0ZVdyajJhMVltV2p2TUVDbG1acURQdDViMGZuVjNwZ19FMktLUE8wYmhJeUlTeVpGODBQRlhUYUs5cWpKTXU5LWNNZzlYbFRmMllVejFOMEZVUlZpNkgtNU9DeUpZ?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 1 週發布"
+      "date": "2026-11-01T14:29:19+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMTlCa2U2VF9SMHItTFJQbXppX0xHclM3RXdIUnhIOFUxVWpRR1BXdE5BckllNlhTWWxrZHpGYVJQalU1NmtnM2lzWFNUZmtJZVhRVmR2Nk5GVERDdEJ4TC1WbHZWMjNGMUd0cE5Qb0NnVTZfZ1BCaC1naGc4czFGSnhjOWlKdURJMkVJbG5sOXUzZG1Mc3RqYWhqa2tURnNHYlNmM2lPQk00M1ZaRFFKLU9vcnZMN2pL?oc=5",
+      "recommendation_reason": "追蹤品牌 Pipedrive 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     }
   ]
 }
