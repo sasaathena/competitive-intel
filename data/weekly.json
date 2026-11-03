@@ -1,45 +1,45 @@
 {
-  "generated_at": "2026-11-02T07:17:24.977814",
+  "generated_at": "2026-11-03T07:37:27.558767",
   "window_days": 7,
-  "total": 199,
-  "priority_count": 44,
+  "total": 202,
+  "priority_count": 34,
   "by_system": {
-    "CRM": 86,
-    "TECH": 70,
-    "FBM": 31,
-    "PMS": 14
+    "CRM": 87,
+    "TECH": 78,
+    "PMS": 15,
+    "FBM": 23
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 52
+      "count": 55
     },
     {
       "brand": "Salesforce",
-      "count": 28
+      "count": 30
     },
     {
       "brand": "Resy",
-      "count": 24
+      "count": 17
     },
     {
       "brand": "Zoho CRM",
-      "count": 11
+      "count": 9
+    },
+    {
+      "brand": "Cloudbeds",
+      "count": 5
     },
     {
       "brand": "inline",
       "count": 4
     },
     {
-      "brand": "Cloudbeds",
-      "count": 4
-    },
-    {
-      "brand": "RateGain",
+      "brand": "Guesty",
       "count": 3
     },
     {
-      "brand": "RMS Cloud",
+      "brand": "RateGain",
       "count": 3
     },
     {
@@ -47,18 +47,18 @@
       "count": 2
     },
     {
-      "brand": "OpenTable",
+      "brand": "RMS Cloud",
       "count": 2
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 96
+      "count": 93
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 76
+      "count": 80
     },
     {
       "type": "P01 競品與產品更新",
@@ -66,32 +66,27 @@
     },
     {
       "type": "T01 前端與 API 基礎",
-      "count": 13
-    },
-    {
-      "type": "T02 產品架構與資料模型",
-      "count": 12
+      "count": 17
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 7
+      "count": 9
+    },
+    {
+      "type": "T02 產品架構與資料模型",
+      "count": 8
     }
   ],
   "top_combos": [
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 51
+      "count": 55
     },
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 49
-    },
-    {
-      "system": "FBM",
-      "type": "U02 UX 研究與設計趨勢",
-      "count": 30
+      "count": 52
     },
     {
       "system": "CRM",
@@ -99,55 +94,42 @@
       "count": 25
     },
     {
-      "system": "PMS",
+      "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 13
+      "count": 22
     },
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
-      "count": 11
+      "count": 16
+    },
+    {
+      "system": "PMS",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 14
     },
     {
       "system": "TECH",
       "type": "P01 競品與產品更新",
-      "count": 10
+      "count": 12
     },
     {
       "system": "CRM",
       "type": "T02 產品架構與資料模型",
-      "count": 8
+      "count": 6
     },
     {
       "system": "CRM",
       "type": "P01 競品與產品更新",
-      "count": 7
+      "count": 5
     },
     {
       "system": "TECH",
-      "type": "T02 產品架構與資料模型",
-      "count": 4
+      "type": "U01 UI/UX 設計案例",
+      "count": 5
     }
   ],
   "top_articles": [
-    {
-      "id": "art_d7062a29d8",
-      "title": "「押對模型靠運氣，保有選擇權靠架構。」勤英科技 MixRoute 助企業掌握模型、成本與治理三大主導權",
-      "score": 95,
-      "source": "TECH/TW·TechOrange",
-      "brands": [
-        "HubSpot"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流",
-        "T01 前端與 API 基礎",
-        "T02 產品架構與資料模型"
-      ],
-      "date": "2026-11-02T09:44:17+08:00",
-      "url": "https://techorange.com/2026/11/02/elite-cloud-mixroute-smart-routing/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
-    },
     {
       "id": "art_7484bec5cf",
       "title": "企業 AI 如何建立共同語言？雲馥數位蔡嘉豪：以 Fabric IQ 串起資料語意與業務脈絡",
@@ -165,10 +147,10 @@
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_a877b0ba3a",
-      "title": "Otto Launches World’s First Voice AI CRM, Letting Field Sales Reps Update Deals with a Phone Call - CXOToday.com",
-      "score": 87,
-      "source": "Monday CRM",
+      "id": "art_cddc72adb4",
+      "title": "AI maturity in marketing: What the research reveals",
+      "score": 84,
+      "source": "BRAND/HubSpot·Marketing",
       "brands": [
         "HubSpot"
       ],
@@ -176,9 +158,9 @@
         "P01 競品與產品更新",
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-10-28T11:53:25+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQQWotaTI1ZWZlRzRGamVLS2VNQ0pLWUc1eE13ejZLYmM4dzVYX3NERkVKSnhvWGdyMzgyTmxVeDhkZDNoc0FfN21nMEFyRTVKOTFzOGdhVXlsSnZTOVU4NEZ3VE9RX1lPa3U1RHh2TDR6T2JxYzJMbVdlQ25UQlZfTzNpaHlqWlhEWkRQV29NM2Z5TGVQQk5nMUxNeVdhZGR3UE0xMmtSYjBaVUlNcDBvVl9qTnZ1d1otcjVheGNUUmEtYjU3NUQ2THFVV3c?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 1 週發布"
+      "date": "2026-11-02T17:50:05+00:00",
+      "url": "https://blog.hubspot.com/marketing/ai-maturity",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
       "id": "art_a7f916f0b8",
@@ -198,19 +180,35 @@
       "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
-      "id": "art_6ee28b281a",
-      "title": "Estonia’s Pipedrive to cut 70% of local workforce as AI disrupts its business model - Estonian World",
+      "id": "art_6b23627f0e",
+      "title": "Salesforce收購軍事後勤AI新創Rune，將服務延伸至戰場前線 - iThome",
       "score": 81,
-      "source": "Pipedrive",
+      "source": "Salesforce",
       "brands": [
-        "Pipedrive"
+        "Salesforce"
       ],
       "types": [
-        "A01 AI 工具與工作流"
+        "U02 UX 研究與設計趨勢"
       ],
-      "date": "2026-11-01T14:29:19+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMTlCa2U2VF9SMHItTFJQbXppX0xHclM3RXdIUnhIOFUxVWpRR1BXdE5BckllNlhTWWxrZHpGYVJQalU1NmtnM2lzWFNUZmtJZVhRVmR2Nk5GVERDdEJ4TC1WbHZWMjNGMUd0cE5Qb0NnVTZfZ1BCaC1naGc4czFGSnhjOWlKdURJMkVJbG5sOXUzZG1Mc3RqYWhqa2tURnNHYlNmM2lPQk00M1ZaRFFKLU9vcnZMN2pL?oc=5",
-      "recommendation_reason": "追蹤品牌 Pipedrive 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+      "date": "2026-11-02T02:55:10+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9Db1BBOGlsMzY2MEZWYXZBWjZ6T3lZbEJsYnBNd3pXakpwbkFEOWRac3M5WWhLUmlqaTRlS2dHczBHNGg0VVRvMDU0WnhXdw?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
+    },
+    {
+      "id": "art_17c0ec8cd5",
+      "title": "《美股》Salesforce(CRM.US)收購語音作業系統公司Cresta 傳作價27億美元 - Yahoo 財經",
+      "score": 81,
+      "source": "Salesforce",
+      "brands": [
+        "HubSpot",
+        "Salesforce"
+      ],
+      "types": [
+        "U02 UX 研究與設計趨勢"
+      ],
+      "date": "2026-11-03T02:37:30+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNelF3Q3pveWktOEhhTlFKXzZYTGFtbHdSTWdRXy1CUHljVmswSnZWNm5KM2FPVjh2MW9GbEtwekEyVlJxWkZiaUVycW5WR3Fvbk5LbElSRkR6YW5EWjlMak5LUF9RTkcwTzhteXdKY3hHdmlfWTBKbzZJdTNtS3drTkxjQV9lTm14RWxmam1VRUJCNEVkLXpseU1sSFlKVHpBM0hlbU9EeUlFajNjVUljYmdFLUVtZkJTMXBQS09wWUt2UExLUTBKNkY5emNrdmdGQ1VpVDFWOU9DNTVzM2ExZ0JxcnhxTk1sREVUOGxrcmhDc1hBNUNiOVY1MGxhell2RW9HOGlxS0ZhNW1NNWYw?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     }
   ]
 }
