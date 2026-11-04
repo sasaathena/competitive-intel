@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-11-03T07:37:27.558767",
+  "generated_at": "2026-11-04T07:19:50.991231",
   "window_days": 7,
-  "total": 202,
-  "priority_count": 34,
+  "total": 206,
+  "priority_count": 36,
   "by_system": {
-    "CRM": 87,
-    "TECH": 78,
-    "PMS": 15,
-    "FBM": 23
+    "CRM": 85,
+    "PMS": 16,
+    "TECH": 82,
+    "FBM": 24
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 55
+      "count": 53
     },
     {
       "brand": "Salesforce",
-      "count": 30
+      "count": 29
     },
     {
       "brand": "Resy",
-      "count": 17
+      "count": 19
     },
     {
       "brand": "Zoho CRM",
-      "count": 9
+      "count": 8
     },
     {
       "brand": "Cloudbeds",
@@ -35,10 +35,6 @@
       "count": 4
     },
     {
-      "brand": "Guesty",
-      "count": 3
-    },
-    {
       "brand": "RateGain",
       "count": 3
     },
@@ -47,61 +43,65 @@
       "count": 2
     },
     {
-      "brand": "RMS Cloud",
+      "brand": "SiteMinder",
+      "count": 2
+    },
+    {
+      "brand": "Mews",
       "count": 2
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 93
+      "count": 94
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 80
+      "count": 87
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 19
+      "count": 23
     },
     {
       "type": "T01 前端與 API 基礎",
-      "count": 17
-    },
-    {
-      "type": "U01 UI/UX 設計案例",
-      "count": 9
+      "count": 14
     },
     {
       "type": "T02 產品架構與資料模型",
       "count": 8
+    },
+    {
+      "type": "U01 UI/UX 設計案例",
+      "count": 6
     }
   ],
   "top_combos": [
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 55
+      "count": 59
     },
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 52
+      "count": 50
     },
     {
       "system": "CRM",
       "type": "A01 AI 工具與工作流",
-      "count": 25
+      "count": 26
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 22
+      "count": 24
     },
     {
       "system": "TECH",
-      "type": "T01 前端與 API 基礎",
-      "count": 16
+      "type": "P01 競品與產品更新",
+      "count": 18
     },
     {
       "system": "PMS",
@@ -110,8 +110,8 @@
     },
     {
       "system": "TECH",
-      "type": "P01 競品與產品更新",
-      "count": 12
+      "type": "T01 前端與 API 基礎",
+      "count": 14
     },
     {
       "system": "CRM",
@@ -119,32 +119,31 @@
       "count": 6
     },
     {
-      "system": "CRM",
-      "type": "P01 競品與產品更新",
-      "count": 5
+      "system": "TECH",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 6
     },
     {
-      "system": "TECH",
-      "type": "U01 UI/UX 設計案例",
+      "system": "CRM",
+      "type": "P01 競品與產品更新",
       "count": 5
     }
   ],
   "top_articles": [
     {
-      "id": "art_7484bec5cf",
-      "title": "企業 AI 如何建立共同語言？雲馥數位蔡嘉豪：以 Fabric IQ 串起資料語意與業務脈絡",
-      "score": 91,
-      "source": "TECH/TW·TechOrange",
+      "id": "art_c292c1674b",
+      "title": "Salesforce Reportedly Acquires Military Logistics AI Startup Rune Technologies for $375 Million - Mashdigi",
+      "score": 85,
+      "source": "Salesforce",
       "brands": [
-        "HubSpot"
+        "Salesforce"
       ],
       "types": [
-        "P01 競品與產品更新",
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-11-02T12:10:22+08:00",
-      "url": "https://techorange.com/2026/11/02/cloudriches-aiagent-fabric-iq/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+      "date": "2026-11-03T15:51:40+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPa0tubUZJbDc2TmgxSlBJaE9EbHRKZXlhVjE2OUtMb3BtZEo0c29fM1MtOTRCb3I4R0E4QVg5bmx1clotcjh3ejhvWldfaDVhRG1ZQlhLOUhxMGUyRnF4SVdKZUNuYlNSSURtYTdUdzc4LTFCR2dSRmtmVHNMSHhFX3NYVXEzU2JpV05rRFlraEtwdw?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     },
     {
       "id": "art_cddc72adb4",
@@ -180,21 +179,6 @@
       "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
-      "id": "art_6b23627f0e",
-      "title": "Salesforce收購軍事後勤AI新創Rune，將服務延伸至戰場前線 - iThome",
-      "score": 81,
-      "source": "Salesforce",
-      "brands": [
-        "Salesforce"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "date": "2026-11-02T02:55:10+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9Db1BBOGlsMzY2MEZWYXZBWjZ6T3lZbEJsYnBNd3pXakpwbkFEOWRac3M5WWhLUmlqaTRlS2dHczBHNGg0VVRvMDU0WnhXdw?oc=5",
-      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
       "id": "art_17c0ec8cd5",
       "title": "《美股》Salesforce(CRM.US)收購語音作業系統公司Cresta 傳作價27億美元 - Yahoo 財經",
       "score": 81,
@@ -206,9 +190,24 @@
       "types": [
         "U02 UX 研究與設計趨勢"
       ],
-      "date": "2026-11-03T02:37:30+00:00",
+      "date": "2026-11-03T02:38:02+00:00",
       "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNelF3Q3pveWktOEhhTlFKXzZYTGFtbHdSTWdRXy1CUHljVmswSnZWNm5KM2FPVjh2MW9GbEtwekEyVlJxWkZiaUVycW5WR3Fvbk5LbElSRkR6YW5EWjlMak5LUF9RTkcwTzhteXdKY3hHdmlfWTBKbzZJdTNtS3drTkxjQV9lTm14RWxmam1VRUJCNEVkLXpseU1sSFlKVHpBM0hlbU9EeUlFajNjVUljYmdFLUVtZkJTMXBQS09wWUt2UExLUTBKNkY5emNrdmdGQ1VpVDFWOU9DNTVzM2ExZ0JxcnhxTk1sREVUOGxrcmhDc1hBNUNiOVY1MGxhell2RW9HOGlxS0ZhNW1NNWYw?oc=5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
+    },
+    {
+      "id": "art_394c2a3613",
+      "title": "Salesforce簽署協議收購Cresta 加碼語音客戶體驗系統 - 富途牛牛",
+      "score": 81,
+      "source": "Salesforce",
+      "brands": [
+        "Salesforce"
+      ],
+      "types": [
+        "U02 UX 研究與設計趨勢"
+      ],
+      "date": "2026-11-03T10:55:09+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9HNXo0UHlsN2pKbGM1TXdCdUlmeWdKYjV3NGVBYmlWdWhpaTk5REd4WGhiMU5IdU1MTFBQcjFxbGRTR3JMWmpwUW5TR2V5ckxROGEwUg?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     }
   ]
 }
