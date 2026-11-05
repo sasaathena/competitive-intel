@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-04T07:19:50.991231",
+  "generated_at": "2026-11-05T07:47:39.516233",
   "window_days": 7,
   "total": 206,
-  "priority_count": 36,
+  "priority_count": 54,
   "by_system": {
-    "CRM": 85,
-    "PMS": 16,
-    "TECH": 82,
-    "FBM": 24
+    "CRM": 86,
+    "PMS": 14,
+    "TECH": 65,
+    "FBM": 41
   },
   "top_brands": [
     {
@@ -16,34 +16,34 @@
     },
     {
       "brand": "Salesforce",
-      "count": 29
+      "count": 28
     },
     {
       "brand": "Resy",
-      "count": 19
+      "count": 23
+    },
+    {
+      "brand": "OpenTable",
+      "count": 10
     },
     {
       "brand": "Zoho CRM",
-      "count": 8
-    },
-    {
-      "brand": "Cloudbeds",
-      "count": 5
+      "count": 7
     },
     {
       "brand": "inline",
-      "count": 4
+      "count": 7
     },
     {
-      "brand": "RateGain",
+      "brand": "Cloudbeds",
+      "count": 6
+    },
+    {
+      "brand": "SiteMinder",
       "count": 3
     },
     {
       "brand": "Pipedrive",
-      "count": 2
-    },
-    {
-      "brand": "SiteMinder",
       "count": 2
     },
     {
@@ -54,11 +54,11 @@
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 94
+      "count": 97
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 87
+      "count": 82
     },
     {
       "type": "P01 競品與產品更新",
@@ -66,52 +66,57 @@
     },
     {
       "type": "T01 前端與 API 基礎",
-      "count": 14
+      "count": 17
     },
     {
       "type": "T02 產品架構與資料模型",
-      "count": 8
+      "count": 7
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 6
+      "count": 2
     }
   ],
   "top_combos": [
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 59
+      "count": 49
     },
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 50
-    },
-    {
-      "system": "CRM",
-      "type": "A01 AI 工具與工作流",
-      "count": 26
+      "count": 49
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 24
+      "count": 37
     },
     {
-      "system": "TECH",
-      "type": "P01 競品與產品更新",
-      "count": 18
-    },
-    {
-      "system": "PMS",
-      "type": "U02 UX 研究與設計趨勢",
-      "count": 14
+      "system": "CRM",
+      "type": "A01 AI 工具與工作流",
+      "count": 27
     },
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
-      "count": 14
+      "count": 17
+    },
+    {
+      "system": "TECH",
+      "type": "P01 競品與產品更新",
+      "count": 15
+    },
+    {
+      "system": "PMS",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 10
+    },
+    {
+      "system": "CRM",
+      "type": "P01 競品與產品更新",
+      "count": 6
     },
     {
       "system": "CRM",
@@ -119,36 +124,63 @@
       "count": 6
     },
     {
-      "system": "TECH",
-      "type": "U02 UX 研究與設計趨勢",
-      "count": 6
-    },
-    {
-      "system": "CRM",
-      "type": "P01 競品與產品更新",
-      "count": 5
+      "system": "PMS",
+      "type": "A01 AI 工具與工作流",
+      "count": 4
     }
   ],
   "top_articles": [
     {
-      "id": "art_c292c1674b",
-      "title": "Salesforce Reportedly Acquires Military Logistics AI Startup Rune Technologies for $375 Million - Mashdigi",
+      "id": "art_7ad57e32d9",
+      "title": "HubSpot (HUBS) 2026 年第三季法說會：AI 採用率上升 惟第四季成長放緩 - TradingKey",
       "score": 85,
-      "source": "Salesforce",
+      "source": "HubSpot",
       "brands": [
-        "Salesforce"
+        "HubSpot"
       ],
       "types": [
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-11-03T15:51:40+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPa0tubUZJbDc2TmgxSlBJaE9EbHRKZXlhVjE2OUtMb3BtZEo0c29fM1MtOTRCb3I4R0E4QVg5bmx1clotcjh3ejhvWldfaDVhRG1ZQlhLOUhxMGUyRnF4SVdKZUNuYlNSSURtYTdUdzc4LTFCR2dSRmtmVHNMSHhFX3NYVXEzU2JpV05rRFlraEtwdw?oc=5",
-      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+      "date": "2026-11-04T23:38:53+00:00",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lbnlIQ1ZlRzZ0ZFhlSkc1cC00SGNkajBsMWZ2TG8wUkU5ZjI1Ni1HTktwakN1XzdLUFo3VEFwSFFkTFp2LVRCdFZxUnMxVDBYcDlmeDJQd0l6d2VYOVhQZGdfb284eTc2ZjhhRkpCOA?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+    },
+    {
+      "id": "art_35e1d6b7d1",
+      "title": "Labels that build themselves: Simplified Label Automation in Zoho Writer",
+      "score": 84,
+      "source": "BRAND/Zoho",
+      "brands": [
+        "Zoho CRM"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-11-04T13:54:11+00:00",
+      "url": "https://www.zoho.com/blog/writer/label-automation.html",
+      "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
+      "id": "art_acc557d42f",
+      "title": "Zoho Writer’s latest automation updates: smarter formulas, dynamic content, and less manual work",
+      "score": 84,
+      "source": "BRAND/Zoho",
+      "brands": [
+        "Zoho CRM"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-11-04T10:00:00+00:00",
+      "url": "https://www.zoho.com/blog/writer/zoho-writer-document-automation-updates.html",
+      "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
       "id": "art_cddc72adb4",
       "title": "AI maturity in marketing: What the research reveals",
-      "score": 84,
+      "score": 82,
       "source": "BRAND/HubSpot·Marketing",
       "brands": [
         "HubSpot"
@@ -162,52 +194,19 @@
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_a7f916f0b8",
-      "title": "Introducing the new Zoho Analytics: Agentic analytics for every business",
-      "score": 82,
-      "source": "BRAND/Zoho",
+      "id": "art_4ee07f0b53",
+      "title": "Salesforce to buy voice AI start-up Cresta for a reported $2.7bn - The Next Web",
+      "score": 81,
+      "source": "Salesforce",
       "brands": [
-        "Zoho CRM"
+        "Salesforce"
       ],
       "types": [
-        "P01 競品與產品更新",
-        "U01 UI/UX 設計案例",
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-10-28T19:06:15+00:00",
-      "url": "https://www.zoho.com/blog/analytics/new-zoho-analytics-agentic-analytics.html",
-      "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「競品/產品更新」；近 1 週發布"
-    },
-    {
-      "id": "art_17c0ec8cd5",
-      "title": "《美股》Salesforce(CRM.US)收購語音作業系統公司Cresta 傳作價27億美元 - Yahoo 財經",
-      "score": 81,
-      "source": "Salesforce",
-      "brands": [
-        "HubSpot",
-        "Salesforce"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "date": "2026-11-03T02:38:02+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNelF3Q3pveWktOEhhTlFKXzZYTGFtbHdSTWdRXy1CUHljVmswSnZWNm5KM2FPVjh2MW9GbEtwekEyVlJxWkZiaUVycW5WR3Fvbk5LbElSRkR6YW5EWjlMak5LUF9RTkcwTzhteXdKY3hHdmlfWTBKbzZJdTNtS3drTkxjQV9lTm14RWxmam1VRUJCNEVkLXpseU1sSFlKVHpBM0hlbU9EeUlFajNjVUljYmdFLUVtZkJTMXBQS09wWUt2UExLUTBKNkY5emNrdmdGQ1VpVDFWOU9DNTVzM2ExZ0JxcnhxTk1sREVUOGxrcmhDc1hBNUNiOVY1MGxhell2RW9HOGlxS0ZhNW1NNWYw?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
-    },
-    {
-      "id": "art_394c2a3613",
-      "title": "Salesforce簽署協議收購Cresta 加碼語音客戶體驗系統 - 富途牛牛",
-      "score": 81,
-      "source": "Salesforce",
-      "brands": [
-        "Salesforce"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "date": "2026-11-03T10:55:09+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9HNXo0UHlsN2pKbGM1TXdCdUlmeWdKYjV3NGVBYmlWdWhpaTk5REd4WGhiMU5IdU1MTFBQcjFxbGRTR3JMWmpwUW5TR2V5ckxROGEwUg?oc=5",
-      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
+      "date": "2026-11-03T14:23:29+00:00",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1lVGdLT2NiZm9VY01RSTdVVi13V3dxV3RpTkszS2pRWl84NVliTzV5UExubXdzaDUtWEEyTGdiSUUzV05wWC1FTzlhckxoRDNBSXNnLVVnVDM5cWVaQ3QzLUduV3JIbWtpb290SENPOFk4N2FhSlE?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     }
   ]
 }
