@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-05T07:47:39.516233",
+  "generated_at": "2026-11-06T07:45:24.986916",
   "window_days": 7,
-  "total": 206,
-  "priority_count": 54,
+  "total": 229,
+  "priority_count": 85,
   "by_system": {
-    "CRM": 86,
-    "PMS": 14,
-    "TECH": 65,
-    "FBM": 41
+    "CRM": 82,
+    "PMS": 23,
+    "TECH": 81,
+    "FBM": 43
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 53
+      "count": 50
     },
     {
       "brand": "Salesforce",
@@ -24,7 +24,15 @@
     },
     {
       "brand": "OpenTable",
-      "count": 10
+      "count": 14
+    },
+    {
+      "brand": "RateGain",
+      "count": 8
+    },
+    {
+      "brand": "Cloudbeds",
+      "count": 7
     },
     {
       "brand": "Zoho CRM",
@@ -32,104 +40,144 @@
     },
     {
       "brand": "inline",
-      "count": 7
-    },
-    {
-      "brand": "Cloudbeds",
-      "count": 6
+      "count": 5
     },
     {
       "brand": "SiteMinder",
-      "count": 3
+      "count": 4
     },
     {
-      "brand": "Pipedrive",
-      "count": 2
-    },
-    {
-      "brand": "Mews",
+      "brand": "Guesty",
       "count": 2
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 97
+      "count": 105
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 82
+      "count": 100
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 23
+      "count": 25
     },
     {
       "type": "T01 前端與 API 基礎",
-      "count": 17
+      "count": 16
     },
     {
       "type": "T02 產品架構與資料模型",
-      "count": 7
+      "count": 8
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 2
+      "count": 3
     }
   ],
   "top_combos": [
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 49
+      "count": 61
     },
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 49
+      "count": 44
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 37
+      "count": 42
     },
     {
       "system": "CRM",
       "type": "A01 AI 工具與工作流",
-      "count": 27
+      "count": 31
+    },
+    {
+      "system": "TECH",
+      "type": "P01 競品與產品更新",
+      "count": 16
     },
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
-      "count": 17
-    },
-    {
-      "system": "TECH",
-      "type": "P01 競品與產品更新",
-      "count": 15
+      "count": 16
     },
     {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 10
+      "count": 14
     },
     {
       "system": "CRM",
       "type": "P01 競品與產品更新",
-      "count": 6
-    },
-    {
-      "system": "CRM",
-      "type": "T02 產品架構與資料模型",
-      "count": 6
+      "count": 7
     },
     {
       "system": "PMS",
       "type": "A01 AI 工具與工作流",
-      "count": 4
+      "count": 7
+    },
+    {
+      "system": "CRM",
+      "type": "T02 產品架構與資料模型",
+      "count": 5
     }
   ],
   "top_articles": [
+    {
+      "id": "art_cd75294c0d",
+      "title": "Otto launches voice AI CRM, letting field sales reps update seals with a phone call - The Economic Times",
+      "score": 89,
+      "source": "Monday CRM",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-11-04T07:28:51+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNRFVEWlI2X0xCanQ5T2c1bzhka1dXM2h2OVBEWGRWck4zS3hKM0l1aEtKV01iMTIySFVLbDhVNlpfdWdiUGVrZWhlX05RNFNWN0tMY25MYVQ0RTZISnpRRTB4YWczV0p5ODZNNlNOVUYzR254RFRWckItRUNyX1E5ZEd1eVJoTHNwZG9IcElobDBmb2pncWNrNi1odFhmUXdiWlU0RlAwam9ZbjBNOC1fUHV4enNzbWR2RlZIdnVZTVpveDJtajVIVE4xYzJ6elRIeWlWaU5xbWhQdVpDUXlGWVZRYUNYRVFXRm1FTzdJTUZoQW5YeHM0M3VKcW1FcUNy0gGGAkFVX3lxTE5heW5qN0xDNFR3d01nUkdqYUJVMk4yQkFxWTc2b24wcW9HNmVZVTItN2Z0bWpxVDFYZG9ZalhoZ0pIdkVISmN4X1VjMXgtOVktYk8yWGYxN2VjTGc3R2xoY1VSSGNIcHRsWjBhZFNFX29TdlMwbkJVNElvVlhWUGJWeC1aNmVCZG9qbUxac1NsampiWTZIdW9IQTMwRlhDOHVYVzExb3YwMUJmaHVJaF9QSXo2RlJ6Nk1yTFAycnFzSTNTWkQ3UHlHNmJxOWs3OS1ubWF6dUlxcVRfNmtSRkNhanlsMm83TXh1cTF5bXRpazFCWElzdzQzMnlsWlVuQ1JIZjhvWmc?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
+      "id": "art_43eaa3d767",
+      "title": "RateGain’s Sojern integration takes customers to 14,538 - Multibagg AI",
+      "score": 88,
+      "source": "RateGain",
+      "brands": [
+        "RateGain"
+      ],
+      "types": [
+        "A01 AI 工具與工作流",
+        "T02 產品架構與資料模型"
+      ],
+      "date": "2026-11-05T14:09:20+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRFp5NHZBZzVuZ2o2dlc4NzZxM1gyb0lyT3ljYnlhdFRSS1JhVnZkVnpWQm9IYmNmT3FaZkwxZmhfQjFIYjNFcW81cjhkeUt2bVlOaWlMTV90aEtHSTlPYlFtWkU3d3RReTg3M2NTOElxQW04QXNNc0pOZDlvV0h1RmE5dlBPaFVMVkoyQ3hmMmo2eWJNczcxT2lOZGlHSTBmNFdvdTRIVTh2R0VJcFpWckNCZy1Wc0k?oc=5",
+      "recommendation_reason": "追蹤品牌 RateGain 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+    },
+    {
+      "id": "art_82be33dd69",
+      "title": "Customer Alliance adds Cloudbeds marketplace integration - Hotel Management Network",
+      "score": 87,
+      "source": "Cloudbeds",
+      "brands": [
+        "Cloudbeds"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "T02 產品架構與資料模型"
+      ],
+      "date": "2026-11-05T09:00:53+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOXp3eVBsdGZsSzNoMG5IN0tBWm90bnJ2UFZPUnlIbmJJUHJ5VFUyM3FnMWN1YVBUWjlRLXhOcm9CUG5xYlRXVnl5emh3Q2NJNzdFbHJqRXZwQjRiVEVxemM2RUxiT2t6S3VuSUppY3U2OTZzdF9nMVl5RlZnSWhJNUtwSFgtRHZweGtyUmNDUTJIUDZ0RDdyNlFhVGZ2dw?oc=5",
+      "recommendation_reason": "追蹤品牌 Cloudbeds 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
     {
       "id": "art_7ad57e32d9",
       "title": "HubSpot (HUBS) 2026 年第三季法說會：AI 採用率上升 惟第四季成長放緩 - TradingKey",
@@ -141,72 +189,25 @@
       "types": [
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-11-04T23:38:53+00:00",
+      "date": "2026-11-04T23:34:54+00:00",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lbnlIQ1ZlRzZ0ZFhlSkc1cC00SGNkajBsMWZ2TG8wUkU5ZjI1Ni1HTktwakN1XzdLUFo3VEFwSFFkTFp2LVRCdFZxUnMxVDBYcDlmeDJQd0l6d2VYOVhQZGdfb284eTc2ZjhhRkpCOA?oc=5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     },
     {
-      "id": "art_35e1d6b7d1",
-      "title": "Labels that build themselves: Simplified Label Automation in Zoho Writer",
+      "id": "art_56b6af031b",
+      "title": "Analyze your Stripe data directly with your agent",
       "score": 84,
-      "source": "BRAND/Zoho",
+      "source": "BRAND/Stripe",
       "brands": [
-        "Zoho CRM"
+        "Stripe"
       ],
       "types": [
-        "P01 競品與產品更新",
+        "U01 UI/UX 設計案例",
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-11-04T13:54:11+00:00",
-      "url": "https://www.zoho.com/blog/writer/label-automation.html",
-      "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「競品/產品更新」；近 3 天發布"
-    },
-    {
-      "id": "art_acc557d42f",
-      "title": "Zoho Writer’s latest automation updates: smarter formulas, dynamic content, and less manual work",
-      "score": 84,
-      "source": "BRAND/Zoho",
-      "brands": [
-        "Zoho CRM"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-11-04T10:00:00+00:00",
-      "url": "https://www.zoho.com/blog/writer/zoho-writer-document-automation-updates.html",
-      "recommendation_reason": "追蹤品牌 Zoho CRM 的更新；歸類於「競品/產品更新」；近 3 天發布"
-    },
-    {
-      "id": "art_cddc72adb4",
-      "title": "AI maturity in marketing: What the research reveals",
-      "score": 82,
-      "source": "BRAND/HubSpot·Marketing",
-      "brands": [
-        "HubSpot"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-11-02T17:50:05+00:00",
-      "url": "https://blog.hubspot.com/marketing/ai-maturity",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
-    },
-    {
-      "id": "art_4ee07f0b53",
-      "title": "Salesforce to buy voice AI start-up Cresta for a reported $2.7bn - The Next Web",
-      "score": 81,
-      "source": "Salesforce",
-      "brands": [
-        "Salesforce"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-11-03T14:23:29+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1lVGdLT2NiZm9VY01RSTdVVi13V3dxV3RpTkszS2pRWl84NVliTzV5UExubXdzaDUtWEEyTGdiSUUzV05wWC1FTzlhckxoRDNBSXNnLVVnVDM5cWVaQ3QzLUduV3JIbWtpb290SENPOFk4N2FhSlE?oc=5",
-      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+      "date": "2026-11-05T00:00:00+00:00",
+      "url": "https://stripe.com/blog/analyze-your-stripe-data-directly-with-your-agent",
+      "recommendation_reason": "追蹤品牌 Stripe 的更新；歸類於「UIUX 設計案例」；近 3 天發布"
     }
   ]
 }
