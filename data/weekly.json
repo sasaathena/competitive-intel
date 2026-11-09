@@ -1,30 +1,30 @@
 {
-  "generated_at": "2026-11-08T07:01:41.246353",
+  "generated_at": "2026-11-09T07:44:33.505693",
   "window_days": 7,
   "total": 227,
-  "priority_count": 71,
+  "priority_count": 70,
   "by_system": {
-    "CRM": 88,
-    "TECH": 75,
+    "CRM": 87,
+    "TECH": 72,
     "PMS": 29,
-    "FBM": 36
+    "FBM": 39
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 57
+      "count": 53
     },
     {
       "brand": "Salesforce",
-      "count": 25
+      "count": 30
     },
     {
       "brand": "Resy",
-      "count": 17
+      "count": 22
     },
     {
       "brand": "OpenTable",
-      "count": 14
+      "count": 13
     },
     {
       "brand": "RateGain",
@@ -39,34 +39,34 @@
       "count": 6
     },
     {
-      "brand": "inline",
-      "count": 4
-    },
-    {
       "brand": "Guesty",
       "count": 4
     },
     {
       "brand": "Mews",
       "count": 3
+    },
+    {
+      "brand": "SiteMinder",
+      "count": 3
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 114
+      "count": 110
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 89
+      "count": 93
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 22
+      "count": 18
     },
     {
       "type": "T01 前端與 API 基礎",
-      "count": 17
+      "count": 18
     },
     {
       "type": "T02 產品架構與資料模型",
@@ -74,29 +74,29 @@
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 4
+      "count": 3
     }
   ],
   "top_combos": [
     {
-      "system": "CRM",
-      "type": "U02 UX 研究與設計趨勢",
-      "count": 57
-    },
-    {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 51
+      "count": 50
+    },
+    {
+      "system": "CRM",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 49
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 34
+      "count": 38
     },
     {
       "system": "CRM",
       "type": "A01 AI 工具與工作流",
-      "count": 28
+      "count": 34
     },
     {
       "system": "PMS",
@@ -106,12 +106,12 @@
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
-      "count": 15
+      "count": 17
     },
     {
       "system": "TECH",
       "type": "P01 競品與產品更新",
-      "count": 14
+      "count": 8
     },
     {
       "system": "PMS",
@@ -119,21 +119,21 @@
       "count": 8
     },
     {
+      "system": "CRM",
+      "type": "P01 競品與產品更新",
+      "count": 7
+    },
+    {
       "system": "TECH",
       "type": "U02 UX 研究與設計趨勢",
       "count": 6
-    },
-    {
-      "system": "CRM",
-      "type": "P01 競品與產品更新",
-      "count": 5
     }
   ],
   "top_articles": [
     {
       "id": "art_cd75294c0d",
       "title": "Otto launches voice AI CRM, letting field sales reps update seals with a phone call - The Economic Times",
-      "score": 89,
+      "score": 87,
       "source": "Monday CRM",
       "brands": [
         "HubSpot"
@@ -144,7 +144,7 @@
       ],
       "date": "2026-11-04T07:28:51+00:00",
       "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNRFVEWlI2X0xCanQ5T2c1bzhka1dXM2h2OVBEWGRWck4zS3hKM0l1aEtKV01iMTIySFVLbDhVNlpfdWdiUGVrZWhlX05RNFNWN0tMY25MYVQ0RTZISnpRRTB4YWczV0p5ODZNNlNOVUYzR254RFRWckItRUNyX1E5ZEd1eVJoTHNwZG9IcElobDBmb2pncWNrNi1odFhmUXdiWlU0RlAwam9ZbjBNOC1fUHV4enNzbWR2RlZIdnVZTVpveDJtajVIVE4xYzJ6elRIeWlWaU5xbWhQdVpDUXlGWVZRYUNYRVFXRm1FTzdJTUZoQW5YeHM0M3VKcW1FcUNy0gGGAkFVX3lxTE5heW5qN0xDNFR3d01nUkdqYUJVMk4yQkFxWTc2b24wcW9HNmVZVTItN2Z0bWpxVDFYZG9ZalhoZ0pIdkVISmN4X1VjMXgtOVktYk8yWGYxN2VjTGc3R2xoY1VSSGNIcHRsWjBhZFNFX29TdlMwbkJVNElvVlhWUGJWeC1aNmVCZG9qbUxac1NsampiWTZIdW9IQTMwRlhDOHVYVzExb3YwMUJmaHVJaF9QSXo2RlJ6Nk1yTFAycnFzSTNTWkQ3UHlHNmJxOWs3OS1ubWF6dUlxcVRfNmtSRkNhanlsMm83TXh1cTF5bXRpazFCWElzdzQzMnlsWlVuQ1JIZjhvWmc?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
       "id": "art_43eaa3d767",
@@ -163,8 +163,8 @@
       "recommendation_reason": "追蹤品牌 RateGain 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     },
     {
-      "id": "art_82be33dd69",
-      "title": "Customer Alliance adds Cloudbeds marketplace integration - Hotel Management Network",
+      "id": "art_eb07a17784",
+      "title": "Customer Alliance adds Cloudbeds marketplace integration - Yahoo Finance",
       "score": 85,
       "source": "Cloudbeds",
       "brands": [
@@ -174,14 +174,29 @@
         "P01 競品與產品更新",
         "T02 產品架構與資料模型"
       ],
-      "date": "2026-11-05T09:00:53+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNOXp3eVBsdGZsSzNoMG5IN0tBWm90bnJ2UFZPUnlIbmJJUHJ5VFUyM3FnMWN1YVBUWjlRLXhOcm9CUG5xYlRXVnl5emh3Q2NJNzdFbHJqRXZwQjRiVEVxemM2RUxiT2t6S3VuSUppY3U2OTZzdF9nMVl5RlZnSWhJNUtwSFgtRHZweGtyUmNDUTJIUDZ0RDdyNlFhVGZ2dw?oc=5",
+      "date": "2026-11-05T09:53:12+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbE9mTThXdHVtRkZtdDRfNWZialQwSlprNUdmdHBTVU04VmNBUEo1eFN1T2J6N3NUamRiaGtJQTVzbUdaTlU2RFY0RUxwOGt1NjNFQkxPYXFITmdNR1pMemVWTUJnWkdLLUNVNTI5V0VxenZUUm8tT1BNV1lFUG8wR2NxUXRKMUt4bG1HZmhNTHNFc195?oc=5",
       "recommendation_reason": "追蹤品牌 Cloudbeds 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
+      "id": "art_afe6ab3e52",
+      "title": "Salesforce 交易負責人談 Marc Benioff 的 AI 策略｜a16z - BigGo 財經",
+      "score": 83,
+      "source": "Salesforce",
+      "brands": [
+        "Salesforce"
+      ],
+      "types": [
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-11-05T21:29:38+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1xQlFUWERiZXVKYkphdXlQZVhPX0puQVVVb2dJcnBIMC0yakZYdi03WElWLW5nTE9CZjZuV3B1ZDVuT3NfenMzdjdfZ1pjdHVvbm5FOU9LNEd3ekVpQUtxNzltUQ?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     },
     {
       "id": "art_7ad57e32d9",
       "title": "HubSpot (HUBS) 2026 年第三季法說會：AI 採用率上升 惟第四季成長放緩 - TradingKey",
-      "score": 83,
+      "score": 81,
       "source": "HubSpot",
       "brands": [
         "HubSpot"
@@ -191,23 +206,7 @@
       ],
       "date": "2026-11-04T23:34:54+00:00",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lbnlIQ1ZlRzZ0ZFhlSkc1cC00SGNkajBsMWZ2TG8wUkU5ZjI1Ni1HTktwakN1XzdLUFo3VEFwSFFkTFp2LVRCdFZxUnMxVDBYcDlmeDJQd0l6d2VYOVhQZGdfb284eTc2ZjhhRkpCOA?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
-      "id": "art_56b6af031b",
-      "title": "Analyze your Stripe data directly with your agent",
-      "score": 82,
-      "source": "BRAND/Stripe",
-      "brands": [
-        "Stripe"
-      ],
-      "types": [
-        "U01 UI/UX 設計案例",
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-11-05T00:00:00+00:00",
-      "url": "https://stripe.com/blog/analyze-your-stripe-data-directly-with-your-agent",
-      "recommendation_reason": "追蹤品牌 Stripe 的更新；歸類於「UIUX 設計案例」；近 3 天發布"
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 1 週發布"
     }
   ]
 }
