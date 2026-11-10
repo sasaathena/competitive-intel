@@ -1,97 +1,97 @@
 {
-  "generated_at": "2026-11-09T07:44:33.505693",
+  "generated_at": "2026-11-10T08:06:04.176011",
   "window_days": 7,
-  "total": 227,
-  "priority_count": 70,
+  "total": 231,
+  "priority_count": 54,
   "by_system": {
-    "CRM": 87,
-    "TECH": 72,
-    "PMS": 29,
-    "FBM": 39
+    "CRM": 81,
+    "TECH": 76,
+    "FBM": 42,
+    "PMS": 33
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 53
+      "count": 48
     },
     {
       "brand": "Salesforce",
-      "count": 30
+      "count": 28
     },
     {
       "brand": "Resy",
-      "count": 22
+      "count": 23
     },
     {
       "brand": "OpenTable",
-      "count": 13
+      "count": 14
     },
     {
       "brand": "RateGain",
       "count": 10
     },
     {
-      "brand": "Cloudbeds",
+      "brand": "Zoho CRM",
       "count": 9
     },
     {
-      "brand": "Zoho CRM",
+      "brand": "Cloudbeds",
+      "count": 8
+    },
+    {
+      "brand": "Mews",
       "count": 6
     },
     {
       "brand": "Guesty",
+      "count": 5
+    },
+    {
+      "brand": "inline",
       "count": 4
-    },
-    {
-      "brand": "Mews",
-      "count": 3
-    },
-    {
-      "brand": "SiteMinder",
-      "count": 3
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 110
+      "count": 115
     },
     {
       "type": "A01 AI 工具與工作流",
       "count": 93
     },
     {
-      "type": "P01 競品與產品更新",
-      "count": 18
+      "type": "T01 前端與 API 基礎",
+      "count": 22
     },
     {
-      "type": "T01 前端與 API 基礎",
-      "count": 18
+      "type": "P01 競品與產品更新",
+      "count": 16
     },
     {
       "type": "T02 產品架構與資料模型",
-      "count": 7
+      "count": 6
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 3
+      "count": 2
     }
   ],
   "top_combos": [
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 50
+      "count": 48
     },
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 49
+      "count": 47
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 38
+      "count": 40
     },
     {
       "system": "CRM",
@@ -101,55 +101,86 @@
     {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 17
+      "count": 21
     },
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
-      "count": 17
+      "count": 20
     },
     {
       "system": "TECH",
       "type": "P01 競品與產品更新",
-      "count": 8
+      "count": 11
     },
     {
       "system": "PMS",
       "type": "A01 AI 工具與工作流",
-      "count": 8
-    },
-    {
-      "system": "CRM",
-      "type": "P01 競品與產品更新",
-      "count": 7
+      "count": 9
     },
     {
       "system": "TECH",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 6
+      "count": 7
+    },
+    {
+      "system": "TECH",
+      "type": "T02 產品架構與資料模型",
+      "count": 3
     }
   ],
   "top_articles": [
     {
-      "id": "art_cd75294c0d",
-      "title": "Otto launches voice AI CRM, letting field sales reps update seals with a phone call - The Economic Times",
-      "score": 87,
-      "source": "Monday CRM",
+      "id": "art_72e5090e52",
+      "title": "Teradyne Introduces Omnyx Edge, Inline Board Test for Physical and Edge AI - 巴士的報",
+      "score": 91,
+      "source": "inline",
       "brands": [
-        "HubSpot"
+        "inline"
       ],
       "types": [
         "P01 競品與產品更新",
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-11-04T07:28:51+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNRFVEWlI2X0xCanQ5T2c1bzhka1dXM2h2OVBEWGRWck4zS3hKM0l1aEtKV01iMTIySFVLbDhVNlpfdWdiUGVrZWhlX05RNFNWN0tMY25MYVQ0RTZISnpRRTB4YWczV0p5ODZNNlNOVUYzR254RFRWckItRUNyX1E5ZEd1eVJoTHNwZG9IcElobDBmb2pncWNrNi1odFhmUXdiWlU0RlAwam9ZbjBNOC1fUHV4enNzbWR2RlZIdnVZTVpveDJtajVIVE4xYzJ6elRIeWlWaU5xbWhQdVpDUXlGWVZRYUNYRVFXRm1FTzdJTUZoQW5YeHM0M3VKcW1FcUNy0gGGAkFVX3lxTE5heW5qN0xDNFR3d01nUkdqYUJVMk4yQkFxWTc2b24wcW9HNmVZVTItN2Z0bWpxVDFYZG9ZalhoZ0pIdkVISmN4X1VjMXgtOVktYk8yWGYxN2VjTGc3R2xoY1VSSGNIcHRsWjBhZFNFX29TdlMwbkJVNElvVlhWUGJWeC1aNmVCZG9qbUxac1NsampiWTZIdW9IQTMwRlhDOHVYVzExb3YwMUJmaHVJaF9QSXo2RlJ6Nk1yTFAycnFzSTNTWkQ3UHlHNmJxOWs3OS1ubWF6dUlxcVRfNmtSRkNhanlsMm83TXh1cTF5bXRpazFCWElzdzQzMnlsWlVuQ1JIZjhvWmc?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 1 週發布"
+      "date": "2026-11-09T08:02:29+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZktzdDUxZFVhYVdaMFdRWDU2SzdkdlAyWXZzcFdmd2tBb3ExOG1yTmpWYnJaVXlHT2hQQkswN0lkUVRVbTFJd21QZ2tHVWNiMldSQnlGdDB2ZVdpakJJRzFwYTIzb3pORHI4dW9rSDJ2OEgwMk41R2tKcHFaeklwbXhxR3h0aEpaTDNrRjd1WkpCbUowQ2Z3U0V3T1o2XzFBU3FRZThMM3ljUzUwVHV4QzBiczZ6c3VmQndkSUhIYlJURVE?oc=5",
+      "recommendation_reason": "追蹤品牌 inline 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
+      "id": "art_be8cf45f0f",
+      "title": "Deutsche Bank made heavy purchases of midstream AI application stocks in Q3: the three major cloud giants received increased holdings, and Palantir and Salesforce were also favored. - 富途牛牛",
+      "score": 85,
+      "source": "Salesforce",
+      "brands": [
+        "Salesforce"
+      ],
+      "types": [
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-11-08T15:19:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOXU5RjFTT28wejR3YVFjTEVGUm9CZjlTVzlSTm1UcExhSENaZ3l1S09LUkdvYUxlV25ReXd6eHJqOVRFdmNIQmZpem1oT2l1MTM4bkNKcjc1a3owdmlycEpKMm5uRkxmeW8zSUh2V1V2TkdoaG1tNDQxdXJTdWlWNEQ2YVVoQ1NkWWw4QTMwWVNhMS1ON3FpelpfVE9DM3dudnJpSENuUWdYSUx3bHpTaDhB?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+    },
+    {
+      "id": "art_380568ef09",
+      "title": "行銷科技平台 Brevo 後台遭刑事局封鎖，寄信 API、表單仍正常",
+      "score": 85,
+      "source": "TECH/TW·TechOrange",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "A01 AI 工具與工作流",
+        "T01 前端與 API 基礎"
+      ],
+      "date": "2026-11-10T12:00:00+08:00",
+      "url": "https://techorange.com/2026/11/10/brevo-has-been-blocked-by-taiwans-cib/?utm_source=rss&utm_medium=feed&utm_campaign=techorange_rss",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     },
     {
       "id": "art_43eaa3d767",
       "title": "RateGain’s Sojern integration takes customers to 14,538 - Multibagg AI",
-      "score": 86,
+      "score": 84,
       "source": "RateGain",
       "brands": [
         "RateGain"
@@ -160,27 +191,11 @@
       ],
       "date": "2026-11-05T14:09:20+00:00",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRFp5NHZBZzVuZ2o2dlc4NzZxM1gyb0lyT3ljYnlhdFRSS1JhVnZkVnpWQm9IYmNmT3FaZkwxZmhfQjFIYjNFcW81cjhkeUt2bVlOaWlMTV90aEtHSTlPYlFtWkU3d3RReTg3M2NTOElxQW04QXNNc0pOZDlvV0h1RmE5dlBPaFVMVkoyQ3hmMmo2eWJNczcxT2lOZGlHSTBmNFdvdTRIVTh2R0VJcFpWckNCZy1Wc0k?oc=5",
-      "recommendation_reason": "追蹤品牌 RateGain 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
-      "id": "art_eb07a17784",
-      "title": "Customer Alliance adds Cloudbeds marketplace integration - Yahoo Finance",
-      "score": 85,
-      "source": "Cloudbeds",
-      "brands": [
-        "Cloudbeds"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "T02 產品架構與資料模型"
-      ],
-      "date": "2026-11-05T09:53:12+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbE9mTThXdHVtRkZtdDRfNWZialQwSlprNUdmdHBTVU04VmNBUEo1eFN1T2J6N3NUamRiaGtJQTVzbUdaTlU2RFY0RUxwOGt1NjNFQkxPYXFITmdNR1pMemVWTUJnWkdLLUNVNTI5V0VxenZUUm8tT1BNV1lFUG8wR2NxUXRKMUt4bG1HZmhNTHNFc195?oc=5",
-      "recommendation_reason": "追蹤品牌 Cloudbeds 的更新；歸類於「競品/產品更新」；近 3 天發布"
+      "recommendation_reason": "追蹤品牌 RateGain 的更新；歸類於「AI 工具/工作流」；近 1 週發布"
     },
     {
       "id": "art_afe6ab3e52",
-      "title": "Salesforce 交易負責人談 Marc Benioff 的 AI 策略｜a16z - BigGo 財經",
+      "title": "Salesforce 如何挑選想收購的 AI 公司｜a16z - BigGo 財經",
       "score": 83,
       "source": "Salesforce",
       "brands": [
@@ -189,24 +204,9 @@
       "types": [
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-11-05T21:29:38+00:00",
+      "date": "2026-11-06T17:06:59+00:00",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1xQlFUWERiZXVKYkphdXlQZVhPX0puQVVVb2dJcnBIMC0yakZYdi03WElWLW5nTE9CZjZuV3B1ZDVuT3NfenMzdjdfZ1pjdHVvbm5FOU9LNEd3ekVpQUtxNzltUQ?oc=5",
       "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
-      "id": "art_7ad57e32d9",
-      "title": "HubSpot (HUBS) 2026 年第三季法說會：AI 採用率上升 惟第四季成長放緩 - TradingKey",
-      "score": 81,
-      "source": "HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-11-04T23:34:54+00:00",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lbnlIQ1ZlRzZ0ZFhlSkc1cC00SGNkajBsMWZ2TG8wUkU5ZjI1Ni1HTktwakN1XzdLUFo3VEFwSFFkTFp2LVRCdFZxUnMxVDBYcDlmeDJQd0l6d2VYOVhQZGdfb284eTc2ZjhhRkpCOA?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 1 週發布"
     }
   ]
 }
