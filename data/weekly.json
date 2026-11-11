@@ -1,72 +1,72 @@
 {
-  "generated_at": "2026-11-10T08:06:04.176011",
+  "generated_at": "2026-11-11T07:35:12.164320",
   "window_days": 7,
-  "total": 231,
-  "priority_count": 54,
+  "total": 239,
+  "priority_count": 57,
   "by_system": {
-    "CRM": 81,
-    "TECH": 76,
-    "FBM": 42,
-    "PMS": 33
+    "CRM": 76,
+    "TECH": 85,
+    "FBM": 44,
+    "PMS": 35
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 48
+      "count": 44
     },
     {
       "brand": "Salesforce",
-      "count": 28
+      "count": 29
     },
     {
       "brand": "Resy",
-      "count": 23
+      "count": 24
     },
     {
       "brand": "OpenTable",
       "count": 14
     },
     {
-      "brand": "RateGain",
-      "count": 10
+      "brand": "Cloudbeds",
+      "count": 12
     },
     {
-      "brand": "Zoho CRM",
+      "brand": "RateGain",
       "count": 9
     },
     {
-      "brand": "Cloudbeds",
+      "brand": "Zoho CRM",
       "count": 8
     },
     {
+      "brand": "inline",
+      "count": 5
+    },
+    {
       "brand": "Mews",
-      "count": 6
+      "count": 5
     },
     {
       "brand": "Guesty",
       "count": 5
-    },
-    {
-      "brand": "inline",
-      "count": 4
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 115
+      "count": 116
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 93
-    },
-    {
-      "type": "T01 前端與 API 基礎",
-      "count": 22
+      "count": 102
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 16
+      "count": 23
+    },
+    {
+      "type": "T01 前端與 API 基礎",
+      "count": 20
     },
     {
       "type": "T02 產品架構與資料模型",
@@ -74,24 +74,24 @@
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 2
+      "count": 3
     }
   ],
   "top_combos": [
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 48
-    },
-    {
-      "system": "CRM",
-      "type": "U02 UX 研究與設計趨勢",
-      "count": 47
+      "count": 58
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 40
+      "count": 42
+    },
+    {
+      "system": "CRM",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 41
     },
     {
       "system": "CRM",
@@ -101,27 +101,27 @@
     {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 21
+      "count": 23
     },
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
-      "count": 20
+      "count": 18
     },
     {
       "system": "TECH",
       "type": "P01 競品與產品更新",
-      "count": 11
-    },
-    {
-      "system": "PMS",
-      "type": "A01 AI 工具與工作流",
-      "count": 9
+      "count": 16
     },
     {
       "system": "TECH",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 7
+      "count": 10
+    },
+    {
+      "system": "PMS",
+      "type": "A01 AI 工具與工作流",
+      "count": 8
     },
     {
       "system": "TECH",
@@ -130,6 +130,22 @@
     }
   ],
   "top_articles": [
+    {
+      "id": "art_b835dccad1",
+      "title": "Leverate Launches New CRM With AI Assistant for MetaTrader Brokers - TradingView",
+      "score": 91,
+      "source": "Monday CRM",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-11-09T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQNnRRYl9POVhlVDVEbVJ6OE9VYVZPQ0Q3V081amJSczc4amw5TUNEUk1tNVdBa0FrazZsMjF6eXJoN1JWV2FrWUFfRVFPVklnaE5XVjd5Y2lnbTR5TFVCZFVqaW1QMEpGdHN3NXl2ajkzRkh2SDBYdnhlTnpFV1IzOV9rWmF4TGt4bmF2ZC1HTEs1dnBCRXJSMkd1SjBpRkZNUDJoQ3ZwaUpIUTVFVnd3dEo3UV9IdWV0cU92Z21icDRxaXptY3VXWWNXSXZ5NFl4NFpXY2owWlktT3ZLZEsxU3M4Vmppdw?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
     {
       "id": "art_72e5090e52",
       "title": "Teradyne Introduces Omnyx Edge, Inline Board Test for Physical and Edge AI - 巴士的報",
@@ -157,7 +173,7 @@
       "types": [
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-11-08T15:19:00+00:00",
+      "date": "2026-11-09T13:02:46+00:00",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOXU5RjFTT28wejR3YVFjTEVGUm9CZjlTVzlSTm1UcExhSENaZ3l1S09LUkdvYUxlV25ReXd6eHJqOVRFdmNIQmZpem1oT2l1MTM4bkNKcjc1a3owdmlycEpKMm5uRkxmeW8zSUh2V1V2TkdoaG1tNDQxdXJTdWlWNEQ2YVVoQ1NkWWw4QTMwWVNhMS1ON3FpelpfVE9DM3dudnJpSENuUWdYSUx3bHpTaDhB?oc=5",
       "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     },
@@ -192,21 +208,6 @@
       "date": "2026-11-05T14:09:20+00:00",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRFp5NHZBZzVuZ2o2dlc4NzZxM1gyb0lyT3ljYnlhdFRSS1JhVnZkVnpWQm9IYmNmT3FaZkwxZmhfQjFIYjNFcW81cjhkeUt2bVlOaWlMTV90aEtHSTlPYlFtWkU3d3RReTg3M2NTOElxQW04QXNNc0pOZDlvV0h1RmE5dlBPaFVMVkoyQ3hmMmo2eWJNczcxT2lOZGlHSTBmNFdvdTRIVTh2R0VJcFpWckNCZy1Wc0k?oc=5",
       "recommendation_reason": "追蹤品牌 RateGain 的更新；歸類於「AI 工具/工作流」；近 1 週發布"
-    },
-    {
-      "id": "art_afe6ab3e52",
-      "title": "Salesforce 如何挑選想收購的 AI 公司｜a16z - BigGo 財經",
-      "score": 83,
-      "source": "Salesforce",
-      "brands": [
-        "Salesforce"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-11-06T17:06:59+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1xQlFUWERiZXVKYkphdXlQZVhPX0puQVVVb2dJcnBIMC0yakZYdi03WElWLW5nTE9CZjZuV3B1ZDVuT3NfenMzdjdfZ1pjdHVvbm5FOU9LNEd3ekVpQUtxNzltUQ?oc=5",
-      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     }
   ]
 }
