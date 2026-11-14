@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-13T07:42:11.502992",
+  "generated_at": "2026-11-14T07:26:14.457569",
   "window_days": 7,
-  "total": 224,
-  "priority_count": 66,
+  "total": 214,
+  "priority_count": 60,
   "by_system": {
     "CRM": 80,
     "FBM": 30,
-    "TECH": 86,
-    "PMS": 30
+    "TECH": 81,
+    "PMS": 24
   },
   "top_brands": [
     {
@@ -20,60 +20,60 @@
     },
     {
       "brand": "Resy",
-      "count": 17
-    },
-    {
-      "brand": "OpenTable",
-      "count": 12
+      "count": 19
     },
     {
       "brand": "Zoho CRM",
       "count": 10
     },
     {
+      "brand": "OpenTable",
+      "count": 8
+    },
+    {
       "brand": "RateGain",
       "count": 7
     },
     {
-      "brand": "Cloudbeds",
-      "count": 7
-    },
-    {
-      "brand": "Mews",
+      "brand": "inline",
       "count": 5
     },
     {
-      "brand": "roomMaster",
+      "brand": "Mews",
+      "count": 4
+    },
+    {
+      "brand": "Guesty",
       "count": 3
     },
     {
-      "brand": "SiteMinder",
+      "brand": "roomMaster",
       "count": 3
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 106
+      "count": 101
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 91
+      "count": 84
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 20
+      "count": 23
     },
     {
       "type": "T01 前端與 API 基礎",
       "count": 19
     },
     {
-      "type": "U01 UI/UX 設計案例",
-      "count": 4
+      "type": "T02 產品架構與資料模型",
+      "count": 5
     },
     {
-      "type": "T02 產品架構與資料模型",
+      "type": "U01 UI/UX 設計案例",
       "count": 3
     }
   ],
@@ -81,12 +81,17 @@
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 61
+      "count": 52
     },
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 48
+      "count": 45
+    },
+    {
+      "system": "CRM",
+      "type": "A01 AI 工具與工作流",
+      "count": 29
     },
     {
       "system": "FBM",
@@ -94,14 +99,9 @@
       "count": 28
     },
     {
-      "system": "CRM",
-      "type": "A01 AI 工具與工作流",
-      "count": 27
-    },
-    {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 25
+      "count": 21
     },
     {
       "system": "TECH",
@@ -111,28 +111,28 @@
     {
       "system": "TECH",
       "type": "P01 競品與產品更新",
-      "count": 11
-    },
-    {
-      "system": "TECH",
-      "type": "U02 UX 研究與設計趨勢",
-      "count": 6
+      "count": 13
     },
     {
       "system": "CRM",
       "type": "P01 競品與產品更新",
-      "count": 5
+      "count": 8
     },
     {
-      "system": "PMS",
-      "type": "P01 競品與產品更新",
-      "count": 3
+      "system": "TECH",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 7
+    },
+    {
+      "system": "TECH",
+      "type": "T02 產品架構與資料模型",
+      "count": 4
     }
   ],
   "top_articles": [
     {
-      "id": "art_a5f405c6ac",
-      "title": "Tells.co Introduces Tadello for CRM and Business Automation - Detroit Free Press",
+      "id": "art_8e87f95f15",
+      "title": "Tells.co Introduces Tadello for CRM and Business Automation - The Tennessean",
       "score": 91,
       "source": "Monday CRM",
       "brands": [
@@ -142,14 +142,46 @@
         "P01 競品與產品更新",
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-11-13T03:56:38+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZmhQV0diUmlaUTF5cmZ5Y1dlUDBlZWRFVko1SFAyaURSSVBaVF9GejRnRnQyWFZpRjlTcmQzR1dBZjdSVXoyblZxZ1A1N3JxdmZlM21MNDBVWEJkLVVzUWZBM3J5eklvaW5rWTdScnNxRUdRNGZSYXdnOVNwQ1NhRFluQVJOdWR4M3YwRmVlNWhkQWM3cTBxUnFHUHV3VUc0U1dNeThianZFS2JyWXc?oc=5",
+      "date": "2026-11-13T03:27:02+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRUJkQ003OEVkWU1ndklsQzN5dk1na3YydER4MExDcW9HRDZGUTByNGJwMTRQZC1IdExXMDhna1g1LXMzcEhYQjRjNUFsd3JiNWktTjQ5MkVrV3VLNnd2TWJrNUJaUk9YcXNMc1ZTWWdsaW54S0kyNmVvOENtVzYwMTZDbmxxTjFrbjkwOG5VQ2dDd24zdG0wS2RYcDY3ZWdEdWhyOER2andRdDJVS0d6N0RpUHM?oc=5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+    },
+    {
+      "id": "art_bc76192f24",
+      "title": "Leverate Launches New CRM With AI Assistant for MetaTrader Brokers - Finance Magnates",
+      "score": 87,
+      "source": "Monday CRM",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-11-09T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWnFRamxzbHpaeVkyYnQ5RXI0dnEwQ2FycmpjNGl5dnVGT3RCZ0FZdjZFcXp6eDl2aHRrSnZucmkyeWJwYjJiLXVyaE1kMWNwSnZ3QWQ0S2lHR0pld05yYU5sbVZjZjd1X0NhX0lHckp4ZFlGMWNOMlFkTkFtbTVSWnhQOEtyTzdzemhpSUx2bllnU0g3cUlSUkF1SnZfMmdHc3JFOElyaG1lSjkxQVFibVFZbEN6YzA?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 1 週發布"
+    },
+    {
+      "id": "art_74d823fe7a",
+      "title": "Otto launches voice AI CRM for field sales teams - Prop News Time",
+      "score": 87,
+      "source": "Monday CRM",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-11-08T08:04:07+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOb21iQWtxOG93RUZVbVd0NnB5M3VNaUtZcnZPenF5VHBVS0FiYkMweURJV3BSSWx2el9obU1WN0JmTmRzWVo1WnVVU0xzRG8zVm1WN0lfd2tvbTQzQ0UtTF9mZVJDZzFMUU11bDU1UVBmb096QVNsUVpnc1RMdlBzYmpSLWxpWkpxOHR5dllZb21GUDBkMThTMUk2OUFEaVIyX1E?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
       "id": "art_72e5090e52",
       "title": "Teradyne Introduces Omnyx Edge, Inline Board Test for Physical and Edge AI - 巴士的報",
-      "score": 89,
+      "score": 87,
       "source": "inline",
       "brands": [
         "inline"
@@ -160,7 +192,7 @@
       ],
       "date": "2026-11-09T08:02:29+00:00",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZktzdDUxZFVhYVdaMFdRWDU2SzdkdlAyWXZzcFdmd2tBb3ExOG1yTmpWYnJaVXlHT2hQQkswN0lkUVRVbTFJd21QZ2tHVWNiMldSQnlGdDB2ZVdpakJJRzFwYTIzb3pORHI4dW9rSDJ2OEgwMk41R2tKcHFaeklwbXhxR3h0aEpaTDNrRjd1WkpCbUowQ2Z3U0V3T1o2XzFBU3FRZThMM3ljUzUwVHV4QzBiczZ6c3VmQndkSUhIYlJURVE?oc=5",
-      "recommendation_reason": "追蹤品牌 inline 的更新；歸類於「競品/產品更新」；近 3 天發布"
+      "recommendation_reason": "追蹤品牌 inline 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
       "id": "art_94bda2fbe7",
@@ -177,36 +209,6 @@
       "date": "2026-11-12T17:12:28+00:00",
       "url": "https://medium.com/@katuliana/hubspot-brings-back-co-founder-as-ceo-in-major-leadership-reset-amid-ai-disruption-bbc8a47e1d98?source=rss------hubspot-5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
-    },
-    {
-      "id": "art_be8cf45f0f",
-      "title": "Deutsche Bank made heavy purchases of midstream AI application stocks in Q3: the three major cloud giants received increased holdings, and Palantir and Salesforce were also favored. - 富途牛牛",
-      "score": 83,
-      "source": "Salesforce",
-      "brands": [
-        "Salesforce"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-11-09T13:02:46+00:00",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOXU5RjFTT28wejR3YVFjTEVGUm9CZjlTVzlSTm1UcExhSENaZ3l1S09LUkdvYUxlV25ReXd6eHJqOVRFdmNIQmZpem1oT2l1MTM4bkNKcjc1a3owdmlycEpKMm5uRkxmeW8zSUh2V1V2TkdoaG1tNDQxdXJTdWlWNEQ2YVVoQ1NkWWw4QTMwWVNhMS1ON3FpelpfVE9DM3dudnJpSENuUWdYSUx3bHpTaDhB?oc=5",
-      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
-    },
-    {
-      "id": "art_88845d8771",
-      "title": "Booking擴大布局餐廳數位服務 與OpenTable合作 - 台視全球資訊網",
-      "score": 81,
-      "source": "OpenTable",
-      "brands": [
-        "OpenTable"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "date": "2026-11-13T04:48:15+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQY2p6aWE0NklGWVpzNUZlYWFVOGNKQTZXWWNwX09lc2htSkFjY2RVeGhqaDF5SEptdFdvWjhXb05QU2xoUDNCSU0zQmdZWjFWQ0dubDFfSHR6T0IzWG15ajhvVWNzRC13YXRmMG5XSFV1cXJvcmZJdnVIOGp4OUdBLWdwSGR2UzUyS0JUUEJfOXN1QQ?oc=5",
-      "recommendation_reason": "追蹤品牌 OpenTable 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     }
   ]
 }
