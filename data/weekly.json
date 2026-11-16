@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-15T07:38:21.650214",
+  "generated_at": "2026-11-16T07:43:58.802090",
   "window_days": 7,
-  "total": 215,
-  "priority_count": 54,
+  "total": 202,
+  "priority_count": 51,
   "by_system": {
-    "CRM": 83,
-    "FBM": 30,
-    "TECH": 81,
-    "PMS": 23
+    "FBM": 22,
+    "PMS": 21,
+    "TECH": 80,
+    "CRM": 79
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 52
+      "count": 48
     },
     {
       "brand": "Salesforce",
@@ -20,23 +20,19 @@
     },
     {
       "brand": "Resy",
-      "count": 20
+      "count": 11
+    },
+    {
+      "brand": "OpenTable",
+      "count": 10
+    },
+    {
+      "brand": "RateGain",
+      "count": 9
     },
     {
       "brand": "Zoho CRM",
       "count": 9
-    },
-    {
-      "brand": "OpenTable",
-      "count": 7
-    },
-    {
-      "brand": "RateGain",
-      "count": 7
-    },
-    {
-      "brand": "inline",
-      "count": 5
     },
     {
       "brand": "Cloudbeds",
@@ -47,14 +43,18 @@
       "count": 3
     },
     {
-      "brand": "SiteMinder",
+      "brand": "inline",
       "count": 3
+    },
+    {
+      "brand": "Mews",
+      "count": 2
     }
   ],
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 108
+      "count": 94
     },
     {
       "type": "A01 AI 工具與工作流",
@@ -62,11 +62,11 @@
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 19
+      "count": 18
     },
     {
       "type": "T01 前端與 API 基礎",
-      "count": 19
+      "count": 18
     },
     {
       "type": "T02 產品架構與資料模型",
@@ -74,39 +74,39 @@
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 6
+      "count": 4
     }
   ],
   "top_combos": [
-    {
-      "system": "CRM",
-      "type": "U02 UX 研究與設計趨勢",
-      "count": 54
-    },
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
       "count": 53
     },
     {
-      "system": "FBM",
+      "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 28
+      "count": 48
     },
     {
       "system": "CRM",
       "type": "A01 AI 工具與工作流",
-      "count": 22
+      "count": 23
+    },
+    {
+      "system": "FBM",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 21
     },
     {
       "system": "PMS",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 20
+      "count": 18
     },
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
-      "count": 18
+      "count": 16
     },
     {
       "system": "TECH",
@@ -121,12 +121,12 @@
     {
       "system": "CRM",
       "type": "P01 競品與產品更新",
-      "count": 5
+      "count": 6
     },
     {
-      "system": "TECH",
+      "system": "CRM",
       "type": "T02 產品架構與資料模型",
-      "count": 3
+      "count": 4
     }
   ],
   "top_articles": [
@@ -147,22 +147,6 @@
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_72e5090e52",
-      "title": "Teradyne Introduces Omnyx Edge, Inline Board Test for Physical and Edge AI - 巴士的報",
-      "score": 87,
-      "source": "inline",
-      "brands": [
-        "inline"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-11-09T08:02:29+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZktzdDUxZFVhYVdaMFdRWDU2SzdkdlAyWXZzcFdmd2tBb3ExOG1yTmpWYnJaVXlHT2hQQkswN0lkUVRVbTFJd21QZ2tHVWNiMldSQnlGdDB2ZVdpakJJRzFwYTIzb3pORHI4dW9rSDJ2OEgwMk41R2tKcHFaeklwbXhxR3h0aEpaTDNrRjd1WkpCbUowQ2Z3U0V3T1o2XzFBU3FRZThMM3ljUzUwVHV4QzBiczZ6c3VmQndkSUhIYlJURVE?oc=5",
-      "recommendation_reason": "追蹤品牌 inline 的更新；歸類於「競品/產品更新」；近 1 週發布"
-    },
-    {
       "id": "art_94bda2fbe7",
       "title": "HubSpot Brings Back Co-Founder as CEO in Major Leadership Reset Amid AI Disruption",
       "score": 82,
@@ -179,34 +163,51 @@
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_be8cf45f0f",
-      "title": "Deutsche Bank made heavy purchases of midstream AI application stocks in Q3: the three major cloud giants received increased holdings, and Palantir and Salesforce were also favored. - 富途牛牛",
+      "id": "art_d437552cd2",
+      "title": "Why CRM Software Fails Even When It Has the Right Features",
       "score": 81,
-      "source": "Salesforce",
-      "brands": [
-        "Salesforce"
-      ],
-      "types": [
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-11-08T20:55:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOXU5RjFTT28wejR3YVFjTEVGUm9CZjlTVzlSTm1UcExhSENaZ3l1S09LUkdvYUxlV25ReXd6eHJqOVRFdmNIQmZpem1oT2l1MTM4bkNKcjc1a3owdmlycEpKMm5uRkxmeW8zSUh2V1V2TkdoaG1tNDQxdXJTdWlWNEQ2YVVoQ1NkWWw4QTMwWVNhMS1ON3FpelpfVE9DM3dudnJpSENuUWdYSUx3bHpTaDhB?oc=5",
-      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 1 週發布"
-    },
-    {
-      "id": "art_1feaefe96f",
-      "title": "HubSpot's Brian Halligan returns as CEO for AI reset - ContentGrip",
-      "score": 81,
-      "source": "HubSpot",
+      "source": "Medium-UX-Design",
       "brands": [
         "HubSpot"
       ],
       "types": [
-        "A01 AI 工具與工作流"
+        "A01 AI 工具與工作流",
+        "T02 產品架構與資料模型"
       ],
-      "date": "2026-11-14T06:19:56+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9PR0Vqa3YwUkZaQm5BNU51a18wd3VpUjZTZVFSdVJIVmo4WUxqMFlXaU01U0tQMmR3Mm9sdFN2NHFGQmoxZDZfMFpBX2NPclJBdXlPUl92UEpDdU01N0JUbDdTUVk5OGx2X1FqVG1MLWJXT1dR?oc=5",
+      "date": "2026-11-16T05:04:14+00:00",
+      "url": "https://medium.com/@ynodesigns7295/why-crm-software-fails-even-when-it-has-the-right-features-08408979e777?source=rss------ux_design-5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+    },
+    {
+      "id": "art_a833479ac7",
+      "title": "CRM mobile app dashboard: cosa deve mostrarti davvero",
+      "score": 80,
+      "source": "Medium-UX-Dashboard",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "U01 UI/UX 設計案例",
+        "T02 產品架構與資料模型"
+      ],
+      "date": "2026-11-14T20:41:29+00:00",
+      "url": "https://medium.com/@inesitabryson4n6zf/crm-mobile-app-dashboard-cosa-deve-mostrarti-davvero-5ae864ff62b1?source=rss------dashboard-5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UIUX 設計案例」；近 3 天發布"
+    },
+    {
+      "id": "art_88845d8771",
+      "title": "Booking擴大布局餐廳數位服務 與OpenTable合作 - 台視全球資訊網",
+      "score": 79,
+      "source": "OpenTable",
+      "brands": [
+        "OpenTable"
+      ],
+      "types": [
+        "U02 UX 研究與設計趨勢"
+      ],
+      "date": "2026-11-13T04:50:33+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQY2p6aWE0NklGWVpzNUZlYWFVOGNKQTZXWWNwX09lc2htSkFjY2RVeGhqaDF5SEptdFdvWjhXb05QU2xoUDNCSU0zQmdZWjFWQ0dubDFfSHR6T0IzWG15ajhvVWNzRC13YXRmMG5XSFV1cXJvcmZJdnVIOGp4OUdBLWdwSGR2UzUyS0JUUEJfOXN1QQ?oc=5",
+      "recommendation_reason": "追蹤品牌 OpenTable 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
     }
   ]
 }
