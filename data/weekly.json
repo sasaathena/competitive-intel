@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-11-16T07:43:58.802090",
+  "generated_at": "2026-11-17T08:53:16.786877",
   "window_days": 7,
-  "total": 202,
-  "priority_count": 51,
+  "total": 199,
+  "priority_count": 41,
   "by_system": {
     "FBM": 22,
-    "PMS": 21,
-    "TECH": 80,
-    "CRM": 79
+    "TECH": 74,
+    "CRM": 84,
+    "PMS": 19
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 48
+      "count": 51
     },
     {
       "brand": "Salesforce",
       "count": 32
     },
     {
-      "brand": "Resy",
-      "count": 11
-    },
-    {
       "brand": "OpenTable",
-      "count": 10
-    },
-    {
-      "brand": "RateGain",
-      "count": 9
+      "count": 12
     },
     {
       "brand": "Zoho CRM",
-      "count": 9
+      "count": 10
+    },
+    {
+      "brand": "Resy",
+      "count": 8
+    },
+    {
+      "brand": "RateGain",
+      "count": 7
+    },
+    {
+      "brand": "roomMaster",
+      "count": 4
+    },
+    {
+      "brand": "inline",
+      "count": 4
     },
     {
       "brand": "Cloudbeds",
       "count": 4
-    },
-    {
-      "brand": "roomMaster",
-      "count": 3
-    },
-    {
-      "brand": "inline",
-      "count": 3
     },
     {
       "brand": "Mews",
@@ -54,19 +54,19 @@
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 94
+      "count": 101
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 78
+      "count": 73
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 18
+      "count": 20
     },
     {
       "type": "T01 前端與 API 基礎",
-      "count": 18
+      "count": 16
     },
     {
       "type": "T02 產品架構與資料模型",
@@ -74,29 +74,29 @@
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 4
+      "count": 1
     }
   ],
   "top_combos": [
     {
-      "system": "TECH",
-      "type": "A01 AI 工具與工作流",
-      "count": 53
-    },
-    {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 48
+      "count": 55
+    },
+    {
+      "system": "TECH",
+      "type": "A01 AI 工具與工作流",
+      "count": 46
     },
     {
       "system": "CRM",
       "type": "A01 AI 工具與工作流",
-      "count": 23
+      "count": 25
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 21
+      "count": 20
     },
     {
       "system": "PMS",
@@ -105,109 +105,105 @@
     },
     {
       "system": "TECH",
+      "type": "P01 競品與產品更新",
+      "count": 17
+    },
+    {
+      "system": "TECH",
       "type": "T01 前端與 API 基礎",
       "count": 16
     },
     {
       "system": "TECH",
-      "type": "P01 競品與產品更新",
-      "count": 12
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 8
     },
     {
       "system": "TECH",
-      "type": "U02 UX 研究與設計趨勢",
-      "count": 7
+      "type": "T02 產品架構與資料模型",
+      "count": 4
     },
     {
       "system": "CRM",
       "type": "P01 競品與產品更新",
-      "count": 6
-    },
-    {
-      "system": "CRM",
-      "type": "T02 產品架構與資料模型",
-      "count": 4
+      "count": 2
     }
   ],
   "top_articles": [
     {
-      "id": "art_8e87f95f15",
-      "title": "Tells.co Introduces Tadello for CRM and Business Automation - The Tennessean",
-      "score": 89,
+      "id": "art_ea19ea7bf4",
+      "title": "Salesforce vs. Oracle: Which AI Cloud Stock Is the Smarter Pick Now? - Zacks Investment Research",
+      "score": 81,
+      "source": "Salesforce",
+      "brands": [
+        "Salesforce"
+      ],
+      "types": [
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-11-16T13:03:23+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMi1EY3o1ckNlMHVmVTFSTl9NM3NZOTZVdS12ZnpqUXNQemROYV9sdVhzS2piejZjTVRpRXQtVTVSdy15R2kxTnhlcjhLNzdJbDJicWJwTDdmMkV4aWpZcWhYcE1GUzh0V0l4bkhqaFA2elI1dE1FSHVGck1WRzFucldjaUFhZmNjbk9YRy1GRXM0X1lDSVZkQnAzQUdkN2lqZVpmemNFZVNIUQ?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+    },
+    {
+      "id": "art_0da3384d2f",
+      "title": "Salesforce vs. Oracle: Which AI Cloud Stock Is the Smarter Pick Now? - Yahoo Finance UK",
+      "score": 81,
+      "source": "Salesforce",
+      "brands": [
+        "Salesforce"
+      ],
+      "types": [
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-11-16T12:53:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUE1UdnZTbmdZeWdtaHNzOEpUcUZhbVk2dndOZkoybUhCaFVFTWJZSmVNNXVGaVVILTJsb2RiYTdPNGdKYTBkcWFJYkxnNG1lakh3UGlHZ3V1d2xiNkpmcVNBRThEeEhhM0tLS24yUVFJd0o2U09iODhFV08wc3RpamlJQ2U?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+    },
+    {
+      "id": "art_9a068a0172",
+      "title": "Beyond the hype: A practical ROI guide to AI agents for Indian marketers - Salesforce",
+      "score": 81,
+      "source": "Salesforce",
+      "brands": [
+        "Salesforce"
+      ],
+      "types": [
+        "A01 AI 工具與工作流"
+      ],
+      "date": "2026-11-16T11:52:33+00:00",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1QNk5WVTgxeElkcHJLMURwS3VzaFFMV3poSnNhcHpTcDNXU1dfOHNXMjVNZGxwaVVaTUI3TzVYbzNYaVJRdHBZQXNoakNraVZqRHVpMHpCSDUxMWFLWjBjNHNRWGhWUE9LUW9WMGc0VQ?oc=5",
+      "recommendation_reason": "追蹤品牌 Salesforce 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
+    },
+    {
+      "id": "art_696e367e13",
+      "title": "Dreamteam Raises $53 Million for an AI-Native CRM With Specialized Sales Coworkers - Unite.AI",
+      "score": 81,
       "source": "Monday CRM",
       "brands": [
         "HubSpot"
       ],
       "types": [
-        "P01 競品與產品更新",
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-11-13T03:27:02+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRUJkQ003OEVkWU1ndklsQzN5dk1na3YydER4MExDcW9HRDZGUTByNGJwMTRQZC1IdExXMDhna1g1LXMzcEhYQjRjNUFsd3JiNWktTjQ5MkVrV3VLNnd2TWJrNUJaUk9YcXNMc1ZTWWdsaW54S0kyNmVvOENtVzYwMTZDbmxxTjFrbjkwOG5VQ2dDd24zdG0wS2RYcDY3ZWdEdWhyOER2andRdDJVS0d6N0RpUHM?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
-    },
-    {
-      "id": "art_94bda2fbe7",
-      "title": "HubSpot Brings Back Co-Founder as CEO in Major Leadership Reset Amid AI Disruption",
-      "score": 82,
-      "source": "Medium-HubSpot",
-      "brands": [
-        "HubSpot"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流"
-      ],
-      "date": "2026-11-12T17:12:28+00:00",
-      "url": "https://medium.com/@katuliana/hubspot-brings-back-co-founder-as-ceo-in-major-leadership-reset-amid-ai-disruption-bbc8a47e1d98?source=rss------hubspot-5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
-    },
-    {
-      "id": "art_d437552cd2",
-      "title": "Why CRM Software Fails Even When It Has the Right Features",
-      "score": 81,
-      "source": "Medium-UX-Design",
-      "brands": [
-        "HubSpot"
-      ],
-      "types": [
-        "A01 AI 工具與工作流",
-        "T02 產品架構與資料模型"
-      ],
-      "date": "2026-11-16T05:04:14+00:00",
-      "url": "https://medium.com/@ynodesigns7295/why-crm-software-fails-even-when-it-has-the-right-features-08408979e777?source=rss------ux_design-5",
+      "date": "2026-11-16T14:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5SYzFoUEMyNVRUMlIySEloX1JDZVFhOHo4X0NKZ2pZUkJ4SllvSFFhY3JNc213dTlnNWxFVmFrRVFDbVRjT1FkaEN5VDZjX3VYM2loTUpjWndsT291THd2d1JHUU0wNHdYcXZHRW1ORVJQMURPZEJmYVhjUDE?oc=5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     },
     {
-      "id": "art_a833479ac7",
-      "title": "CRM mobile app dashboard: cosa deve mostrarti davvero",
-      "score": 80,
-      "source": "Medium-UX-Dashboard",
+      "id": "art_d016fc530f",
+      "title": "10 AI CRM Trends to Watch in 2027 - Vocal",
+      "score": 81,
+      "source": "Monday CRM",
       "brands": [
         "HubSpot"
       ],
       "types": [
-        "U01 UI/UX 設計案例",
-        "T02 產品架構與資料模型"
+        "A01 AI 工具與工作流"
       ],
-      "date": "2026-11-14T20:41:29+00:00",
-      "url": "https://medium.com/@inesitabryson4n6zf/crm-mobile-app-dashboard-cosa-deve-mostrarti-davvero-5ae864ff62b1?source=rss------dashboard-5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「UIUX 設計案例」；近 3 天發布"
-    },
-    {
-      "id": "art_88845d8771",
-      "title": "Booking擴大布局餐廳數位服務 與OpenTable合作 - 台視全球資訊網",
-      "score": 79,
-      "source": "OpenTable",
-      "brands": [
-        "OpenTable"
-      ],
-      "types": [
-        "U02 UX 研究與設計趨勢"
-      ],
-      "date": "2026-11-13T04:50:33+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQY2p6aWE0NklGWVpzNUZlYWFVOGNKQTZXWWNwX09lc2htSkFjY2RVeGhqaDF5SEptdFdvWjhXb05QU2xoUDNCSU0zQmdZWjFWQ0dubDFfSHR6T0IzWG15ajhvVWNzRC13YXRmMG5XSFV1cXJvcmZJdnVIOGp4OUdBLWdwSGR2UzUyS0JUUEJfOXN1QQ?oc=5",
-      "recommendation_reason": "追蹤品牌 OpenTable 的更新；歸類於「UX 研究/趨勢」；近 3 天發布"
+      "date": "2026-11-16T16:46:14+00:00",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1OV0V3a3BRYVAyZlBLTXBjNXY4d2FWNjhNcmFwMXFTVk55UF9DSGMxUUVxdWg1ekRNR3VxYXoyem15cVpSLXU3TmxkSC1BbkN0bGcwOGlXLUxzbGpHR0tkeGJ2M0Q3bDBPOERvcU53?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「AI 工具/工作流」；近 3 天發布"
     }
   ]
 }
