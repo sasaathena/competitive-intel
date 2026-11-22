@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-11-21T08:03:46.306316",
+  "generated_at": "2026-11-22T07:50:41.444944",
   "window_days": 7,
-  "total": 230,
-  "priority_count": 70,
+  "total": 222,
+  "priority_count": 52,
   "by_system": {
-    "CRM": 103,
-    "TECH": 75,
-    "PMS": 19,
+    "CRM": 93,
+    "TECH": 78,
+    "PMS": 18,
     "FBM": 34
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 65
+      "count": 58
     },
     {
       "brand": "Salesforce",
-      "count": 40
+      "count": 36
     },
     {
       "brand": "Resy",
@@ -32,11 +32,11 @@
     },
     {
       "brand": "Guesty",
-      "count": 5
+      "count": 4
     },
     {
       "brand": "Mews",
-      "count": 5
+      "count": 3
     },
     {
       "brand": "Guestline",
@@ -54,23 +54,23 @@
   "top_types": [
     {
       "type": "U02 UX 研究與設計趨勢",
-      "count": 104
+      "count": 101
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 90
+      "count": 87
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 38
+      "count": 31
     },
     {
       "type": "T01 前端與 API 基礎",
-      "count": 22
+      "count": 24
     },
     {
       "type": "T02 產品架構與資料模型",
-      "count": 12
+      "count": 14
     },
     {
       "type": "U01 UI/UX 設計案例",
@@ -81,37 +81,32 @@
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 54
+      "count": 49
     },
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 45
+      "count": 49
     },
     {
       "system": "CRM",
       "type": "A01 AI 工具與工作流",
-      "count": 42
+      "count": 37
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 26
+      "count": 29
     },
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
-      "count": 18
+      "count": 19
     },
     {
       "system": "TECH",
       "type": "P01 競品與產品更新",
-      "count": 16
-    },
-    {
-      "system": "CRM",
-      "type": "P01 競品與產品更新",
-      "count": 14
+      "count": 15
     },
     {
       "system": "PMS",
@@ -119,14 +114,19 @@
       "count": 13
     },
     {
-      "system": "TECH",
-      "type": "U02 UX 研究與設計趨勢",
-      "count": 12
+      "system": "CRM",
+      "type": "P01 競品與產品更新",
+      "count": 11
     },
     {
-      "system": "CRM",
+      "system": "TECH",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 11
+    },
+    {
+      "system": "TECH",
       "type": "T02 產品架構與資料模型",
-      "count": 7
+      "count": 6
     }
   ],
   "top_articles": [
@@ -148,8 +148,8 @@
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_34a7cc13f7",
-      "title": "微軟結盟Salesforce推Copilotforce 整合雙方AI與CRM資料 - 商傳媒",
+      "id": "art_7529f782b4",
+      "title": "Salesforce 攜手微軟推出 Copilotforce 讓 CRM 融入日常工作介面 - 網路資訊雜誌",
       "score": 93,
       "source": "Salesforce",
       "brands": [
@@ -160,32 +160,33 @@
         "P01 競品與產品更新",
         "A01 AI 工具與工作流"
       ],
-      "date": "2026-11-18T02:18:18+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxQTmZrQ1I5enVrYVkyVGdSMG5BTVNkdFVGVUxVSWVZNXdYX3RoZjF6NjR4VE9lM0NpQ2Q0SVZyY3lFN0tHVHJ3bVMxVmR6aVlTYjBWdUxIYlJOYUFCVHliNm03VFFpUjc3dnBqM2RjSkpWSVNmNkw5ZGVXeGJEZU0tMXFfYzB1bVNxQnZET18xbHVIM2hpaGpRT2F2dG51VnRUWWNQNV9sRUNxZzJyaThDc1h1YWxrV1M2eDlGS1BkUDRLMHoweUJpX0pTbWVScmgyUk9pQi1iVklEN0lfRE5COG1UY1lCa0RnS3hUaWJGNkdralFZSmZDeVd0TklEUGh1MXpNZUh1aFBhbDVJeERRdWhMQmdzWWhYOHlXNlJqVzhrMlVESk1xTQ?oc=5",
+      "date": "2026-11-20T04:14:12+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZ2tOS0FCM0ZwMTlaNFIwNVpHMFNfWDNPSXF3eFNXRTk0QzMxaFNNUnhyb241TURvMFlYZ05MZXlRejVtTnZrV0szQzk2d01wTUhjbzFMZWtrYXUwcHdzNzdUblBMd2RnMEdIQk4xeWUwdkpScThGdnBHZWo3SXNIS3BkOE1oMFdNbzdCTDc0VFNlOWxWWXZiYzFSOUoxQ1lLVDRxcGltZjM5RW8?oc=5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_ed680fd06f",
-      "title": "OpenAI推出ChatGPT for Sales，內建30多項外掛，把Salesforce與HubSpot搬進對話方塊 - BigGo 財經",
+      "id": "art_a693743bee",
+      "title": "OpenAI Launches ChatGPT For Sales With Salesforce, HubSpot Integration - Dataconomy",
       "score": 93,
-      "source": "Monday CRM",
+      "source": "HubSpot",
       "brands": [
         "HubSpot",
         "Salesforce"
       ],
       "types": [
         "P01 競品與產品更新",
-        "A01 AI 工具與工作流"
+        "A01 AI 工具與工作流",
+        "T02 產品架構與資料模型"
       ],
-      "date": "2026-11-18T01:56:00+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1oc1BMNDBpelZVZUM2TERlcWRqakRBVTVOYTlFZm01Y2g0WlVUU3liV29mbnE0aWtqSDV4Tll3cFZHSVZyVjRMZ2w5eWU3STFVSEs3eWpXTndfT1NmRWhPM3ZSMm9NUEl2NENuRzZqY2U0YmtaRGpGNWxB?oc=5",
+      "date": "2026-11-18T16:08:16+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNLVV2cmhOcnVWdWUtR0d2SUtxZUE5aU5iQ2VyM2YxWUN4eVQ5anFjeXdaWGVDb0lpeHlJN0RjZ3l2dGF6WFRSRWlXMENrRmNhUVZjN1Q2Q0lnQXRPTm9BUnBNRUxpSmVLX0tIRzVmYkpRVXJvcHJxVXlvbUt5a2dfWUVHdjFHWk94Z1dheS1JU29Ha0NiN1Fr?oc=5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
       "id": "art_06fd581337",
       "title": "微軟結盟Salesforce推Copilotforce 整合雙方AI與CRM資料 - 蕃新聞",
-      "score": 93,
-      "source": "Monday CRM",
+      "score": 91,
+      "source": "Salesforce",
       "brands": [
         "HubSpot",
         "Salesforce"
@@ -196,12 +197,12 @@
       ],
       "date": "2026-11-18T02:18:18+00:00",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9MVk1Nem5fR05veUQwakl3YWE5X2o1RzVtQzlTdlZua0trZGFRYS1sUEFuejVuRDdIbFdUcjR4aEsxbjRQVUM5Ty1oNy1STEtScFE?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 1 週發布"
     },
     {
-      "id": "art_4fc3fe3517",
-      "title": "ChatGPT推出Sales外掛，接上CRM後能讀寫哪些資料？ - LIFE 生活網",
-      "score": 93,
+      "id": "art_6b4d6ba44e",
+      "title": "ChatGPT推出Sales外掛，接上CRM後能讀寫哪些資料？ - 蕃新聞",
+      "score": 91,
       "source": "Monday CRM",
       "brands": [
         "HubSpot"
@@ -211,8 +212,8 @@
         "A01 AI 工具與工作流"
       ],
       "date": "2026-11-18T03:17:08+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNYmN5M1NYMmVSQm5TMW1wNTFndGtGcmx6Z3ZKM3NzZUpYOXhWU3lXcUtPaWpXY0dRVk04NFduN3FsMVpQZGljQWlHTUhNd2xqT3lXSV9wMThYNm1WcWN1WmJrSzB4elNEMUNpUnpRVVI5RXRTQXBOYndqQjhPVGRxVGJYR2phZ2pTM0t4QXlGeGs2a21ybmFZRzNncnVWU1pKOXlzU1AyUzRUSWhXNzJRcGFzcWxQdDZ1WDctaVpUMHdINmpnWFI2YU5rU0RObjBIZ0NfQU5Va0x0UlByOWtEZ3hnX3FHYlRYZTd3MGJtSTgzV2FJSGk4bU5wUDVqbU1BY1hzcw?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE05T1FwelhYZU9yanFteEFHOHFJMEhkV0xXR3JJUEthei1GN0ZXRlFsWncyR1Uxenh0VHB4MUVDNUhrb08wUWNER21OTHZUZnV6WkE?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 1 週發布"
     }
   ]
 }
