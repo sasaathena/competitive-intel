@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-26T09:14:47.125251",
+  "generated_at": "2026-11-27T09:30:50.948405",
   "window_days": 7,
-  "total": 215,
-  "priority_count": 64,
+  "total": 208,
+  "priority_count": 69,
   "by_system": {
     "CRM": 83,
-    "FBM": 35,
-    "TECH": 74,
-    "PMS": 24
+    "FBM": 37,
+    "TECH": 73,
+    "PMS": 16
   },
   "top_brands": [
     {
       "brand": "HubSpot",
-      "count": 56
+      "count": 52
     },
     {
       "brand": "Salesforce",
@@ -20,34 +20,34 @@
     },
     {
       "brand": "Resy",
-      "count": 21
+      "count": 22
     },
     {
       "brand": "OpenTable",
-      "count": 15
-    },
-    {
-      "brand": "Guesty",
-      "count": 9
+      "count": 16
     },
     {
       "brand": "Zoho CRM",
-      "count": 7
+      "count": 8
     },
     {
-      "brand": "Cloudbeds",
-      "count": 5
+      "brand": "Guesty",
+      "count": 6
     },
     {
-      "brand": "Mews",
-      "count": 4
-    },
-    {
-      "brand": "roomMaster",
+      "brand": "SiteMinder",
       "count": 3
     },
     {
-      "brand": "Monday CRM",
+      "brand": "inline",
+      "count": 2
+    },
+    {
+      "brand": "RateGain",
+      "count": 2
+    },
+    {
+      "brand": "Cloudbeds",
       "count": 2
     }
   ],
@@ -58,15 +58,15 @@
     },
     {
       "type": "A01 AI 工具與工作流",
-      "count": 82
+      "count": 74
     },
     {
       "type": "P01 競品與產品更新",
-      "count": 26
+      "count": 20
     },
     {
       "type": "T01 前端與 API 基礎",
-      "count": 22
+      "count": 20
     },
     {
       "type": "T02 產品架構與資料模型",
@@ -74,59 +74,59 @@
     },
     {
       "type": "U01 UI/UX 設計案例",
-      "count": 2
+      "count": 3
     }
   ],
   "top_combos": [
     {
       "system": "CRM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 46
+      "count": 52
     },
     {
       "system": "TECH",
       "type": "A01 AI 工具與工作流",
-      "count": 44
-    },
-    {
-      "system": "CRM",
-      "type": "A01 AI 工具與工作流",
-      "count": 34
+      "count": 45
     },
     {
       "system": "FBM",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 29
+      "count": 30
     },
     {
-      "system": "PMS",
-      "type": "U02 UX 研究與設計趨勢",
-      "count": 20
+      "system": "CRM",
+      "type": "A01 AI 工具與工作流",
+      "count": 26
     },
     {
       "system": "TECH",
       "type": "T01 前端與 API 基礎",
-      "count": 17
+      "count": 18
+    },
+    {
+      "system": "PMS",
+      "type": "U02 UX 研究與設計趨勢",
+      "count": 14
     },
     {
       "system": "TECH",
       "type": "P01 競品與產品更新",
-      "count": 15
+      "count": 10
     },
     {
       "system": "TECH",
       "type": "U02 UX 研究與設計趨勢",
-      "count": 11
+      "count": 10
     },
     {
       "system": "CRM",
       "type": "P01 競品與產品更新",
-      "count": 9
+      "count": 8
     },
     {
       "system": "CRM",
       "type": "T02 產品架構與資料模型",
-      "count": 5
+      "count": 4
     }
   ],
   "top_articles": [
@@ -148,8 +148,8 @@
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
-      "id": "art_c5a6946ebd",
-      "title": "ZoomInfo Launches monday CRM Integration Powered by GTM.AI - Destination CRM",
+      "id": "art_95f9dd75b5",
+      "title": "ZoomInfo Launches monday CRM Integration Powered by GTM.AI - Business Wire",
       "score": 93,
       "source": "Monday CRM",
       "brands": [
@@ -161,26 +161,8 @@
         "A01 AI 工具與工作流",
         "T02 產品架構與資料模型"
       ],
-      "date": "2026-11-24T05:00:22+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNR1FDdUZGaFlFdktxb1VvWXpCVkg0VDBOQzl5SHctcVdrUEdFSXZOdzhDMVBSckg0TGFEeDdvVHFnTzRpM3BtMU5PZXhydjhmWlkzYjh1bHlfY0VIOXdoU2ZOUVdhNl9xUU1fTXJva3lxUG9la3FPYWpYV0RxUERHT1FieDFUYm1wYWhWVno2TktucWNaamQ4OERqcExpZkFVMlVXM21GTHBsOVc2WHhqTjd4ckU4dEtpX0xzNUhNZDc5NThCVHRxRkRfWm9lclY5TlBhRDJn?oc=5",
-      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
-    },
-    {
-      "id": "art_12a54b299f",
-      "title": "ZoomInfo Launches monday CRM Integration Powered by GTM.AI - TMCnet",
-      "score": 93,
-      "source": "Monday CRM",
-      "brands": [
-        "HubSpot",
-        "Monday CRM"
-      ],
-      "types": [
-        "P01 競品與產品更新",
-        "A01 AI 工具與工作流",
-        "T02 產品架構與資料模型"
-      ],
-      "date": "2026-11-23T19:03:23+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9wbjN4dU85Z0xqb2lhcFNRU2tlRGxpT2tzMWxPQ1hvOHA5Zjh5SldCa3JVNE1qeGRza1ZvSHhvTmlFdU5nX1J6eFBjQUNXeUdUX1BZYlU1bFhZWEtmMXRCTw?oc=5",
+      "date": "2026-11-23T17:28:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNUN2cWtjSGZ3TkxWNEJ4SjBDeXZsandJc09GSnc4cEVCMTMwTEdDZXRVZ2VVZHcxaXlyMDUybnl6QmRQcG5pNG1qLVVPY3V5OFV5TmIxYXRrRXhCUnBHek1OTzJMaTc0bFNRdjFBMHpsVjlzRGJSOVJDbE9CRTRjWnBCd2draFdaekJqMjVxeWtlZk15VVJ4RGozRWR0UHdWX1lDeWRSbkVIZG5GY013Q2JjS3I1Zw?oc=5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     },
     {
@@ -216,6 +198,22 @@
       "date": "2026-11-20T09:55:00+00:00",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE16aVltakY0ZGJOMVpJaEZEbjNhUlYyNTkxZUgzTWlfMWhEMzhqa2tpUkRZbFVuS2JGOFVxOURodTR6Z2lvbG5mX1dMWnZWeE1Db1kwellNclBVSTBJUHE5SUFUOVNGZzJRN0ZTMkdpQWhza3hoZVVyb1F3?oc=5",
       "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 1 週發布"
+    },
+    {
+      "id": "art_d6fea54fbc",
+      "title": "Leverate Adds Custom Dashboards for Broker Sales Desks Two Weeks After CRM Launch - Finance Magnates",
+      "score": 88,
+      "source": "Monday CRM",
+      "brands": [
+        "HubSpot"
+      ],
+      "types": [
+        "P01 競品與產品更新",
+        "U01 UI/UX 設計案例"
+      ],
+      "date": "2026-11-24T08:00:00+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVmZDMFVtc3ExN0d1ZXNfTkhXWjFncm9hQjJWVURCM09KM19HSmxHVWFWTS1NdTA1ZFQxbXBrZHlXM0RtUlBSeVkyaXUwZFdJaDVjTWtVR3dfSU9ySkhoR2ViY0wyNGtJUzh6akdGQVlqVEZkdGJ4aWJoYmJoQ0Q1SlRjdUlJM3BlUmh4ZW9haHBDTkQ1NmFaa0lqR2JwaVoyaF9yNTJWLVNTSnBjWVdwWDBseXlpVVFYVDVtNjdzYUVMTllvTTdnenBRdw?oc=5",
+      "recommendation_reason": "追蹤品牌 HubSpot 的更新；歸類於「競品/產品更新」；近 3 天發布"
     }
   ]
 }
